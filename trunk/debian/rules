@@ -40,8 +40,8 @@ install: build
 
 	install -m 0644 nf/*.pfb db/*.pfb debian/t1-thai-tlwg/usr/share/fonts/type1/thai/
 	install -m 0644 nf/*.afm db/*.afm debian/t1-thai-tlwg/usr/share/fonts/type1/thai/
-	install -m 0644 debian/fonts.scale debian/t1-thai-tlwg/etc/X11/fonts/Type1
-	install -m 0644 debian/fonts.alias debian/t1-thai-tlwg/etc/X11/fonts/Type1
+	install -m 0644 debian/fonts.scale debian/t1-thai-tlwg/etc/X11/fonts/Type1/t1-thai-tlwg.scale
+	install -m 0644 debian/fonts.alias debian/t1-thai-tlwg/etc/X11/fonts/Type1/t1-thai-tlwg.alias
 
 	install -m 0644 nf/*.ttf db/*.ttf debian/ttf-thai-tlwg/usr/share/fonts/truetype/thai/
 	(cd debian/t1-thai-tlwg/usr/X11R6/lib/X11/fonts/Type1; \
