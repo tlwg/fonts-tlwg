@@ -1,37 +1,51 @@
 FONTSOURCES = \
 	TlwgMono.sfd \
 	PseudoMono.sfd \
-	PseudoMono-Bold.sfd
+	PseudoMono-Bold.sfd \
+	PseudoMono-Oblique.sfd \
+	PseudoMono-BoldOblique.sfd
 
 TTFFILES = \
 	TlwgMono.ttf \
 	PseudoMono.ttf \
-	PseudoMono-Bold.ttf
+	PseudoMono-Bold.ttf \
+	PseudoMono-Oblique.ttf \
+	PseudoMono-BoldOblique.ttf
 
 TESTTTFFILES = \
 	TTFTlwgMono.ttf \
 	TTFPseudoMono.ttf \
-	TTFPseudoMono-Bold.ttf
+	TTFPseudoMono-Bold.ttf \
+	TTFPseudoMono-Oblique.ttf \
+	TTFPseudoMono-BoldOblique.ttf
 
 OTFFILES = \
 	TlwgMono.otf \
 	PseudoMono.otf \
-	PseudoMono-Bold.otf
+	PseudoMono-Bold.otf \
+	PseudoMono-Oblique.otf \
+	PseudoMono-BoldOblique.otf
 
 TESTOTFFILES = \
 	OTFTlwgMono.otf \
 	OTFPseudoMono.otf \
-	OTFPseudoMono-Bold.otf
+	OTFPseudoMono-Bold.otf \
+	OTFPseudoMono-Oblique.otf \
+	OTFPseudoMono-BoldOblique.otf
 
 PFAFILES = \
 	TlwgMono.pfa \
 	PseudoMono.pfa \
-	PseudoMono-Bold.pfa
+	PseudoMono-Bold.pfa \
+	PseudoMono-Oblique.pfa \
+	PseudoMono-BoldOblique.pfa
 
 PFBFILES = \
 	TlwgMono.pfb \
 	PseudoMono.pfb \
-	PseudoMono-Bold.pfb
+	PseudoMono-Bold.pfb \
+	PseudoMono-Oblique.pfb \
+	PseudoMono-BoldOblique.pfb
 
 TYPE1FILES =
 if INCLUDE_PFA
@@ -44,7 +58,9 @@ endif
 TESTTYPE1FILES = \
 	PSTlwgMono.pfb \
 	PSPseudoMono.pfb \
-	PSPseudoMono-Bold.pfb
+	PSPseudoMono-Bold.pfb \
+	PSPseudoMono-Oblique.pfb \
+	PSPseudoMono-BoldOblique.pfb
 
 MAINTAINERCLEANFILES = Makefile.in
 CLEANFILES = *.ttf *.g2n *.pfb *.pfa *.afm *.pfm *.otf *.enc *.tfm
