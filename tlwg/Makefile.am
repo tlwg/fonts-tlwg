@@ -1,5 +1,8 @@
 FONTSOURCES = \
 	TlwgMono.sfd \
+	TlwgMono-Bold.sfd \
+	TlwgMono-Oblique.sfd \
+	TlwgMono-BoldOblique.sfd \
 	PseudoMono.sfd \
 	PseudoMono-Bold.sfd \
 	PseudoMono-Oblique.sfd \
@@ -7,6 +10,9 @@ FONTSOURCES = \
 
 TTFFILES = \
 	TlwgMono.ttf \
+	TlwgMono-Bold.ttf \
+	TlwgMono-Oblique.ttf \
+	TlwgMono-BoldOblique.ttf \
 	PseudoMono.ttf \
 	PseudoMono-Bold.ttf \
 	PseudoMono-Oblique.ttf \
@@ -14,6 +20,9 @@ TTFFILES = \
 
 TESTTTFFILES = \
 	TTFTlwgMono.ttf \
+	TTFTlwgMono-Bold.ttf \
+	TTFTlwgMono-Oblique.ttf \
+	TTFTlwgMono-BoldOblique.ttf \
 	TTFPseudoMono.ttf \
 	TTFPseudoMono-Bold.ttf \
 	TTFPseudoMono-Oblique.ttf \
@@ -21,6 +30,9 @@ TESTTTFFILES = \
 
 OTFFILES = \
 	TlwgMono.otf \
+	TlwgMono-Bold.otf \
+	TlwgMono-Oblique.otf \
+	TlwgMono-BoldOblique.otf \
 	PseudoMono.otf \
 	PseudoMono-Bold.otf \
 	PseudoMono-Oblique.otf \
@@ -28,6 +40,9 @@ OTFFILES = \
 
 TESTOTFFILES = \
 	OTFTlwgMono.otf \
+	OTFTlwgMono-Bold.otf \
+	OTFTlwgMono-Oblique.otf \
+	OTFTlwgMono-BoldOblique.otf \
 	OTFPseudoMono.otf \
 	OTFPseudoMono-Bold.otf \
 	OTFPseudoMono-Oblique.otf \
@@ -35,6 +50,9 @@ TESTOTFFILES = \
 
 PFAFILES = \
 	TlwgMono.pfa \
+	TlwgMono-Bold.pfa \
+	TlwgMono-Oblique.pfa \
+	TlwgMono-BoldOblique.pfa \
 	PseudoMono.pfa \
 	PseudoMono-Bold.pfa \
 	PseudoMono-Oblique.pfa \
@@ -42,6 +60,9 @@ PFAFILES = \
 
 PFBFILES = \
 	TlwgMono.pfb \
+	TlwgMono-Bold.pfb \
+	TlwgMono-Oblique.pfb \
+	TlwgMono-BoldOblique.pfb \
 	PseudoMono.pfb \
 	PseudoMono-Bold.pfb \
 	PseudoMono-Oblique.pfb \
@@ -57,6 +78,9 @@ endif
 
 TESTTYPE1FILES = \
 	PSTlwgMono.pfb \
+	PSTlwgMono-Bold.pfb \
+	PSTlwgMono-Oblique.pfb \
+	PSTlwgMono-BoldOblique.pfb \
 	PSPseudoMono.pfb \
 	PSPseudoMono-Bold.pfb \
 	PSPseudoMono-Oblique.pfb \
