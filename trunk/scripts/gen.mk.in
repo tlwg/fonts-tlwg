@@ -1,0 +1,7 @@
+pfaedit = @PFAEDIT@
+
+.SUFFIXES: .sfd .ttf
+
+.sfd.ttf:
+	$(pfaedit) -script $(top_srcdir)/scripts/gen-ttf.pe $<
+
