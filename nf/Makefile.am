@@ -1,7 +1,7 @@
 FONTSOURCES = \
-	GarudaBoldItalic.sfd \
-	GarudaBold.sfd \
-	GarudaItalic.sfd \
+	Garuda-BoldOblique.sfd \
+	Garuda-Bold.sfd \
+	Garuda-Oblique.sfd \
 	Garuda.sfd \
 	Norasi-BoldItalic.sfd \
 	Norasi-Bold.sfd \
@@ -9,9 +9,9 @@ FONTSOURCES = \
 	Norasi.sfd
 
 FONTFILES = \
-	GarudaBoldItalic.ttf \
-	GarudaBold.ttf \
-	GarudaItalic.ttf \
+	Garuda-BoldOblique.ttf \
+	Garuda-Bold.ttf \
+	Garuda-Oblique.ttf \
 	Garuda.ttf \
 	Norasi-BoldItalic.ttf \
 	Norasi-Bold.ttf \
