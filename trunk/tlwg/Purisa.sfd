@@ -3,7 +3,7 @@ FontName: Purisa
 FullName: Purisa
 FamilyName: Purisa
 Weight: Medium
-Copyright: Purisa, Thai handwriting outline font. Copyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>\n\nThis program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+Copyright: Purisa, Thai handwriting outline font. Copyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>, GPL license
 Comments: 2003-11-27: Created.\n\nAcknowlegement:\nHanwriting by Ms.Purisa Cholasueksa. \nCo-operated by Mr.Teeratep Sosakul.\n\n2004-02-14:\nModified most characters. Make numbers bigger.
 Version: 002.000
 ItalicAngle: 0
@@ -11,7 +11,6 @@ UnderlinePosition: -100
 UnderlineWidth: 50
 Ascent: 800
 Descent: 200
-NeedsXUIDChange: 1
 XUID: [1021 215 427847090 15454192]
 FSType: 12
 PfmFamily: 65
@@ -33,6 +32,13 @@ ScriptLang: 4
  1 latn 1 dflt 
  1 DFLT 1 dflt 
  1 thai 1 PAL  
+ContextSub: glyph 0 3 ' RQD' 0 0 0 1
+ String: 15 uni0E0D uni0E10
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 'ndsc'
+EndFPST
 ChainSub: coverage 0 0 'ccmp' 0 0 0 1
  2 0 0
   Coverage: 19 uni0E4B uni0E4B.low
@@ -87,22 +93,15 @@ ChainSub: coverage 0 0 'ccmp' 0 0 0 1
  1
   SeqLookup: 0 'loww'
 EndFPST
-ContextSub: glyph 0 3 ' RQD' 0 0 0 1
- String: 15 uni0E0D uni0E10
- BString: 0 
- FString: 0 
- 1
-  SeqLookup: 0 'ndsc'
-EndFPST
 GenTags: 8 sb'ndsc' sb'loww' sb'nds0' sb'amni' sb'G004' sb'G005' sb'G006' sb'G007'
 LangName: 1033 "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "+AAoOIA45DiMONA4pDjIA +DhgONQ4jDkAOFw4e" 
 Encoding: compacted
-OldEncoding: unicode
+OldEncoding: UnicodeBmp
 UnicodeInterp: none
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 8 7
+WinInfo: 32 8 2
 AnchorClass: "AboveBase" mark 0 0 1 0 "BelowBase" mark 0 0 2 0 "AboveMark" mkmk 0 0 3 1 "BelowMark" mkmk 0 0 4 1 
 BeginChars: 226 226
 StartChar: space
