@@ -1,0 +1,34 @@
+Source: thaifonts-scalable
+Section: x11
+Priority: optional
+Maintainer: Chanop Silpa-Anan <chanop@debian.org>
+Build-Depends-Indep: debhelper (>> 4.0.0), defoma (>= 0.7.0), pfaedit, ttmkfdir
+Standards-Version: 3.5.8
+
+Package: t1-thai-tlwg
+Architecture: all
+Depends: defoma
+Description: Thai fonts in Type1 format
+ This package provides some public domain fonts that are
+ enhanced by developpers from Thai Linux Working Group.
+ In Type1 format.
+ .
+ At the moment there are three families included here.
+  - Norasi
+  - Garuda
+  - DbThaiText
+
+Package: ttf-thai-tlwg
+Architecture: all
+Depends: debconf, defoma, x-ttcidfont-conf
+Conflicts: xfonts-thai-ttf
+Replaces: xfonts-thai-ttf
+Description: Thai fonts in TrueType format
+ This package provides some public domain fonts that are
+ enhanced by developpers from Thai Linux Working Group.
+ In Type1 format.
+ .
+ At the moment there are three families included here.
+  - Norasi
+  - Garuda
+  - DbThaiText
