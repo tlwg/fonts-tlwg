@@ -48,17 +48,7 @@ TESTOTFFILES = \
 	OTFNorasi-Oblique.otf \
 	OTFNorasi.otf
 
-PFAFILES = \
-	Garuda-BoldOblique.pfa \
-	Garuda-Bold.pfa \
-	Garuda-Oblique.pfa \
-	Garuda.pfa \
-	Norasi-BoldOblique.pfa \
-	Norasi-Bold.pfa \
-	Norasi-Oblique.pfa \
-	Norasi.pfa
-
-PFBFILES = \
+TYPE1FILES = \
 	Garuda-BoldOblique.pfb \
 	Garuda-Bold.pfb \
 	Garuda-Oblique.pfb \
@@ -67,14 +57,6 @@ PFBFILES = \
 	Norasi-Bold.pfb \
 	Norasi-Oblique.pfb \
 	Norasi.pfb
-
-TYPE1FILES =
-if INCLUDE_PFA
-TYPE1FILES += $(PFAFILES)
-endif
-if INCLUDE_PFB
-TYPE1FILES += $(PFBFILES)
-endif
 
 TESTTYPE1FILES = \
 	PSGaruda-BoldOblique.pfb \
