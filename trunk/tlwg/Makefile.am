@@ -3,10 +3,10 @@ FONTSOURCES = \
 	TlwgMono-Bold.sfd \
 	TlwgMono-Oblique.sfd \
 	TlwgMono-BoldOblique.sfd \
-	PseudoMono.sfd \
-	PseudoMono-Bold.sfd \
-	PseudoMono-Oblique.sfd \
-	PseudoMono-BoldOblique.sfd \
+	TlwgTypewriter.sfd \
+	TlwgTypewriter-Bold.sfd \
+	TlwgTypewriter-Oblique.sfd \
+	TlwgTypewriter-BoldOblique.sfd \
 	Purisa.sfd
 
 TTFFILES = \
@@ -14,10 +14,10 @@ TTFFILES = \
 	TlwgMono-Bold.ttf \
 	TlwgMono-Oblique.ttf \
 	TlwgMono-BoldOblique.ttf \
-	PseudoMono.ttf \
-	PseudoMono-Bold.ttf \
-	PseudoMono-Oblique.ttf \
-	PseudoMono-BoldOblique.ttf \
+	TlwgTypewriter.ttf \
+	TlwgTypewriter-Bold.ttf \
+	TlwgTypewriter-Oblique.ttf \
+	TlwgTypewriter-BoldOblique.ttf \
 	Purisa.ttf
 
 TESTTTFFILES = \
@@ -25,10 +25,10 @@ TESTTTFFILES = \
 	TTFTlwgMono-Bold.ttf \
 	TTFTlwgMono-Oblique.ttf \
 	TTFTlwgMono-BoldOblique.ttf \
-	TTFPseudoMono.ttf \
-	TTFPseudoMono-Bold.ttf \
-	TTFPseudoMono-Oblique.ttf \
-	TTFPseudoMono-BoldOblique.ttf \
+	TTFTlwgTypewriter.ttf \
+	TTFTlwgTypewriter-Bold.ttf \
+	TTFTlwgTypewriter-Oblique.ttf \
+	TTFTlwgTypewriter-BoldOblique.ttf \
 	TTFPurisa.ttf
 
 OTFFILES = \
@@ -36,10 +36,10 @@ OTFFILES = \
 	TlwgMono-Bold.otf \
 	TlwgMono-Oblique.otf \
 	TlwgMono-BoldOblique.otf \
-	PseudoMono.otf \
-	PseudoMono-Bold.otf \
-	PseudoMono-Oblique.otf \
-	PseudoMono-BoldOblique.otf \
+	TlwgTypewriter.otf \
+	TlwgTypewriter-Bold.otf \
+	TlwgTypewriter-Oblique.otf \
+	TlwgTypewriter-BoldOblique.otf \
 	Purisa.otf
 
 TESTOTFFILES = \
@@ -47,10 +47,10 @@ TESTOTFFILES = \
 	OTFTlwgMono-Bold.otf \
 	OTFTlwgMono-Oblique.otf \
 	OTFTlwgMono-BoldOblique.otf \
-	OTFPseudoMono.otf \
-	OTFPseudoMono-Bold.otf \
-	OTFPseudoMono-Oblique.otf \
-	OTFPseudoMono-BoldOblique.otf \
+	OTFTlwgTypewriter.otf \
+	OTFTlwgTypewriter-Bold.otf \
+	OTFTlwgTypewriter-Oblique.otf \
+	OTFTlwgTypewriter-BoldOblique.otf \
 	OTFPurisa.otf
 
 PFAFILES = \
@@ -58,10 +58,10 @@ PFAFILES = \
 	TlwgMono-Bold.pfa \
 	TlwgMono-Oblique.pfa \
 	TlwgMono-BoldOblique.pfa \
-	PseudoMono.pfa \
-	PseudoMono-Bold.pfa \
-	PseudoMono-Oblique.pfa \
-	PseudoMono-BoldOblique.pfa \
+	TlwgTypewriter.pfa \
+	TlwgTypewriter-Bold.pfa \
+	TlwgTypewriter-Oblique.pfa \
+	TlwgTypewriter-BoldOblique.pfa \
 	Purisa.pfa
 
 PFBFILES = \
@@ -69,10 +69,10 @@ PFBFILES = \
 	TlwgMono-Bold.pfb \
 	TlwgMono-Oblique.pfb \
 	TlwgMono-BoldOblique.pfb \
-	PseudoMono.pfb \
-	PseudoMono-Bold.pfb \
-	PseudoMono-Oblique.pfb \
-	PseudoMono-BoldOblique.pfb \
+	TlwgTypewriter.pfb \
+	TlwgTypewriter-Bold.pfb \
+	TlwgTypewriter-Oblique.pfb \
+	TlwgTypewriter-BoldOblique.pfb \
 	Purisa.pfb
 
 TYPE1FILES =
@@ -88,10 +88,10 @@ TESTTYPE1FILES = \
 	PSTlwgMono-Bold.pfb \
 	PSTlwgMono-Oblique.pfb \
 	PSTlwgMono-BoldOblique.pfb \
-	PSPseudoMono.pfb \
-	PSPseudoMono-Bold.pfb \
-	PSPseudoMono-Oblique.pfb \
-	PSPseudoMono-BoldOblique.pfb \
+	PSTlwgTypewriter.pfb \
+	PSTlwgTypewriter-Bold.pfb \
+	PSTlwgTypewriter-Oblique.pfb \
+	PSTlwgTypewriter-BoldOblique.pfb \
 	PSPurisa.pfb
 
 MAINTAINERCLEANFILES = Makefile.in
