@@ -47,29 +47,39 @@ fi
 #   AC_MSG_ERROR([You need ttmkfdir (from freetype distribution)])
 # fi
 
-dnl prefer ttmkfdir for the time being
+dnl prefer mkfontscale over ttmkfdir
+AC_CHECK_PROG(MKFONTSCALE,mkfontscale,[mkfontscale -e tis620-0 -e tis620-2])
+
 if test "x$enable_ttf" = "xyes"; then
-  AC_CHECK_PROG(MKFONTSCALE,ttmkfdir,ttmkfdir)
-  AC_CHECK_PROG(MKFONTSCALE,mkfontscale,mkfontscale)
   if test "x$MKFONTSCALE" = "x"; then
-    AC_MSG_ERROR([You need mkfontscale or ttmkfdir])
-  elif test "$MKFONTSCALE" = "ttmkfdir"; then
-    if (ttmkfdir -h 2>&1 | grep -- --encoding >/dev/null); then
-      # ttmkfdir 2
-      MKFONTSCALE="ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir -o fonts.scale"
+    AC_CHECK_PROG(TTMKFDIR,ttmkfdir,ttmkfdir)
+    if test "x$MKFONTSCALE" = "x"; then
+      AC_MSG_ERROR([You need mkfontscale or ttmkfdir])
     else
-      # ttmkfdir 1
-      MKFONTSCALE="ttmkfdir > fonts.scale"
+      if (ttmkfdir -h 2>&1 | grep -- --encoding >/dev/null); then
+        # ttmkfdir 2
+        TTMKFDIR="ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir -o fonts.scale"
+      else
+        # ttmkfdir 1
+        TTMKFDIR="ttmkfdir > fonts.scale"
+      fi
     fi
+  else
+    TTMKFDIR="$MKFONTSCALE"
   fi
-  AC_MSG_RESULT([Will create fonts.scale using $MKFONTSCALE])
+  AC_MSG_RESULT([Will create fonts.scale for TTF using $TTMKFDIR])
 fi
 
 if test "x$enable_type1" = "xyes"; then
-  AC_CHECK_PROG(TYPE1INST,type1inst,type1inst)
-  if test "x$TYPE1INST" = "x"; then
-    AC_MSG_ERROR([You need type1inst])
+  if test "x$MKFONTSCALE" = "x"; then
+    AC_CHECK_PROG(TYPE1INST,type1inst,type1inst)
+    if test "x$TYPE1INST" = "x"; then
+      AC_MSG_ERROR([You need mkfontscale or type1inst])
+    fi
+  else
+    TYPE1INST="$MKFONTSCALE"
   fi
+  AC_MSG_RESULT([Will create fonts.scale for Type1 using $TYPE1INST])
 fi
 AC_CHECK_PROG(FCCACHE,fc-cache,[fc-cache -f || true])
 
