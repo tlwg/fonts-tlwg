@@ -1,13 +1,13 @@
 FONTSOURCES = \
-	DBThaiTextBoldItalic.sfd \
-	DBThaiTextBold.sfd \
-	DBThaiTextItalic.sfd \
+	DBThaiText-BoldOblique.sfd \
+	DBThaiText-Bold.sfd \
+	DBThaiText-Oblique.sfd \
 	DBThaiText.sfd
 
 FONTFILES = \
-	DBThaiTextBoldItalic.ttf \
-	DBThaiTextBold.ttf \
-	DBThaiTextItalic.ttf \
+	DBThaiText-BoldOblique.ttf \
+	DBThaiText-Bold.ttf \
+	DBThaiText-Oblique.ttf \
 	DBThaiText.ttf
 
 MAINTAINERCLEANFILES = Makefile.in
