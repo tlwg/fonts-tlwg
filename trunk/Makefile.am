@@ -11,19 +11,26 @@ type1inst = @TYPE1INST@
 fccache = @FCCACHE@
 
 install-data-hook:
+	@if test -z "$(DESTDIR)" ; then
 if INCLUDE_TTF
-	mkdir -p $(DESTDIR)$(ttfdir)
-	cd $(DESTDIR)$(ttfdir); \
-	$(mkfontscale); \
-	mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
+	  mkdir -p $(DESTDIR)$(ttfdir)
+	  cd $(DESTDIR)$(ttfdir); \
+	  $(mkfontscale); \
+	  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
 endif
 if INCLUDE_TYPE1
-	mkdir -p $(DESTDIR)$(type1dir)
-	cd $(DESTDIR)$(type1dir); \
-	$(type1inst); \
-	mkfontdir
+	  mkdir -p $(DESTDIR)$(type1dir)
+	  cd $(DESTDIR)$(type1dir); \
+	  $(type1inst); \
+	  mkfontdir
 endif
-	$(fccache)
+	  $(fccache)
+	else
+	  echo "***" ;                                                        \
+	  echo "*** Warning: Seems to be binary package building." ;          \
+	  echo "***          So, font list/cache is not generated" ;          \
+	  echo "***" ;                                                        \
+	fi
 
 uninstall-hook:
 if INCLUDE_TTF
