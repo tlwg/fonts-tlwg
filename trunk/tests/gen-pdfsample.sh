@@ -1,7 +1,12 @@
 #!/bin/sh
 # gen-pdfsample.sh - print all glyphs in PDF file
+# Usage: gen-pdfsample.sh <suffix> <prefix>
+#   where font file name is <prefix><font><suffix>
 #
 export GS_LIB=.
+top_builddir=${top_builddir-../}
+fsuffix=$1
+fprefix=$2
  
 FONTS="Garuda Garuda-Oblique Garuda-Bold Garuda-BoldOblique Norasi 
 Norasi-Oblique Norasi-Bold Norasi-BoldOblique DBThaiText 
@@ -18,18 +23,18 @@ POEM_L8="\276\331\264\250\322\343\313\214\250\215\320\346 \250\216\322\346 \271\
 CIT="\305\324\242\312\324\267\270\324\354\342\264\302 \312\301\322\244\301\244\315\301\276\324\307\340\265\315\303\217\341\313\213\247\273\303\320\340\267\310\344\267\302\343\271\276\303\320\272\303\301\303\322\252\331\273\266\321\301\300\217"
 
 cat <<END > Fontmap
-/Garuda                 (@top_builddir@nf/PSGaruda.pfb);
-/Garuda-Oblique         (@top_builddir@nf/PSGaruda-Oblique.pfb);
-/Garuda-Bold            (@top_builddir@nf/PSGaruda-Bold.pfb);
-/Garuda-BoldOblique     (@top_builddir@nf/PSGaruda-BoldOblique.pfb);
-/Norasi                 (@top_builddir@nf/PSNorasi.pfb);
-/Norasi-Oblique         (@top_builddir@nf/PSNorasi-Oblique.pfb);
-/Norasi-Bold            (@top_builddir@nf/PSNorasi-Bold.pfb);
-/Norasi-BoldOblique     (@top_builddir@nf/PSNorasi-BoldOblique.pfb);
-/DBThaiText             (@top_builddir@db/PSDBThaiText.pfb);
-/DBThaiText-Oblique     (@top_builddir@db/PSDBThaiText-Oblique.pfb);
-/DBThaiText-Bold        (@top_builddir@db/PSDBThaiText-Bold.pfb);
-/DBThaiText-BoldOblique (@top_builddir@db/PSDBThaiText-BoldOblique.pfb);
+/Garuda                 (${top_builddir}nf/${fprefix}Garuda${fsuffix});
+/Garuda-Oblique         (${top_builddir}nf/${fprefix}Garuda-Oblique${fsuffix});
+/Garuda-Bold            (${top_builddir}nf/${fprefix}Garuda-Bold${fsuffix});
+/Garuda-BoldOblique     (${top_builddir}nf/${fprefix}Garuda-BoldOblique${fsuffix});
+/Norasi                 (${top_builddir}nf/${fprefix}Norasi${fsuffix});
+/Norasi-Oblique         (${top_builddir}nf/${fprefix}Norasi-Oblique${fsuffix});
+/Norasi-Bold            (${top_builddir}nf/${fprefix}Norasi-Bold${fsuffix});
+/Norasi-BoldOblique     (${top_builddir}nf/${fprefix}Norasi-BoldOblique${fsuffix});
+/DBThaiText             (${top_builddir}db/${fprefix}DBThaiText${fsuffix});
+/DBThaiText-Oblique     (${top_builddir}db/${fprefix}DBThaiText-Oblique${fsuffix});
+/DBThaiText-Bold        (${top_builddir}db/${fprefix}DBThaiText-Bold${fsuffix});
+/DBThaiText-BoldOblique (${top_builddir}db/${fprefix}DBThaiText-BoldOblique${fsuffix});
 END
 
 for font in $FONTS; do
@@ -94,7 +99,7 @@ EOF
 # Print a Thai text sample for each size (point)
 #
 for point in 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24; do
-    cat <<EOF>> ${font}.ps
+    cat <<EOF >> ${font}.ps
 %% $point pt
 /${font}-TIS-620-2 findfont $point scalefont setfont
 2 cm CurrentV moveto (${point}pt) show
@@ -106,7 +111,7 @@ done
 # Print a English text sample for each size (point)
 #
 for point in 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24; do
-    cat <<EOF>> ${font}.ps
+    cat <<EOF >> ${font}.ps
 %% $point pt
 /${font}-TIS-620-2 findfont $point scalefont setfont
 2 cm CurrentV moveto (${point}pt) show
@@ -119,7 +124,7 @@ echo showpage >> ${font}.ps
 # Output the poem
 #
 point=16
-cat <<EOF>> ${font}.ps
+cat <<EOF >> ${font}.ps
 /CurrentV 20 cm def
 /${font}-TIS-620-2 findfont $point scalefont setfont
 4 cm CurrentV moveto
@@ -154,16 +159,16 @@ EOF
 #
 # Make glyph table (DoFont)
 #
-cat <<EOF>> ${font}.ps
+cat <<EOF >> ${font}.ps
 %% DoFont
 (prfont.ps) runlibfile
 /$font DoFont
 EOF
 
-         gs -sOutputFile=${font}.pdf -sDEVICE=pdfwrite -dNOPAUSE -dBATCH ${font}.ps
+         gs -sOutputFile=${fprefix}${font}${fsuffix}.pdf -sDEVICE=pdfwrite -dNOPAUSE -dBATCH ${font}.ps
 rm ${font}.ps
 
-         echo  ----- Wrote ${font}.pdf -----
+         echo  ----- Wrote ${fprefix}${font}${fsuffix}.pdf -----
 done
 rm -f Fontmap
 
