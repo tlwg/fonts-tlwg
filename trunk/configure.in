@@ -30,12 +30,12 @@ AC_MSG_RESULT([Will create fonts.scale using $MKFONTSCALE])
 
 AC_CHECK_PROG(FCCACHE,fc-cache,[fc-cache -f || true])
 
-AC_ARG_WITH(fontdir,
-  [  --with-fontdir=DIR    font directory in DIR [/usr/share/fonts/th/TTF]],
-  [fontdir="$withval"], [fontdir=/usr/share/fonts/th/TTF])
-AC_MSG_CHECKING(--with-fontdir)
-AC_MSG_RESULT("$fontdir")                                                                                                           
-AC_SUBST(fontdir)
+AC_ARG_WITH(ttfdir,
+  [  --with-ttfdir=DIR    font directory in DIR [/usr/share/fonts/th/TTF]],
+  [ttfdir="$withval"], [ttfdir=/usr/share/fonts/th/TTF])
+AC_MSG_CHECKING(--with-ttfdir)
+AC_MSG_RESULT("$ttfdir")                                                                                                           
+AC_SUBST(ttfdir)
 
 AC_OUTPUT(
   Makefile

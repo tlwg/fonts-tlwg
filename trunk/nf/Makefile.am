@@ -8,7 +8,7 @@ FONTSOURCES = \
 	Norasi-Oblique.sfd \
 	Norasi.sfd
 
-FONTFILES = \
+TTFFILES = \
 	Garuda-BoldOblique.ttf \
 	Garuda-Bold.ttf \
 	Garuda-Oblique.ttf \
@@ -23,7 +23,7 @@ DISTCLEANFILES = *.ttf *.g2n
 
 EXTRA_DIST = $(FONTSOURCES)
 
-font_DATA = $(FONTFILES)
+ttf_DATA = $(TTFFILES)
 
 include @top_builddir@/scripts/gen.mk
 
