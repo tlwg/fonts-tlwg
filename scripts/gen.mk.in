@@ -1,13 +1,27 @@
 pfaedit = @PFAEDIT@
 
-.SUFFIXES: .sfd .ttf .pfa .pfb
+.SUFFIXES: .sfd .ttf .otf .pfa .pfb
 
-.sfd.ttf:
+TTF%.ttf: %.sfd
+	$(pfaedit) -script $(top_srcdir)/scripts/gen-test-ttf.pe $<
+
+OTF%.otf: %.sfd
+	$(pfaedit) -script $(top_srcdir)/scripts/gen-test-otf.pe $<
+
+PS%.pfa: %.sfd
+	$(pfaedit) -script $(top_srcdir)/scripts/gen-test-pfa.pe $<
+
+PS%.pfb: %.sfd
+	$(pfaedit) -script $(top_srcdir)/scripts/gen-test-pfb.pe $<
+
+%.ttf: %.sfd
 	$(pfaedit) -script $(top_srcdir)/scripts/gen-ttf.pe $<
 
-.sfd.pfa:
+%.otf: %.sfd
+	$(pfaedit) -script $(top_srcdir)/scripts/gen-otf.pe $<
+
+%.pfa: %.sfd
 	$(pfaedit) -script $(top_srcdir)/scripts/gen-pfa.pe $<
 
-.sfd.pfb:
+%.pfb: %.sfd
 	$(pfaedit) -script $(top_srcdir)/scripts/gen-pfb.pe $<
-
