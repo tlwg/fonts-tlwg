@@ -1,23 +1,30 @@
 FONTSOURCES = \
-	TlwgMono.sfd
+	TlwgMono.sfd \
+	PseudoMono.sfd
 
 TTFFILES = \
-	TlwgMono.ttf
+	TlwgMono.ttf \
+	PseudoMono.ttf
 
 TESTTTFFILES = \
-	TTFTlwgMono.ttf
+	TTFTlwgMono.ttf \
+	TTFPseudoMono.ttf
 
 OTFFILES = \
-	TTFTlwgMono.otf
+	TlwgMono.otf \
+	PseudoMono.otf
 
 TESTOTFFILES = \
-	OTFTlwgMono.otf
+	OTFTlwgMono.otf \
+	OTFPseudoMono.otf
 
 PFAFILES = \
-	TlwgMono.pfa
+	TlwgMono.pfa \
+	PseudoMono.pfa
 
 PFBFILES = \
-	TlwgMono.pfb
+	TlwgMono.pfb \
+	PseudoMono.pfb
 
 TYPE1FILES =
 if INCLUDE_PFA
@@ -28,7 +35,8 @@ TYPE1FILES += $(PFBFILES)
 endif
 
 TESTTYPE1FILES = \
-	PSTlwgMono.pfb
+	PSTlwgMono.pfb \
+	PSPseudoMono.pfb
 
 MAINTAINERCLEANFILES = Makefile.in
 CLEANFILES = *.ttf *.g2n *.pfb *.pfa *.afm *.pfm *.otf *.enc *.tfm
