@@ -1,4 +1,8 @@
 FONTSOURCES = \
+	Kinnari-BoldOblique.sfd \
+	Kinnari-Bold.sfd \
+	Kinnari-Oblique.sfd \
+	Kinnari.sfd \
 	Garuda-BoldOblique.sfd \
 	Garuda-Bold.sfd \
 	Garuda-Oblique.sfd \
@@ -11,6 +15,10 @@ FONTSOURCES = \
 	Norasi.sfd
 
 TTFFILES = \
+	Kinnari-BoldOblique.ttf \
+	Kinnari-Bold.ttf \
+	Kinnari-Oblique.ttf \
+	Kinnari.ttf \
 	Garuda-BoldOblique.ttf \
 	Garuda-Bold.ttf \
 	Garuda-Oblique.ttf \
@@ -23,6 +31,10 @@ TTFFILES = \
 	Norasi.ttf
 
 TESTTTFFILES = \
+	TTFKinnari-BoldOblique.ttf \
+	TTFKinnari-Bold.ttf \
+	TTFKinnari-Oblique.ttf \
+	TTFKinnari.ttf \
 	TTFGaruda-BoldOblique.ttf \
 	TTFGaruda-Bold.ttf \
 	TTFGaruda-Oblique.ttf \
@@ -35,6 +47,10 @@ TESTTTFFILES = \
 	TTFNorasi.ttf
 
 OTFFILES = \
+	Kinnari-BoldOblique.otf \
+	Kinnari-Bold.otf \
+	Kinnari-Oblique.otf \
+	Kinnari.otf \
 	Garuda-BoldOblique.otf \
 	Garuda-Bold.otf \
 	Garuda-Oblique.otf \
@@ -47,6 +63,10 @@ OTFFILES = \
 	Norasi.otf
 
 TESTOTFFILES = \
+	OTFKinnari-BoldOblique.otf \
+	OTFKinnari-Bold.otf \
+	OTFKinnari-Oblique.otf \
+	OTFKinnari.otf \
 	OTFGaruda-BoldOblique.otf \
 	OTFGaruda-Bold.otf \
 	OTFGaruda-Oblique.otf \
@@ -59,6 +79,10 @@ TESTOTFFILES = \
 	OTFNorasi.otf
 
 PFAFILES = \
+	Kinnari-BoldOblique.pfa \
+	Kinnari-Bold.pfa \
+	Kinnari-Oblique.pfa \
+	Kinnari.pfa \
 	Garuda-BoldOblique.pfa \
 	Garuda-Bold.pfa \
 	Garuda-Oblique.pfa \
@@ -71,6 +95,10 @@ PFAFILES = \
 	Norasi.pfa
 
 PFBFILES = \
+	Kinnari-BoldOblique.pfb \
+	Kinnari-Bold.pfb \
+	Kinnari-Oblique.pfb \
+	Kinnari.pfb \
 	Garuda-BoldOblique.pfb \
 	Garuda-Bold.pfb \
 	Garuda-Oblique.pfb \
@@ -91,6 +119,10 @@ TYPE1FILES += $(PFBFILES)
 endif
 
 TESTTYPE1FILES = \
+	PSKinnari-BoldOblique.pfb \
+	PSKinnari-Bold.pfb \
+	PSKinnari-Oblique.pfb \
+	PSKinnari.pfb \
 	PSGaruda-BoldOblique.pfb \
 	PSGaruda-Bold.pfb \
 	PSGaruda-Oblique.pfb \
