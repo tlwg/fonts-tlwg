@@ -70,6 +70,14 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT
 %makeinstall
 
+rm -f  $RPM_BUILD_ROOT%{ttfdir}/encodings.dir \
+       $RPM_BUILD_ROOT%{ttfdir}/fonts.dir \
+       $RPM_BUILD_ROOT%{ttfdir}/fonts.scale \
+       $RPM_BUILD_ROOT%{type1dir}/encodings.dir \
+       $RPM_BUILD_ROOT%{type1dir}/fonts.dir \
+       $RPM_BUILD_ROOT%{type1dir}/fonts.scale
+
+
 # __os_install_post is implicitly expanded after the
 # install section... do it now, and then disable it,
 # so all work is done before building manifest.
@@ -225,6 +233,10 @@ fi
 #%config
 
 %changelog
+* Thu Sep 18 2003 Vee Satayamas <vee@linux.thai.net>
+- Remove encodings.dir, fonts.dir, fonts.scale, encodings.dir, 
+  fonts.dir and fonts.scale.
+
 * Thu Aug 07 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
 - Fix sed script in manifest generation, as suggested by
   Supphachoke Santiwichaya <mrchoke@opentle.org>
