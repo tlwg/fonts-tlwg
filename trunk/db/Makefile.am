@@ -28,11 +28,25 @@ TESTOTFFILES = \
 	OTFDBThaiText-Oblique.otf \
 	OTFDBThaiText.otf
 
-TYPE1FILES = \
+PFAFILES = \
+	DBThaiText-BoldOblique.pfa \
+	DBThaiText-Bold.pfa \
+	DBThaiText-Oblique.pfa \
+	DBThaiText.pfa
+
+PFBFILES = \
 	DBThaiText-BoldOblique.pfb \
 	DBThaiText-Bold.pfb \
 	DBThaiText-Oblique.pfb \
 	DBThaiText.pfb
+
+TYPE1FILES =
+if INCLUDE_PFA
+TYPE1FILES += $(PFAFILES)
+endif
+if INCLUDE_PFB
+TYPE1FILES += $(PFBFILES)
+endif
 
 TESTTYPE1FILES = \
 	PSDBThaiText-BoldOblique.pfb \
