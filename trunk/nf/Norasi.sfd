@@ -22,13 +22,15 @@ ScriptLang: 3
  1 DFLT 1 dflt 
  1 thai 1 dflt 
  1 latn 1 dflt 
+TableOrder: GSUB 1
+	'liga'
 LangName: 1033 "Copyright +AKkA 1999, The National Font Project (v.beta ). Yannis Haralambous, Virach Sornlertlamvanich and Anutara Tantraporn. All rights reserved.+AAoACgAA-Modified by TLWG+AAoA" "" "" "TheNationalFontProject(v.beta).YannisHaralambous,VirachSornlertlamvanichandAnutaraTantraporn: Norasi: 1999" "" "" "" "Norasi is a trademark of the The National Font Project (v.beta ). Yannis Haralambous, Virach Sornlertlamvanich and Anutara Tantraporn." "TLWG" "Yannis Haralambous, Virach Sornlertlamvanich and Anutara Tantraporn" "This font was developed under the National Font Project at NECTEC as to be a free licensed font for Thai users and developers." "linux.thai.net" "" "Free" "" "" "Norasi" 
 Encoding: custom
 UnicodeInterp: none
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 32 8 11
+WinInfo: 216 8 8
 BeginPrivate: 11
 BlueValues 31 [-10 0 307 314 376 385 452 461]
 OtherBlues 11 [-163 -151]
@@ -2287,7 +2289,7 @@ EndChar
 StartChar: L
 Encoding: 76 76 44
 Width: 417
-Flags: HMWO
+Flags: HMW
 HStem: 0 27<193 252.5> 0 13<167 376> 439 13<8 8 201 201>
 VStem: 68 69<54 385>
 Back
@@ -14286,6 +14288,8 @@ Fore
  255 307 l 1
  255 337 257 367 268 395 c 1
 EndSplineSet
+Ligature: 0 0 'liga' f f
+LCarets: 0 65535 '    ' 1 0 
 EndChar
 StartChar: fi
 Encoding: 259 64257 224
@@ -14326,6 +14330,8 @@ Fore
  310 27 315 13 356 10 c 1
  356 0 l 1
 EndSplineSet
+Ligature: 0 0 'liga' f i
+LCarets: 0 65535 '    ' 1 0 
 EndChar
 StartChar: fl
 Encoding: 260 64258 225
@@ -14422,6 +14428,8 @@ Fore
  256 307 l 1
  257 337 262 367 274 393 c 1
 EndSplineSet
+LCarets: 0 65535 '    ' 1 0 
+Ligature: 0 0 'liga' f l
 EndChar
 StartChar: ffl
 Encoding: 262 64260 227
@@ -14478,6 +14486,8 @@ Fore
  257 307 l 1
  257 337 260 367 271 394 c 1
 EndSplineSet
+LCarets: 0 65535 '    ' 2 0 0 
+Ligature: 0 0 'liga' f f i
 EndChar
 StartChar: dotlessi
 Encoding: 263 305 228
@@ -14501,9 +14511,11 @@ Fore
  122 25 126 13 173 10 c 1
  173 0 l 1
 EndSplineSet
+LCarets: 0 65535 '    ' 2 0 0 
+Ligature: 0 0 'liga' f f l
 EndChar
-StartChar: dotlessj
-Encoding: 264 63166 229
+StartChar: uni0237
+Encoding: 264 567 229
 Width: 189
 Flags: MW
 VStem: 74 58<-40 236>
