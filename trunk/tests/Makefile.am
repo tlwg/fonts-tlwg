@@ -1,5 +1,12 @@
 TESTS_ENVIRONMENT = top_builddir=$(top_builddir);top_srcdir=$(top_srcdir)
 
+EXTRA_DIST = \
+	test-ttf.sh \
+	test-pfa.sh \
+	test-pfb.sh \
+	test-otf.sh \
+	gen-pdfsample.sh
+
 CONFTESTS=
 if INCLUDE_TESTFONT
 if INCLUDE_TTF
