@@ -19,16 +19,17 @@ install-data-hook:
 if INCLUDE_TTF
 	mkdir -p $(DESTDIR)$(ttfdir)
 	cd $(DESTDIR)$(ttfdir);                                        \
-	$(ttmkfdir);                                                   \
-	mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
+	  $(ttmkfdir);                                                 \
+	  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
+	$(fccache) -f $(DESTDIR)$(ttfdir)
 endif
 if INCLUDE_TYPE1
 	mkdir -p $(DESTDIR)$(type1dir)
 	cd $(DESTDIR)$(type1dir);                                      \
 	  $(type1inst);                                                \
 	  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
+	$(fccache) -f $(DESTDIR)$(type1dir)
 endif
-	$(fccache)
 #	@if test -z "$(DESTDIR)" ; then                                       \
 #if INCLUDE_TTF
 #	  mkdir -p $(DESTDIR)$(ttfdir);                                       \
@@ -77,5 +78,5 @@ if INCLUDE_TYPE1
 		$(RMDIR) $(DESTDIR)$(type1dir); \
 	fi
 endif
-	$(fccache)
+	$(fccache) -f || true
 
