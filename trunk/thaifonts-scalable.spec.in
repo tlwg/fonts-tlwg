@@ -80,13 +80,13 @@ mkdir -p $RPM_BUILD_ROOT
 # build the file list automagically into %{manifest}
 rm -f %{ttf_manifest} %{type1_manifest}
 find $RPM_BUILD_ROOT/${ttfdir} \
-	| grep '\.ttf$' \
-        | sed "1d;s,$RPM_BUILD_ROOT,," \
+	-name '*.ttf' \
+	-exec sed "s,$RPM_BUILD_ROOT,," '{}' ';' \
 	> %{ttf_manifest}
 
 find $RPM_BUILD_ROOT/${type1dir} \
-	| grep '\.pfb$' \
-        | sed "1d;s,$RPM_BUILD_ROOT,," \
+	-name '*.pfb' \
+	-exec sed "s,$RPM_BUILD_ROOT,," '{}' ';' \
 	> %{type1_manifest}
 
 %post -n thai-ttf
@@ -216,6 +216,10 @@ fi
 #%config
 
 %changelog
+* Thu Aug 07 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
+- Fix sed script in manifest generation, as suggested by
+  Supphachoke Santiwichaya <mrchoke@opentle.org>
+
 * Thu Jun 12 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
 - Make thai-ttf and thaipst1fonts mutually exclusive
 - Fix some descriptions
