@@ -4,8 +4,6 @@ EXTRA_DIST = ChangeLog.thai-ttf
 
 SUBDIRS = scripts nf db
 
-ttfdir = @ttfdir@
-type1dir = @type1dir@
 ttmkfdir = @TTMKFDIR@
 type1inst = @TYPE1INST@
 fccache = @FCCACHE@
