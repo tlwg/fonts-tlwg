@@ -1,0 +1,232 @@
+2003-09-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Version 0.3.91
+
+2003-09-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText*.sfd:
+	Fine tune upper/lower glyphs positions.
+
+2003-09-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText*.sfd:
+	Adjust positions of Thanthakhat.low, period, comma, colon, semicolon,
+	ellipsis, quotedbl, quotesingle, grave, quoteleft, quoteright,
+	quotedblleft, quotedblright.
+
+	* db/DBThaiText{,-Oblique}.sfd:
+	Scale glyphs of digits 0-9 up to upper-case height.
+	
+2003-09-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText{,-Oblique}.sfd:
+	Adjust right bearing of Tho Thahan, which appears ugly when combined
+	with lower vowels at small sizes.
+
+2003-08-28  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText-Bold{,Oblique}.sfd:
+	Fix combining characters' glyph width (to zero).
+
+2003-08-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda-{Bold,BoldOblique}.sfd:
+	Fix underscore (_) glyph.
+
+	* db/DBThaiText{,-Bold}.sfd:
+	Fix combining characters' glyph width (to zero).
+
+2003-08-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* thaifonts-scalable.spec.in:
+	Fix sed script in manifest generation, as suggested by
+	Supphachoke Santiwichaya <mrchoke@opentle.org>.
+	Prefer mkfontscale in install scripts.
+
+2003-07-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, Makefile.am:
+	Prefer mkfontscale if present, and use it for both type1 and ttf.
+	Always use -e option for mkfontdir.
+
+2003-07-03 Chanop Silpa-Anan <chanop@debian.org>
+	* *.sfd :
+	Change glyph names from PUA to Unicodename.variant.
+	Glyph 0x007f has name .notdef and unicodename U+007F.
+	* Norasi*.sfd:
+	Glyph DEL locates at 0xff with unicodename U+F17B.
+	Thaipaiyalnoi bug in Norasi-Bold.
+
+2003-06-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Make the absence of pfaedit an error, as suggested by 
+	Vee Satayamas <virasj@users.sf.net>.
+
+2003-06-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* thaifonts-scalable.spec.in:
+	Make thai-ttf and thaipst1fonts mutually exclusive.
+	Fix some descriptions.
+
+2003-06-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Version 0.3.90
+
+2003-06-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* thaifonts-scalable.spec.in:
+	Apply spec for creating 2 sperate RPM packages (thai-ttf,
+	thaipst1fonts), as submitted by Vee Satayamas <virasj@users.sf.net>.
+
+2003-06-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Makefile.am, db/Makefile.am:
+	Add *.pfb to DISTCLEANFILES.
+
+	* scripts/Makefile.am:
+	Fix typo, as reported by Vee Satayamas <virasj@users.sf.net>.
+
+	* configure.in:
+	Use $prefix in $ttfdir and $type1dir to pass 'make distcheck'.
+
+	* COPYING:
+	Fix wording as suggested by Vee Satayamas <virasj@users.sf.net>.
+
+	* nf/Norasi*.sfd:
+	Adjust BlueValues for base-line stems to be narrower. Add BlueScale.
+	Add missing hints for base-line stems of 'a', 'b', sara-o.
+
+2003-06-01  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* Makefile.am:
+	Additional fix to avoid ambiguity with automake.
+
+2003-05-31  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* Makefile.am:
+	Fix typo in make rules, as suggested by Vee Satayamas
+	<virasj@users.sf.net>.
+
+2003-05-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	Rearrange encoding for more proper 8-bit Type1 fonts.
+
+	* nf/Garuda*.sfd:
+	Rearrange encoding for more proper 8-bit Type1 fonts.
+
+	* db/DBThaiText*.sfd:
+	Rearrange encoding for more proper 8-bit Type1 fonts.
+
+2003-05-26  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* Makefile.am:
+	Fix errors in multi-line rules.
+
+2003-05-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	Add BlueValues, OtherBlues, and ForceBold hints.
+	Apply autohint.
+
+	* db/DBThaiText*.sfd:
+	Add BlueValues, OtherBlues, and ForceBold hints.
+	Apply autohint.
+
+2003-05-24  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	Adjust sara-e and sara-ae height.
+	Add BlueValues, OtherBlues, and ForceBold hinting.
+	Apply autohint.
+
+2003-05-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* +scripts/gen-pfa.pe, +scripts/gen-pfb.pe,
+	  scripts/Makefile.am, scripts/gen.mk.in:
+	Add scripts for generating .pfa and .pfb.
+
+	* configure.in, Makefile.am, nf/Makefile.am, db/Makefile.am:
+	Use $(ttfdir) variable name instead of $(fontdir), so other kinds
+	of fonts can also be issued.
+
+	* configure.in, Makefile.am, nf/Makefile.am, db/Makefile.am:
+	Add conditions for Type1 fonts generation & installation.
+
+	* Makefile.am:
+	Add checking for package building, so font list/cache is not
+	generated in that case.
+
+2003-05-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	Edit U+25CC (dottedcircle) shape so the dots do not overlap.
+
+	* nf/Garuda*.sfd:
+	Add U+25CC (dottedcircle) glyph.
+
+	* db/DBThaiText*.sfd:
+	Add U+25CC (dottedcircle) glyph.
+
+2003-05-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	Edit TTF info: make PFM Family Sans-Serif, add TLWG to Copyright,
+	prepare for Version 1.1,  rename font names to be hyphen-separated
+	like those of Norasi, use "Oblique" instead of "Italic" in Style.
+
+	* nf/Makefile.am, nf/GarudaBold.sfd -> Garuda-Bold.sfd,
+	  nf/GarudaItalic.sfd -> nf/Garuda-Oblique.sfd,
+	  nf/GarudaBoldItalic.sfd -> nf/Garuda-BoldOblique.sfd:
+	Actually rename the font files.
+
+	* nf/Norasi-*.sfd:
+	Edit TTF info: add TLWG to Copyright, prepare for Version 1.1,
+	use "Oblique" instead of "Italic" in Style.
+
+	* nf/Makefile.am, 
+	  nf/Norasi-Italic.sfd -> nf/Norasi-Oblique.sfd,
+	  nf/Norasi-BoldItalic.sfd -> nf/Norasi-BoldOblique.sfd:
+	Actually rename the font files.
+
+	* db/DBThaiText*.sfd:
+	Edit TTF info: make PFM Family Sans-Serif, add TLWG to Copyright,
+	prepare for Version 1.1, rename font names to be hyphen-separated
+	like those of Norasi, use "Oblique" instead of "Italic" in Style.
+
+	* db/Makefile.am, db/DBThaiTextBold.sfd -> DBThaiText-Bold.sfd,
+	  db/DBThaiTextItalic.sfd -> db/DBThaiText-Oblique.sfd,
+	  db/DBThaiTextBoldItalic.sfd -> db/DBThaiText-BoldOblique.sfd:
+	Actually rename the font files.
+
+
+2003-05-11  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi.sfd, nf/Norasi-Bold.sfd, nf/Norasi-Italic.sfd,
+	  nf/Norasi-BoldItalic.sfd:
+	Rename U+25CC glyph to dottedcircle.
+
+2003-05-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiTextItalic.sfd, db/DBThaiTextBoldItalic.sfd:
+	Adjust combining characters positions.
+
+2003-05-01  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* nf/Norasi.sfd, nf/Norasi-Bold.sfd:
+	Edited circledash (U+25CC) and assigned the correct name.
+
+2003-02-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText.sfd, db/DBThaiTextBold.sfd,
+	  db/DBThaiTextItalic.sfd, db/DBThaiTextBoldItalic.sfd:
+	Scale up by 13% to conform to National Font spec.
+	Fix Fongman, AngkhanKhu, Khomut, Baht currency glyphs.
+
+2003-02-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* Create thaifonts-scalable project from thai-ttf 0.3.1
+
