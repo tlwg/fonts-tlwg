@@ -2,10 +2,20 @@
 
 	* nf/Garuda[-Bold].sfd:
 	Import Garuda family from its original Type 1 version provided by
-	Chanop Silpa-Anan, to get rid of estimated splines due to conversion
-	through TTF.
+	Chanop Silpa-Anan in cubic-spline branch, to get rid of estimated
+	splines due to conversion through TTF.
 
-	* nf/Garuda[-Bold]Oblique.sfd:
+	* nf/Garuda-[Bold]Oblique.sfd:
+	Generate skewed glyphs from upright versions.
+
+	* db/DBThaiText[-Bold].sfd:
+	Import DBThaiText from cubic-spline branch.
+	Redo previous editing: scale up 13%; adjust sizes of digits
+	and + < = > punctuation marks; change glyphs for quotedbl,
+	quotesingle and grave; fix Tho Thahan's right bearing;
+	fix combining characters' widths.
+
+	* db/DBThaiText-[Bold]Oblique.sfd:
 	Generate skewed glyphs from upright versions.
 
 2003-12-01  Poonlap Veerathanabutr <poonlap@linux.thai.net>
