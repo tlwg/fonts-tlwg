@@ -29,7 +29,7 @@ TYPE1FILES = \
 	Norasi.pfb
 
 MAINTAINERCLEANFILES = Makefile.in
-DISTCLEANFILES = *.ttf *.g2n
+DISTCLEANFILES = *.ttf *.g2n *.pfb
 
 EXTRA_DIST = $(FONTSOURCES)
 
