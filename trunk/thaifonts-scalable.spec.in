@@ -80,13 +80,13 @@ mkdir -p $RPM_BUILD_ROOT
 # build the file list automagically into %{manifest}
 rm -f %{ttf_manifest} %{type1_manifest}
 find $RPM_BUILD_ROOT/${ttfdir} \
-	-name '*.ttf' \
-	-exec sed "s,$RPM_BUILD_ROOT,," '{}' ';' \
+	-name '*.ttf' -print \
+	| sed "s,$RPM_BUILD_ROOT,," \
 	> %{ttf_manifest}
 
 find $RPM_BUILD_ROOT/${type1dir} \
-	-name '*.pfb' \
-	-exec sed "s,$RPM_BUILD_ROOT,," '{}' ';' \
+	-name '*.pfb' -print \
+	| sed "s,$RPM_BUILD_ROOT,," \
 	> %{type1_manifest}
 
 %post -n thai-ttf
