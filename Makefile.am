@@ -25,12 +25,12 @@ if INCLUDE_TYPE1
 	  mkfontdir;                                                          \
 endif
 	  $(fccache);                                                         \
-	else                                                                  \
+	@else                                                                 \
 	  echo "***" ;                                                        \
 	  echo "*** Warning: Seems to be binary package building." ;          \
 	  echo "***          So, font list/cache is not generated" ;          \
 	  echo "***" ;                                                        \
-	fi
+	@fi
 
 uninstall-hook:
 if INCLUDE_TTF
