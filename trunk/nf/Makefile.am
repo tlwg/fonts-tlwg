@@ -3,9 +3,9 @@ FONTSOURCES = \
 	Garuda-Bold.sfd \
 	Garuda-Oblique.sfd \
 	Garuda.sfd \
-	Norasi-BoldItalic.sfd \
+	Norasi-BoldOblique.sfd \
 	Norasi-Bold.sfd \
-	Norasi-Italic.sfd \
+	Norasi-Oblique.sfd \
 	Norasi.sfd
 
 FONTFILES = \
@@ -13,9 +13,9 @@ FONTFILES = \
 	Garuda-Bold.ttf \
 	Garuda-Oblique.ttf \
 	Garuda.ttf \
-	Norasi-BoldItalic.ttf \
+	Norasi-BoldOblique.ttf \
 	Norasi-Bold.ttf \
-	Norasi-Italic.ttf \
+	Norasi-Oblique.ttf \
 	Norasi.ttf
 
 MAINTAINERCLEANFILES = Makefile.in
