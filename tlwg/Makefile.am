@@ -6,7 +6,8 @@ FONTSOURCES = \
 	PseudoMono.sfd \
 	PseudoMono-Bold.sfd \
 	PseudoMono-Oblique.sfd \
-	PseudoMono-BoldOblique.sfd
+	PseudoMono-BoldOblique.sfd \
+	Purisa.sfd
 
 TTFFILES = \
 	TlwgMono.ttf \
@@ -16,7 +17,8 @@ TTFFILES = \
 	PseudoMono.ttf \
 	PseudoMono-Bold.ttf \
 	PseudoMono-Oblique.ttf \
-	PseudoMono-BoldOblique.ttf
+	PseudoMono-BoldOblique.ttf \
+	Purisa.ttf
 
 TESTTTFFILES = \
 	TTFTlwgMono.ttf \
@@ -26,7 +28,8 @@ TESTTTFFILES = \
 	TTFPseudoMono.ttf \
 	TTFPseudoMono-Bold.ttf \
 	TTFPseudoMono-Oblique.ttf \
-	TTFPseudoMono-BoldOblique.ttf
+	TTFPseudoMono-BoldOblique.ttf \
+	TTFPurisa.ttf
 
 OTFFILES = \
 	TlwgMono.otf \
@@ -36,7 +39,8 @@ OTFFILES = \
 	PseudoMono.otf \
 	PseudoMono-Bold.otf \
 	PseudoMono-Oblique.otf \
-	PseudoMono-BoldOblique.otf
+	PseudoMono-BoldOblique.otf \
+	Purisa.otf
 
 TESTOTFFILES = \
 	OTFTlwgMono.otf \
@@ -46,7 +50,8 @@ TESTOTFFILES = \
 	OTFPseudoMono.otf \
 	OTFPseudoMono-Bold.otf \
 	OTFPseudoMono-Oblique.otf \
-	OTFPseudoMono-BoldOblique.otf
+	OTFPseudoMono-BoldOblique.otf \
+	OTFPurisa.otf
 
 PFAFILES = \
 	TlwgMono.pfa \
@@ -56,7 +61,8 @@ PFAFILES = \
 	PseudoMono.pfa \
 	PseudoMono-Bold.pfa \
 	PseudoMono-Oblique.pfa \
-	PseudoMono-BoldOblique.pfa
+	PseudoMono-BoldOblique.pfa \
+	Purisa.pfa
 
 PFBFILES = \
 	TlwgMono.pfb \
@@ -66,7 +72,8 @@ PFBFILES = \
 	PseudoMono.pfb \
 	PseudoMono-Bold.pfb \
 	PseudoMono-Oblique.pfb \
-	PseudoMono-BoldOblique.pfb
+	PseudoMono-BoldOblique.pfb \
+	Purisa.pfb
 
 TYPE1FILES =
 if INCLUDE_PFA
@@ -84,7 +91,8 @@ TESTTYPE1FILES = \
 	PSPseudoMono.pfb \
 	PSPseudoMono-Bold.pfb \
 	PSPseudoMono-Oblique.pfb \
-	PSPseudoMono-BoldOblique.pfb
+	PSPseudoMono-BoldOblique.pfb \
+	PSPurisa.pfb
 
 MAINTAINERCLEANFILES = Makefile.in
 CLEANFILES = *.ttf *.g2n *.pfb *.pfa *.afm *.pfm *.otf *.enc *.tfm
