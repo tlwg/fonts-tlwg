@@ -1,9 +1,11 @@
 %define name @PACKAGE@
 %define version @VERSION@
 %define release 1
-%define manifest %{_builddir}/%{name}-%{version}-%{release}.manifest
+%define ttf_manifest %{_builddir}/%{name}-ttf-%{version}-%{release}.manifest
+%define type1_manifest %{_builddir}/%{name}-type1-%{version}-%{release}.manifest
 %define fontroot /usr/share/fonts
-%define fontdir %{fontroot}/th/TTF
+%define ttfdir %{fontroot}/th/TTF
+%define type1dir %{fontroot}/th/Type1
 
 Name: %{name}
 Version: %{version}
@@ -12,26 +14,54 @@ License: freely redistributable
 Group: Extensions/Thai/font
 Source: %{name}-%{version}.tar.gz
 URL: http://linux.thai.net/cvs/
-Vendor: NECTEC
-Packager: Theppitak Karoonboonyanan <thep@links.nectec.or.th>
-Requires: XFree86 > 3.2
+Vendor: NECTEC , DearBook , TLWG
+Packager: Theppitak Karoonboonyanan <thep@linux.thai.net>
+Requires: XFree86 > 3.2 
 Prereq: chkfontpath
 BuildArch: noarch
 BuildRoot: /var/tmp/%{name}-%{version}
 Summary: A collection of Thai scalable fonts.
 
 %description
-This package collects Thai scalable fonts available in public domain.
+This package collects Thai scalable fonts available in free licenses.
 
 Thai scalafonts fonts included here are
 - Norasi and Garuda from the National Font project
 - DB Thai Text from DearBook
 
+%package -n thai-ttf
+Summary: A collection of Thai truetype fonts.
+Requires: XFree86 > 3.2  XFree86-font-utils 
+Group: Extensions/Thai/font
+
+%description -n thai-ttf
+This package collects Thai truetype fonts available in public domain.
+
+Thai scalafonts fonts included here are
+- Norasi and Garuda from the National Font project
+- DB Thai Text from DearBook
+
+%package -n thaipst1fonts
+Summary: A collection of Thai Type1 fonts.
+Requires: XFree86 > 3.2 type1inst XFree86-font-utils
+Group: Extensions/Thai/font
+
+%description -n thaipst1fonts
+This package collects Thai Type1 fonts available in public domain.
+
+Thai scalafonts fonts included here are
+- Norasi and Garuda from the National Font project
+- DB Thai Text from DearBook
+
+
 %prep
 %setup
 
 %build
-%configure --with-fontdir=$RPM_BUILD_ROOT%{fontdir}
+%configure --with-ttfdir=$RPM_BUILD_ROOT%{ttfdir} \
+	--with-type1dir=$RPM_BUILD_ROOT%{type1dir} \
+	--enable-ttf=yes \
+	--enable-type1=yes
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -46,19 +76,19 @@ mkdir -p $RPM_BUILD_ROOT
 %define __os_install_post %{nil}
 
 # build the file list automagically into %{manifest}
+rm -f %{ttf_manifest} %{type1_manifest}
+find $RPM_BUILD_ROOT/${ttfdir} \
+	| grep '\.ttf$' \
+        | sed "1d;s,$RPM_BUILD_ROOT,," \
+	> %{ttf_manifest}
 
-cd $RPM_BUILD_ROOT
-rm -f %{manifest}
-find . -type d \
-        | sed '1,2d;s,^\.,\%attr(-\,root\,root) \%dir ,' >> %{manifest}
-find . -type f \
-        | sed '/fonts.scale/d;/fonts.dir/d;/encodings.dir/d' \
-        | sed 's,^\.,\%attr(-\,root\,root) ,' >> %{manifest}
-find . -type l \
-        | sed 's,^\.,\%attr(-\,root\,root) ,' >> %{manifest}
+find $RPM_BUILD_ROOT/${type1dir} \
+	| grep '\.pfb$' \
+        | sed "1d;s,$RPM_BUILD_ROOT,," \
+	> %{type1_manifest}
 
-%post
-cd %{fontdir}
+%post -n thai-ttf
+cd %{ttfdir}
 if which ttmkfdir > /dev/null 2>&1; then
   if ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir > /dev/null 2>&1
   then
@@ -72,19 +102,19 @@ elif which mkfontscale > /dev/null 2>&1; then
   mkfontscale
 fi
 mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
-if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{fontdir} > /dev/null)
+if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{ttfdir} > /dev/null)
 then
-	/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{fontdir}
+	/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{ttfdir}
 fi
-/usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{fontdir}
+/usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{ttfdir}
 
 # Add dir to XftConfig
 if test -f /etc/X11/XftConfig && \
-   ! grep -e "dir *\"%{fontdir}\"" /etc/X11/XftConfig > /dev/null; then
-  echo "dir \"%{fontdir}\"" > /tmp/tmp.$$
+   ! grep -e "dir *\"%{ttfdir}\"" /etc/X11/XftConfig > /dev/null; then
+  echo "dir \"%{ttfdir}\"" > /tmp/tmp.$$
   cat /etc/X11/XftConfig >> /tmp/tmp.$$
   mv -f /tmp/tmp.$$ /etc/X11/XftConfig
-  xftcache %{fontdir}
+  xftcache %{ttfdir}
 fi
 
 # Refresh fontconfig cache
@@ -98,8 +128,8 @@ if which gnome-font-install > /dev/null 2>&1; then
 fi
 
 
-%postun
-cd %{fontdir}
+%postun -n thai-ttf
+cd %{ttfdir}
 rm -f fonts.scale fonts.dir encodings.dir
 if which ttmkfdir > /dev/null 2>&1; then
   if ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir > /dev/null 2>&1
@@ -115,22 +145,22 @@ elif which mkfontscale > /dev/null 2>&1; then
 fi
 if test `head -1 fonts.scale` -gt 0; then
 	mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
-	if (/usr/sbin/chkfontpath --list | grep %{fontdir} > /dev/null)
+	if (/usr/sbin/chkfontpath --list | grep %{ttfdir} > /dev/null)
 	then
-		/usr/sbin/chkfontpath --remove %{fontdir}
+		/usr/sbin/chkfontpath --remove %{ttfdir}
 	fi
-	/usr/sbin/chkfontpath --add %{fontdir}
+	/usr/sbin/chkfontpath --add %{ttfdir}
 else
 	rm -f fonts.scale
-	find %{fontdir} -name fonts.cache-1 -exec rm {} \;
-	cd /; rmdir %{fontdir}
-	/usr/sbin/chkfontpath --remove %{fontdir}
+	find %{ttfdir} -name fonts.cache-1 -exec rm {} \;
+	cd /; rmdir %{ttfdir}
+	/usr/sbin/chkfontpath --remove %{ttfdir}
 
 	# Remove dir from XftConfig
 	if test -f /etc/X11/XftConfig; then
-		grep -v "dir *\"%{fontdir}\"" /etc/X11/XftConfig > /tmp/tmp.$$
+		grep -v "dir *\"%{ttfdir}\"" /etc/X11/XftConfig > /tmp/tmp.$$
 		mv -f /tmp/tmp.$$ /etc/X11/XftConfig
-		xftcache %{fontdir}
+		xftcache %{ttfdir}
 	fi
 fi
 
@@ -144,18 +174,52 @@ if which gnome-font-install > /dev/null 2>&1; then
   gnome-font-install -q
 fi
 
+%post -n thaipst1fonts
+cd $RPM_BUILD_ROOT%{type1dir}
+type1inst >/dev/null 2>&1
+mkfontdir
+if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{type1dir}) ; then
+	/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{type1dir}
+fi
+/usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{type1dir}
+
+%postun -n thaipst1fonts
+cd $RPM_BUILD_ROOT%{type1dir}
+rm -f type1inst.log Fontmap fonts.scale fonts.dir
+type1inst >/dev/null 2>&1
+if test -f Fontmap; then
+	mkfontdir
+	if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{type1dir}) ; then
+		/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{type1dir}
+	fi
+	/usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{type1dir}
+else
+	rm -f type1inst.log Fontmap.bak fonts.scale.bak
+	cd $RPM_BUILD_ROOT; rmdir $RPM_BUILD_ROOT%{type1dir}
+	/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{type1dir}
+fi
+
+
 
 %clean
-rm -f %{manifest}
-rm -rf $RPM_BUILD_ROOT
+#rm -f %{ttf_manifest}
+#rm -f %{type1_manifest}
+#rm -rf $RPM_BUILD_ROOT
 
-%files -f %{manifest}
+%files -n thai-ttf -f %{ttf_manifest}
+%files -n thaipst1fonts -f %{type1_manifest}
 %defattr(-,root,root)
 #%doc README
 #%docdir
 #%config
 
 %changelog
+* Tue Jun 03 2003 Vee Satayamas <virasj@users.sf.net>
+- Use sed insteads of Ruby
+
+* Mon Jun 02 2003 Vee Satayamas <virasj@users.sf.net>
+- Split the package into thai-ttf and thaipst1font
+
 * Tue Dec 24 2002 Theppitak Karoonboonyanan <thep@linux.thai.net>
 + 0.3.1-1
 - Version 0.3.1
