@@ -41,7 +41,7 @@ AC_ARG_ENABLE(testfont,
               [  --enable-testfont       enable font generation with prefix [[TTF,OTF,PS]] [[default=no]]],
               , enable_testfont="no")
 AC_ARG_WITH(testfontdir,
-  [  --with-testfontdir=DIR       font directory in DIR [\$HOME/.fonts/testfont]],
+  [  --with-testfontdir=DIR  font directory in DIR [$HOME/.fonts/testfont]],
   [otfdir="$withval"], [otfdir=\$\{HOME\}/.fonts/testfont])
 AC_MSG_CHECKING(--with-testfontdir)
 AC_MSG_RESULT("$testfontdir")
