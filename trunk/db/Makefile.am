@@ -57,8 +57,6 @@ if INCLUDE_OTF
 otf_DATA = $(OTFFILES)
 endif
 
-testfontdir = /dev/null
-
 if INCLUDE_TESTFONT
 testfont_DATA = $(TESTTTFFILES)  $(TESTTYPE1FILES) $(TESTOTFFILES)
 endif
