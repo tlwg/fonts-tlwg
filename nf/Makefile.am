@@ -3,10 +3,8 @@ FONTSOURCES = \
 	Garuda-Bold.sfd \
 	Garuda-Oblique.sfd \
 	Garuda.sfd \
-	Norasi-BoldItalic.sfd \
 	Norasi-BoldOblique.sfd \
 	Norasi-Bold.sfd \
-	Norasi-Italic.sfd \
 	Norasi-Oblique.sfd \
 	Norasi.sfd
 
@@ -15,10 +13,8 @@ TTFFILES = \
 	Garuda-Bold.ttf \
 	Garuda-Oblique.ttf \
 	Garuda.ttf \
-	Norasi-BoldItalic.ttf \
 	Norasi-BoldOblique.ttf \
 	Norasi-Bold.ttf \
-	Norasi-Italic.ttf \
 	Norasi-Oblique.ttf \
 	Norasi.ttf
 
@@ -27,10 +23,8 @@ TESTTTFFILES = \
 	TTFGaruda-Bold.ttf \
 	TTFGaruda-Oblique.ttf \
 	TTFGaruda.ttf \
-	TTFNorasi-BoldItalic.ttf \
 	TTFNorasi-BoldOblique.ttf \
 	TTFNorasi-Bold.ttf \
-	TTFNorasi-Italic.ttf \
 	TTFNorasi-Oblique.ttf \
 	TTFNorasi.ttf
 
@@ -39,10 +33,8 @@ OTFFILES = \
 	Garuda-Bold.otf \
 	Garuda-Oblique.otf \
 	Garuda.otf \
-	Norasi-BoldItalic.otf \
 	Norasi-BoldOblique.otf \
 	Norasi-Bold.otf \
-	Norasi-Italic.otf \
 	Norasi-Oblique.otf \
 	Norasi.otf
 
@@ -51,10 +43,8 @@ TESTOTFFILES = \
 	OTFGaruda-Bold.otf \
 	OTFGaruda-Oblique.otf \
 	OTFGaruda.otf \
-	OTFNorasi-BoldItalic.otf \
 	OTFNorasi-BoldOblique.otf \
 	OTFNorasi-Bold.otf \
-	OTFNorasi-Italic.otf \
 	OTFNorasi-Oblique.otf \
 	OTFNorasi.otf
 
@@ -63,10 +53,8 @@ TYPE1FILES = \
 	Garuda-Bold.pfb \
 	Garuda-Oblique.pfb \
 	Garuda.pfb \
-	Norasi-BoldItalic.pfb \
 	Norasi-BoldOblique.pfb \
 	Norasi-Bold.pfb \
-	Norasi-Italic.pfb \
 	Norasi-Oblique.pfb \
 	Norasi.pfb
 
@@ -75,10 +63,8 @@ TESTTYPE1FILES = \
 	PSGaruda-Bold.pfb \
 	PSGaruda-Oblique.pfb \
 	PSGaruda.pfb \
-	PSNorasi-BoldItalic.pfb \
 	PSNorasi-BoldOblique.pfb \
 	PSNorasi-Bold.pfb \
-	PSNorasi-Italic.pfb \
 	PSNorasi-Oblique.pfb \
 	PSNorasi.pfb
 
