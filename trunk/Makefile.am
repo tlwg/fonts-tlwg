@@ -6,7 +6,7 @@ SUBDIRS = scripts nf db
 
 ttfdir = @ttfdir@
 type1dir = @type1dir@
-mkfontscale = @MKFONTSCALE@
+ttmkfdir = @TTMKFDIR@
 type1inst = @TYPE1INST@
 fccache = @FCCACHE@
 
@@ -21,28 +21,28 @@ install-data-hook:
 if INCLUDE_TTF
 	mkdir -p $(DESTDIR)$(ttfdir)
 	cd $(DESTDIR)$(ttfdir);                                        \
-	$(mkfontscale);                                                \
+	$(ttmkfdir);                                                   \
 	mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
 endif
 if INCLUDE_TYPE1
 	mkdir -p $(DESTDIR)$(type1dir)
 	cd $(DESTDIR)$(type1dir);                                      \
 	  $(type1inst);                                                \
-	  mkfontdir
+	  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
 endif
 	$(fccache)
 #	@if test -z "$(DESTDIR)" ; then                                       \
 #if INCLUDE_TTF
 #	  mkdir -p $(DESTDIR)$(ttfdir);                                       \
 #	  cd $(DESTDIR)$(ttfdir);                                             \
-#	  $(mkfontscale);                                                     \
+#	  $(ttmkfdir);                                                        \
 #	  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings;                    \
 #endif
 #if INCLUDE_TYPE1
 #	  mkdir -p $(DESTDIR)$(type1dir);                                     \
 #	  cd $(DESTDIR)$(type1dir);                                           \
 #	  $(type1inst);                                                       \
-#	  mkfontdir;                                                          \
+#	  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings;                    \
 #endif
 #	  $(fccache);                                                         \
 #	@else                                                                 \
@@ -58,7 +58,7 @@ if INCLUDE_TTF
 	$(RM) $(DESTDIR)$(ttfdir)/fonts.scale
 	$(RM) $(DESTDIR)$(ttfdir)/encodings.dir
 	cd $(DESTDIR)$(ttfdir); \
-	$(mkfontscale); \
+	$(ttmkfdir); \
 	if test `head -1 fonts.scale` -gt 0; then \
 		mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings; \
 	else \
@@ -73,7 +73,7 @@ if INCLUDE_TYPE1
 	cd $(DESTDIR)$(type1dir); \
 	$(type1inst); \
 	if test `head -1 fonts.scale` -gt 0; then \
-		mkfontdir; \
+		mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings; \
 	else \
 		$(RM) $(DESTDIR)$(type1dir)/fonts.scale; \
 		$(RMDIR) $(DESTDIR)$(type1dir); \
