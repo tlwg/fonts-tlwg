@@ -4,7 +4,7 @@ FONTSOURCES = \
 	DBThaiText-Oblique.sfd \
 	DBThaiText.sfd
 
-FONTFILES = \
+TTFFILES = \
 	DBThaiText-BoldOblique.ttf \
 	DBThaiText-Bold.ttf \
 	DBThaiText-Oblique.ttf \
@@ -15,7 +15,7 @@ DISTCLEANFILES = *.ttf *.g2n
 
 EXTRA_DIST = $(FONTSOURCES)
 
-font_DATA = $(FONTFILES)
+ttf_DATA = $(TTFFILES)
 
 include @top_builddir@/scripts/gen.mk
 

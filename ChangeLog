@@ -4,6 +4,10 @@
 	  scripts/Makefile.am, scripts/gen.mk.in:
 	Add scripts for generating .pfa and .pfb.
 
+	* configure.in, Makefile.am, nf/Makefile.am, db/Makefile.am:
+	Use $(ttfdir) variable name instead of $(fontdir), so other kinds
+	of fonts can also be issued.
+
 2003-05-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* nf/Norasi*.sfd:
