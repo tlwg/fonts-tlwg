@@ -91,7 +91,9 @@ find $RPM_BUILD_ROOT/${type1dir} \
 
 %post -n thai-ttf
 cd %{ttfdir}
-if which ttmkfdir > /dev/null 2>&1; then
+if which mkfontscale > /dev/null 2>&1; then
+  mkfontscale -e tis620-0 -e tis620-2
+elif which ttmkfdir > /dev/null 2>&1; then
   if ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir > /dev/null 2>&1
   then
     ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir -o fonts.scale
@@ -100,8 +102,6 @@ if which ttmkfdir > /dev/null 2>&1; then
     ttmkfdir > fonts.scale
     # ttmkfdir 1
   fi
-elif which mkfontscale > /dev/null 2>&1; then
-  mkfontscale
 fi
 mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
 if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{ttfdir} > /dev/null)
@@ -133,7 +133,9 @@ fi
 %postun -n thai-ttf
 cd %{ttfdir}
 rm -f fonts.scale fonts.dir encodings.dir
-if which ttmkfdir > /dev/null 2>&1; then
+if which mkfontscale > /dev/null 2>&1; then
+  mkfontscale -e tis620-0 -e tis620-2
+elif which ttmkfdir > /dev/null 2>&1; then
   if ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir > /dev/null 2>&1
   then
     ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir -o fonts.scale
@@ -142,8 +144,6 @@ if which ttmkfdir > /dev/null 2>&1; then
     ttmkfdir > fonts.scale
     # ttmkfdir 1
   fi
-elif which mkfontscale > /dev/null 2>&1; then
-  mkfontscale
 fi
 if test `head -1 fonts.scale` -gt 0; then
 	mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
@@ -178,8 +178,12 @@ fi
 
 %post -n thaipst1fonts
 cd $RPM_BUILD_ROOT%{type1dir}
-type1inst >/dev/null 2>&1
-mkfontdir
+if which mkfontscale > /dev/null 2>&1; then
+  mkfontscale -e tis620-0 -e tis620-2
+  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
+else
+  type1inst >/dev/null 2>&1
+fi
 if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{type1dir}) ; then
 	/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{type1dir}
 fi
@@ -188,16 +192,21 @@ fi
 %postun -n thaipst1fonts
 cd $RPM_BUILD_ROOT%{type1dir}
 rm -f type1inst.log Fontmap fonts.scale fonts.dir
-type1inst >/dev/null 2>&1
-if test -f Fontmap; then
-	mkfontdir
+if which mkfontscale > /dev/null 2>&1; then
+  mkfontscale -e tis620-0 -e tis620-2
+  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
+else
+  type1inst >/dev/null 2>&1
+fi
+if test `head -1 fonts.scale` -gt 0; then
+	mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
 	if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{type1dir}) ; then
 		/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{type1dir}
 	fi
 	/usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{type1dir}
 else
-	rm -f type1inst.log Fontmap.bak fonts.scale.bak
-	cd $RPM_BUILD_ROOT; rmdir $RPM_BUILD_ROOT%{type1dir}
+	rm -f type1inst.log Fontmap.bak fonts.scale.bak fonts.scale
+	rmdir $RPM_BUILD_ROOT%{type1dir}
 	/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{type1dir}
 fi
 
@@ -219,6 +228,7 @@ fi
 * Thu Aug 07 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
 - Fix sed script in manifest generation, as suggested by
   Supphachoke Santiwichaya <mrchoke@opentle.org>
+- Prefer mkfontscale
 
 * Thu Jun 12 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
 - Make thai-ttf and thaipst1fonts mutually exclusive
