@@ -18,8 +18,76 @@ TTFWidth: 5
 Panose: 2 11 6 4 2 2 2 2 2 4
 LineGap: 0
 VLineGap: 0
-ScriptLang: 1
+OS2WinAscent: 0
+OS2WinAOffset: 1
+OS2WinDescent: 0
+OS2WinDOffset: 1
+ScriptLang: 3
  1 latn 1 dflt 
+ 1 thai 4 KUY  PAL  THA  dflt 
+ 1 thai 1 PAL  
+ContextSub: glyph 0 2 ' RQD' 0 0 0 1
+ String: 15 uni0E0D uni0E10
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 'nds0'
+EndFPST
+ChainSub: coverage 0 1 'ccmp' 0 0 0 1
+ 2 0 0
+  Coverage: 19 uni0E4B uni0E4B.low
+  Coverage: 7 uni0E4D
+ 2
+  SeqLookup: 0 'amni'
+  SeqLookup: 1 'G006'
+EndFPST
+ChainSub: coverage 0 1 'ccmp' 0 0 0 1
+ 2 0 0
+  Coverage: 19 uni0E4A uni0E4A.low
+  Coverage: 7 uni0E4D
+ 2
+  SeqLookup: 0 'amni'
+  SeqLookup: 1 'G005'
+EndFPST
+ChainSub: coverage 0 1 'ccmp' 0 0 0 1
+ 2 0 0
+  Coverage: 19 uni0E49 uni0E49.low
+  Coverage: 7 uni0E4D
+ 2
+  SeqLookup: 0 'amni'
+  SeqLookup: 1 'G004'
+EndFPST
+ChainSub: coverage 0 1 'ccmp' 0 0 0 1
+ 2 0 0
+  Coverage: 19 uni0E48 uni0E48.low
+  Coverage: 7 uni0E4D
+ 2
+  SeqLookup: 0 'amni'
+  SeqLookup: 1 'G003'
+EndFPST
+ChainSub: coverage 0 1 'ccmp' 0 0 0 1
+ 1 0 1
+  Coverage: 15 uni0E0D uni0E10
+  FCoverage: 23 uni0E38 uni0E39 uni0E3A
+ 1
+  SeqLookup: 0 'ndsc'
+EndFPST
+ChainSub: coverage 0 1 'ccmp' 0 0 0 1
+ 1 2 0
+  Coverage: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
+  BCoverage: 23 uni0E38 uni0E39 uni0E3A
+  BCoverage: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
+ 1
+  SeqLookup: 0 'loww'
+EndFPST
+ChainSub: coverage 0 1 'ccmp' 0 0 0 1
+ 1 1 0
+  Coverage: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
+  BCoverage: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
+ 1
+  SeqLookup: 0 'loww'
+EndFPST
+GenTags: 8 sb'loww' sb'ndsc' sb'amni' sb'G003' sb'G004' sb'G005' sb'G006' sb'nds0'
 LangName: 1033 "" "" "Regular" "Garuda" 
 Encoding: compacted
 OldEncoding: iso8859_1
@@ -27,12 +95,13 @@ UnicodeInterp: none
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 168 8 9
+WinInfo: 224 8 7
 BeginPrivate: 3
 BlueValues 31 [-17 0 693 709 788 792 957 974]
 OtherBlues 11 [-281 -266]
 ForceBold 5 false
 EndPrivate
+AnchorClass: "AboveBase" mark 0 1 1 0 "BelowBase" mark 0 1 2 0 "AboveMark" mkmk 0 1 3 1 "BelowMark" mkmk 0 1 4 1 
 BeginChars: 378 344
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -2727,7 +2796,7 @@ Fore
  -422 511 -357 573 -276 573 c 0
  -203 573 -184 535 -183 535 c 1
  -183 617 l 1
- -138 617 l 1
+ -138 617 l 5
  -138 490 l 2
  -138 489 -133 475 -131 460 c 0
  -129 446 -128 428 -128 425 c 0
@@ -2960,6 +3029,7 @@ Width: 0
 Flags: HW
 HStem: 434 119
 VStem: -158 45
+AnchorPoint: "AboveBase" -74 430 mark 0
 Fore
 -78 434 m 1
  -123 434 l 1
@@ -2968,12 +3038,14 @@ Fore
  -78 434 l 1
 EndSplineSet
 MinimumDistance: x0,-1 
+Substitution: 0 65534 'amni' uni0E4D
 EndChar
 StartChar: uni0E49.low
 Encoding: 140 63243 108
 OldEncoding: 63243
 Width: 0
 Flags: HW
+AnchorPoint: "AboveBase" -74 430 mark 0
 Fore
 2 535 m 0
  2 535 l 0
@@ -2993,6 +3065,7 @@ Fore
  -230 608 -230 548 -190 548 c 0
 EndSplineSet
 MinimumDistance: x9,-1 
+Substitution: 0 65534 'amni' uni0E4D
 EndChar
 StartChar: uni0E4A.low
 Encoding: 141 63244 109
@@ -3000,6 +3073,7 @@ OldEncoding: 63244
 Width: 0
 Flags: HW
 HStem: 493 16
+AnchorPoint: "AboveBase" -74 430 mark 0
 Fore
 16 542 m 1
  16 542 l 0
@@ -3027,6 +3101,7 @@ Fore
  -175 452 -174 491 -200 491 c 0
 EndSplineSet
 MinimumDistance: x11,-1 
+Substitution: 0 65534 'amni' uni0E4D
 EndChar
 StartChar: uni0E4B.low
 Encoding: 142 63245 110
@@ -3035,6 +3110,7 @@ Width: 0
 Flags: HW
 HStem: 504 41
 VStem: -151 47
+AnchorPoint: "AboveBase" -74 430 mark 0
 Fore
 -23 527 m 1
  -24 487 l 1
@@ -3051,6 +3127,7 @@ Fore
  -23 527 l 1
 EndSplineSet
 MinimumDistance: x10,-1 
+Substitution: 0 65534 'amni' uni0E4D
 EndChar
 StartChar: uni0E4C.low
 Encoding: 143 63246 111
@@ -3058,6 +3135,7 @@ OldEncoding: 63246
 Width: 0
 Flags: HW
 HStem: 435 29 523 29
+AnchorPoint: "AboveBase" -74 430 mark 0
 Fore
 42 656 m 1
  42 656 l 0
@@ -3282,7 +3360,7 @@ Flags: HW
 Fore
 -216 426 m 0
  -216 426 l 0
- -304 426 -304 560 -216 560 c 0
+ -304 426 -304 560 -216 560 c 4
  -127 560 -127 426 -216 426 c 0
 -216 457 m 0
  -167 457 -167 529 -216 529 c 0
@@ -4026,6 +4104,8 @@ Fore
  329 -128 330 -72 293 -72 c 0
 EndSplineSet
 MinimumDistance: x26,-1 x17,19 x17,18 
+Substitution: 0 65534 'nds0' uni0E0D.descless
+Substitution: 0 65534 'ndsc' uni0E0D.descless
 EndChar
 StartChar: uni0E0E
 Encoding: 174 3598 142
@@ -4034,6 +4114,7 @@ Width: 436
 Flags: HW
 HStem: 361 41
 VStem: 126 47 231 47 344 47
+AnchorPoint: "BelowBase" 362 -203 basechar 0
 Fore
 363 -106 m 1
  264 -207 l 1
@@ -4088,6 +4169,7 @@ Width: 433
 Flags: HW
 HStem: 361 41
 VStem: 125 47 191 47 341 47
+AnchorPoint: "BelowBase" 359 -203 basechar 0
 Fore
 362 -104 m 1
  362 -104 l 0
@@ -4219,6 +4301,8 @@ Fore
  69 -134 70 -127 70 -127 c 1
 EndSplineSet
 MinimumDistance: x22,-1 
+Substitution: 0 65534 'nds0' uni0E10.descless
+Substitution: 0 65534 'ndsc' uni0E10.descless
 EndChar
 StartChar: uni0E11
 Encoding: 177 3601 145
@@ -4651,6 +4735,7 @@ Width: 415
 Flags: HW
 HStem: 0 41
 VStem: 116 47 343 47
+AnchorPoint: "AboveBase" 277 430 basechar 0
 Fore
 347 58 m 1
  347 58 l 0
@@ -4718,6 +4803,7 @@ Width: 417
 Flags: HW
 HStem: 0 41
 VStem: 45 47 309 47
+AnchorPoint: "AboveBase" 279 430 basechar 0
 Fore
 347 0 m 1
  304 0 l 0
@@ -4789,6 +4875,7 @@ Width: 456
 Flags: HW
 HStem: 0 41
 VStem: 116 47 247 47 385 47
+AnchorPoint: "AboveBase" 318 430 basechar 0
 Fore
 380 0 m 1
  338 0 l 0
@@ -5521,6 +5608,8 @@ Encoding: 209 3633 177
 OldEncoding: 3633
 Width: 0
 Flags: HW
+AnchorPoint: "AboveMark" -74 645 basemark 0
+AnchorPoint: "AboveBase" -74 430 mark 0
 Fore
 51 530 m 1
  51 530 l 0
@@ -5585,6 +5674,7 @@ Fore
  230 0 l 1
 EndSplineSet
 MinimumDistance: x0,-1 
+MultipleSubs: 0 1 'ccmp' uni0E4D uni0E32
 EndChar
 StartChar: uni0E34
 Encoding: 212 3636 180
@@ -5593,6 +5683,8 @@ Width: 0
 Flags: HW
 HStem: 459 39 537 39
 VStem: -393 293
+AnchorPoint: "AboveMark" -74 645 basemark 0
+AnchorPoint: "AboveBase" -74 430 mark 0
 Fore
 -73 428 m 0
  -73 428 l 0
@@ -5614,6 +5706,8 @@ Width: 0
 Flags: HW
 HStem: 479 41 560 41
 VStem: -124 47
+AnchorPoint: "AboveMark" -74 645 basemark 0
+AnchorPoint: "AboveBase" -74 430 mark 0
 Fore
 -64 431 m 4
  -64 431 l 0
@@ -5641,6 +5735,8 @@ Width: 0
 Flags: HW
 HStem: 466 41 546 41
 VStem: -379 304
+AnchorPoint: "AboveMark" -74 645 basemark 0
+AnchorPoint: "AboveBase" -74 430 mark 0
 Fore
 -72 550 m 0
  -72 550 l 0
@@ -5673,6 +5769,8 @@ Width: 0
 Flags: HW
 HStem: 460 39 542 29
 VStem: -194 45 -116 45
+AnchorPoint: "AboveMark" -74 645 basemark 0
+AnchorPoint: "AboveBase" -74 430 mark 0
 Fore
 -59 429 m 0
  -59 429 l 0
@@ -5686,7 +5784,7 @@ Fore
  -150 572 -140 567 -133 563 c 0
  -125 558 -117 549 -117 549 c 1
  -117 625 l 1
- -73 625 l 1
+ -73 625 l 5
  -73 494 l 2
  -73 492 -66 475 -64 463 c 0
  -61 449 -59 433 -59 429 c 0
@@ -5703,13 +5801,14 @@ Encoding: 216 3640 184
 OldEncoding: 3640
 Width: 0
 Flags: HW
+AnchorPoint: "BelowBase" -74 -23 mark 0
 Fore
 -73 -204 m 1
  -123 -204 l 1
  -123 -129 l 1
  -123 -129 -139 -137 -160 -128 c 0
  -182 -119 -195 -106 -194 -74 c 0
- -194 -48 -174 -22 -131 -23 c 0
+ -194 -48 -174 -22 -131 -23 c 4
  -85 -24 -73 -51 -73 -83 c 2
  -73 -204 l 1
 -135 -98 m 0
@@ -5725,6 +5824,7 @@ Width: 0
 Flags: HW
 HStem: -216 35
 VStem: -240 40 -151 40
+AnchorPoint: "BelowBase" -74 -23 mark 0
 Fore
 -139 -170 m 1
  -139 -170 l 1
@@ -5754,6 +5854,7 @@ Encoding: 218 3642 186
 OldEncoding: 3642
 Width: 0
 Flags: HW
+AnchorPoint: "BelowBase" -74 -23 mark 0
 Fore
 -107 -128 m 0
  -159 -128 -159 -48 -107 -48 c 0
@@ -5779,66 +5880,66 @@ Fore
 366 203 m 6
 19 207 m 6
 204 377 m 6
-55 296 m 4
- 62 296 67 290 67 284 c 4
- 67 277 62 271 55 271 c 4
- 48 271 43 277 43 284 c 4
- 43 290 48 296 55 296 c 4
-121 355 m 4
- 128 355 134 350 134 343 c 4
- 134 337 128 331 121 331 c 4
- 115 331 109 337 109 343 c 4
- 109 350 115 355 121 355 c 4
-115 52 m 4
- 121 52 127 46 127 40 c 4
- 127 33 121 27 115 27 c 4
- 108 27 102 33 102 40 c 4
- 102 46 108 52 115 52 c 4
-50 111 m 4
- 57 111 62 106 62 99 c 4
- 62 92 57 87 50 87 c 4
- 43 87 38 92 38 99 c 4
- 38 106 43 111 50 111 c 4
-296 59 m 4
- 303 59 308 53 308 46 c 4
- 308 40 303 34 296 34 c 4
- 290 34 284 40 284 46 c 4
- 284 53 290 59 296 59 c 4
-350 119 m 4
- 357 119 362 114 362 107 c 4
- 362 100 357 95 350 95 c 4
- 343 95 338 100 338 107 c 4
- 338 114 343 119 350 119 c 4
-350 292 m 4
- 357 292 362 287 362 280 c 4
- 362 273 357 268 350 268 c 4
- 343 268 338 273 338 280 c 4
- 338 287 343 292 350 292 c 4
-288 351 m 4
- 295 351 301 345 301 338 c 4
- 301 332 295 326 288 326 c 4
- 282 326 276 332 276 338 c 4
- 276 345 282 351 288 351 c 4
-373 204 m 4
- 380 204 386 199 386 192 c 4
- 386 185 380 180 373 180 c 4
- 367 180 361 185 361 192 c 4
- 361 199 367 204 373 204 c 4
-26 208 m 4
- 33 208 38 203 38 196 c 4
- 38 190 33 184 26 184 c 4
- 19 184 14 190 14 196 c 4
- 14 203 19 208 26 208 c 4
-212 27 m 4
- 219 27 224 22 224 15 c 4
- 224 8 219 3 212 3 c 4
- 206 3 200 8 200 15 c 4
- 200 22 206 27 212 27 c 4
-211 378 m 4
- 218 378 223 372 223 366 c 4
- 223 359 218 354 211 354 c 4
- 205 354 199 359 199 366 c 4
- 199 372 205 378 211 378 c 4
+55 296 m 4,11,12
+ 62 296 67 290 67 284 c 4,13,14
+ 67 277 62 271 55 271 c 4,15,16
+ 48 271 43 277 43 284 c 4,17,18
+ 43 290 48 296 55 296 c 4,11,12
+121 355 m 4,19,20
+ 128 355 134 350 134 343 c 4,21,22
+ 134 337 128 331 121 331 c 4,23,24
+ 115 331 109 337 109 343 c 4,25,26
+ 109 350 115 355 121 355 c 4,19,20
+115 52 m 4,27,28
+ 121 52 127 46 127 40 c 4,29,30
+ 127 33 121 27 115 27 c 4,31,32
+ 108 27 102 33 102 40 c 4,33,34
+ 102 46 108 52 115 52 c 4,27,28
+50 111 m 4,35,36
+ 57 111 62 106 62 99 c 4,37,38
+ 62 92 57 87 50 87 c 4,39,40
+ 43 87 38 92 38 99 c 4,41,42
+ 38 106 43 111 50 111 c 4,35,36
+296 59 m 4,43,44
+ 303 59 308 53 308 46 c 4,45,46
+ 308 40 303 34 296 34 c 4,47,48
+ 290 34 284 40 284 46 c 4,49,50
+ 284 53 290 59 296 59 c 4,43,44
+350 119 m 4,51,52
+ 357 119 362 114 362 107 c 4,53,54
+ 362 100 357 95 350 95 c 4,55,56
+ 343 95 338 100 338 107 c 4,57,58
+ 338 114 343 119 350 119 c 4,51,52
+350 292 m 4,59,60
+ 357 292 362 287 362 280 c 4,61,62
+ 362 273 357 268 350 268 c 4,63,64
+ 343 268 338 273 338 280 c 4,65,66
+ 338 287 343 292 350 292 c 4,59,60
+288 351 m 4,67,68
+ 295 351 301 345 301 338 c 4,69,70
+ 301 332 295 326 288 326 c 4,71,72
+ 282 326 276 332 276 338 c 4,73,74
+ 276 345 282 351 288 351 c 4,67,68
+373 204 m 4,75,76
+ 380 204 386 199 386 192 c 4,77,78
+ 386 185 380 180 373 180 c 4,79,80
+ 367 180 361 185 361 192 c 4,81,82
+ 361 199 367 204 373 204 c 4,75,76
+26 208 m 4,83,84
+ 33 208 38 203 38 196 c 4,85,86
+ 38 190 33 184 26 184 c 4,87,88
+ 19 184 14 190 14 196 c 4,89,90
+ 14 203 19 208 26 208 c 4,83,84
+212 27 m 4,91,92
+ 219 27 224 22 224 15 c 4,93,94
+ 224 8 219 3 212 3 c 4,95,96
+ 206 3 200 8 200 15 c 4,97,98
+ 200 22 206 27 212 27 c 4,91,92
+211 378 m 4,99,100
+ 218 378 223 372 223 366 c 4,101,102
+ 223 359 218 354 211 354 c 4,103,104
+ 205 354 199 359 199 366 c 4,105,106
+ 199 372 205 378 211 378 c 4,99,100
 EndSplineSet
 EndChar
 StartChar: uni0E3F
@@ -6117,6 +6218,8 @@ OldEncoding: 3655
 Width: 0
 Flags: HW
 VStem: -51 50
+AnchorPoint: "AboveMark" -74 430 mark 0
+AnchorPoint: "AboveBase" -74 430 mark 0
 Fore
 -42 636 m 1
  -42 636 l 0
@@ -6154,20 +6257,24 @@ Width: 0
 Flags: HW
 HStem: 647 119
 VStem: -119 45
+AnchorPoint: "AboveMark" -74 645 mark 0
 Fore
--74 647 m 1
+-74 647 m 5
  -117 647 l 1
  -117 769 l 1
  -74 769 l 1
- -74 647 l 1
+ -74 647 l 5
 EndSplineSet
 MinimumDistance: x0,-1 
+Substitution: 0 65534 'loww' uni0E48.low
+Substitution: 0 65534 'amni' uni0E4D
 EndChar
 StartChar: uni0E49
 Encoding: 233 3657 198
 OldEncoding: 3657
 Width: 0
 Flags: HW
+AnchorPoint: "AboveMark" -74 645 mark 0
 Fore
 11 720 m 1
  11 720 l 0
@@ -6187,6 +6294,8 @@ Fore
  -189 759 -191 711 -156 711 c 0
 EndSplineSet
 MinimumDistance: x10,-1 
+Substitution: 0 65534 'loww' uni0E49.low
+Substitution: 0 65534 'amni' uni0E4D
 EndChar
 StartChar: uni0E4A
 Encoding: 234 3658 199
@@ -6194,6 +6303,7 @@ OldEncoding: 3658
 Width: 0
 Flags: HW
 HStem: 698 16
+AnchorPoint: "AboveMark" -74 645 mark 0
 Fore
 51 746 m 1
  51 746 l 0
@@ -6221,6 +6331,8 @@ Fore
  -181 695 -182 659 -158 659 c 0
 EndSplineSet
 MinimumDistance: x18,-1 
+Substitution: 0 65534 'loww' uni0E4A.low
+Substitution: 0 65534 'amni' uni0E4D
 EndChar
 StartChar: uni0E4B
 Encoding: 235 3659 200
@@ -6229,6 +6341,7 @@ Width: 0
 Flags: HW
 HStem: 711 40
 VStem: -121 46
+AnchorPoint: "AboveMark" -74 645 mark 0
 Fore
 -21 686 m 1
  -73 686 l 1
@@ -6245,6 +6358,8 @@ Fore
  -21 686 l 1
 EndSplineSet
 MinimumDistance: x0,-1 y5,3 y5,4 y11,9 y11,10 x8,6 x8,7 x11,1 x11,0 
+Substitution: 0 65534 'loww' uni0E4B.low
+Substitution: 0 65534 'amni' uni0E4D
 EndChar
 StartChar: uni0E4C
 Encoding: 236 3660 201
@@ -6252,6 +6367,7 @@ OldEncoding: 3660
 Width: 0
 Flags: HW
 HStem: 581 29 660 29
+AnchorPoint: "AboveMark" -74 645 mark 0
 Fore
 23 780 m 1
  23 780 l 0
@@ -6270,22 +6386,30 @@ Fore
  -161 660 -160 607 -124 607 c 0
 EndSplineSet
 MinimumDistance: x0,-1 
+Substitution: 0 65534 'loww' uni0E4C.low
 EndChar
 StartChar: uni0E4D
 Encoding: 237 3661 202
 OldEncoding: 3661
 Width: 0
 Flags: HW
+AnchorPoint: "AboveMark" -44 430 mark 0
+AnchorPoint: "AboveMark" -44 645 basemark 0
+AnchorPoint: "AboveBase" -44 430 mark 0
 Fore
 -111 413 m 0
  -111 413 l 0
- -199 413 -199 546 -111 546 c 0
+ -199 413 -199 546 -111 546 c 4
  -22 546 -22 413 -111 413 c 0
 -111 443 m 0
  -62 443 -62 516 -111 516 c 0
  -159 516 -159 443 -111 443 c 0
 EndSplineSet
 MinimumDistance: x1,-1 
+Substitution: 0 65534 'G006' uni0E4B
+Substitution: 0 65534 'G005' uni0E4A
+Substitution: 0 65534 'G004' uni0E49
+Substitution: 0 65534 'G003' uni0E48
 EndChar
 StartChar: uni0E4E
 Encoding: 238 3662 203
@@ -6294,8 +6418,9 @@ Width: 0
 Flags: HW
 HStem: 477 27<-87 -83.5> 673 22<-15.5 -13>
 VStem: -170 56
+AnchorPoint: "AboveBase" -21 430 mark 0
 Fore
--21 500 m 1
+-21 500 m 5
  -39 485 -66 477 -101 477 c 0
  -127 477 -145 482 -156 493 c 0
  -166 502 -170 513 -170 527 c 0
@@ -6319,7 +6444,7 @@ Fore
  -114 525 -112 520 -108 515 c 0
  -102 508 -93 504 -81 504 c 0
  -64 504 -52 508 -42 518 c 1
- -21 500 l 1
+ -21 500 l 5
 EndSplineSet
 MinimumDistance: x3,-1 
 EndChar
@@ -6849,14 +6974,14 @@ OldEncoding: 63256
 Width: 0
 Flags: HW
 Fore
--74 -395 m 1
+-74 -395 m 5
  -111 -395 l 1
  -111 -307 l 1
  -111 -307 -134 -314 -155 -305 c 0
  -176 -296 -189 -275 -184 -247 c 0
  -180 -220 -158 -203 -130 -203 c 0
  -89 -203 -74 -231 -74 -260 c 2
- -74 -395 l 1
+ -74 -395 l 5
 -130 -283 m 0
  -96 -283 -96 -231 -130 -231 c 0
  -165 -231 -165 -283 -130 -283 c 0
