@@ -14,7 +14,7 @@ License: freely redistributable
 Group: Extensions/Thai/font
 Source: %{name}-%{version}.tar.gz
 URL: http://linux.thai.net/cvs/
-Vendor: NECTEC , DearBook , TLWG
+Vendor: NECTEC, DearBook, TLWG
 Packager: Theppitak Karoonboonyanan <thep@linux.thai.net>
 Requires: XFree86 > 3.2 
 Prereq: chkfontpath
@@ -32,10 +32,11 @@ Thai scalafonts fonts included here are
 %package -n thai-ttf
 Summary: A collection of Thai truetype fonts.
 Requires: XFree86 > 3.2  XFree86-font-utils 
+Conflicts: thaipst1fonts
 Group: Extensions/Thai/font
 
 %description -n thai-ttf
-This package collects Thai truetype fonts available in public domain.
+This package collects Thai TrueType fonts available in free licenses.
 
 Thai scalafonts fonts included here are
 - Norasi and Garuda from the National Font project
@@ -44,10 +45,11 @@ Thai scalafonts fonts included here are
 %package -n thaipst1fonts
 Summary: A collection of Thai Type1 fonts.
 Requires: XFree86 > 3.2 type1inst XFree86-font-utils
+Conflicts: thai-ttf
 Group: Extensions/Thai/font
 
 %description -n thaipst1fonts
-This package collects Thai Type1 fonts available in public domain.
+This package collects Thai Type1 fonts available in public free licenses
 
 Thai scalafonts fonts included here are
 - Norasi and Garuda from the National Font project
@@ -214,6 +216,10 @@ fi
 #%config
 
 %changelog
+* Thu Jun 12 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
+- Make thai-ttf and thaipst1fonts mutually exclusive
+- Fix some descriptions
+
 * Tue Jun 03 2003 Vee Satayamas <virasj@users.sf.net>
 - Use sed insteads of Ruby
 
