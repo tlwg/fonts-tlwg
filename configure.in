@@ -1,0 +1,48 @@
+AC_INIT(thaifonts-scalable.spec.in)
+AM_INIT_AUTOMAKE(thaifonts-scalable, 0.3.1)
+
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_CHECK_PROGS(RMDIR,rmdir,no)
+
+AC_CHECK_PROGS(PFAEDIT,pfaedit,no)
+
+# AC_CHECK_PROGS(TTMKFDIR,ttmkfdir,no)
+# if test "x$TTMKFDIR" = "xno" ; then
+#   AC_MSG_ERROR([You need ttmkfdir (from freetype distribution)])
+# fi
+
+dnl prefer ttmkfdir for the time being
+AC_CHECK_PROG(MKFONTSCALE,ttmkfdir,ttmkfdir)
+AC_CHECK_PROG(MKFONTSCALE,mkfontscale,mkfontscale)
+if test "x$MKFONTSCALE" = "x"; then
+  AC_MSG_ERROR([You need mkfontscale or ttmkfdir])
+elif test "$MKFONTSCALE" = "ttmkfdir"; then
+  if (ttmkfdir -h 2>&1 | grep -- --encoding >/dev/null); then
+    # ttmkfdir 2
+    MKFONTSCALE="ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir -o fonts.scale"
+  else
+    # ttmkfdir 1
+    MKFONTSCALE="ttmkfdir > fonts.scale"
+  fi
+fi
+AC_MSG_RESULT([Will create fonts.scale using $MKFONTSCALE])
+
+AC_CHECK_PROG(FCCACHE,fc-cache,[fc-cache -f || true])
+
+AC_ARG_WITH(fontdir,
+  [  --with-fontdir=DIR    font directory in DIR [/usr/share/fonts/th/TTF]],
+  [fontdir="$withval"], [fontdir=/usr/share/fonts/th/TTF])
+AC_MSG_CHECKING(--with-fontdir)
+AC_MSG_RESULT("$fontdir")                                                                                                           
+AC_SUBST(fontdir)
+
+AC_OUTPUT(
+  Makefile
+  nf/Makefile
+  db/Makefile
+  scripts/Makefile
+  scripts/gen.mk
+  thaifonts-scalable.spec
+)
+
