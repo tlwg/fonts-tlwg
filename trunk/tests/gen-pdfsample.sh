@@ -8,9 +8,13 @@ top_builddir=${top_builddir-../}
 fsuffix=$1
 fprefix=$2
  
-FONTS="Garuda Garuda-Oblique Garuda-Bold Garuda-BoldOblique Norasi 
+FONTS="Kinnari Kinnari-Oblique Kinnari-Bold Kinnari-BoldOblique 
+Garuda Garuda-Oblique Garuda-Bold Garuda-BoldOblique Norasi 
 Norasi-Oblique Norasi-Bold Norasi-BoldOblique DBThaiText 
-DBThaiText-Oblique DBThaiText-Bold DBThaiText-BoldOblique"
+DBThaiText-Oblique DBThaiText-Bold DBThaiText-BoldOblique 
+TlwgMono TlwgMono-Oblique TlwgMono-Bold TlwgMono-BoldOblique 
+PseudoMono PseudoMono-Oblique PseudoMono-Bold PseudoMono-BoldOblique 
+Purisa"
 PHRASE="\340\264\347\241\241\265\321\255\220\331\340\275\207\322\344\242\214\244\330\263\273\331\206\315\302\331\213\267\325\350\272\214\322\271\303\324\301\271\355\351\322"
 POEM_L1="\340\273\232\271\301\271\330\311\302\217\312\330\264\273\303\320\340\312\303\324\260\340\305\324\310\244\330\263\244\213\322"
 POEM_L2="\241\307\213\322\272\303\303\264\322\275\331\247\312\321\265\307\217\340\264\303\321\250\251\322\271"
@@ -23,6 +27,10 @@ POEM_L8="\276\331\264\250\322\343\313\214\250\215\320\346 \250\216\322\346 \271\
 CIT="\305\324\242\312\324\267\270\324\354\342\264\302 \312\301\322\244\301\244\315\301\276\324\307\340\265\315\303\217\341\313\213\247\273\303\320\340\267\310\344\267\302\343\271\276\303\320\272\303\301\303\322\252\331\273\266\321\301\300\217"
 
 cat <<END > Fontmap
+/Kinnari                (${top_builddir}nf/${fprefix}Kinnari${fsuffix});
+/Kinnari-Oblique        (${top_builddir}nf/${fprefix}Kinnari-Oblique${fsuffix});
+/Kinnari-Bold           (${top_builddir}nf/${fprefix}Kinnari-Bold${fsuffix});
+/Kinnari-BoldOblique    (${top_builddir}nf/${fprefix}Kinnari-BoldOblique${fsuffix});
 /Garuda                 (${top_builddir}nf/${fprefix}Garuda${fsuffix});
 /Garuda-Oblique         (${top_builddir}nf/${fprefix}Garuda-Oblique${fsuffix});
 /Garuda-Bold            (${top_builddir}nf/${fprefix}Garuda-Bold${fsuffix});
@@ -35,6 +43,15 @@ cat <<END > Fontmap
 /DBThaiText-Oblique     (${top_builddir}db/${fprefix}DBThaiText-Oblique${fsuffix});
 /DBThaiText-Bold        (${top_builddir}db/${fprefix}DBThaiText-Bold${fsuffix});
 /DBThaiText-BoldOblique (${top_builddir}db/${fprefix}DBThaiText-BoldOblique${fsuffix});
+/TlwgMono               (${top_builddir}tlwg/${fprefix}TlwgMono${fsuffix});
+/TlwgMono-Oblique       (${top_builddir}tlwg/${fprefix}TlwgMono-Oblique${fsuffix});
+/TlwgMono-Bold          (${top_builddir}tlwg/${fprefix}TlwgMono-Bold${fsuffix});
+/TlwgMono-BoldOblique   (${top_builddir}tlwg/${fprefix}TlwgMono-BoldOblique${fsuffix});
+/PseudoMono             (${top_builddir}tlwg/${fprefix}PseudoMono${fsuffix});
+/PseudoMono-Oblique     (${top_builddir}tlwg/${fprefix}PseudoMono-Oblique${fsuffix});
+/PseudoMono-Bold        (${top_builddir}tlwg/${fprefix}PseudoMono-Bold${fsuffix});
+/PseudoMono-BoldOblique (${top_builddir}tlwg/${fprefix}PseudoMono-BoldOblique${fsuffix});
+/Purisa                 (${top_builddir}tlwg/${fprefix}Purisa${fsuffix});
 END
 
 for font in $FONTS; do
