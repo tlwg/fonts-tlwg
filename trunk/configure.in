@@ -119,7 +119,7 @@ if test "x$enable_pfa" = "xyes" -o "x$enable_pfb" = "xyes"; then
   fi
   AC_MSG_RESULT([Will create fonts.scale for Type1 using $TYPE1INST])
 fi
-AC_CHECK_PROG(FCCACHE,fc-cache,[fc-cache -f || true])
+AC_CHECK_PROG(FCCACHE,fc-cache,[fc-cache])
 
 AC_OUTPUT(
   Makefile
