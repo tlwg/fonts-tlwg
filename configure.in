@@ -74,7 +74,7 @@ AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_CHECK_PROGS(RMDIR,rmdir,no)
 
-AC_CHECK_PROGS(PFAEDIT,pfaedit,no)
+AC_CHECK_PROGS(PFAEDIT,fontforge pfaedit,no)
 
 if test "x$PFAEDIT" = "xno"; then
   AC_MSG_ERROR([You need pfaedit])
