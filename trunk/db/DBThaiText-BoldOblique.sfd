@@ -30,6 +30,13 @@ ScriptLang: 3
  1 latn 1 dflt 
  1 thai 4 KUY  PAL  THA  dflt 
  1 thai 1 PAL  
+ContextSub: glyph 0 2 ' RQD' 0 0 0 1
+ String: 15 uni0E0D uni0E10
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 'G000'
+EndFPST
 ChainSub: coverage 0 1 'ccmp' 0 0 0 1
  1 1 0
   Coverage: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
@@ -84,13 +91,6 @@ ChainSub: coverage 0 1 'ccmp' 0 0 0 1
   SeqLookup: 0 'amni'
   SeqLookup: 1 'G002'
 EndFPST
-ContextSub: glyph 0 2 ' RQD' 0 0 0 1
- String: 15 uni0E0D uni0E10
- BString: 0 
- FString: 0 
- 1
-  SeqLookup: 0 'G000'
-EndFPST
 GenTags: 8 sb'G000' sb'amni' sb'G002' sb'G003' sb'G004' sb'G005' sb'ndsc' sb'loww'
 LangName: 1033 "" "" "" "PfaEdit : DBThaiTextBold : 13-0-2003" 
 Encoding: Custom
@@ -98,9 +98,9 @@ UnicodeInterp: none
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 112 8 2
+WinInfo: 176 8 2
 BeginPrivate: 3
-BlueValues 31 [-16 0 348 354 384 393 469 477]
+BlueValues 39 [-23 0 505 513 557 571 676 677 680 692]
 OtherBlues 11 [-260 -260]
 ForceBold 4 true
 EndPrivate
@@ -4144,7 +4144,7 @@ Fore
  142 452 151 461 162 471 c 0
  175 483 194 496 219 513 c 0
  242 528 274 542 309 554 c 0
- 344 566 383 570 425 570 c 0
+ 344 566 383 570 425 570 c 4
  470 570 506 564 535 551 c 0
  566 536 587 516 600 489 c 0
  609 471 613 452 613 429 c 0
@@ -4203,7 +4203,7 @@ Fore
  392 86 l 2
  412 86 423 88 429 93 c 0
  436 100 441 113 445 133 c 2
- 535 557 l 1
+ 535 557 l 5
  632 557 l 1
  536 106 l 2
  526 62 510 35 486 22 c 0
