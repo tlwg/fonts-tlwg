@@ -2,7 +2,7 @@ MAINTAINERCLEANFILES = Makefile.in configure aclocal.m4
 
 EXTRA_DIST = ChangeLog.thai-ttf
 
-SUBDIRS = scripts nf db tlwg tests
+SUBDIRS = scripts nf db nectec tlwg tests
 
 ttmkfdir = @TTMKFDIR@
 type1inst = @TYPE1INST@
