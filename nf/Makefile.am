@@ -41,5 +41,5 @@ if INCLUDE_TYPE1
 type1_DATA = $(TYPE1FILES)
 endif
 
-include @top_builddir@/scripts/gen.mk
+include $(top_builddir)/scripts/gen.mk
 
