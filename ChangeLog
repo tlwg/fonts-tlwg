@@ -1,3 +1,15 @@
+2005-01-14  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Makefile.am, +nf/Kinnari-[Bold]Italic.sfd:
+	Add a first version of Kinnari [Bold]Italic, using Latin glyphs from
+	Norasi, and following transformations on Thai glyphs:
+	- All pointed stem tips are leveled.
+	- Tho Thahan and Tho NangMontho diagonal stem is shifted up.
+	- All glyphs are narrowed down by 95.37%, based on proportion of
+	  glyphs in sample book, to make them look slimmer than normal glyphs.
+	- Glyphs are skewed by 15.5 degree, based on italic angle of Latin
+	  glyphs.
+
 2004-11-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* scripts/gen*{pfa,pfb}.pe:
