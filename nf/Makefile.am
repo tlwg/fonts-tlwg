@@ -153,7 +153,7 @@ TESTTYPE1FILES = \
 MAINTAINERCLEANFILES = Makefile.in
 CLEANFILES = *.ttf *.g2n *.pfb *.pfa *.afm *.pfm *.otf *.enc *.tfm
 
-EXTRA_DIST = $(FONTSOURCES)
+EXTRA_DIST = $(FONTSOURCES) README.1ST
 
 if INCLUDE_TTF
 ttf_DATA = $(TTFFILES)
