@@ -93,21 +93,28 @@ ChainSub: coverage 0 0 'ccmp' 0 0 0 1
  1
   SeqLookup: 0 'loww'
 EndFPST
-GenTags: 8 sb'ndsc' sb'loww' sb'nds0' sb'amni' sb'G004' sb'G005' sb'G006' sb'G007'
+ChainSub: coverage 0 0 'ccmp' 0 0 0 1
+ 1 1 0
+  Coverage: 7 uni0E4D
+  BCoverage: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
+ 1
+  SeqLookup: 0 'high'
+EndFPST
+GenTags: 9 sb'ndsc' sb'loww' sb'nds0' sb'amni' sb'G004' sb'G005' sb'G006' sb'G007' sb'high'
 TtfTable: cvt  8
 !$MDh!(6u&
 EndTtf
 LangName: 1054 "TlwgMono, Free Thai monospace outline font. Copyright (C) 2003 Poonlap Veerathanabutr <poonlap@linux.thai.net> http://linux.thai.net/Members/poonlap+AAoACgAA-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version.+AAoACgAA-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA." "TlwgMono" "" "" "Tlwg Mono" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "+DiAOMg4pDjIORA4XDiIA" 
 LangName: 1033 "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "+DkAOFA5HDgEOAQ4VDjEODQ4NDjkOQA4dDkkOMg5EDgIOSQ4EDjgOEw4bDjkOSA4tDiIOOQ5IDhcONQ5IDhoOSQ4yDhkOIw40DiEOGQ4zDkkA" 
 Encoding: compacted
-OldEncoding: unicode
+OldEncoding: UnicodeBmp
 UnicodeInterp: none
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 228 12 8
-AnchorClass: "AboveBase" mark 0 0 1 0 "BelowBase" mark 0 0 1 0 "AboveMark" mkmk 0 0 2 1 "BelowMark" mkmk 0 0 3 1 
-BeginChars: 325 325
+WinInfo: 240 12 8
+AnchorClass: "AboveBase" mark 0 0 1 0 "BelowBase" mark 0 0 2 0 "AboveMark" mkmk 0 0 3 1 
+BeginChars: 326 326
 StartChar: space
 Encoding: 0 32 32767
 OldEncoding: 32
@@ -167,7 +174,6 @@ Width: 600
 Flags: W
 HStem: 139 99<105 154 261 326 432 474> 344 100<125 168 276 340 447 494>
 VStem: 142 100<-45 -29>
-DStem: 154 139 254 139 143 -22 242 -29 168 344 269 344 161 238 261 238 340 344 440 344 333 238 432 238 359 612 458 605 347 444 447 444
 Fore
 447 444 m 1
  472 444 l 2
@@ -225,7 +231,6 @@ Fore
  333 238 l 1
  340 344 l 1
 EndSplineSet
-MinimumDistance: x48,-1 
 EndChar
 StartChar: dollar
 Encoding: 4 36 32767
@@ -281,7 +286,6 @@ Fore
  319 684 335 675 344 660 c 0
  350 651 351 644 351 618 c 2
 EndSplineSet
-MinimumDistance: x17,-1 
 EndChar
 StartChar: percent
 Encoding: 5 37 32767
@@ -290,7 +294,6 @@ Width: 600
 Flags: W
 HStem: -15 65<366 372> 199 65<356.168 371> 338 65<223 241> 552 65<223 241>
 VStem: 89 65<474 482> 229 65<112 130> 303 65<474 482> 443 65<112 130>
-DStem: 472 390 491 331 110 272 129 213
 Fore
 228 617 m 0
  307 617 368 555 368 476 c 0
@@ -322,7 +325,6 @@ Fore
  409 50 443 84 443 124 c 0
  443 166 410 199 368 199 c 0
 EndSplineSet
-MinimumDistance: x17,-1 
 EndChar
 StartChar: ampersand
 Encoding: 6 38 32767
@@ -331,7 +333,6 @@ Width: 600
 Flags: W
 HStem: -14 100<236 267> 0 21G<381 442> 450 100<282 300>
 VStem: 75 100<131.728 147> 137 100<397 403>
-DStem: 228 220 265 343 312 100 365 198
 Fore
 365 198 m 1
  388 280 l 1
@@ -367,7 +368,6 @@ Fore
  175 105 202 86 257 86 c 0
  282 86 293 89 312 100 c 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: quotesingle
 Encoding: 7 39 32767
@@ -457,7 +457,6 @@ Fore
  148 271 152 279 167 301 c 1
  219 372 l 1
 EndSplineSet
-MinimumDistance: x10,-1 
 EndChar
 StartChar: plus
 Encoding: 11 43 32767
@@ -493,7 +492,6 @@ Fore
  526 232 514 230 491 230 c 2
  350 230 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: comma
 Encoding: 12 44 32767
@@ -551,7 +549,6 @@ Encoding: 15 47 32767
 OldEncoding: 47
 Width: 600
 Flags: W
-DStem: 416 651 505 610 95 -27 185 -69
 Fore
 505 610 m 1
  185 -69 l 1
@@ -563,7 +560,6 @@ Fore
  494 695 517 672 517 647 c 0
  517 636 515 630 505 610 c 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: zero
 Encoding: 16 48 32767
@@ -588,7 +584,6 @@ Fore
  417 470 371 538 300 538 c 128
  229 538 183 470 183 366 c 2
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: one
 Encoding: 17 49 32767
@@ -618,7 +613,6 @@ Fore
  85 561 98 573 138 583 c 2
  350 638 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: two
 Encoding: 18 50 32767
@@ -649,7 +643,6 @@ Fore
  503 379 479 341 380 251 c 0
  353 226 295 176 207 100 c 1
 EndSplineSet
-MinimumDistance: x17,-1 
 EndChar
 StartChar: three
 Encoding: 19 51 32767
@@ -684,7 +677,6 @@ Fore
  243 289 224 306 224 333 c 0
  224 362 246 383 276 383 c 2
 EndSplineSet
-MinimumDistance: x11,-1 
 EndChar
 StartChar: four
 Encoding: 20 52 32767
@@ -693,7 +685,6 @@ Width: 600
 Flags: W
 HStem: 0 100<298 347 447 460> 100 38<447 487> 138 100<197 347> 602 20G<316 447>
 VStem: 347 100<99 138 238 480>
-DStem: 316 622 347 480 75 221 197 238
 Fore
 447 622 m 1
  447 238 l 1
@@ -719,7 +710,6 @@ Fore
  197 238 l 1
  347 238 l 1
 EndSplineSet
-MinimumDistance: x0,-1 y16,14 x14,16 x14,15 
 EndChar
 StartChar: five
 Encoding: 21 53 32767
@@ -752,7 +742,6 @@ Fore
  456 524 442 522 421 522 c 2
  219 522 l 1
 EndSplineSet
-MinimumDistance: x3,-1 
 EndChar
 StartChar: six
 Encoding: 22 54 32767
@@ -780,7 +769,6 @@ Fore
  435 248 392 294 338 294 c 0
  295 294 245 258 218 209 c 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: seven
 Encoding: 23 55 32767
@@ -788,7 +776,6 @@ OldEncoding: 55
 Width: 600
 Flags: W
 HStem: 522 100<174 403>
-DStem: 403 522 508 523 253 81 349 48
 Fore
 403 522 m 1
  175 522 l 1
@@ -804,7 +791,6 @@ Fore
  246 56 248 64 253 81 c 1
  403 522 l 1
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: eight
 Encoding: 24 56 32767
@@ -834,7 +820,6 @@ Fore
  368 85 417 122 417 172 c 0
  417 223 366 263 300 263 c 0
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: nine
 Encoding: 25 57 32767
@@ -862,7 +847,6 @@ Fore
  211 375 254 329 308 329 c 0
  351 329 401 365 428 414 c 1
 EndSplineSet
-MinimumDistance: x13,-1 
 EndChar
 StartChar: colon
 Encoding: 26 58 32767
@@ -913,7 +897,6 @@ Encoding: 28 60 32767
 OldEncoding: 60
 Width: 600
 Flags: W
-DStem: 42 280 251 279 472 63 512 143 472 492 512 412 42 280 251 279
 Fore
 251 279 m 1
  512 143 l 2
@@ -931,7 +914,6 @@ Fore
  544 436 535 424 512 412 c 2
  251 279 l 1
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: equal
 Encoding: 29 61 32767
@@ -969,7 +951,6 @@ Encoding: 30 62 32767
 OldEncoding: 62
 Width: 600
 Flags: W
-DStem: 88 412 128 491 349 275 558 274 349 275 558 274 88 142 128 62
 Fore
 349 275 m 1
  88 412 l 2
@@ -987,7 +968,6 @@ Fore
  56 118 65 130 88 142 c 2
  349 275 l 1
 EndSplineSet
-MinimumDistance: x7,-1 
 EndChar
 StartChar: question
 Encoding: 31 63 32767
@@ -1022,7 +1002,6 @@ Fore
  348 117 377 88 377 51 c 128
  377 14 348 -15 311 -15 c 2
 EndSplineSet
-MinimumDistance: x3,-1 
 EndChar
 StartChar: at
 Encoding: 32 64 32767
@@ -1062,7 +1041,6 @@ Fore
  297 184 333 153 381 153 c 0
  388 153 393 153 407 155 c 1
 EndSplineSet
-MinimumDistance: x15,-1 
 EndChar
 StartChar: A
 Encoding: 33 65 32767
@@ -1070,7 +1048,6 @@ OldEncoding: 65
 Width: 600
 Flags: W
 HStem: 0 100<27.7264 46 155 188 395.592 439 553.031 572> 158 100<218 375> 483 100<122 201>
-DStem: 201 483 297 450 46 100 218 258 297 450 354 583 375 258 553 100
 Fore
 416 158 m 1
  178 158 l 1
@@ -1108,7 +1085,6 @@ Fore
  218 258 l 1
  375 258 l 1
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: B
 Encoding: 34 66 32767
@@ -1150,7 +1126,6 @@ Fore
  194 242 l 1
  194 100 l 1
 EndSplineSet
-MinimumDistance: x10,-1 
 EndChar
 StartChar: C
 Encoding: 35 67 32767
@@ -1186,7 +1161,6 @@ Fore
  33 475 151 597 305 597 c 0
  357 597 392 589 447 563 c 2
 EndSplineSet
-MinimumDistance: x12,-1 
 EndChar
 StartChar: D
 Encoding: 36 68 32767
@@ -1220,7 +1194,6 @@ Fore
  174 483 l 1
  174 100 l 1
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: E
 Encoding: 37 69 32767
@@ -1274,7 +1247,6 @@ Fore
  279 243 l 1
  194 243 l 1
 EndSplineSet
-MinimumDistance: x21,-1 
 EndChar
 StartChar: F
 Encoding: 38 70 32767
@@ -1326,7 +1298,6 @@ Fore
  279 243 l 1
  194 243 l 1
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: G
 Encoding: 39 71 32767
@@ -1371,7 +1342,6 @@ Fore
  585 261 592 246 592 230 c 0
  592 205 578 188 550 180 c 1
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: H
 Encoding: 40 72 32767
@@ -1431,7 +1401,6 @@ Fore
  409 100 l 1
  409 241 l 1
 EndSplineSet
-MinimumDistance: x35,-1 
 EndChar
 StartChar: I
 Encoding: 41 73 32767
@@ -1466,7 +1435,6 @@ Fore
  485 485 474 483 451 483 c 6
  350 483 l 5
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: J
 Encoding: 42 74 32767
@@ -1503,7 +1471,6 @@ Fore
  581 485 570 483 547 483 c 2
  490 483 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: K
 Encoding: 43 75 32767
@@ -1512,7 +1479,6 @@ Width: 600
 Flags: W
 HStem: 0 100<60 94 194 238 503 555> 483 100<60 94 194 238 511.031 527.081>
 VStem: 94 100<99 208 334 483> 341 232<527 536>
-DStem: 372 487 511 483 194 334 335 330
 Fore
 341 532 m 0
  341 569 368 583 407 583 c 2
@@ -1558,7 +1524,6 @@ Fore
  372 487 l 1
  351 495 341 509 341 532 c 0
 EndSplineSet
-MinimumDistance: x4,-1 
 EndChar
 StartChar: L
 Encoding: 44 76 32767
@@ -1596,7 +1561,6 @@ Fore
  347 485 336 483 313 483 c 2
  256 483 l 1
 EndSplineSet
-MinimumDistance: x7,-1 
 EndChar
 StartChar: M
 Encoding: 45 77 32767
@@ -1605,7 +1569,6 @@ Width: 600
 Flags: W
 HStem: 0 100<28 42 142 190 412 462 562 574> 563 20G<438 548>
 VStem: 42 100<99 389> 462 100<99 389>
-DStem: 142 389 165 583 260 138 303 286 438 583 462 389 303 286 351 138
 Fore
 142 389 m 1
  142 100 l 1
@@ -1644,7 +1607,6 @@ Fore
  260 138 l 1
  142 389 l 1
 EndSplineSet
-MinimumDistance: x21,-1 
 EndChar
 StartChar: N
 Encoding: 46 78 32767
@@ -1653,7 +1615,6 @@ Width: 600
 Flags: W
 HStem: 0 100<58 73 173 217> 483 100<39 73 375 431 531.031 546.331>
 VStem: 73 100<99 394> 431 100<191 483>
-DStem: 173 394 173 583 432 0 431 191
 Fore
 173 394 m 1
  173 100 l 1
@@ -1688,7 +1649,6 @@ Fore
  432 0 l 1
  173 394 l 1
 EndSplineSet
-MinimumDistance: x28,-1 
 EndChar
 StartChar: O
 Encoding: 47 79 32767
@@ -1710,7 +1670,6 @@ Fore
  397 86 479 179 479 289 c 0
  479 404 399 497 300 497 c 0
 EndSplineSet
-MinimumDistance: x2,-1 
 EndChar
 StartChar: P
 Encoding: 48 80 32767
@@ -1751,7 +1710,6 @@ Fore
  423 448 381 483 312 483 c 2
  194 483 l 1
 EndSplineSet
-MinimumDistance: x20,-1 
 EndChar
 StartChar: Q
 Encoding: 49 81 32767
@@ -1791,7 +1749,6 @@ Fore
  397 85 479 178 479 288 c 0
  479 404 399 497 300 497 c 0
 EndSplineSet
-MinimumDistance: x20,-1 
 EndChar
 StartChar: R
 Encoding: 50 82 32767
@@ -1839,7 +1796,6 @@ Fore
  194 483 l 1
  194 322 l 1
 EndSplineSet
-MinimumDistance: x20,-1 
 EndChar
 StartChar: S
 Encoding: 51 83 32767
@@ -1882,7 +1838,6 @@ Fore
  485 597 502 588 510 574 c 0
  516 565 517 557 517 531 c 2
 EndSplineSet
-MinimumDistance: x11,-1 
 EndChar
 StartChar: T
 Encoding: 52 84 32767
@@ -1922,7 +1877,6 @@ Fore
  458 483 l 1
  349 483 l 1
 EndSplineSet
-MinimumDistance: x21,-1 
 EndChar
 StartChar: U
 Encoding: 53 85 32767
@@ -1962,7 +1916,6 @@ Fore
  583 564 590 549 590 533 c 0
  590 501 569 483 529 483 c 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: V
 Encoding: 54 86 32767
@@ -1970,7 +1923,6 @@ OldEncoding: 86
 Width: 600
 Flags: W
 HStem: 0 21G<249 348> 483 100<26 48 159 188 410 447 553.016 572>
-DStem: 47 483 159 483 249 0 303 144 447 483 553 483 303 144 348 0
 Fore
 303 144 m 1
  447 483 l 1
@@ -1999,7 +1951,6 @@ Fore
  159 483 l 1
  303 144 l 1
 EndSplineSet
-MinimumDistance: x11,-1 
 EndChar
 StartChar: W
 Encoding: 55 87 32767
@@ -2007,7 +1958,6 @@ OldEncoding: 87
 Width: 600
 Flags: W
 HStem: 0 21G<98 209 393 503> 417 20G<251 355> 483 100<139 209 391 466>
-DStem: 36 483 139 483 98 0 175 211 251 437 300 277 175 211 209 0 300 277 355 437 393 0 431 211 466 483 563 483 431 211 503 0
 Fore
 300 277 m 1
  209 0 l 1
@@ -2040,7 +1990,6 @@ Fore
  393 0 l 1
  300 277 l 1
 EndSplineSet
-MinimumDistance: x26,-1 
 EndChar
 StartChar: X
 Encoding: 56 88 32767
@@ -2049,7 +1998,6 @@ Width: 600
 Flags: W
 HStem: 0 21G<76 187 413 524> 563 20G<85 176 422 512>
 VStem: 19 224<527 535> 355 223<527 535>
-DStem: 77 483 205 484 235 298 300 375 235 298 301 220 69 100 199 100 301 220 364 297 402 100 531 100 393 484 521 483 300 375 364 297
 Fore
 19 533 m 0
  19 568 48 583 85 583 c 2
@@ -2087,7 +2035,6 @@ Fore
  77 483 l 1
  40 485 19 503 19 533 c 0
 EndSplineSet
-MinimumDistance: x17,-1 x8,13 x0,4 x21,17 x30,25 
 EndChar
 StartChar: Y
 Encoding: 57 89 32767
@@ -2096,7 +2043,6 @@ Width: 600
 Flags: W
 HStem: 0 100<164 250 350 423> 483 100<83 85 514 516>
 VStem: 21 222<527 535> 250 100<99 245>
-DStem: 85 483 205 484 250 245 300 348 394 484 514 483 300 348 350 245
 Fore
 21 533 m 0
  21 569 49 583 88 583 c 2
@@ -2131,7 +2077,6 @@ Fore
  85 483 l 1
  44 483 21 501 21 533 c 0
 EndSplineSet
-MinimumDistance: x11,-1 x0,4 
 EndChar
 StartChar: Z
 Encoding: 58 90 32767
@@ -2140,7 +2085,6 @@ Width: 600
 Flags: W
 HStem: 0 100<201 428> 483 100<195 375>
 VStem: 96 100<399 483>
-DStem: 375 483 504 486 73 100 201 100
 Fore
 201 100 m 1
  427 100 l 1
@@ -2164,7 +2108,6 @@ Fore
  504 486 l 1
  201 100 l 1
 EndSplineSet
-MinimumDistance: x18,-1 
 EndChar
 StartChar: bracketleft
 Encoding: 59 91 32767
@@ -2190,14 +2133,12 @@ Fore
  442 529 430 527 408 527 c 2
  350 527 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: backslash
 Encoding: 60 92 32767
 OldEncoding: 92
 Width: 600
 Flags: W
-DStem: 95 610 184 651 415 -69 505 -27
 Fore
 184 651 m 1
  505 -27 l 2
@@ -2209,7 +2150,6 @@ Fore
  83 672 106 695 133 695 c 0
  156 695 169 685 184 651 c 1
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: bracketright
 Encoding: 61 93 32767
@@ -2235,14 +2175,12 @@ Fore
  158 -50 170 -48 192 -48 c 2
  250 -48 l 1
 EndSplineSet
-MinimumDistance: x7,-1 
 EndChar
 StartChar: asciicircum
 Encoding: 62 94 32767
 OldEncoding: 94
 Width: 600
 Flags: W
-DStem: 299 494 299 652 418 355 495 419 299 652 299 494 105 419 182 356 299 494 299 652 418 355 495 419 299 652 299 494 105 419 182 356 299 494 299 652 418 355 495 419 299 652 299 494 105 419 182 356 299 494 299 652 418 355 495 419 299 652 299 494 105 419 182 356 299 494 299 652 418 355 495 419 299 652 299 494 105 419 182 356 299 494 299 652 418 355 495 419 299 652 299 494 105 419 182 356 299 494 299 652 418 355 495 419 299 652 299 494 105 419 182 356 299 494 299 652 418 355 495 419
 Fore
 299 494 m 1
  182 356 l 2
@@ -2256,7 +2194,6 @@ Fore
  448 325 439 330 418 355 c 2
  299 494 l 1
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: underscore
 Encoding: 63 95 32767
@@ -2277,7 +2214,6 @@ Encoding: 64 96 32767
 OldEncoding: 96
 Width: 600
 Flags: W
-DStem: 148 624 194 680 281 512 327 569
 Fore
 194 680 m 2
  327 569 l 2
@@ -2289,7 +2225,6 @@ Fore
  125 680 141 696 162 696 c 0
  173 696 178 693 194 680 c 2
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: a
 Encoding: 65 97 32767
@@ -2328,7 +2263,6 @@ Fore
  148 101 181 84 224 84 c 0
  278 84 334 101 389 135 c 1
 EndSplineSet
-MinimumDistance: x24,-1 
 EndChar
 StartChar: b
 Encoding: 66 98 32767
@@ -2368,7 +2302,6 @@ Fore
  188 286 174 253 174 220 c 0
  174 141 235 86 323 86 c 0
 EndSplineSet
-MinimumDistance: x4,-1 
 EndChar
 StartChar: c
 Encoding: 67 99 32767
@@ -2401,7 +2334,6 @@ Fore
  435 307 429 316 416 325 c 0
  390 341 354 350 310 350 c 0
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: d
 Encoding: 68 100 32767
@@ -2442,7 +2374,6 @@ Fore
  431 253 417 286 392 311 c 0
  363 339 331 351 281 351 c 0
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: e
 Encoding: 69 101 32767
@@ -2513,7 +2444,6 @@ Fore
  484 339 472 337 450 337 c 2
  299 337 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: g
 Encoding: 71 103 32767
@@ -2551,7 +2481,6 @@ Fore
  347 86 410 145 410 217 c 0
  410 292 349 351 271 351 c 0
 EndSplineSet
-MinimumDistance: x7,-1 
 EndChar
 StartChar: h
 Encoding: 72 104 32767
@@ -2601,7 +2530,6 @@ Fore
  46 622 55 624 79 624 c 2
  195 624 l 1
 EndSplineSet
-MinimumDistance: x3,-1 
 EndChar
 StartChar: i
 Encoding: 73 105 32767
@@ -2637,7 +2565,6 @@ Fore
  218 623 l 1
  336 623 l 1
 EndSplineSet
-MinimumDistance: x0,-1 x18,1 y1,18 y1,0 
 EndChar
 StartChar: j
 Encoding: 74 106 32767
@@ -2670,7 +2597,6 @@ Fore
  311 623 l 1
  430 623 l 1
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: k
 Encoding: 75 107 32767
@@ -2679,7 +2605,6 @@ Width: 600
 Flags: W
 HStem: 0 100<81.7263 114 470 525> 417 20G<345 457> 524 100<80 114>
 VStem: 115 100<99 164 287 524>
-DStem: 233 178 311 241 336 87 471 100 294 350 429 337 215 287 311 241
 Fore
 215 164 m 1
  215 0 l 1
@@ -2719,7 +2644,6 @@ Fore
  233 178 l 1
  215 164 l 1
 EndSplineSet
-MinimumDistance: x26,-1 
 EndChar
 StartChar: l
 Encoding: 76 108 32767
@@ -2750,7 +2674,6 @@ Fore
  138 623 147 624 172 624 c 2
  350 624 l 1
 EndSplineSet
-MinimumDistance: x0,-1 x18,1 y1,18 y1,0 
 EndChar
 StartChar: m
 Encoding: 77 109 32767
@@ -2834,7 +2757,6 @@ Fore
  95 337 l 1
  56 338 34 355 34 387 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: o
 Encoding: 79 111 32767
@@ -2855,7 +2777,6 @@ Fore
  389 84 458 142 458 217 c 0
  458 291 389 350 302 350 c 0
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: p
 Encoding: 80 112 32767
@@ -2898,7 +2819,6 @@ Fore
  471 263 452 300 423 321 c 0
  397 341 364 350 323 350 c 0
 EndSplineSet
-MinimumDistance: x22,-1 
 EndChar
 StartChar: q
 Encoding: 81 113 32767
@@ -2942,7 +2862,6 @@ Fore
  412 161 431 197 431 229 c 0
  431 300 370 350 281 350 c 0
 EndSplineSet
-MinimumDistance: x12,-1 
 EndChar
 StartChar: r
 Encoding: 82 114 32767
@@ -2980,7 +2899,6 @@ Fore
  77 418 99 437 143 437 c 2
  278 437 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: s
 Encoding: 83 115 32767
@@ -3020,7 +2938,6 @@ Fore
  506 321 504 311 497 301 c 0
  487 289 471 281 456 281 c 0
 EndSplineSet
-MinimumDistance: x7,-1 
 EndChar
 StartChar: t
 Encoding: 84 116 32767
@@ -3060,7 +2977,6 @@ Fore
  429 339 417 337 395 337 c 2
  214 337 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: u
 Encoding: 85 117 32767
@@ -3096,7 +3012,6 @@ Fore
  410 48 l 1
  360 1 328 -13 273 -13 c 0
 EndSplineSet
-MinimumDistance: x17,-1 
 EndChar
 StartChar: v
 Encoding: 86 118 32767
@@ -3104,7 +3019,6 @@ OldEncoding: 118
 Width: 600
 Flags: W
 HStem: 0 21G<247 351> 337 100<47 80 193 209 383 409 517 545>
-DStem: 80 337 193 337 247 0 302 122 409 337 518 337 302 122 351 0
 Fore
 302 122 m 1
  409 337 l 1
@@ -3135,7 +3049,6 @@ Fore
  193 337 l 1
  302 122 l 1
 EndSplineSet
-MinimumDistance: x12,-1 
 EndChar
 StartChar: w
 Encoding: 87 119 32767
@@ -3144,7 +3057,6 @@ Width: 600
 Flags: W
 HStem: 0 21G<139 233 372 464> 338 99<160.032 181.401 431 448>
 VStem: 0 224<383 389> 375 225<383 389>
-DStem: 54 338 160 338 139 0 199 185 448 338 548 338 408 185 464 0
 Fore
 375 387 m 0
  375 417 396 437 441 437 c 2
@@ -3224,7 +3136,6 @@ Width: 600
 Flags: W
 HStem: -205 100<68 188 297 310> 417 20G<87 177 421 513>
 VStem: 21 222<376.035 390>
-DStem: 70 337 184 337 242 3 298 114 242 3 527 337 187 -105 297 -105 418 337 527 337 298 114 297 -105
 Fore
 354 387 m 0
  354 423 382 437 421 437 c 2
@@ -3256,7 +3167,6 @@ Fore
  418 337 l 1
  377 337 354 355 354 387 c 0
 EndSplineSet
-MinimumDistance: x4,-1 x0,4 x20,24 
 EndChar
 StartChar: z
 Encoding: 90 122 32767
@@ -3265,7 +3175,6 @@ Width: 600
 Flags: W
 HStem: 0 100<244 419> 0 154<457.65 472> 337 100<196 346>
 VStem: 97 100<319 337>
-DStem: 346 337 506 356 85 83 244 100
 Fore
 244 100 m 1
  419 100 l 1
@@ -3287,7 +3196,6 @@ Fore
  506 356 l 1
  244 100 l 1
 EndSplineSet
-MinimumDistance: x16,-1 
 EndChar
 StartChar: braceleft
 Encoding: 91 123 32767
@@ -3316,7 +3224,6 @@ Fore
  433 545 413 524 384 522 c 0
  356 521 348 512 348 485 c 2
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: bar
 Encoding: 92 124 32767
@@ -3337,7 +3244,6 @@ Fore
  317 622 334 613 343 598 c 4
  348 589 350 580 350 556 c 6
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: braceright
 Encoding: 93 125 32767
@@ -3366,7 +3272,6 @@ Fore
  167 -75 187 -54 216 -52 c 0
  244 -51 252 -42 252 -15 c 2
 EndSplineSet
-MinimumDistance: x8,-1 
 EndChar
 StartChar: asciitilde
 Encoding: 94 126 32767
@@ -3462,7 +3367,6 @@ Fore
  475 245 499 221 499 194 c 0
  499 152 439 114 351 99 c 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: sterling
 Encoding: 98 163 32767
@@ -3507,7 +3411,6 @@ Fore
  381 276 372 260 357 250 c 0
  348 245 338 243 314 243 c 2
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: currency
 Encoding: 99 164 32767
@@ -3551,7 +3454,6 @@ Fore
  351 197 394 241 394 292 c 0
  394 346 353 388 300 388 c 0
 EndSplineSet
-MinimumDistance: x12,-1 
 EndChar
 StartChar: yen
 Encoding: 100 165 32767
@@ -3559,7 +3461,6 @@ OldEncoding: 165
 Width: 600
 Flags: W
 HStem: 0 100<196 250 350 406> 135 56<148 250 350 454> 225 56<148 225 375 454> 480 100<82 88 514.007 527.812>
-DStem: 87 481 207 482 225 281 301 348 396 481 514 480 301 348 375 281
 Fore
 301 348 m 1
  396 481 l 1
@@ -3613,7 +3514,6 @@ Fore
  246 506 230 486 207 482 c 1
  301 348 l 1
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: brokenbar
 Encoding: 101 166 32767
@@ -3645,7 +3545,6 @@ Fore
  317 182 334 173 343 158 c 0
  348 149 350 140 350 116 c 2
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: section
 Encoding: 102 167 32767
@@ -3698,7 +3597,6 @@ Fore
  449 89 468 102 468 121 c 0
  468 144 433 178 371 214 c 2
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: dieresis
 Encoding: 103 168 32767
@@ -3718,7 +3616,6 @@ Fore
  371 534 344 561 344 594 c 128
  344 627 371 654 404 654 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: copyright
 Encoding: 104 169 32767
@@ -3800,7 +3697,6 @@ Fore
  467 259 483 247 483 221 c 128
  483 195 466 182 432 182 c 2
 EndSplineSet
-MinimumDistance: x22,-1 
 EndChar
 StartChar: guillemotleft
 Encoding: 106 171 32767
@@ -3854,7 +3750,6 @@ Fore
  75 444 82 445 108 445 c 2
  465 445 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: softhyphen
 Encoding: 108 173 32767
@@ -3946,7 +3841,6 @@ Fore
  363 304 414 356 414 420 c 0
  414 483 363 535 300 535 c 0
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: plusminus
 Encoding: 112 177 32767
@@ -3993,7 +3887,6 @@ Fore
  42 67 52 84 66 93 c 0
  75 99 83 100 108 100 c 2
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: twosuperior
 Encoding: 113 178 32767
@@ -4021,7 +3914,6 @@ Fore
  369 637 425 586 425 517 c 0
  425 466 402 439 253 314 c 1
 EndSplineSet
-MinimumDistance: x15,-1 
 EndChar
 StartChar: threesuperior
 Encoding: 114 179 32767
@@ -4055,14 +3947,12 @@ Fore
  265 420 252 432 252 451 c 128
  252 470 267 484 286 484 c 2
 EndSplineSet
-MinimumDistance: x11,-1 
 EndChar
 StartChar: acute
 Encoding: 115 180 32767
 OldEncoding: 180
 Width: 600
 Flags: W
-DStem: 406 680 452 624 273 569 319 512
 Fore
 452 624 m 1
  319 512 l 2
@@ -4074,7 +3964,6 @@ Fore
  459 696 475 680 475 659 c 0
  475 647 469 637 452 624 c 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: mu
 Encoding: 116 181 7
@@ -4116,7 +4005,6 @@ Fore
  356 -4 305 -16 253 -16 c 0
  232 -16 215 -13 195 -7 c 1
 EndSplineSet
-MinimumDistance: x22,-1 
 EndChar
 StartChar: paragraph
 Encoding: 117 182 32767
@@ -4159,7 +4047,6 @@ Fore
  375 -109 381 -102 392 -96 c 1
  392 505 l 1
 EndSplineSet
-MinimumDistance: x2,-1 x1,4 x1,2 x0,17 x0,19 
 EndChar
 StartChar: periodcentered
 Encoding: 118 183 32767
@@ -4198,7 +4085,6 @@ Fore
  383 -52 407 -81 407 -132 c 0
  407 -189 362 -229 300 -229 c 0
 EndSplineSet
-MinimumDistance: x11,-1 
 EndChar
 StartChar: onesuperior
 Encoding: 120 185 32767
@@ -4224,7 +4110,6 @@ Fore
  168 589 177 597 202 604 c 2
  334 638 l 1
 EndSplineSet
-MinimumDistance: x2,-1 x8,5 x8,7 x1,4 x1,2 
 EndChar
 StartChar: ordmasculine
 Encoding: 121 186 32767
@@ -4253,7 +4138,6 @@ Fore
  464 259 480 247 480 221 c 128
  480 195 463 182 428 182 c 2
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: guillemotright
 Encoding: 122 187 32767
@@ -4292,7 +4176,6 @@ Width: 600
 Flags: W
 HStem: 0 67<493 525> 83 67<446 525> 247 67<-3 67 133 193>
 VStem: 67 67<313 551> 463 166<31 37> 525 67<66 83 150 279>
-DStem: 415 561 473 528 155 110 213 77 508 380 525 279 362 138 446 150
 Fore
 134 638 m 1
  134 314 l 1
@@ -4339,7 +4222,6 @@ Fore
  446 150 l 1
  525 150 l 1
 EndSplineSet
-MinimumDistance: x22,-1 y35,33 x33,35 x33,34 x32,29 x32,31 x8,5 x8,7 x1,4 x1,2 
 Ligature: 8 2 'frac' one slash four
 Ligature: 8 2 'frac' one fraction four
 EndChar
@@ -4350,7 +4232,6 @@ Width: 600
 Flags: W
 HStem: 0 67<453 562> 0 99<589 597> 247 67<-3 67 133 193> 323 67<482 497>
 VStem: 67 67<313 551> 558 67<268 283>
-DStem: 415 561 473 528 155 110 213 77
 Fore
 134 638 m 1
  134 314 l 1
@@ -4394,7 +4275,6 @@ Fore
  569 390 625 339 625 270 c 0
  625 219 602 192 453 67 c 1
 EndSplineSet
-MinimumDistance: x8,5 x8,7 x1,4 x1,2 
 Ligature: 8 2 'frac' one slash two
 Ligature: 8 2 'frac' one fraction two
 EndChar
@@ -4405,7 +4285,6 @@ Width: 600
 Flags: W
 HStem: 0 67<500 526> 83 67<446 526> 238 67<68 105> 570 67<82 113>
 VStem: 162 67<526 534> 175 67<351 359> 362 268<108 119> 463 167<31 37> 526 67<66 83 150 279>
-DStem: 416 561 474 528 155 110 213 77 509 380 526 279 362 138 446 150
 Fore
 86 484 m 2
  111 484 l 2
@@ -4460,7 +4339,6 @@ Fore
  446 150 l 1
  526 150 l 1
 EndSplineSet
-MinimumDistance: x30,-1 y43,41 x41,43 x41,42 x40,37 x40,39 
 Ligature: 8 2 'frac' three slash four
 Ligature: 8 2 'frac' three fraction four
 EndChar
@@ -4497,7 +4375,6 @@ Fore
  252 254 223 283 223 320 c 128
  223 357 252 386 289 386 c 2
 EndSplineSet
-MinimumDistance: x18,-1 
 EndChar
 StartChar: Agrave
 Encoding: 127 192 32767
@@ -4505,7 +4382,6 @@ OldEncoding: 192
 Width: 600
 Flags: W
 HStem: 0 100<27.7264 46 155 188 395.592 439 553.031 572> 158 100<218 375> 483 100<122 201>
-DStem: 164 767 210 824 297 656 343 712 201 483 297 450 46 100 218 258 297 450 354 583 375 258 553 100
 Fore
 416 158 m 1
  178 158 l 1
@@ -4552,7 +4428,6 @@ Fore
  141 823 157 839 178 839 c 0
  188 839 196 835 210 824 c 2
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: Aacute
 Encoding: 128 193 32767
@@ -4560,7 +4435,6 @@ OldEncoding: 193
 Width: 600
 Flags: W
 HStem: 0 100<27.7264 46 155 188 395 439 553.031 572> 158 100<218 375> 483 100<122 201>
-DStem: 201 483 297 450 46 100 218 258 297 450 354 583 375 258 553 100 364 824 410 767 231 712 277 656
 Fore
 416 158 m 1
  178 158 l 1
@@ -4607,7 +4481,6 @@ Fore
  417 839 433 823 433 803 c 0
  433 790 427 780 410 767 c 1
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: Acircumflex
 Encoding: 129 194 32767
@@ -4615,7 +4488,6 @@ OldEncoding: 194
 Width: 600
 Flags: W
 HStem: 0 100<27.7264 46 155 188 395 439 553.031 572> 158 100<218 375> 483 100<122 201>
-DStem: 201 483 297 450 46 100 218 258 284 750 284 839 396 653 435 711 284 839 284 750 132 711 171 653 284 750 284 839 396 653 435 711 284 839 284 750 132 711 171 653 284 750 284 839 396 653 435 711 284 839 284 750 132 711 171 653 284 750 284 839 396 653 435 711 284 839 284 750 132 711 171 653 284 750 284 839 396 653 435 711 284 839 284 750 132 711 171 653 284 750 284 839 396 653 435 711 297 450 354 583 375 258 553 100
 Fore
 416 158 m 1
  178 158 l 1
@@ -4664,7 +4536,6 @@ Fore
  415 640 407 644 396 653 c 2
  284 750 l 1
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: Atilde
 Encoding: 130 195 32767
@@ -4672,7 +4543,6 @@ OldEncoding: 195
 Width: 600
 Flags: W
 HStem: 0 100<27.7264 46 155 188 395 438 553.031 572> 158 100<218 375> 483 100<122 201> 667 69<348 364> 730 69<200 220>
-DStem: 201 483 297 450 46 100 218 258 297 450 354 583 375 258 553 100
 Fore
 416 158 m 1
  178 158 l 1
@@ -4725,7 +4595,6 @@ Fore
  371 736 375 739 397 769 c 0
  411 789 424 799 436 799 c 0
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: Adieresis
 Encoding: 131 196 32767
@@ -4734,7 +4603,6 @@ Width: 600
 Flags: W
 HStem: 0 100<27.7264 46 155 188 395.592 439 553.031 572> 158 100<218 375> 483 100<117 201> 678 120<170 188 376 396>
 VStem: 119 120<735 741> 327 120<735 741>
-DStem: 201 483 297 450 46 100 218 258 297 450 354 583 375 258 553 100
 Fore
 416 158 m 1
  178 158 l 1
@@ -4782,7 +4650,6 @@ Fore
  354 678 327 705 327 738 c 128
  327 771 354 798 387 798 c 0
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: Aring
 Encoding: 132 197 32767
@@ -4791,7 +4658,6 @@ Width: 600
 Flags: W
 HStem: 0 100<27.7264 46 155 188 404 439 553.031 572> 158 100<218 375> 483 100<122 201> 630 54<271.194 286> 818 53<271.194 286>
 VStem: 160 53<747 753> 353 53<747 753>
-DStem: 201 483 297 450 46 100 218 258 297 450 354 583 375 258 553 100
 Fore
 416 158 m 1
  178 158 l 1
@@ -4839,7 +4705,6 @@ Fore
  320 684 353 715 353 750 c 0
  353 787 321 818 283 818 c 0
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: AE
 Encoding: 133 198 32767
@@ -4848,7 +4713,6 @@ Width: 600
 Flags: W
 HStem: 0 100<28.7264 53 257 267 367 514> 0 189<555 573> 187 210<427 445> 483 100<139 168 367 493>
 VStem: -20 218<47 55> 267 100<100 158 342 471> 493 100<395 483>
-DStem: 168 483 267 471 53 100 203 259
 Fore
 53 100 m 1
  168 483 l 1
@@ -4902,7 +4766,6 @@ Fore
  203 259 l 1
  267 259 l 1
 EndSplineSet
-MinimumDistance: x7,-1 
 EndChar
 StartChar: Ccedilla
 Encoding: 134 199 32767
@@ -4950,7 +4813,6 @@ Fore
  388 -52 412 -81 412 -132 c 0
  412 -188 367 -229 307 -229 c 0
 EndSplineSet
-MinimumDistance: x35,-1 
 EndChar
 StartChar: Egrave
 Encoding: 135 200 32767
@@ -4959,7 +4821,6 @@ Width: 600
 Flags: W
 HStem: 0 100<60 94 194 450> 0 219<492 510> 170 246<326 334> 483 100<60 94 194 428>
 VStem: 94 100<100 243 342 483> 279 99<217 243 342 370> 428 100<414 483>
-DStem: 165 767 211 824 298 656 344 712
 Fore
 194 243 m 1
  194 100 l 1
@@ -5014,7 +4875,6 @@ Fore
  142 823 158 839 179 839 c 0
  189 839 197 835 211 824 c 2
 EndSplineSet
-MinimumDistance: x21,-1 
 EndChar
 StartChar: Eacute
 Encoding: 136 201 32767
@@ -5023,7 +4883,6 @@ Width: 600
 Flags: W
 HStem: 0 100<60 94 194 450> 0 219<492 510> 170 246<326 334> 483 100<60 94 194 428>
 VStem: 94 100<100 243 342 483> 279 99<217 243 342 370> 428 100<414 483>
-DStem: 371 824 417 767 238 712 284 656
 Fore
 194 243 m 1
  194 100 l 1
@@ -5078,7 +4937,6 @@ Fore
  424 839 440 823 440 803 c 0
  440 790 434 780 417 767 c 1
 EndSplineSet
-MinimumDistance: x21,-1 
 EndChar
 StartChar: Ecircumflex
 Encoding: 137 202 32767
@@ -5087,7 +4945,6 @@ Width: 600
 Flags: W
 HStem: 0 100<60 94 194 450> 0 219<492 510> 170 246<326 334> 483 100<60 94 194 428>
 VStem: 94 100<100 243 342 483> 279 99<217 243 342 370> 428 100<414 483>
-DStem: 292 750 292 839 404 653 443 711 292 839 292 750 140 711 179 653 292 750 292 839 404 653 443 711 292 839 292 750 140 711 179 653 292 750 292 839 404 653 443 711 292 839 292 750 140 711 179 653 292 750 292 839 404 653 443 711 292 839 292 750 140 711 179 653 292 750 292 839 404 653 443 711 292 839 292 750 140 711 179 653 292 750 292 839 404 653 443 711
 Fore
 194 243 m 1
  194 100 l 1
@@ -5144,7 +5001,6 @@ Fore
  423 640 415 644 404 653 c 2
  292 750 l 1
 EndSplineSet
-MinimumDistance: x21,-1 
 EndChar
 StartChar: Edieresis
 Encoding: 138 203 32767
@@ -5208,7 +5064,6 @@ Fore
  362 678 335 705 335 738 c 128
  335 771 362 798 395 798 c 0
 EndSplineSet
-MinimumDistance: x21,-1 
 EndChar
 StartChar: Igrave
 Encoding: 139 204 32767
@@ -5217,7 +5072,6 @@ Width: 600
 Flags: W
 HStem: 0 100<130 250 350 468> 483 100<130 250 350 468>
 VStem: 250 100<99 483>
-DStem: 174 767 220 824 307 656 353 712
 Fore
 350 483 m 1
  350 100 l 1
@@ -5253,7 +5107,6 @@ Fore
  151 823 167 839 188 839 c 0
  198 839 206 835 220 824 c 2
 EndSplineSet
-MinimumDistance: x24,-1 
 EndChar
 StartChar: Iacute
 Encoding: 140 205 32767
@@ -5262,7 +5115,6 @@ Width: 600
 Flags: W
 HStem: 0 100<130 250 350 468> 483 100<130 250 350 468>
 VStem: 250 100<99 483>
-DStem: 406 824 452 767 273 712 319 656
 Fore
 350 483 m 1
  350 100 l 1
@@ -5298,7 +5150,6 @@ Fore
  459 839 475 823 475 803 c 0
  475 790 469 780 452 767 c 1
 EndSplineSet
-MinimumDistance: x2,-1 
 EndChar
 StartChar: Icircumflex
 Encoding: 141 206 32767
@@ -5307,7 +5158,6 @@ Width: 600
 Flags: W
 HStem: 0 100<130 250 350 468> 483 100<130 250 350 468>
 VStem: 250 100<99 483>
-DStem: 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711
 Fore
 350 483 m 1
  350 100 l 1
@@ -5345,7 +5195,6 @@ Fore
  431 640 423 644 412 653 c 2
  300 750 l 1
 EndSplineSet
-MinimumDistance: x2,-1 
 EndChar
 StartChar: Idieresis
 Encoding: 142 207 32767
@@ -5390,7 +5239,6 @@ Fore
  371 678 344 705 344 738 c 128
  344 771 371 798 404 798 c 0
 EndSplineSet
-MinimumDistance: x28,-1 
 EndChar
 StartChar: Eth
 Encoding: 143 208 32767
@@ -5437,7 +5285,6 @@ Fore
  314 260 292 243 248 243 c 2
  174 243 l 1
 EndSplineSet
-MinimumDistance: x12,-1 
 EndChar
 StartChar: Ntilde
 Encoding: 144 209 32767
@@ -5446,7 +5293,6 @@ Width: 600
 Flags: W
 HStem: 0 100<58 73 173 227> 483 100<39 73 373 431 531.031 546.331> 667 69<370 378> 730 69<215 233>
 VStem: 73 100<99 394> 431 100<191 483>
-DStem: 173 394 173 583 432 0 431 191
 Fore
 173 394 m 1
  173 100 l 1
@@ -5496,7 +5342,6 @@ Fore
  387 736 391 740 413 770 c 0
  426 789 438 798 451 799 c 1
 EndSplineSet
-MinimumDistance: x28,-1 
 EndChar
 StartChar: Ograve
 Encoding: 145 210 32767
@@ -5505,7 +5350,6 @@ Width: 600
 Flags: W
 HStem: -14 100<292 312> 497 100<292 312>
 VStem: 21 100<273 307> 479 100<273 307>
-DStem: 177 767 223 824 310 656 356 712
 Fore
 300 597 m 0
  367 597 432 570 485 520 c 0
@@ -5528,7 +5372,6 @@ Fore
  154 823 170 839 191 839 c 0
  201 839 209 835 223 824 c 2
 EndSplineSet
-MinimumDistance: x2,-1 
 EndChar
 StartChar: Oacute
 Encoding: 146 211 32767
@@ -5537,7 +5380,6 @@ Width: 600
 Flags: W
 HStem: -14 100<288 310> 497 100<288 310>
 VStem: 21 100<273 307> 479 100<273 307>
-DStem: 377 824 423 767 244 712 290 656
 Fore
 300 597 m 0
  367 597 432 570 485 520 c 0
@@ -5560,7 +5402,6 @@ Fore
  430 839 446 823 446 803 c 0
  446 790 440 780 423 767 c 1
 EndSplineSet
-MinimumDistance: x2,-1 
 EndChar
 StartChar: Ocircumflex
 Encoding: 147 212 32767
@@ -5569,7 +5410,6 @@ Width: 600
 Flags: W
 HStem: -14 100<292 310> 497 100<292 310>
 VStem: 21 100<273 307> 479 100<273 307>
-DStem: 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711
 Fore
 300 597 m 0
  367 597 432 570 485 520 c 0
@@ -5594,7 +5434,6 @@ Fore
  431 640 423 644 412 653 c 2
  300 750 l 1
 EndSplineSet
-MinimumDistance: x2,-1 
 EndChar
 StartChar: Otilde
 Encoding: 148 213 32767
@@ -5631,7 +5470,6 @@ Fore
  395 736 399 739 421 769 c 0
  435 789 448 799 460 799 c 0
 EndSplineSet
-MinimumDistance: x2,-1 
 EndChar
 StartChar: Odieresis
 Encoding: 149 214 32767
@@ -5663,14 +5501,12 @@ Fore
  371 678 344 705 344 738 c 128
  344 771 371 798 404 798 c 0
 EndSplineSet
-MinimumDistance: x2,-1 
 EndChar
 StartChar: multiply
 Encoding: 150 215 32767
 OldEncoding: 215
 Width: 600
 Flags: W
-DStem: 126 383 197 454 229 280 300 351 229 280 300 209 126 177 197 106 300 209 371 280 403 106 474 177 403 454 474 383 300 351 371 280
 Fore
 300 209 m 1
  197 106 l 2
@@ -5694,7 +5530,6 @@ Fore
  433 80 424 85 403 106 c 2
  300 209 l 1
 EndSplineSet
-MinimumDistance: x14,-1 
 EndChar
 StartChar: Oslash
 Encoding: 151 216 32767
@@ -5703,7 +5538,6 @@ Width: 600
 Flags: W
 HStem: -14 100<282.129 314> 497 100<281.373 314>
 VStem: 20 100<281 299> 479 100<281 299>
-DStem: 387 471 452 400 152 174 221 107
 Fore
 159 28 m 1
  105 -40 l 2
@@ -5733,7 +5567,6 @@ Fore
  201 497 120 404 120 292 c 0
  120 248 130 211 152 174 c 1
 EndSplineSet
-MinimumDistance: x14,-1 
 EndChar
 StartChar: Ugrave
 Encoding: 152 217 32767
@@ -5742,7 +5575,6 @@ Width: 600
 Flags: W
 HStem: -14 100<282.431 315> 483 100<171 225 377 429 529.031 544.331>
 VStem: 71 100<193 483> 429 100<193 483>
-DStem: 177 767 223 824 310 656 356 712
 Fore
 529 483 m 1
  529 205 l 2
@@ -5783,7 +5615,6 @@ Fore
  154 823 170 839 191 839 c 0
  201 839 209 835 223 824 c 2
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: Uacute
 Encoding: 153 218 32767
@@ -5792,7 +5623,6 @@ Width: 600
 Flags: W
 HStem: -14 100<288 315> 483 100<171 223 375 429 529.031 544.331>
 VStem: 71 100<193 483> 429 100<193 483>
-DStem: 377 824 423 767 244 712 290 656
 Fore
 529 483 m 1
  529 205 l 2
@@ -5833,7 +5663,6 @@ Fore
  430 839 446 823 446 803 c 0
  446 790 440 780 423 767 c 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: Ucircumflex
 Encoding: 154 219 32767
@@ -5842,7 +5671,6 @@ Width: 600
 Flags: W
 HStem: -14 100<282.431 315> 483 100<171 219 377 429 529.031 544.331>
 VStem: 71 100<193 483> 429 100<193 483>
-DStem: 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711 300 839 300 750 148 711 187 653 300 750 300 839 412 653 451 711
 Fore
 529 483 m 1
  529 205 l 2
@@ -5885,7 +5713,6 @@ Fore
  431 640 423 644 412 653 c 2
  300 750 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: Udieresis
 Encoding: 155 220 32767
@@ -5935,7 +5762,6 @@ Fore
  371 678 344 705 344 738 c 128
  344 771 371 798 404 798 c 0
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: Yacute
 Encoding: 156 221 32767
@@ -5944,7 +5770,6 @@ Width: 600
 Flags: W
 HStem: 0 100<164 249 350 428> 483 100<83 85 514 516>
 VStem: 21 222<527 535> 250 100<99 245>
-DStem: 85 483 205 484 250 245 300 348 380 824 426 767 247 712 293 656 394 484 514 483 300 348 350 245
 Fore
 21 533 m 0
  21 569 49 583 88 583 c 2
@@ -5988,7 +5813,6 @@ Fore
  433 839 449 823 449 803 c 0
  449 790 443 780 426 767 c 1
 EndSplineSet
-MinimumDistance: x11,-1 x0,4 
 EndChar
 StartChar: Thorn
 Encoding: 157 222 32767
@@ -6037,7 +5861,6 @@ Fore
  195 343 l 1
  195 240 l 1
 EndSplineSet
-MinimumDistance: x28,-1 
 EndChar
 StartChar: germandbls
 Encoding: 158 223 32767
@@ -6078,7 +5901,6 @@ Fore
  46 99 54 100 79 100 c 2
  95 100 l 1
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: agrave
 Encoding: 159 224 32767
@@ -6087,7 +5909,6 @@ Width: 600
 Flags: W
 HStem: -16 100<206 235> 0 21G<388 505> 196 92<265 298> 350 100<276 315>
 VStem: 42 106<117 129>
-DStem: 160 624 206 680 293 512 339 569
 Fore
 388 0 m 1
  388 23 l 1
@@ -6127,7 +5948,6 @@ Fore
  137 680 153 696 174 696 c 0
  185 696 190 693 206 680 c 2
 EndSplineSet
-MinimumDistance: x27,-1 
 EndChar
 StartChar: aacute
 Encoding: 160 225 32767
@@ -6136,7 +5956,6 @@ Width: 600
 Flags: W
 HStem: -16 100<215 242> 0 21G<388 505> 196 92<265 298> 350 100<276 315>
 VStem: 42 106<117 129>
-DStem: 373 680 419 624 240 569 286 512
 Fore
 388 0 m 1
  388 23 l 1
@@ -6176,7 +5995,6 @@ Fore
  426 696 442 680 442 659 c 0
  442 647 436 637 419 624 c 1
 EndSplineSet
-MinimumDistance: x26,-1 
 EndChar
 StartChar: acircumflex
 Encoding: 161 226 32767
@@ -6185,7 +6003,6 @@ Width: 600
 Flags: W
 HStem: -16 100<217 235> 0 21G<388 505> 196 92<265 298> 350 100<276 315>
 VStem: 42 106<117 129>
-DStem: 290 607 290 696 402 510 450 560 290 696 290 607 138 567 177 510 290 607 290 696 402 510 450 560 290 696 290 607 138 567 177 510 290 607 290 696 402 510 450 560 290 696 290 607 138 567 177 510 290 607 290 696 402 510 450 560 290 696 290 607 138 567 177 510 290 607 290 696 402 510 450 560 290 696 290 607 138 567 177 510 290 607 290 696 402 510 450 560
 Fore
 388 0 m 1
  388 23 l 1
@@ -6227,7 +6044,6 @@ Fore
  422 497 413 501 402 510 c 2
  290 607 l 1
 EndSplineSet
-MinimumDistance: x32,-1 
 EndChar
 StartChar: atilde
 Encoding: 162 227 32767
@@ -6281,7 +6097,6 @@ Fore
  381 592 385 596 407 626 c 0
  421 646 434 656 446 656 c 0
 EndSplineSet
-MinimumDistance: x24,-1 
 EndChar
 StartChar: adieresis
 Encoding: 163 228 32767
@@ -6330,7 +6145,6 @@ Fore
  360 534 333 561 333 594 c 128
  333 627 360 654 393 654 c 0
 EndSplineSet
-MinimumDistance: x31,-1 
 EndChar
 StartChar: aring
 Encoding: 164 229 32767
@@ -6379,7 +6193,6 @@ Fore
  326 540 359 571 359 606 c 0
  359 643 327 674 289 674 c 0
 EndSplineSet
-MinimumDistance: x27,-1 
 EndChar
 StartChar: ae
 Encoding: 165 230 32767
@@ -6431,7 +6244,6 @@ Fore
  409 350 386 333 375 307 c 0
  369 294 366 281 362 258 c 1
 EndSplineSet
-MinimumDistance: x21,-1 
 EndChar
 StartChar: ccedilla
 Encoding: 166 231 32767
@@ -6477,7 +6289,6 @@ Fore
  393 -52 417 -81 417 -133 c 0
  417 -188 372 -229 312 -229 c 0
 EndSplineSet
-MinimumDistance: x21,-1 
 EndChar
 StartChar: egrave
 Encoding: 167 232 32767
@@ -6485,7 +6296,6 @@ OldEncoding: 232
 Width: 600
 Flags: W
 HStem: -16 100<288 322> 172 88<145 439> 350 100<272 309>
-DStem: 172 624 218 680 305 512 351 569
 Fore
 550 172 m 1
  142 172 l 1
@@ -6513,7 +6323,6 @@ Fore
  149 680 165 696 186 696 c 0
  197 696 202 693 218 680 c 2
 EndSplineSet
-MinimumDistance: x15,-1 
 EndChar
 StartChar: eacute
 Encoding: 168 233 32767
@@ -6521,7 +6330,6 @@ OldEncoding: 233
 Width: 600
 Flags: W
 HStem: -16 100<288 322> 172 88<145 439> 350 100<272 308>
-DStem: 385 680 431 624 252 569 298 512
 Fore
 550 172 m 1
  142 172 l 1
@@ -6549,7 +6357,6 @@ Fore
  438 696 454 680 454 659 c 0
  454 647 448 637 431 624 c 1
 EndSplineSet
-MinimumDistance: x14,-1 
 EndChar
 StartChar: ecircumflex
 Encoding: 169 234 32767
@@ -6557,7 +6364,6 @@ OldEncoding: 234
 Width: 600
 Flags: W
 HStem: -16 100<288 322> 172 88<145 439> 350 100<272 309>
-DStem: 305 607 305 696 417 510 465 560 305 696 305 607 153 567 192 510 305 607 305 696 417 510 465 560 305 696 305 607 153 567 192 510 305 607 305 696 417 510 465 560 305 696 305 607 153 567 192 510 305 607 305 696 417 510 465 560 305 696 305 607 153 567 192 510 305 607 305 696 417 510 465 560 305 696 305 607 153 567 192 510 305 607 305 696 417 510 465 560
 Fore
 550 172 m 1
  142 172 l 1
@@ -6587,7 +6393,6 @@ Fore
  437 497 428 501 417 510 c 2
  305 607 l 1
 EndSplineSet
-MinimumDistance: x20,-1 
 EndChar
 StartChar: edieresis
 Encoding: 170 235 32767
@@ -6624,7 +6429,6 @@ Fore
  375 534 348 561 348 594 c 128
  348 627 375 654 408 654 c 0
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: igrave
 Encoding: 171 236 32767
@@ -6633,7 +6437,6 @@ Width: 600
 Flags: W
 HStem: 0 100<109 250 349 479> 337 100<157 250>
 VStem: 250 100<99 337>
-DStem: 161 624 207 680 294 512 340 569
 Fore
 350 437 m 1
  350 100 l 1
@@ -6665,7 +6468,6 @@ Fore
  138 680 154 696 175 696 c 0
  186 696 191 693 207 680 c 2
 EndSplineSet
-MinimumDistance: x0,-1 x18,1 y1,18 y1,0 
 EndChar
 StartChar: iacute
 Encoding: 172 237 32767
@@ -6674,7 +6476,6 @@ Width: 600
 Flags: W
 HStem: 0 100<109 250 349 479> 337 100<157 250>
 VStem: 250 100<99 337>
-DStem: 364 680 410 624 231 569 277 512
 Fore
 350 437 m 1
  350 100 l 1
@@ -6706,7 +6507,6 @@ Fore
  417 696 433 680 433 659 c 0
  433 647 427 637 410 624 c 1
 EndSplineSet
-MinimumDistance: x19,-1 x18,1 y1,18 y1,0 
 EndChar
 StartChar: icircumflex
 Encoding: 173 238 32767
@@ -6715,7 +6515,6 @@ Width: 600
 Flags: W
 HStem: 0 100<108 250 349 479> 337 100<157 250>
 VStem: 250 100<99 337>
-DStem: 284 607 284 696 396 510 444 560 284 696 284 607 132 567 171 510 284 607 284 696 396 510 444 560 284 696 284 607 132 567 171 510 284 607 284 696 396 510 444 560 284 696 284 607 132 567 171 510 284 607 284 696 396 510 444 560 284 696 284 607 132 567 171 510 284 607 284 696 396 510 444 560 284 696 284 607 132 567 171 510 284 607 284 696 396 510 444 560
 Fore
 350 437 m 1
  350 100 l 1
@@ -6749,7 +6548,6 @@ Fore
  416 497 407 501 396 510 c 2
  284 607 l 1
 EndSplineSet
-MinimumDistance: x25,-1 x18,1 y1,18 y1,0 
 EndChar
 StartChar: idieresis
 Encoding: 174 239 32767
@@ -6790,7 +6588,6 @@ Fore
  354 534 327 561 327 594 c 128
  327 627 354 654 387 654 c 0
 EndSplineSet
-MinimumDistance: x24,-1 x18,1 y1,18 y1,0 
 EndChar
 StartChar: eth
 Encoding: 175 240 32767
@@ -6830,7 +6627,6 @@ Fore
  385 84 456 141 456 210 c 0
  456 289 388 350 300 350 c 0
 EndSplineSet
-MinimumDistance: x24,-1 
 EndChar
 StartChar: ntilde
 Encoding: 176 241 32767
@@ -6886,7 +6682,6 @@ Fore
  382 592 387 596 411 631 c 0
  421 645 435 655 446 656 c 1
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: ograve
 Encoding: 177 242 32767
@@ -6895,7 +6690,6 @@ Width: 600
 Flags: W
 HStem: -16 100<281 315> 350 100<281 315>
 VStem: 42 100<207 225> 458 100<207 225>
-DStem: 171 624 217 680 304 512 350 569
 Fore
 303 450 m 0
  444 450 558 346 558 217 c 0
@@ -6917,7 +6711,6 @@ Fore
  148 680 164 696 185 696 c 0
  196 696 201 693 217 680 c 2
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: oacute
 Encoding: 178 243 32767
@@ -6926,7 +6719,6 @@ Width: 600
 Flags: W
 HStem: -16 100<281 315> 350 100<281 315>
 VStem: 42 100<207 225> 458 100<207 225>
-DStem: 384 680 430 624 251 569 297 512
 Fore
 303 450 m 0
  444 450 558 346 558 217 c 0
@@ -6948,7 +6740,6 @@ Fore
  437 696 453 680 453 659 c 0
  453 647 447 637 430 624 c 1
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: ocircumflex
 Encoding: 179 244 32767
@@ -6957,7 +6748,6 @@ Width: 600
 Flags: W
 HStem: -16 100<281 315> 350 100<281 315>
 VStem: 42 100<207 225> 458 100<207 225>
-DStem: 300 607 300 696 412 510 460 560 300 696 300 607 148 567 187 510 300 607 300 696 412 510 460 560 300 696 300 607 148 567 187 510 300 607 300 696 412 510 460 560 300 696 300 607 148 567 187 510 300 607 300 696 412 510 460 560 300 696 300 607 148 567 187 510 300 607 300 696 412 510 460 560 300 696 300 607 148 567 187 510 300 607 300 696 412 510 460 560
 Fore
 303 450 m 0
  444 450 558 346 558 217 c 0
@@ -6981,7 +6771,6 @@ Fore
  432 497 423 501 412 510 c 2
  300 607 l 1
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: otilde
 Encoding: 180 245 32767
@@ -7017,7 +6806,6 @@ Fore
  395 592 399 596 421 626 c 0
  435 646 448 656 460 656 c 0
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: odieresis
 Encoding: 181 246 32767
@@ -7048,7 +6836,6 @@ Fore
  371 534 344 561 344 594 c 128
  344 627 371 654 404 654 c 0
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: divide
 Encoding: 182 247 32767
@@ -7080,7 +6867,6 @@ Fore
  255 400 225 427 225 466 c 128
  225 505 255 532 300 532 c 0
 EndSplineSet
-MinimumDistance: x11,-1 
 EndChar
 StartChar: oslash
 Encoding: 183 248 32767
@@ -7089,7 +6875,6 @@ Width: 600
 Flags: W
 HStem: -16 100<278 312> 350 100<279.384 312>
 VStem: 42 100<201 219> 458 100<201 219>
-DStem: 357 342 436 286 167 145 247 91
 Fore
 548 402 m 1
  506 359 l 1
@@ -7119,7 +6904,6 @@ Fore
  211 350 142 292 142 217 c 0
  142 192 150 168 167 145 c 1
 EndSplineSet
-MinimumDistance: x2,-1 
 EndChar
 StartChar: ugrave
 Encoding: 184 249 32767
@@ -7128,7 +6912,6 @@ Width: 600
 Flags: W
 HStem: -13 100<268 285> 0 21G<410 505> 417 20G<79 195 375 510>
 VStem: 95 100<146 337> 410 100<154 337>
-DStem: 169 624 215 680 302 512 348 569
 Fore
 273 -13 m 0
  171 -13 95 46 95 156 c 2
@@ -7166,7 +6949,6 @@ Fore
  146 680 162 696 183 696 c 0
  194 696 199 693 215 680 c 2
 EndSplineSet
-MinimumDistance: x18,-1 
 EndChar
 StartChar: uacute
 Encoding: 185 250 32767
@@ -7175,7 +6957,6 @@ Width: 600
 Flags: W
 HStem: -13 100<268 287> 0 21G<410 505> 417 20G<79 195 375 510>
 VStem: 95 100<146 337> 410 100<154 337>
-DStem: 372 680 418 624 239 569 285 512
 Fore
 273 -13 m 0
  171 -13 95 46 95 156 c 2
@@ -7213,7 +6994,6 @@ Fore
  425 696 441 680 441 659 c 0
  441 647 435 637 418 624 c 1
 EndSplineSet
-MinimumDistance: x18,-1 
 EndChar
 StartChar: ucircumflex
 Encoding: 186 251 32767
@@ -7222,7 +7002,6 @@ Width: 600
 Flags: W
 HStem: -13 100<268 296> 0 21G<410 505> 417 20G<79 195 375 510>
 VStem: 95 100<146 337> 410 100<154 337>
-DStem: 296 607 296 696 408 510 456 560 296 696 296 607 144 567 183 510 296 607 296 696 408 510 456 560 296 696 296 607 144 567 183 510 296 607 296 696 408 510 456 560 296 696 296 607 144 567 183 510 296 607 296 696 408 510 456 560 296 696 296 607 144 567 183 510 296 607 296 696 408 510 456 560 296 696 296 607 144 567 183 510 296 607 296 696 408 510 456 560
 Fore
 273 -13 m 0
  171 -13 95 46 95 156 c 2
@@ -7262,7 +7041,6 @@ Fore
  428 497 419 501 408 510 c 2
  296 607 l 1
 EndSplineSet
-MinimumDistance: x18,-1 
 EndChar
 StartChar: udieresis
 Encoding: 187 252 32767
@@ -7309,7 +7087,6 @@ Fore
  366 534 339 561 339 594 c 128
  339 627 366 654 399 654 c 0
 EndSplineSet
-MinimumDistance: x18,-1 
 EndChar
 StartChar: yacute
 Encoding: 188 253 32767
@@ -7318,7 +7095,6 @@ Width: 600
 Flags: W
 HStem: -205 100<68 188 297 321> 417 20G<87 177 421 513>
 VStem: 21 222<376.035 390>
-DStem: 70 337 184 337 242 3 298 114 242 3 527 337 187 -105 297 -105 406 680 452 624 273 569 319 512 418 337 527 337 298 114 297 -105
 Fore
 354 387 m 0
  354 423 382 437 421 437 c 2
@@ -7359,7 +7135,6 @@ Fore
  459 696 475 680 475 659 c 0
  475 647 469 637 452 624 c 1
 EndSplineSet
-MinimumDistance: x4,-1 x0,4 x20,24 
 EndChar
 StartChar: thorn
 Encoding: 189 254 32767
@@ -7402,7 +7177,6 @@ Fore
  471 263 452 300 423 321 c 0
  397 341 364 350 323 350 c 0
 EndSplineSet
-MinimumDistance: x22,-1 
 EndChar
 StartChar: ydieresis
 Encoding: 190 255 32767
@@ -7411,7 +7185,6 @@ Width: 600
 Flags: W
 HStem: -205 100<68 188 297 310> 417 20G<87 177 421 513> 534 120<185 198 393.067 407>
 VStem: 21 222<376.035 390> 136 120<591 597> 344 120<591 597>
-DStem: 70 337 184 337 242 3 298 114 242 3 527 337 187 -105 297 -105 418 337 527 337 298 114 297 -105
 Fore
 354 387 m 0
  354 423 382 437 421 437 c 2
@@ -7453,7 +7226,6 @@ Fore
  371 534 344 561 344 594 c 128
  344 627 371 654 404 654 c 0
 EndSplineSet
-MinimumDistance: x4,-1 x0,4 x20,24 
 EndChar
 StartChar: uni0E01
 Encoding: 191 3585 32767
@@ -7481,7 +7253,6 @@ Fore
  80 311 l 1
  128 419 221 445 316 445 c 0
 EndSplineSet
-MinimumDistance: x1,-1 
 Comment: "Thai Gogai" 
 EndChar
 StartChar: uni0E02
@@ -7517,7 +7288,6 @@ Fore
  316 358 318 263 213 263 c 0
  171 263 139 308 139 358 c 8
 EndSplineSet
-MinimumDistance: x12,-1 y10,12 y10,11 
 EndChar
 StartChar: uni0E03
 Encoding: 193 3587 32767
@@ -7560,7 +7330,6 @@ Fore
  238 245 193 204 153 204 c 0
  109 204 77 243 68 291 c 24
 EndSplineSet
-MinimumDistance: x15,-1 y13,15 y13,14 
 EndChar
 StartChar: uni0E04
 Encoding: 194 3588 32767
@@ -7569,7 +7338,6 @@ Width: 600
 Flags: W
 HStem: 0 21G<55 155 420 520> 138 48<286 296> 266 46<286 296> 363 82<278 296>
 VStem: 55 100<144 277> 332 47<220 228> 420 100<0 277>
-DStem: 199 222 244 162 155 144 155 0
 Fore
 288 266 m 0
  266 266 252 248 252 226 c 128
@@ -7594,7 +7362,6 @@ Fore
  55 275 l 18
  55 386 176 445 288 445 c 16
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E05
 Encoding: 195 3589 32767
@@ -7632,7 +7399,6 @@ Fore
  55 444 223 442 223 442 c 1
  288 383 l 1
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: uni0E06
 Encoding: 196 3590 32767
@@ -7681,7 +7447,6 @@ Fore
  206 208 266 186 266 186 c 9
  297 231 335 248 346 301 c 24
 EndSplineSet
-MinimumDistance: x26,-1 
 EndChar
 StartChar: uni0E07
 Encoding: 197 3591 32767
@@ -7690,7 +7455,6 @@ Width: 600
 Flags: W
 HStem: 0 21G<355 515> 382 63<411 415>
 VStem: 314 58<335 349> 413 102<104 256> 452 63<335 349>
-DStem: 111 270 191 347 355 0 413 104
 Fore
 413 382 m 0
  391 382 372 363 372 341 c 128
@@ -7709,7 +7473,6 @@ Fore
  349 273 314 294 314 341 c 8
  314 397 357 445 413 445 c 16
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E08
 Encoding: 198 3592 32767
@@ -7741,7 +7504,6 @@ Fore
  136 370 l 17
  197 432 240 445 320 445 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E09
 Encoding: 199 3593 32767
@@ -7783,7 +7545,6 @@ Fore
  56 352 l 17
  109 413 177 445 267 445 c 16
 EndSplineSet
-MinimumDistance: x9,-1 
 EndChar
 StartChar: uni0E0A
 Encoding: 200 3594 32767
@@ -7822,7 +7583,6 @@ Fore
  316 358 312 266 226 266 c 0
  184 266 139 308 139 358 c 8
 EndSplineSet
-MinimumDistance: x16,-1 
 EndChar
 StartChar: uni0E0B
 Encoding: 201 3595 32767
@@ -7869,7 +7629,6 @@ Fore
  238 247 193 204 153 204 c 0
  109 204 77 244 68 293 c 24
 EndSplineSet
-MinimumDistance: x17,-1 
 EndChar
 StartChar: uni0E0C
 Encoding: 202 3596 32767
@@ -7920,7 +7679,6 @@ Fore
  14 317 l 1
  56 421 111 447 191 447 c 0
 EndSplineSet
-MinimumDistance: x13,-1 
 EndChar
 StartChar: uni0E0D
 Encoding: 203 3597 32767
@@ -7974,7 +7732,6 @@ Fore
  43 317 l 1
  83 421 121 445 200 445 c 24
 EndSplineSet
-MinimumDistance: x21,-1 
 Substitution: 0 65534 'nds0' uni0E0D.descless
 Substitution: 0 65534 'ndsc' uni0E0D.descless
 EndChar
@@ -7985,7 +7742,6 @@ Width: 600
 Flags: HW
 HStem: -20 41<145 158> 363 82<297 343>
 VStem: 71 39<55 65> 190 55<55 65> 418 100<-94 315>
-DStem: 366 34 406 0 322 -28 366 -50
 AnchorPoint: "BelowBase" 520 -200 basechar 0
 Fore
 150 101 m 0
@@ -8030,7 +7786,6 @@ Fore
  92 311 l 1
  141 419 230 445 324 445 c 0
 EndSplineSet
-MinimumDistance: x10,-1 
 EndChar
 StartChar: uni0E0F
 Encoding: 205 3599 32767
@@ -8039,7 +7794,6 @@ Width: 600
 Flags: HW
 HStem: 0 50<157 175> 363 82<301 358>
 VStem: 78 48<88 96> 206 46<88 96> 425 102<-84 319>
-DStem: 312 60 358 24 272 -12 314 -44
 AnchorPoint: "BelowBase" 527 -200 basechar 0
 Fore
 166 130 m 0
@@ -8088,7 +7842,6 @@ Fore
  101 317 l 1
  149 421 238 445 331 445 c 0
 EndSplineSet
-MinimumDistance: x10,-1 
 EndChar
 StartChar: uni0E10
 Encoding: 206 3600 32767
@@ -8097,7 +7850,6 @@ Width: 600
 Flags: W
 HStem: -198 107<475 485> -71 54<147 163> -36 27<475 485> 0 21G<420 520> 213 44<306 314> 376 69<367 389>
 VStem: 226 42<168 182> 416 34<-71 -55> 505 34<-71 -55>
-DStem: 266 21 311 -4 228 -40 275 -55 362 -92 362 -30 460 -198 460 -140
 Fore
 478 -36 m 0
  462 -36 450 -48 450 -63 c 0
@@ -8158,7 +7910,6 @@ Fore
  135 -137 154 -147 177 -144 c 24
  198 -141 217 -106 217 -106 c 1
 EndSplineSet
-MinimumDistance: x29,-1 
 Substitution: 0 65534 'nds0' uni0E10.descless
 Substitution: 0 65534 'ndsc' uni0E10.descless
 EndChar
@@ -8169,7 +7920,6 @@ Width: 600
 Flags: W
 HStem: 0 21G<168 263 474 575> 204 50<90 108> 300 99<235 235.349>
 VStem: 139 46<287 300> 293 60<301 342> 474 101<0 324>
-DStem: 322 246 434 318 260 136 263 0
 Fore
 100 334 m 0
  78 334 59 313 59 291 c 128
@@ -8208,7 +7958,6 @@ Fore
  385 370 l 17
  409 434 420 445 455 445 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E12
 Encoding: 208 3602 32767
@@ -8260,7 +8009,6 @@ Fore
  17 448 164 445 164 445 c 1
  233 400 l 1
 EndSplineSet
-MinimumDistance: x14,-1 
 EndChar
 StartChar: uni0E13
 Encoding: 209 3603 32767
@@ -8310,7 +8058,6 @@ Fore
  25 317 l 1
  65 421 105 445 182 445 c 0
 EndSplineSet
-MinimumDistance: x13,-1 
 EndChar
 StartChar: uni0E14
 Encoding: 210 3604 32767
@@ -8343,7 +8090,6 @@ Fore
  69 287 l 18
  69 394 179 445 296 445 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E15
 Encoding: 211 3605 32767
@@ -8381,7 +8127,6 @@ Fore
  155 100 l 17
  226 139 l 17
 EndSplineSet
-MinimumDistance: x15,-1 
 EndChar
 StartChar: uni0E16
 Encoding: 212 3606 32767
@@ -8417,7 +8162,6 @@ Fore
  100 317 l 1
  147 422 244 445 335 445 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E17
 Encoding: 213 3607 32767
@@ -8426,7 +8170,6 @@ Width: 600
 Flags: W
 HStem: 0 21G<165 260 437 537> 402 46<151.079 167>
 VStem: 70 50<356 370> 200 64<356 370> 437 100<0 341>
-DStem: 314 370 374 330 264 225 260 0
 Fore
 160 402 m 0
  138 402 120 384 120 362 c 128
@@ -8451,7 +8194,6 @@ Fore
  93 302 70 310 70 366 c 8
  70 414 113 448 161 448 c 16
 EndSplineSet
-MinimumDistance: x9,-1 
 EndChar
 StartChar: uni0E18
 Encoding: 214 3608 32767
@@ -8482,7 +8224,6 @@ Fore
  515 412 l 1
  515 412 434 445 357 445 c 0
 EndSplineSet
-MinimumDistance: x12,-1 y6,8 y6,7 x9,11 x9,10 
 EndChar
 StartChar: uni0E19
 Encoding: 215 3609 32767
@@ -8520,7 +8261,6 @@ Fore
  79 297 48 329 55 364 c 24
  64 412 105 440 153 440 c 16
 EndSplineSet
-MinimumDistance: x13,-1 
 EndChar
 StartChar: uni0E1A
 Encoding: 216 3610 32767
@@ -8550,7 +8290,6 @@ Fore
  81 287 47 320 52 361 c 24
  57 408 100 443 142 443 c 8
 EndSplineSet
-MinimumDistance: x9,-1 y7,9 y7,8 x13,11 x13,12 
 EndChar
 StartChar: uni0E1B
 Encoding: 217 3611 32767
@@ -8581,7 +8320,6 @@ Fore
  81 287 47 320 52 361 c 24
  57 408 100 443 142 443 c 8
 EndSplineSet
-MinimumDistance: x9,-1 y7,9 y7,8 x13,11 x13,12 
 EndChar
 StartChar: uni0E1C
 Encoding: 218 3612 32767
@@ -8614,7 +8352,6 @@ Fore
  117 354 l 17
  117 411 161 444 212 444 c 16
 EndSplineSet
-MinimumDistance: x13,-1 
 EndChar
 StartChar: uni0E1D
 Encoding: 219 3613 32767
@@ -8648,7 +8385,6 @@ Fore
  117 354 l 17
  117 411 161 444 212 444 c 16
 EndSplineSet
-MinimumDistance: x13,-1 
 EndChar
 StartChar: uni0E1E
 Encoding: 220 3614 32767
@@ -8681,7 +8417,6 @@ Fore
  23 302 16 324 16 363 c 0
  16 418 57 445 100 445 c 8
 EndSplineSet
-MinimumDistance: x11,-1 
 EndChar
 StartChar: uni0E1F
 Encoding: 221 3615 32767
@@ -8715,7 +8450,6 @@ Fore
  23 302 16 324 16 363 c 0
  16 418 57 445 100 445 c 8
 EndSplineSet
-MinimumDistance: x11,-1 
 EndChar
 StartChar: uni0E20
 Encoding: 222 3616 32767
@@ -8751,7 +8485,6 @@ Fore
  81 311 l 1
  127 419 221 445 310 445 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E21
 Encoding: 223 3617 32767
@@ -8790,7 +8523,6 @@ Fore
  137 294 118 320 118 360 c 16
  118 420 151 446 196 446 c 16
 EndSplineSet
-MinimumDistance: x13,-1 
 EndChar
 StartChar: uni0E22
 Encoding: 224 3618 32767
@@ -8825,7 +8557,6 @@ Fore
  126 355 l 2
  126 410 165 445 214 445 c 16
 EndSplineSet
-MinimumDistance: x15,-1 y13,15 y13,14 
 EndChar
 StartChar: uni0E23
 Encoding: 225 3619 32767
@@ -8858,7 +8589,6 @@ Fore
  118 341 l 17
  165 437 247 445 326 445 c 0
 EndSplineSet
-MinimumDistance: x10,-1 
 EndChar
 StartChar: uni0E24
 Encoding: 226 3620 32767
@@ -8894,7 +8624,6 @@ Fore
  100 317 l 1
  147 422 244 445 335 445 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E25
 Encoding: 227 3621 32767
@@ -8929,7 +8658,6 @@ Fore
  104 394 l 17
  108 412 220 445 299 445 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E26
 Encoding: 228 3622 32767
@@ -8965,7 +8693,6 @@ Fore
  81 311 l 1
  127 419 221 445 310 445 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E27
 Encoding: 229 3623 32767
@@ -8993,7 +8720,6 @@ Fore
  265 363 240 341 203 312 c 9
  156 368 l 17
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: uni0E28
 Encoding: 230 3624 32767
@@ -9002,7 +8728,6 @@ Width: 600
 Flags: W
 HStem: 0 21G<55 165 420 520> 138 48<282.132 296> 266 46<282.132 296> 363 82<278 296>
 VStem: 55 100<144 277> 332 55<220 230> 388 100<495 502> 420 100<0 277>
-DStem: 199 222 251 152 155 144 165 0
 Fore
 291 266 m 0
  269 266 252 248 252 226 c 128
@@ -9031,7 +8756,6 @@ Fore
  55 386 178 445 291 445 c 16
  320 445 350 441 378 434 c 1
 EndSplineSet
-MinimumDistance: x8,-1 
 EndChar
 StartChar: uni0E29
 Encoding: 231 3625 32767
@@ -9076,7 +8800,6 @@ Fore
  420 100 l 1
  420 162 l 1
 EndSplineSet
-MinimumDistance: x16,-1 x23,21 x23,22 
 EndChar
 StartChar: uni0E2A
 Encoding: 232 3626 32767
@@ -9115,7 +8838,6 @@ Fore
  104 394 l 17
  108 412 220 449 299 449 c 0
 EndSplineSet
-MinimumDistance: x9,-1 
 EndChar
 StartChar: uni0E2B
 Encoding: 233 3627 32767
@@ -9155,7 +8877,6 @@ Fore
  417 216 417 251 417 251 c 1
  273 0 l 9
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: uni0E2C
 Encoding: 234 3628 32767
@@ -9201,7 +8922,6 @@ Fore
  23 302 16 324 16 363 c 0
  16 418 57 445 100 445 c 8
 EndSplineSet
-MinimumDistance: x22,-1 
 EndChar
 StartChar: uni0E2D
 Encoding: 235 3629 32767
@@ -9233,7 +8953,6 @@ Fore
  174 386 l 17
  173 391 244 445 348 445 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E2E
 Encoding: 236 3630 32767
@@ -9269,7 +8988,6 @@ Fore
  174 386 l 17
  173 391 244 445 348 445 c 0
 EndSplineSet
-MinimumDistance: x7,-1 
 EndChar
 StartChar: uni0E2F
 Encoding: 237 3631 32767
@@ -9301,7 +9019,6 @@ Fore
  101 278 55 311 55 361 c 24
  55 408 96 445 143 445 c 16
 EndSplineSet
-MinimumDistance: x9,-1 
 EndChar
 StartChar: uni0E30
 Encoding: 238 3632 32767
@@ -9340,7 +9057,6 @@ Fore
  164 280 129 311 129 355 c 24
  129 406 161 453 212 453 c 16
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: uni0E31
 Encoding: 239 3633 8
@@ -9367,7 +9083,6 @@ Fore
  -300 524 -335 555 -335 599 c 24
  -335 650 -303 697 -252 697 c 16
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: uni0E32
 Encoding: 240 3634 32767
@@ -9387,7 +9102,6 @@ Fore
  506 268 l 18
  506 359 440 445 265 445 c 0
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: uni0E33
 Encoding: 241 3635 32767
@@ -9417,7 +9131,6 @@ Fore
  200 445 179 429 143 386 c 9
  161 332 l 17
 EndSplineSet
-MinimumDistance: x12,-1 
 MultipleSubs: 0 0 'ccmp' uni0E4D uni0E32
 EndChar
 StartChar: uni0E34
@@ -9489,7 +9202,6 @@ Fore
  -496 500 l 17
  -496 630 -444 666 -361 666 c 16
 EndSplineSet
-MinimumDistance: x10,-1 
 EndChar
 StartChar: uni0E37
 Encoding: 245 3639 12
@@ -9517,7 +9229,6 @@ Fore
  -489 500 l 17
  -489 631 -456 668 -377 668 c 16
 EndSplineSet
-MinimumDistance: x10,-1 y8,10 y8,9 y7,5 y7,6 
 EndChar
 StartChar: uni0E38
 Encoding: 246 3640 32767
@@ -9542,7 +9253,6 @@ Fore
  -235 -142 -241 -131 -241 -108 c 8
  -241 -74 -209 -50 -175 -50 c 20
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E39
 Encoding: 247 3641 32767
@@ -9571,7 +9281,6 @@ Fore
  -332 -135 -343 -122 -343 -98 c 8
  -343 -68 -313 -48 -283 -48 c 16
 EndSplineSet
-MinimumDistance: x9,-1 
 EndChar
 StartChar: uni0E3A
 Encoding: 248 3642 32767
@@ -9671,7 +9380,6 @@ Fore
  399 357 428 384 428 419 c 0
  428 453 400 476 353 481 c 1
 EndSplineSet
-MinimumDistance: x30,-1 
 EndChar
 StartChar: uni0E40
 Encoding: 254 3648 32767
@@ -9695,7 +9403,6 @@ Fore
  246 0 205 44 205 95 c 10
  205 445 l 25
 EndSplineSet
-MinimumDistance: x8,-1 
 EndChar
 StartChar: uni0E41
 Encoding: 255 3649 32767
@@ -9732,7 +9439,6 @@ Fore
  150 0 109 44 109 95 c 10
  109 445 l 25
 EndSplineSet
-MinimumDistance: x8,-1 
 EndChar
 StartChar: uni0E42
 Encoding: 256 3650 32767
@@ -9765,7 +9471,6 @@ Fore
  459 38 417 0 368 0 c 16
  310 0 277 51 277 87 c 10
 EndSplineSet
-MinimumDistance: x18,-1 
 EndChar
 StartChar: uni0E43
 Encoding: 257 3651 32767
@@ -9802,7 +9507,6 @@ Fore
  38 491 46 514 46 564 c 8
  46 634 129 670 190 670 c 0
 EndSplineSet
-MinimumDistance: x12,-1 
 EndChar
 StartChar: uni0E44
 Encoding: 258 3652 32767
@@ -9831,7 +9535,6 @@ Fore
  198 604 l 25
  272 665 l 25
 EndSplineSet
-MinimumDistance: x8,-1 
 EndChar
 StartChar: uni0E45
 Encoding: 259 3653 32767
@@ -9851,7 +9554,6 @@ Fore
  506 268 l 18
  506 375 408 445 264 445 c 0
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: uni0E46
 Encoding: 260 3654 32767
@@ -9887,7 +9589,6 @@ Fore
  131 388 l 1
  131 388 176 443 251 443 c 9
 EndSplineSet
-MinimumDistance: x7,-1 
 EndChar
 StartChar: uni0E47
 Encoding: 261 3655 13
@@ -9926,7 +9627,6 @@ Fore
  -431 660 -423 691 -395 712 c 0
  -358 740 -319 750 -253 750 c 0
 EndSplineSet
-MinimumDistance: x9,-1 
 EndChar
 StartChar: uni0E48
 Encoding: 262 3656 14
@@ -9942,7 +9642,6 @@ Fore
  -169 700 l 1
  -169 855 l 1
 EndSplineSet
-MinimumDistance: x1,-1 
 Substitution: 0 65534 'loww' uni0E48.low
 Substitution: 0 65534 'amni' uni0E4D
 EndChar
@@ -9973,7 +9672,6 @@ Fore
  -237 779 -283 797 -283 840 c 8
  -283 878 -248 904 -210 904 c 16
 EndSplineSet
-MinimumDistance: x5,-1 
 Substitution: 0 65534 'loww' uni0E49.low
 Substitution: 0 65534 'amni' uni0E4D
 EndChar
@@ -9983,7 +9681,6 @@ OldEncoding: 3658
 Width: 0
 Flags: HW
 HStem: 775 56<-245 -244.338>
-DStem: -54 907 -7 892 -105 769 -78 700
 AnchorPoint: "AboveMark" -237 700 mark 0
 Fore
 -337 758 m 0
@@ -10037,7 +9734,6 @@ Fore
  -142 700 l 1
  -142 773 l 1
 EndSplineSet
-MinimumDistance: y3,5 y3,4 y0,10 y0,11 y7,9 y8,6 x6,8 x6,7 x0,2 x0,1 
 Substitution: 0 65534 'loww' uni0E4B.low
 Substitution: 0 65534 'amni' uni0E4D
 EndChar
@@ -10063,7 +9759,6 @@ Fore
  -107 696 -141 689 -178 700 c 24
  -211 710 -236 733 -236 768 c 24
 EndSplineSet
-MinimumDistance: x0,-1 
 Substitution: 0 65534 'loww' uni0E4C.low
 EndChar
 StartChar: uni0E4D
@@ -10071,9 +9766,8 @@ Encoding: 267 3661 32767
 OldEncoding: 3661
 Width: 0
 Flags: HW
-HStem: 500 70<-197 -193> 619 63<-197 -193>
-VStem: -282 66<593 599> -175 63<593 599>
-AnchorPoint: "AboveMark" -195 500 mark 0
+HStem: 500 70<-218.5 -172> 619 63<-218.5 -172>
+VStem: -282 66<569 619> -175 63<569 619>
 AnchorPoint: "AboveMark" -195 700 basemark 0
 AnchorPoint: "AboveBase" -80 500 mark 0
 Fore
@@ -10084,11 +9778,11 @@ Fore
  -175 608 -190 619 -195 619 c 0
 -195 682 m 0
  -149 682 -112 642 -112 596 c 0
- -112 542 -149 500 -195 500 c 4
+ -112 542 -149 500 -195 500 c 0
  -242 500 -282 542 -282 596 c 0
  -282 642 -242 682 -195 682 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
+Substitution: 0 65534 'high' uni0E4D.high
 Substitution: 0 65534 'G007' uni0E4B
 Substitution: 0 65534 'G006' uni0E4A
 Substitution: 0 65534 'G005' uni0E49
@@ -10148,7 +9842,6 @@ Fore
  194 0 104 86 104 194 c 128
  104 302 194 390 302 390 c 0
 EndSplineSet
-MinimumDistance: x13,-1 
 EndChar
 StartChar: uni0E50
 Encoding: 270 3664 32767
@@ -10169,7 +9862,6 @@ Fore
  198 0 105 91 105 203 c 0
  105 316 198 389 313 389 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E51
 Encoding: 271 3665 32767
@@ -10203,7 +9895,6 @@ Fore
  170 202 172 150 172 150 c 1
  172 150 215 195 252 195 c 0
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E52
 Encoding: 272 3666 32767
@@ -10243,7 +9934,6 @@ Fore
  356 277 395 242 395 199 c 24
  395 153 356 116 310 116 c 24
 EndSplineSet
-MinimumDistance: x10,-1 
 EndChar
 StartChar: uni0E53
 Encoding: 273 3667 32767
@@ -10278,7 +9968,6 @@ Fore
  268 166 291 132 291 95 c 16
  291 50 250 0 198 0 c 16
 EndSplineSet
-MinimumDistance: x10,-1 
 EndChar
 StartChar: uni0E54
 Encoding: 274 3668 32767
@@ -10312,7 +10001,6 @@ Fore
  298 138 273 145 273 191 c 8
  273 242 308 288 359 288 c 24
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E55
 Encoding: 275 3669 32767
@@ -10355,7 +10043,6 @@ Fore
  211 411 205 438 211 467 c 0
  217 497 241 531 299 531 c 0
 EndSplineSet
-MinimumDistance: x19,-1 
 EndChar
 StartChar: uni0E56
 Encoding: 276 3670 32767
@@ -10364,7 +10051,6 @@ Width: 600
 Flags: W
 HStem: 182 38<241 258> 309 81<297 315>
 VStem: 154 56<126 142> 290 44<140 148>
-DStem: 74 422 162 458 145 269 212 342
 Fore
 250 182 m 0
  228 182 210 164 210 142 c 128
@@ -10390,7 +10076,6 @@ Fore
  201 32 154 67 154 127 c 144
  154 187 202 220 256 220 c 24
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E57
 Encoding: 277 3671 32767
@@ -10428,7 +10113,6 @@ Fore
  213 165 242 137 242 102 c 24
  242 49 204 0 151 0 c 16
 EndSplineSet
-MinimumDistance: x13,-1 
 EndChar
 StartChar: uni0E58
 Encoding: 278 3672 32767
@@ -10467,7 +10151,6 @@ Fore
  434 108 375 120 375 176 c 8
  375 228 416 272 468 272 c 24
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E59
 Encoding: 279 3673 32767
@@ -10476,7 +10159,6 @@ Width: 600
 Flags: W
 HStem: 0 54<137 155>
 VStem: 55 51<92 102> 186 45<92 102>
-DStem: 216 258 290 274 298 12 363 37 522 437 596 395 442 304 471 181
 Fore
 146 134 m 0
  124 134 106 116 106 94 c 128
@@ -10507,7 +10189,6 @@ Fore
  202 163 231 134 231 102 c 24
  231 50 196 0 144 0 c 16
 EndSplineSet
-MinimumDistance: x12,-1 
 EndChar
 StartChar: uni0E5A
 Encoding: 280 3674 32767
@@ -10544,7 +10225,6 @@ Fore
  208 420 222 384 222 384 c 1
  245 397 270 416 278 445 c 9
 EndSplineSet
-MinimumDistance: x4,-1 
 EndChar
 StartChar: uni0E5B
 Encoding: 281 3675 32767
@@ -10582,13 +10262,12 @@ Fore
  50 0 51 120 51 214 c 8
  51 314 41 453 141 453 c 16
 EndSplineSet
-MinimumDistance: x18,-1 
 EndChar
-StartChar: uni0E5C
-Encoding: 282 3676 32767
+StartChar: uni200B
+Encoding: 282 8203 32767
 OldEncoding: 3676
-Width: 600
-Flags: W
+Width: 0
+Flags: HW
 EndChar
 StartChar: uni2010
 Encoding: 283 8208 32767
@@ -10750,7 +10429,6 @@ Fore
  473 339 463 337 439 337 c 2
  350 337 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: daggerdbl
 Encoding: 291 8225 32767
@@ -10800,7 +10478,6 @@ Fore
  473 339 463 337 439 337 c 2
  350 337 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: bullet
 Encoding: 292 8226 32767
@@ -10845,7 +10522,6 @@ Fore
  546 117 575 88 575 51 c 0
  575 14 546 -15 509 -15 c 2
 EndSplineSet
-MinimumDistance: x17,-1 
 Ligature: 8 2 'liga' period period period
 EndChar
 StartChar: dottedcircle
@@ -10917,7 +10593,6 @@ Fore
  304 374 293 387 293 404 c 0
  293 417 304 429 316 429 c 0
 EndSplineSet
-MinimumDistance: x33,-1 
 EndChar
 StartChar: uni0E10.descless
 Encoding: 295 63232 32767
@@ -10954,7 +10629,6 @@ Fore
  320 359 389 363 428 345 c 0
  476 323 520 319 520 233 c 10
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: uni0E34.left
 Encoding: 296 63233 32767
@@ -11013,7 +10687,6 @@ OldEncoding: 63239
 Width: 0
 Flags: HW
 HStem: 580 56<-401 -400.338>
-DStem: -210 712 -163 697 -261 574 -234 505
 Ref: 264 3658 N 1 0 0 1 -156 -195
 EndChar
 StartChar: uni0E4B.low_left
@@ -11047,7 +10720,6 @@ Fore
  -169 500 l 1
  -169 655 l 1
 EndSplineSet
-MinimumDistance: x1,-1 
 Substitution: 0 65534 'amni' uni0E4D
 EndChar
 StartChar: uni0E49.low
@@ -11077,7 +10749,6 @@ Fore
  -237 579 -283 597 -283 640 c 8
  -283 678 -248 704 -210 704 c 16
 EndSplineSet
-MinimumDistance: x5,-1 
 Substitution: 0 65534 'amni' uni0E4D
 EndChar
 StartChar: uni0E4A.low
@@ -11086,7 +10757,6 @@ OldEncoding: 63244
 Width: 0
 Flags: HW
 HStem: 575 56<-245 -244.338>
-DStem: -13 682 38 643 -105 569 -78 500
 AnchorPoint: "AboveBase" 0 500 mark 0
 Fore
 -337 558 m 0
@@ -11139,7 +10809,6 @@ Fore
  -142 500 l 1
  -142 573 l 1
 EndSplineSet
-MinimumDistance: y3,5 y3,4 y0,10 y0,11 y7,9 y8,6 x6,8 x6,7 x0,2 x0,1 
 Substitution: 0 65534 'amni' uni0E4D
 EndChar
 StartChar: uni0E4C.low
@@ -11164,7 +10833,6 @@ Fore
  -107 496 -141 489 -178 500 c 24
  -211 510 -236 533 -236 568 c 24
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: uni0E0D.descless
 Encoding: 310 63247 32767
@@ -11204,7 +10872,6 @@ Fore
  43 317 l 1
  83 421 121 445 200 445 c 24
 EndSplineSet
-MinimumDistance: x9,-1 
 EndChar
 StartChar: uni0E31.left
 Encoding: 311 63248 32767
@@ -11256,7 +10923,6 @@ OldEncoding: 63253
 Width: 0
 Flags: HW
 HStem: 775 56<-393 -392.338>
-DStem: -202 907 -155 892 -253 769 -226 700
 Ref: 264 3658 N 1 0 0 1 -148 0
 EndChar
 StartChar: uni0E4B.left
@@ -11298,7 +10964,6 @@ Fore
  -235 -292 -241 -281 -241 -258 c 8
  -241 -224 -209 -200 -175 -200 c 20
 EndSplineSet
-MinimumDistance: x5,-1 
 EndChar
 StartChar: uni0E39.low
 Encoding: 320 63257 32767
@@ -11326,7 +10991,6 @@ Fore
  -332 -287 -343 -274 -343 -250 c 8
  -343 -220 -313 -200 -283 -200 c 16
 EndSplineSet
-MinimumDistance: x9,-1 
 EndChar
 StartChar: uni0E3A.low
 Encoding: 321 63258 32767
@@ -11356,7 +11020,6 @@ Fore
  500 0 l 1
  100 0 l 1
 EndSplineSet
-MinimumDistance: x2,-1 
 EndChar
 StartChar: uniF71C
 Encoding: 323 63260 32767
@@ -11383,7 +11046,29 @@ Fore
  100 -120 l 1
  100 0 l 1
 EndSplineSet
-MinimumDistance: x1,-1 x7,5 y5,7 y5,6 x2,4 y4,2 y4,3 
+EndChar
+StartChar: uni0E4D.high
+Encoding: 325 63262 65535
+OldEncoding: 63262
+Width: 0
+VWidth: 1200
+Flags: W
+TeX: 0 0 0 0
+HStem: 700 70<-218.5 -172> 819 63<-218.5 -172>
+VStem: -282 66<769 819> -175 63<769 819>
+AnchorPoint: "AboveMark" -195 700 mark 0
+Fore
+-195 819 m 0
+ -201 819 -216 808 -216 795 c 0
+ -216 781 -201 770 -195 770 c 0
+ -190 770 -175 781 -175 795 c 0
+ -175 808 -190 819 -195 819 c 0
+-195 882 m 0
+ -149 882 -112 842 -112 796 c 0
+ -112 742 -149 700 -195 700 c 0
+ -242 700 -282 742 -282 796 c 0
+ -282 842 -242 882 -195 882 c 0
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
