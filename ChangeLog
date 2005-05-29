@@ -1,6 +1,20 @@
 2005-05-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
-	* tlwg/Purisa*.sfd:
+	* tlwg/TlwgTypewriter*.sfd:
+	- Add high variant glyph for Nikhahit (uni0E4D.high), as well as
+	  'ccmp' rule for appropriate glyph selection.
+	- Remove unused "BelowMark" anchor class.
+	- Round (truncate) all anchor coordinates to int.
+	- Add uni200B (zerowidthspace) glyph, replacing the wrongly-placed
+	  U+0E5C.
+
+	* tlwg/TlwgMono*.sfd:
+	Add uni200B (zerowidthspace) glyph, replacing the wrongly-placed
+	U+0E5C.
+
+2005-05-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Purisa.sfd:
 	- Add high variant glyph for Nikhahit (uni0E4D.high), as well as
 	  'ccmp' rule for appropriate glyph selection.
 	- Remove unused "BelowMark" anchor class.
