@@ -91,28 +91,35 @@ ChainSub: coverage 0 1 'ccmp' 0 0 0 1
  1
   SeqLookup: 0 'loww'
 EndFPST
-GenTags: 8 sb'loww' sb'ndsc' sb'amni' sb'G003' sb'G004' sb'G005' sb'G006' sb'nds0'
+ChainSub: coverage 0 1 'ccmp' 0 0 0 1
+ 1 1 0
+  Coverage: 7 uni0E4D
+  BCoverage: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
+ 1
+  SeqLookup: 0 'high'
+EndFPST
+GenTags: 9 sb'loww' sb'ndsc' sb'amni' sb'G003' sb'G004' sb'G005' sb'G006' sb'nds0' sb'high'
 LangName: 1033 "" "" "" "Garuda Bold" 
 Encoding: compacted
-OldEncoding: iso8859_1
+OldEncoding: ISO8859-1
 UnicodeInterp: none
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 144 8 7
+WinInfo: 192 8 7
 BeginPrivate: 3
 BlueValues 30 [-3 2 523 526 595 601 699 716]
 OtherBlues 11 [-279 -240]
 ForceBold 4 true
 EndPrivate
 AnchorClass: "AboveBase" mark 0 1 1 0 "BelowBase" mark 0 1 2 0 "AboveMark" mkmk 0 1 3 1 "BelowMark" mkmk 0 1 4 1 
-BeginChars: 379 345
+BeginChars: 379 346
 StartChar: .notdef
 Encoding: 0 -1 0
 OldEncoding: 0
 Width: 766
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 95<192 671> 1242 95<95 575>
 VStem: 95 97<0 1242> 575 96<95 1337>
 Fore
@@ -133,13 +140,13 @@ Encoding: 32 32 1
 OldEncoding: 32
 Width: 344
 VWidth: 2048
-Flags: W
+Flags: HW
 EndChar
 StartChar: exclam
 Encoding: 33 33 2
 OldEncoding: 33
 Width: 308
-Flags: W
+Flags: HW
 HStem: 2 145<161 163> 677 20G<98 221>
 VStem: 98 120<212 697>
 Fore
@@ -159,7 +166,7 @@ StartChar: quotedbl
 Encoding: 34 34 3
 OldEncoding: 34
 Width: 458
-Flags: W
+Flags: HW
 HStem: 677 20G<61 162 296 397>
 VStem: 61 101<577 697> 296 101<577 697>
 Fore
@@ -183,9 +190,8 @@ StartChar: numbersign
 Encoding: 35 35 4
 OldEncoding: 35
 Width: 597
-Flags: W
+Flags: HW
 HStem: 0 265<31 184 238 386> 166 99<31 120 238 325 441 540> 412 103<72 166 282 374 484 567>
-DStem: 120 166 218 166 86 0 184 0 166 412 264 412 139 265 238 265 216 700 316 700 182 515 282 515 325 166 422 166 290 0 386 0 374 412 469 412 343 265 441 265 426 700 521 700 388 515 484 515
 Fore
 441 265 m 1x60
  540 265 l 1
@@ -227,7 +233,7 @@ StartChar: dollar
 Encoding: 36 36 5
 OldEncoding: 36
 Width: 574
-Flags: W
+Flags: HW
 HStem: 679 20G<264 359>
 VStem: 264 95<-75 2 106 264 411 532 635 699>
 Fore
@@ -273,10 +279,9 @@ StartChar: percent
 Encoding: 37 37 6
 OldEncoding: 37
 Width: 697
-Flags: W
+Flags: HW
 HStem: -8 62<544 554> 311 58<544 554> 322 61<178 186> 642 57<178 186>
 VStem: 41 85<510 537> 231 86<487 521> 406 86<182 201> 598 86<167 201>
-DStem: 507 699 624 699 95 -2 215 -2
 Fore
 41 510 m 0xbf
  41 510 l 0
@@ -314,10 +319,9 @@ StartChar: ampersand
 Encoding: 38 38 7
 OldEncoding: 38
 Width: 717
-Flags: W
+Flags: HW
 HStem: -8 95<271 293> 635 72<318 336>
 VStem: 136 114<550 569> 426 86<540 556>
-DStem: 270 326 371 372 431 149 500 235
 Fore
 635 2 m 0
  635 2 l 0
@@ -357,7 +361,7 @@ StartChar: quotesingle
 Encoding: 39 39 8
 OldEncoding: 39
 Width: 298
-Flags: W
+Flags: HW
 VStem: 100 99<611 731>
 Fore
 162 489 m 1
@@ -373,7 +377,7 @@ StartChar: parenleft
 Encoding: 40 40 9
 OldEncoding: 40
 Width: 378
-Flags: W
+Flags: HW
 Fore
 156 276 m 0
  156 124 192 -34 258 -167 c 1
@@ -388,7 +392,7 @@ StartChar: parenright
 Encoding: 41 41 10
 OldEncoding: 41
 Width: 378
-Flags: W
+Flags: HW
 Fore
 146 -167 m 1
  78 -167 l 1
@@ -403,8 +407,7 @@ StartChar: asterisk
 Encoding: 42 42 11
 OldEncoding: 42
 Width: 597
-Flags: W
-DStem: 121 572 135 616 276 524 284 558
+Flags: HW
 Fore
 325 524 m 1
  422 386 l 1
@@ -428,7 +431,7 @@ StartChar: plus
 Encoding: 43 43 12
 OldEncoding: 43
 Width: 565
-Flags: W
+Flags: HW
 HStem: 264 90<66 247 330 510>
 VStem: 247 83<64 264 354 553>
 Fore
@@ -451,7 +454,7 @@ StartChar: comma
 Encoding: 44 44 13
 OldEncoding: 44
 Width: 252
-Flags: W
+Flags: HW
 Fore
 121 -71 m 0
  135 -43 133 -29 132 0 c 1
@@ -466,7 +469,7 @@ StartChar: hyphen
 Encoding: 45 45 14
 OldEncoding: 45
 Width: 455
-Flags: W
+Flags: HW
 HStem: 241 81<40 412>
 Fore
 40 241 m 1
@@ -480,7 +483,7 @@ StartChar: period
 Encoding: 46 46 15
 OldEncoding: 46
 Width: 217
-Flags: W
+Flags: HW
 HStem: 2 21G<95 141>
 Fore
 185 75 m 0
@@ -494,9 +497,8 @@ StartChar: slash
 Encoding: 47 47 16
 OldEncoding: 47
 Width: 597
-Flags: W
+Flags: HW
 HStem: -2 21G<32 161> 679 20G<445 570>
-DStem: 445 699 570 699 32 -2 161 -2
 Fore
 445 699 m 1
  570 699 l 1
@@ -509,7 +511,7 @@ StartChar: zero
 Encoding: 48 48 17
 OldEncoding: 48
 Width: 697
-Flags: W
+Flags: HW
 HStem: 0 77<353.649 386> 619 81<367 386>
 VStem: 536 126<335 385>
 Fore
@@ -530,7 +532,7 @@ StartChar: one
 Encoding: 49 49 18
 OldEncoding: 49
 Width: 697
-Flags: W
+Flags: HW
 HStem: -5 21G<376 504> 682 20G<348 504>
 VStem: 376 128<-5 702>
 Fore
@@ -551,7 +553,7 @@ StartChar: two
 Encoding: 50 50 19
 OldEncoding: 50
 Width: 697
-Flags: W
+Flags: HW
 HStem: -3 101<267 622.761>
 Fore
 667 -3 m 1
@@ -576,8 +578,7 @@ StartChar: three
 Encoding: 51 51 20
 OldEncoding: 51
 Width: 697
-Flags: W
-DStem: 126 506 245 504 248 501 248 501
+Flags: HW
 Fore
 245 504 m 1
  248 501 l 1
@@ -608,7 +609,7 @@ StartChar: four
 Encoding: 52 52 21
 OldEncoding: 52
 Width: 697
-Flags: W
+Flags: HW
 HStem: -5 21G<458 587> 178 83<189 458 586 700> 685 20G<418 586>
 VStem: 458 129<-5 178 261 705>
 Fore
@@ -634,9 +635,8 @@ StartChar: five
 Encoding: 53 53 22
 OldEncoding: 53
 Width: 697
-Flags: W
+Flags: HW
 HStem: -15 89<373 423> 601 96<176 651>
-DStem: 176 697 277 578 121 314 248 429
 Fore
 403 -15 m 0
  265 -15 196 26 161 72 c 0
@@ -662,7 +662,7 @@ StartChar: six
 Encoding: 54 54 23
 OldEncoding: 54
 Width: 697
-Flags: W
+Flags: HW
 HStem: -15 21G<394 394> 628 82<411 435.964>
 VStem: 556 120<208 242>
 Fore
@@ -691,7 +691,7 @@ StartChar: seven
 Encoding: 55 55 24
 OldEncoding: 55
 Width: 697
-Flags: W
+Flags: HW
 HStem: -2 21G<231 376> 609 85<132 552>
 Fore
 423 253 m 0
@@ -710,7 +710,7 @@ StartChar: eight
 Encoding: 56 56 25
 OldEncoding: 56
 Width: 697
-Flags: W
+Flags: HW
 HStem: -6 73<381 414.946> 348 87<388 399> 639 66<389 399>
 Fore
 665 218 m 0
@@ -742,7 +742,7 @@ StartChar: nine
 Encoding: 57 57 26
 OldEncoding: 57
 Width: 697
-Flags: W
+Flags: HW
 HStem: -8 74<352 374>
 VStem: 113 117<471 489>
 Fore
@@ -770,7 +770,7 @@ StartChar: colon
 Encoding: 58 58 27
 OldEncoding: 58
 Width: 294
-Flags: W
+Flags: HW
 HStem: 2 145<143 156> 383 146<143 156>
 Fore
 208 455 m 0
@@ -790,7 +790,7 @@ StartChar: semicolon
 Encoding: 59 59 28
 OldEncoding: 59
 Width: 320
-Flags: W
+Flags: HW
 HStem: 379 145<147 159>
 Fore
 215 451 m 0
@@ -812,8 +812,7 @@ StartChar: less
 Encoding: 60 60 29
 OldEncoding: 60
 Width: 597
-Flags: W
-DStem: 74 247 173 299 524 63 524 161 524 533 524 435 74 349 173 299
+Flags: HW
 Fore
 74 247 m 1
  74 349 l 1
@@ -829,7 +828,7 @@ StartChar: equal
 Encoding: 61 61 30
 OldEncoding: 61
 Width: 544
-Flags: W
+Flags: HW
 HStem: 138 92<66 497> 402 90<66 497>
 Fore
 66 402 m 1
@@ -848,8 +847,7 @@ StartChar: greater
 Encoding: 62 62 31
 OldEncoding: 62
 Width: 597
-Flags: W
-DStem: 74 435 74 533 423 299 524 349 423 299 524 247 74 161 74 63
+Flags: HW
 Fore
 74 63 m 1
  74 161 l 1
@@ -865,7 +863,7 @@ StartChar: question
 Encoding: 63 63 32
 OldEncoding: 63
 Width: 538
-Flags: W
+Flags: HW
 HStem: -2 115<268 272>
 Fore
 422 653 m 0
@@ -892,7 +890,7 @@ StartChar: at
 Encoding: 64 64 33
 OldEncoding: 64
 Width: 784
-Flags: W
+Flags: HW
 HStem: -26 80<398 442> 138 95<356 380> 440 96<387 406> 644 79<386 426>
 VStem: 57 92<324 375> 204 104<309 328> 653 75<386 420>
 Fore
@@ -930,9 +928,8 @@ StartChar: A
 Encoding: 65 65 34
 OldEncoding: 65
 Width: 628
-Flags: W
+Flags: HW
 HStem: 3 21G<25 141 460 590> 155 96<210 418> 684 20G<230 391>
-DStem: 230 704 303 596 25 3 210 251 230 704 184 155 25 3 141 3 418 155 391 704 460 3 590 3
 Fore
 460 3 m 1
  418 155 l 1
@@ -953,7 +950,7 @@ StartChar: B
 Encoding: 66 66 35
 OldEncoding: 66
 Width: 646
-Flags: W
+Flags: HW
 HStem: 3 97<202 367> 319 90<202 365> 612 92<83 372>
 VStem: 83 119<3 319 3 612> 458 124<513 531> 472 129<182 213>
 Fore
@@ -992,7 +989,7 @@ StartChar: C
 Encoding: 67 67 36
 OldEncoding: 67
 Width: 646
-Flags: W
+Flags: HW
 HStem: -3 100<339 361.182> 615 101<337 356>
 VStem: 51 138<332 366>
 Fore
@@ -1013,7 +1010,7 @@ StartChar: D
 Encoding: 68 68 37
 OldEncoding: 68
 Width: 646
-Flags: W
+Flags: HW
 HStem: 3 21G<55 259> 596 108<55 280>
 VStem: 55 121<3 596> 469 124<338 372>
 Fore
@@ -1040,7 +1037,7 @@ StartChar: E
 Encoding: 69 69 38
 OldEncoding: 69
 Width: 568
-Flags: W
+Flags: HW
 HStem: 2 93<199 523> 293 98<199 454> 596 101<80 523>
 VStem: 80 119<2 293 2 596>
 Fore
@@ -1063,7 +1060,7 @@ StartChar: F
 Encoding: 70 70 39
 OldEncoding: 70
 Width: 530
-Flags: W
+Flags: HW
 HStem: 2 21G<78 198> 288 104<198 454> 595 105<78 520>
 VStem: 78 120<2 288 2 595>
 Fore
@@ -1084,7 +1081,7 @@ StartChar: G
 Encoding: 71 71 40
 OldEncoding: 71
 Width: 646
-Flags: W
+Flags: HW
 HStem: -6 98<334 368> 261 96<356 481> 615 96<332 357>
 VStem: 31 124<329 363> 495 100<0 76.1965>
 Fore
@@ -1110,7 +1107,7 @@ StartChar: H
 Encoding: 72 72 41
 OldEncoding: 72
 Width: 657
-Flags: W
+Flags: HW
 HStem: 308 107<181 480> 684 20G<60 181 480 605>
 VStem: 60 121<3 308 3 704> 480 125<3 704>
 Fore
@@ -1133,7 +1130,7 @@ StartChar: I
 Encoding: 73 73 42
 OldEncoding: 73
 Width: 294
-Flags: W
+Flags: HW
 HStem: 3 21G<83 202> 684 20G<83 202>
 VStem: 83 119<3 704>
 Fore
@@ -1148,7 +1145,7 @@ StartChar: J
 Encoding: 74 74 43
 OldEncoding: 74
 Width: 482
-Flags: W
+Flags: HW
 HStem: 680 20G<326 445>
 VStem: 29 117<180 274> 326 119<219 700>
 Fore
@@ -1170,10 +1167,9 @@ StartChar: K
 Encoding: 75 75 44
 OldEncoding: 75
 Width: 628
-Flags: W
+Flags: HW
 HStem: 0 21G<83 198 458 593> 679 20G<83 198>
 VStem: 83 115<0 130 0 699>
-DStem: 320 326 406 438 458 0 593 0 434 697 561 697 198 317 406 438
 Fore
 458 0 m 1
  320 326 l 1
@@ -1194,7 +1190,7 @@ StartChar: L
 Encoding: 76 76 45
 OldEncoding: 76
 Width: 490
-Flags: W
+Flags: HW
 HStem: 3 107<195 466> 684 20G<75 196>
 VStem: 75 121<3 704>
 Fore
@@ -1211,10 +1207,9 @@ StartChar: M
 Encoding: 77 77 46
 OldEncoding: 77
 Width: 862
-Flags: W
+Flags: HW
 HStem: 3 21G<80 176 374 454 658 777> 607 97<80 210 563 658>
 VStem: 80 96<3 607> 658 119<3 704>
-DStem: 210 607 294 704 374 3 426 208 563 704 621 607 426 208 454 3
 Fore
 658 3 m 1
  658 607 l 1
@@ -1238,10 +1233,9 @@ StartChar: N
 Encoding: 78 78 47
 OldEncoding: 78
 Width: 646
-Flags: W
+Flags: HW
 HStem: 3 21G<80 164 455 561> 684 20G<80 219 475 561>
 VStem: 80 84<3 529> 475 86<236 704>
-DStem: 198 529 219 704 455 3 445 236
 Fore
 455 3 m 1
  198 529 l 1
@@ -1262,7 +1256,7 @@ StartChar: O
 Encoding: 79 79 48
 OldEncoding: 79
 Width: 646
-Flags: W
+Flags: HW
 HStem: -3 104<318 337> 616 100<318 337>
 VStem: 32 129<357 382> 480 119<332 382>
 Fore
@@ -1289,7 +1283,7 @@ StartChar: P
 Encoding: 80 80 49
 OldEncoding: 80
 Width: 625
-Flags: W
+Flags: HW
 HStem: 0 21G<63 182> 276 93<182 336> 605 95<63 336>
 VStem: 63 119<0 276 0 605> 448 122<479 497>
 Fore
@@ -1320,7 +1314,7 @@ StartChar: Q
 Encoding: 81 81 50
 OldEncoding: 81
 Width: 646
-Flags: W
+Flags: HW
 HStem: 612 99<326 335>
 VStem: 46 129<353 376> 477 127<353 376>
 Fore
@@ -1352,7 +1346,7 @@ StartChar: R
 Encoding: 82 82 51
 OldEncoding: 82
 Width: 659
-Flags: W
+Flags: HW
 HStem: -2 21G<54 170 506 630 506 506> 281 114<170 391> 582 115<54 407>
 VStem: 54 116<-2 281 -2 582>
 Fore
@@ -1382,7 +1376,7 @@ StartChar: S
 Encoding: 83 83 52
 OldEncoding: 83
 Width: 588
-Flags: W
+Flags: HW
 HStem: -6 110<265 299> 607 106<272 299>
 VStem: 54 131<501 526> 406 129<189 219>
 Fore
@@ -1412,7 +1406,7 @@ StartChar: T
 Encoding: 84 84 53
 OldEncoding: 84
 Width: 530
-Flags: W
+Flags: HW
 HStem: 2 21G<202 322> 595 107<31 202 31 490>
 VStem: 202 120<2 595>
 Fore
@@ -1431,7 +1425,7 @@ StartChar: U
 Encoding: 85 85 54
 OldEncoding: 85
 Width: 646
-Flags: W
+Flags: HW
 HStem: -6 104<324 342> 679 20G<69 204 460 586>
 VStem: 69 135<274 699> 460 126<274 699>
 Fore
@@ -1457,7 +1451,7 @@ StartChar: V
 Encoding: 86 86 55
 OldEncoding: 86
 Width: 588
-Flags: W
+Flags: HW
 HStem: 0 21G<222 374> 680 20G<31 161>
 Fore
 374 0 m 1
@@ -1474,9 +1468,8 @@ StartChar: W
 Encoding: 87 87 56
 OldEncoding: 87
 Width: 882
-Flags: W
+Flags: HW
 HStem: -2 203<253 316> 677 20G<26 149>
-DStem: 383 699 437 501 268 201 316 -2 449 501 503 699 561 -2 619 208 745 697 852 699 644 256 691 -2
 Fore
 691 -2 m 1
  561 -2 l 1
@@ -1503,9 +1496,8 @@ StartChar: X
 Encoding: 88 88 57
 OldEncoding: 88
 Width: 628
-Flags: W
+Flags: HW
 HStem: 0 21G<41 170 440 579> 680 20G<66 205>
-DStem: 66 700 205 700 245 363 319 471 308 268 388 372 440 0 579 0 435 699 559 699 319 471 388 372
 Fore
 440 0 m 1
  308 268 l 1
@@ -1526,10 +1518,9 @@ StartChar: Y
 Encoding: 89 89 58
 OldEncoding: 89
 Width: 588
-Flags: W
+Flags: HW
 HStem: 0 21G<235 356> 680 20G<35 176 437 556>
 VStem: 235 119<0 282>
-DStem: 437 700 556 700 305 418 354 282
 Fore
 354 282 m 1
  356 0 l 1
@@ -1547,9 +1538,8 @@ StartChar: Z
 Encoding: 90 90 59
 OldEncoding: 90
 Width: 646
-Flags: W
+Flags: HW
 HStem: -2 102<222 593> 599 100<110 446>
-DStem: 446 599 582 599 86 98 222 100
 Fore
 86 -2 m 1
  86 98 l 1
@@ -1568,7 +1558,7 @@ StartChar: bracketleft
 Encoding: 91 91 60
 OldEncoding: 91
 Width: 372
-Flags: W
+Flags: HW
 HStem: -190 60<176 274> 638 61<98 274>
 VStem: 98 78<-190 638>
 Fore
@@ -1587,7 +1577,7 @@ StartChar: backslash
 Encoding: 92 92 61
 OldEncoding: 92
 Width: 415
-Flags: W
+Flags: HW
 Fore
 248 3 m 1
  40 704 l 1
@@ -1600,7 +1590,7 @@ StartChar: bracketright
 Encoding: 93 93 62
 OldEncoding: 93
 Width: 372
-Flags: W
+Flags: HW
 HStem: -201 68<98 274> 632 67<98 196>
 VStem: 196 78<-133 699>
 Fore
@@ -1619,9 +1609,8 @@ StartChar: asciicircum
 Encoding: 94 94 63
 OldEncoding: 94
 Width: 588
-Flags: W
+Flags: HW
 HStem: 684 20G<244 340>
-DStem: 244 704 293 642 95 285 166 285 293 642 340 704 422 285 492 285
 Fore
 422 285 m 1
  293 642 l 1
@@ -1638,7 +1627,7 @@ Encoding: 95 95 64
 OldEncoding: 95
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -199 64<-15 569>
 Fore
 -15 -199 m 1
@@ -1652,7 +1641,7 @@ StartChar: grave
 Encoding: 96 96 65
 OldEncoding: 96
 Width: 372
-Flags: W
+Flags: HW
 Fore
 274 619 m 1
  87 691 l 1
@@ -1665,7 +1654,7 @@ StartChar: a
 Encoding: 97 97 66
 OldEncoding: 97
 Width: 536
-Flags: W
+Flags: HW
 HStem: -5 74<187 257> 452 74<255 282>
 VStem: 48 116<130 149> 357 107<186 371>
 Fore
@@ -1703,7 +1692,7 @@ StartChar: b
 Encoding: 98 98 67
 OldEncoding: 98
 Width: 541
-Flags: W
+Flags: HW
 HStem: -3 69<268 310> 682 20G<63 170>
 VStem: 63 99<0 49> 63 109<0 302 0 702> 399 113<256 270>
 Fore
@@ -1733,7 +1722,7 @@ StartChar: c
 Encoding: 99 99 68
 OldEncoding: 99
 Width: 530
-Flags: W
+Flags: HW
 HStem: 0 90<277 293> 441 89<277 303>
 VStem: 46 127<255 275>
 Fore
@@ -1754,7 +1743,7 @@ StartChar: d
 Encoding: 100 100 69
 OldEncoding: 100
 Width: 530
-Flags: W
+Flags: HW
 HStem: -6 78<230 293> 422 101<233 291> 684 20G<377 484>
 VStem: 48 114<233 267> 377 107<212 704>
 Fore
@@ -1782,7 +1771,7 @@ StartChar: e
 Encoding: 101 101 70
 OldEncoding: 101
 Width: 530
-Flags: W
+Flags: HW
 HStem: 0 87<266 284> 261 78<166 478> 440 86<254 284>
 Fore
 159 261 m 1
@@ -1806,7 +1795,7 @@ StartChar: f
 Encoding: 102 102 71
 OldEncoding: 102
 Width: 294
-Flags: W
+Flags: HW
 HStem: 3 21G<86 193> 415 83<28 86 193 282>
 VStem: 86 107<3 415 498 548>
 Fore
@@ -1834,7 +1823,7 @@ StartChar: g
 Encoding: 103 103 72
 OldEncoding: 103
 Width: 525
-Flags: W
+Flags: HW
 VStem: 372 97<40 103>
 Fore
 377 460 m 0
@@ -1869,7 +1858,7 @@ StartChar: h
 Encoding: 104 104 73
 OldEncoding: 104
 Width: 530
-Flags: W
+Flags: HW
 HStem: -3 21G<64 172 365 472> 679 20G<64 172>
 VStem: 64 108<-3 270 -3 699> 365 107<-3 350>
 Fore
@@ -1897,7 +1886,7 @@ StartChar: i
 Encoding: 105 105 74
 OldEncoding: 105
 Width: 254
-Flags: W
+Flags: HW
 HStem: -2 21G<72 179> 593 104<72 179>
 VStem: 72 107<-2 523 593 697>
 Fore
@@ -1917,7 +1906,7 @@ StartChar: j
 Encoding: 106 106 75
 OldEncoding: 106
 Width: 254
-Flags: W
+Flags: HW
 HStem: 523 69<71 179> 592 105<66 179>
 Fore
 66 592 m 1
@@ -1942,10 +1931,9 @@ StartChar: k
 Encoding: 107 107 76
 OldEncoding: 107
 Width: 548
-Flags: W
+Flags: HW
 HStem: 0 21G<74 181 397 517> 684 20G<74 181>
 VStem: 74 107<0 121 0 704>
-DStem: 284 259 366 354 397 0 517 0 388 523 503 523 261 359 366 354
 Fore
 397 0 m 1
  284 259 l 1
@@ -1967,7 +1955,7 @@ StartChar: l
 Encoding: 108 108 77
 OldEncoding: 108
 Width: 254
-Flags: W
+Flags: HW
 HStem: 3 21G<72 179> 684 20G<72 179>
 VStem: 72 107<3 704>
 Fore
@@ -1982,7 +1970,7 @@ StartChar: m
 Encoding: 109 109 78
 OldEncoding: 109
 Width: 804
-Flags: W
+Flags: HW
 HStem: 0 21G<66 173 348 455 630 737> 434 89<273 313 545 596>
 VStem: 66 101<0 523> 348 107<0 250> 630 107<0 362>
 Fore
@@ -2020,7 +2008,7 @@ StartChar: n
 Encoding: 110 110 79
 OldEncoding: 110
 Width: 530
-Flags: W
+Flags: HW
 HStem: 0 21G<67 175 356 463> 428 95<280 333>
 VStem: 67 108<0 289 0 523> 356 107<0 337>
 Fore
@@ -2047,7 +2035,7 @@ StartChar: o
 Encoding: 111 111 80
 OldEncoding: 111
 Width: 536
-Flags: W
+Flags: HW
 HStem: -3 78<262 281> 443 83<264.125 282.733>
 VStem: 40 118<252 286> 353 142<256 385> 377 118<236 279>
 Fore
@@ -2069,7 +2057,7 @@ StartChar: p
 Encoding: 112 112 81
 OldEncoding: 112
 Width: 536
-Flags: W
+Flags: HW
 HStem: -5 80<259 297> 432 95<264 313>
 VStem: 54 98<-179 523> 54 107<-179 38 -179 318> 380 115<236 270>
 Fore
@@ -2101,7 +2089,7 @@ StartChar: q
 Encoding: 113 113 82
 OldEncoding: 113
 Width: 530
-Flags: W
+Flags: HW
 HStem: -5 85<242 277>
 VStem: 34 115<259 270> 374 107<-179 445> 382 99<454 499>
 Fore
@@ -2130,7 +2118,7 @@ StartChar: r
 Encoding: 114 114 83
 OldEncoding: 114
 Width: 346
-Flags: W
+Flags: HW
 HStem: 0 21G<49 155>
 VStem: 49 106<0 273 0 524>
 Fore
@@ -2151,7 +2139,7 @@ StartChar: s
 Encoding: 115 115 84
 OldEncoding: 115
 Width: 482
-Flags: W
+Flags: HW
 HStem: -11 86<255 268> 438 91<223 240>
 Fore
 359 12 m 0
@@ -2176,7 +2164,7 @@ StartChar: t
 Encoding: 116 116 85
 OldEncoding: 116
 Width: 372
-Flags: W
+Flags: HW
 HStem: 3 21G<234.5 267.5> 435 86<23 104 212 319> 679 20G<110 212>
 VStem: 104 108<169 435>
 Fore
@@ -2206,7 +2194,7 @@ StartChar: u
 Encoding: 117 117 86
 OldEncoding: 117
 Width: 530
-Flags: W
+Flags: HW
 HStem: 0 100<199 253>
 VStem: 72 107<196 521> 362 96<-2 521>
 Fore
@@ -2232,9 +2220,8 @@ StartChar: v
 Encoding: 118 118 87
 OldEncoding: 118
 Width: 469
-Flags: W
+Flags: HW
 HStem: 0 21G<185 296>
-DStem: 28 523 143 523 185 0 248 170
 Fore
 296 0 m 1
  185 0 l 1
@@ -2250,9 +2237,8 @@ StartChar: w
 Encoding: 119 119 88
 OldEncoding: 119
 Width: 726
-Flags: W
+Flags: HW
 HStem: 2 21G<458 559> 374 150<363 371>
-DStem: 313 524 363 374 231 164 276 2 371 374 423 523 458 2 510 164
 Fore
 559 2 m 1
  458 2 l 1
@@ -2277,9 +2263,8 @@ StartChar: x
 Encoding: 120 120 89
 OldEncoding: 120
 Width: 530
-Flags: W
+Flags: HW
 HStem: 0 21G<49 162 353 477>
-DStem: 204 270 259 184 49 0 162 0
 Fore
 353 0 m 1
  259 184 l 1
@@ -2300,8 +2285,7 @@ StartChar: y
 Encoding: 121 121 90
 OldEncoding: 121
 Width: 470
-Flags: W
-DStem: 354 523 449 523 253 150 307 35
+Flags: HW
 Fore
 307 35 m 2
  297 5 288 -25 279 -52 c 0
@@ -2321,7 +2305,7 @@ StartChar: z
 Encoding: 122 122 91
 OldEncoding: 122
 Width: 412
-Flags: W
+Flags: HW
 HStem: 0 87<129 379> 438 85<41 261>
 Fore
 23 0 m 1
@@ -2341,7 +2325,7 @@ StartChar: braceleft
 Encoding: 123 123 92
 OldEncoding: 123
 Width: 372
-Flags: W
+Flags: HW
 HStem: -182 56<274 305> 645 57<241 305>
 VStem: 147 77<-71 171 357 589>
 Fore
@@ -2372,7 +2356,7 @@ StartChar: bar
 Encoding: 124 124 93
 OldEncoding: 124
 Width: 294
-Flags: W
+Flags: HW
 HStem: 3 21G<107 187> 684 20G<107 187>
 VStem: 107 80<3 704>
 Fore
@@ -2387,7 +2371,7 @@ StartChar: braceright
 Encoding: 125 125 94
 OldEncoding: 125
 Width: 372
-Flags: W
+Flags: HW
 HStem: -185 56<67 132> 679 20G<67 132>
 VStem: 149 76<-74 168 354 586>
 Fore
@@ -2418,7 +2402,7 @@ StartChar: asciitilde
 Encoding: 126 126 95
 OldEncoding: 126
 Width: 588
-Flags: W
+Flags: HW
 Fore
 345 242 m 0
  273 284 172 363 144 314 c 0
@@ -2436,9 +2420,8 @@ StartChar: uni0E10.descless
 Encoding: 128 63232 96
 OldEncoding: 63232
 Width: 613
-Flags: W
+Flags: HW
 HStem: 445 50<66 195>
-DStem: 422 268 535 273 412 104 526 133
 Fore
 590 532 m 1
  590 532 l 0
@@ -2477,7 +2460,7 @@ StartChar: uni0E34.left
 Encoding: 129 63233 97
 OldEncoding: 63233
 Width: 0
-Flags: W
+Flags: HW
 HStem: 855 66<-523.34 -497.125 -497 -478.933>
 Fore
 -497 921 m 0
@@ -2497,7 +2480,7 @@ StartChar: uni0E35.left
 Encoding: 130 63234 98
 OldEncoding: 63234
 Width: 0
-Flags: W
+Flags: HW
 HStem: 923 20G<-368 -253>
 Fore
 -736 670 m 0
@@ -2522,7 +2505,7 @@ StartChar: uni0E36.left
 Encoding: 131 63235 99
 OldEncoding: 63235
 Width: 0
-Flags: W
+Flags: HW
 Fore
 -757 668 m 0
  -757 668 l 0
@@ -2551,7 +2534,7 @@ StartChar: uni0E37.left
 Encoding: 132 63236 100
 OldEncoding: 63236
 Width: 0
-Flags: W
+Flags: HW
 HStem: 842 12<-501 -356> 842 108<-506 -484.168>
 Fore
 -746 676 m 0x40
@@ -2581,7 +2564,7 @@ Encoding: 133 8230 101
 OldEncoding: 8230
 Width: 637
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21G<94 125.5 304 348.5 516 547>
 VStem: 49 135<66 81> 261 133<50.686 81> 472 133<66 81>
 Fore
@@ -2608,7 +2591,7 @@ StartChar: uni0E48.low_left
 Encoding: 134 63237 102
 OldEncoding: 63237
 Width: 0
-Flags: W
+Flags: HW
 VStem: -402 118<668 923>
 Fore
 -402 668 m 1
@@ -2622,7 +2605,7 @@ StartChar: uni0E49.low_left
 Encoding: 135 63238 103
 OldEncoding: 63238
 Width: 0
-Flags: W
+Flags: HW
 HStem: 766 49<-488 -478>
 Fore
 -510 716 m 0
@@ -2648,7 +2631,7 @@ StartChar: uni0E4A.low_left
 Encoding: 136 63239 104
 OldEncoding: 63239
 Width: 0
-Flags: W
+Flags: HW
 HStem: 705 21G<-537 -493> 773 26<-540 -507> 832 55<-438 -435> 858 65<-382 -357>
 Fore
 -535 834 m 0xe0
@@ -2681,7 +2664,7 @@ StartChar: uni0E4B.low_left
 Encoding: 137 63240 105
 OldEncoding: 63240
 Width: 0
-Flags: W
+Flags: HW
 HStem: 788 83<-586 -468 -356 -236>
 VStem: -468 112<679 788 871 981>
 Fore
@@ -2704,7 +2687,7 @@ StartChar: uni0E4C.low_left
 Encoding: 138 63241 106
 OldEncoding: 63241
 Width: 0
-Flags: W
+Flags: HW
 HStem: 800 43<-402 -390>
 Fore
 -342 874 m 0
@@ -2727,10 +2710,10 @@ StartChar: uni0E48.low
 Encoding: 139 63242 107
 OldEncoding: 63242
 Width: 0
-Flags: W
+Flags: HW
 HStem: 918 20G<-202 -84>
 VStem: -202 118<684 938>
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -202 684 m 1
  -202 938 l 1
@@ -2744,9 +2727,9 @@ StartChar: uni0E49.low
 Encoding: 140 63243 108
 OldEncoding: 63243
 Width: 0
-Flags: W
+Flags: HW
 HStem: 791 58<-358 -346>
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -382 731 m 0
  -382 731 l 0
@@ -2772,9 +2755,9 @@ StartChar: uni0E4A.low
 Encoding: 141 63244 109
 OldEncoding: 63244
 Width: 0
-Flags: W
+Flags: HW
 HStem: 797 32<-405 -366> 898 77<-221 -189>
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -400 871 m 0
  -400 871 l 0
@@ -2807,10 +2790,10 @@ StartChar: uni0E4B.low
 Encoding: 142 63245 110
 OldEncoding: 63245
 Width: 0
-Flags: W
+Flags: HW
 HStem: 808 98<-343 -204 -86 54>
 VStem: -204 118<682 808 906 1033>
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -204 1033 m 1
  -86 1033 l 1
@@ -2832,9 +2815,9 @@ StartChar: uni0E4C.low
 Encoding: 143 63246 111
 OldEncoding: 63246
 Width: 0
-Flags: W
+Flags: HW
 HStem: 814 47<-196 -185>
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -130 895 m 0
  -130 895 l 0
@@ -2856,7 +2839,7 @@ StartChar: uni0E0D.descless
 Encoding: 144 63247 112
 OldEncoding: 63247
 Width: 875
-Flags: W
+Flags: HW
 HStem: -2 59<222 238> 0 78<402 694> 136 66<222 238> 518 81<306 333>
 VStem: 104 118<130 287> 441 118<78 415> 674 118<111 595>
 Fore
@@ -2901,7 +2884,7 @@ StartChar: quoteleft
 Encoding: 145 8216 113
 OldEncoding: 8216
 Width: 295
-Flags: W
+Flags: HW
 Fore
 143 645 m 0
  127 625 124 596 124 593 c 1
@@ -2918,7 +2901,7 @@ StartChar: quoteright
 Encoding: 146 8217 114
 OldEncoding: 8217
 Width: 280
-Flags: W
+Flags: HW
 Fore
 138 538 m 0
  155 558 158 587 158 590 c 1
@@ -2935,7 +2918,7 @@ StartChar: quotedblleft
 Encoding: 147 8220 115
 OldEncoding: 8220
 Width: 487
-Flags: W
+Flags: HW
 Fore
 147 655 m 0
  147 655 l 0
@@ -2960,7 +2943,7 @@ StartChar: quotedblright
 Encoding: 148 8221 116
 OldEncoding: 8221
 Width: 493
-Flags: W
+Flags: HW
 Fore
 356 535 m 0
  356 535 l 0
@@ -2985,7 +2968,7 @@ StartChar: bullet
 Encoding: 149 8226 117
 OldEncoding: 8226
 Width: 531
-Flags: W
+Flags: HW
 Fore
 281 437 m 0
  506 437 506 100 281 100 c 0
@@ -2996,7 +2979,7 @@ StartChar: endash
 Encoding: 150 8211 118
 OldEncoding: 8211
 Width: 665
-Flags: W
+Flags: HW
 HStem: 248 97<48 609>
 Fore
 609 248 m 1
@@ -3010,7 +2993,7 @@ StartChar: emdash
 Encoding: 151 8212 119
 OldEncoding: 8212
 Width: 1056
-Flags: W
+Flags: HW
 HStem: 248 97<49 1007>
 Fore
 1007 248 m 1
@@ -3024,7 +3007,7 @@ StartChar: uni0E31.left
 Encoding: 152 63248 120
 OldEncoding: 63248
 Width: 0
-Flags: W
+Flags: HW
 Fore
 9 788 m 1
  9 788 l 0
@@ -3045,7 +3028,7 @@ StartChar: uni0E4D.left
 Encoding: 153 63249 121
 OldEncoding: 63249
 Width: 0
-Flags: W
+Flags: HW
 HStem: 696 66<-406.997 -392> 877 69<-406.997 -392>
 Fore
 -395 946 m 0
@@ -3061,7 +3044,7 @@ StartChar: uni0E47.left
 Encoding: 154 63250 122
 OldEncoding: 63250
 Width: 0
-Flags: W
+Flags: HW
 HStem: 806 55<-344 -334>
 Fore
 -201 1061 m 1
@@ -3091,7 +3074,7 @@ StartChar: uni0E48.left
 Encoding: 155 63251 123
 OldEncoding: 63251
 Width: 0
-Flags: W
+Flags: HW
 VStem: -374 118<999 1202>
 Fore
 -374 999 m 1
@@ -3105,7 +3088,7 @@ StartChar: uni0E49.left
 Encoding: 156 63252 124
 OldEncoding: 63252
 Width: 0
-Flags: W
+Flags: HW
 HStem: 1056 48<-355 -345>
 Fore
 -376 1019 m 0
@@ -3131,7 +3114,7 @@ StartChar: uni0E4A.left
 Encoding: 157 63253 125
 OldEncoding: 63253
 Width: 0
-Flags: W
+Flags: HW
 HStem: 1090 27<-420 -386> 1151 55<-319 -316> 1177 65<-262 -236>
 Fore
 -415 1153 m 0xc0
@@ -3164,7 +3147,7 @@ StartChar: uni0E4B.left
 Encoding: 158 63254 126
 OldEncoding: 63254
 Width: 0
-Flags: W
+Flags: HW
 HStem: 1073 69<-466 -365 -252 -150>
 Fore
 -366 1223 m 1
@@ -3186,7 +3169,7 @@ StartChar: uni0E4C.left
 Encoding: 159 63255 127
 OldEncoding: 63255
 Width: 0
-Flags: W
+Flags: HW
 HStem: 1009 39<-290 -280>
 Fore
 -235 1076 m 0
@@ -3210,13 +3193,13 @@ Encoding: 160 160 128
 OldEncoding: 3584
 Width: 156
 VWidth: 2048
-Flags: W
+Flags: HW
 EndChar
 StartChar: uni0E01
 Encoding: 161 3585 129
 OldEncoding: 3585
 Width: 674
-Flags: W
+Flags: HW
 HStem: 0 21G<116 233 474 592> 524 74<318 362>
 VStem: 116 117<0 289> 474 118<0 417>
 Fore
@@ -3245,7 +3228,7 @@ StartChar: uni0E02
 Encoding: 162 3586 130
 OldEncoding: 3586
 Width: 659
-Flags: W
+Flags: HW
 HStem: 0 78<120 449> 342 70<139.063 141>
 VStem: 190 118<78 232> 463 116<127 595>
 Fore
@@ -3283,7 +3266,7 @@ StartChar: uni0E03
 Encoding: 163 3587 131
 OldEncoding: 3587
 Width: 669
-Flags: W
+Flags: HW
 HStem: 0 78<132 432> 458 85<221 225>
 VStem: 204 118<78 225> 464 117<111 595>
 Fore
@@ -3328,7 +3311,7 @@ StartChar: uni0E04
 Encoding: 164 3588 132
 OldEncoding: 3588
 Width: 702
-Flags: W
+Flags: HW
 HStem: 0 21G<147 267 503 619> 348 66<354 363.385> 510 88<340 377.649>
 VStem: 147 120<0 23> 503 116<0 401>
 Fore
@@ -3361,7 +3344,7 @@ StartChar: uni0E05
 Encoding: 165 3589 133
 OldEncoding: 3589
 Width: 698
-Flags: W
+Flags: HW
 HStem: 0 21G<136 254 494 612> 325 67<337 346>
 VStem: 494 118<0 417>
 Fore
@@ -3400,7 +3383,7 @@ StartChar: uni0E06
 Encoding: 166 3590 134
 OldEncoding: 3590
 Width: 767
-Flags: W
+Flags: HW
 HStem: -5 21G<245 298> 458 85<230 236>
 VStem: 276 118<81 154 280 364> 563 116<131 595>
 Fore
@@ -3452,7 +3435,7 @@ StartChar: uni0E07
 Encoding: 167 3591 135
 OldEncoding: 3591
 Width: 510
-Flags: W
+Flags: HW
 HStem: 379 70<277.357 288> 527 71<276.374 290>
 VStem: 300 118<139 379> 325 93<460 487>
 Fore
@@ -3482,7 +3465,7 @@ StartChar: uni0E08
 Encoding: 168 3592 136
 OldEncoding: 3592
 Width: 606
-Flags: W
+Flags: HW
 HStem: -3 21G<315.5 387>
 VStem: 406 117<137 405>
 Fore
@@ -3517,7 +3500,7 @@ StartChar: uni0E09
 Encoding: 169 3593 137
 OldEncoding: 3593
 Width: 711
-Flags: W
+Flags: HW
 HStem: 179 68<152 159> 506 98<264 314>
 VStem: 159 117<74 179> 445 118<94 162 274 417>
 Fore
@@ -3561,7 +3544,7 @@ StartChar: uni0E0A
 Encoding: 170 3594 138
 OldEncoding: 3594
 Width: 656
-Flags: W
+Flags: HW
 HStem: 3 78<104 434>
 VStem: 175 118<81 235> 448 118<130 328>
 Fore
@@ -3610,7 +3593,7 @@ StartChar: uni0E0B
 Encoding: 171 3595 139
 OldEncoding: 3595
 Width: 694
-Flags: W
+Flags: HW
 HStem: -3 78<147 477> 458 85<236 242>
 VStem: 219 117<75 289> 490 119<124 322>
 Fore
@@ -3665,7 +3648,7 @@ StartChar: uni0E0C
 Encoding: 172 3596 140
 OldEncoding: 3596
 Width: 882
-Flags: W
+Flags: HW
 HStem: -2 59<225 240> 166 0<417 466> 518 81<301 335>
 VStem: 109 116<130 284> 443 118<236 428> 676 118<159 595>
 Fore
@@ -3718,7 +3701,7 @@ StartChar: uni0E0D
 Encoding: 173 3597 141
 OldEncoding: 3597
 Width: 882
-Flags: W
+Flags: HW
 HStem: -288 64<518 556> -2 59<225 242> 0 78<406 699> 136 66<225 242> 518 81<304 338>
 VStem: 109 116<130 289> 446 118<78 417> 679 118<111 595>
 Fore
@@ -3782,10 +3765,10 @@ StartChar: uni0E0E
 Encoding: 174 3598 142
 OldEncoding: 3598
 Width: 680
-Flags: W
+Flags: HW
 HStem: -316 126<422 423.921> -210 175<270 316> -3 64<134 151> 520 81<335 383>
 VStem: 475 118<-134 421>
-AnchorPoint: "BelowBase" 593.193 -309.626 basechar 0
+AnchorPoint: "BelowBase" 593 -309 basechar 0
 Fore
 593 -133 m 1xb8
  593 -133 l 0
@@ -3821,7 +3804,7 @@ Fore
  182 386 210 397 210 397 c 1
  210 397 184 423 146 445 c 0
  113 463 80 477 75 478 c 1
- 95 506 187 601 356 601 c 4
+ 95 506 187 601 356 601 c 0
  536 601 593 506 593 411 c 2
  593 -133 l 1xb8
 241 -159 m 0
@@ -3838,10 +3821,10 @@ StartChar: uni0E0F
 Encoding: 175 3599 143
 OldEncoding: 3599
 Width: 689
-Flags: W
+Flags: HW
 HStem: -311 133<449 452> -3 61<143 161> 521 78<344 385>
 VStem: 167 64<-219 -162> 181 81<-86 -35> 483 118<-134 426>
-AnchorPoint: "BelowBase" 602.391 -309.626 basechar 0
+AnchorPoint: "BelowBase" 602 -309 basechar 0
 Fore
 601 -133 m 1xf4
  601 -133 l 1
@@ -3895,10 +3878,9 @@ StartChar: uni0E10
 Encoding: 176 3600 144
 OldEncoding: 3600
 Width: 608
-Flags: W
+Flags: HW
 HStem: -236 58<416 423> -110 56<422 431> 445 45<46 175> 495 74<464 476>
 VStem: 144 63<-193 -141>
-DStem: 403 279 517 273 392 112 507 133
 Fore
 570 532 m 1
  570 532 l 0
@@ -3973,7 +3955,7 @@ StartChar: uni0E11
 Encoding: 177 3601 145
 OldEncoding: 3601
 Width: 832
-Flags: W
+Flags: HW
 HStem: 0 21G<271 391> 451 89<225 231>
 VStem: 271 115<0 372> 628 118<2 409 409.032 438.692>
 Fore
@@ -4015,7 +3997,7 @@ StartChar: uni0E12
 Encoding: 178 3602 146
 OldEncoding: 3602
 Width: 924
-Flags: W
+Flags: HW
 HStem: -11 77<529 531> 176 78<609 620>
 VStem: 490 119<230 422> 716 116<195 595>
 Fore
@@ -4074,7 +4056,7 @@ StartChar: uni0E13
 Encoding: 179 3603 147
 OldEncoding: 3603
 Width: 958
-Flags: W
+Flags: HW
 HStem: -2 62<224 239> 139 63<224 239> 520 78<301 335>
 VStem: 106 118<130 289> 443 118<0 425> 676 118<287 595>
 Fore
@@ -4126,7 +4108,7 @@ StartChar: uni0E14
 Encoding: 180 3604 148
 OldEncoding: 3604
 Width: 702
-Flags: W
+Flags: HW
 HStem: 0 21G<144 270 498 618> 225 57<299 333> 512 93<318 368>
 VStem: 498 120<0 401>
 Fore
@@ -4160,7 +4142,7 @@ StartChar: uni0E15
 Encoding: 181 3605 149
 OldEncoding: 3605
 Width: 717
-Flags: W
+Flags: HW
 HStem: 0 21G<152 302 518 635>
 VStem: 231 68<315 326> 518 117<0 429>
 Fore
@@ -4199,7 +4181,7 @@ StartChar: uni0E16
 Encoding: 182 3606 150
 OldEncoding: 3606
 Width: 663
-Flags: W
+Flags: HW
 HStem: 0 21G<466 582> 141 69<224 241> 520 81<309 353>
 VStem: 107 117<139 286> 466 116<0 413>
 Fore
@@ -4233,7 +4215,7 @@ StartChar: uni0E17
 Encoding: 183 3607 151
 OldEncoding: 3607
 Width: 721
-Flags: W
+Flags: HW
 HStem: 0 21G<159 277 518 635> 377 72<144 159> 527 69<144 159>
 VStem: 159 118<0 17.6768 0 458> 187 89<458 487> 518 117<0 455>
 Fore
@@ -4265,7 +4247,7 @@ StartChar: uni0E18
 Encoding: 184 3608 152
 OldEncoding: 3608
 Width: 646
-Flags: W
+Flags: HW
 HStem: 0 78<78 457>
 VStem: 192 118<78 377> 438 118<127 305>
 Fore
@@ -4303,7 +4285,7 @@ StartChar: uni0E19
 Encoding: 185 3609 153
 OldEncoding: 3609
 Width: 741
-Flags: W
+Flags: HW
 HStem: 0 21G<155 273> 377 72<141 156> 527 69<141 146>
 VStem: 155 118<0 0 0 458> 182 91<458 487> 463 116<108 235 339 595>
 Fore
@@ -4344,7 +4326,7 @@ StartChar: uni0E1A
 Encoding: 186 3610 154
 OldEncoding: 3610
 Width: 718
-Flags: W
+Flags: HW
 HStem: 0 81<100 530> 377 71<156 172> 526 70<147.775 161>
 VStem: 172 116<81 458> 198 90<458 486> 515 117<116.102 595>
 Fore
@@ -4377,10 +4359,10 @@ StartChar: uni0E1B
 Encoding: 187 3611 155
 OldEncoding: 3611
 Width: 718
-Flags: W
+Flags: HW
 HStem: 0 81<100 530> 377 72<156 172> 527 69<147.775 161>
 VStem: 172 116<81 458> 198 90<458 487> 515 117<116.102 884>
-AnchorPoint: "AboveBase" 465.971 613.12 basechar 0
+AnchorPoint: "AboveBase" 465 613 basechar 0
 Fore
 632 103 m 1xf4
  632 103 l 0
@@ -4411,7 +4393,7 @@ StartChar: uni0E1C
 Encoding: 188 3612 156
 OldEncoding: 3612
 Width: 674
-Flags: W
+Flags: HW
 HStem: 0 21G<92 212 471 589> 377 72<210 226> 527 69<224 226>
 VStem: 92 118<0 377> 471 118<172 595>
 Fore
@@ -4444,10 +4426,10 @@ StartChar: uni0E1D
 Encoding: 189 3613 157
 OldEncoding: 3613
 Width: 674
-Flags: W
+Flags: HW
 HStem: 0 21G<92 212 471 589> 377 74<210 237> 529 67<219 237>
 VStem: 92 118<0 377> 471 118<175 889>
-AnchorPoint: "AboveBase" 421.52 613.12 basechar 0
+AnchorPoint: "AboveBase" 421 613 basechar 0
 Fore
 589 0 m 1
  471 0 l 0
@@ -4478,10 +4460,9 @@ StartChar: uni0E1E
 Encoding: 190 3614 158
 OldEncoding: 3614
 Width: 746
-Flags: W
+Flags: HW
 HStem: 0 21G<158 276 547 664> 530 66<141 148>
 VStem: 158 116<0 464> 546 118<268 593>
-DStem: 371 595 409 448 274 268 276 0 409 448 443 595 547 0 546 268
 Fore
 664 0 m 1
  547 0 l 1
@@ -4509,11 +4490,10 @@ StartChar: uni0E1F
 Encoding: 191 3615 159
 OldEncoding: 3615
 Width: 752
-Flags: W
+Flags: HW
 HStem: 0 21G<156 274 546 662> 530 66<131.41 146> 921 20G<544 662>
 VStem: 156 117<0 464> 544 118<268 941>
-DStem: 369 595 408 448 273 268 274 0 408 448 441 595 546 0 544 268
-AnchorPoint: "AboveBase" 499.692 613.12 basechar 0
+AnchorPoint: "AboveBase" 499 613 basechar 0
 Fore
 662 0 m 1
  546 0 l 1
@@ -4541,7 +4521,7 @@ StartChar: uni0E20
 Encoding: 192 3616 160
 OldEncoding: 3616
 Width: 680
-Flags: W
+Flags: HW
 HStem: -3 63<144 154> 521 78<336 386>
 VStem: 478 118<0 430>
 Fore
@@ -4575,7 +4555,7 @@ StartChar: uni0E21
 Encoding: 193 3617 161
 OldEncoding: 3617
 Width: 718
-Flags: W
+Flags: HW
 HStem: 529 67<183 201>
 VStem: 207 116<115 204 316 464> 517 116<144 595>
 Fore
@@ -4616,7 +4596,7 @@ StartChar: uni0E22
 Encoding: 194 3618 162
 OldEncoding: 3618
 Width: 657
-Flags: W
+Flags: HW
 HStem: 0 81<218 446> 228 75<281 347> 526 70<218 236>
 VStem: 100 118<0 161> 458 117<136 595>
 Fore
@@ -4658,7 +4638,7 @@ StartChar: uni0E23
 Encoding: 195 3619 163
 OldEncoding: 3619
 Width: 551
-Flags: W
+Flags: HW
 HStem: -2 68<331 333>
 Fore
 529 518 m 1
@@ -4690,7 +4670,7 @@ StartChar: uni0E24
 Encoding: 196 3620 164
 OldEncoding: 3620
 Width: 677
-Flags: W
+Flags: HW
 HStem: 141 69<227 244> 523 76<312 356>
 VStem: 110 117<139 278> 469 117<-218 423>
 Fore
@@ -4724,7 +4704,7 @@ StartChar: uni0E25
 Encoding: 197 3621 165
 OldEncoding: 3621
 Width: 660
-Flags: W
+Flags: HW
 HStem: 0 21G<451 569>
 VStem: 451 118<0 395>
 Fore
@@ -4759,7 +4739,7 @@ StartChar: uni0E26
 Encoding: 198 3622 166
 OldEncoding: 3622
 Width: 689
-Flags: W
+Flags: HW
 HStem: -3 64<150 160> 523 78<346 392>
 VStem: 484 118<-228 429>
 Fore
@@ -4793,7 +4773,7 @@ StartChar: uni0E27
 Encoding: 199 3623 167
 OldEncoding: 3623
 Width: 593
-Flags: W
+Flags: HW
 VStem: 397 118<212 399>
 Fore
 515 130 m 1
@@ -4819,7 +4799,7 @@ StartChar: uni0E28
 Encoding: 200 3624 168
 OldEncoding: 3624
 Width: 700
-Flags: W
+Flags: HW
 HStem: 0 21G<143 267 503 619> 351 69<354 360>
 VStem: 143 124<0 19.3176> 503 116<0 401>
 Fore
@@ -4872,7 +4852,7 @@ StartChar: uni0E29
 Encoding: 201 3625 169
 OldEncoding: 3625
 Width: 748
-Flags: W
+Flags: HW
 HStem: 0 81<101 532> 377 72<156 173> 527 69<147.775 161>
 VStem: 173 117<81 458> 198 92<458 487> 517 116<116.102 193 273 595>
 Fore
@@ -4922,7 +4902,7 @@ StartChar: uni0E2A
 Encoding: 202 3626 170
 OldEncoding: 3626
 Width: 657
-Flags: W
+Flags: HW
 HStem: 0 21G<452 570>
 VStem: 94 118<213 239> 451 119<0 415>
 Fore
@@ -4972,7 +4952,7 @@ StartChar: uni0E2B
 Encoding: 203 3627 171
 OldEncoding: 3627
 Width: 715
-Flags: W
+Flags: HW
 HStem: 0 21G<155 273 513 630> 377 68<139 155> 523 73<139 157>
 VStem: 155 118<0 458> 182 91<458 483> 513 117<0 305>
 Fore
@@ -5013,10 +4993,9 @@ StartChar: uni0E2C
 Encoding: 204 3628 172
 OldEncoding: 3628
 Width: 754
-Flags: W
+Flags: HW
 HStem: 0 21G<156 274 546 662> 474 44<470 544> 530 66<139 146>
 VStem: 156 117<0 464> 544 118<190 521>
-DStem: 408 290 441 418 546 0 544 190
 Fore
 757 656 m 1
  757 656 l 0
@@ -5059,7 +5038,7 @@ StartChar: uni0E2D
 Encoding: 205 3629 173
 OldEncoding: 3629
 Width: 669
-Flags: W
+Flags: HW
 HStem: 0 81<260.167 419> 342 67<231 243>
 VStem: 104 118<111 195> 463 116<127 417>
 Fore
@@ -5098,7 +5077,7 @@ StartChar: uni0E2E
 Encoding: 206 3630 174
 OldEncoding: 3630
 Width: 656
-Flags: W
+Flags: HW
 HStem: 0 81<256 429> 302 69<211.188 226> 417 61<256 308> 540 62<299 322>
 VStem: 90 118<113 158> 452 118<125 433>
 Fore
@@ -5150,7 +5129,7 @@ StartChar: uni0E2F
 Encoding: 207 3631 175
 OldEncoding: 3631
 Width: 623
-Flags: W
+Flags: HW
 HStem: -6 83<328 380> 425 52<208 215> 543 53<207.063 208>
 VStem: 441 117<137 391>
 Fore
@@ -5182,7 +5161,7 @@ StartChar: uni0E30
 Encoding: 208 3632 176
 OldEncoding: 3632
 Width: 531
-Flags: W
+Flags: HW
 Fore
 273 432 m 0
  273 432 l 1
@@ -5217,9 +5196,9 @@ StartChar: uni0E31
 Encoding: 209 3633 177
 OldEncoding: 3633
 Width: 0
-Flags: W
-AnchorPoint: "AboveMark" -170.141 988.656 basemark 0
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+Flags: HW
+AnchorPoint: "AboveMark" -170 988 basemark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 35 786 m 1
  35 786 l 0
@@ -5231,16 +5210,16 @@ Fore
  -259 760 -182 750 -106 786 c 0
  -9 834 35 914 35 914 c 1
  35 786 l 1
--303 828 m 4
+-303 828 m 0
  -305 889 -397 887 -395 826 c 0
- -394 765 -302 766 -303 828 c 4
+ -394 765 -302 766 -303 828 c 0
 EndSplineSet
 EndChar
 StartChar: uni0E32
 Encoding: 210 3634 178
 OldEncoding: 3634
 Width: 493
-Flags: W
+Flags: HW
 HStem: 0 21G<314 432> 507 91<205 223>
 VStem: 14 87<449 478> 314 118<0 385>
 Fore
@@ -5259,7 +5238,7 @@ StartChar: uni0E33
 Encoding: 211 3635 179
 OldEncoding: 3635
 Width: 493
-Flags: W
+Flags: HW
 HStem: 0 21G<310 428> 507 91<199 218> 681 65<-182.141 -167> 861 69<-182.141 -167>
 VStem: 9 88<449 478> 310 118<0 385>
 Fore
@@ -5287,10 +5266,10 @@ StartChar: uni0E34
 Encoding: 212 3636 180
 OldEncoding: 3636
 Width: 0
-Flags: W
+Flags: HW
 HStem: 848 66<-352.64 -326.125 -326 -309.441>
-AnchorPoint: "AboveMark" -147.148 988.656 basemark 0
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+AnchorPoint: "AboveMark" -147 988 basemark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -326 914 m 0
  -326 914 l 0
@@ -5309,16 +5288,16 @@ StartChar: uni0E35
 Encoding: 213 3637 181
 OldEncoding: 3637
 Width: 0
-Flags: W
+Flags: HW
 HStem: 918 20G<-204 -89>
-AnchorPoint: "AboveMark" -147.148 988.656 basemark 0
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+AnchorPoint: "AboveMark" -147 988 basemark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -570 665 m 1
  -570 665 l 0
  -569 776 -489 868 -394 889 c 0
  -319 907 -248 889 -204 863 c 1
- -204 938 l 5
+ -204 938 l 1
  -89 938 l 1
  -89 705 l 1
  -89 705 -84 688 -80 667 c 0
@@ -5336,9 +5315,9 @@ StartChar: uni0E36
 Encoding: 214 3638 182
 OldEncoding: 3638
 Width: 0
-Flags: W
-AnchorPoint: "AboveMark" -156.346 988.656 basemark 0
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+Flags: HW
+AnchorPoint: "AboveMark" -156 988 basemark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -572 664 m 0
  -572 664 l 0
@@ -5359,7 +5338,7 @@ Fore
  -251 756 -181 730 -181 730 c 1
  -181 730 -213 828 -326 829 c 0
 -153 814 m 0
- -89 806 -84 912 -156 907 c 4
+ -89 806 -84 912 -156 907 c 0
  -205 904 -215 820 -153 814 c 0
 EndSplineSet
 EndChar
@@ -5367,10 +5346,10 @@ StartChar: uni0E37
 Encoding: 215 3639 183
 OldEncoding: 3639
 Width: 0
-Flags: W
+Flags: HW
 HStem: 842 15<-339 -195> 842 65<-339 -337.014> 842 111<-339 -327>
-AnchorPoint: "AboveMark" -216.125 988.656 basemark 0
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+AnchorPoint: "AboveMark" -216 988 basemark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -584 676 m 0x20
  -584 676 l 0
@@ -5382,7 +5361,7 @@ Fore
  -236 892 -225 887 -216 880 c 0
  -205 872 -196 857 -195 857 c 1x80
  -195 953 l 1
- -95 953 l 5
+ -95 953 l 1
  -95 684 l 1
  -86 632 l 1
  -86 632 -172 704 -353 711 c 0
@@ -5398,9 +5377,9 @@ StartChar: uni0E38
 Encoding: 216 3640 184
 OldEncoding: 3640
 Width: 0
-Flags: W
+Flags: HW
 VStem: -193 106<-308 -143>
-AnchorPoint: "BelowBase" -87.3691 -26.0576 mark 0
+AnchorPoint: "BelowBase" -87 -26 mark 0
 Fore
 -87 -308 m 5
  -193 -308 l 1
@@ -5420,9 +5399,9 @@ StartChar: uni0E39
 Encoding: 217 3641 185
 OldEncoding: 3641
 Width: 0
-Flags: W
+Flags: HW
 VStem: -357 101<-296 -149> -196 115<-179 -31.0001>
-AnchorPoint: "BelowBase" -87.3691 -26.0576 mark 0
+AnchorPoint: "BelowBase" -87 -26 mark 0
 Fore
 -235 -227 m 1
  -235 -227 l 1
@@ -5451,26 +5430,44 @@ StartChar: uni0E3A
 Encoding: 218 3642 186
 OldEncoding: 3642
 Width: 0
-Flags: W
+Flags: HW
 HStem: -261 21G<-215.5 -99.5>
-AnchorPoint: "BelowBase" -87.3691 -26.0576 mark 0
+AnchorPoint: "BelowBase" -87 -26 mark 0
 Fore
 -158 -86 m 0
  -41 -86 -41 -261 -158 -261 c 0
  -273 -261 -273 -86 -158 -86 c 0
 EndSplineSet
 EndChar
+StartChar: uni0E4D.high
+Encoding: 219 63262 187
+OldEncoding: 3643
+Width: 0
+Flags: W
+TeX: 0 0 0 0
+HStem: 995 66<-281.5 -114.5> 1176 69<-281.5 4.9811e-33>
+AnchorPoint: "AboveMark" -197 988 mark 0
+Fore
+-198 1245 m 0
+ -31 1245 -31 995 -198 995 c 0
+ -365 995 -365 1245 -198 1245 c 0
+-198 1061 m 0
+ -121 1061 -121 1176 -198 1176 c 0
+ -274 1176 -274 1061 -198 1061 c 0
+EndSplineSet
+EndChar
 StartChar: uni200B
 Encoding: 220 8203 187
 OldEncoding: 3644
-Width: 1532
+Width: 0
 VWidth: 2048
+Flags: HW
 EndChar
 StartChar: dottedcircle
 Encoding: 221 9676 188
 OldEncoding: 65537
 Width: 718
-Flags: W
+Flags: HW
 HStem: -14 75<371 373> 23 75<222 231> 34 75<500 502> 115 75<123 132> 127 74<582 584> 256 75<618 626> 264 75<86 94> 391 75<582 584> 481 75<487 489> 489 75<231 233> 523 75<369 373>
 VStem: 49 75<300 307> 86 75<152 154> 94 73<435 437> 184 75<61 67> 195 75<526 531> 334 75<23 25 561 567> 451 75<518 527> 463 75<71 73> 546 73<164 166 429 437> 581 75<294 302>
 Fore
@@ -5611,7 +5608,7 @@ StartChar: uni0E3F
 Encoding: 223 3647 189
 OldEncoding: 3647
 Width: 646
-Flags: W
+Flags: HW
 HStem: -17 20G<83 273> 612 92<83 273>
 VStem: 83 119<3 319 3 612> 273 96<-121 3 100 317 409 612 704 817> 458 124<513 531> 472 129<182 213>
 Fore
@@ -5660,7 +5657,7 @@ StartChar: uni0E40
 Encoding: 224 3648 190
 OldEncoding: 3648
 Width: 360
-Flags: W
+Flags: HW
 HStem: 144 68<210 222>
 VStem: 92 118<130 595>
 Fore
@@ -5682,7 +5679,7 @@ StartChar: uni0E41
 Encoding: 225 3649 191
 OldEncoding: 3649
 Width: 649
-Flags: W
+Flags: HW
 HStem: 143 69<205 224 500 512>
 VStem: 87 118<130 595> 382 118<130 595>
 Fore
@@ -5717,7 +5714,7 @@ StartChar: uni0E42
 Encoding: 226 3650 192
 OldEncoding: 3650
 Width: 389
-Flags: W
+Flags: HW
 HStem: 143 69<238 251> 869 55<-40 86>
 VStem: 121 117<130 783>
 Fore
@@ -5749,7 +5746,7 @@ StartChar: uni0E43
 Encoding: 227 3651 193
 OldEncoding: 3651
 Width: 452
-Flags: W
+Flags: HW
 HStem: 143 69<305 320> 881 48<40 69>
 VStem: 187 118<130 687>
 Fore
@@ -5784,7 +5781,7 @@ StartChar: uni0E44
 Encoding: 228 3652 194
 OldEncoding: 3652
 Width: 458
-Flags: W
+Flags: HW
 HStem: 144 68<297 311> 950 126<-49 -25>
 VStem: 179 118<130 719>
 Fore
@@ -5818,7 +5815,7 @@ StartChar: uni0E45
 Encoding: 229 3653 195
 OldEncoding: 3653
 Width: 308
-Flags: W
+Flags: HW
 HStem: 504 91<12 31>
 VStem: -179 87<446 475> 121 118<-192 385>
 Fore
@@ -5837,7 +5834,7 @@ StartChar: uni0E46
 Encoding: 230 3654 196
 OldEncoding: 3654
 Width: 675
-Flags: W
+Flags: HW
 HStem: -236 81<346 422> 520 78<438 443>
 VStem: 484 118<-13 453>
 Fore
@@ -5873,10 +5870,10 @@ StartChar: uni0E47
 Encoding: 231 3655 197
 OldEncoding: 3655
 Width: 0
-Flags: W
+Flags: HW
 HStem: 673 113<-400 -365> 808 60<-185.938 -178.063>
-AnchorPoint: "AboveMark" -309.626 659.104 mark 0
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+AnchorPoint: "AboveMark" -309 659 mark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -25 1093 m 1
  -25 1093 l 1
@@ -5890,7 +5887,7 @@ Fore
  -124 866 -90 820 -97 754 c 0
  -101 705 -135 676 -178 674 c 0
  -256 671 -287 762 -330 759 c 0
- -379 756 -365 674 -365 673 c 5
+ -379 756 -365 674 -365 673 c 1
  -429 674 -487 704 -510 765 c 0
  -543 855 -518 972 -422 1002 c 0
  -343 1029 -233 992 -161 1012 c 0
@@ -5905,13 +5902,13 @@ StartChar: uni0E48
 Encoding: 232 3656 198
 OldEncoding: 3656
 Width: 0
-Flags: W
+Flags: HW
 VStem: -201 111<992 1194>
-AnchorPoint: "AboveMark" -145.616 988.656 mark 0
+AnchorPoint: "AboveMark" -145 988 mark 0
 Fore
 -201 992 m 1
  -201 1194 l 1
- -90 1194 l 5
+ -90 1194 l 1
  -90 992 l 1
  -201 992 l 1
 EndSplineSet
@@ -5922,9 +5919,9 @@ StartChar: uni0E49
 Encoding: 233 3657 199
 OldEncoding: 3657
 Width: 0
-Flags: W
+Flags: HW
 HStem: 1058 47<-309 -299> 1185 49<-307 -294>
-AnchorPoint: "AboveMark" -196.198 988.656 mark 0
+AnchorPoint: "AboveMark" -196 988 mark 0
 Fore
 -330 1021 m 0
  -330 1021 l 0
@@ -5938,7 +5935,7 @@ Fore
  -28 1166 -2 1222 -2 1222 c 1
  -2 1088 l 1
  -2 1088 -55 1033 -146 1004 c 0
- -224 979 -328 973 -377 979 c 5
+ -224 979 -328 973 -377 979 c 1
  -377 979 -349 995 -330 1021 c 0
 -299 1105 m 0
  -247 1105 -248 1185 -302 1185 c 0
@@ -5951,9 +5948,9 @@ StartChar: uni0E4A
 Encoding: 234 3658 200
 OldEncoding: 3658
 Width: 0
-Flags: W
+Flags: HW
 HStem: 1090 27<-342 -309> 1151 55<-241 -238> 1177 65<-184 -159>
-AnchorPoint: "AboveMark" -223.789 988.656 mark 0
+AnchorPoint: "AboveMark" -223 988 mark 0
 Fore
 -337 1153 m 0xc0
  -337 1153 l 0
@@ -5970,7 +5967,7 @@ Fore
  -11 1168 -6 1217 -6 1235 c 1
  75 1194 l 1
  75 1194 52 1088 -38 1036 c 0
- -97 1004 -182 992 -207 992 c 5
+ -97 1004 -182 992 -207 992 c 1
  -202 993 -156 1022 -146 1087 c 0
  -138 1131 -146 1177 -184 1177 c 0xa0
  -207 1177 -241 1151 -241 1151 c 2
@@ -5987,16 +5984,16 @@ StartChar: uni0E4B
 Encoding: 235 3659 201
 OldEncoding: 3659
 Width: 0
-Flags: W
+Flags: HW
 HStem: 1064 69<-303 -202 -89 12>
 VStem: -202 113<984 1064 1133 1226>
-AnchorPoint: "AboveMark" -145.616 988.656 mark 0
+AnchorPoint: "AboveMark" -145 988 mark 0
 Fore
 -202 1226 m 1
  -89 1226 l 1
  -89 1133 l 1
  12 1133 l 1
- 12 1064 l 5
+ 12 1064 l 1
  -89 1064 l 1
  -89 984 l 1
  -202 984 l 1
@@ -6013,9 +6010,9 @@ StartChar: uni0E4C
 Encoding: 236 3660 202
 OldEncoding: 3660
 Width: 0
-Flags: W
+Flags: HW
 HStem: 1009 39<-126 -118>
-AnchorPoint: "AboveMark" -119.559 919.68 mark 0
+AnchorPoint: "AboveMark" -119 919 mark 0
 Fore
 -72 1076 m 0
  -72 1076 l 0
@@ -6038,20 +6035,20 @@ StartChar: uni0E4D
 Encoding: 237 3661 203
 OldEncoding: 3661
 Width: 0
-Flags: W
+Flags: HW
 HStem: 696 66<-209.853 -195> 877 69<-209.853 -195>
-AnchorPoint: "AboveMark" -197.731 689.76 mark 0
-AnchorPoint: "AboveMark" -197.731 988.656 basemark 0
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+AnchorPoint: "AboveMark" -197 988 basemark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -198 946 m 0
  -198 946 l 0
- -31 946 -31 696 -198 696 c 4
+ -31 946 -31 696 -198 696 c 0
  -365 696 -365 946 -198 946 c 0
 -198 762 m 0
  -121 762 -121 877 -198 877 c 0
  -274 877 -274 762 -198 762 c 0
 EndSplineSet
+Substitution: 0 65534 'high' uni0E4D.high
 Substitution: 0 65534 'G006' uni0E4B
 Substitution: 0 65534 'G005' uni0E4A
 Substitution: 0 65534 'G004' uni0E49
@@ -6061,10 +6058,10 @@ StartChar: uni0E4E
 Encoding: 238 3662 204
 OldEncoding: 3662
 Width: 0
-Flags: W
+Flags: HW
 HStem: 717 69<-198 -167> 878 63<-83 -74> 1018 61<-78 -58>
 VStem: -317 113<807 817> -238 105<971 983>
-AnchorPoint: "AboveBase" -87.3691 613.12 mark 0
+AnchorPoint: "AboveBase" -87 613 mark 0
 Fore
 -210 926 m 1xf0
  -228 940 -238 958 -238 983 c 2
@@ -6094,7 +6091,7 @@ StartChar: uni0E4F
 Encoding: 239 3663 205
 OldEncoding: 3663
 Width: 596
-Flags: W
+Flags: HW
 HStem: 0 34<296 317> 109 35<283 301> 360 37<283 301> 472 34<296 317>
 Fore
 296 506 m 0
@@ -6118,7 +6115,7 @@ StartChar: uni0E50
 Encoding: 240 3664 206
 OldEncoding: 3664
 Width: 697
-Flags: W
+Flags: HW
 HStem: -9 76<329 347> 353 76<339 347>
 VStem: 74 111<198 216> 492 113<198 216>
 Fore
@@ -6139,7 +6136,7 @@ StartChar: uni0E51
 Encoding: 241 3665 207
 OldEncoding: 3665
 Width: 697
-Flags: W
+Flags: HW
 HStem: 356 67<369 374>
 Fore
 641 204 m 0
@@ -6167,7 +6164,7 @@ StartChar: uni0E52
 Encoding: 242 3666 208
 OldEncoding: 3666
 Width: 697
-Flags: W
+Flags: HW
 HStem: 0 77<292 540>
 VStem: 124 117<125.937 433> 547 118<131 317>
 Fore
@@ -6214,7 +6211,7 @@ StartChar: uni0E53
 Encoding: 243 3667 209
 OldEncoding: 3667
 Width: 697
-Flags: W
+Flags: HW
 HStem: -3 51<206 213> 113 51<213 219> 337 86<260 270>
 VStem: 95 121<163 208> 326 100<0 270> 533 118<162 202>
 Fore
@@ -6247,7 +6244,7 @@ StartChar: uni0E54
 Encoding: 244 3668 210
 OldEncoding: 3668
 Width: 697
-Flags: W
+Flags: HW
 HStem: 84 101<369 386> 242 57<368 371>
 Fore
 679 544 m 1
@@ -6281,7 +6278,7 @@ StartChar: uni0E55
 Encoding: 245 3669 211
 OldEncoding: 3669
 Width: 697
-Flags: W
+Flags: HW
 HStem: 86 101<343 353> 244 55<340 345> 546 55<342 360>
 Fore
 685 553 m 1
@@ -6325,7 +6322,7 @@ StartChar: uni0E56
 Encoding: 246 3670 212
 OldEncoding: 3670
 Width: 697
-Flags: W
+Flags: HW
 HStem: -3 127<296 415> 189 55<290 305>
 Fore
 655 124 m 0
@@ -6356,7 +6353,7 @@ StartChar: uni0E57
 Encoding: 247 3671 213
 OldEncoding: 3671
 Width: 697
-Flags: W
+Flags: HW
 HStem: 113 39<112 165> 270 84<258 258.299>
 Fore
 739 570 m 1
@@ -6392,7 +6389,7 @@ StartChar: uni0E58
 Encoding: 248 3672 214
 OldEncoding: 3672
 Width: 697
-Flags: W
+Flags: HW
 HStem: 87 57<532 547>
 Fore
 704 559 m 1
@@ -6424,7 +6421,7 @@ StartChar: uni0E59
 Encoding: 249 3673 215
 OldEncoding: 3673
 Width: 697
-Flags: W
+Flags: HW
 Fore
 719 587 m 1
  719 587 l 1
@@ -6459,7 +6456,7 @@ StartChar: uni0E5A
 Encoding: 250 3674 216
 OldEncoding: 3674
 Width: 797
-Flags: W
+Flags: HW
 HStem: -6 86<268 322> 339 75<216 232>
 VStem: 31 79<478 529> 193 52<518 531> 386 120<157 403> 609 114<182 473.104>
 Fore
@@ -6521,7 +6518,7 @@ StartChar: uni0E5B
 Encoding: 251 3675 217
 OldEncoding: 3675
 Width: 1109
-Flags: W
+Flags: HW
 HStem: 38 74<235 243> 230 66<887 915 898 1011> 483 73<212 227>
 VStem: 18 72<277 322> 126 56<300 313> 221 56<300 313> 310 72<357 375>
 Fore
@@ -6585,7 +6582,7 @@ StartChar: uni0E38.low
 Encoding: 252 63256 218
 OldEncoding: 63256
 Width: 0
-Flags: W
+Flags: HW
 VStem: -193 106<-598 -425>
 Fore
 -193 -598 m 1
@@ -6605,7 +6602,7 @@ StartChar: uni0E39.low
 Encoding: 253 63257 219
 OldEncoding: 63257
 Width: 0
-Flags: W
+Flags: HW
 VStem: -357 101<-575 -423> -196 115<-500 -305>
 Fore
 -235 -500 m 1
@@ -6635,7 +6632,7 @@ StartChar: uni0E3A.low
 Encoding: 254 63258 220
 OldEncoding: 63258
 Width: 0
-Flags: W
+Flags: HW
 Fore
 -158 -282 m 0
  -48 -282 -48 -449 -158 -449 c 0
@@ -6647,7 +6644,7 @@ Encoding: 255 63259 221
 OldEncoding: 63259
 Width: 0
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21G<-460 0>
 VStem: -460 460<0 766>
 Fore
@@ -6663,7 +6660,7 @@ Encoding: 256 161 222
 OldEncoding: 161
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 382 136<101 239>
 VStem: 95 149<-199 -31>
 Fore
@@ -6686,10 +6683,9 @@ Encoding: 257 162 223
 OldEncoding: 162
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -12 21G<284 357>
 VStem: 41 141<251 285>
-DStem: 181 8 242 -8 126 -181 184 -196 307 422 363 397 219 132 274 101 394 711 454 694 339 527 399 513
 Fore
 363 397 m 1
  274 101 l 1
@@ -6722,7 +6718,7 @@ Encoding: 258 163 224
 OldEncoding: 163
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -11 123<386 406> 303 109<6 107 221 372> 619 111<277 295>
 VStem: 63 133<515 541>
 Fore
@@ -6764,7 +6760,7 @@ Encoding: 259 164 225
 OldEncoding: 164
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 139 117<262.985 280> 454 119<260 279>
 VStem: 60 118<356 358> 376 118<341.152 359>
 Fore
@@ -6805,10 +6801,9 @@ Encoding: 260 165 226
 OldEncoding: 165
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21G<207 343> 133 109<25 207 343 527> 300 108<25 207 399 527>
 VStem: 207 136<0 133 242 300>
-DStem: 0 716 152 716 153 408 248 509 402 716 552 716 302 509 399 408
 Fore
 207 133 m 1
  25 133 l 1
@@ -6843,7 +6838,7 @@ Encoding: 261 166 227
 OldEncoding: 166
 Width: 278
 VWidth: 2048
-Flags: W
+Flags: HW
 VStem: 86 109<-210 176 343 730>
 Fore
 86 343 m 1
@@ -6863,7 +6858,7 @@ Encoding: 262 167 228
 OldEncoding: 167
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -210 104<271 302> 624 106<255 290>
 VStem: 29 124<305 333> 69 139<570 580> 356 136<-51 -40> 402 119<215 238>
 Fore
@@ -6906,7 +6901,7 @@ Encoding: 263 168 229
 OldEncoding: 168
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 610 120<2 121 213 331>
 VStem: 2 119<610 730> 213 118<610 730>
 Fore
@@ -6927,7 +6922,7 @@ Encoding: 264 169 230
 OldEncoding: 169
 Width: 735
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -18 75<369 396> 147 71<362 380> 495 69<362 379> 658 73<369 396>
 VStem: -5 74<357 383> 187 86<333 367> 671 74<357 383>
 Fore
@@ -6969,7 +6964,7 @@ Encoding: 265 170 231
 OldEncoding: 170
 Width: 369
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 363 74<136 167> 651 79<168 195>
 VStem: 18 102<467 479> 231 100<506 590 590 610>
 Fore
@@ -7003,7 +6998,7 @@ Encoding: 266 171 232
 OldEncoding: 171
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 Fore
 310 480 m 1
  182 259 l 1
@@ -7026,7 +7021,7 @@ Encoding: 267 172 233
 OldEncoding: 172
 Width: 583
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 400 124<41 417>
 VStem: 417 126<184 524>
 Fore
@@ -7044,7 +7039,7 @@ Encoding: 268 173 234
 OldEncoding: 173
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 192 136<32 302>
 Fore
 32 192 m 1
@@ -7059,7 +7054,7 @@ Encoding: 269 174 235
 OldEncoding: 174
 Width: 735
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -18 73<346 396> 490 63<201 348> 658 73<346 396>
 VStem: -5 74<357 383> 201 81<156 319 156 490> 437 86<429 447> 671 74<357 383>
 Fore
@@ -7112,7 +7107,7 @@ Encoding: 270 175 236
 OldEncoding: 175
 Width: 551
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 759 89<-9 561>
 Fore
 -9 759 m 1
@@ -7127,7 +7122,7 @@ Encoding: 271 176 237
 OldEncoding: 176
 Width: 400
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 417 81<185.791 201> 647 83<198 202>
 VStem: 41 83<573 578> 273 81<573 578>
 Fore
@@ -7156,7 +7151,7 @@ Encoding: 272 177 238
 OldEncoding: 177
 Width: 548
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 129<25 526> 360 129<25 212 337 526>
 VStem: 212 125<173 360 489 674>
 Fore
@@ -7185,7 +7180,7 @@ Encoding: 273 178 239
 OldEncoding: 178
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 356 76<156 310> 656 69<155 173>
 VStem: 216 94<608 623>
 Fore
@@ -7211,7 +7206,7 @@ Encoding: 274 179 240
 OldEncoding: 179
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 349 69<164 170> 520 64<135 167> 656 69<148.26 170>
 VStem: 201 93<619 627> 218 96<460 478>
 Fore
@@ -7241,7 +7236,7 @@ Encoding: 275 180 241
 OldEncoding: 180
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 Fore
 92 582 m 1
  159 730 l 1
@@ -7255,7 +7250,7 @@ Encoding: 276 181 242
 OldEncoding: 181
 Width: 576
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -12 110<286 296>
 VStem: 54 138<-199 63 -199 518> 399 127<0 518>
 Fore
@@ -7281,7 +7276,7 @@ Encoding: 277 182 243
 OldEncoding: 182
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 589 127<259 382 259 552>
 VStem: 192 119<-196 589> 382 115<-196 589>
 Fore
@@ -7308,7 +7303,7 @@ Encoding: 278 183 244
 OldEncoding: 183
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 281 136<72 208>
 VStem: 72 136<281 417>
 Fore
@@ -7324,7 +7319,7 @@ Encoding: 279 184 245
 OldEncoding: 184
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -205 61<76 131> -58 52<129 159>
 VStem: 192 93<-107.596 -92>
 Fore
@@ -7346,7 +7341,7 @@ Encoding: 280 185 246
 OldEncoding: 185
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 VStem: 149 93<356 725>
 Fore
 242 356 m 1
@@ -7364,7 +7359,7 @@ Encoding: 281 186 247
 OldEncoding: 186
 Width: 364
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 362 83<171 189> 642 88<171 189>
 VStem: 12 104<544 555> 247 104<544 555>
 Fore
@@ -7389,7 +7384,7 @@ Encoding: 282 187 248
 OldEncoding: 187
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 Fore
 244 34 m 1
  371 256 l 1
@@ -7412,10 +7407,9 @@ Encoding: 283 188 249
 OldEncoding: 188
 Width: 833
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -20 21G<685 773> 51 72<596 685 773 825>
 VStem: 150 92<356 725> 685 88<-20 51 123 349>
-DStem: 590 725 668 725 166 -26 244 -26 697 349 685 231 510 120 596 123
 Fore
 242 356 m 1
  150 356 l 1
@@ -7453,10 +7447,9 @@ Encoding: 284 189 250
 OldEncoding: 189
 Width: 833
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -20 77<656 809> 281 68<655 672>
 VStem: 150 92<356 725> 716 93<239 246>
-DStem: 590 725 668 725 166 -26 244 -26
 Fore
 242 356 m 1
  150 356 l 1
@@ -7493,10 +7486,9 @@ Encoding: 285 190 251
 OldEncoding: 190
 Width: 833
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -20 21G<685 773> 51 72<596 685 773 825> 349 69<164 178> 520 64<135 167> 656 69<148.26 170>
 VStem: 201 93<619 631> 218 96<461 474> 685 88<-20 51 123 349>
-DStem: 602 725 679 725 178 -26 256 -26 696 349 685 231 509 120 596 123
 Fore
 20 463 m 1xfb
  109 472 l 1
@@ -7545,7 +7537,7 @@ Encoding: 286 191 252
 OldEncoding: 191
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -205 105<288 322> 382 136<236 372>
 VStem: 49 135<-14 8> 236 136<382 518>
 Fore
@@ -7578,9 +7570,8 @@ Encoding: 287 192 253
 OldEncoding: 192
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 3 21<25 141 460 590> 155 96<210 418> 684 20<230 391>
-DStem: 230 704 303 596 25 3 210 251 230 704 184 155 25 3 141 3 418 155 391 704 460 3 590 3
 Ref: 65 65 N 1 0 0 1 0 0
 Ref: 96 96 N 1 0 0 1 164 202
 EndChar
@@ -7589,9 +7580,8 @@ Encoding: 288 193 254
 OldEncoding: 193
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 3 21<25 141 460 590> 155 96<210 418> 684 20<230 391>
-DStem: 230 704 303 596 25 3 210 251 230 704 184 155 25 3 141 3 418 155 391 704 460 3 590 3
 Ref: 65 65 N 1 0 0 1 0 0
 Ref: 275 180 N 1 0 0 1 187 202
 EndChar
@@ -7600,9 +7590,8 @@ Encoding: 289 194 255
 OldEncoding: 194
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 3 21<25 141 460 590> 155 96<210 418> 684 20<230 391> 786 146<290 299 291 520>
-DStem: 230 704 303 596 25 3 210 251 230 704 184 155 25 3 141 3 418 155 391 704 460 3 590 3
 Ref: 65 65 N 1 0 0 1 0 0
 Ref: 358 710 N 1 0 0 1 187 202
 EndChar
@@ -7611,10 +7600,9 @@ Encoding: 290 195 256
 OldEncoding: 195
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 3 21<25 141 460 590> 155 96<210 418> 684 20<230 391>
 VStem: 178 63<791 805.277>
-DStem: 230 704 303 596 25 3 210 251 230 704 184 155 25 3 141 3 418 155 391 704 460 3 590 3
 Ref: 65 65 N 1 0 0 1 0 0
 Ref: 362 732 N 1 0 0 1 184 202
 EndChar
@@ -7623,10 +7611,9 @@ Encoding: 291 196 257
 OldEncoding: 196
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 3 21<25 141 460 590> 155 96<210 418> 684 20<230 391> 789 120<181 300 392 510>
 VStem: 181 119<789 909> 392 118<789 909>
-DStem: 230 704 303 596 25 3 210 251 230 704 184 155 25 3 141 3 418 155 391 704 460 3 590 3
 Ref: 65 65 N 1 0 0 1 0 0
 Ref: 263 168 N 1 0 0 1 179 179
 EndChar
@@ -7635,10 +7622,9 @@ Encoding: 292 197 258
 OldEncoding: 197
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 3 21<25 141 460 590> 155 96<210 418> 684 20<230 391> 761 53<338.989 354> 901 52<338.634 354>
 VStem: 255 53<845.57 861> 394 52<845.57 861>
-DStem: 230 704 303 596 25 3 210 251 230 704 184 155 25 3 141 3 418 155 391 704 460 3 590 3
 Ref: 65 65 N 1 0 0 1 0 0
 Ref: 361 730 N 1 0 0 1 184 202
 EndChar
@@ -7647,10 +7633,9 @@ Encoding: 293 198 259
 OldEncoding: 198
 Width: 999
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 121<584 953> 169 124<245 440> 316 119<584 912> 595 121<291 940> 607 109<291 441>
 VStem: 440 144<0 316 293 595>
-DStem: 291 716 385 607 -41 0 245 293 291 716 192 169 -41 0 118 0
 Fore
 -41 0 m 1xf4
  291 716 l 1
@@ -7681,7 +7666,7 @@ Encoding: 294 199 260
 OldEncoding: 199
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -205 61<281 336> -58 52<334 364> -3 100<339 361.182> 615 101<337 356>
 VStem: 51 138<332 366> 397 93<-107.596 -92>
 Ref: 67 67 N 1 0 0 1 0 0
@@ -7692,7 +7677,7 @@ Encoding: 295 200 261
 OldEncoding: 200
 Width: 666
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 2 93<199 523> 293 98<199 454> 596 101<80 523>
 VStem: 80 119<2 293 2 596>
 Ref: 69 69 N 1 0 0 1 0 0
@@ -7703,7 +7688,7 @@ Encoding: 296 201 262
 OldEncoding: 201
 Width: 666
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 2 93<199 523> 293 98<199 454> 596 101<80 523>
 VStem: 80 119<2 293 2 596>
 Ref: 69 69 N 1 0 0 1 0 0
@@ -7714,7 +7699,7 @@ Encoding: 297 202 263
 OldEncoding: 202
 Width: 666
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 2 93<199 523> 293 98<199 454> 596 101<80 523> 794 146<275 284 276 505>
 VStem: 80 119<2 293 2 596>
 Ref: 69 69 N 1 0 0 1 0 0
@@ -7725,7 +7710,7 @@ Encoding: 298 203 264
 OldEncoding: 203
 Width: 666
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 2 93<199 523> 293 98<199 454> 596 101<80 523> 789 120<174 293 385 503>
 VStem: 80 119<2 293 2 596> 174 119<789 909> 385 118<789 909>
 Ref: 69 69 N 1 0 0 1 0 0
@@ -7736,7 +7721,7 @@ Encoding: 299 204 265
 OldEncoding: 204
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 3 21<83 202> 684 20<83 202>
 VStem: 83 119<3 704>
 Ref: 73 73 N 1 0 0 1 0 0
@@ -7747,7 +7732,7 @@ Encoding: 300 205 266
 OldEncoding: 205
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 3 21<83 202> 684 20<83 202>
 VStem: 83 119<3 704>
 Ref: 73 73 N 1 0 0 1 0 0
@@ -7758,7 +7743,7 @@ Encoding: 301 206 267
 OldEncoding: 206
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 3 21<83 202> 684 20<83 202> 786 146<66 75 67 296>
 VStem: 83 119<3 704>
 Ref: 73 73 N 1 0 0 1 0 0
@@ -7769,7 +7754,7 @@ Encoding: 302 207 268
 OldEncoding: 207
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 3 21<83 202> 684 20<83 202> 797 120<-29 90 182 300>
 VStem: -29 119<797 917> 83 119<3 704> 182 118<797 917>
 Ref: 73 73 N 1 0 0 1 0 0
@@ -7780,7 +7765,7 @@ Encoding: 303 208 269
 OldEncoding: 208
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 121<218 351> 313 90<-2 72 218 371> 595 121<72 327>
 VStem: 72 146<0 313 403 595> 524 149<313 385>
 CounterMasks: 1 00
@@ -7816,10 +7801,9 @@ Encoding: 304 209 270
 OldEncoding: 209
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 3 21<80 164 455 561> 684 20<80 219 475 561>
 VStem: 80 84<3 529> 196 63<784 798.277> 475 86<236 704>
-DStem: 198 529 219 704 455 3 445 236
 Ref: 78 78 N 1 0 0 1 0 0
 Ref: 362 732 N 1 0 0 1 202 195
 EndChar
@@ -7828,7 +7812,7 @@ Encoding: 305 210 271
 OldEncoding: 210
 Width: 777
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -3 104<318 337> 616 100<318 337>
 VStem: 32 129<357 382> 480 119<332 382>
 Ref: 79 79 N 1 0 0 1 0 0
@@ -7839,7 +7823,7 @@ Encoding: 306 211 272
 OldEncoding: 211
 Width: 777
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -3 104<318 337> 616 100<318 337>
 VStem: 32 129<357 382> 480 119<332 382>
 Ref: 79 79 N 1 0 0 1 0 0
@@ -7850,7 +7834,7 @@ Encoding: 307 212 273
 OldEncoding: 212
 Width: 777
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -3 104<318 337> 616 100<318 337> 794 146<324 333 325 554>
 VStem: 32 129<357 382> 480 119<332 382>
 Ref: 79 79 N 1 0 0 1 0 0
@@ -7861,7 +7845,7 @@ Encoding: 308 213 274
 OldEncoding: 213
 Width: 777
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -3 104<318 337> 616 100<318 337>
 VStem: 32 129<357 382> 212 63<799 813.277> 480 119<332 382>
 Ref: 79 79 N 1 0 0 1 0 0
@@ -7872,7 +7856,7 @@ Encoding: 309 214 275
 OldEncoding: 214
 Width: 777
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -3 104<318 337> 616 100<318 337> 797 120<226 345 437 555>
 VStem: 32 129<357 382> 226 119<797 917> 437 118<797 917> 480 119<332 382>
 Ref: 79 79 N 1 0 0 1 0 0
@@ -7883,8 +7867,7 @@ Encoding: 310 215 276
 OldEncoding: 215
 Width: 583
 VWidth: 2048
-Flags: W
-DStem: 54 501 144 592 202 353 293 445 202 353 290 264 54 205 143 116 290 264 382 354 440 115 530 205 440 592 529 503 293 445 382 354
+Flags: HW
 Fore
 54 205 m 1
  202 353 l 1
@@ -7906,10 +7889,9 @@ Encoding: 311 216 277
 OldEncoding: 216
 Width: 777
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -12 116<382 400> 605 125<366 400>
 VStem: 43 149<327 393> 589 148<327 377>
-DStem: 115 115 179 49 31 20 100 -40 515 564 569 486 215 225 268 149 682 751 751 691 605 664 670 599
 Fore
 605 664 m 1
  682 751 l 1
@@ -7944,7 +7926,7 @@ Encoding: 312 217 278
 OldEncoding: 217
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -6 104<324 342> 679 20<69 204 460 586>
 VStem: 69 135<274 699> 460 126<274 699>
 Ref: 85 85 N 1 0 0 1 0 0
@@ -7955,7 +7937,7 @@ Encoding: 313 218 279
 OldEncoding: 218
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -6 104<324 342> 679 20<69 204 460 586>
 VStem: 69 135<274 699> 460 126<274 699>
 Ref: 85 85 N 1 0 0 1 0 0
@@ -7966,7 +7948,7 @@ Encoding: 314 219 280
 OldEncoding: 219
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -6 104<324 342> 679 20<69 204 460 586> 794 146<290 299 291 520>
 VStem: 69 135<274 699> 460 126<274 699>
 Ref: 85 85 N 1 0 0 1 0 0
@@ -7977,7 +7959,7 @@ Encoding: 315 220 281
 OldEncoding: 220
 Width: 721
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -6 104<324 342> 679 20<69 204 460 586> 797 120<189 308 400 518>
 VStem: 69 135<274 699> 189 119<797 917> 400 118<797 917> 460 126<274 699>
 Ref: 85 85 N 1 0 0 1 0 0
@@ -7988,10 +7970,9 @@ Encoding: 316 221 282
 OldEncoding: 221
 Width: 666
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21<235 356> 680 20<35 176 437 556>
 VStem: 235 119<0 282>
-DStem: 437 700 556 700 305 418 354 282
 Ref: 89 89 N 1 0 0 1 0 0
 Ref: 275 180 N 1 0 0 1 164 210
 EndChar
@@ -8000,7 +7981,7 @@ Encoding: 317 222 283
 OldEncoding: 222
 Width: 666
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21G<72 218>
 VStem: 72 146<0 135 0 460 0 716> 472 150<360 369>
 Fore
@@ -8032,7 +8013,7 @@ Encoding: 318 223 284
 OldEncoding: 223
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -12 110<386 403> 621 109<272 292>
 VStem: 67 138<0 501> 274 144<382 412> 340 140<563 583> 438 138<134 157>
 Fore
@@ -8070,7 +8051,7 @@ Encoding: 319 224 285
 OldEncoding: 224
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -5 74<187 257> 452 74<255 282>
 VStem: 48 116<130 149> 357 107<186 371>
 Ref: 97 97 N 1 0 0 1 0 0
@@ -8081,7 +8062,7 @@ Encoding: 320 225 286
 OldEncoding: 225
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -5 74<187 257> 452 74<255 282>
 VStem: 48 116<130 149> 357 107<186 371>
 Ref: 97 97 N 1 0 0 1 0 0
@@ -8092,7 +8073,7 @@ Encoding: 321 226 287
 OldEncoding: 226
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -5 74<187 257> 452 74<255 282> 584 146<213 222 214 443>
 VStem: 48 116<130 149> 357 107<186 371>
 Ref: 97 97 N 1 0 0 1 0 0
@@ -8103,7 +8084,7 @@ Encoding: 322 227 288
 OldEncoding: 227
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -5 74<187 257> 452 74<255 282>
 VStem: 48 116<130 149> 106 63<589 603.277> 357 107<186 371>
 Ref: 97 97 N 1 0 0 1 0 0
@@ -8114,7 +8095,7 @@ Encoding: 323 228 289
 OldEncoding: 228
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -5 74<187 257> 452 74<255 282> 587 120<115 234 326 444>
 VStem: 48 116<130 149> 115 119<587 707> 326 118<587 707> 357 107<186 371>
 Ref: 97 97 N 1 0 0 1 0 0
@@ -8125,7 +8106,7 @@ Encoding: 324 229 290
 OldEncoding: 229
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -5 74<187 257> 452 74<255 282> 559 53<267.989 283> 699 52<267.634 283>
 VStem: 48 116<130 149> 184 53<643.57 659> 323 52<643.57 659> 357 107<186 371>
 Ref: 97 97 N 1 0 0 1 0 0
@@ -8136,7 +8117,7 @@ Encoding: 325 230 291
 OldEncoding: 230
 Width: 889
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -12 98<219 256> -12 106<593 620> 219 86<500 843> 426 104<266 296 586 620>
 VStem: 43 138<137 155> 363 137<305 351> 707 136<219 305>
 Fore
@@ -8179,7 +8160,7 @@ Encoding: 326 231 292
 OldEncoding: 231
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -205 61<205 260> -58 52<258 288> 0 90<277 293> 441 89<277 303>
 VStem: 46 127<255 275> 321 93<-107.596 -92>
 Ref: 99 99 N 1 0 0 1 0 0
@@ -8190,7 +8171,7 @@ Encoding: 327 232 293
 OldEncoding: 232
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 87<266 284> 261 78<166 478> 440 86<254 284>
 Ref: 101 101 N 1 0 0 1 0 0
 Ref: 96 96 N 1 0 0 1 92 0
@@ -8200,7 +8181,7 @@ Encoding: 328 233 294
 OldEncoding: 233
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 87<266 284> 261 78<166 478> 440 86<254 284>
 Ref: 101 101 N 1 0 0 1 0 0
 Ref: 275 180 N 1 0 0 1 121 0
@@ -8210,7 +8191,7 @@ Encoding: 329 234 295
 OldEncoding: 234
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 87<266 284> 261 78<166 478> 440 86<254 284> 584 146<209 218 210 439>
 Ref: 101 101 N 1 0 0 1 0 0
 Ref: 358 710 N 1 0 0 1 106 0
@@ -8220,7 +8201,7 @@ Encoding: 330 235 296
 OldEncoding: 235
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 87<266 284> 261 78<166 478> 440 86<254 284> 587 120<112 231 323 441>
 VStem: 112 119<587 707> 323 118<587 707>
 Ref: 101 101 N 1 0 0 1 0 0
@@ -8231,7 +8212,7 @@ Encoding: 331 236 297
 OldEncoding: 236
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21<72 208>
 VStem: 72 136<0 518>
 Ref: 351 305 N 1 0 0 1 0 0
@@ -8242,7 +8223,7 @@ Encoding: 332 237 298
 OldEncoding: 237
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21<72 208>
 VStem: 72 136<0 518>
 Ref: 351 305 N 1 0 0 1 0 0
@@ -8253,7 +8234,7 @@ Encoding: 333 238 299
 OldEncoding: 238
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21<72 208> 584 146<72 81 73 302>
 VStem: 72 136<0 518>
 Ref: 351 305 N 1 0 0 1 0 0
@@ -8264,7 +8245,7 @@ Encoding: 334 239 300
 OldEncoding: 239
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21<72 208> 587 120<-24 95 187 305>
 VStem: -24 119<587 707> 72 136<0 518> 187 118<587 707>
 Ref: 351 305 N 1 0 0 1 0 0
@@ -8275,10 +8256,9 @@ Encoding: 335 240 301
 OldEncoding: 240
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -12 112<295 313> 411 107<268 305>
 VStem: 40 144<243 277> 432 143<243 277>
-DStem: 268 630 305 592 162 579 184 533
 Fore
 162 716 m 1
  305 716 l 1
@@ -8316,7 +8296,7 @@ Encoding: 336 241 302
 OldEncoding: 241
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21<67 175 356 463> 428 95<280 333>
 VStem: 67 108<0 289 0 523> 144 63<589 603.277> 356 107<0 337>
 Ref: 110 110 N 1 0 0 1 0 0
@@ -8327,7 +8307,7 @@ Encoding: 337 242 303
 OldEncoding: 242
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -3 78<262 281> 443 83<264.125 282.733>
 VStem: 40 118<252 286> 353 142<256 385> 377 118<236 279>
 Ref: 111 111 N 1 0 0 1 0 0
@@ -8338,7 +8318,7 @@ Encoding: 338 243 304
 OldEncoding: 243
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -3 78<262 281> 443 83<264.125 282.733>
 VStem: 40 118<252 286> 353 142<256 385> 377 118<236 279>
 Ref: 111 111 N 1 0 0 1 0 0
@@ -8349,7 +8329,7 @@ Encoding: 339 244 305
 OldEncoding: 244
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -3 78<262 281> 443 83<264.125 282.733> 584 146<239 248 240 469>
 VStem: 40 118<252 286> 353 142<256 385> 377 118<236 279>
 Ref: 111 111 N 1 0 0 1 0 0
@@ -8360,7 +8340,7 @@ Encoding: 340 245 306
 OldEncoding: 245
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -3 78<262 281> 443 83<264.125 282.733>
 VStem: 40 118<252 286> 130 63<589 603.277> 353 142<256 385> 377 118<236 279>
 Ref: 111 111 N 1 0 0 1 0 0
@@ -8371,7 +8351,7 @@ Encoding: 341 246 307
 OldEncoding: 246
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -3 78<262 281> 443 83<264.125 282.733> 587 120<138 257 349 467>
 VStem: 40 118<252 286> 138 119<587 707> 349 118<587 707> 353 142<256 385> 377 118<236 279>
 Ref: 111 111 N 1 0 0 1 0 0
@@ -8382,7 +8362,7 @@ Encoding: 342 247 308
 OldEncoding: 247
 Width: 548
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 90 137<205 343> 290 127<25 524> 480 136<205 343>
 VStem: 205 138<90 227 480 616>
 Fore
@@ -8408,10 +8388,9 @@ Encoding: 343 248 309
 OldEncoding: 248
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -12 107<310 316> 426 104<298 316>
 VStem: 43 136<252 286> 441 137<236 270>
-DStem: 106 77 159 29 49 11 103 -35 385 400 428 340 192 176 236 118 513 547 569 503 463 487 515 441
 Fore
 463 487 m 1
  513 547 l 1
@@ -8447,7 +8426,7 @@ Encoding: 344 249 310
 OldEncoding: 249
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 100<199 253>
 VStem: 72 107<196 521> 362 96<-2 521>
 Ref: 117 117 N 1 0 0 1 0 0
@@ -8458,7 +8437,7 @@ Encoding: 345 250 311
 OldEncoding: 250
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 100<199 253>
 VStem: 72 107<196 521> 362 96<-2 521>
 Ref: 117 117 N 1 0 0 1 0 0
@@ -8469,7 +8448,7 @@ Encoding: 346 251 312
 OldEncoding: 251
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 100<199 253> 584 146<238 247 239 468>
 VStem: 72 107<196 521> 362 96<-2 521>
 Ref: 117 117 N 1 0 0 1 0 0
@@ -8480,7 +8459,7 @@ Encoding: 347 252 313
 OldEncoding: 252
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 100<199 253> 587 120<143 262 354 472>
 VStem: 72 107<196 521> 143 119<587 707> 354 118<587 707> 362 96<-2 521>
 Ref: 117 117 N 1 0 0 1 0 0
@@ -8491,8 +8470,7 @@ Encoding: 348 253 314
 OldEncoding: 253
 Width: 556
 VWidth: 2048
-Flags: W
-DStem: 354 523 449 523 253 150 307 35
+Flags: HW
 Ref: 121 121 N 1 0 0 1 0 0
 Ref: 275 180 N 1 0 0 1 126 0
 EndChar
@@ -8501,7 +8479,7 @@ Encoding: 349 254 315
 OldEncoding: 254
 Width: 610
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -12 109<325 357> 426 104<319 357>
 VStem: 67 138<-198 64 -198 299 -198 716> 434 141<233 283>
 Fore
@@ -8529,10 +8507,9 @@ Encoding: 350 255 316
 OldEncoding: 255
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 587 120<112 231 323 441>
 VStem: 112 119<587 707> 323 118<587 707>
-DStem: 354 523 449 523 253 150 307 35
 Ref: 121 121 N 1 0 0 1 0 0
 Ref: 263 168 N 1 0 0 1 110 -23
 EndChar
@@ -8541,7 +8518,7 @@ Encoding: 351 305 317
 OldEncoding: 305
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21G<72 208>
 VStem: 72 136<0 518>
 Fore
@@ -8557,7 +8534,7 @@ Encoding: 352 338 318
 OldEncoding: 338
 Width: 999
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 123<635 970> 316 119<635 929> 595 121<509 956> 605 125<316 343>
 VStem: 35 149<339 389>
 Fore
@@ -8593,7 +8570,7 @@ Encoding: 353 339 319
 OldEncoding: 339
 Width: 944
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -12 106<671 684> -12 113<307 316> 219 86<564 903> 429 101<650 673>
 VStem: 43 141<243 277>
 Fore
@@ -8634,10 +8611,9 @@ Encoding: 354 352 320
 OldEncoding: 352
 Width: 666
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -6 110<265 299> 607 106<272 299> 786 146<166 395>
 VStem: 54 131<501 526> 406 129<189 219>
-DStem: 166 932 276 932 268 786 330 858 386 932 497 932 330 858 395 786
 Ref: 83 83 N 1 0 0 1 0 0
 Ref: 359 711 N 1 0 0 1 164 202
 EndChar
@@ -8646,9 +8622,8 @@ Encoding: 355 353 321
 OldEncoding: 353
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -11 86<255 268> 438 91<223 240> 584 146<106 335>
-DStem: 106 730 216 730 208 584 270 656 326 730 437 730 270 656 335 584
 Ref: 115 115 N 1 0 0 1 0 0
 Ref: 359 711 N 1 0 0 1 104 0
 EndChar
@@ -8657,10 +8632,9 @@ Encoding: 356 376 322
 OldEncoding: 376
 Width: 666
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 0 21<235 356> 680 20<35 176 437 556> 820 120<166 285 377 495>
 VStem: 166 119<820 940> 235 119<0 282> 377 118<820 940>
-DStem: 437 700 556 700 305 418 354 282
 Ref: 89 89 N 1 0 0 1 0 0
 Ref: 263 168 N 1 0 0 1 164 210
 EndChar
@@ -8669,9 +8643,8 @@ Encoding: 357 402 323
 OldEncoding: 402
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -210 115<98 127> 415 103<152 233 389 472> 612 118<428 454>
-DStem: 233 415 372 415 159 -11 288 -63
 Fore
 135 415 m 1
  153 518 l 1
@@ -8704,7 +8677,7 @@ Encoding: 358 710 324
 OldEncoding: 710
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 584 146<103 112 104 333>
 Fore
 2 584 m 1
@@ -8722,9 +8695,8 @@ Encoding: 359 711 325
 OldEncoding: 711
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 584 146<2 231>
-DStem: 2 730 112 730 104 584 166 656 222 730 333 730 166 656 231 584
 Fore
 2 730 m 1
  112 730 l 1
@@ -8741,6 +8713,7 @@ Encoding: 360 713 326
 OldEncoding: 713
 Width: 551
 VWidth: 2048
+Flags: H
 HStem: 759 89<-9 561>
 Ref: 270 175 N 1 0 0 1 0 0
 EndChar
@@ -8749,7 +8722,7 @@ Encoding: 361 730 327
 OldEncoding: 730
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 559 53<154.989 170> 699 52<154.634 170>
 VStem: 71 53<643.57 659> 210 52<643.57 659>
 Fore
@@ -8774,7 +8747,7 @@ Encoding: 362 732 328
 OldEncoding: 732
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 VStem: -6 63<589 603.277>
 Fore
 57 589 m 1
@@ -8797,6 +8770,7 @@ Encoding: 363 956 329
 OldEncoding: 956
 Width: 576
 VWidth: 2048
+Flags: H
 HStem: -12 110<286 296>
 VStem: 54 138<-199 63 -199 518> 399 127<0 518>
 Ref: 276 181 N 1 0 0 1 0 0
@@ -8806,6 +8780,7 @@ Encoding: 364 8208 330
 OldEncoding: 8208
 Width: 453
 VWidth: 2048
+Flags: H
 HStem: 241 81<40 412>
 Ref: 45 45 N 1 0 0 1 0 0
 EndChar
@@ -8814,7 +8789,7 @@ Encoding: 365 8218 331
 OldEncoding: 8218
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -20 20G<67 135>
 Fore
 67 136 m 1
@@ -8833,7 +8808,7 @@ Encoding: 366 8222 332
 OldEncoding: 8222
 Width: 499
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -20 20G<80 146 310 376>
 VStem: 80 136<0 136> 146 70<0 38> 310 138<0 136> 376 72<0 38>
 Fore
@@ -8862,7 +8837,7 @@ Encoding: 367 8224 333
 OldEncoding: 8224
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 406 112<32 212 340 518> 688 20G<212 340>
 VStem: 212 128<-172 406 518 708>
 Fore
@@ -8886,7 +8861,7 @@ Encoding: 368 8225 334
 OldEncoding: 8225
 Width: 556
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -8 114<32 213 342 518> 426 115<32 213 342 518> 688 20G<213 342>
 VStem: 213 129<-172 -8 106 426 541 708>
 Fore
@@ -8918,10 +8893,9 @@ Encoding: 369 8240 335
 OldEncoding: 8240
 Width: 999
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -29 77<527 534 858 865> 271 77<527 534 856 865> 353 76<141 145> 653 77<134 145>
 VStem: 0 95<530 564> 187 97<530 564> 391 93<146 180> 576 97<146 180> 717 97<146 180> 903 98<146 180>
-DStem: 437 730 532 730 136 -26 233 -26
 Fore
 0 547 m 0
  0 668 48 730 143 730 c 0
@@ -8968,7 +8942,7 @@ Encoding: 370 8249 336
 OldEncoding: 8249
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 Fore
 299 480 m 1
  172 259 l 1
@@ -8984,7 +8958,7 @@ Encoding: 371 8250 337
 OldEncoding: 8250
 Width: 332
 VWidth: 2048
-Flags: W
+Flags: HW
 Fore
 37 34 m 1
  164 256 l 1
@@ -9000,10 +8974,9 @@ Encoding: 372 8482 338
 OldEncoding: 8482
 Width: 999
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: 647 69<106 228 106 431>
 VStem: 228 83<316 647> 478 77<316 636> 800 78<316 716>
-DStem: 555 636 605 716 641 316 677 441 751 716 800 636 677 441 714 316
 Fore
 228 316 m 1
  228 647 l 1
@@ -9035,6 +9008,7 @@ Encoding: 373 8722 339
 OldEncoding: 8722
 Width: 332
 VWidth: 2048
+Flags: H
 HStem: 192 136<32 302>
 Ref: 268 173 N 1 0 0 1 0 0
 EndChar
@@ -9043,6 +9017,7 @@ Encoding: 374 8729 340
 OldEncoding: 8729
 Width: 277
 VWidth: 2048
+Flags: H
 HStem: 281 136<72 208>
 VStem: 72 136<281 417>
 Ref: 278 183 N 1 0 0 1 0 0
@@ -9052,9 +9027,8 @@ Encoding: 375 63260 341
 OldEncoding: 63260
 Width: 338
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -20 20G<0 2>
-DStem: 0 2 0 2 0 0 2 0
 Fore
 0 0 m 1
  0 2 l 1
@@ -9067,7 +9041,7 @@ Encoding: 376 63261 342
 OldEncoding: 63261
 Width: 338
 VWidth: 2048
-Flags: W
+Flags: HW
 HStem: -118 115<29 253>
 VStem: 253 60<-162 -3>
 Fore
@@ -9087,14 +9061,14 @@ Encoding: 377 0 343
 OldEncoding: 65536
 Width: 0
 VWidth: 2048
-Flags: W
+Flags: HW
 EndChar
 StartChar: .notdef
 Encoding: 378 -1 344
 OldEncoding: 65538
 Width: 277
 VWidth: 2048
-Flags: W
+Flags: HW
 EndChar
 EndChars
 EndSplineFont
