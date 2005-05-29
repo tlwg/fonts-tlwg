@@ -11,7 +11,6 @@ UnderlinePosition: -100
 UnderlineWidth: 50
 Ascent: 800
 Descent: 200
-NeedsXUIDChange: 1
 XUID: [1021 215 427847090 12022888]
 FSType: 0
 PfmFamily: 49
@@ -94,7 +93,14 @@ ChainSub: coverage 0 0 'ccmp' 0 0 0 1
  1
   SeqLookup: 0 'loww'
 EndFPST
-GenTags: 8 sb'ndsc' sb'loww' sb'nds0' sb'amni' sb'G004' sb'G005' sb'G006' sb'G007'
+ChainSub: coverage 0 0 'ccmp' 0 0 0 1
+ 1 1 0
+  Coverage: 7 uni0E4D
+  BCoverage: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
+ 1
+  SeqLookup: 0 'high'
+EndFPST
+GenTags: 9 sb'ndsc' sb'loww' sb'nds0' sb'amni' sb'G004' sb'G005' sb'G006' sb'G007' sb'high'
 TtfTable: cvt  4
 !$MDh
 EndTtf
@@ -106,12 +112,12 @@ UnicodeInterp: none
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 189 9 4
+WinInfo: 252 9 4
 BeginPrivate: 1
 BlueValues 47 [-16 0 417 431 445 455 563 576 604 604 612 618]
 EndPrivate
-AnchorClass: "AboveBase" mark 0 0 1 0 "BelowBase" mark 0 0 2 0 "AboveMark" mkmk 0 0 3 1 "BelowMark" mkmk 0 0 4 1 
-BeginChars: 325 325
+AnchorClass: "AboveBase" mark 0 0 1 0 "BelowBase" mark 0 0 2 0 "AboveMark" mkmk 0 0 3 1 
+BeginChars: 326 326
 StartChar: space
 Encoding: 0 32 32767
 OldEncoding: 32
@@ -9964,26 +9970,26 @@ Fore
  -180 -58 -162 -40 -140 -40 c 4
 EndSplineSet
 EndChar
-StartChar: uni0E3B
-Encoding: 249 3643 32767
+StartChar: .notdef
+Encoding: 249 -1 32767
 OldEncoding: 3643
 Width: 600
 Flags: W
 EndChar
-StartChar: uni0E3C
-Encoding: 250 3644 32767
+StartChar: .notdef
+Encoding: 250 -1 32767
 OldEncoding: 3644
 Width: 600
 Flags: W
 EndChar
-StartChar: uni0E3D
-Encoding: 251 3645 32767
+StartChar: .notdef
+Encoding: 251 -1 32767
 OldEncoding: 3645
 Width: 600
 Flags: W
 EndChar
-StartChar: uni0E3E
-Encoding: 252 3646 32767
+StartChar: .notdef
+Encoding: 252 -1 32767
 OldEncoding: 3646
 Width: 600
 Flags: W
@@ -10676,7 +10682,6 @@ HStem: 500 41<-220 -174> 621 47<-220 -174>
 VStem: -282 45<559 605> -157 43<559 605>
 AnchorPoint: "AboveMark" -197 700 basemark 0
 AnchorPoint: "AboveBase" -100 500 mark 0
-AnchorPoint: "AboveMark" -197 500 mark 0
 Fore
 -197 621 m 0
  -219 621 -237 603 -237 581 c 0
@@ -10689,6 +10694,7 @@ Fore
  -243 500 -282 536 -282 582 c 0
  -282 628 -243 668 -197 668 c 0
 EndSplineSet
+Substitution: 0 65534 'high' uni0E4D.high
 Substitution: 0 65534 'G007' uni0E4B
 Substitution: 0 65534 'G006' uni0E4A
 Substitution: 0 65534 'G005' uni0E49
@@ -11510,10 +11516,11 @@ Fore
  197 197 186 210 170 210 c 0
 EndSplineSet
 EndChar
-StartChar: uni0E5C
-Encoding: 282 3676 32767
+StartChar: uni200B
+Encoding: 282 8203 32767
 OldEncoding: 3676
-Width: 1000
+Width: 0
+Flags: HW
 EndChar
 StartChar: uni2010
 Encoding: 283 8208 32767
@@ -12245,7 +12252,7 @@ StartChar: uni0E4D.left
 Encoding: 312 63249 32767
 OldEncoding: 63249
 Width: 0
-Flags: W
+Flags: HW
 HStem: 500 41<-305 -259> 621 47<-305 -259>
 VStem: -367 45<559 605> -242 43<559 605>
 Ref: 267 3661 S 1 0 0 1 -85 0
@@ -12372,6 +12379,17 @@ Fore
  100 -120 l 1
  100 0 l 1
 EndSplineSet
+EndChar
+StartChar: uni0E4D.high
+Encoding: 325 63262 65535
+OldEncoding: 63262
+Width: 0
+Flags: W
+TeX: 0 0 0 0
+HStem: 700 41<-220 -174> 821 47<-220 -174>
+VStem: -282 45<759 805> -157 43<759 805>
+AnchorPoint: "AboveMark" -197 700 mark 0
+Ref: 267 3661 N 1 0 0 1 0 200
 EndChar
 EndChars
 EndSplineFont
