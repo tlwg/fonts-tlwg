@@ -1,5 +1,19 @@
 2005-05-30  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
+	* db/DBThaiText*.sfd:
+	- Add high variant glyph for Nikhahit (uni0E4D.high), as well as
+	  'ccmp' rule for appropriate glyph selection.
+	- Remove unused "BelowMark" anchor class.
+
+	* db/DBThaiText[-Oblique].sfd:
+	- Make uni200B (zerowidthspace) width actually zero.
+
+	* db/DBThaiText-Bold[Oblique].sfd:
+	- Undefine uni0E3C-uni0E3E, which are not used.
+	- Add uni200B (zerowidthspace) glyph.
+
+2005-05-30  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
 	* nf/Kinnari*.sfd:
 	- Add high variant glyph for Nikhahit (uni0E4D.high), as well as
 	  'ccmp' rule for appropriate glyph selection.
