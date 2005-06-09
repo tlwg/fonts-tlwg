@@ -2,7 +2,7 @@ MAINTAINERCLEANFILES = Makefile.in configure aclocal.m4
 
 EXTRA_DIST = ChangeLog.thai-ttf
 
-SUBDIRS = scripts nf db nectec tlwg tests
+SUBDIRS = scripts nf nectec tlwg tests
 
 ttmkfdir = @TTMKFDIR@
 type1inst = @TYPE1INST@
@@ -53,6 +53,7 @@ endif
 
 uninstall-hook:
 if INCLUDE_TTF
+	$(RM) $(DESTDIR)$(ttfdir)/fonts.cache-1
 	$(RM) $(DESTDIR)$(ttfdir)/fonts.dir
 	$(RM) $(DESTDIR)$(ttfdir)/fonts.scale
 	$(RM) $(DESTDIR)$(ttfdir)/encodings.dir
@@ -60,12 +61,14 @@ if INCLUDE_TTF
 	$(ttmkfdir); \
 	if test `head -1 fonts.scale` -gt 0; then \
 		mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings; \
+		$(fccache) -f $(DESTDIR)$(ttfdir); \
 	else \
 		$(RM) $(DESTDIR)$(ttfdir)/fonts.scale; \
 		$(RMDIR) $(DESTDIR)$(ttfdir); \
 	fi
 endif
 if INCLUDE_TYPE1
+	$(RM) $(DESTDIR)$(type1dir)/fonts.cache-1
 	$(RM) $(DESTDIR)$(type1dir)/fonts.dir
 	$(RM) $(DESTDIR)$(type1dir)/fonts.scale
 	$(RM) $(DESTDIR)$(type1dir)/encodings.dir
@@ -73,10 +76,10 @@ if INCLUDE_TYPE1
 	$(type1inst); \
 	if test `head -1 fonts.scale` -gt 0; then \
 		mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings; \
+		$(fccache) -f $(DESTDIR)$(type1dir); \
 	else \
 		$(RM) $(DESTDIR)$(type1dir)/fonts.scale; \
 		$(RMDIR) $(DESTDIR)$(type1dir); \
 	fi
 endif
-	$(fccache) -f || true
 
