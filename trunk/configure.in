@@ -86,7 +86,19 @@ fi
 # fi
 
 dnl prefer mkfontscale over ttmkfdir
-AC_CHECK_PROG(MKFONTSCALE,mkfontscale,[mkfontscale -e tis620-0 -e tis620-2])
+AC_CHECK_PROG(MKFONTSCALE,mkfontscale,mkfontscale)
+
+# xorg or xfree86?
+if test "x$MKFONTSCALE" = "xmkfontscale"; then
+  if $MKFONTSCALE -n >/dev/null 2>&1; then
+    # xorg's mkfontscale
+    MKFONTSCALE="mkfontscale -a tis620-0 -a tis620-2"
+    rm -f fonts.scale encodings.dir
+  else
+    # xfree86's mkfontscale
+    MKFONTSCALE="mkfontscale -e tis620-0 -e tis620-2"
+  fi
+fi
 
 if test "x$enable_ttf" = "xyes"; then
   if test "x$MKFONTSCALE" = "x"; then
