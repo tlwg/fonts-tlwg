@@ -1,0 +1,51 @@
+0.4.3.1 (2005-07-03)
+=======
+- A brown paper bag release. Thep wishes he has more time to examine things
+  in next releases.
+- Actually change the Version field globally, so Type 1 version is also
+  affected. [Thep, bug reported by Werner Lemberg.]
+- Distinguish Xorg's and XFree86's mkfontscale, so fonts.scale is correctly
+  generated in Xorg. [Thep, bug reported by Konnux in LTN forum.]
+
+0.4.3
+=====
+- Dropped fonts: DBThaiText, Kinnari [Thep: Unclear licenses. This includes
+  the dropping of the newly created Kinnari Italic shape.]
+- Renamed fonts: Pseudo Mono -> Tlwg Typewriter [Poonlap]
+- Improved fonts: Loma [Thep, in sync with Sirichai the original author,
+  plus some more fine tunes]
+- Improved OpenType tables: Nikahit is now rendered correctly in all cases.
+  [Thep]
+- Font cleanups:
+  * Clean up some unused glyphs [Thep]
+  * Ensure ZWSP glyph in all appropriate fonts [Thep]
+  * Clearer copyright/license info [Thep]
+- Bug fixes
+  * Include glyph variants back in Type1 fonts [Thep]
+  * Configure script now correctly checks for ttmkfdir needed in
+    old XFree86 [Thep, bug reported by K. seal]
+
+0.4.2
+=====
+
+- New imported font: Loma [Thep; original author: Sirichai Lerdvorawut]
+- Thai OpenType tables [Thep]
+- Glyphs scaled up to match Latin fonts [Thep]
+- Various changes in Norasi [Chanop]
+  * Glyph refinements
+  * Latin kerning
+  * SmallCaps
+  * Replacement with GPL glyphs
+
+0.4.1
+=====
+
+- Replace glyphs with original cubic splines [Chanop, Thep]
+- New original fonts: TlwgMono, PseudoMono, Purisa [Poonlap]
+- New imported font: Kinnari [Chanop]
+- Sample text test suite (make check) [Poonlap]
+- DBThaiText: less inclined oblique glyphs [Thep]
+- nf/ and db/ fonts: adjusted dottedcircle [Thep]
+
+*** Please see ChangeLog for versions before 0.4.1 ***
+
