@@ -57,7 +57,7 @@ binary-indep: build install
 binary-arch: build install
 	dh_testdir
 	dh_testroot
-	dh_installdebconf
+	dh_installdebconf -pttf-thai-tlwg
 	dh_installdefoma
 	#dh_installxfonts
 	dh_installchangelogs
