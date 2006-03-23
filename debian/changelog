@@ -1,3 +1,24 @@
+thaifonts-scalable (0.4.4-2) unstable; urgency=low
+
+  * New maintainer (Closes: #357869)
+  * debian/control:
+    - put myself as the maintainer
+    - added back debconf dependency, and optionally debconf-2.0 
+      (Closes: #332156)
+    - updated description
+  * debian/ttf-thai-tlwg.docs, debian/t1-thai-tlwg.docs:
+    - added NEWS and README
+    - removed upstream ChangeLog
+  * debian/rules:
+    - removed upstream ChangeLog gzip
+  * debian/copyright:
+    - clarified font licenses (Closes: #321688)
+  * debian/ttf-thai-tlwg.templates:
+    - updated package name and config files in description
+    - rewrote the description (Closes: #324240)
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Wed, 22 Mar 2006 16:16:15 +0700
+
 thaifonts-scalable (0.4.4-1) unstable; urgency=low
 
   * New upstream release
@@ -7,7 +28,7 @@ thaifonts-scalable (0.4.4-1) unstable; urgency=low
   * debian/control:
     - Optionally build-depend on xutils|ttmkfdir, for debian builds.
 
- -- Theppitak Karoonboonyanan <thep@thep>  Fri, 17 Mar 2006 02:41:39 +0700
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Fri, 17 Mar 2006 02:41:39 +0700
 
 thaifonts-scalable (0.4.3.1-1ubuntu1) dapper; urgency=low
 

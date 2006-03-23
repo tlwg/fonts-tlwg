@@ -62,8 +62,6 @@ binary-arch: build install
 	#dh_installxfonts
 	dh_installchangelogs
 	dh_installdocs
-	gzip -9 debian/t1-thai-tlwg/usr/share/doc/t1-thai-tlwg/ChangeLog
-	gzip -9 debian/ttf-thai-tlwg/usr/share/doc/ttf-thai-tlwg/ChangeLog
 	dh_link
 	dh_strip
 	dh_compress
