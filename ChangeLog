@@ -1,3 +1,10 @@
+2006-03-26  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/{Purisa,TlwgMono,TlwgTypewriter}*.sfd:  Removed XUID field.
+	The XUID for TlwgTypewriter-Bold[Oblique].sfd were incomplete and
+	caused error with dvips. And, according to Fontforge doc, this field
+	and UniqueID were said by Adobe to be unnecessary.
+
 2006-03-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* configure.in, NEWS:
