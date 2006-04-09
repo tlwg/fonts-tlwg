@@ -7,6 +7,10 @@ FONTSOURCES = \
 	TlwgTypewriter-Bold.sfd \
 	TlwgTypewriter-Oblique.sfd \
 	TlwgTypewriter-BoldOblique.sfd \
+	TlwgTypist.sfd \
+	TlwgTypist-Bold.sfd \
+	TlwgTypist-Oblique.sfd \
+	TlwgTypist-BoldOblique.sfd \
 	Purisa.sfd
 
 TTFFILES = \
@@ -18,6 +22,10 @@ TTFFILES = \
 	TlwgTypewriter-Bold.ttf \
 	TlwgTypewriter-Oblique.ttf \
 	TlwgTypewriter-BoldOblique.ttf \
+	TlwgTypist.ttf \
+	TlwgTypist-Bold.ttf \
+	TlwgTypist-Oblique.ttf \
+	TlwgTypist-BoldOblique.ttf \
 	Purisa.ttf
 
 TESTTTFFILES = \
@@ -29,6 +37,10 @@ TESTTTFFILES = \
 	TTFTlwgTypewriter-Bold.ttf \
 	TTFTlwgTypewriter-Oblique.ttf \
 	TTFTlwgTypewriter-BoldOblique.ttf \
+	TTFTlwgTypist.ttf \
+	TTFTlwgTypist-Bold.ttf \
+	TTFTlwgTypist-Oblique.ttf \
+	TTFTlwgTypist-BoldOblique.ttf \
 	TTFPurisa.ttf
 
 OTFFILES = \
@@ -40,6 +52,10 @@ OTFFILES = \
 	TlwgTypewriter-Bold.otf \
 	TlwgTypewriter-Oblique.otf \
 	TlwgTypewriter-BoldOblique.otf \
+	TlwgTypist.otf \
+	TlwgTypist-Bold.otf \
+	TlwgTypist-Oblique.otf \
+	TlwgTypist-BoldOblique.otf \
 	Purisa.otf
 
 TESTOTFFILES = \
@@ -51,6 +67,10 @@ TESTOTFFILES = \
 	OTFTlwgTypewriter-Bold.otf \
 	OTFTlwgTypewriter-Oblique.otf \
 	OTFTlwgTypewriter-BoldOblique.otf \
+	OTFTlwgTypist.otf \
+	OTFTlwgTypist-Bold.otf \
+	OTFTlwgTypist-Oblique.otf \
+	OTFTlwgTypist-BoldOblique.otf \
 	OTFPurisa.otf
 
 PFAFILES = \
@@ -62,6 +82,10 @@ PFAFILES = \
 	TlwgTypewriter-Bold.pfa \
 	TlwgTypewriter-Oblique.pfa \
 	TlwgTypewriter-BoldOblique.pfa \
+	TlwgTypist.pfa \
+	TlwgTypist-Bold.pfa \
+	TlwgTypist-Oblique.pfa \
+	TlwgTypist-BoldOblique.pfa \
 	Purisa.pfa
 
 PFBFILES = \
@@ -73,6 +97,10 @@ PFBFILES = \
 	TlwgTypewriter-Bold.pfb \
 	TlwgTypewriter-Oblique.pfb \
 	TlwgTypewriter-BoldOblique.pfb \
+	TlwgTypist.pfb \
+	TlwgTypist-Bold.pfb \
+	TlwgTypist-Oblique.pfb \
+	TlwgTypist-BoldOblique.pfb \
 	Purisa.pfb
 
 TYPE1FILES =
@@ -92,6 +120,10 @@ TESTTYPE1FILES = \
 	PSTlwgTypewriter-Bold.pfb \
 	PSTlwgTypewriter-Oblique.pfb \
 	PSTlwgTypewriter-BoldOblique.pfb \
+	PSTlwgTypist.pfb \
+	PSTlwgTypist-Bold.pfb \
+	PSTlwgTypist-Oblique.pfb \
+	PSTlwgTypist-BoldOblique.pfb \
 	PSPurisa.pfb
 
 MAINTAINERCLEANFILES = Makefile.in
