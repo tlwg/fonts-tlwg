@@ -1,3 +1,36 @@
+thaifonts-scalable (0.4.4-3) unstable; urgency=low
+
+  * transition to X11R7
+    + debian/control:
+      - removed build-dep on xutils
+      - made t1-thai-tlwg depend on xfonts-utils >> 1:1.0.0
+      - build-dep on debhelper >= 5.0.31 for dh_installxfonts that supports
+        Xorg 7 directories
+    + debian/rules, debian/t1-thai-tlwg.dirs,
+      debian/{t1,ttf}-thai-tlwg.install:
+      - used dh_install instead of manully installing files
+      - removed Type1 fonts installation in /usr/share/fonts/type1, 
+        as well as symlinks from /usr/X11R6/lib/X11/fonts/Type1
+      - installed X11 Type1 fonts in /usr/share/fonts/X11
+      - moved X11 Type1 fonts.scale to /etc/X11/fonts/X11R7/Type1
+      - used dh_installxfonts for t1-thai-tlwg package
+    + debian/t1-thai-tlwg.scale, debian/ttf-thai-tlwg.scale:
+      - created predefined fonts.scale files for both packages
+    + debian/t1-thai-tlwg.post{inst,rm}:
+      - removed, as the update-fonts* scripts are now automatically done with
+        dh_installxfonts
+  * debian/rules:
+    - removed unneeded dh_strip, dh_shlibdeps, dh_link
+  * debian/control:
+    - conflicted with xfonts-thai-ttf, for package renaming
+  * debian/ttf-thai-tlwg.config:
+    - added
+  * debian/lintian-overrides:
+    - added lintian override for package-depends-on-an-x-font-package,
+      as xfonts-utils is not a font package at all
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Wed, 19 Apr 2006 15:06:55 +0700
+
 thaifonts-scalable (0.4.4-2) unstable; urgency=low
 
   * New maintainer (Closes: #357869)
