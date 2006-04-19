@@ -37,17 +37,10 @@ install: build
 	dh_testroot
 	dh_clean -k
 	dh_installdirs
+	dh_install
 
-	install -m 0644 nf/*.pfb tlwg/*.pfb nectec/*.pfb debian/t1-thai-tlwg/usr/share/fonts/type1/thai/
-	install -m 0644 nf/*.afm tlwg/*.afm nectec/*.afm debian/t1-thai-tlwg/usr/share/fonts/type1/thai/
-	install -m 0644 debian/fonts.scale debian/t1-thai-tlwg/etc/X11/fonts/Type1/t1-thai-tlwg.scale
-
-	install -m 0644 nf/*.ttf tlwg/*.ttf nectec/*.ttf debian/ttf-thai-tlwg/usr/share/fonts/truetype/thai/
-	(cd debian/t1-thai-tlwg/usr/X11R6/lib/X11/fonts/Type1; \
-	 for i in ../../../../../share/fonts/type1/thai/*.{pfb,afm}; \
-	 do ln -s $$i . ; \
-	 done)
-
+	install -D -m 644 debian/lintian-overrides \
+	    debian/t1-thai-tlwg/usr/share/lintian/overrides/t1-thai-tlwg
 
 # Build architecture-independent files here.
 binary-indep: build install
@@ -59,15 +52,12 @@ binary-arch: build install
 	dh_testroot
 	dh_installdebconf -pttf-thai-tlwg
 	dh_installdefoma
-	#dh_installxfonts
+	dh_installxfonts -pt1-thai-tlwg
 	dh_installchangelogs
 	dh_installdocs
-	dh_link
-	dh_strip
 	dh_compress
 	dh_fixperms
 	dh_installdeb
-	dh_shlibdeps
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb

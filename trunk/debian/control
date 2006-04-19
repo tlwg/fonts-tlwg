@@ -2,12 +2,12 @@ Source: thaifonts-scalable
 Section: x11
 Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@linux.thai.net>
-Build-Depends-Indep: debhelper (>> 4.0.0), defoma (>= 0.7.0), fontforge|pfaedit, po-debconf, xfonts-utils|xutils|ttmkfdir
+Build-Depends-Indep: debhelper (>= 5.0.31), defoma (>= 0.7.0), fontforge|pfaedit, po-debconf, xfonts-utils|ttmkfdir
 Standards-Version: 3.6.2.2
 
 Package: t1-thai-tlwg
 Architecture: all
-Depends: defoma
+Depends: defoma, xfonts-utils (>> 1:1.0.0)
 Description: Thai fonts in Type1 format
  This package provides some free-licensed fonts that are
  enhanced by developpers from Thai Linux Working Group.
@@ -27,6 +27,7 @@ Description: Thai fonts in Type1 format
 Package: ttf-thai-tlwg
 Architecture: all
 Depends: po-debconf, debconf|debconf-2.0, defoma, x-ttcidfont-conf
+Conflicts: xfonts-thai-ttf
 Replaces: xfonts-thai-ttf
 Description: Thai fonts in TrueType format
  This package provides some free-licensed fonts that are
