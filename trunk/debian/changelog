@@ -1,3 +1,18 @@
+thaifonts-scalable (0.4.4-4) unstable; urgency=low
+
+  * debian/control:
+    - added xfonts-thai-ttf as a dummy package for smooth transition
+    - removed conflict with xfonts-thai-ttf from ttf-thai-tlwg, to let the
+      transitional package install
+    - build-depends, rather than build-depends-indep, on debhelper
+    - removed dependency on debconf and po-debconf, as its use here just to
+      show some note was apparently an abuse. Besides, the message is
+      considered outdated with the new Xorg.
+  * debian/ttf-thai-tlwg.{config,templates}, debian/po/*:
+    - removed, according to debconf abuse removal
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Tue, 25 Apr 2006 17:19:59 +0700
+
 thaifonts-scalable (0.4.4-3) unstable; urgency=low
 
   * transition to X11R7
