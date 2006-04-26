@@ -2,7 +2,8 @@ Source: thaifonts-scalable
 Section: x11
 Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@linux.thai.net>
-Build-Depends-Indep: debhelper (>= 5.0.31), defoma (>= 0.7.0), fontforge|pfaedit, po-debconf, xfonts-utils|ttmkfdir
+Build-Depends: debhelper (>= 5.0.31)
+Build-Depends-Indep: defoma (>= 0.7.0), fontforge|pfaedit, xfonts-utils|ttmkfdir
 Standards-Version: 3.6.2.2
 
 Package: t1-thai-tlwg
@@ -26,8 +27,7 @@ Description: Thai fonts in Type1 format
 
 Package: ttf-thai-tlwg
 Architecture: all
-Depends: po-debconf, debconf|debconf-2.0, defoma, x-ttcidfont-conf
-Conflicts: xfonts-thai-ttf
+Depends: defoma, x-ttcidfont-conf
 Replaces: xfonts-thai-ttf
 Description: Thai fonts in TrueType format
  This package provides some free-licensed fonts that are
@@ -44,4 +44,10 @@ Description: Thai fonts in TrueType format
   - Tlwg Mono
   - Tlwg Typewriter
   - Purisa
+
+Package: xfonts-thai-ttf
+Architecture: all
+Pre-Depends: ttf-thai-tlwg
+Description: Thai TrueType fonts (transitional package)
+ Dummy package for smooth upgrade to ttf-thai-tlwg, can be safely removed.
 
