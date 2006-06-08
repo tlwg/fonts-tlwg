@@ -53,7 +53,7 @@ binary-arch: build install
 	dh_installdebconf -pttf-thai-tlwg
 	dh_installdefoma
 	dh_installxfonts -pt1-thai-tlwg
-	dh_installchangelogs
+	dh_installchangelogs ChangeLog
 	dh_installdocs
 	dh_compress
 	dh_fixperms
