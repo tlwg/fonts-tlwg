@@ -1,6 +1,6 @@
 MAINTAINERCLEANFILES = Makefile.in configure aclocal.m4
 
-EXTRA_DIST = ChangeLog.thai-ttf
+EXTRA_DIST = ChangeLog.thai-ttf GPL
 
 SUBDIRS = scripts nf nectec tlwg tests
 
