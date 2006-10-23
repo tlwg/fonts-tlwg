@@ -73,6 +73,21 @@ TESTOTFFILES = \
 	OTFTlwgTypist-BoldOblique.otf \
 	OTFPurisa.otf
 
+AFMFILES = \
+	TlwgMono.afm \
+	TlwgMono-Bold.afm \
+	TlwgMono-Oblique.afm \
+	TlwgMono-BoldOblique.afm \
+	TlwgTypewriter.afm \
+	TlwgTypewriter-Bold.afm \
+	TlwgTypewriter-Oblique.afm \
+	TlwgTypewriter-BoldOblique.afm \
+	TlwgTypist.afm \
+	TlwgTypist-Bold.afm \
+	TlwgTypist-Oblique.afm \
+	TlwgTypist-BoldOblique.afm \
+	Purisa.afm
+
 PFAFILES = \
 	TlwgMono.pfa \
 	TlwgMono-Bold.pfa \
@@ -105,13 +120,29 @@ PFBFILES = \
 
 TYPE1FILES =
 if INCLUDE_PFA
-TYPE1FILES += $(PFAFILES)
+TYPE1FILES += $(PFAFILES) $(AFMFILES)
 endif
 if INCLUDE_PFB
-TYPE1FILES += $(PFBFILES)
+TYPE1FILES += $(PFBFILES) $(AFMFILES)
 endif
 
+TESTAFMFILES = \
+	PSTlwgMono.afm \
+	PSTlwgMono-Bold.afm \
+	PSTlwgMono-Oblique.afm \
+	PSTlwgMono-BoldOblique.afm \
+	PSTlwgTypewriter.afm \
+	PSTlwgTypewriter-Bold.afm \
+	PSTlwgTypewriter-Oblique.afm \
+	PSTlwgTypewriter-BoldOblique.afm \
+	PSTlwgTypist.afm \
+	PSTlwgTypist-Bold.afm \
+	PSTlwgTypist-Oblique.afm \
+	PSTlwgTypist-BoldOblique.afm \
+	PSPurisa.afm
+
 TESTTYPE1FILES = \
+	$(TESTAFMFILES) \
 	PSTlwgMono.pfb \
 	PSTlwgMono-Bold.pfb \
 	PSTlwgMono-Oblique.pfb \

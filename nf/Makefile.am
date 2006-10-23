@@ -58,6 +58,18 @@ TESTOTFFILES = \
 	OTFNorasi-Italic.otf \
 	OTFNorasi.otf
 
+AFMFILES = \
+	Garuda-BoldOblique.afm \
+	Garuda-Bold.afm \
+	Garuda-Oblique.afm \
+	Garuda.afm \
+	Norasi-BoldItalic.afm \
+	Norasi-BoldOblique.afm \
+	Norasi-Bold.afm \
+	Norasi-Oblique.afm \
+	Norasi-Italic.afm \
+	Norasi.afm
+
 PFAFILES = \
 	Garuda-BoldOblique.pfa \
 	Garuda-Bold.pfa \
@@ -84,13 +96,26 @@ PFBFILES = \
 
 TYPE1FILES =
 if INCLUDE_PFA
-TYPE1FILES += $(PFAFILES)
+TYPE1FILES += $(PFAFILES) $(AFMFILES)
 endif
 if INCLUDE_PFB
-TYPE1FILES += $(PFBFILES)
+TYPE1FILES += $(PFBFILES) $(AFMFILES)
 endif
 
+TESTAFMFILES = \
+	PSGaruda-BoldOblique.afm \
+	PSGaruda-Bold.afm \
+	PSGaruda-Oblique.afm \
+	PSGaruda.afm \
+	PSNorasi-BoldItalic.afm \
+	PSNorasi-BoldOblique.afm \
+	PSNorasi-Bold.afm \
+	PSNorasi-Oblique.afm \
+	PSNorasi-Italic.afm \
+	PSNorasi.afm
+
 TESTTYPE1FILES = \
+	$(TESTAFMFLES) \
 	PSGaruda-BoldOblique.pfb \
 	PSGaruda-Bold.pfb \
 	PSGaruda-Oblique.pfb \

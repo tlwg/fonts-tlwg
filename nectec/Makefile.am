@@ -28,6 +28,12 @@ TESTOTFFILES = \
 	OTFLoma-Oblique.otf \
 	OTFLoma.otf
 
+AFMFILES = \
+	Loma-BoldOblique.afm \
+	Loma-Bold.afm \
+	Loma-Oblique.afm \
+	Loma.afm
+
 PFAFILES = \
 	Loma-BoldOblique.pfa \
 	Loma-Bold.pfa \
@@ -42,13 +48,20 @@ PFBFILES = \
 
 TYPE1FILES =
 if INCLUDE_PFA
-TYPE1FILES += $(PFAFILES)
+TYPE1FILES += $(PFAFILES) $(AFMFILES)
 endif
 if INCLUDE_PFB
-TYPE1FILES += $(PFBFILES)
+TYPE1FILES += $(PFBFILES) $(AFMFILES)
 endif
 
+TESTAFMFILES = \
+	PSLoma-BoldOblique.afm \
+	PSLoma-Bold.afm \
+	PSLoma-Oblique.afm \
+	PSLoma.afm
+
 TESTTYPE1FILES = \
+	$(TESTAFMFILES) \
 	PSLoma-BoldOblique.pfb \
 	PSLoma-Bold.pfb \
 	PSLoma-Oblique.pfb \
