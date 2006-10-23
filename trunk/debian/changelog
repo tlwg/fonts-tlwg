@@ -1,9 +1,17 @@
-thaifonts-scalable (1:0.4.4-6) UNRELEASED; urgency=low
+thaifonts-scalable (1:0.4.5-1) unstable; urgency=low
 
-  * debian/control: Edited description so it is in-paragraph continuous text.
+  * debian/control: Edit description so it is in-paragraph continuous text.
   * debian/watch: Added.
+  * New upstream release
+    - New font: TlwgTypist.
+    - Clean up XUID for fonts that cause problems with dvips.
+    - Add Foundry info and Thai sample text to all fonts.
+  * debian/ttf-thai-tlwg.docs, -debian/README.Debian: Do not install the
+    outdated info.
+  * debian/ttf-thai-tlwg.{postinst,scale}: Remove unused files.
+  * debian/t1-thai-tlwg.dirs: Fix wrong etc/X11/fonts/X11R7/Type1 dir.
 
- -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Mon,  3 Jul 2006 16:10:47 +0700
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Mon, 23 Oct 2006 15:03:16 +0700
 
 thaifonts-scalable (1:0.4.4-5) unstable; urgency=low
 
