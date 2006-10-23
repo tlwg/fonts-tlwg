@@ -1,0 +1,113 @@
+2003-02-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* +nf/, Garu*.ttf -> nf/, norasi_*.ttf ->nf/,
+	  Makefile.am -> nf/, +Makefile.am, configure.in:
+	Create subdir nf for fonts from national fonts project
+
+	* +db/, +db/DBThaiTextBoldItalic.ttf, +db/DBThaiTextBold.ttf,
+	  +db/DBThaiTextItalic.ttf, +db/DBThaiText.ttf, +db/Makefile.am,
+	  Makefile.am, configure.in:
+	Add DBThaiText family modified to be Unicode-based by
+	Poonlap Veerathanabutr and Sirichai Lerdvorawut
+	
+2002-12-24  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, thai-ttf.spec.in:
+	Version 0.3.1
+
+2002-12-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, thai-ttf.spec.in:
+	Change font dir from /usr/share/fonts/TIS-620/TrueType to
+	/usr/share/fonts/th/TTF
+
+	* configure.in:
+	Add -f option to fc-cache
+
+	* thai-ttf.spec.in:
+	Change URL to point to CVS snapshot
+
+2002-12-16  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* thai-ttf.spec.in:
+	Add xftcache calling, as per Supphachoke's suggestion
+	Add -f option to fc-cache calling
+	Split %{fontroot} from %{fontdir} as fontconfig manipulation units
+
+2002-12-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, Makefile.am:
+	Add supports for mkfontscale and fontconfig
+	Use install-data-hook instead of install-data-local
+	and uninstall-hook instead of uninstall-local as well
+
+	* thai-ttf.spec.in:
+	Add supports for mkfontscale and fontconfig
+	Add checks for XftConfig existence before updating
+	Polish %post and %postun scripts, remove cluttered $RPM_BUILD_ROOT
+
+	* configure.in:
+	Version 0.3.0
+
+2002-01-20  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* thai-ttf.spec.in:
+	Add %post and %postun scripts to refresh font for gnome-print.
+
+2002-01-16  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* thai-ttf.spec.in:
+	Add %post and %postun scripts to manipulate /etc/X11/XftConfig.
+	Change font directory back to /usr/share/fonts/TIS-620/TrueType.
+
+2001-12-19  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* thai-ttf.spec.in:
+	Fix encoding path in ttmkfdir -e.
+	Fix %postun script: remove fonts.scale before rmdir.
+
+2001-12-18  Phattanon Duangdara <sf_alpha@yahoo.com>
+
+	* Makefile.am, thai-ttf.spec.in:
+	Fix ttmkfdir calling.
+
+2001-12-11  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* AUTHORS, COPYING:
+	Add authors. Modify license to be public domain.
+
+2001-11-30  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* thai-ttf.spec.in:
+	Check for -e option of ttmkfdir and use it if possible.
+
+2001-11-27  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* thai-ttf.spec.in:
+	Fix Prereq: to /usr/bin/ttmkfdir.
+
+2001-11-25  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* +configure.in, Makefile.am, ChangeLog, autogen.sh:
+	Use GNU autotools.
+
+	* +thai-ttf.spec.in:
+	Add RPM spec file. Add BuildArch: section.
+	Add Requires: and Prereq: sections.
+
+	* Makefile.am:
+	Add install-data-local and uninstall-local targets.
+	Also add checking for existing fonts upon uninstallation.
+
+	* COPYING:
+	Fix message that still mentioned BDF fonts from old package.
+
+	* thai-ttf.spec.in:
+	Remove unneccessary 'make' in %build stage.
+	Add 'ttmkfdir' and 'mkfontdir' in %post stage.
+	Add checking for existing fonts in %postun stage.
+	Fix many typos.
+
+	* configure.in:
+	Version 0.2.1
+
