@@ -39,9 +39,6 @@ install: build
 	dh_installdirs
 	dh_install
 
-	install -D -m 644 debian/lintian-overrides \
-	    debian/t1-thai-tlwg/usr/share/lintian/overrides/t1-thai-tlwg
-
 # Build architecture-independent files here.
 binary-indep: build install
 	dh_testdir
@@ -50,6 +47,7 @@ binary-indep: build install
 	dh_installxfonts -pt1-thai-tlwg
 	dh_installchangelogs ChangeLog
 	dh_installdocs
+	dh_link
 	dh_compress
 	dh_fixperms
 	dh_installdeb
