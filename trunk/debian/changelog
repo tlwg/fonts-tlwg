@@ -1,3 +1,17 @@
+thaifonts-scalable (1:0.4.5-2) unstable; urgency=low
+
+  * Add fontconfig file to register fonts with generic families
+    - debian/fontconfig/65-ttf-thai-tlwg.conf: the config file
+    - debian/ttf-thai-tlwg.install: install the config file to
+      /etc/fonts/conf.avail/
+    - debian/ttf-thai-tlwg.links: create link from /etc/fonts/conf.d/
+    - debian/rules: call dh_link
+  * Install lintian-overrides file with dh_install.
+  * Bump debhelper compat to level 5.
+  * Remove unneeded debian/*.dirs.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sat, 23 Dec 2006 21:39:51 +0700
+
 thaifonts-scalable (1:0.4.5-1) unstable; urgency=low
 
   * debian/control: Edit description so it is in-paragraph continuous text.
