@@ -1,27 +1,27 @@
-pfaedit = @PFAEDIT@
+fontforge = @FONTFORGE@
 
 .SUFFIXES: .sfd .ttf .otf .pfa .pfb
 
 TTF%.ttf: %.sfd
-	$(pfaedit) -script $(top_srcdir)/scripts/gen-test-ttf.pe $<
+	$(fontforge) -script $(top_srcdir)/scripts/gen-test-ttf.pe $<
 
 OTF%.otf: %.sfd
-	$(pfaedit) -script $(top_srcdir)/scripts/gen-test-otf.pe $<
+	$(fontforge) -script $(top_srcdir)/scripts/gen-test-otf.pe $<
 
 PS%.afm PS%.pfa: %.sfd
-	$(pfaedit) -script $(top_srcdir)/scripts/gen-test-pfa.pe $<
+	$(fontforge) -script $(top_srcdir)/scripts/gen-test-pfa.pe $<
 
 PS%.afm PS%.pfb: %.sfd
-	$(pfaedit) -script $(top_srcdir)/scripts/gen-test-pfb.pe $<
+	$(fontforge) -script $(top_srcdir)/scripts/gen-test-pfb.pe $<
 
 %.ttf: %.sfd
-	$(pfaedit) -script $(top_srcdir)/scripts/gen-ttf.pe $<
+	$(fontforge) -script $(top_srcdir)/scripts/gen-ttf.pe $<
 
 %.otf: %.sfd
-	$(pfaedit) -script $(top_srcdir)/scripts/gen-otf.pe $<
+	$(fontforge) -script $(top_srcdir)/scripts/gen-otf.pe $<
 
 %.afm %.pfa: %.sfd
-	$(pfaedit) -script $(top_srcdir)/scripts/gen-pfa.pe $<
+	$(fontforge) -script $(top_srcdir)/scripts/gen-pfa.pe $<
 
 %.afm %.pfb: %.sfd
-	$(pfaedit) -script $(top_srcdir)/scripts/gen-pfb.pe $<
+	$(fontforge) -script $(top_srcdir)/scripts/gen-pfb.pe $<
