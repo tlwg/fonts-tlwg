@@ -83,10 +83,10 @@ AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_CHECK_PROGS(RMDIR,rmdir,no)
 
-AC_CHECK_PROGS(PFAEDIT,fontforge pfaedit,no)
+AC_CHECK_PROGS(FONTFORGE,fontforge pfaedit,no)
 
-if test "x$PFAEDIT" = "xno"; then
-  AC_MSG_ERROR([You need pfaedit])
+if test "x$FONTFORGE" = "xno"; then
+  AC_MSG_ERROR([You need fontforge to generate fonts.])
 fi
 
 # AC_CHECK_PROGS(TTMKFDIR,ttmkfdir,no)
