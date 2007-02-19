@@ -4,41 +4,18 @@ FONTSOURCES = \
 	DBThaiText-Oblique.sfd \
 	DBThaiText.sfd
 
-TTFFILES = \
-	DBThaiText-BoldOblique.ttf \
-	DBThaiText-Bold.ttf \
-	DBThaiText-Oblique.ttf \
-	DBThaiText.ttf
+TTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.ttf/g')
+OTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.otf/g')
+AFMFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.afm/g')
+PFAFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.pfa/g')
+PFBFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.pfb/g')
 
-TESTTTFFILES = \
-	TTFDBThaiText-BoldOblique.ttf \
-	TTFDBThaiText-Bold.ttf \
-	TTFDBThaiText-Oblique.ttf \
-	TTFDBThaiText.ttf
+TESTTTFFILES = $(shell echo $(TTFFILES) | sed 's/[-A-Za-z]*.ttf/TTF&/g')
+TESTOTFFILES = $(shell echo $(OTFFILES) | sed 's/[-A-Za-z]*.otf/OTF&/g')
 
-OTFFILES = \
-	DBThaiText-BoldOblique.otf \
-	DBThaiText-Bold.otf \
-	DBThaiText-Oblique.otf \
-	DBThaiText.otf
-
-TESTOTFFILES = \
-	OTFDBThaiText-BoldOblique.otf \
-	OTFDBThaiText-Bold.otf \
-	OTFDBThaiText-Oblique.otf \
-	OTFDBThaiText.otf
-
-PFAFILES = \
-	DBThaiText-BoldOblique.pfa \
-	DBThaiText-Bold.pfa \
-	DBThaiText-Oblique.pfa \
-	DBThaiText.pfa
-
-PFBFILES = \
-	DBThaiText-BoldOblique.pfb \
-	DBThaiText-Bold.pfb \
-	DBThaiText-Oblique.pfb \
-	DBThaiText.pfb
+TESTAFMFILES = $(shell echo $(AFMFILES) | sed 's/[-A-Za-z]*.afm/PS&/g')
+TESTPFBFLES = $(shell echo $(PFBFILES) | sed 's/[-A-Za-z]*.pfb/PS&/g')
+TESTTYPE1FILES = $(TESTPFBFILES) $(TESTAFMFILES)
 
 TYPE1FILES =
 if INCLUDE_PFA
@@ -48,13 +25,6 @@ if INCLUDE_PFB
 TYPE1FILES += $(PFBFILES)
 endif
 
-TESTTYPE1FILES = \
-	PSDBThaiText-BoldOblique.pfb \
-	PSDBThaiText-Bold.pfb \
-	PSDBThaiText-Oblique.pfb \
-	PSDBThaiText.pfb
-
-MAINTAINERCLEANFILES = Makefile.in
 CLEANFILES = *.ttf *.g2n *.pfb *.pfa *.afm *.pfm *.otf *.enc *.tfm
 
 EXTRA_DIST = $(FONTSOURCES)
