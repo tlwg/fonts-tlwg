@@ -1,3 +1,13 @@
+thaifonts-scalable (1:0.4.5-4) UNRELEASED; urgency=low
+
+  * Bump debhelper compat version to 5 again.
+  * Remove lintian-override for xfonts-utils dependency, as the lintian bug is
+    now fixed.
+  * Remove mentioning on outdated pfaedit and ttmkfdir dependencies.
+  * debian/rules: make distclean instead of just clean in clean target.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Mon, 19 Feb 2007 19:21:13 +0700
+
 thaifonts-scalable (1:0.4.5-3) unstable; urgency=medium
 
   * Urgency medium for getting it into etch, as the involved change is minor.
