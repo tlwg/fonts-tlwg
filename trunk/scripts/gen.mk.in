@@ -8,10 +8,10 @@ TTF%.ttf: %.sfd
 OTF%.otf: %.sfd
 	$(pfaedit) -script $(top_srcdir)/scripts/gen-test-otf.pe $<
 
-PS%.pfa: %.sfd
+PS%.afm PS%.pfa: %.sfd
 	$(pfaedit) -script $(top_srcdir)/scripts/gen-test-pfa.pe $<
 
-PS%.pfb: %.sfd
+PS%.afm PS%.pfb: %.sfd
 	$(pfaedit) -script $(top_srcdir)/scripts/gen-test-pfb.pe $<
 
 %.ttf: %.sfd
@@ -20,8 +20,8 @@ PS%.pfb: %.sfd
 %.otf: %.sfd
 	$(pfaedit) -script $(top_srcdir)/scripts/gen-otf.pe $<
 
-%.pfa: %.sfd
+%.afm %.pfa: %.sfd
 	$(pfaedit) -script $(top_srcdir)/scripts/gen-pfa.pe $<
 
-%.pfb: %.sfd
+%.afm %.pfb: %.sfd
 	$(pfaedit) -script $(top_srcdir)/scripts/gen-pfb.pe $<

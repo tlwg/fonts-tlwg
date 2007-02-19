@@ -13,110 +13,18 @@ FONTSOURCES = \
 	TlwgTypist-BoldOblique.sfd \
 	Purisa.sfd
 
-TTFFILES = \
-	TlwgMono.ttf \
-	TlwgMono-Bold.ttf \
-	TlwgMono-Oblique.ttf \
-	TlwgMono-BoldOblique.ttf \
-	TlwgTypewriter.ttf \
-	TlwgTypewriter-Bold.ttf \
-	TlwgTypewriter-Oblique.ttf \
-	TlwgTypewriter-BoldOblique.ttf \
-	TlwgTypist.ttf \
-	TlwgTypist-Bold.ttf \
-	TlwgTypist-Oblique.ttf \
-	TlwgTypist-BoldOblique.ttf \
-	Purisa.ttf
+TTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.ttf/g')
+OTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.otf/g')
+AFMFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.afm/g')
+PFAFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.pfa/g')
+PFBFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.pfb/g')
 
-TESTTTFFILES = \
-	TTFTlwgMono.ttf \
-	TTFTlwgMono-Bold.ttf \
-	TTFTlwgMono-Oblique.ttf \
-	TTFTlwgMono-BoldOblique.ttf \
-	TTFTlwgTypewriter.ttf \
-	TTFTlwgTypewriter-Bold.ttf \
-	TTFTlwgTypewriter-Oblique.ttf \
-	TTFTlwgTypewriter-BoldOblique.ttf \
-	TTFTlwgTypist.ttf \
-	TTFTlwgTypist-Bold.ttf \
-	TTFTlwgTypist-Oblique.ttf \
-	TTFTlwgTypist-BoldOblique.ttf \
-	TTFPurisa.ttf
+TESTTTFFILES = $(shell echo $(TTFFILES) | sed 's/[-A-Za-z]*.ttf/TTF&/g')
+TESTOTFFILES = $(shell echo $(OTFFILES) | sed 's/[-A-Za-z]*.otf/OTF&/g')
 
-OTFFILES = \
-	TlwgMono.otf \
-	TlwgMono-Bold.otf \
-	TlwgMono-Oblique.otf \
-	TlwgMono-BoldOblique.otf \
-	TlwgTypewriter.otf \
-	TlwgTypewriter-Bold.otf \
-	TlwgTypewriter-Oblique.otf \
-	TlwgTypewriter-BoldOblique.otf \
-	TlwgTypist.otf \
-	TlwgTypist-Bold.otf \
-	TlwgTypist-Oblique.otf \
-	TlwgTypist-BoldOblique.otf \
-	Purisa.otf
-
-TESTOTFFILES = \
-	OTFTlwgMono.otf \
-	OTFTlwgMono-Bold.otf \
-	OTFTlwgMono-Oblique.otf \
-	OTFTlwgMono-BoldOblique.otf \
-	OTFTlwgTypewriter.otf \
-	OTFTlwgTypewriter-Bold.otf \
-	OTFTlwgTypewriter-Oblique.otf \
-	OTFTlwgTypewriter-BoldOblique.otf \
-	OTFTlwgTypist.otf \
-	OTFTlwgTypist-Bold.otf \
-	OTFTlwgTypist-Oblique.otf \
-	OTFTlwgTypist-BoldOblique.otf \
-	OTFPurisa.otf
-
-AFMFILES = \
-	TlwgMono.afm \
-	TlwgMono-Bold.afm \
-	TlwgMono-Oblique.afm \
-	TlwgMono-BoldOblique.afm \
-	TlwgTypewriter.afm \
-	TlwgTypewriter-Bold.afm \
-	TlwgTypewriter-Oblique.afm \
-	TlwgTypewriter-BoldOblique.afm \
-	TlwgTypist.afm \
-	TlwgTypist-Bold.afm \
-	TlwgTypist-Oblique.afm \
-	TlwgTypist-BoldOblique.afm \
-	Purisa.afm
-
-PFAFILES = \
-	TlwgMono.pfa \
-	TlwgMono-Bold.pfa \
-	TlwgMono-Oblique.pfa \
-	TlwgMono-BoldOblique.pfa \
-	TlwgTypewriter.pfa \
-	TlwgTypewriter-Bold.pfa \
-	TlwgTypewriter-Oblique.pfa \
-	TlwgTypewriter-BoldOblique.pfa \
-	TlwgTypist.pfa \
-	TlwgTypist-Bold.pfa \
-	TlwgTypist-Oblique.pfa \
-	TlwgTypist-BoldOblique.pfa \
-	Purisa.pfa
-
-PFBFILES = \
-	TlwgMono.pfb \
-	TlwgMono-Bold.pfb \
-	TlwgMono-Oblique.pfb \
-	TlwgMono-BoldOblique.pfb \
-	TlwgTypewriter.pfb \
-	TlwgTypewriter-Bold.pfb \
-	TlwgTypewriter-Oblique.pfb \
-	TlwgTypewriter-BoldOblique.pfb \
-	TlwgTypist.pfb \
-	TlwgTypist-Bold.pfb \
-	TlwgTypist-Oblique.pfb \
-	TlwgTypist-BoldOblique.pfb \
-	Purisa.pfb
+TESTAFMFILES = $(shell echo $(AFMFILES) | sed 's/[-A-Za-z]*.afm/PS&/g')
+TESTPFBFLES = $(shell echo $(PFBFILES) | sed 's/[-A-Za-z]*.pfb/PS&/g')
+TESTTYPE1FILES = $(TESTPFBFILES) $(TESTAFMFILES)
 
 TYPE1FILES =
 if INCLUDE_PFA
@@ -126,38 +34,6 @@ if INCLUDE_PFB
 TYPE1FILES += $(PFBFILES) $(AFMFILES)
 endif
 
-TESTAFMFILES = \
-	PSTlwgMono.afm \
-	PSTlwgMono-Bold.afm \
-	PSTlwgMono-Oblique.afm \
-	PSTlwgMono-BoldOblique.afm \
-	PSTlwgTypewriter.afm \
-	PSTlwgTypewriter-Bold.afm \
-	PSTlwgTypewriter-Oblique.afm \
-	PSTlwgTypewriter-BoldOblique.afm \
-	PSTlwgTypist.afm \
-	PSTlwgTypist-Bold.afm \
-	PSTlwgTypist-Oblique.afm \
-	PSTlwgTypist-BoldOblique.afm \
-	PSPurisa.afm
-
-TESTTYPE1FILES = \
-	$(TESTAFMFILES) \
-	PSTlwgMono.pfb \
-	PSTlwgMono-Bold.pfb \
-	PSTlwgMono-Oblique.pfb \
-	PSTlwgMono-BoldOblique.pfb \
-	PSTlwgTypewriter.pfb \
-	PSTlwgTypewriter-Bold.pfb \
-	PSTlwgTypewriter-Oblique.pfb \
-	PSTlwgTypewriter-BoldOblique.pfb \
-	PSTlwgTypist.pfb \
-	PSTlwgTypist-Bold.pfb \
-	PSTlwgTypist-Oblique.pfb \
-	PSTlwgTypist-BoldOblique.pfb \
-	PSPurisa.pfb
-
-MAINTAINERCLEANFILES = Makefile.in
 CLEANFILES = *.ttf *.g2n *.pfb *.pfa *.afm *.pfm *.otf *.enc *.tfm
 
 EXTRA_DIST = $(FONTSOURCES) CREDITS

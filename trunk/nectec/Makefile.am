@@ -4,47 +4,18 @@ FONTSOURCES = \
 	Loma-Oblique.sfd \
 	Loma.sfd
 
-TTFFILES = \
-	Loma-BoldOblique.ttf \
-	Loma-Bold.ttf \
-	Loma-Oblique.ttf \
-	Loma.ttf
+TTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.ttf/g')
+OTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.otf/g')
+AFMFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.afm/g')
+PFAFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.pfa/g')
+PFBFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.pfb/g')
 
-TESTTTFFILES = \
-	TTFLoma-BoldOblique.ttf \
-	TTFLoma-Bold.ttf \
-	TTFLoma-Oblique.ttf \
-	TTFLoma.ttf
+TESTTTFFILES = $(shell echo $(TTFFILES) | sed 's/[-A-Za-z]*.ttf/TTF&/g')
+TESTOTFFILES = $(shell echo $(OTFFILES) | sed 's/[-A-Za-z]*.otf/OTF&/g')
 
-OTFFILES = \
-	Loma-BoldOblique.otf \
-	Loma-Bold.otf \
-	Loma-Oblique.otf \
-	Loma.otf
-
-TESTOTFFILES = \
-	OTFLoma-BoldOblique.otf \
-	OTFLoma-Bold.otf \
-	OTFLoma-Oblique.otf \
-	OTFLoma.otf
-
-AFMFILES = \
-	Loma-BoldOblique.afm \
-	Loma-Bold.afm \
-	Loma-Oblique.afm \
-	Loma.afm
-
-PFAFILES = \
-	Loma-BoldOblique.pfa \
-	Loma-Bold.pfa \
-	Loma-Oblique.pfa \
-	Loma.pfa
-
-PFBFILES = \
-	Loma-BoldOblique.pfb \
-	Loma-Bold.pfb \
-	Loma-Oblique.pfb \
-	Loma.pfb
+TESTAFMFILES = $(shell echo $(AFMFILES) | sed 's/[-A-Za-z]*.afm/PS&/g')
+TESTPFBFLES = $(shell echo $(PFBFILES) | sed 's/[-A-Za-z]*.pfb/PS&/g')
+TESTTYPE1FILES = $(TESTPFBFILES) $(TESTAFMFILES)
 
 TYPE1FILES =
 if INCLUDE_PFA
@@ -54,20 +25,6 @@ if INCLUDE_PFB
 TYPE1FILES += $(PFBFILES) $(AFMFILES)
 endif
 
-TESTAFMFILES = \
-	PSLoma-BoldOblique.afm \
-	PSLoma-Bold.afm \
-	PSLoma-Oblique.afm \
-	PSLoma.afm
-
-TESTTYPE1FILES = \
-	$(TESTAFMFILES) \
-	PSLoma-BoldOblique.pfb \
-	PSLoma-Bold.pfb \
-	PSLoma-Oblique.pfb \
-	PSLoma.pfb
-
-MAINTAINERCLEANFILES = Makefile.in
 CLEANFILES = *.ttf *.g2n *.pfb *.pfa *.afm *.pfm *.otf *.enc *.tfm
 
 EXTRA_DIST = $(FONTSOURCES)
