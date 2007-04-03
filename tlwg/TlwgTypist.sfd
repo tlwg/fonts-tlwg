@@ -43,51 +43,92 @@ ScriptLang: 4
  1 latn 1 dflt 
  1 DFLT 1 dflt 
  1 thai 1 PAL  
-ContextSub: glyph 0 3 ' RQD' 0 0 0 1
- String: 15 uni0E0D uni0E10
- BString: 0 
- FString: 0 
+ChainSub: class 0 0 'ccmp' 8 8 1 10
+  Class: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
+  Class: 7 uni0E33
+  Class: 7 uni0E48
+  Class: 7 uni0E49
+  Class: 7 uni0E4A
+  Class: 7 uni0E4B
+  Class: 7 uni0E4C
+  BClass: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
+  BClass: 7 uni0E33
+  BClass: 7 uni0E48
+  BClass: 7 uni0E49
+  BClass: 7 uni0E4A
+  BClass: 7 uni0E4B
+  BClass: 7 uni0E4C
+ 1 1 0
+  ClsList: 2
+  BClsList: 1
+  FClsList:
  1
-  SeqLookup: 0 'ndsc'
-EndFPST
-ChainSub: coverage 0 0 'ccmp' 0 0 0 1
- 2 0 0
-  Coverage: 19 uni0E4B uni0E4B.low
-  Coverage: 7 uni0E4D
+  SeqLookup: 0 'G012'
+ 2 1 0
+  ClsList: 3 2
+  BClsList: 1
+  FClsList:
  2
-  SeqLookup: 0 'amni'
-  SeqLookup: 1 'G007'
-EndFPST
-ChainSub: coverage 0 0 'ccmp' 0 0 0 1
- 2 0 0
-  Coverage: 19 uni0E4A uni0E4A.low
-  Coverage: 7 uni0E4D
+  SeqLookup: 0 'amn0'
+  SeqLookup: 1 'G014'
+ 2 1 0
+  ClsList: 4 2
+  BClsList: 1
+  FClsList:
  2
-  SeqLookup: 0 'amni'
-  SeqLookup: 1 'G006'
-EndFPST
-ChainSub: coverage 0 0 'ccmp' 0 0 0 1
- 2 0 0
-  Coverage: 19 uni0E49 uni0E49.low
-  Coverage: 7 uni0E4D
+  SeqLookup: 0 'amn0'
+  SeqLookup: 1 'G015'
+ 2 1 0
+  ClsList: 5 2
+  BClsList: 1
+  FClsList:
  2
-  SeqLookup: 0 'amni'
-  SeqLookup: 1 'G005'
-EndFPST
-ChainSub: coverage 0 0 'ccmp' 0 0 0 1
- 2 0 0
-  Coverage: 19 uni0E48 uni0E48.low
-  Coverage: 7 uni0E4D
+  SeqLookup: 0 'amn0'
+  SeqLookup: 1 'G016'
+ 2 1 0
+  ClsList: 6 2
+  BClsList: 1
+  FClsList:
  2
-  SeqLookup: 0 'amni'
-  SeqLookup: 1 'G004'
-EndFPST
-ChainSub: coverage 0 0 'ccmp' 0 0 0 1
- 1 0 1
-  Coverage: 15 uni0E0D uni0E10
-  FCoverage: 23 uni0E38 uni0E39 uni0E3A
+  SeqLookup: 0 'amn0'
+  SeqLookup: 1 'G017'
+ 1 1 0
+  ClsList: 3
+  BClsList: 1
+  FClsList:
  1
-  SeqLookup: 0 'nds0'
+  SeqLookup: 0 'low0'
+ 1 1 0
+  ClsList: 4
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 'low0'
+ 1 1 0
+  ClsList: 5
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 'low0'
+ 1 1 0
+  ClsList: 6
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 'low0'
+ 1 1 0
+  ClsList: 7
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 'low0'
+EndFPST
+ChainSub: coverage 0 0 'ccmp' 0 0 0 1
+ 1 1 0
+  Coverage: 7 uni0E4D
+  BCoverage: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
+ 1
+  SeqLookup: 0 'hig0'
 EndFPST
 ChainSub: coverage 0 0 'ccmp' 0 0 0 1
  1 2 0
@@ -95,23 +136,23 @@ ChainSub: coverage 0 0 'ccmp' 0 0 0 1
   BCoverage: 23 uni0E38 uni0E39 uni0E3A
   BCoverage: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
  1
-  SeqLookup: 0 'loww'
+  SeqLookup: 0 'low0'
 EndFPST
 ChainSub: coverage 0 0 'ccmp' 0 0 0 1
- 1 1 0
-  Coverage: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
-  BCoverage: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
+ 1 0 1
+  Coverage: 15 uni0E0D uni0E10
+  FCoverage: 23 uni0E38 uni0E39 uni0E3A
  1
-  SeqLookup: 0 'loww'
+  SeqLookup: 0 'nds1'
 EndFPST
-ChainSub: coverage 0 0 'ccmp' 0 0 0 1
- 1 1 0
-  Coverage: 7 uni0E4D
-  BCoverage: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
+ContextSub: glyph 0 3 ' RQD' 0 0 0 1
+ String: 15 uni0E0D uni0E10
+ BString: 0 
+ FString: 0 
  1
-  SeqLookup: 0 'high'
+  SeqLookup: 0 'ndsc'
 EndFPST
-GenTags: 9 sb'ndsc' sb'loww' sb'nds0' sb'amni' sb'G004' sb'G005' sb'G006' sb'G007' sb'high'
+GenTags: 18 sb'ndsc' nl'loww' nl'nds0' nl'amni' nl'G004' nl'G005' nl'G006' nl'G007' nl'high' sb'nds1' sb'low0' sb'hig0' ms'G012' sb'amn0' ms'G014' ms'G015' ms'G016' ms'G017'
 TtfTable: cvt  4
 !$MDh
 EndTtf
@@ -329,8 +370,9 @@ Fore
  -169 700 l 1
  -169 870 l 1
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E48.low
-Substitution: 0 65534 'amni' uni0E4D
+Substitution: 0 65534 'low0' uni0E48.low
+Substitution: 0 65534 'amn0' uni0E4D
+Substitution: 0 65534 'low0' uni0E48.low
 EndChar
 StartChar: uni0E49
 Encoding: 263 3657 6
@@ -378,8 +420,9 @@ Fore
  -289 746 -273 756 -259 766 c 1
  -282 773 -298 794 -298 819 c 0
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E49.low
-Substitution: 0 65534 'amni' uni0E4D
+Substitution: 0 65534 'low0' uni0E49.low
+Substitution: 0 65534 'amn0' uni0E4D
+Substitution: 0 65534 'low0' uni0E49.low
 EndChar
 StartChar: uni0E4A
 Encoding: 264 3658 7
@@ -442,8 +485,9 @@ Fore
  -306 805 -319 827 -339 827 c 0
  -359 827 -380 809 -384 789 c 1
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E4A.low
-Substitution: 0 65534 'amni' uni0E4D
+Substitution: 0 65534 'low0' uni0E4A.low
+Substitution: 0 65534 'amn0' uni0E4D
+Substitution: 0 65534 'low0' uni0E4A.low
 EndChar
 StartChar: uni0E4B
 Encoding: 265 3659 8
@@ -467,8 +511,9 @@ Fore
  -169 700 l 1
  -169 755 l 1
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E4B.low
-Substitution: 0 65534 'amni' uni0E4D
+Substitution: 0 65534 'low0' uni0E4B.low
+Substitution: 0 65534 'amn0' uni0E4D
+Substitution: 0 65534 'low0' uni0E4B.low
 EndChar
 StartChar: uni0E4C
 Encoding: 266 3660 9
@@ -509,7 +554,8 @@ Fore
  -29 870 l 1
  -29 822 -76 797 -117 786 c 1
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E4C.low
+Substitution: 0 65534 'low0' uni0E4C.low
+Substitution: 0 65534 'low0' uni0E4C.low
 EndChar
 StartChar: uni0E4D
 Encoding: 267 3661 10
@@ -531,11 +577,7 @@ Fore
  -243 500 -282 536 -282 582 c 0
  -282 628 -243 668 -197 668 c 0
 EndSplineSet
-Substitution: 0 65534 'high' uni0E4D.high
-Substitution: 0 65534 'G007' uni0E4B
-Substitution: 0 65534 'G006' uni0E4A
-Substitution: 0 65534 'G005' uni0E49
-Substitution: 0 65534 'G004' uni0E48
+Substitution: 0 65534 'hig0' uni0E4D.high
 EndChar
 StartChar: space
 Encoding: 0 32 11
@@ -7550,7 +7592,7 @@ Fore
  307 -71 342 -50 366 -50 c 0
 EndSplineSet
 Refer: 310 63247 N 1 0 0 1 0 0 2
-Substitution: 0 65534 'nds0' uni0E0D.descless
+Substitution: 0 65534 'nds1' uni0E0D.descless
 Substitution: 0 65534 'ndsc' uni0E0D.descless
 EndChar
 StartChar: uni0E0E
@@ -7759,7 +7801,7 @@ Fore
  500 -76 l 1xfe74
 EndSplineSet
 Refer: 295 63232 N 1 0 0 1 0 0 2
-Substitution: 0 65534 'nds0' uni0E10.descless
+Substitution: 0 65534 'nds1' uni0E10.descless
 Substitution: 0 65534 'ndsc' uni0E10.descless
 EndChar
 StartChar: uni0E11
@@ -9834,7 +9876,11 @@ Fore
  97 444 59 482 59 528 c 0
  59 574 97 612 143 612 c 0
 EndSplineSet
-MultipleSubs: 0 0 'ccmp' uni0E4D uni0E32
+MultipleSubs: 0 65534 'G017' uni0E4B uni0E32
+MultipleSubs: 0 65534 'G016' uni0E4A uni0E32
+MultipleSubs: 0 65534 'G015' uni0E49 uni0E32
+MultipleSubs: 0 65534 'G014' uni0E48 uni0E32
+MultipleSubs: 0 65534 'G012' uni0E4D uni0E32
 EndChar
 StartChar: uni0E36
 Encoding: 244 3638 251
@@ -11695,7 +11741,7 @@ Fore
  -160 500 l 5
  -160 700 l 5
 EndSplineSet
-Substitution: 0 65534 'amni' uni0E4D
+Substitution: 0 65534 'amn0' uni0E4D
 EndChar
 StartChar: uni0E49.low
 Encoding: 306 63243 306
@@ -11743,7 +11789,7 @@ Fore
  -357 553 -338 565 -322 575 c 1
  -348 583 -367 608 -367 637 c 0
 EndSplineSet
-Substitution: 0 65534 'amni' uni0E4D
+Substitution: 0 65534 'amn0' uni0E4D
 EndChar
 StartChar: uni0E4A.low
 Encoding: 307 63244 307
@@ -11806,7 +11852,7 @@ Fore
  -284 625 -299 651 -322 651 c 0
  -345 651 -369 630 -374 607 c 1
 EndSplineSet
-Substitution: 0 65534 'amni' uni0E4D
+Substitution: 0 65534 'amn0' uni0E4D
 EndChar
 StartChar: uni0E4B.low
 Encoding: 308 63245 308
@@ -11830,7 +11876,7 @@ Fore
  -160 500 l 5
  -160 575 l 5
 EndSplineSet
-Substitution: 0 65534 'amni' uni0E4D
+Substitution: 0 65534 'amn0' uni0E4D
 EndChar
 StartChar: uni0E4C.low
 Encoding: 309 63246 309
