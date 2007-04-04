@@ -1,3 +1,15 @@
+2007-04-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd: Rearrange 'ccmp' GSUB rules again, to deal with
+	horizontal shift problem found in recent change with OO.o.
+	Now, for Tone Mark + Sara Am cases, we insert Nikhanit by substituting
+	Tone Mark => Nikhanit + Tone Mark, and then Sara Am => Sara Aa.
+	The old scheme (Tone Mark => Nikhahit, Sara Am => Tone Mark + Sara Aa)
+	caused the whole cell to be shifted with the anchored mark is shifted.
+	The new scheme alleviates this a bit by causing only Sara Aa to be
+	shifted. (We need more refinement on this later.) Besides, the rules
+	are now a lot simplified.
+
 2007-04-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* tlwg/Purisa.sfd: Copy recent GSUB changes from Garuda.
