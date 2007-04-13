@@ -1,0 +1,51 @@
+Source: thaifonts-scalable
+Section: x11
+Priority: optional
+Maintainer: Theppitak Karoonboonyanan <thep@linux.thai.net>
+Build-Depends: debhelper (>= 5.0.35)
+Build-Depends-Indep: defoma (>= 0.7.0), fontforge, xfonts-utils
+Standards-Version: 3.7.2
+
+Package: t1-thai-tlwg
+Architecture: all
+Depends: defoma, xfonts-utils (>= 1:1.0.0-4)
+Description: Thai fonts in Type1 format
+ This package provides some free-licensed fonts that are
+ enhanced by developpers from Thai Linux Working Group.
+ In Type1 format.
+ .
+ At the moment, it provides two families from the National Font
+ Project (Garuda, Norasi), one from NECTEC (Loma) and three 
+ developed by TLWG itself (Tlwg Mono, Tlwg Typewriter, Purisa).
+
+Package: ttf-thai-tlwg
+Architecture: all
+Depends: defoma, x-ttcidfont-conf
+Replaces: xfonts-thai-ttf
+Description: Thai fonts in TrueType format
+ This package provides some free-licensed fonts that are
+ enhanced by developpers from Thai Linux Working Group.
+ In TrueType format.
+ .
+ At the moment, it provides two families from the National Font
+ Project (Garuda, Norasi), one from NECTEC (Loma) and three 
+ developed by TLWG itself (Tlwg Mono, Tlwg Typewriter, Purisa).
+
+Package: xfonts-thai-ttf
+Architecture: all
+Pre-Depends: ttf-thai-tlwg
+Description: Thai TrueType fonts (transitional package)
+ Dummy package for smooth upgrade to ttf-thai-tlwg, can be safely removed.
+
+Package: ttf-thai-tlwg-udeb
+XC-Package-Type: udeb
+Section: debian-installer
+Architecture: all
+Description: Thai fonts in TrueType format for D-I use
+ This package provides some free-licensed fonts that are
+ enhanced by developpers from Thai Linux Working Group.
+ In TrueType format.
+ .
+ This package provides the fonts for use with the gtk frontend of
+ debian-installer.
+
