@@ -1,12 +1,23 @@
-thaifonts-scalable (1:0.4.5-4) UNRELEASED; urgency=low
+thaifonts-scalable (1:0.4.6-1) unstable; urgency=low
 
   * Bump debhelper compat version to 5 again.
   * Remove lintian-override for xfonts-utils dependency, as the lintian bug is
     now fixed.
   * Remove mentioning on outdated pfaedit and ttmkfdir dependencies.
   * debian/rules: make distclean instead of just clean in clean target.
+  * New upstream release
+    - Update glyphs for Loma bold from the original author to match non-rounded
+      shapes in their normal-weight counterparts.
+    - Clear subscript, superscript, strike controls in fonts, to fix weird
+      rendering with Gecko.
+    - Add exception clause to font license, so that documents that embed the
+      fonts are not enforced by GPL.
+    - Improved GSUB tables in fonts, to ensure they work properly with OO.o.
+  * debian/copyright: Update info as per upstream.
+  * debian/control: Remove xfonts-thai-ttf transitional package, and let
+    ttf-thai-tlwg replaces and conflicts it.
 
- -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Mon, 19 Feb 2007 19:21:13 +0700
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sun, 15 Apr 2007 22:15:20 +0700
 
 thaifonts-scalable (1:0.4.5-3) unstable; urgency=medium
 

@@ -9,7 +9,7 @@ configure: configure-stamp
 configure-stamp:
 	dh_testdir
 
-	./configure --enable-pfb --with-type1dir=/usr/share/fonts/type1/thai --with-ttfdir=/usr/share/fonts/truetype/thai
+	./configure --enable-pfb --with-type1dir=/usr/share/fonts/X11/Type1 --with-ttfdir=/usr/share/fonts/truetype/thai
 
 	touch configure-stamp
 
