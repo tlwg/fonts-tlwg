@@ -1,11 +1,11 @@
-SplineFontDB: 1.0
+SplineFontDB: 2.0
 FontName: TlwgTypist-BoldOblique
 FullName: Tlwg Typist Bold Oblique
 FamilyName: Tlwg Typist
 Weight: Bold
 Copyright: Tlwg Typist, based on Poonlap Veerathanabutr's Tlwg Typewriter.\n\nCopyright (C) 2005-2006 Theppitak Karoonboonyanan.\n\nTlwg Typewriter, Free Thai Pseudo Monospace outline font.\n\nCopyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 Comments: 2003-11-20: Created. \nPfaEdit 1.0 (http://pfaedit.sf.net).\n\nTLWG is Thai Linux Working Group http://linux.thai.net\n\nImported ISO-8859-1 from FreeMono.sfd.\nhttp://www.nongnu.org/freefont/\n\n2003-11-22: first release\n\n2003-11-25: Fixed vowel and tone marks' level.
-Version: 001.004: 2007-04-17
+Version: 001.005: 2007-05-20
 ItalicAngle: -12
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -17,7 +17,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153664121
-ModificationTime: 1178100772
+ModificationTime: 1179644028
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -38,19 +38,29 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
-ScriptLang: 4
- 1 thai 4 KUY  PAL  THA  dflt 
- 1 latn 1 dflt 
- 1 DFLT 1 dflt 
- 1 thai 1 PAL  
-ContextSub: glyph 0 3 ' RQD' 0 0 0 1
+Lookup: 6 0 0 "'ccmp' Glyph Composition/Decomposition in Thai lookup 0"  {"'ccmp' Glyph Composition/Decomposition in Thai lookup 0"  } ['ccmp' ('thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Glyph Composition/Decomposition in Thai lookup 1"  {"'ccmp' Glyph Composition/Decomposition in Thai lookup 1"  } ['ccmp' ('thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 4 8 1 "'liga' Standard Ligatures lookup 2"  {"'liga' Standard Ligatures lookup 2"  } ['liga' ('DFLT' <'dflt' > ) ]
+Lookup: 4 8 0 "'frac' Diagonal Fractions lookup 3"  {"'frac' Diagonal Fractions lookup 3"  } ['frac' ('DFLT' <'dflt' > ) ]
+Lookup: 5 0 0 "Required Feature in Thai lookup 4"  {"Required Feature in Thai lookup 4"  } [' RQD' ('thai' <'PAL ' > ) ]
+Lookup: 1 0 0 "Single Substitution lookup 5"  {"Single Substitution lookup 5"  } []
+Lookup: 2 0 0 "Multiple Substitution lookup 6"  {"Multiple Substitution lookup 6"  } []
+Lookup: 1 0 0 "Single Substitution lookup 7"  {"Single Substitution lookup 7"  } []
+Lookup: 1 0 0 "Single Substitution lookup 8"  {"Single Substitution lookup 8"  } []
+Lookup: 1 0 0 "Single Substitution lookup 9"  {"Single Substitution lookup 9"  } []
+Lookup: 2 0 0 "Multiple Substitution lookup 10"  {"Multiple Substitution lookup 10"  } []
+Lookup: 1 0 0 "Single Substitution lookup 11"  {"Single Substitution lookup 11"  } []
+Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai lookup 0"  {"'mkmk' Mark to Mark in Thai lookup 0"  } ['mkmk' ('thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai lookup 1"  {"'mkmk' Mark to Mark in Thai lookup 1"  } ['mkmk' ('thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning in Thai lookup 2"  {"'mark' Mark Positioning in Thai lookup 2"  } ['mark' ('thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+ContextSub2: glyph "Required Feature in Thai lookup 4"  0 0 0 1
  String: 15 uni0E0D uni0E10
  BString: 0 
  FString: 0 
  1
-  SeqLookup: 0 'ndsc'
+  SeqLookup: 0 "Single Substitution lookup 8" 
 EndFPST
-ChainSub: class 0 0 'ccmp' 7 7 1 5
+ChainSub2: class "'ccmp' Glyph Composition/Decomposition in Thai lookup 1"  7 7 1 5
   Class: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   Class: 7 uni0E33
   Class: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
@@ -68,41 +78,40 @@ ChainSub: class 0 0 'ccmp' 7 7 1 5
   BClsList: 1
   FClsList:
  1
-  SeqLookup: 0 'G002'
+  SeqLookup: 0 "Multiple Substitution lookup 6" 
  2 1 0
   ClsList: 3 2
   BClsList: 1
   FClsList:
  2
-  SeqLookup: 0 'amtn'
-  SeqLookup: 1 'amaa'
+  SeqLookup: 0 "Multiple Substitution lookup 10" 
+  SeqLookup: 1 "Single Substitution lookup 7" 
  1 1 0
   ClsList: 3
   BClsList: 1
   FClsList:
  1
-  SeqLookup: 0 'loww'
+  SeqLookup: 0 "Single Substitution lookup 11" 
  1 2 0
   ClsList: 3
   BClsList: 4 1
   FClsList:
  1
-  SeqLookup: 0 'loww'
+  SeqLookup: 0 "Single Substitution lookup 11" 
  1 1 0
   ClsList: 6
   BClsList: 5
   FClsList:
  1
-  SeqLookup: 0 'high'
+  SeqLookup: 0 "Single Substitution lookup 5" 
 EndFPST
-ChainSub: coverage 0 0 'ccmp' 0 0 0 1
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition in Thai lookup 0"  0 0 0 1
  1 0 1
   Coverage: 15 uni0E0D uni0E10
   FCoverage: 23 uni0E38 uni0E39 uni0E3A
  1
-  SeqLookup: 0 'nds0'
+  SeqLookup: 0 "Single Substitution lookup 9" 
 EndFPST
-GenTags: 17 sb'ndsc' sb'nds0' ms'G002' ms'amtn' sb'amaa' sb'loww' sb'high' nl'G007' nl'nds1' nl'low0' nl'high' nl'G011' nl'amn0' nl'G013' nl'G014' nl'G015' nl'G016'
 TtfTable: cvt  8
 !$MDh!(6u&
 EndTtf
@@ -118,7 +127,7 @@ WinInfo: 240 12 8
 BeginPrivate: 1
 BlueValues 39 [-16 0 445 458 583 597 623 624 638 638]
 EndPrivate
-AnchorClass: "AboveBase" mark 0 0 1 0 "BelowBase" mark 0 0 1 0 "AboveMark" mkmk 0 0 2 1 "BelowMark" mkmk 0 0 3 1 
+AnchorClass2: "AboveBase"  "'mark' Mark Positioning in Thai lookup 2" "BelowBase"  "'mark' Mark Positioning in Thai lookup 2" "AboveMark"  "'mkmk' Mark to Mark in Thai lookup 1" "BelowMark"  "'mkmk' Mark to Mark in Thai lookup 0" 
 BeginChars: 326 326
 StartChar: mu
 Encoding: 116 181 0
@@ -339,8 +348,8 @@ Fore
  -25 679 l 1
  21 892 l 1
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E48.low
-MultipleSubs: 0 65534 'amtn' uni0E4D uni0E48
+Substitution2: "Single Substitution lookup 11" uni0E48.low
+MultipleSubs2: "Multiple Substitution lookup 10" uni0E4D uni0E48
 EndChar
 StartChar: uni0E49
 Encoding: 263 3657 8
@@ -367,8 +376,8 @@ Fore
  -136 750 -123 759 -111 768 c 1
  -120 773 -126 786 -126 803 c 0
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E49.low
-MultipleSubs: 0 65534 'amtn' uni0E4D uni0E49
+Substitution2: "Single Substitution lookup 11" uni0E49.low
+MultipleSubs2: "Multiple Substitution lookup 10" uni0E4D uni0E49
 EndChar
 StartChar: uni0E4B
 Encoding: 265 3659 9
@@ -392,8 +401,8 @@ Fore
  -27 700 l 1
  -16 751 l 1
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E4B.low
-MultipleSubs: 0 65534 'amtn' uni0E4D uni0E4B
+Substitution2: "Single Substitution lookup 11" uni0E4B.low
+MultipleSubs2: "Multiple Substitution lookup 10" uni0E4D uni0E4B
 EndChar
 StartChar: uni0E4C
 Encoding: 266 3660 10
@@ -417,8 +426,8 @@ Fore
  152 820 97 794 51 783 c 1
  56 775 60 766 60 756 c 0
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E4C.low
-MultipleSubs: 0 65534 'amtn' uni0E4D uni0E4C
+Substitution2: "Single Substitution lookup 11" uni0E4C.low
+MultipleSubs2: "Multiple Substitution lookup 10" uni0E4D uni0E4C
 EndChar
 StartChar: space
 Encoding: 0 32 11
@@ -4279,8 +4288,8 @@ Fore
  478 150 l 1
  557 150 l 1
 EndSplineSet
-Ligature: 8 2 'frac' one slash four
-Ligature: 8 2 'frac' one fraction four
+Ligature2: "'frac' Diagonal Fractions lookup 3" one slash four
+Ligature2: "'frac' Diagonal Fractions lookup 3" one fraction four
 EndChar
 StartChar: onehalf
 Encoding: 124 189 134
@@ -4330,8 +4339,8 @@ Fore
  652 390 697 339 682 270 c 0
  672 219 643 192 467 67 c 1x78
 EndSplineSet
-Ligature: 8 2 'frac' one slash two
-Ligature: 8 2 'frac' one fraction two
+Ligature2: "'frac' Diagonal Fractions lookup 3" one slash two
+Ligature2: "'frac' Diagonal Fractions lookup 3" one fraction two
 EndChar
 StartChar: threequarters
 Encoding: 125 190 135
@@ -4392,8 +4401,8 @@ Fore
  478 150 l 1
  558 150 l 1
 EndSplineSet
-Ligature: 8 2 'frac' three slash four
-Ligature: 8 2 'frac' three fraction four
+Ligature2: "'frac' Diagonal Fractions lookup 3" three slash four
+Ligature2: "'frac' Diagonal Fractions lookup 3" three fraction four
 EndChar
 StartChar: questiondown
 Encoding: 126 191 136
@@ -7633,8 +7642,8 @@ Fore
  327 -172 282 -157 282 -117 c 0
 EndSplineSet
 Refer: 310 63247 N 1 0 0 1 0 0 2
-Substitution: 0 65534 'nds0' uni0E0D.descless
-Substitution: 0 65534 'ndsc' uni0E0D.descless
+Substitution2: "Single Substitution lookup 9" uni0E0D.descless
+Substitution2: "Single Substitution lookup 8" uni0E0D.descless
 EndChar
 StartChar: uni0E0E
 Encoding: 204 3598 214
@@ -7779,8 +7788,8 @@ Fore
  383 -134 363 -113 363 -86 c 0
 EndSplineSet
 Refer: 295 63232 N 1 0 0 1 0 0 2
-Substitution: 0 65534 'nds0' uni0E10.descless
-Substitution: 0 65534 'ndsc' uni0E10.descless
+Substitution2: "Single Substitution lookup 9" uni0E10.descless
+Substitution2: "Single Substitution lookup 8" uni0E10.descless
 EndChar
 StartChar: uni0E11
 Encoding: 207 3601 217
@@ -9009,8 +9018,8 @@ Fore
  346 498 299 444 239 444 c 0
  198 444 169 473 169 512 c 0
 EndSplineSet
-Substitution: 0 65534 'amaa' uni0E32
-MultipleSubs: 0 65534 'G002' uni0E4D uni0E32
+Substitution2: "Single Substitution lookup 7" uni0E32
+MultipleSubs2: "Multiple Substitution lookup 6" uni0E4D uni0E32
 EndChar
 StartChar: uni0E38
 Encoding: 246 3640 251
@@ -9411,8 +9420,8 @@ Fore
  -179 721 -165 736 -165 751 c 0
  -165 762 -170 770 -179 770 c 0
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E4A.low
-MultipleSubs: 0 65534 'amtn' uni0E4D uni0E4A
+Substitution2: "Single Substitution lookup 11" uni0E4A.low
+MultipleSubs2: "Multiple Substitution lookup 10" uni0E4D uni0E4A
 EndChar
 StartChar: uni0E4D
 Encoding: 267 3661 267
@@ -9435,7 +9444,7 @@ Fore
  12 550 -36 495 -92 495 c 0
  -132 495 -160 525 -160 565 c 0
 EndSplineSet
-Substitution: 0 65534 'high' uni0E4D.high
+Substitution2: "Single Substitution lookup 5" uni0E4D.high
 EndChar
 StartChar: uni0E4E
 Encoding: 268 3662 268
@@ -10161,7 +10170,7 @@ Fore
  571 117 594 88 586 51 c 0
  578 14 543 -15 506 -15 c 2
 EndSplineSet
-Ligature: 8 2 'liga' period period period
+Ligature2: "'liga' Standard Ligatures lookup 2" period period period
 EndChar
 StartChar: dottedcircle
 Encoding: 294 9676 294
