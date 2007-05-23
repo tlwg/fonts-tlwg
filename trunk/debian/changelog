@@ -1,3 +1,25 @@
+thaifonts-scalable (1:0.4.7-1) unstable; urgency=low
+
+  * New upstream release
+    - Fix an error in GSUB rules found in 0.4.6.
+    - Thoroughly refine splines for Garuda, Loma and TlwgTypist, for better
+      (Postscript) hinting.
+    - Add fontconfig spec, taken from Debian package.
+  * debian/fontconfig/*: Drop, integrated upstream.
+  * New package: otf-thai-tlwg
+    + debian/control: package metadata
+    + debian/rules:
+      - add --enable-otf and --with-otfdir configure options
+      - borrow fontconfig spec from ttf-thai-tlwg
+    + debian/otf-thai-tlwg.{docs,install,links}:
+      - add installation lists
+    + debian/otf-thai-tlwg.defoma-hints:
+      - copy defoma hints from ttf-thai-tlwg
+      - use fake "opentype" category, until it's officially supported
+        (see #422763)
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sun, 20 May 2007 16:30:51 +0700
+
 thaifonts-scalable (1:0.4.6-1) unstable; urgency=low
 
   * Bump debhelper compat version to 5 again.
