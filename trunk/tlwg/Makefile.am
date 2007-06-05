@@ -11,7 +11,11 @@ FONTSOURCES = \
 	TlwgTypist-Bold.sfd \
 	TlwgTypist-Oblique.sfd \
 	TlwgTypist-BoldOblique.sfd \
-	Purisa.sfd
+	Purisa.sfd \
+	SawasdeeBoldOblique.sfd \
+	SawasdeeBold.sfd \
+	SawasdeeOblique.sfd \
+	Sawasdee.sfd
 
 TTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.ttf/g')
 OTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.otf/g')
