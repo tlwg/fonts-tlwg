@@ -16,10 +16,10 @@ FONTSOURCES = \
 	SawasdeeBold.sfd \
 	SawasdeeOblique.sfd \
 	Sawasdee.sfd \
-	Verachart-BoldOblique.sfd \
-	Verachart-Bold.sfd \
-	Verachart-Oblique.sfd \
-	Verachart.sfd
+	Waree-BoldOblique.sfd \
+	Waree-Bold.sfd \
+	Waree-Oblique.sfd \
+	Waree.sfd
 
 TTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.ttf/g')
 OTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.otf/g')
