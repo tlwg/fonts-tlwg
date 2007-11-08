@@ -1,6 +1,8 @@
-EXTRA_DIST = 65-ttf-thai-tlwg.conf
+CONFIG_FILES = 65-ttf-thai-tlwg.conf 90-ttf-thai-tlwg-synthetic.conf
+
+EXTRA_DIST = $(CONFIG_FILES)
 
 fontconfigdir = $(sysconfdir)/fonts/conf.avail
 
-fontconfig_DATA = 65-ttf-thai-tlwg.conf
+fontconfig_DATA = $(CONFIG_FILES)
 
