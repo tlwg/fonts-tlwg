@@ -1,3 +1,10 @@
+2007-11-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* scripts/gen-[test-]ttf.pe: Add commands to apply AutoInstr on the
+	fly. This includes converting splines to be quadratic, unlinking all
+	references (as TrueType doesn't support mixed references and
+	contours), and then applying AutoInstr.
+
 2007-11-08  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* fontconfig/Makefile.am, +fontconfig/90-ttf-thai-tlwg-synthetic.conf:

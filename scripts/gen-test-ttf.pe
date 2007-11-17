@@ -1,3 +1,7 @@
 Open($1)
 SetFontNames("TTF"+$fontname, "TTF"+$familyname, "TTF"+$fullname)
+SetFontOrder(2)
+SelectAll()
+UnlinkReference()
+AutoInstr()
 Generate($fontname + ".ttf")
