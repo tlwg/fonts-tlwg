@@ -86,10 +86,12 @@ AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_CHECK_PROGS(RMDIR,rmdir,no)
 
-AC_CHECK_PROGS(FONTFORGE,fontforge pfaedit,no)
+AC_CHECK_PROGS(FONTFORGE,fontforge,no)
 
 if test "x$FONTFORGE" = "xno"; then
   AC_MSG_ERROR([You need fontforge to generate fonts.])
+elif test `$FONTFORGE --version 2>/dev/null | cut -d' ' -f2` -lt 20071111; then
+  AC_MSG_WARN([Fontforge >= 20071110 is recommended for best result.])
 fi
 
 # AC_CHECK_PROGS(TTMKFDIR,ttmkfdir,no)
