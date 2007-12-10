@@ -25,6 +25,8 @@ endif
 
 TESTS = $(CONFTESTS)
 
+CLEANFILES = *.pdf
+
 check_SCRIPTS = \
 	test-ttf.sh \
 	test-pfa.sh \
