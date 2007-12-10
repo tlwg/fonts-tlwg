@@ -1,3 +1,13 @@
+2007-12-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	"make distcheck" fixes.
+
+	* configure.in: Check for mkfontdir and X11 font encodings path, as
+	the old X11R6 dir has long been obsolete in Xorg 7.
+	* Makefile.am: Call mkfontdir via the detected value. Also get rid of
+	an extra assignment step for ttmkfdir, type1inst, and fccache, as
+	configured variables can be used directly.
+
 2007-12-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* COPYING: Add copyright and license info for Sawasdee and Waree.
