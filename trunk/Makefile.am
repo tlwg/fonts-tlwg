@@ -4,10 +4,6 @@ EXTRA_DIST = ChangeLog.thai-ttf GPL
 
 SUBDIRS = scripts nf nectec tlwg fontconfig tests
 
-ttmkfdir = @TTMKFDIR@
-type1inst = @TYPE1INST@
-fccache = @FCCACHE@
-
 install-data-hook:
 	@if test -n "$(DESTDIR)" ; then                                \
 	  echo "***" ;                                                 \
@@ -19,29 +15,29 @@ install-data-hook:
 if INCLUDE_TTF
 	mkdir -p $(DESTDIR)$(ttfdir)
 	cd $(DESTDIR)$(ttfdir);                                        \
-	  $(ttmkfdir);                                                 \
-	  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
-	$(fccache) -f $(DESTDIR)$(ttfdir)
+	  $(TTMKFDIR);                                                 \
+	  $(MKFONTDIR)
+	$(FCCACHE) -f $(DESTDIR)$(ttfdir)
 endif
 if INCLUDE_TYPE1
 	mkdir -p $(DESTDIR)$(type1dir)
 	cd $(DESTDIR)$(type1dir);                                      \
-	  $(type1inst);                                                \
-	  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
-	$(fccache) -f $(DESTDIR)$(type1dir)
+	  $(TYPE1INST);                                                \
+	  $(MKFONTDIR)
+	$(FCCACHE) -f $(DESTDIR)$(type1dir)
 endif
 #	@if test -z "$(DESTDIR)" ; then                                       \
 #if INCLUDE_TTF
 #	  mkdir -p $(DESTDIR)$(ttfdir);                                       \
 #	  cd $(DESTDIR)$(ttfdir);                                             \
 #	  $(ttmkfdir);                                                        \
-#	  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings;                    \
+#	  $(MKFONTDIR)                                                        \
 #endif
 #if INCLUDE_TYPE1
 #	  mkdir -p $(DESTDIR)$(type1dir);                                     \
 #	  cd $(DESTDIR)$(type1dir);                                           \
 #	  $(type1inst);                                                       \
-#	  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings;                    \
+#	  $(MKFONTDIR)                                                        \
 #endif
 #	  $(fccache);                                                         \
 #	@else                                                                 \
@@ -58,10 +54,10 @@ if INCLUDE_TTF
 	$(RM) $(DESTDIR)$(ttfdir)/fonts.scale
 	$(RM) $(DESTDIR)$(ttfdir)/encodings.dir
 	cd $(DESTDIR)$(ttfdir); \
-	$(ttmkfdir); \
+	$(TTMKFDIR); \
 	if test `head -1 fonts.scale` -gt 0; then \
-		mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings; \
-		$(fccache) -f $(DESTDIR)$(ttfdir); \
+		$(MKFONTDIR); \
+		$(FCCACHE) -f $(DESTDIR)$(ttfdir); \
 	else \
 		$(RM) $(DESTDIR)$(ttfdir)/fonts.scale; \
 		$(RMDIR) $(DESTDIR)$(ttfdir); \
@@ -73,10 +69,10 @@ if INCLUDE_TYPE1
 	$(RM) $(DESTDIR)$(type1dir)/fonts.scale
 	$(RM) $(DESTDIR)$(type1dir)/encodings.dir
 	cd $(DESTDIR)$(type1dir); \
-	$(type1inst); \
+	$(TYPE1INST); \
 	if test `head -1 fonts.scale` -gt 0; then \
-		mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings; \
-		$(fccache) -f $(DESTDIR)$(type1dir); \
+		$(MKFONTDIR); \
+		$(FCCACHE) -f $(DESTDIR)$(type1dir); \
 	else \
 		$(RM) $(DESTDIR)$(type1dir)/fonts.scale; \
 		$(RMDIR) $(DESTDIR)$(type1dir); \

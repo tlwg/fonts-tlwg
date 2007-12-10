@@ -150,6 +150,23 @@ if test "x$enable_pfa" = "xyes" -o "x$enable_pfb" = "xyes"; then
   fi
   AC_MSG_RESULT([Will create fonts.scale for Type1 using $TYPE1INST])
 fi
+
+dnl Check for mkfontdir and encoding path
+AC_CHECK_PROG(MKFONTDIR,mkfontdir,mkfontdir)
+ENCPATH="/usr/share/fonts/X11/encodings \
+         /usr/X11R6/lib/X11/fonts/encodings"
+ENCDIR=
+for dir in $ENCPATH; do
+  if test -d $dir; then
+    ENCDIR=$dir
+    break
+  fi
+done
+if test "x$MKFONTDIR" = "xmkfontdir" && test "x$ENCDIR" != "x"; then
+  MKFONTDIR="$MKFONTDIR -e $ENCDIR"
+fi
+AC_MSG_RESULT([Will create fonts.dir $MKFONTDIR])
+
 AC_CHECK_PROG(FCCACHE,fc-cache,[fc-cache])
 
 AC_OUTPUT(
