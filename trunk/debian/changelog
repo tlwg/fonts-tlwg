@@ -1,3 +1,31 @@
+thaifonts-scalable (1:0.4.8-1) unstable; urgency=low
+
+  * New upstream release
+    - New fonts: Sawasdee, Waree
+    - TrueType instructions (hints) (requires fontforge >= 20071110)
+    - More spline refinement and glyph height consistency cleanup
+    - Synthetic Browallia font using Garuda via fontconfig
+  * Add Vcs-Cvs, Vcs-Browser, and Homepage info.
+  * Do not ignore 'make clean' error.
+  * Set versioned Build-Dep on fontforge >= 0.0.20071110, as required by new
+    upstream version.
+  * Add new fonts
+    + debian/{ttf,otf,t1}-thai-tlwg.defoma-hints:
+      - Add defoma hints for new fonts (Sawasdee, Waree)
+    + debian/t1-thai-tlwg.scale:
+      - Add fonts.scale entries for new fonts (Sawasdee, Waree)
+    + debian/copyright:
+      - Rearrange in machine-interpretable format
+      - Add copyright info for new fonts (Sawasdee, Waree)
+  * Add new fontconfig
+    + debian/rules, debian/otf-thai-tlwg.links:
+      - Install and create link for 95-otf-thai-tlwg-synthetic.conf
+    + debian/ttf-thai-tlwg.{install,links}:
+      - Install and create link for 95-ttf-thai-tlwg-synthetic.conf
+  * Bump standard version to 3.7.3.0, no change needed.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Mon, 10 Dec 2007 16:49:08 +0700
+
 thaifonts-scalable (1:0.4.7-1) unstable; urgency=low
 
   * New upstream release
