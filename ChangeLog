@@ -1,3 +1,13 @@
+2007-12-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda.sfd: Revise GSUB rules:
+	  - Rename lookups from numbered names to be comprehensible ones
+	  - Split rule for the cases of below vowels + tone marks into a new
+	    subtable which also reorders the glyphs so that the tone marks
+	    are properly placed on base character's anchor
+	  - Also remove the class for below vowel from the main 'ccmp'
+	  - Merge duplicated substitutions for descless YO YING and THO THAN
+
 2007-12-14  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* tlwg/Sawasdee.sfd: Fix 'ccmp' rule for descless Yo Ying and Tho
