@@ -1,3 +1,17 @@
+2007-12-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda.sfd:
+	  - Add scaled-down high variant glyph for Maitaikhu; so normal
+	    Maitaikhu and the high variant are now in different mark classes
+	  - Add mark classes: BelowBase, AboveBase, AboveMark; not so sure if
+	    it's really useful, though
+	  - Rename "Thai Nikhahit High Variant" GSUB to "Thai Mark High
+	    Variant", and add high variant selection for Maitaikhu to relevant
+	    rules
+	  - Rename GPOS rules from numbered names to comprehensible ones
+	  - Reorder GPOS so that 'mkmk' comes after all 'mark', hopefully
+	    correcting rendition on non-Pango platforms
+
 2007-12-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* tlwg/Waree-Bold.sfd: Re-apply autohint to all glyphs, as many glyphs
