@@ -1,10 +1,10 @@
-SplineFontDB: 1.0
+SplineFontDB: 2.0
 FontName: Kinnari
 FullName: Kinnari
 FamilyName: Kinnari
 Weight: Medium
-Copyright: Kinnari by Db Type : Fontographer 3.5
-Version: 001.003: 2007-17
+Copyright: Copyright (C) 1999 Db Type. All Rights Reserved.\nCopyright (C) 2007 National Electronics and Computer Technology Center. All Rights Reserved.
+Version: 001.003: 2007-04-17
 ItalicAngle: 0
 UnderlinePosition: -70
 UnderlineWidth: 25
@@ -16,7 +16,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1136287438
-ModificationTime: 1176805779
+ModificationTime: 1196940482
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -37,20 +37,31 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
-ScriptLang: 5
- 1 DFLT 1 dflt 
- 1 thai 4 KUY  PAL  THA  dflt 
- 1 latn 1 dflt 
- 1 thai 1 dflt 
- 1 thai 1 PAL  
-ContextSub: glyph 0 4 ' RQD' 0 0 0 1
+Lookup: 6 0 0 "'ccmp' Glyph Composition/Decomposition in Thai lookup 0"  {"'ccmp' Glyph Composition/Decomposition in Thai lookup 0 subtable"  } ['ccmp' ('thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Glyph Composition/Decomposition in Thai lookup 1"  {"'ccmp' Glyph Composition/Decomposition in Thai lookup 1 subtable"  } ['ccmp' ('thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 5 0 0 "Required Feature in Thai lookup 2"  {"Required Feature in Thai lookup 2 subtable"  } [' RQD' ('thai' <'PAL ' > ) ]
+Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 3"  {"'liga' Standard Ligatures in Latin lookup 3 subtable"  } ['liga' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "Single Substitution lookup 4"  {"Single Substitution lookup 4 subtable"  } []
+Lookup: 2 0 0 "Multiple Substitution lookup 5"  {"Multiple Substitution lookup 5 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 6"  {"Single Substitution lookup 6 subtable"  } []
+Lookup: 2 0 0 "Multiple Substitution lookup 7"  {"Multiple Substitution lookup 7 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 8"  {"Single Substitution lookup 8 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 9"  {"Single Substitution lookup 9 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 10"  {"Single Substitution lookup 10 subtable"  } []
+Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai lookup 0"  {"'mkmk' Mark to Mark in Thai lookup 0 subtable"  } ['mkmk' ('thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning in Thai lookup 1"  {"'mark' Mark Positioning in Thai lookup 1 subtable"  } ['mark' ('thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning in Thai lookup 2"  {"'mark' Mark Positioning in Thai lookup 2 subtable"  } ['mark' ('thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Thai lookup 3"  {"'kern' Horizontal Kerning in Thai lookup 3 subtable"  } ['kern' ('thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 4"  {"'kern' Horizontal Kerning lookup 4 subtable"  } ['kern' ('DFLT' <'dflt' > ) ]
+DEI: 0
+ContextSub2: glyph "Required Feature in Thai lookup 2 subtable"  0 0 0 1
  String: 15 uni0E0D uni0E10
  BString: 0 
  FString: 0 
  1
-  SeqLookup: 0 'nds0'
+  SeqLookup: 0 "Single Substitution lookup 9" 
 EndFPST
-ChainSub: class 0 1 'ccmp' 7 7 1 5
+ChainSub2: class "'ccmp' Glyph Composition/Decomposition in Thai lookup 1 subtable"  7 7 1 5
   Class: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   Class: 7 uni0E33
   Class: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
@@ -68,50 +79,48 @@ ChainSub: class 0 1 'ccmp' 7 7 1 5
   BClsList: 1
   FClsList:
  1
-  SeqLookup: 0 'G001'
+  SeqLookup: 0 "Multiple Substitution lookup 7" 
  2 1 0
   ClsList: 3 2
   BClsList: 1
   FClsList:
  2
-  SeqLookup: 0 'amtn'
-  SeqLookup: 1 'amaa'
+  SeqLookup: 0 "Multiple Substitution lookup 5" 
+  SeqLookup: 1 "Single Substitution lookup 8" 
  1 1 0
   ClsList: 3
   BClsList: 1
   FClsList:
  1
-  SeqLookup: 0 'loww'
+  SeqLookup: 0 "Single Substitution lookup 6" 
  1 2 0
   ClsList: 3
   BClsList: 4 1
   FClsList:
  1
-  SeqLookup: 0 'loww'
+  SeqLookup: 0 "Single Substitution lookup 6" 
  1 1 0
   ClsList: 6
   BClsList: 5
   FClsList:
  1
-  SeqLookup: 0 'high'
+  SeqLookup: 0 "Single Substitution lookup 4" 
 EndFPST
-ChainSub: coverage 0 1 'ccmp' 0 0 0 1
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition in Thai lookup 0 subtable"  0 0 0 1
  1 0 1
   Coverage: 15 uni0E0D uni0E10
   FCoverage: 23 uni0E38 uni0E39 uni0E3A
  1
-  SeqLookup: 0 'ndsc'
+  SeqLookup: 0 "Single Substitution lookup 10" 
 EndFPST
-GenTags: 9 sb'ndsc' ms'G001' ms'amtn' sb'amaa' sb'loww' sb'high' nl'G006' sb'nds0' nl'high'
-TableOrder: GSUB 0
-LangName: 1033 "" "" "" "Kinnari" 
+LangName: 1033 "" "" "" "Kinnari" "" "" "" "" "" "" "" "" "" "This font is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/licenses/gpl.html" 
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 232 8 4
+WinInfo: 32 8 4
 BeginPrivate: 6
 BlueValues 39 [-14 0 447 458 594 600 662 676 682 682]
 BlueScale 9 0.0454545
@@ -120,7 +129,7 @@ StdVW 4 [77]
 StemSnapH 22 [14 20 31 41 47 58 65]
 StemSnapV 11 [77 85 101]
 EndPrivate
-AnchorClass: "AboveBase" mark 0 1 1 0 "BelowBase" mark 0 1 2 0 "AboveMark" mkmk 0 1 3 1 
+AnchorClass2: "AboveBase"  "'mark' Mark Positioning in Thai lookup 2 subtable" "BelowBase"  "'mark' Mark Positioning in Thai lookup 1 subtable" "AboveMark"  "'mkmk' Mark to Mark in Thai lookup 0 subtable" 
 BeginChars: 266 232
 StartChar: space
 Encoding: 32 32 0
@@ -2633,7 +2642,7 @@ Fore
  109 319 94 296 94 274 c 0
  94 252 109 229 138 229 c 0
 EndSplineSet
-KernsSLIFO: 176 46 0 0 180 46 0 0 181 46 0 0 182 46 0 0 179 46 0 0
+Kerns2: 176 46 "'kern' Horizontal Kerning lookup 4 subtable"  180 46 "'kern' Horizontal Kerning lookup 4 subtable"  181 46 "'kern' Horizontal Kerning lookup 4 subtable"  182 46 "'kern' Horizontal Kerning lookup 4 subtable"  179 46 "'kern' Horizontal Kerning lookup 4 subtable" 
 EndChar
 StartChar: uni0E34.left
 Encoding: 129 63233 96
@@ -3859,8 +3868,8 @@ Fore
  518 -54 442 -54 442 -103 c 0
  442 -154 518 -154 518 -103 c 0
 EndSplineSet
-Substitution: 0 65534 'ndsc' uni0E0D.descless
-Substitution: 0 65534 'nds0' uni0E0D.descless
+Substitution2: "Single Substitution lookup 10 subtable" uni0E0D.descless
+Substitution2: "Single Substitution lookup 9 subtable" uni0E0D.descless
 EndChar
 StartChar: uni0E0E
 Encoding: 174 3598 141
@@ -4034,9 +4043,9 @@ Fore
  45 -181 57 -198 80 -198 c 0x7e40
  103 -198 121 -170 114 -132 c 1
 EndSplineSet
-KernsSLIFO: 176 46 1 0 180 46 1 0 181 46 1 0 182 46 1 0 179 46 1 0
-Substitution: 0 65534 'ndsc' uni0E10.descless
-Substitution: 0 65534 'nds0' uni0E10.descless
+Kerns2: 176 46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  180 46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  181 46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  182 46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  179 46 "'kern' Horizontal Kerning in Thai lookup 3 subtable" 
+Substitution2: "Single Substitution lookup 10 subtable" uni0E10.descless
+Substitution2: "Single Substitution lookup 9 subtable" uni0E10.descless
 EndChar
 StartChar: uni0E11
 Encoding: 177 3601 144
@@ -4184,7 +4193,7 @@ Fore
  182 121 167 99 167 76 c 0xbaf0
  167 54 182 32 212 32 c 0
 EndSplineSet
-KernsSLIFO: 185 -46 1 0 184 -46 1 0 183 -46 1 0 176 -46 1 0 180 -46 1 0 181 -46 1 0 182 -46 1 0 179 -46 1 0
+Kerns2: 185 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  184 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  183 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  176 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  180 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  181 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  182 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  179 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable" 
 EndChar
 StartChar: uni0E14
 Encoding: 180 3604 147
@@ -4396,7 +4405,7 @@ Fore
  567 32 567 121 504 121 c 0
  444 121 444 32 504 32 c 0
 EndSplineSet
-KernsSLIFO: 185 -46 1 0 184 -46 1 0 183 -46 1 0 176 -46 1 0 180 -46 1 0 181 -46 1 0 182 -46 1 0 179 -46 1 0
+Kerns2: 185 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  184 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  183 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  176 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  180 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  181 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  182 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  179 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable" 
 EndChar
 StartChar: uni0E1A
 Encoding: 186 3610 153
@@ -4743,7 +4752,7 @@ Fore
  192 138 174 112 174 86 c 0
  174 61 192 35 226 35 c 0
 EndSplineSet
-KernsSLIFO: 176 46 1 0 180 46 1 0 181 46 1 0 182 46 1 0 179 46 1 0
+Kerns2: 176 46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  180 46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  181 46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  182 46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  179 46 "'kern' Horizontal Kerning in Thai lookup 3 subtable" 
 EndChar
 StartChar: uni0E24
 Encoding: 196 3620 163
@@ -5289,8 +5298,8 @@ Fore
  -183 748 -161 725 -132 725 c 0
  -104 725 -81 748 -81 776 c 0
 EndSplineSet
-Substitution: 0 65534 'amaa' uni0E32
-MultipleSubs: 0 65534 'G001' uni0E4D uni0E32
+Substitution2: "Single Substitution lookup 8 subtable" uni0E32
+MultipleSubs2: "Multiple Substitution lookup 7 subtable" uni0E4D uni0E32
 EndChar
 StartChar: uni0E34
 Encoding: 212 3636 179
@@ -5853,8 +5862,8 @@ Fore
  -178 1210 l 1
  -100 1210 l 1
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E48.low
-MultipleSubs: 0 65534 'amtn' uni0E4D uni0E48
+Substitution2: "Single Substitution lookup 6 subtable" uni0E48.low
+MultipleSubs2: "Multiple Substitution lookup 5 subtable" uni0E4D uni0E48
 EndChar
 StartChar: uni0E49
 Encoding: 233 3657 198
@@ -5883,8 +5892,8 @@ Fore
  -227 1184 -242 1163 -242 1142 c 0
  -242 1121 -227 1100 -197 1100 c 0
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E49.low
-MultipleSubs: 0 65534 'amtn' uni0E4D uni0E49
+Substitution2: "Single Substitution lookup 6 subtable" uni0E49.low
+MultipleSubs2: "Multiple Substitution lookup 5 subtable" uni0E4D uni0E49
 EndChar
 StartChar: uni0E4A
 Encoding: 234 3658 199
@@ -5914,8 +5923,8 @@ Fore
  -146 1106 -221 1106 -221 1055 c 0
  -221 1006 -146 1006 -146 1055 c 0
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E4A.low
-MultipleSubs: 0 65534 'amtn' uni0E4D uni0E4A
+Substitution2: "Single Substitution lookup 6 subtable" uni0E4A.low
+MultipleSubs2: "Multiple Substitution lookup 5 subtable" uni0E4D uni0E4A
 EndChar
 StartChar: uni0E4B
 Encoding: 235 3659 200
@@ -5939,8 +5948,8 @@ Fore
  -9 1138 l 1
  -9 1081 l 1
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E4B.low
-MultipleSubs: 0 65534 'amtn' uni0E4D uni0E4B
+Substitution2: "Single Substitution lookup 6 subtable" uni0E4B.low
+MultipleSubs2: "Multiple Substitution lookup 5 subtable" uni0E4D uni0E4B
 EndChar
 StartChar: uni0E4C
 Encoding: 236 3660 201
@@ -5964,8 +5973,8 @@ Fore
  -198 1014 -212 993 -212 972 c 0
  -212 952 -198 931 -170 931 c 0
 EndSplineSet
-Substitution: 0 65534 'loww' uni0E4C.low
-MultipleSubs: 0 65534 'amtn' uni0E4D uni0E4C
+Substitution2: "Single Substitution lookup 6 subtable" uni0E4C.low
+MultipleSubs2: "Multiple Substitution lookup 5 subtable" uni0E4D uni0E4C
 EndChar
 StartChar: uni0E4D
 Encoding: 237 3661 202
@@ -5987,7 +5996,7 @@ Fore
  -192 734 -170 711 -141 711 c 0
  -114 711 -91 734 -91 762 c 0
 EndSplineSet
-Substitution: 0 65534 'high' uni0E4D.high
+Substitution2: "Single Substitution lookup 4 subtable" uni0E4D.high
 EndChar
 StartChar: uni0E4E
 Encoding: 238 3662 203
@@ -6701,8 +6710,8 @@ Fore
  89 417 l 1
  21 417 l 1
 EndSplineSet
-Ligature: 0 2 'liga' f i
-LCarets: 0 65535 '    ' 1 0 
+Ligature2: "'liga' Standard Ligatures in Latin lookup 3 subtable" f i
+LCarets2: 1 0 
 EndChar
 StartChar: fl
 Encoding: 260 64258 225
@@ -6747,8 +6756,8 @@ Fore
  173 450 l 1
  362 450 l 1
 EndSplineSet
-Ligature: 0 2 'liga' f l
-LCarets: 0 65535 '    ' 1 0 
+Ligature2: "'liga' Standard Ligatures in Latin lookup 3 subtable" f l
+LCarets2: 1 0 
 EndChar
 StartChar: ff
 Encoding: 261 64256 226
@@ -6797,8 +6806,8 @@ Fore
  173 450 l 1
  359 450 l 1
 EndSplineSet
-Ligature: 0 2 'liga' f f
-LCarets: 0 65535 '    ' 1 0 
+Ligature2: "'liga' Standard Ligatures in Latin lookup 3 subtable" f f
+LCarets2: 1 0 
 EndChar
 StartChar: ffi
 Encoding: 262 64259 227
@@ -6858,9 +6867,9 @@ Fore
  173 417 l 1
  173 88 l 2
 EndSplineSet
-Ligature: 0 2 'liga' ff i
-Ligature: 0 2 'liga' f f i
-LCarets: 0 65535 '    ' 2 0 0 
+Ligature2: "'liga' Standard Ligatures in Latin lookup 3 subtable" ff i
+Ligature2: "'liga' Standard Ligatures in Latin lookup 3 subtable" f f i
+LCarets2: 2 0 0 
 EndChar
 StartChar: ffl
 Encoding: 263 64260 228
@@ -6922,9 +6931,9 @@ Fore
  442 450 l 1
  631 450 l 1
 EndSplineSet
-Ligature: 0 2 'liga' ff l
-Ligature: 0 2 'liga' f f l
-LCarets: 0 65535 '    ' 2 0 0 
+Ligature2: "'liga' Standard Ligatures in Latin lookup 3 subtable" ff l
+Ligature2: "'liga' Standard Ligatures in Latin lookup 3 subtable" f f l
+LCarets2: 2 0 0 
 EndChar
 StartChar: zerospace
 Encoding: 220 8203 229
@@ -6948,13 +6957,13 @@ StartChar: enspace
 Encoding: 264 8194 230
 Width: 500
 Flags: HW
-TeX: 78 0 0 0
+TeX: 78 0
 EndChar
 StartChar: emspace
 Encoding: 265 8195 231
 Width: 1000
 Flags: HW
-TeX: 78 0 0 0
+TeX: 78 0
 EndChar
 EndChars
 EndSplineFont

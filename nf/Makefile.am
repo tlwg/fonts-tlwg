@@ -1,4 +1,10 @@
 FONTSOURCES = \
+	Kinnari-BoldItalic.sfd \
+	Kinnari-BoldOblique.sfd \
+	Kinnari-Bold.sfd \
+	Kinnari-Oblique.sfd \
+	Kinnari-Italic.sfd \
+	Kinnari.sfd \
 	Garuda-BoldOblique.sfd \
 	Garuda-Bold.sfd \
 	Garuda-Oblique.sfd \
