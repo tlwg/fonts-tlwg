@@ -16,11 +16,11 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153665622
-ModificationTime: 1198594423
+ModificationTime: 1198750549
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
-LineGap: 26
+LineGap: 0
 VLineGap: 0
 Panose: 2 7 8 6 6 0 0 2 0 4
 OS2TypoAscent: 0
@@ -28,14 +28,14 @@ OS2TypoAOffset: 1
 OS2TypoDescent: 0
 OS2TypoDOffset: 1
 OS2TypoLinegap: 0
-OS2WinAscent: 0
-OS2WinAOffset: 1
-OS2WinDescent: 0
-OS2WinDOffset: 1
-HheadAscent: 0
-HheadAOffset: 1
-HheadDescent: 0
-HheadDOffset: 1
+OS2WinAscent: 1216
+OS2WinAOffset: 0
+OS2WinDescent: 488
+OS2WinDOffset: 0
+HheadAscent: 1216
+HheadAOffset: 0
+HheadDescent: -488
+HheadDOffset: 0
 OS2Vendor: 'PfEd'
 Lookup: 4 0 1 "'liga' Standard Ligatures lookup 2"  {"'liga' Standard Ligatures lookup 2 subtable"  } ['liga' ('DFLT' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 3"  {"'liga' Standard Ligatures in Latin lookup 3 subtable"  } ['liga' ('latn' <'dflt' > ) ]
@@ -250,7 +250,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 152 8 2
+WinInfo: 248 8 2
 BeginPrivate: 4
 BlueValues 31 [-19 0 461 473 564 576 677 691]
 OtherBlues 11 [-163 -151]
@@ -12346,8 +12346,8 @@ StartChar: uni0E39
 Encoding: 217 3641 185
 Width: 0
 Flags: MW
-HStem: -270 58<-289.5 -229 -238.5 -229 -238.5 -227> -207 39<-380.082 -341.026> -67 45<-367.248 -289.483>
-VStem: -419 38<-161.72 -93.7902> -320 93<-135.837 -67.2403>
+HStem: -209 8<-340 -247> -207 39<-380.082 -341.026> -67 45<-367.248 -289.483>
+VStem: -419 38<-161.72 -93.7902> -320 93<-135.837 -67.2403> -234 7<-270 -212>
 AnchorPoint: "BelowBase" -79 -21 mark 0
 Back
 -223.868 -111.576 m 2
@@ -15161,9 +15161,9 @@ EndChar
 StartChar: uni0E38.low
 Encoding: 252 63256 218
 Width: 0
-Flags: MW
-HStem: -422 56<-289.499 -256.488> -294 57<-265.004 -205.218>
-VStem: -325 53<-364.168 -326.795>
+Flags: W
+HStem: -419 39<-308.332 -278.622> -279 45<-295.368 -227.263>
+VStem: -348 39<-373.705 -326.39> -257 90<-348.902 -285.072>
 Back
 -230.306 -325.432 m 0
  -225.3 -301.113 -228.16 -288.239 -240.318 -288.239 c 0
@@ -15182,29 +15182,14 @@ Back
  -143.047 -275.365 -138.756 -296.822 -143.762 -322.571 c 1
  -177.379 -482.068 l 1
 EndSplineSet
-Fore
--261 -366 m 0
- -242 -366 -231 -333 -231 -313 c 0
- -231 -300 -237 -294 -246 -294 c 0
- -262 -294 -272 -327 -272 -349 c 0
- -272 -360 -270 -366 -261 -366 c 0
--325 -356 m 0
- -325 -337 -313 -237 -214 -237 c 0
- -174 -237 -144 -267 -144 -309 c 0
- -144 -315 -145 -322 -146 -330 c 2
- -180 -492 l 1
- -271 -492 l 1
- -256 -419 l 1
- -262 -420 -268 -422 -272 -422 c 0
- -307 -422 -325 -388 -325 -356 c 0
-EndSplineSet
+Refer: 184 3640 N 1 0 0 1 -70 -212 2
 EndChar
 StartChar: uni0E39.low
 Encoding: 253 63257 219
 Width: 0
-Flags: MW
-HStem: -297 57<-340.585 -273.501>
-VStem: -403 54<-366.077 -330.376> -305 94<-350.069 -300.047>
+Flags: W
+HStem: -421 8<-410 -317> -419 39<-450.082 -411.026> -279 45<-437.248 -359.483>
+VStem: -489 38<-373.72 -305.79> -390 93<-347.837 -279.24> -304 7<-482 -424>
 Back
 -208.134 -325.432 m 1
  -203.127 -299.684 -207.419 -278.226 -221.723 -261.775 c 0
@@ -15232,37 +15217,14 @@ Back
  -306.12 -291.816 -302.544 -294.677 -300.398 -301.113 c 0
  -298.252 -307.551 -298.252 -316.133 -300.398 -326.863 c 0
 EndSplineSet
-Fore
--403 -356 m 0
- -403 -336 -392 -240 -287 -240 c 0
- -242 -240 -211 -271 -211 -313 c 0
- -211 -319 -211 -327 -212 -333 c 2
- -231 -417 l 1
- -231 -422 l 2
- -231 -432 -227 -437 -218 -437 c 0
- -208 -437 -201 -431 -199 -417 c 2
- -163 -246 l 1
- -64 -246 l 1
- -98 -404 l 2
- -111 -466 -149 -495 -214 -495 c 2
- -249 -495 l 2
- -299 -495 -325 -475 -325 -434 c 0
- -325 -429 -324 -425 -324 -420 c 1
- -331 -423 -341 -425 -347 -425 c 0
- -383 -425 -403 -392 -403 -356 c 0
--335 -369 m 0
- -319 -369 -305 -351 -305 -318 c 0
- -305 -305 -309 -297 -319 -297 c 0
- -338 -297 -349 -336 -349 -353 c 0
- -349 -363 -344 -369 -335 -369 c 0
-EndSplineSet
+Refer: 185 3641 N 1 0 0 1 -70 -212 2
 EndChar
 StartChar: uni0E3A.low
 Encoding: 254 63258 220
 Width: 0
 Flags: W
-HStem: -353 132<-221.146 -140.625>
-VStem: -249 135<-326.465 -249.121>
+HStem: -354 120<-277.426 -202.001>
+VStem: -301 122<-331.243 -257.142>
 Back
 -113.007 -281.088 m 0
  -116.583 -299.684 -126.597 -315.418 -142.332 -327.577 c 0
@@ -15274,13 +15236,7 @@ Back
  -145.908 -216.716 -132.318 -223.153 -122.305 -236.027 c 0
  -112.292 -248.187 -108.716 -263.922 -113.007 -281.088 c 0
 EndSplineSet
-Fore
--249 -302 m 0
- -249 -254 -206 -221 -167 -221 c 0
- -136 -221 -114 -245 -114 -274 c 0
- -114 -323 -158 -353 -195 -353 c 0
- -229 -353 -249 -333 -249 -302 c 0
-EndSplineSet
+Refer: 186 3642 N 1 0 0 1 -70 -212 2
 EndChar
 StartChar: uniF71B
 Encoding: 255 63259 221
