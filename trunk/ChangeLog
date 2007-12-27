@@ -1,5 +1,20 @@
 2007-12-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
+	* nf/Kinnari*.sfd: Unlink reference in THO THAN and YO YING, so that
+	we won't have to unlink all references when generating TTF, as TTF
+	doesn't support mixed references and contours. Moreover, this would
+	also allow us to manually hint all glyphs without worry that the hints
+	would be lost when applying AutoInstr, due to the unsynchronized state.
+	But the drawback is that we have to make sure the descless part and the
+	full forms of the two characters are closely synchronized when editing.
+
+	* nf/Kinnari-[Bold]Oblique.sfd: Remove hints at ring hook fronts of all
+	glyphs with SARA E (Mai Nah) like forms, including CHO CHOE, YO YING,
+	THO THUNG, LO LING, RU, SO SUA, etc., as it causes ink glots at small
+	sizes.
+
+2007-12-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
 	* tlwg/Waree*.sfd: Use references for accented Latin characters.
 	Add some necessary accent glyphs as well.
 
