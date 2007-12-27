@@ -16,11 +16,11 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1136287438
-ModificationTime: 1198735124
+ModificationTime: 1198744693
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
-LineGap: 138
+LineGap: 0
 VLineGap: 0
 Panose: 0 0 0 0 0 0 0 0 0 0
 OS2TypoAscent: 0
@@ -30,11 +30,11 @@ OS2TypoDOffset: 1
 OS2TypoLinegap: 0
 OS2WinAscent: 0
 OS2WinAOffset: 1
-OS2WinDescent: 0
+OS2WinDescent: 20
 OS2WinDOffset: 1
 HheadAscent: 0
 HheadAOffset: 1
-HheadDescent: 0
+HheadDescent: -20
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
 Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 0"  {"'liga' Standard Ligatures in Latin lookup 0 subtable"  } ['liga' ('latn' <'dflt' > ) ]
@@ -246,7 +246,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 200 8 4
+WinInfo: 128 8 4
 BeginPrivate: 7
 BlueValues 39 [-14 0 472 482 596 600 690 700 711 713]
 BlueScale 9 0.0454545
@@ -4282,7 +4282,41 @@ Flags: W
 HStem: -289 48<170 281.92> -243 42<12.6313 78.5139> -202 36<237.974 284.368> -122 42<22.5919 87.6053 85.0231 90.1875 90.1875 95> -74 40<248.682 326.452> -5 50<282.64 331.122> 166 44<146.23 201.062> 315 43<159.753 244.046> 489 76<378.119 517.957> 528 70<228.056 364.06>
 VStem: -31 43<-200.298 -133.611> 97 45<214.254 298.671> 128 45<-223.088 -210.444 -205.249 -195.616 -200.432 -166.758> 186 96<49.5536 82.25 71.0231 91.4231> 193 42<-162.608 -87.9682> 249 76<242.197 310.56> 329 65<-141.563 -76.2656>
 Fore
--31 -181 m 0x5f2a80
+571 584 m 0x1fa480
+ 571 568 532 489 452 489 c 0x1fa480
+ 390 489 324 528 268 528 c 0
+ 237 528 210 516 188 478 c 1
+ 445 407 l 2
+ 456 403 494 397 494 354 c 0
+ 494 349 494 342 492 335 c 2
+ 444 106 l 2
+ 428 34 378 -5 292 -5 c 0
+ 229 -5 186 28 186 81 c 0x1f6480
+ 186 89 187 97 189 106 c 2
+ 202 169 l 1
+ 192 167 184 166 175 166 c 0
+ 124 166 97 200 97 243 c 0
+ 97 298 147 358 216 358 c 0
+ 293 358 325 325 325 281 c 0x1f7180
+ 325 274 324 266 322 258 c 2
+ 283 75 l 1
+ 282 73 282 70 282 67 c 0
+ 282 56 288 45 303 45 c 0
+ 322 45 332 61 335 74 c 2
+ 390 333 l 2
+ 391 339 392 343 392 348 c 0
+ 392 362 386 368 377 370 c 2
+ 112 445 l 1
+ 139 497 196 598 316 598 c 0x1f6480
+ 362 598 430 565 485 565 c 0
+ 539 565 541 594 561 594 c 0
+ 567 594 571 591 571 584 c 0x1fa480
+207 315 m 0
+ 166 315 142 281 142 249 c 0
+ 142 228 155 210 185 210 c 0
+ 224 210 249 243 249 274 c 0x1f3180
+ 249 296 237 315 207 315 c 0
+-31 -181 m 0
  -31 -132 17 -80 75 -80 c 0
  84 -80 93 -81 102 -84 c 1
  106 -71 111 -58 122 -46 c 1
@@ -4305,8 +4339,8 @@ Fore
  128 -206 l 2
  130 -197 132 -188 132 -180 c 0
  132 -175 131 -170 129 -166 c 1xbf2a80
- 118 -210 82 -243 32 -243 c 0
- -19 -243 -31 -207 -31 -181 c 0x5f2a80
+ 118 -210 82 -243 32 -243 c 0x5f2a80
+ -19 -243 -31 -207 -31 -181 c 0
 294 -74 m 0
  258 -74 235 -104 235 -129 c 0
  235 -149 247 -166 275 -166 c 0
@@ -4318,7 +4352,6 @@ Fore
  70 -201 95 -168 95 -124 c 1
  89 -122 82 -122 75 -122 c 0
 EndSplineSet
-Refer: 96 63232 N 1 0 0 1 0 0 2
 Kerns2: 180 31 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  183 31 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  182 31 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  181 31 "'kern' Horizontal Kerning in Thai lookup 3 subtable" 
 Substitution2: "Thai Descender Removal Single Substitution" uni0E10.descless
 EndChar
@@ -7377,10 +7410,10 @@ StartChar: uni0E47.high
 Encoding: 222 63263 232
 Width: 0
 Flags: W
-HStem: 1008.6 41.65<3.34102 68.5157> 1076.6 47.6<-138.052 -77.2623> 1127.6 39.1<11.7298 75.8941> 1205.8 42.5<-27.1812 60.3461> 1211.75 45.9<-133.442 -45.128>
-VStem: -231.05 65.45<1093.04 1179.04> 78.35 43.35<1060.23 1125.75> 95.35 81.6<1268.83 1322.25>
-AnchorPoint: "AboveMark" -79.8086 983.04 mark 0
-Refer: 197 3655 N 0.85 0 0 0.85 52 451 2
+HStem: 1005.33 37.2976<-5.57415 52.7898> 1066.22 42.6258<-132.192 -77.7542> 1111.9 35.014<1.93797 59.3972> 1181.92 38.0588<-32.9067 45.4739> 1187.25 41.1034<-128.063 -48.9779>
+VStem: -215.471 58.6105<1080.95 1157.96> 61.5964 38.8199<1051.56 1110.24> 76.8199 73.0728<1238.36 1286.2>
+AnchorPoint: "AboveMark" -80 983 mark 0
+Refer: 197 3655 N 0.761175 0 0 0.761175 38 506 2
 EndChar
 EndChars
 EndSplineFont
