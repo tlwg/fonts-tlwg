@@ -9,6 +9,8 @@ fsuffix=$1
 fprefix=$2
  
 FONTS="Garuda Garuda-Oblique Garuda-Bold Garuda-BoldOblique
+Kinnari Kinnari-Oblique Kinnari-Italic
+Kinnari-Bold Kinnari-BoldOblique Kinnari-BoldItalic
 Norasi Norasi-Oblique Norasi-Italic
 Norasi-Bold Norasi-BoldOblique Norasi-BoldItalic
 Loma Loma-Oblique Loma-Bold Loma-BoldOblique 
@@ -35,6 +37,12 @@ cat <<END > Fontmap
 /Garuda-Oblique         (${top_builddir}nf/${fprefix}Garuda-Oblique${fsuffix});
 /Garuda-Bold            (${top_builddir}nf/${fprefix}Garuda-Bold${fsuffix});
 /Garuda-BoldOblique     (${top_builddir}nf/${fprefix}Garuda-BoldOblique${fsuffix});
+/Kinnari                (${top_builddir}nf/${fprefix}Kinnari${fsuffix});
+/Kinnari-Oblique        (${top_builddir}nf/${fprefix}Kinnari-Oblique${fsuffix});
+/Kinnari-Italic         (${top_builddir}nf/${fprefix}Kinnari-Italic${fsuffix});
+/Kinnari-Bold           (${top_builddir}nf/${fprefix}Kinnari-Bold${fsuffix});
+/Kinnari-BoldOblique    (${top_builddir}nf/${fprefix}Kinnari-BoldOblique${fsuffix});
+/Kinnari-BoldItalic     (${top_builddir}nf/${fprefix}Kinnari-BoldItalic${fsuffix});
 /Norasi                 (${top_builddir}nf/${fprefix}Norasi${fsuffix});
 /Norasi-Oblique         (${top_builddir}nf/${fprefix}Norasi-Oblique${fsuffix});
 /Norasi-Italic          (${top_builddir}nf/${fprefix}Norasi-Italic${fsuffix});
