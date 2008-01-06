@@ -19,7 +19,13 @@ FONTSOURCES = \
 	Waree-BoldOblique.sfd \
 	Waree-Bold.sfd \
 	Waree-Oblique.sfd \
-	Waree.sfd
+	Waree.sfd \
+	Umpush-BoldOblique.sfd \
+	Umpush-Bold.sfd \
+	Umpush-LightOblique.sfd \
+	Umpush-Light.sfd \
+	Umpush-Oblique.sfd \
+	Umpush.sfd
 
 TTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.ttf/g')
 OTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.otf/g')
