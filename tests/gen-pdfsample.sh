@@ -20,6 +20,8 @@ TlwgTypewriter-Bold TlwgTypewriter-BoldOblique
 TlwgTypist TlwgTypist-Oblique TlwgTypist-Bold TlwgTypist-BoldOblique 
 Sawasdee Sawasdee-Oblique Sawasdee-Bold Sawasdee-BoldOblique 
 Waree Waree-Oblique Waree-Bold Waree-BoldOblique 
+Umpush-Light Umpush-LightOblique Umpush Umpush-Oblique
+Umpush-Bold Umpush-BoldOblique 
 Purisa"
 PHRASE="\340\264\347\241\241\265\321\255\220\331\340\275\207\322\344\242\214\244\330\263\273\331\206\315\302\331\213\267\325\350\272\214\322\271\303\324\301\271\355\351\322"
 POEM_L1="\340\273\232\271\301\271\330\311\302\217\312\330\264\273\303\320\340\312\303\324\260\340\305\324\310\244\330\263\244\213\322"
@@ -73,6 +75,12 @@ cat <<END > Fontmap
 /Waree-Oblique          (${top_builddir}tlwg/${fprefix}Waree-Oblique${fsuffix});
 /Waree-Bold             (${top_builddir}tlwg/${fprefix}Waree-Bold${fsuffix});
 /Waree-BoldOblique      (${top_builddir}tlwg/${fprefix}Waree-BoldOblique${fsuffix});
+/Umpush-Light           (${top_builddir}tlwg/${fprefix}Umpush-Light${fsuffix});
+/Umpush-LightOblique    (${top_builddir}tlwg/${fprefix}Umpush-LightOblique${fsuffix});
+/Umpush                 (${top_builddir}tlwg/${fprefix}Umpush${fsuffix});
+/Umpush-Oblique         (${top_builddir}tlwg/${fprefix}Umpush-Oblique${fsuffix});
+/Umpush-Bold            (${top_builddir}tlwg/${fprefix}Umpush-Bold${fsuffix});
+/Umpush-BoldOblique     (${top_builddir}tlwg/${fprefix}Umpush-BoldOblique${fsuffix});
 /Purisa                 (${top_builddir}tlwg/${fprefix}Purisa${fsuffix});
 END
 
