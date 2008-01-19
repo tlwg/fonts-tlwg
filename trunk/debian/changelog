@@ -1,3 +1,29 @@
+thaifonts-scalable (1:0.4.9-1) unstable; urgency=low
+
+  * New upstream release
+    - Reintroduced font: Kinnari (plus Angsana synthesizing).
+    - New font: Umpush (plus Cordia synthesizing).
+    - Improved OpenType tables for broader range of applications.
+    - Mark repositioning for certain Thai consonants with deep right stems
+      like CHO CHING, NO NEN, NO NU, SO RUSI.
+    - Scaled-down high variant of MAITAIKHU.
+    - More consistent line spacing for Garuda, Norasi.
+    - More uses of references, for compact generated files and maintainability.
+    - Various manual hint adjustments.
+    - Smoother stem hints.
+  * Add new fonts
+    + debian/{ttf,otf,t1}-thai-tlwg.defoma-hints:
+      - Add defoma hints for new fonts (Kinnari, Umpush)
+    + debian/t1-thai-tlwg.scale:
+      - Add fonts.scale entries for new fonts (Kinnari, Umpush)
+    + debian/copyright:
+      - Add copyright info for new fonts (Kinnari, Umpush)
+  * Adjust package descriptions. Do not try to elaborate all font names.
+    Just mention important ones and add some explanations about its purpose
+    and which binary package to install.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sat, 19 Jan 2008 12:53:48 +0700
+
 thaifonts-scalable (1:0.4.8-1) unstable; urgency=low
 
   * New upstream release
