@@ -1,0 +1,2216 @@
+2008-01-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* NEWS:
+	=== Version 0.4.9 ===
+
+2008-01-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgMono*.sfd:
+	* tlwg/TlwgTypewriter*.sfd:
+	* tlwg/TlwgTypist*.sfd:
+	* tlwg/Purisa.sfd:
+	* tlwg/Sawasdee*.sfd:
+	* tlwg/Waree*.sfd:
+	* tlwg/Umpush*.sfd:
+	Bump font versions for new release.
+
+	* ChangeLog: Correct path for Loma in previous log.
+
+2008-01-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd:
+	Bump font versions for new release.
+
+2008-01-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari*.sfd, nf/Garuda*.sfd, nf/Norasi*.sfd:
+	Bump font versions for new release.
+
+2008-01-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd: Use safe ASCII "(C)" for copyright mark.
+
+2008-01-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypist-Bold[Oblique].sfd: Also set ZWSP widths to zero.
+
+2008-01-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypist-Bold[Oblique].sfd: Re-encode U+0E5C as ZWSP.
+
+	* nf/Kinnari*.sfd, nf/Garuda*.sfd, nf/Norasi*.sfd:
+	* tlwg/Sawasdee*.sfd, tlwg/TlwgTypewriter*.sfd, tlwg/TlwgTypist*.sfd:
+	* tlwg/Purisa.sfd:
+	Rename ZWSP from uni200B/zerospace to zerowidthspace.
+
+2008-01-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Umpush-Light[Oblique].sfd: Add ZWSP. Remove alternate glyph for
+	low SARA U and SARA UU.
+	* tlwg/Umpush*.sfd, nectec/Loma*.sfd, tlwg/Waree*.sfd:
+	Rename ZWSP, ZWNJ, ZWJ from uni* and afii* to zerowidth*.
+	Rename afii00208 to horizontalbar.
+
+2008-01-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* fontconfig/90-ttf-thai-tlwg-synthetic.conf: Adjust scaling factor
+	for Browallia/Garuda by measurement. Thanks Widhaya Trisarnwadhana for
+	the help.
+
+2008-01-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* fontconfig/90-ttf-thai-tlwg-synthetic.conf: Adjust scaling factor
+	for Angsana/Kinnari and Cordia/Umpush by actually measuring relative
+	height of BO BAIMAI of the fonts.
+
+2008-01-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tests/gen-pdfsample.sh: Add Umpush sample.
+
+2008-01-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi-Bold*.sfd: Add Std{H,V}W, StemSnap{H,V}.
+
+2008-01-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd: Add Std{H,V}W, StemSnap{H,V}.
+
+2008-01-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd: Add OtherBlues. Recalculate Std{H,V}W,
+	StemSnap{H,V}.
+
+2008-01-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Sawasdee*.sfd: Add StdHW, StdVW, StemSnapH, StemSnapV.
+	* tlwg/TlwgTypist*.sfd: Add OtherBlues, StdHW, StdVW, StemSnapH,
+	StemSnapV, ForceBold.
+	* tlwg/TlwgTypewriter*.sfd: Add StdHW, StdVW, StemSnapH, StemSnapV.
+	* tlwg/TlwgMono*.sfd: Add StdHW, StdVW, StemSnapH, StemSnapV.
+
+2008-01-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree*.sfd: Add StdHW, StdVW, StemSnapH, StemSnapV.
+
+2008-01-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Umpush-Light[Oblique].sfd: Hint some glyphs. Recalculate StdHW,
+	StdVW, StemSnapH, StemSnapV.
+	* tlwg/Umpush[-Oblique].sfd, tlwg/Umpush-Bold[Oblique].sfd: Add StdHW,
+	StdVW, StemSnapH, StemSnapV.
+
+2008-01-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Umpush*.sfd: Use references for low SARA U, SARA UU, PHINTU.
+	* tlwg/Umpush-Bold[Oblique].sfd: Merge BlueValues, for consistent
+	heights of Arabic digits.
+	* tlwg/Umpush-Light[Oblique].sfd: Recalcuate BlueValues and
+	OtherBlues. Add BlueValues for Thai glyphs.
+
+2008-01-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* fontconfig/65-ttf-thai-tlwg.conf: Add Umpush to "sans-serif" match.
+	* fontconfig/90-ttf-thai-tlwg-synthetic.conf: Synthesize Windows
+	Cordia with scaled-down Umpush.
+
+2008-01-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Umpush*.sfd:
+	  - Set anchors for FO FA, FO FAN, LO CHULA to the same Y as PO PLA
+	  - Lift up high Nikhahit to its place
+	  - Lengthen low Mai Ek and Mai Chattawa
+	  - Scale down high tone marks, Thanthakhat and Maitaikhu
+
+2008-01-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Umpush*.sfd: Apply new GSUB/GPOS:
+	  - Add high Maitaikhu
+	  - Import GSUB rules from Garuda; remove duplicates; rename; rearrange
+	  - Rename GPOS rules from numbered names to comprehensible ones
+	  - Reorder GPOS so that 'mkmk' comes after all 'mark'
+
+2008-01-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Umpush*.sfd: Convert splines to cubic. Add extremas. Simplify.
+	Adjust combining characters positions and anchors. Use more
+	references. Autohint.
+
+2008-01-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Umpush*.sfd: Add copyright for Widhaya, the designer.
+	Put his info in Designer and Designer URL. Point Vendor URL to LTN.
+	* AUTHORS, COPYING: Add Umpush info.
+
+2008-01-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Makefile.am, +tlwg/Umpush*.sfd: Import Umpush font by 
+	Widhaya Trisarnwadhana <widhaya3@gmail.com>.
+
+2007-12-31  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari.sfd, nf/Kinnari-[Bold]{Italic,Oblique}.sfd: Hint glyphs.
+	* nf/Kinnari-BoldOblique.sfd: Adjust BlueValues for consistent heights
+	of Arabic digits.
+	* tlwg/Waree-Oblique.sfd: Hint some glyphs.
+
+2007-12-30  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* AUTHORS, COPYING: Add Kinnari info.
+	* tests/gen-pdfsample.sh: Add Kinnari sample.
+
+2007-12-30  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda[-Oblique].sfd:
+	* nf/Kinnari*.sfd: Hint various glyphs.
+
+2007-12-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* fontconfig/65-ttf-thai-tlwg.conf: Add Kinnari to "serif" match.
+	* fontconfig/90-ttf-thai-tlwg-synthetic.conf: Synthesize Windows
+	Angsana with scaled-down Kinnari.
+
+2007-12-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd:
+	* tlwg/Waree*.sfd:
+	* tlwg/TlwgTypewriter*.sfd: Add anchors for CHO CHING, NO NEN, NO NU
+	and SO RUSI.
+
+	* nectec/Loma-Bold*.sfd: Extend below-base BlueValues to cover
+	CHO CHING.
+
+2007-12-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	* nf/Norasi*.sfd: Add anchors for glyphs with deep right stem, namely
+	CHO CHING, NO NEN, NO NU and SO RUSI.
+
+2007-12-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Sawasdee[-Oblique].sfd: Adjust hints for KHO KHUAT and
+	THO PHUTHAO, for proper height of rightmost stem. Also adjust
+	THO NANGMONTHO for more obvious zigzag head.
+
+2007-12-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree*.sfd: Adjust hints for KHO KHUAT, KHO RAKHANG,
+	THO PHUTHAO, for proper height of the rightmost stem.
+	Also adjust hints for various glyphs, namely PHO SAMPHAO, DO CHADA,
+	TO PATAK and LU, for proper left stem width for bold faces;
+	SO SUA for bold faces, and many others.
+
+2007-12-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma-[Oblique].sfd: Add HHint in MAITRI and its variants,
+	to satisfy Pattara. :-P
+	* nectec/Loma-Oblique.sfd: Add VHint in CHO CHANG and SO SO.
+
+2007-12-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda.sfd: Adjust hints for F, I, e, g and THO THONG.
+	Autohint left MAITAIKHU.
+	* nf/Garuda-Oblique.sfd: Autohint left MAITAIKHU.
+	* nf/Garuda-Bold[Oblique].sfd: Modify M, N, R for proper stem widths.
+	Adjust hints for e.
+
+2007-12-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi-Bold*.sfd: Simplify splines. Hint glyphs.
+	* nf/Kinnari-BoldItalic.sfd: Borrow some hints from Norasi-BoldItalic.
+
+2007-12-28  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi-{Italic,Oblique}.sfd: Simplify more splines. Hint glyphs.
+	* nf/Kinnari-Italic.sfd: Borrow some hints from Norasi-Italic.
+
+2007-12-28  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi[-Oblique].sfd: Simplify splines. Auto and manually hint
+	glyphs.
+
+2007-12-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari*.sfd, nf/Garuda*.sfd: Use absolute values, rather than
+	offsets, for OS/2 ascent/descent.
+
+2007-12-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd: Use reference for low SARA U, SARA UU, PHINTHU.
+	Narrow down the gap between DO CHADA / TO PATAK and below-base vowels
+	in non-bold faces by shifting up the anchors. Set OS/2 ascent/descent
+	to 1216/-488.
+
+2007-12-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari*.sfd: Scale down high MAITAIKHU. Set OS/2 ascent/descent
+	to 1286/-496. Clear OS/2 line gap to 0.
+	* nf/Kinnari-{Italic,BoldOblique}.sfd: Really unlink reference in
+	THO THAN.
+
+2007-12-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd: Scale down high MAITAIKHU, to harmonize with high
+	tone marks. Set OS/2 ascent/descent to 1284/-591, for consistent
+	heights among all faces.
+
+2007-12-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	* nectec/Loma*.sfd:
+	* tlwg/Waree*.sfd:
+	* tlwg/TlwgTypist*.sfd: Unlink reference in THO THAN and YO YING.
+
+	* scripts/gen[-test]-ttf.pe: Remove UnlinkReference command.
+
+2007-12-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari*.sfd: Unlink reference in THO THAN and YO YING, so that
+	we won't have to unlink all references when generating TTF, as TTF
+	doesn't support mixed references and contours. Moreover, this would
+	also allow us to manually hint all glyphs without worry that the hints
+	would be lost when applying AutoInstr, due to the unsynchronized state.
+	But the drawback is that we have to make sure the descless part and the
+	full forms of the two characters are closely synchronized when editing.
+
+	* nf/Kinnari-[Bold]Oblique.sfd: Remove hints at ring hook fronts of all
+	glyphs with SARA E (Mai Nah) like forms, including CHO CHOE, YO YING,
+	THO THUNG, LO LING, RU, SO SUA, etc., as it causes ink glots at small
+	sizes.
+
+2007-12-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree*.sfd: Use references for accented Latin characters.
+	Add some necessary accent glyphs as well.
+
+2007-12-26  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi-BoldItalic.sfd: Use references for accented Latin
+	characters and Thai left variants. Add extremas and simplify splines.
+	* nf/Kinnari-BoldItalic.sfd: Add a VHint in 'n' glyph.
+
+2007-12-26  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi-Italic.sfd: Use references for accented Latin characters
+	and Thai left variants. Correct inconsistent width for descless
+	YO YING. Add extremas and simplify glyphs.
+	* nf/Kinnari-Italic.sfd: Simplify more Latin glyphs and sync back to
+	Norasi-Italic.
+	* nf/Norasi-Oblique.sfd: Correct inconsistent width for descless
+	THO THAN. Remove meaningless points in dottedcircle.
+	* nf/Norasi.sfd: Remove meaningless points in dottedcircle.
+
+2007-12-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi-Bold[Oblique].sfd: Use references for accented Latin
+	characters and Thai left variants. Correct inconsistent width for
+	descless YO YING. Correct Aring glyph, which was incorrectly drawn as
+	A breve.
+	* nf/Norasi[-Oblique].sfd: Correct Aring glyph, which was incorrectly
+	drawn as A breve.
+
+2007-12-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi[-Oblique].sfd: Use references for accented Latin
+	characters and Thai left variants. Correct inconsistent width for
+	descless YO YING.
+
+2007-12-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari-[Bold]Italic.sfd: Add extremas. Simplify splines.
+	Autohint. Use reference where possible. Adjust anchors for tone marks.
+	Lift up ring hooks for THO PHUTHAO, DO DEK and TO TAO, to be closer to
+	traditional printings.
+
+2007-12-24  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari-Bold[Oblique].sfd: Add extremas. Simplify splines.
+	Autohint. Use reference where possible.
+	* nf/Kinnari-BoldOblique.sfd: Update (mostly Latin) glyphs to be
+	12-degree inclined, to be consistent with the font's italic angle.
+
+2007-12-23  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari[-Oblique].sfd: Add extremas. Simplify splines. Autohint.
+	Use reference where possible.
+	* nf/Kinnari-Oblique.sfd: Update (mostly Latin) glyphs to be 12-degree
+	inclined, to be consistent with the font's italic angle.
+
+2007-12-21  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari*.sfd: Apply changes done to Garuda:
+	  - Add high Maitaikhu
+	  - Use reference for left Maitaikhu
+	  - Import GSUB rules from Garuda; remove duplicates; rename; rearrange
+	  - Rename GPOS rules from numbered names to comprehensible ones
+	  - Reorder GPOS so that 'mkmk' comes after all 'mark'
+	* nf/Kinnari-BoldItalic[Base].sfd:
+	  - Correct AboveMark base anchor position for NIKHAHIT.
+
+2007-12-21  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari*.sfd: Update Kinnari fonts with GPL version from the
+	National Font Project web site [http://wiki.opentle.org/NationalFont].
+	Also update copyright/license info for the derivative Italic faces.
+	* nf/Makefile.am: Add Kinnari back to the distribution.
+
+2007-12-21  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Purisa.sfd: Apply changes done to Garuda:
+	  - Add high Maitaikhu
+	  - Import GSUB rules from Garuda; remove duplicates; rename; rearrange
+	  - Rename GPOS rules from numbered names to comprehensible ones
+	  - Reorder GPOS so that 'mkmk' comes after all 'mark'
+
+2007-12-21  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypewriter*.sfd: Apply changes done to Garuda:
+	  - Add high Maitaikhu
+	  - Import GSUB rules from Garuda; remove duplicates; rename; rearrange
+	  - Rename GPOS rules from numbered names to comprehensible ones
+	  - Reorder GPOS so that 'mkmk' comes after all 'mark'
+
+2007-12-21  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypist*.sfd: Apply changes done to Garuda:
+	  - Add high Maitaikhu
+	  - Import GSUB rules from Garuda; remove duplicates; rename; rearrange
+	  - Rename GPOS rules from numbered names to comprehensible ones
+	  - Reorder GPOS so that 'mkmk' comes after all 'mark'
+	* tlwg/TlwgTypist-Bold[Oblique].sfd:
+	  - Add missing anchor for DO CHADA.
+	  - Move anchors of PO PLA, FO FA, FO FAN, LO CHULA to the left.
+
+2007-12-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree*.sfd: Apply changes done to Garuda:
+	  - Add high Maitaikhu
+	  - Import GSUB rules from Garuda; remove duplicates; rename; rearrange
+	  - Rename GPOS rules from numbered names to comprehensible ones
+	  - Reorder GPOS so that 'mkmk' comes after all 'mark'
+
+2007-12-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Sawasdee*.sfd: Apply changes done to Garuda:
+	  - Add high Maitaikhu
+	  - Use reference for left Maitaikhu
+	  - Import GSUB rules from Garuda; remove duplicates; rename; rearrange
+	  - Rename GPOS rules from numbered names to comprehensible ones
+	  - Reorder GPOS so that 'mkmk' comes after all 'mark'
+
+2007-12-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd: Apply changes done to Garuda:
+	  - Add high Maitaikhu
+	  - Import GSUB rules from Garuda; remove duplicates; rename; rearrange
+	  - Rename GPOS rules from numbered names to comprehensible ones
+	  - Reorder GPOS so that 'mkmk' comes after all 'mark'
+
+2007-12-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd: Apply changes done to Garuda:
+	  - Add high Maitaikhu
+	  - Use reference for left Maitaikhu where found using copy (namely
+	    Italic, Bold, BoldOblique, BoldItalic)
+	  - Import GSUB rules from Garuda; remove duplicates; rename; rearrange
+	  - Rename GPOS rules from numbered names to comprehensible ones
+	  - Reorder GPOS so that 'mkmk' comes after all 'mark', hopefully
+	    correcting rendition on non-Pango platforms
+
+2007-12-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd: Move up high Maitaikhu to its place.
+
+2007-12-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda-Oblique.sfd, nf/Garuda-Bold[Oblique].sfd: Apply similar
+	changes done to normal face.
+
+2007-12-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda.sfd:
+	  - Add scaled-down high variant glyph for Maitaikhu; so normal
+	    Maitaikhu and the high variant are now in different mark classes
+	  - Add mark classes: BelowBase, AboveBase, AboveMark; not so sure if
+	    it's really useful, though
+	  - Rename "Thai Nikhahit High Variant" GSUB to "Thai Mark High
+	    Variant", and add high variant selection for Maitaikhu to relevant
+	    rules
+	  - Rename GPOS rules from numbered names to comprehensible ones
+	  - Reorder GPOS so that 'mkmk' comes after all 'mark', hopefully
+	    correcting rendition on non-Pango platforms
+
+2007-12-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree-Bold.sfd: Re-apply autohint to all glyphs, as many glyphs
+	with leveled top edges appeared to be of inconsistent heights.
+
+2007-12-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda.sfd: Rearrange single substitution rules by categories.
+	* nf/Garuda-Oblique.sfd: Fix anchors for PO PLA, FO FA, FO FAN.
+	* nf/Garuda-Oblique.sfd, nf-Garuda-Bold[Oblique].sfd: Import GSUB
+	rules from normal face.
+
+2007-12-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda.sfd: Revise GSUB rules:
+	  - Rename lookups from numbered names to be comprehensible ones
+	  - Split rule for the cases of below vowels + tone marks into a new
+	    subtable which also reorders the glyphs so that the tone marks
+	    are properly placed on base character's anchor
+	  - Also remove the class for below vowel from the main 'ccmp'
+	  - Merge duplicated substitutions for descless YO YING and THO THAN
+
+2007-12-14  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Sawasdee.sfd: Fix 'ccmp' rule for descless Yo Ying and Tho
+	Than, which was somehow messed up.
+
+2007-12-14  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in: Post-release version bump.
+
+2007-12-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* TODO: Remove finished issues: OpenType tables, Latin glyphs, Hints.
+
+	* NEWS:
+	=== Version 0.4.8 ===
+
+2007-12-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi-Oblique.sfd: Correct width for Sara Ae. Problem found
+	thanks to the test suite.
+
+2007-12-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tests/gen-pdfsample.sh: Remove Kinnari and DBThaiText samples.
+	Add Italic faces for Norasi.
+	Rename PseudoMono to TlwgTypewriter.
+	Add Loma, TlwgTypist, Sawasdee, Waree.
+
+	* tests/Makefile.am: Clear the generated PDF's on 'make clean'.
+
+2007-12-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	"make distcheck" fixes.
+
+	* configure.in: Check for mkfontdir and X11 font encodings path, as
+	the old X11R6 dir has long been obsolete in Xorg 7.
+	* Makefile.am: Call mkfontdir via the detected value. Also get rid of
+	an extra assignment step for ttmkfdir, type1inst, and fccache, as
+	configured variables can be used directly.
+
+2007-12-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* COPYING: Add copyright and license info for Sawasdee and Waree.
+
+2007-12-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree-Bold[Oblique].sfd: Add ForceBold.
+	* tlwg/Waree*.sfd: Bump font version to "0.11.1: 2007-12-07".
+
+2007-12-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Sawasdee*.sfd: Rearrange copyright message. Bump font version
+	to "001.001: 2007-12-07". Mark Copyright and Version TTF Names to be
+	the same as Postscript names.
+
+2007-12-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Purisa.sfd: Add extremas. Simplify splines. Apply autohint.
+	All originally traced splines are kept in the backgrounds.
+	Bump font version to "002.007: 2007-12-07".
+	Note that the splines are now saved in SplineFontDB 2.0 format, after
+	having been untouched for a long time.
+
+2007-12-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypist*.sfd: Simplify Latin splines more. Add extremas
+	where missing. Re-apply autohint. Bump font version to
+	"001.007: 2007-12-07". Update copyright year. Fix copyright lines
+	separation.
+
+2007-12-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypewriter*.sfd: Add extremas. Simplify splines. Add
+	BlueValues and OtherBlues. Also ForceBold for bold faces. Apply
+	autohint to all glyphs. Bump font version to "001.007: 2007-12-07".
+
+	* tlwg/TlwgMono*.sfd: Copy adjusted glyphs from TlwgTypewriters,
+	plus translate all combining marks to remain true monospace.
+	Add BlueValues and OtherBlues. Also ForceBold for bold faces.
+	Set ItalicAngle for oblique faces. Apply autohint to all glyphs.
+	Bump font version to "001.007: 2007-12-07", in sync to TlwgTypewriter.
+	Note that the splines are now saved in SplineFontDB 2.0 format, after
+	having been untouched for a long time.
+
+2007-12-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd: Bump font version to "0.9.11: 2007-12-07".
+
+2007-12-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd: Bump font version to "2.55: 2007-12-07", for new
+	release.
+
+	* nf/Norasi*.sfd: Bump font version to "004.007: 2007-12-07".
+
+2007-12-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda[-Oblique].sfd: Adjust heights for '1', '5', and '7' glyphs
+	to blue zone boundary. This particularly fixes too small heights for
+	'5' and '7' found at 10pt.
+
+2007-12-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in: Require fontforge >= 20071110 for Nowakowski
+	AutoInstr. (20071002 also provides the feature, but it crashes before
+	finishing the builds.) No longer try to find pfaedit, just fontforge.
+
+2007-12-01  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypist[-Bold].sfd: Re-apply autohint to Tho Phuthao,
+	Do Dek, To Tao. This fixes ink spots for the glyphs at 16pt.
+
+2007-11-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd: Adjust BlueValues to cover lowercase 'n' curve.
+
+2007-11-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda[-Oblique].sfd: Adjust BlueValues to cover Ho Hip tips.
+
+2007-11-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Sawasdee*.sfd: Adjust BlueValues, for more consistent rendered
+	heights.
+
+	* tlwg/Sawasdee[Oblique].sfd: Lift up lowest points of capital S glyph
+	so it's still in blue zone.
+
+2007-11-24  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree-[Bold]Oblique.sfd: Change Italic Angle from 10 to 11
+	degree, to be compatible with DejaVu Sans.
+
+2007-11-23  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree-Oblique: Fix BelowBase anchor for DO CHADA.
+	* tlwg/Waree-BoldOblique: Fix BelowBase anchor for TO PATAK.
+
+2007-11-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree-Bold[Oblique].sfd: Add OtherBlues. Recalculate
+	BlueValues/OtherBlues. This fixes funny glyphs heights for Latin
+	characters, due to excessive BlueValues.
+
+2007-11-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd, nf/Norasi*.sfd, nectec/Loma*.sfd,
+	tlwg/TlwgTypewriter*.sfd, tlwg/TlwgTypist*.sfd: Apply autohint to all
+	glyphs.
+
+2007-11-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* scripts/gen-[test-]ttf.pe: Add commands to apply AutoInstr on the
+	fly. This includes converting splines to be quadratic, unlinking all
+	references (as TrueType doesn't support mixed references and
+	contours), and then applying AutoInstr.
+
+2007-11-08  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* fontconfig/Makefile.am, +fontconfig/90-ttf-thai-tlwg-synthetic.conf:
+	Add fontconfig file to synthesize Windows fonts with our known similar
+	shipped fonts. (Currently only Browallia with scaled-down Garuda).
+
+2007-11-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Sawasdee*.sfd: Change Em Size from 1000 to 2048. Scale by
+	109.3%, to match X-Height with Waree. Update BlueValues and OtherBlues
+	accordingly.
+
+2007-11-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree-Bold[Oblique].sfd: Find & fix problems. Apply autohint
+	to all glyphs.
+
+2007-11-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree[-Oblique].sfd: Find & fix problems. Apply autohint to all
+	glyphs.
+
+2007-11-01  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree-Bold[Oblique].sfd: Scale down high Nikahit, to match
+	normal weight counterparts.
+
+2007-10-31  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree[-Oblique].sfd: Scale up Nikhahit.
+
+2007-10-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree[-Oblique].sfd: Scale up Maitaikhu.
+
+2007-10-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree-Bold.sfd: Adjust anchor above Lo Chula. Fix wrong anchor
+	for Thanthakhat. Scale up Maitaikhu. 
+
+	* tlwg/Waree-BoldOblique.sfd: Propagate changes for combining marks
+	and anchors from the regular shape.
+
+2007-10-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree-Bold.sfd: Adjust anchors. Adjust mark glyphs.
+	Scale up *.low version of tone marks. Use *.low references in
+	*.low_left.
+
+2007-10-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree.sfd: Re-calculate shift vectors for *.left variants of
+	upper vowels.
+
+	* tlwg/Waree-Oblique.sfd: Propagate changes for combining marks and
+	anchors from the regular shape.
+
+2007-10-16  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree.sfd: Center anchors above Sara Ii and Sare Uee.
+	Re-apply autohints on some glyphs.
+
+2007-10-16  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree.sfd: Widen gaps below top-level tone marks.
+	Lengthen Mai Ek glyphs. Scale up *.low version of tone marks.
+	Use *.low references in *.low_left.
+
+2007-10-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree.sfd: Adjust anchors. Adjust mark glyphs.
+
+2007-10-11  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* fontconfig/65-ttf-thai-tlwg.conf: Add "Waree" to sans-serif list.
+
+2007-10-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Waree*.sfd: Remove Thai glyphs copyright, making it
+	public-domain, with the original author's agreement, for DejaVu
+	compatibility.
+
+2007-10-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Makefile.am, tlwg/Verachart*.sfd -> tlwg/Waree*.sfd:
+	Rename Verachart to Waree, to avoid the risk of violating the name
+	"Vera". Also change the license to Bitstream, as it's actually based
+	on Bitstream Vera Sans. All are agreed by the font author.
+
+	* AUTHORS: Change Verachart to Waree as well.
+
+2007-10-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Verachart*.sfd: Fix error in GSUB rules for combination case
+	of lower vowels and tone marks, caused by feature copying.
+
+2007-10-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Verachart-BoldOblique.sfd: Simplify splines. Apply autohints.
+
+2007-10-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Verachart-Bold.sfd: Simplify splines. Apply autohints.
+
+2007-10-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Verachart-Oblique.sfd: Simplify splines. Apply autohints.
+
+2007-10-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Verachart.sfd: Simplify splines. Apply autohints.
+
+2007-10-01  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Verachart*.sfd: Correct copyright info.
+	* AUTHORS: Add author info for Verachart.
+
+2007-10-01  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Makefile.am, +tlwg/Verachart*.sfd: Import Verachart font by
+	Widhaya Trisarnwadhana <widhaya3@gmail.com>.
+
+2007-06-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Sawasdee*.sfd: Add BlueValues, OtherValues. Add ForceBold for
+	bold faces.
+
+2007-06-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Sawasdee*.sfd: Correct FONGMAN glyph. Adjust splines.
+
+	* tlwg/Sawasdee[Bold]Oblique.sfd: Add extremas + simplify splines.
+
+2007-06-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/SawasdeeBoldOblique.sfd: Scale up by 133.33%. Add anchors.
+
+2007-06-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/SawasdeeBold.sfd: Scale up by 133.33%. Add anchors.
+
+2007-06-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/SawasdeeOblique.sfd: Scale up by 133.33%. Add anchors.
+
+2007-06-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Sawasdee.sfd: Scale up by 133.33%. Add anchors.
+
+2007-06-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Sawasdee*.sfd: Rename PUA glyphs to indicate variants.
+	Add high NIKHAHIT glyph. Clear original GSUB and use our set instead.
+
+	* tlwg/Sawasdee-[Bold]Oblique.sfd: Replace Italic with Oblique in font
+	info. Set italic angle.
+
+2007-06-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in: Post-release version bump.
+
+	* AUTHORS, tlwg/AUTHORS, tlwg/CREDITS, tlwg/Makefile.am,
+	+tlwg/Sawasdee*.sfd: Add Sawasdee fonts by
+	Pol Udomwittayanukul <webnaipol@gmail.com>, relicensed to GPL with
+	font exception, with the original author's agreement.
+
+2007-05-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in: Use new version of AC_INIT and AM_INIT_AUTOMAKE.
+	Use AC_CONFIG_SRCDIR for source dir check.
+
+	* configure.in, NEWS:
+	=== Version 0.4.7 ===
+
+2007-05-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* fontconfig/Makefile.am (EXTRA_DIST): Add EXTRA_DIST to include
+	65-ttf-thai-tlwg.conf in tarball.
+
+2007-05-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	* nectec/Loma*.sfd:
+	* tlwg/TlwgTypist*.sfd: Mark version for release.
+
+2007-05-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda[-Bold].sfd: Remove some more VHints that cause oversized
+	stem ring-head.
+
+2007-05-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, Makefile.am, +fontconfig/Makefile.am,
+	+fontconfig/65-ttf-thai-tlwg.conf: Install fontconfig config file,
+	taken from Debian package.
+
+2007-05-16  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypist[-Bold].sfd: Remove some VHints that cause oversized
+	stem ring-head.
+
+2007-05-16  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda[-Bold].sfd: Remove some VHints that cause oversized stem
+	ring-head.
+
+2007-05-16  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Loma[-Bold].sfd: Remove some VHints that cause oversized stem
+	ring-head.
+
+2007-05-14  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda-Bold.sfd: Remove VHints in some glyphs that cause
+	oversized stem ring-head.
+
+2007-05-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypist-Bold[Oblique].sfd: (Thai glyphs only)
+	  - Find & fix problems.
+	  - Revise & simplify glyphs.
+	  - Add BlueValues.
+	  - Add missing uni0E4D.high (high NIKHAHIT) glyph.
+
+2007-05-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypist[-Oblique].sfd: (Thai glyphs only)
+	  - Find & fix problems.
+	  - Simplify glyphs.
+
+2007-05-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma-Bold[Oblique].sfd: (Thai glyphs only)
+	  - Find & fix problems.
+	  - Adjust stems for uniform widths.
+	  - Decrease widths of horizontal stems for anti-illusion design.
+
+2007-05-01  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma[-Oblique].sfd: Decrease widths of horizontal stems for
+	Thai glyphs, for anti-illusion design.
+
+2007-04-30  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma[-Oblique].sfd: Adjust Thai glyphs stems for uniform
+	widths.
+
+2007-04-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma-Bold[Oblique].sfd: Increase stems width for SO SALA.
+
+2007-04-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma-Bold[Oblique].sfd: Increase stems width for SARA UU.
+
+2007-04-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda-Bold.sfd: Find & fix problems in splines.
+
+	* nf/Garuda-BoldOblique.sfd: Refine splines. Use glyph references.
+
+2007-04-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda-Bold.sfd: Refine splines. Use glyph references.
+
+2007-04-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda-Oblique.sfd: Refine splines. Use glyph references.
+
+	* nf/Garuda-[Oblique,Bold,BoldOblique].sfd: 
+	Fix error in GSUB rules for combination case of lower vowels and
+	tone marks, caused by feature copying.
+
+	* nf/Garuda.sfd: Fix LO CHULA spline.
+
+2007-04-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda.sfd: Refine splines. Use glyph references.
+
+2007-04-24  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	Fix hinting bugs triggered in Loma-Bold.
+
+	* nectec/Loma*.sfd:
+	  - Add StdHW, StdVW, StemSnapH, StemSnapV, for proper hints.
+	  - Also hint referencing glyphs.
+
+	* nectec/Loma-Bold.sfd: Simplify NIKHAHIT high glyph.
+
+	* nectec/Loma.sfd: Refine CHO CHANG splines.
+
+2007-04-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd: Lift up the right part of THO NANGMONTHO and
+	THO THAHAN to the blue zone.
+
+2007-04-21  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma-BoldOblique.sfd: Simplify splines. Use glyph references.
+	Also skew BelowBase anchors.
+
+	* nectec/Loma-Oblique.sfd: Also move lower version of lower vowels to
+	the left, according to replacement by skewing.
+
+	* nectec/Loma-Bold.sfd: Adjust the tail of descless THO THAN spline.
+
+2007-04-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma-Bold.sfd: Simplify splines. Use glyph references.
+
+2007-04-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma-Oblique.sfd: Simplify splines. Use glyph references.
+	* nectec/Loma.sfd: Clear hints in referencing glyphs.
+
+2007-04-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma.sfd:
+	  - Simplify splines for all glyphs.
+	  - Use glyph references where possible, including Sara Am's
+	    components and combining marks' PUA variations.
+
+2007-04-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	* nectec/Loma*.sfd:
+	* tlwg/TlwgTypewriter*.sfd:
+	* tlwg/TlwgTypist*.sfd:
+	* tlwg/Purisa.sfd: Fix error in GSUB rules for combination case of
+	lower vowels and tone marks, caused by feature copying.
+
+2007-04-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, NEWS:
+	=== Version 0.4.6 ===
+
+2007-04-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	* nf/Norasi*.sfd:
+	* nectec/Loma*.sfd:
+	* tlwg/TlwgTypewriter*.sfd:
+	* tlwg/TlwgTypist*.sfd:
+	* tlwg/Purisa.sfd: Update version info for release.
+
+2007-04-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd: Mention TLWG modification in Copyright.
+	* COPYING: Updated.
+
+2007-04-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd:
+	* tlwg/TlwgTypewriter*.sfd:
+	* tlwg/TlwgTypist*.sfd:
+	* tlwg/Purisa.sfd: Copy recent GSUB changes from Garuda.
+
+2007-04-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd: Copy recent GSUB changes from Garuda.
+
+2007-04-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd: Rearrange 'ccmp' GSUB rules again, to deal with
+	horizontal shift problem found in recent change with OO.o.
+	Now, for Tone Mark + Sara Am cases, we insert Nikhanit by substituting
+	Tone Mark => Nikhanit + Tone Mark, and then Sara Am => Sara Aa.
+	The old scheme (Tone Mark => Nikhahit, Sara Am => Tone Mark + Sara Aa)
+	caused the whole cell to be shifted with the anchored mark is shifted.
+	The new scheme alleviates this a bit by causing only Sara Aa to be
+	shifted. (We need more refinement on this later.) Besides, the rules
+	are now a lot simplified.
+
+2007-04-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Purisa.sfd: Copy recent GSUB changes from Garuda.
+
+2007-04-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypist*.sfd: Copy recent GSUB changes from Garuda.
+
+2007-04-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypeWriter*.sfd: Copy recent GSUB changes from Garuda.
+
+2007-04-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma-Bold[Oblique].sfd: Resurrect lost GPOS info in last
+	glyphs sync.
+
+2007-04-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd: Copy recent GSUB changes from Garuda.
+
+2007-04-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd, nf/Norasi*.sfd: Remove unused nested GSUB.
+
+2007-04-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd: Copy recent GSUB changes from Garuda (again).
+
+2007-04-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd: Adjust GSUB to cover the case of SARA AM without
+	tone mark.
+
+2007-04-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd: Copy recent GSUB changes from Garuda.
+
+2007-04-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd: Revise 'ccmp' GSUB. Group rules for tone marks and
+	SARA AM together in a single class-based rule set, to get rid of rule
+	application order problem as happened to the old coverage-based rules.
+	Fixing problem with OpenOffice.org. Thanks to Kitt Tientanopajai for
+	urging for the fix, with problem details.
+
+2007-03-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd: Replace simple GPL mentioning in License with full
+	GPL disclaimers. Also add font exception clause.
+
+2007-03-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd: Replace simple GPL mentioning in License with full
+	GPL disclaimers. Also add font exception clause.
+
+	* nf/Norasi*.sfd: Replace simple GPL mentioning in License with full
+	GPL disclaimers. Also add font exception clause. Change UniqueID to
+	be consistently prefixed with TLWG.
+
+2007-03-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypist*.sfd: Put full GPL disclaimers in License. Add
+	special exception clause for font.
+
+	* tlwg/TlwgMono*.sfd, tlwg/TlwgTypewriter*.sfd, tlwg/Purisa.sfd:
+	Move GPL disclaimers from Copyright to License. Update FSF address.
+	Add special exception clause for fonts.
+
+2007-03-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/AUTHORS, tlwg/CREDITS: Change PseudoMono to TlwgTypewriter.
+	Add info about TlwgTypist.
+
+2007-02-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, scripts/gen.mk.in: Rename PFAEDIT variables to
+	FONTFORGE.
+
+2007-02-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* {nf,nectec,tlwg}/Makefile.am: Replace lists of generated files with
+	sed auto edition.
+
+	* scripts/gen.mk.in: Add *.afm to Type1 targets, to cover some missed
+	casses.
+
+2007-02-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd: Remove duplicated encodings, which confused latex
+	ligkern rules.
+
+2006-12-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* {nf,nectec,tlwg}/*.sfd: Clear Sub/Sup/Strike controls in OS/2 table.
+
+	* nf/Garuda[-Oblique].sfd: Clear glyph 96 with '.notdef' name.
+
+2006-11-23  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma-Bold[Oblique].sfd: Update non-rounded glyphs from
+	original creator. Use reference for Yo Ying and Tho Than upper part.
+
+	* nectec/Loma[-Oblique].sfd: Use reference for Yo Ying and Tho Than 
+	upper part.
+
+2006-10-23  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, NEWS:
+	=== Version 0.4.5 ===
+
+2006-10-23  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* {nf,nectec,tlwg}/Makefile.am: Also install *.afm for Type1 fonts.
+
+2006-10-23  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* COPYING, tlwg/TlwgTypist*.sfd: Update copyright info for TlwgTypist.
+
+2006-07-23  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* {nf,nectec,tlwg}/*.sfd:  Added Foundry info and Thai sample texts.
+
+2006-06-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* README: Replaced mention to PfaEdit with FontForge.
+
+	* COPYING, Makefile.am, +GPL: Added copyright info for individual 
+	fonts. Added GPL file for license term referral.
+
+	* nf/README.1ST, -nf/COPYING, -tlwg/COPYING: Removed the GPL content 
+	and refer to the GPL file at the top directory instead.
+
+2006-04-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypist-Bold[Oblique].sfd: Adjusted splines for Kho Rakhang,
+	Tho Nangmontho, Mo Ma, Do Chada, To Patak, Pho Samphao, Lu.
+
+2006-04-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Makefile.am, +tlwg/TlwgTypist*.sfd: Added TlwgTypist font.
+
+2006-03-26  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/{Purisa,TlwgMono,TlwgTypewriter}*.sfd:  Removed XUID field.
+	The XUID for TlwgTypewriter-Bold[Oblique].sfd were incomplete and
+	caused error with dvips. And, according to Fontforge doc, this field
+	and UniqueID were said by Adobe to be unnecessary.
+
+2006-03-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, NEWS:
+	Version 0.4.4.
+
+2006-03-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd:
+	Cleared OS/2 metrics which caused wide line gaps on OpenOffice.org.
+
+2006-01-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd:
+	Got rid of duplication of version in TTF name. Bumped font versions to
+	reflect recent en/em space change.
+
+2006-01-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/*.sfd:
+	Ensured that version in TTF names were not duplicated. Bumped font
+	versions to reflect recent en/em space change.
+
+2005-12-28  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Purisa.sfd:
+	Got rid of duplication of version in TTF name.  English and Thai
+	sample texts are now provided separately.  (Hope this is still enough
+	to preserve the original writer's handwritten name.)
+
+2005-12-28  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypewriter*.sfd:
+	* tlwg/TlwgMono*.sfd:
+	Fixed Thai fields in TTF names. Bug noticed by cwt (See
+	http://thep.blogspot.com/2005/12/gnome-doc-utils-for-thai.html
+	#c113571022060505822).  Got rid of duplication of version in TTF
+	name, actually fixed previous bug reported by Werner Lemberg in the
+	long run.  English and Thai sample texts are now provided separately.
+
+2005-12-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Purisa.sfd:
+	* nectec/Loma*.sfd:
+	Added enspace, emspace glyphs.
+
+2005-12-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/*.sfd:
+	Added enspace, emspace glyphs.
+
+2005-10-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Formatted configure options help strings with AC_HELP_STRING().
+	Used --disable/--enable help style rather than --enable with default
+	yes or no.
+
+2005-07-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, NEWS:
+	Version 0.4.3.1.
+
+2005-06-30  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Distinguish between Xorg's and XFree86's mkfontdir.
+	Hopefully fixes bug found by K. konnux in LTN forum.
+
+2005-06-30  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	Change the global Version field, rather than the TTF Version, as
+	pointed out by Werner Lemberg <wl@gnu.org>.
+
+	* nf/Garuda*.sfd:
+	Ditto.
+
+	* tlwg/Purisa.sfd:
+	Ditto.
+
+	* tlwg/TlwgMono*.sfd:
+	Ditto.
+
+	* tlwg/TlwgTypewriter*.sfd:
+	Ditto.
+
+	* nectec/Loma*.sfd:
+	Ditto.
+
+2005-06-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* Makefile.am, configure.in, nf/Makefile.am, AUTHORS:
+	Drop DBThaiText and Kinnari from the distribution, as their licenses
+	are still not clear.
+
+	* Makefile.am:
+	Fix uninstall-hook target so fonts.cache-1 is properly removed in each
+	font dir.  Also use 'fc-cache -f <dir>' instead of
+	'fc-cache -f || true'.
+
+	* configure.in, NEWS:
+	Version 0.4.3.
+
+2005-06-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd:
+	- Be more verbose in the license field.
+	- Bump the version field to 0.9.2.1.
+
+2005-06-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgMono*.sfd:
+	- Split the lines in copyright field, as the bug in copyright field
+	  generation is now fixed in the new fontforge.
+	- Identify the license info as GPL.
+	- Bump the version field to 001.001.
+
+2005-06-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Purisa.sfd:
+	- Split the lines in copyright field, as the bug in copyright field
+	  generation is now fixed in the new fontforge.
+	- Identify the license info as GPL.
+	- Bump the version field to 002.001.
+
+2005-06-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	- Edit wording in the copyright field about TLWG part under GPL.
+	  Split the lines, as the bug in copyright field generation is now
+	  fixed in the new fontforge.
+	- Be more verbose in the license field.
+	- Bump the version field to 004.
+
+2005-06-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	- Edit the copyright info about TLWG part under GPL.
+	- Identify the license info as GPL.
+	- Bump the version field to 2.1.
+
+2005-06-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgMono*.sfd:
+	Revoke the ZWSP glyph, as it's not clear how the width should be in
+	monospace fonts.
+
+2005-05-30  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText*.sfd:
+	- Add high variant glyph for Nikhahit (uni0E4D.high), as well as
+	  'ccmp' rule for appropriate glyph selection.
+	- Remove unused "BelowMark" anchor class.
+
+	* db/DBThaiText[-Oblique].sfd:
+	- Make uni200B (zerowidthspace) width actually zero.
+
+	* db/DBThaiText-Bold[Oblique].sfd:
+	- Undefine uni0E3C-uni0E3E, which are not used.
+	- Add uni200B (zerowidthspace) glyph.
+
+2005-05-30  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari*.sfd:
+	- Add high variant glyph for Nikhahit (uni0E4D.high), as well as
+	  'ccmp' rule for appropriate glyph selection.
+	- Remove unused "BelowMark" anchor class.
+	- Make uni200B (zerowidthspace) width actually zero.
+
+2005-05-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypewriter*.sfd, tlwg/TlwgMono*.sfd:
+	Undefine glyphs uni0E3B-uni0E3e, which are not used.
+
+2005-05-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypewriter*.sfd:
+	- Add high variant glyph for Nikhahit (uni0E4D.high), as well as
+	  'ccmp' rule for appropriate glyph selection.
+	- Remove unused "BelowMark" anchor class.
+	- Round (truncate) all anchor coordinates to int.
+	- Add uni200B (zerowidthspace) glyph, replacing the wrongly-placed
+	  U+0E5C.
+
+	* tlwg/TlwgMono*.sfd:
+	Add uni200B (zerowidthspace) glyph, replacing the wrongly-placed
+	U+0E5C.
+
+2005-05-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Purisa.sfd:
+	- Add high variant glyph for Nikhahit (uni0E4D.high), as well as
+	  'ccmp' rule for appropriate glyph selection.
+	- Remove unused "BelowMark" anchor class.
+	- Add uni200B (zerowidthspace) glyph.
+
+2005-05-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd:
+	- Add high variant glyph for Nikhahit (uni0E4D.high), as well as
+	  'ccmp' rule for appropriate glyph selection.
+	- Remove unused "BelowMark" anchor class.
+	- Make uni200B (zerowidthspace) width actually zero.
+
+2005-05-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	- Add high variant glyph for Nikhahit (uni0E4D.high), as well as
+	  'ccmp' rule for appropriate glyph selection.
+	- Remove unused "BelowMark" anchor class.
+	- Round (truncate) all anchor coordinates to int.
+	- Make uni200B (zerowidthspace) width actually zero.
+
+2005-05-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	Remove unused "BelowMark" anchor class.
+
+2005-05-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	- Add high variant glyph for Nikhahit (uni0E4D.high), as well as
+	  'ccmp' rule for appropriate glyph selection. This is to solve the
+	  anchor class overload problem for Nikhahit character.
+	- Make uni200B (zerowidthspace) width actually zero.
+	- round (truncate) all anchor coordinates to int.
+
+2005-04-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	Add missing EXTRA_DIST's in Makefiles.
+
+	* nf/Makefile.am:
+	Add README.1ST
+
+	* tlwg/Makefile.am:
+	Add CREDITS
+
+	* scripts/Makefile.am:
+	Add gen-otf.pe, gen-test-{ttf,pfa,pfb,otf}.pe
+
+2005-04-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma[-Oblique].sfd:
+	Add back anchors missing somehow along editing.
+
+2005-04-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma[-Oblique].sfd:
+	Fine-tune splines.
+
+2005-04-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, Makefile.am:
+	Use 'fc-cache -f <dir>' instead of 'fc-cache -f || true', as once
+	suggested by Poonlap Veerathanabutr.
+
+2005-03-01  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* tlwg/Purisa.sfd:
+	Reduced Copyright to one line.
+
+2005-03-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd, nectec/Loma*.sfd:
+	Add GPL URL in License URL field. Increment Version field.
+
+2005-03-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma[Oblique].sfd:
+	Synchronize Thai glyphs from the author (Sirichai Lerdvorawut).
+
+2005-02-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Fix ttmkdir availability checking variable.
+	(Bug found by K. seal at poppymail.com, discussed in LTN forum.)
+
+2005-02-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* scripts/thaikernpairs.txt:
+	Add more (questionalble) kern pairs.
+
+2005-01-31  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* scripts/Makefile.am, +scripts/{eng,thai}kernpairs.txt:
+	Add kern pairs lists, for use in auto kerning. Engish kern pairs
+	were taken from FontForge documentation, which were in turn taken
+	from Adobe list. Some pairs were commented out, based on experiment.
+	Thai kern pairs were listed from experiment.
+
+2005-01-30  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari*.sfd:
+	More spline clean-ups (mostly duplicated spline removals).
+	
+	* nf/Kinnari-[Bold]Italic.sfd:
+	Make glyphs for Cho Chang and So So different from upright version,
+	according to sample books.. With this, Kho Khai and Kho Khuat are
+	also adjusted accordingly.
+
+2005-01-30  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari-BoldItalic.sfd:
+	Finalize fine tuning splines and adding extremas in Kinnari family.
+	This is for better quality in Type 1 rasterization.
+
+2005-01-28  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari.sfd, nf/Kinnari-Oblique.sfd, nf/Kinnari-Italic.sfd,
+	nf/Kinnari-Bold.sfd, nf/Kinnari-BoldOblique.sfd:
+	Fine tune splines, add extremas, for better quality. (BoldItalic still
+	left to do.)
+
+2005-01-28  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari*.sfd:
+	Add ff fi fl ffi ffl ligatures. Glyphs stolen from Norasi.
+
+2005-01-23  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari-BoldItalic.sfd:
+	Make consonant heads real circles, the same as what was done to
+	Kinnari-Italic.
+
+	* nf/Kinnari-Italic.sfd:
+	Narrow down Ngo Ngu glyph, according to the changed shape.
+
+2005-01-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari-Italic.sfd:
+	Make consonant heads real, rather than skewed, circles. This seems to
+	be a significant characteristic that makes italic shapes look
+	different from oblique.
+
+2005-01-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari-[Bold]Italic.sfd:
+	Untaper Mai-Ek glyphs.
+
+2005-01-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	Fixed malformed Copyright field, which cause error in Postscript
+	applications.
+	(Bug reported by K.Boonlert in thai-latex-user-group mailint list).
+
+2005-01-14  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Makefile.am, +nf/Kinnari-[Bold]Italic.sfd:
+	Add a first version of Kinnari [Bold]Italic, using Latin glyphs from
+	Norasi, and following transformations on Thai glyphs:
+	- All pointed stem tips are leveled.
+	- Tho Thahan and Tho NangMontho diagonal stem is shifted up.
+	- All glyphs are narrowed down by 95.37%, based on proportion of
+	  glyphs in sample book, to make them look slimmer than normal glyphs.
+	- Glyphs are skewed by 15.5 degree, based on italic angle of Latin
+	  glyphs.
+
+2004-11-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* scripts/gen*{pfa,pfb}.pe:
+	Revert glyph variants removal scripts, as the glyphs are still needed
+	for Type 1 fonts.
+
+2004-11-10  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* tlwg/PseudoMono*sfd:
+	Remove them all, change to TlwgTypewriter.
+
+	* tlwg/TlwgTypewriter*sfd:
+	New name for PseudoMono.
+
+	* tlwg/Makefile.am:
+	Change the rule for new name.
+
+2004-10-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd:
+	Change TTF Value "PFM Family" from Serif to Sans-Serif.
+	Change underline position/height from -217/50 to -170/20.
+	Remove exessive LangName 1024.
+	
+	* nectec/Loma-[Bold]Oblique.sfd:
+	Change TTF Unique ID, using Oblique instead of Italic.
+
+	* nectec/Loma*.sfd:
+	Remove glyph for U+007F.
+
+2004-09-19  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, NEWS:
+	Version 0.4.2.
+
+2004-09-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	Scale up 146.48% (based on relative X-height with Times New Roman).
+	Adjust BlueValues accordingly.
+
+2004-08-29  Chanop Silpa-Anan <chanop@debian.org>
+
+	* nf/Norasi.sfd:
+	Clean up cubis spline.
+
+2004-08-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	Scale up 153.28% (based on relative X-height with Arial).
+	Adjust BlueValues accordingly.
+
+2004-08-08  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd:
+	Add GPOS, GSUB.
+
+	* tlwg/PseudoMono*.sfd:
+	Add missing "AboveBase" anchor for MAITAIKHU.
+
+2004-08-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma*.sfd:
+	Rename uni25CC glyph to "dottedcircle".
+	Rename Thai alternate glyphs to "uniXXXX.variant" form.
+
+2004-08-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/PseudoMono*.sfd:
+	Add GPOS, GSUB.
+
+2004-08-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Purisa.sfd:
+	Add GPOS, GSUB.
+
+2004-07-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/Purisa.sfd:
+	Scale up 126% (based on relative average X-height with Comic Sans).
+	No BlueValues nor hint to adjust for this font.
+
+2004-07-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText*.sfd:
+	Scale up 145% (based on relative X-height with Arial).
+	Adjust BlueValues accordingly.
+
+	* nf/Kinnari*.sfd:
+	Scale up 153.6% (based on relative X-height with Times New Roman).
+	Adjust BlueValues accordingly.
+
+2004-06-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText{,-Bold,-Oblique,-BoldOblique}.sfd:
+	Adjust attachment points for tone marks positioning.
+	Adjust Sara I, II, UE, UEE positions to be aligned with base cons.
+
+	* nf/Norasi{,-Bold,-Oblique,-BoldOblique,-Italic,-BoldItalic}.sfd:
+	Fix fi, ff, ffi, ffl 'liga' components.
+
+2004-06-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari{,-Bold,-Oblique,-BoldOblique}.sfd:
+	Adjust attachment points for tone marks positioning.
+
+	* nf/Garuda{,-Bold,-Oblique,-BoldOblique}.sfd:
+	Ditto.
+
+2004-06-11  Chanop Silpa-Anan <chanop@debian.org>
+
+	* nf/Norasi{,-Bold,-Oblique,-BoldOblique,-Italic,-BoldItalic}.sfd:
+	Adjust copyright information within the family.
+
+2004-06-11  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi{,-Bold,-Oblique,-BoldOblique,-Italic,-BoldItalic}.sfd:
+	Add OpenType GPOS and GSUB. Rename Norasi-Regular back to Norasi,
+	so that it can build.
+
+2004-06-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Kinnari{,-Bold,-Oblique,-BoldOblique}.sfd:
+	Add OpenType GPOS and GSUB.
+
+2004-06-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda{,-Bold,-Oblique,-BoldOblique}.sfd:
+	Add OpenType GPOS and GSUB.
+
+2004-06-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText-Bold.sfd:
+	Add OpenType GPOS and GSUB. Adjust Sara-i, Sara-ii positions.
+
+	* db/DBThaiText-[Bold]Oblique.sfd:
+	Transform GPOS and copy GSUB from their upright counterparts.
+
+2004-06-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText.sfd:
+	Add OpenType GPOS and GSUB.
+
+2004-05-25  Chanop Silpa-Anan <chanop@debian.org>
+	* nf/Norasi*.sfd:
+	Fix bad PostScript name.
+
+	* scripts/gen*{pfa,pfb,otf}*:
+	Delete left variants while generating these fonts.
+
+2004-05-15  Chanop Silpa-Anan <chanop@debian.org>
+
+	* nf/Norasi*.sfd:
+	Replace all glyphes with GPL counterparts from Omegafonts, Txfonts,
+	and URW ghostscript fonts projects. Draw new ff, ffi, and ffl
+	ligatures. Reencode all the fonts.
+
+2004-04-16  Chanop Silpa-Anan <chanop@debian.org>
+
+	* nf/Norasi.sfd:
+	Replace all glyphes with GPL counterparts from Omegafonts, Txfonts,
+	and URW ghostscript fonts projects. Draw new ff, ffi, and ffl
+	ligatures.
+
+2004-04-02  Chanop Silpa-Anan <chanop@debian.org>
+
+	* nf/Norasi.sfd:
+	Re-import latin kerning table from Times Roman and Times Roman
+	SmallCaps.
+
+2004-03-31  Chanop Silpa-Anan <chanop@debian.org>
+
+	* nf/Norasi.sfd:
+	Merge latin kerning table from Nimbus Roman.
+
+2004-03-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText-Bold.sfd:
+	Remove excessive PS Private entry. (reported by pang.)
+
+2004-03-25  Chanop Silpa-Anan <chanop@debian.org>
+
+	* nf/Norasi.sfd:
+	Overall Type 1 hinting.
+	Change the shape of oneoldstyle to look like one in Times Roman face.
+	Use glyph reference in as many as possible glyphes.
+
+2004-03-07  Chanop Silpa-Anan <chanop@debian.org>
+
+	* configure.in:
+	Add a quick check for fontforge.
+
+2004-03-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nectec/Loma-{Bold,Oblique,BoldOblique}.sfd:
+	Hyphenate font name and style, for proper generated
+	test font file names.
+
+2004-03-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText.sfd, db/DBThaiText-Bold.sfd:
+	Recalculate BlueValues. Add BlueValues for Thai glyphs.
+	Recalculate stem widths and snaps.
+
+	* db/DBThaiText-Oblique.sfd, db/DBThaiText-BoldOblique.sfd:
+	Recalculate BlueValues. Add BlueValues for Thai glyphs.
+	Remove stem widths and snaps. Apply auto hint.
+
+2004-02-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, Makefile.am, +nectec/Loma*.sfd, +nectec/Makefile.am:
+	Add Loma font from NECTEC (Sirichai Lerdvorawut).
+
+	* AUTHORS:
+	Add Loma font author.
+
+	* nectec/Loma*.sfd:
+	Apply "Round to Int".
+
+2004-02-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* TODO:
+	Update TODO.
+
+	* configure.in:
+	Version 0.4.1
+
+2004-02-21  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* NEWS:
+	Prepare for next release.
+
+	* tests/gen-pdfsample.sh:
+	Add new fonts to the test suite.
+
+	* thaifonts-scalable.spec.in:
+	Add new fonts to the RPM descriptions.
+
+	* tests/Makefile.am:
+	Add missing EXTRA_DIST.
+
+	* AUTHORS:
+	Add TlwgMono, PseudoMono, Purisa author.
+
+2004-02-18  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* tlwg/Purisa.sfd:
+	Fixed letter G. Thank you, K.Vuthichai and K.Chanop.
+
+2004-02-14  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* tlwg/Purisa.sfd:
+	Modified almost all characters, make numbers bigger.
+
+2004-02-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* README:
+	Add link to project page. (Thanks to Vee Satayamas)
+
+	* AUTHORS:
+	Add Kinnari author (DB).
+
+2004-02-02  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* tlwg/TlwgMono.sfd, tlwg/PseudoMono.sfd:
+	Fixed character ! and #.
+	
+2004-01-21  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	Narrow down the dotted circle glyph for proper positioning.
+
+	* nf/Kinnari*.sfd:
+	Narrow down the dotted circle glyph for proper positioning.
+
+	* nf/Makefile.am:
+	Add Kinnari to the distribution.
+
+2004-01-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText*.sfd:
+	Scale down and narrow down the dottedcircle glyph for proper
+	positioning.
+
+	* nf/Garuda*.sfd:
+	Narrow down the dottedcircle glyph for proper positioning.
+
+2003-12-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda-Bold[Oblique].sfd:
+	Redo the underscore fix.
+
+2003-12-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd, db/DBThaiText*.sfd:
+	Scale underlining position according to the new em square.
+	Regulate underlining position in fonts.
+
+2003-12-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda[-Bold].sfd:
+	Import Garuda family from its original Type 1 version provided by
+	Chanop Silpa-Anan in cubic-spline branch, to get rid of estimated
+	splines due to conversion through TTF.
+
+	* nf/Garuda-[Bold]Oblique.sfd:
+	Generate skewed glyphs from upright versions.
+
+	* db/DBThaiText[-Bold].sfd:
+	Import DBThaiText from cubic-spline branch.
+	Redo previous editing: scale up 13%; adjust sizes of digits
+	and + < = > punctuation marks; change glyphs for quotedbl,
+	quotesingle and grave; fix Tho Thahan's right bearing;
+	fix combining characters' widths.
+
+	* db/DBThaiText-[Bold]Oblique.sfd:
+	Generate skewed glyphs from upright versions.
+
+2003-12-01  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* +tlwg/Purisa.sfd, tlwg/AUTHORS, tlwg/CREDITS, tlwg/Makefile.am:
+	Added handwriting font Purisa.
+
+2003-11-26  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* tlwg/PseudoMono.sfd, tlwg/TlwgMono.sfd, tlwg/Makefile.am
+	  +tlwg/TlwgMono-Bold.sfd, +tlwg/TlwgMono-Oblique.sfd
+	  +tlwg/TlwgMono-BoldOblique.sfd:
+	Rounded to init PseudoMono and TlwgMono
+	Add TlwgMono family.
+
+2003-11-25  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* tlwg/PseudoMono.sfd
+	  +tlwg/PseudoMono-Oblique.sfd, +tlwg/PseudoMono-BoldMono.sfd
+	  tlwg/Makefile.am:
+	Fixed vowel and tone mark's level. Added more fonts.
+
+2003-11-24  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* +tests/, scripts/gen-pdfsample.sh.in -> tests/gen-pdfsample.sh,
+	  +tests/test-ttf.sh, +tests/test-pfb.sh, +tests/test-pfa.sh,
+	  +tests/test-otf.sh, +tests/Makefile.am,
+	  scripts/Makefile.am, Makefile.am, configure.in:
+	Add test suite using gen-pdfsample.sh.
+
+2003-11-22  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* tlwg/PseudoMono-Bold.sfd, tlwg/Makefile.am:
+	Add new font PseudoMono-Bold.sfd
+
+2003-11-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText-Oblique.sfd, db/DBThaiText-BoldOblique.sfd:
+	Change italic angle from 18 degree to 12 degree.
+
+	* scripts/gen-pdfsample.sh -> scripts/gen-pdfsample.sh.in,
+	scripts/Makefile.am, configure.in:
+	Use new version of Poonlap's gen-pdfsample.sh script.
+	Use autotools to reference output fonts' path.
+
+	* db/DBThaiText*.sfd:
+	Adjust vertical positions.
+
+	* scripts/gen-pdfsample.sh.in:
+	Fix typo in the "quick brown" message.
+
+2003-11-21  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText*.sfd:
+	Widen vertical spaces.
+
+2003-11-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* +tlwg/PseudoMono.sfd, tlwg/Makefile.am:
+	Add Poonlap Veerathanabutr's Pseudo mono font.
+	Fix typo in OTFFILES.
+
+2003-11-18  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* tlwg/TlwgMono.sfd:
+	Fixed some chracters' shap.
+	Make every characters' width to monospace (600).
+
+2003-11-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, Makefile.am, +tlwg/*:
+	Add Poonlap Veerathanabutr's TlwgMono font.
+
+2003-11-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* +scripts/gen-pdfsample.sh, scripts/Makefile.am:
+	Add script for generating PDF sample from test fonts,
+	submitted by Poonlap Veerathanabutr.
+
+2003-10-14 Chanop Silpa-Anan <chanop@debian.org>
+	* nf/Makefile.am, nf/Norasi*.sfd:
+	Merge Norasi from the post-0-4 branch.
+
+2003-10-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* README, AUTHORS:
+	Compose info.
+
+	* configure.in:
+	Version 0.4.0
+
+2003-10-08  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, nf/Makefile.am, db/Makefile.am:
+	Fix typo in testfontdir configure script.
+	Split configure option --enable-type1 into --enable-pfa and
+	--enable-pfb.
+
+	* configure.in, Makefile.am:
+	Don't configure fontdirs that are not enabled.
+
+2003-10-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Adjust help message for --with-testdir.
+
+2003-10-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* +TODO:
+	Add TODO list for 0.5.0.
+
+	* configure.in, nf/Makefile.am, db/Makefile.am:
+	Use $HOME/.fonts/testfont as default testfontdir, as /dev/null
+	can't be mkdir'd.
+
+	* configure.in:
+	Version 0.3.92.
+
+2003-09-30 Chanop Silpa-Anan <chanop@debian.org>
+	* nf/Makefile.am :
+	Norasi-Italic and Norasi-BoldItalic shall not be released untill
+	the next major release because they have different character sizes
+	and control points to Norasi in the main trunk.
+
+	* nf/Norasi*.sfd :
+	Fix the quote single glyph.
+
+2003-09-29 Chanop Silpa-Anan <chanop@debian.org>
+	* configure.in :
+	Add --enable-otf, with-otfdir, --enable-testfont.
+	--enable-testfont generates fonts with TTF, OTF, and PS prefixed
+	to their regular names.
+
+	* nf/Makefile.am, db/Makefile.am :
+	Corresponding changes to configure.in.
+
+2003-09-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText.sfd:
+	Fix non-zero width of MAI-CHATTAWA.low_left and MAI-TRI.left.
+
+2003-09-24  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText*.sfd:
+	Change glyphs of quotedbl, quotesingle, and grave
+	so they are different from those of smart quotes.
+
+2003-09-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText*.sfd:
+	Apply "Round to Int".
+
+2003-09-19  Vee Satayamas <vee@linux.thai.net>
+
+	* thaifonts-scalable.spec.in:
+	Remove extra files in RPM building.
+
+	* nf/Makefile.am, db/Makefile.am:
+	Use $(top_builddir) instead of @top_builddir@.
+
+2003-09-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText*.sfd:
+	Lift up + < = > to balance with digits.
+
+	* db/DBThaiText{,-Oblique}.sfd:
+	Widen 'c' glyph.
+
+2003-09-10  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Version 0.3.91
+
+2003-09-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText*.sfd:
+	Fine tune upper/lower glyphs positions.
+
+2003-09-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText*.sfd:
+	Adjust positions of Thanthakhat.low, period, comma, colon, semicolon,
+	ellipsis, quotedbl, quotesingle, grave, quoteleft, quoteright,
+	quotedblleft, quotedblright.
+
+	* db/DBThaiText{,-Oblique}.sfd:
+	Scale glyphs of digits 0-9 up to upper-case height.
+	
+2003-09-03  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText{,-Oblique}.sfd:
+	Adjust right bearing of Tho Thahan, which appears ugly when combined
+	with lower vowels at small sizes.
+
+2003-08-28  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText-Bold{,Oblique}.sfd:
+	Fix combining characters' glyph width (to zero).
+
+2003-08-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda-{Bold,BoldOblique}.sfd:
+	Fix underscore (_) glyph.
+
+	* db/DBThaiText{,-Bold}.sfd:
+	Fix combining characters' glyph width (to zero).
+
+2003-08-07  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* thaifonts-scalable.spec.in:
+	Fix sed script in manifest generation, as suggested by
+	Supphachoke Santiwichaya <mrchoke@opentle.org>.
+	Prefer mkfontscale in install scripts.
+
+2003-07-22  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, Makefile.am:
+	Prefer mkfontscale if present, and use it for both type1 and ttf.
+	Always use -e option for mkfontdir.
+
+2003-07-03 Chanop Silpa-Anan <chanop@debian.org>
+	* *.sfd :
+	Change glyph names from PUA to Unicodename.variant.
+	Glyph 0x007f has name .notdef and unicodename U+007F.
+	* Norasi*.sfd:
+	Glyph DEL locates at 0xff with unicodename U+F17B.
+	Thaipaiyalnoi bug in Norasi-Bold.
+
+2003-06-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Make the absence of pfaedit an error, as suggested by 
+	Vee Satayamas <virasj@users.sf.net>.
+
+2003-06-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* thaifonts-scalable.spec.in:
+	Make thai-ttf and thaipst1fonts mutually exclusive.
+	Fix some descriptions.
+
+2003-06-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Version 0.3.90
+
+2003-06-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* thaifonts-scalable.spec.in:
+	Apply spec for creating 2 sperate RPM packages (thai-ttf,
+	thaipst1fonts), as submitted by Vee Satayamas <virasj@users.sf.net>.
+
+2003-06-02  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Makefile.am, db/Makefile.am:
+	Add *.pfb to DISTCLEANFILES.
+
+	* scripts/Makefile.am:
+	Fix typo, as reported by Vee Satayamas <virasj@users.sf.net>.
+
+	* configure.in:
+	Use $prefix in $ttfdir and $type1dir to pass 'make distcheck'.
+
+	* COPYING:
+	Fix wording as suggested by Vee Satayamas <virasj@users.sf.net>.
+
+	* nf/Norasi*.sfd:
+	Adjust BlueValues for base-line stems to be narrower. Add BlueScale.
+	Add missing hints for base-line stems of 'a', 'b', sara-o.
+
+2003-06-01  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* Makefile.am:
+	Additional fix to avoid ambiguity with automake.
+
+2003-05-31  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* Makefile.am:
+	Fix typo in make rules, as suggested by Vee Satayamas
+	<virasj@users.sf.net>.
+
+2003-05-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	Rearrange encoding for more proper 8-bit Type1 fonts.
+
+	* nf/Garuda*.sfd:
+	Rearrange encoding for more proper 8-bit Type1 fonts.
+
+	* db/DBThaiText*.sfd:
+	Rearrange encoding for more proper 8-bit Type1 fonts.
+
+2003-05-26  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* Makefile.am:
+	Fix errors in multi-line rules.
+
+2003-05-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	Add BlueValues, OtherBlues, and ForceBold hints.
+	Apply autohint.
+
+	* db/DBThaiText*.sfd:
+	Add BlueValues, OtherBlues, and ForceBold hints.
+	Apply autohint.
+
+2003-05-24  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	Adjust sara-e and sara-ae height.
+	Add BlueValues, OtherBlues, and ForceBold hinting.
+	Apply autohint.
+
+2003-05-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* +scripts/gen-pfa.pe, +scripts/gen-pfb.pe,
+	  scripts/Makefile.am, scripts/gen.mk.in:
+	Add scripts for generating .pfa and .pfb.
+
+	* configure.in, Makefile.am, nf/Makefile.am, db/Makefile.am:
+	Use $(ttfdir) variable name instead of $(fontdir), so other kinds
+	of fonts can also be issued.
+
+	* configure.in, Makefile.am, nf/Makefile.am, db/Makefile.am:
+	Add conditions for Type1 fonts generation & installation.
+
+	* Makefile.am:
+	Add checking for package building, so font list/cache is not
+	generated in that case.
+
+2003-05-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi*.sfd:
+	Edit U+25CC (dottedcircle) shape so the dots do not overlap.
+
+	* nf/Garuda*.sfd:
+	Add U+25CC (dottedcircle) glyph.
+
+	* db/DBThaiText*.sfd:
+	Add U+25CC (dottedcircle) glyph.
+
+2003-05-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Garuda*.sfd:
+	Edit TTF info: make PFM Family Sans-Serif, add TLWG to Copyright,
+	prepare for Version 1.1,  rename font names to be hyphen-separated
+	like those of Norasi, use "Oblique" instead of "Italic" in Style.
+
+	* nf/Makefile.am, nf/GarudaBold.sfd -> Garuda-Bold.sfd,
+	  nf/GarudaItalic.sfd -> nf/Garuda-Oblique.sfd,
+	  nf/GarudaBoldItalic.sfd -> nf/Garuda-BoldOblique.sfd:
+	Actually rename the font files.
+
+	* nf/Norasi-*.sfd:
+	Edit TTF info: add TLWG to Copyright, prepare for Version 1.1,
+	use "Oblique" instead of "Italic" in Style.
+
+	* nf/Makefile.am, 
+	  nf/Norasi-Italic.sfd -> nf/Norasi-Oblique.sfd,
+	  nf/Norasi-BoldItalic.sfd -> nf/Norasi-BoldOblique.sfd:
+	Actually rename the font files.
+
+	* db/DBThaiText*.sfd:
+	Edit TTF info: make PFM Family Sans-Serif, add TLWG to Copyright,
+	prepare for Version 1.1, rename font names to be hyphen-separated
+	like those of Norasi, use "Oblique" instead of "Italic" in Style.
+
+	* db/Makefile.am, db/DBThaiTextBold.sfd -> DBThaiText-Bold.sfd,
+	  db/DBThaiTextItalic.sfd -> db/DBThaiText-Oblique.sfd,
+	  db/DBThaiTextBoldItalic.sfd -> db/DBThaiText-BoldOblique.sfd:
+	Actually rename the font files.
+
+
+2003-05-11  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* nf/Norasi.sfd, nf/Norasi-Bold.sfd, nf/Norasi-Italic.sfd,
+	  nf/Norasi-BoldItalic.sfd:
+	Rename U+25CC glyph to dottedcircle.
+
+2003-05-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiTextItalic.sfd, db/DBThaiTextBoldItalic.sfd:
+	Adjust combining characters positions.
+
+2003-05-01  Poonlap Veerathanabutr <poonlap@linux.thai.net>
+
+	* nf/Norasi.sfd, nf/Norasi-Bold.sfd:
+	Edited circledash (U+25CC) and assigned the correct name.
+
+2003-02-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* db/DBThaiText.sfd, db/DBThaiTextBold.sfd,
+	  db/DBThaiTextItalic.sfd, db/DBThaiTextBoldItalic.sfd:
+	Scale up by 13% to conform to National Font spec.
+	Fix Fongman, AngkhanKhu, Khomut, Baht currency glyphs.
+
+2003-02-17  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* Create thaifonts-scalable project from thai-ttf 0.3.1
+
