@@ -11,6 +11,10 @@ FONTSOURCES = \
 	TlwgTypist-Bold.sfd \
 	TlwgTypist-Oblique.sfd \
 	TlwgTypist-BoldOblique.sfd \
+	TlwgTypo.sfd \
+	TlwgTypo-Bold.sfd \
+	TlwgTypo-Oblique.sfd \
+	TlwgTypo-BoldOblique.sfd \
 	Purisa.sfd \
 	SawasdeeBoldOblique.sfd \
 	SawasdeeBold.sfd \
