@@ -4,6 +4,8 @@ AC_CONFIG_SRCDIR([nf/Garuda.sfd])
 
 AM_INIT_AUTOMAKE
 
+FONTFORGE_MIN_VER=20080110
+
 dnl
 dnl Check options
 dnl
@@ -91,10 +93,10 @@ AC_CHECK_PROGS(FONTFORGE,fontforge,no)
 if test "x$FONTFORGE" = "xno"; then
   AC_MSG_ERROR([You need fontforge to generate fonts.])
 else
-  AC_MSG_CHECKING([for Fontforge >= 20071110])
-  FONTFORGE_VER=`$FONTFORGE --version 2>/dev/null | cut -d' ' -f2`
-  if test $FONTFORGE_VER -lt 20071110; then
-    AC_MSG_ERROR([Requires Fontforge >= 20071110 but $FONTFORGE_VER was found)])
+  AC_MSG_CHECKING([for Fontforge >= $FONTFORGE_MIN_VER])
+  FONTFORGE_VER=`$FONTFORGE --version 2>/dev/null | grep '^fontforge' | cut -d' ' -f2`
+  if test $FONTFORGE_VER -lt $FONTFORGE_MIN_VER; then
+    AC_MSG_ERROR([Requires Fontforge >= $FONTFORGE_MIN_VER but $FONTFORGE_VER was found)])
   fi
   AC_MSG_RESULT([$FONTFORGE_VER found, ok])
 fi

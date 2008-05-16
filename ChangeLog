@@ -1,5 +1,14 @@
 2008-05-16  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
+	* configure.in:
+	  - Bump required fontforge version to 20080110, for SplineFontDB 3.0
+	    format
+	  - Use FONTFORGE_MIN_VER variable instead of hard coding
+	  - Fix fontforge format extraction by ignoring extra lines from
+	    `fontforge --version`
+
+2008-05-16  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
 	* tlwg/Waree*.sfd: Add default script/language to OpenType tables.
 	Bump font version to 0.11.4: 2008-05-16. Save as SplineFontDB 3.0
 	format.
