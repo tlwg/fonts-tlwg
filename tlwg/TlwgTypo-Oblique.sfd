@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153663934
-ModificationTime: 1210936387
+ModificationTime: 1211000846
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Mai Tri Reordering"  {"Thai Phinthu Mai Tri Reorderi
 Lookup: 1 0 0 "Thai Phinthu Mai Chattawa Reordering"  {"Thai Phinthu Mai Chattawa Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Thanthakhat Reordering"  {"Thai Phinthu Thanthakhat Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reordering"  } []
+Lookup: 257 0 0 "Required Feature lookup 0"  {"Non-spacing Marks"  } [' RQD' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
@@ -243,7 +244,7 @@ NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 270 9 4
+WinInfo: 297 9 4
 BeginPrivate: 6
 BlueValues 47 [-16 0 417 431 445 455 563 576 604 604 612 618]
 OtherBlues 11 [-186 -186]
@@ -253,7 +254,7 @@ StemSnapH 7 [41 50]
 StemSnapV 17 [37 42 51 61 496]
 EndPrivate
 AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
-BeginChars: 332 327
+BeginChars: 332 331
 
 StartChar: mu
 Encoding: 116 181 0
@@ -12594,6 +12595,7 @@ Encoding: 282 8203 282
 Width: 600
 Flags: W
 LayerCount: 2
+Position2: "Non-spacing Marks" dx=0 dy=0 dh=-600 dv=0 [ddx={} ddy={} ddh={} ddv={}]
 EndChar
 
 StartChar: uni2010
@@ -13598,6 +13600,42 @@ LayerCount: 2
 Fore
 Refer: 267 3655 N 0.85 0 0 0.85 20 275 2
 Position2: "'mkmk' Thai Above Mark Positioning" dx=0 dy=0 dh=-600 dv=0
+EndChar
+
+StartChar: zerowidthnonjoiner
+Encoding: 327 8204 327
+Width: 600
+VWidth: 0
+Flags: W
+LayerCount: 2
+Position2: "Non-spacing Marks" dx=0 dy=0 dh=-600 dv=0 [ddx={} ddy={} ddh={} ddv={}]
+EndChar
+
+StartChar: zerowidthjoiner
+Encoding: 328 8205 328
+Width: 600
+VWidth: 0
+Flags: W
+LayerCount: 2
+Position2: "Non-spacing Marks" dx=0 dy=0 dh=-600 dv=0 [ddx={} ddy={} ddh={} ddv={}]
+EndChar
+
+StartChar: afii299
+Encoding: 329 8206 329
+Width: 600
+VWidth: 0
+Flags: W
+LayerCount: 2
+Position2: "Non-spacing Marks" dx=0 dy=0 dh=-600 dv=0 [ddx={} ddy={} ddh={} ddv={}]
+EndChar
+
+StartChar: afii300
+Encoding: 330 8207 330
+Width: 600
+VWidth: 0
+Flags: W
+LayerCount: 2
+Position2: "Non-spacing Marks" dx=0 dy=0 dh=-600 dv=0 [ddx={} ddy={} ddh={} ddv={}]
 EndChar
 EndChars
 EndSplineFont
