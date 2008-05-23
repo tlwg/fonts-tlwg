@@ -1,0 +1,305 @@
+%define name @PACKAGE@
+%define version @VERSION@
+%define release 1
+%define ttf_manifest %{_builddir}/%{name}-ttf-%{version}-%{release}.manifest
+%define type1_manifest %{_builddir}/%{name}-type1-%{version}-%{release}.manifest
+%define fontroot /usr/share/fonts
+%define ttfdir %{fontroot}/th/TTF
+%define type1dir %{fontroot}/th/Type1
+
+Name: %{name}
+Version: %{version}
+Release: %{release}
+License: freely redistributable
+Group: Extensions/Thai/font
+Source: %{name}-%{version}.tar.gz
+URL: http://linux.thai.net/cvs/
+Vendor: NECTEC, DearBook, TLWG
+Packager: Theppitak Karoonboonyanan <thep@linux.thai.net>
+Requires: XFree86 > 3.2 
+Prereq: chkfontpath
+BuildArch: noarch
+BuildRoot: /var/tmp/%{name}-%{version}
+Summary: A collection of Thai scalable fonts.
+
+%description
+This package collects Thai scalable fonts available in free licenses.
+
+Thai scalable fonts included here are
+- Kinnari, Garuda and Norasi from the National Font project
+- DB Thai Text from DearBook
+- TlwgMono, PseudoMono, Purisa by TLWG
+
+%package -n thai-ttf
+Summary: A collection of Thai truetype fonts.
+Requires: XFree86 > 3.2  XFree86-font-utils 
+Conflicts: thaipst1fonts
+Group: Extensions/Thai/font
+
+%description -n thai-ttf
+This package collects Thai TrueType fonts available in free licenses.
+
+Thai scalable fonts included here are
+- Kinnari, Garuda and Norasi from the National Font project
+- DB Thai Text from DearBook
+- TlwgMono, PseudoMono, Purisa by TLWG
+
+%package -n thaipst1fonts
+Summary: A collection of Thai Type1 fonts.
+Requires: XFree86 > 3.2 type1inst XFree86-font-utils
+Conflicts: thai-ttf
+Group: Extensions/Thai/font
+
+%description -n thaipst1fonts
+This package collects Thai Type1 fonts available in public free licenses
+
+Thai scalable fonts included here are
+- Kinnari, Garuda and Norasi from the National Font project
+- DB Thai Text from DearBook
+- TlwgMono, PseudoMono, Purisa by TLWG
+
+
+%prep
+%setup
+
+%build
+%configure --with-ttfdir=$RPM_BUILD_ROOT%{ttfdir} \
+	--with-type1dir=$RPM_BUILD_ROOT%{type1dir} \
+	--enable-ttf=yes \
+	--enable-type1=yes
+
+%install
+rm -rf $RPM_BUILD_ROOT
+mkdir -p $RPM_BUILD_ROOT
+%makeinstall
+
+rm -f  $RPM_BUILD_ROOT%{ttfdir}/encodings.dir \
+       $RPM_BUILD_ROOT%{ttfdir}/fonts.dir \
+       $RPM_BUILD_ROOT%{ttfdir}/fonts.scale \
+       $RPM_BUILD_ROOT%{type1dir}/encodings.dir \
+       $RPM_BUILD_ROOT%{type1dir}/fonts.dir \
+       $RPM_BUILD_ROOT%{type1dir}/fonts.scale
+
+
+# __os_install_post is implicitly expanded after the
+# install section... do it now, and then disable it,
+# so all work is done before building manifest.
+
+%{?__os_install_post}
+%define __os_install_post %{nil}
+
+# build the file list automagically into %{manifest}
+rm -f %{ttf_manifest} %{type1_manifest}
+find $RPM_BUILD_ROOT/${ttfdir} \
+	-name '*.ttf' -print \
+	| sed "s,$RPM_BUILD_ROOT,," \
+	> %{ttf_manifest}
+
+find $RPM_BUILD_ROOT/${type1dir} \
+	-name '*.pfb' -print \
+	| sed "s,$RPM_BUILD_ROOT,," \
+	> %{type1_manifest}
+
+%post -n thai-ttf
+cd %{ttfdir}
+if which mkfontscale > /dev/null 2>&1; then
+  mkfontscale -e tis620-0 -e tis620-2
+elif which ttmkfdir > /dev/null 2>&1; then
+  if ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir > /dev/null 2>&1
+  then
+    ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir -o fonts.scale
+    # ttmkfdir 2
+  else
+    ttmkfdir > fonts.scale
+    # ttmkfdir 1
+  fi
+fi
+mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
+if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{ttfdir} > /dev/null)
+then
+	/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{ttfdir}
+fi
+/usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{ttfdir}
+
+# Add dir to XftConfig
+if test -f /etc/X11/XftConfig && \
+   ! grep -e "dir *\"%{ttfdir}\"" /etc/X11/XftConfig > /dev/null; then
+  echo "dir \"%{ttfdir}\"" > /tmp/tmp.$$
+  cat /etc/X11/XftConfig >> /tmp/tmp.$$
+  mv -f /tmp/tmp.$$ /etc/X11/XftConfig
+  xftcache %{ttfdir}
+fi
+
+# Refresh fontconfig cache
+if which fc-cache > /dev/null 2>&1; then
+  fc-cache -f %{fontroot}
+fi
+
+# refresh font for gnome-print
+if which gnome-font-install > /dev/null 2>&1; then
+  gnome-font-install -q
+fi
+
+
+%postun -n thai-ttf
+cd %{ttfdir}
+rm -f fonts.scale fonts.dir encodings.dir
+if which mkfontscale > /dev/null 2>&1; then
+  mkfontscale -e tis620-0 -e tis620-2
+elif which ttmkfdir > /dev/null 2>&1; then
+  if ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir > /dev/null 2>&1
+  then
+    ttmkfdir -e /usr/X11R6/lib/X11/fonts/encodings/encodings.dir -o fonts.scale
+    # ttmkfdir 2
+  else
+    ttmkfdir > fonts.scale
+    # ttmkfdir 1
+  fi
+fi
+if test `head -1 fonts.scale` -gt 0; then
+	mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
+	if (/usr/sbin/chkfontpath --list | grep %{ttfdir} > /dev/null)
+	then
+		/usr/sbin/chkfontpath --remove %{ttfdir}
+	fi
+	/usr/sbin/chkfontpath --add %{ttfdir}
+else
+	rm -f fonts.scale
+	find %{ttfdir} -name fonts.cache-1 -exec rm {} \;
+	cd /; rmdir %{ttfdir}
+	/usr/sbin/chkfontpath --remove %{ttfdir}
+
+	# Remove dir from XftConfig
+	if test -f /etc/X11/XftConfig; then
+		grep -v "dir *\"%{ttfdir}\"" /etc/X11/XftConfig > /tmp/tmp.$$
+		mv -f /tmp/tmp.$$ /etc/X11/XftConfig
+		xftcache %{ttfdir}
+	fi
+fi
+
+# Refresh fontconfig cache
+if which fc-cache > /dev/null 2>&1; then
+  fc-cache -f %{fontroot}
+fi
+
+# refresh font for gnome-print
+if which gnome-font-install > /dev/null 2>&1; then
+  gnome-font-install -q
+fi
+
+%post -n thaipst1fonts
+cd $RPM_BUILD_ROOT%{type1dir}
+if which mkfontscale > /dev/null 2>&1; then
+  mkfontscale -e tis620-0 -e tis620-2
+  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
+else
+  type1inst >/dev/null 2>&1
+fi
+if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{type1dir}) ; then
+	/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{type1dir}
+fi
+/usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{type1dir}
+
+%postun -n thaipst1fonts
+cd $RPM_BUILD_ROOT%{type1dir}
+rm -f type1inst.log Fontmap fonts.scale fonts.dir
+if which mkfontscale > /dev/null 2>&1; then
+  mkfontscale -e tis620-0 -e tis620-2
+  mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
+else
+  type1inst >/dev/null 2>&1
+fi
+if test `head -1 fonts.scale` -gt 0; then
+	mkfontdir -e /usr/X11R6/lib/X11/fonts/encodings
+	if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{type1dir}) ; then
+		/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{type1dir}
+	fi
+	/usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{type1dir}
+else
+	rm -f type1inst.log Fontmap.bak fonts.scale.bak fonts.scale
+	rmdir $RPM_BUILD_ROOT%{type1dir}
+	/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{type1dir}
+fi
+
+
+
+%clean
+#rm -f %{ttf_manifest}
+#rm -f %{type1_manifest}
+#rm -rf $RPM_BUILD_ROOT
+
+%files -n thai-ttf -f %{ttf_manifest}
+%files -n thaipst1fonts -f %{type1_manifest}
+%defattr(-,root,root)
+#%doc README
+#%docdir
+#%config
+
+%changelog
+* Sat Feb 21 2004 Theppitak Karoonboonyanan <thep@linux.thai.net>
+- Add new fonts in the descriptions.
+
+* Thu Sep 18 2003 Vee Satayamas <vee@linux.thai.net>
+- Remove encodings.dir, fonts.dir, fonts.scale, encodings.dir, 
+  fonts.dir and fonts.scale.
+
+* Thu Aug 07 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
+- Fix sed script in manifest generation, as suggested by
+  Supphachoke Santiwichaya <mrchoke@opentle.org>
+- Prefer mkfontscale
+
+* Thu Jun 12 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
+- Make thai-ttf and thaipst1fonts mutually exclusive
+- Fix some descriptions
+
+* Tue Jun 03 2003 Vee Satayamas <virasj@users.sf.net>
+- Use sed insteads of Ruby
+
+* Mon Jun 02 2003 Vee Satayamas <virasj@users.sf.net>
+- Split the package into thai-ttf and thaipst1font
+
+* Tue Dec 24 2002 Theppitak Karoonboonyanan <thep@linux.thai.net>
++ 0.3.1-1
+- Version 0.3.1
+
+* Sat Dec 21 2002 Theppitak Karoonboonyanan <thep@linux.thai.net>
+- Change fontdir from %{fontroot}/TIS-620/TrueType to %{fontroot}/th/TTF
+- Change URL to point to CVS snapshot
+
+* Mon Dec 16 2002 Theppitak Karoonboonyanan <thep@linux.thai.net>
++ 0.3.0-2
+- Add xftcache calling, as per Supphachoke's suggestion
+- Add -f option to fc-cache calling
+- Split %{fontroot} from %{fontdir}, as fontconfig manipulation units
+
+* Mon Dec 09 2002 Theppitak Karoonboonyanan <thep@linux.thai.net>
++ 0.3.0-1
+- Add supports for mkfontscale and fontconfig
+- Add checks for XftConfig existence before updating
+- Polish %post and %postun scripts, remove cluttered $RPM_BUILD_ROOT
+
+* Sun Jan 20 2002 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
++ 0.2.1-4
+- Add %post and %postun scripts to refresh font for gnome-print.
+
+* Wed Jan 16 2002 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
++ 0.2.1-3
+- Add %post and %postun scripts to manipulate /etc/X11/XftConfig.
+- Change font directory back to /usr/share/fonts/TIS-620/TrueType.
+
+* Tue Dec 19 2001 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+- Fix encoding path in ttmkfdir -e.
+- Fix %postun script: remove fonts.scale before rmdir.
+
+* Tue Dec 18 2001 Phattanon Duangdara <sf_alpha@yahoo.com> 0.2.1-2
+- Change font directory to /usr/share/fonts/th/TrueType.
+- Fixup ttmkfdir call use -o for output in %post and %postun stage.
+
+* Sun Nov 25 2001 Theppitak Karoonboonyanan <thep@links.nectec.or.th> 0.2.1-1
+- Add thai-ttf.spec.in into the source tarball.
+- Add BuildArch: section.
+- Remove unneccessary 'make' in %build stage.
+- Filter out dynamic files from menifest.
+- Add ttmkfontdir and mkfontdir in %post stage.
+- Add checking for existing fonts in %postun stage.
+
