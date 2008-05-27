@@ -1,11 +1,28 @@
-thaifonts-scalable (1:0.4.9-2) UNRELEASED; urgency=low
+thaifonts-scalable (1:0.4.10-1) unstable; urgency=low
 
   * Fix CVSROOT in Vcs-Cvs, so it really works with debcheckout.
   * Build-dep-indep on dpkg-dev (>= 1.14.13), for proper support of Vcs-Cvs
     field.
   * debian/copyright: Add missing license info for debian/*.
+  * New upstream release.
+  * Bump fontforge build-dep to (>= 0.0.20080110), as required by new upstream.
+  * Add new font info
+    + debian/{ttf,otf,t1}-thai-tlwg.defomahints:
+      - Add defoma hints for TlwgTypo
+    + debian/t1-thai-tlwg.scale:
+      - Add fonts.scale entries for TlwgTypo
+      - Fix typos for TlwgTypist entries
+    + debian/copyright:
+      - Add copyright info for TlwgTypo
+  * debian/copyright:
+    - Add default Files section
+    - Add subdirectories to file patterns
+    - Remove inline license file referals, and use usual Debian text at the
+      bottom instead
+    - Update format to current proposal
+  * debian/control: Add DM-Upload-Allowed.
 
- -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Mon, 31 Mar 2008 16:53:07 +0700
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Fri, 23 May 2008 13:31:41 +0700
 
 thaifonts-scalable (1:0.4.9-1) unstable; urgency=low
 
