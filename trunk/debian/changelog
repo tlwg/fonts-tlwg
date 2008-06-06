@@ -1,9 +1,12 @@
-thaifonts-scalable (1:0.4.10-2) UNRELEASED; urgency=low
+thaifonts-scalable (1:0.4.10-2) unstable; urgency=low
 
   * debian/watch: Fix watch pattern so that only *.tar.gz is matched, not
     *.tar.gz.md5sum.
+  * debian/control, debian/rules: Use quilt to manage patches.
+  * debian/patches/01_fontconfig_prefer: Patch taken from upstream CVS to make
+    fontconfig prefer the installed fonts over central fontconfig's config.
 
- -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sat, 31 May 2008 08:19:16 +0700
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Fri, 06 Jun 2008 15:31:57 +0700
 
 thaifonts-scalable (1:0.4.10-1) unstable; urgency=low
 

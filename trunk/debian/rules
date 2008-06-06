@@ -5,8 +5,10 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+include /usr/share/quilt/quilt.make
+
 configure: configure-stamp
-configure-stamp:
+configure-stamp: patch
 	dh_testdir
 
 	./configure --enable-pfb --with-type1dir=/usr/share/fonts/X11/Type1 \
@@ -25,7 +27,7 @@ build-stamp: configure-stamp
 
 	touch build-stamp
 
-clean:
+clean: unpatch
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp configure-stamp
