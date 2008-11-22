@@ -5,10 +5,8 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-include /usr/share/quilt/quilt.make
-
 configure: configure-stamp
-configure-stamp: patch
+configure-stamp:
 	dh_testdir
 
 	./configure --enable-pfb --with-type1dir=/usr/share/fonts/X11/Type1 \
@@ -27,7 +25,7 @@ build-stamp: configure-stamp
 
 	touch build-stamp
 
-clean: unpatch
+clean:
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp configure-stamp
@@ -45,8 +43,8 @@ install: build
 
 	# borrow fontconfig spec from ttf-thai-tlwg for otf-thai-tlwg
 	mkdir -p debian/otf-thai-tlwg/etc/fonts/conf.avail
-	cp fontconfig/65-ttf-thai-tlwg.conf \
-	  debian/otf-thai-tlwg/etc/fonts/conf.avail/65-otf-thai-tlwg.conf
+	cp fontconfig/64-ttf-thai-tlwg.conf \
+	  debian/otf-thai-tlwg/etc/fonts/conf.avail/64-otf-thai-tlwg.conf
 	cp fontconfig/90-ttf-thai-tlwg-synthetic.conf \
 	  debian/otf-thai-tlwg/etc/fonts/conf.avail/90-otf-thai-tlwg-synthetic.conf
 

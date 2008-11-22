@@ -1,3 +1,26 @@
+thaifonts-scalable (1:0.4.11-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+  * Update fontconfig files in sync to upstream:
+    - debian/{ttf,otf}-thai-tlwg.links: Update links for fontconfig files
+    - debian/rules: Ditto for fontconfig file installation for otf-thai-tlwg
+  * Patch works:
+    - debian/patches/01_fontconfig_prefer: Removed, included upstream
+    - debian/patches/series, debian/patches: Removed, unneeded
+    - debian/control, debian/rules: Drop quilt build-dep
+  * debian/copyright: Updated format to proposal rev. 384:
+    - Drop Packaged-By, Packaged-Date
+    - Add Upstream-Name, Upstream-Maintainer
+    - Replace Upstream-Author with Upstream-Maintainer
+    - Replace Original-Source-Location with Upstream-Source
+    - Use one Copyright statement per field
+    - Use 'Copyright' instead of '©'
+    - Replace 'GPL-2+ | other' with  'GPL-2+-By-Font' and split its
+      description into standalone field
+  * Bump Standards-Version to 3.8.0 (no changes needed)
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Fri, 21 Nov 2008 19:32:28 +0700
+
 thaifonts-scalable (1:0.4.10-2) unstable; urgency=low
 
   * debian/watch: Fix watch pattern so that only *.tar.gz is matched, not
