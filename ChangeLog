@@ -1,3 +1,15 @@
+2009-03-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* fontconfig/90-ttf-thai-tlwg-synthetic.conf:
+	  - Rewrite matching rules for synthesizing Windows fonts, so that the
+	    scaling matrices are only applied to the matched fonts, not to the
+	    entire pattern. The old rules caused problem when multiple families
+	    are listed in CSS, where the matched font was always scaled down,
+	    no matter what it was, if one of the synthesized fonts appeared in
+	    the pattern.
+	  - Fallback missing Tahoma with unscaled Waree, MS Sans Serif with
+	    Loma.
+
 2008-11-21  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* configure.in, NEWS:
