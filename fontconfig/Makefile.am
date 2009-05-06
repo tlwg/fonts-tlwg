@@ -1,4 +1,4 @@
-CONFIG_FILES = 64-ttf-thai-tlwg.conf 90-ttf-thai-tlwg-synthetic.conf
+CONFIG_FILES = 64-ttf-thai-tlwg.conf 89-ttf-thai-tlwg-synthetic.conf
 
 EXTRA_DIST = $(CONFIG_FILES)
 
