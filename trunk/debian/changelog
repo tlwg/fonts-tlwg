@@ -1,3 +1,17 @@
+thaifonts-scalable (1:0.4.12-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+  * Update fontconfig files in sync to upstream:
+    - debian/{ttf,otf}-thai-tlwg.links: Update links for fontconfig files
+    - debian/rules: Ditto for fontconfig file installation for otf-thai-tlwg
+  * debian/ttf-thai-tlwg.preinst, debian/otf-thai-tlwg.preinst:
+    - Clean up obsolete conffiles, for piuparts cleanness:
+      /etc/fonts/conf.avail/90-ttf-thai-tlwg-synthetic.conf
+      /etc/fonts/conf.avail/90-otf-thai-tlwg-synthetic.conf
+  * Bump Standards-Version to 3.8.2 (no changes needed)
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Fri, 19 Jun 2009 13:30:22 +0700
+
 thaifonts-scalable (1:0.4.11-3) unstable; urgency=low
 
   * VCS moved from CVS to SVN; update Vcs-* fields accordingly.
