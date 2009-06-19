@@ -38,6 +38,9 @@ case "$1" in
         if dpkg --compare-versions "$2" le "1:0.4.11-1"; then
 	    rm_conffile otf-thai-tlwg "/etc/fonts/conf.avail/65-otf-thai-tlwg.conf"
 	fi
+        if dpkg --compare-versions "$2" le "1:0.4.11-3"; then
+	    rm_conffile otf-thai-tlwg "/etc/fonts/conf.avail/90-otf-thai-tlwg-synthetic.conf"
+	fi
     ;;
 
     abort-upgrade)
