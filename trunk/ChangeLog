@@ -1,3 +1,20 @@
+2009-06-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	Rearrange make rules.
+
+	* {nf,nectec,tlwg}/Makefile.am:
+	  - Use make pattern subst to generate lists of generated files instead
+	    of sed in $(shell).
+
+	* configure.in, scripts/Makefile.am,
+	  scripts/gen.mk.in -> scripts/gen.mk:
+	  - Don't bother generating gen.mk from gen.mk.in template. Just use
+	    the $(FONTFORGE) variable provided by the configure script.
+
+	* {nf,nectec,tlwg}/Makefile.am:
+	  - Include gen.mk directly from $(top_srcdir)/... instead of from
+	    $(top_builddir)/...
+
 2009-06-24  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* tlwg/TlwgTypist*.sfd:

@@ -16,17 +16,17 @@ FONTSOURCES = \
 	Norasi-Italic.sfd \
 	Norasi.sfd
 
-TTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.ttf/g')
-OTFFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.otf/g')
-AFMFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.afm/g')
-PFAFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.pfa/g')
-PFBFILES = $(shell echo $(FONTSOURCES) | sed 's/.sfd/.pfb/g')
+TTFFILES = $(FONTSOURCES:.sfd=.ttf)
+OTFFILES = $(FONTSOURCES:.sfd=.otf)
+AFMFILES = $(FONTSOURCES:.sfd=.afm)
+PFAFILES = $(FONTSOURCES:.sfd=.pfa)
+PFBFILES = $(FONTSOURCES:.sfd=.pfb)
 
-TESTTTFFILES = $(shell echo $(TTFFILES) | sed 's/[-A-Za-z]*.ttf/TTF&/g')
-TESTOTFFILES = $(shell echo $(OTFFILES) | sed 's/[-A-Za-z]*.otf/OTF&/g')
+TESTTTFFILES = $(TTFFILES:[-A-Za-z]%.ttf=TTF%.ttf)
+TESTOTFFILES = $(OTFFILES:[-A-Za-z]%.otf=OTF%.otf)
 
-TESTAFMFILES = $(shell echo $(AFMFILES) | sed 's/[-A-Za-z]*.afm/PS&/g')
-TESTPFBFLES = $(shell echo $(PFBFILES) | sed 's/[-A-Za-z]*.pfb/PS&/g')
+TESTAFMFILES = $(AFMFILES:[-A-Za-z]*.afm=PS%.afm)
+TESTPFBFLES  = $(PFBFILES:[-A-Za-z]*.pfb=PS%.pfb)
 TESTTYPE1FILES = $(TESTPFBFILES) $(TESTAFMFILES)
 
 
@@ -58,4 +58,4 @@ if INCLUDE_TESTFONT
 testfont_DATA = $(TESTTTFFILES) $(TESTTYPE1FILES) $(TESTOTFFILES)
 endif
 
-include $(top_builddir)/scripts/gen.mk
+include $(top_srcdir)/scripts/gen.mk
