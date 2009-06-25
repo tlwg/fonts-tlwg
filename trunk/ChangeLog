@@ -1,5 +1,15 @@
 2009-06-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
+	Put duplicated make rules into the common file.
+
+	* scripts/Makefile.am, scripts/gen.mk -> scripts/gen.mk.am:
+	Copy the common rule stubs from components' Makefile.am, put it into a
+	new name that implies automake content.
+	* {nf,nectec,tlwg}/Makefile.am:
+	Remove common rules and include gen.mk.am instead of gen.mk.
+
+2009-06-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
 	Rearrange make rules.
 
 	* {nf,nectec,tlwg}/Makefile.am:
