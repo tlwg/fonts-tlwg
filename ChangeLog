@@ -1,5 +1,16 @@
 2009-06-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
+	* tlwg/Makefile.am,
+	  tlwg/SawasdeeOblique.sfd     -> tlwg/Sawasdee-Oblique.sfd,
+	  tlwg/SawasdeeBold.sfd        -> tlwg/Sawasdee-Bold.sfd,
+	  tlwg/SawasdeeBoldOblique.sfd -> tlwg/Sawasdee-BoldOblique.sfd:
+	Rename font source files for consistency with other fonts, and to
+	prevent unconditional re-make due to disparity between the target
+	patterns in gen.mk.am and the actual names of the files generated
+	from gen-test-*.pe scripts.
+
+2009-06-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
 	* scripts/gen.mk.am: Fix subst patterns for test font files.
 
 2009-06-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
