@@ -1,3 +1,17 @@
+2009-06-26  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* tlwg/TlwgTypo[-Oblique].sfd:
+	  - Re-apply autohints with diag hints, w/o bounding box hints.
+	  - Manually hint dots for 'i' and 'j' glyphs.
+
+	* tlwg/TlwgTypo-Bold[Oblique].sfd:
+	  - Manually embolden Thai glyphs, to match Latin weight, not
+	    auto-emboldening like TlwgTypist, to prevent self-overlaps.
+	  - Adjust BlueValues and StemSnapV/StemSnapH accordingly.
+
+	* tlwg/TlwgTypo*.sfd:
+	  - Bump font version to 002.004: 2009-06-26.
+
 2009-06-25  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* tlwg/Makefile.am,
