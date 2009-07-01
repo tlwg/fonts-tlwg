@@ -1,3 +1,17 @@
+2009-07-01  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	Add bold face for Purisa, to ensure availability of all glyphs
+	(LP: #313427).
+
+	* tlwg/Purisa.sfd:
+	  - Fix path direction in glyphs.
+	* tlwg/Makefile.am, +tlwg/Purisa-Bold.sfd:
+	  - Add bold face with manually emboldened glyphs.
+	* tlwg/Purisa*.sfd:
+	  - Add StdVW, StemSnapV, StdHW, StemSnapH.
+	  - Add ForceBold for Purisa-Bold.
+	  - Re-apply autohints.
+
 2009-06-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* tlwg/TlwgTypist-Bold[Oblique].sfd: Add missing BlueValues for
