@@ -1,3 +1,21 @@
+thaifonts-scalable (1:0.4.13-2) unstable; urgency=low
+
+  * debian/control:
+    - Update my e-mail address to @debian.org.
+    - Drop DM-Upload-Allowed.
+    - Drop Conflicts/Replaces on the long-removed xfonts-thai-tlwg for
+      ttf-thai-tlwg.
+  * debian/copyright:
+    - Update my e-mail address for debian/* to @debian.org.
+  * Bump Standards-Version to 3.8.3 (no changes needed)
+  * Rebuilt against defoma (>= 0.11.10-2) to get rid of lintian warnings.
+  * Switch to "3.0 (quilt)" source format.
+  * Merge Ubuntu changes:
+    - patches/01_remove_tahoma_fallback.diff: Added:
+      Remove fallback from Tahoma to Waree (LP: #434054)
+
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Wed, 02 Dec 2009 00:44:10 +0700
+
 thaifonts-scalable (1:0.4.13-1) unstable; urgency=low
 
   * New upstream bugfix release.
