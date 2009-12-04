@@ -1,3 +1,24 @@
+thaifonts-scalable (1:0.4.13-3) unstable; urgency=low
+
+  * Drop defoma support, according to
+    http://wiki.debian.org/OldPkgRemovals#defoma :
+    - debian/control: Drop Build-Depends on defoma; drop Depends on defoma,
+      x-ttcidfont-conf
+    - debian/rules: Drop dh_installdefoma call 
+    - debian/{t1,ttf,otf}-thai-tlwg.defoma-hints: Removed 
+    - debian/{ttf,otf}-thai-tlwg.preinst: Remove obsolete defoma hints files
+    - debian/t1-thai-tlwg.preinst: Added to remove obsolete defoma hints file
+  * debian/{t1,ttf,otf}-thai-tlwg.preinst:
+    - Adjust rm_conffile() to avoid messy escape sequences in sed expression
+    - Use local vars where possible
+    - Drop the cleanings of /etc/fonts/conf.avail/65-{ttf,otf}-thai-tlwg.conf,
+      which have gone since lenny release
+    - Compare old package version with "lt-nl $FIRST_REMOVED_VERSION" instead
+      of "le $LAST_VERSION", as $LAST_VERSION is actually undefined with
+      derivative distros or security/volatile updates concerned
+
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Fri, 04 Dec 2009 11:11:25 +0700
+
 thaifonts-scalable (1:0.4.13-2) unstable; urgency=low
 
   * debian/control:

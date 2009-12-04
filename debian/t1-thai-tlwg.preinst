@@ -1,5 +1,5 @@
 #! /bin/sh
-# preinst script for otf-thai-tlwg
+# preinst script for t1-thai-tlwg
 #
 # see: dh_installdeb(1)
 
@@ -34,15 +34,12 @@ rm_conffile() {
 
 case "$1" in
     install|upgrade)
-        if dpkg --compare-versions "$2" lt-nl "1:0.4.12-1"; then
-	    rm_conffile otf-thai-tlwg "/etc/fonts/conf.avail/90-otf-thai-tlwg-synthetic.conf"
-	fi
         if dpkg --compare-versions "$2" lt-nl "1:0.4.13-3"; then
-            local HINTS_FILE="/etc/defoma/hints/otf-thai-tlwg.hints"
+            local HINTS_FILE="/etc/defoma/hints/t1-thai-tlwg.hints"
             if [ -f $HINTS_FILE ] && [ -x /usr/bin/defoma-font ]; then
                 defoma-font purge-all $HINTS_FILE || true
             fi
-	    rm_conffile otf-thai-tlwg $HINTS_FILE
+	    rm_conffile t1-thai-tlwg $HINTS_FILE
 	fi
     ;;
 
