@@ -35,7 +35,7 @@ rm_conffile() {
 case "$1" in
     install|upgrade)
         if dpkg --compare-versions "$2" lt-nl "1:0.4.13-3"; then
-            local HINTS_FILE="/etc/defoma/hints/t1-thai-tlwg.hints"
+            HINTS_FILE="/etc/defoma/hints/t1-thai-tlwg.hints"
             if [ -f $HINTS_FILE ] && [ -x /usr/bin/defoma-font ]; then
                 defoma-font purge-all $HINTS_FILE || true
             fi
