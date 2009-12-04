@@ -3,8 +3,8 @@ Section: fonts
 Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
 Build-Depends: debhelper (>= 7)
-Build-Depends-Indep: defoma (>= 0.7.0), fontforge (>= 0.0.20080110),
- xfonts-utils, dpkg-dev (>= 1.14.13)
+Build-Depends-Indep: fontforge (>= 0.0.20080110), xfonts-utils,
+ dpkg-dev (>= 1.14.13)
 Vcs-Svn: http://linux.thai.net/svn/software/thaifonts-scalable
 Vcs-Browser: http://linux.thai.net/websvn/wsvn/software.thaifonts-scalable/?sc=0
 Homepage: http://linux.thai.net/projects/thaifonts-scalable
@@ -12,7 +12,7 @@ Standards-Version: 3.8.3
 
 Package: t1-thai-tlwg
 Architecture: all
-Depends: defoma, xfonts-utils (>= 1:1.0.0-4), ${misc:Depends}
+Depends: xfonts-utils (>= 1:1.0.0-4), ${misc:Depends}
 Description: Thai fonts in Type1 format
  This package provides some free-licensed fonts that are enhanced
  by developpers from Thai Linux Working Group in Type1 format.
@@ -27,7 +27,7 @@ Description: Thai fonts in Type1 format
 
 Package: ttf-thai-tlwg
 Architecture: all
-Depends: defoma, x-ttcidfont-conf, ${misc:Depends}
+Depends: ${misc:Depends}
 Description: Thai fonts in TrueType format
  This package provides some free-licensed fonts that are enhanced
  by developpers from Thai Linux Working Group in TrueType format.
@@ -53,7 +53,7 @@ Description: Thai fonts in TrueType format for D-I use
 
 Package: otf-thai-tlwg
 Architecture: all
-Depends: defoma, x-ttcidfont-conf, ${misc:Depends}
+Depends: ${misc:Depends}
 Description: Thai fonts in OpenType format
  This package provides some free-licensed fonts that are enhanced
  by developpers from Thai Linux Working Group in OpenType format.

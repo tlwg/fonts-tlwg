@@ -13,33 +13,36 @@ set -e
 #
 # For details see /usr/share/doc/packaging-manual/
 
-# Remove a no-longer used conffile
+# Remove obsolete conffile
 rm_conffile() {
-    PKGNAME="$1"
-    CONFFILE="$2"
+    local PKGNAME="$1"
+    local CONFFILE="$2"
+    [ -e "$CONFFILE" ] || return 0
 
-    if [ -e "$CONFFILE" ]; then
-        md5sum="`md5sum \"$CONFFILE\" | sed -e \"s/ .*//\"`"
-        old_md5sum="`dpkg-query -W -f='${Conffiles}' $PKGNAME \
-                    | sed -n -e \"\\\\' $CONFFILE'{s/ obsolete$//;s/.* //p}\"`"
-        if [ "$md5sum" != "$old_md5sum" ]; then
-            echo "Obsolete conffile $CONFFILE has been modified by you."
-            echo "Saving as $CONFFILE.dpkg-bak ..."
-            mv -f "$CONFFILE" "$CONFFILE".dpkg-bak
-        else
-            echo "Removing obsolete conffile $CONFFILE ..."
-            rm -f "$CONFFILE"
-        fi
+    local md5sum="`md5sum \"$CONFFILE\" | sed -e \"s/ .*//\"`"
+    local old_md5sum="$(dpkg-query -W -f='${Conffiles}' $PKGNAME \
+                | sed -n -e "\' $CONFFILE ' { s/ obsolete$//; s/.* //; p }")"
+    if [ "$md5sum" != "$old_md5sum" ]; then
+        echo "Obsolete conffile $CONFFILE has been modified by you."
+        echo "Saving as $CONFFILE.dpkg-bak ..."
+        mv -f "$CONFFILE" "$CONFFILE".dpkg-bak
+    else
+        echo "Removing obsolete conffile $CONFFILE ..."
+        rm -f "$CONFFILE"
     fi
 }
 
 case "$1" in
     install|upgrade)
-        if dpkg --compare-versions "$2" le "1:0.4.11-1"; then
-	    rm_conffile ttf-thai-tlwg "/etc/fonts/conf.avail/65-ttf-thai-tlwg.conf"
-	fi
-        if dpkg --compare-versions "$2" le "1:0.4.11-3"; then
+        if dpkg --compare-versions "$2" lt-nl "1:0.4.12-1"; then
 	    rm_conffile ttf-thai-tlwg "/etc/fonts/conf.avail/90-ttf-thai-tlwg-synthetic.conf"
+	fi
+        if dpkg --compare-versions "$2" lt-nl "1:0.4.13-3"; then
+            local HINTS_FILE="/etc/defoma/hints/ttf-thai-tlwg.hints"
+            if [ -f $HINTS_FILE ] && [ -x /usr/bin/defoma-font ]; then
+                defoma-font purge-all $HINTS_FILE || true
+            fi
+	    rm_conffile ttf-thai-tlwg $HINTS_FILE
 	fi
     ;;
 
