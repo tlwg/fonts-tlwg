@@ -38,7 +38,7 @@ case "$1" in
 	    rm_conffile ttf-thai-tlwg "/etc/fonts/conf.avail/90-ttf-thai-tlwg-synthetic.conf"
 	fi
         if dpkg --compare-versions "$2" lt-nl "1:0.4.13-3"; then
-            local HINTS_FILE="/etc/defoma/hints/ttf-thai-tlwg.hints"
+            HINTS_FILE="/etc/defoma/hints/ttf-thai-tlwg.hints"
             if [ -f $HINTS_FILE ] && [ -x /usr/bin/defoma-font ]; then
                 defoma-font purge-all $HINTS_FILE || true
             fi
