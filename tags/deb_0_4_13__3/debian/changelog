@@ -1,0 +1,463 @@
+thaifonts-scalable (1:0.4.13-3) unstable; urgency=low
+
+  * Drop defoma support, according to
+    http://wiki.debian.org/OldPkgRemovals#defoma :
+    - debian/control: Drop Build-Depends on defoma; drop Depends on defoma,
+      x-ttcidfont-conf
+    - debian/rules: Drop dh_installdefoma call 
+    - debian/{t1,ttf,otf}-thai-tlwg.defoma-hints: Removed 
+    - debian/{ttf,otf}-thai-tlwg.preinst: Remove obsolete defoma hints files
+    - debian/t1-thai-tlwg.preinst: Added to remove obsolete defoma hints file
+  * debian/{t1,ttf,otf}-thai-tlwg.preinst:
+    - Adjust rm_conffile() to avoid messy escape sequences in sed expression
+    - Use local vars where possible
+    - Drop the cleanings of /etc/fonts/conf.avail/65-{ttf,otf}-thai-tlwg.conf,
+      which have gone since lenny release
+    - Compare old package version with "lt-nl $FIRST_REMOVED_VERSION" instead
+      of "le $LAST_VERSION", as $LAST_VERSION is actually undefined with
+      derivative distros or security/volatile updates concerned
+
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Fri, 04 Dec 2009 11:11:25 +0700
+
+thaifonts-scalable (1:0.4.13-2) unstable; urgency=low
+
+  * debian/control:
+    - Update my e-mail address to @debian.org.
+    - Drop DM-Upload-Allowed.
+    - Drop Conflicts/Replaces on the long-removed xfonts-thai-tlwg for
+      ttf-thai-tlwg.
+  * debian/copyright:
+    - Update my e-mail address for debian/* to @debian.org.
+  * Bump Standards-Version to 3.8.3 (no changes needed)
+  * Rebuilt against defoma (>= 0.11.10-2) to get rid of lintian warnings.
+  * Switch to "3.0 (quilt)" source format.
+  * Merge Ubuntu changes:
+    - patches/01_remove_tahoma_fallback.diff: Added:
+      Remove fallback from Tahoma to Waree (LP: #434054)
+
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Wed, 02 Dec 2009 00:44:10 +0700
+
+thaifonts-scalable (1:0.4.13-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+    - Fix DTD conformance in fontconfig file. (LP: #387872)
+    - More thinkness for bold faces of TlwgTypo and TlwgTypist families.
+    - Fix spline direction in several fonts. (LP: #313427)
+    - Add variation faces to Purisa.
+    - Improve hints for diagonal stems.
+    - Improve building system.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sat, 25 Jul 2009 15:15:12 +0700
+
+thaifonts-scalable (1:0.4.12-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+  * Update fontconfig files in sync to upstream:
+    - debian/{ttf,otf}-thai-tlwg.links: Update links for fontconfig files
+    - debian/rules: Ditto for fontconfig file installation for otf-thai-tlwg
+  * debian/ttf-thai-tlwg.preinst, debian/otf-thai-tlwg.preinst:
+    - Clean up obsolete conffiles, for piuparts cleanness:
+      /etc/fonts/conf.avail/90-ttf-thai-tlwg-synthetic.conf
+      /etc/fonts/conf.avail/90-otf-thai-tlwg-synthetic.conf
+  * Bump Standards-Version to 3.8.2 (no changes needed)
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Fri, 19 Jun 2009 13:30:22 +0700
+
+thaifonts-scalable (1:0.4.11-3) unstable; urgency=low
+
+  * VCS moved from CVS to SVN; update Vcs-* fields accordingly.
+  * Section moved from 'x11' to 'fonts'.
+  * debian/copyright:
+    - Bump Format-Specification to rev 454
+    - Move 'Files: *' section to top
+    - Update Copyright year for 'debian/*'
+  * Bump debhelper compat to level 7
+    - Bump debian/compat to 7
+    - Build-dep on debhelper (>= 7)
+    - debian/rules:
+      + Replace obsoleted 'dh_clean -k' with 'dh_prep'
+      + Remove *-stamp clean-ups in clean target, as dh_clean now does it
+  * Add '${misc:Depends}' to fix lintian warnings.
+  * Bump Standards-Version to 3.8.1 (no changes needed)
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Fri, 27 Mar 2009 16:05:19 +0700
+
+thaifonts-scalable (1:0.4.11-2) unstable; urgency=low
+
+  * debian/ttf-thai-tlwg.preinst, debian/otf-thai-tlwg.preinst:
+    - Clean up obsolete conffiles, for piuparts cleanness:
+      /etc/fonts/conf.avail/65-ttf-thai-tlwg.conf
+      /etc/fonts/conf.avail/65-otf-thai-tlwg.conf
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sat, 22 Nov 2008 11:02:40 +0700
+
+thaifonts-scalable (1:0.4.11-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+  * Update fontconfig files in sync to upstream:
+    - debian/{ttf,otf}-thai-tlwg.links: Update links for fontconfig files
+    - debian/rules: Ditto for fontconfig file installation for otf-thai-tlwg
+  * Patch works:
+    - debian/patches/01_fontconfig_prefer: Removed, included upstream
+    - debian/patches/series, debian/patches: Removed, unneeded
+    - debian/control, debian/rules: Drop quilt build-dep
+  * debian/copyright: Updated format to proposal rev. 384:
+    - Drop Packaged-By, Packaged-Date
+    - Add Upstream-Name, Upstream-Maintainer
+    - Replace Upstream-Author with Upstream-Maintainer
+    - Replace Original-Source-Location with Upstream-Source
+    - Use one Copyright statement per field
+    - Use 'Copyright' instead of '©'
+    - Replace 'GPL-2+ | other' with  'GPL-2+-By-Font' and split its
+      description into standalone field
+  * Bump Standards-Version to 3.8.0 (no changes needed)
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Fri, 21 Nov 2008 19:32:28 +0700
+
+thaifonts-scalable (1:0.4.10-2) unstable; urgency=low
+
+  * debian/watch: Fix watch pattern so that only *.tar.gz is matched, not
+    *.tar.gz.md5sum.
+  * debian/control, debian/rules: Use quilt to manage patches.
+  * debian/patches/01_fontconfig_prefer: Patch taken from upstream CVS to make
+    fontconfig prefer the installed fonts over central fontconfig's config.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Fri, 06 Jun 2008 15:31:57 +0700
+
+thaifonts-scalable (1:0.4.10-1) unstable; urgency=low
+
+  * Fix CVSROOT in Vcs-Cvs, so it really works with debcheckout.
+  * Build-dep-indep on dpkg-dev (>= 1.14.13), for proper support of Vcs-Cvs
+    field.
+  * debian/copyright: Add missing license info for debian/*.
+  * New upstream release.
+  * Bump fontforge build-dep to (>= 0.0.20080110), as required by new upstream.
+  * Add new font info
+    + debian/{ttf,otf,t1}-thai-tlwg.defomahints:
+      - Add defoma hints for TlwgTypo
+    + debian/t1-thai-tlwg.scale:
+      - Add fonts.scale entries for TlwgTypo
+      - Fix typos for TlwgTypist entries
+    + debian/copyright:
+      - Add copyright info for TlwgTypo
+  * debian/copyright:
+    - Add default Files section
+    - Add subdirectories to file patterns
+    - Remove inline license file referals, and use usual Debian text at the
+      bottom instead
+    - Update format to current proposal
+  * debian/control: Add DM-Upload-Allowed.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Fri, 23 May 2008 13:31:41 +0700
+
+thaifonts-scalable (1:0.4.9-1) unstable; urgency=low
+
+  * New upstream release
+    - Reintroduced font: Kinnari (plus Angsana synthesizing).
+    - New font: Umpush (plus Cordia synthesizing).
+    - Improved OpenType tables for broader range of applications.
+    - Mark repositioning for certain Thai consonants with deep right stems
+      like CHO CHING, NO NEN, NO NU, SO RUSI.
+    - Scaled-down high variant of MAITAIKHU.
+    - More consistent line spacing for Garuda, Norasi.
+    - More uses of references, for compact generated files and maintainability.
+    - Various manual hint adjustments.
+    - Smoother stem hints.
+  * Add new fonts
+    + debian/{ttf,otf,t1}-thai-tlwg.defoma-hints:
+      - Add defoma hints for new fonts (Kinnari, Umpush)
+    + debian/t1-thai-tlwg.scale:
+      - Add fonts.scale entries for new fonts (Kinnari, Umpush)
+    + debian/copyright:
+      - Add copyright info for new fonts (Kinnari, Umpush)
+  * Adjust package descriptions. Do not try to elaborate all font names.
+    Just mention important ones and add some explanations about its purpose
+    and which binary package to install.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sat, 19 Jan 2008 12:53:48 +0700
+
+thaifonts-scalable (1:0.4.8-1) unstable; urgency=low
+
+  * New upstream release
+    - New fonts: Sawasdee, Waree
+    - TrueType instructions (hints) (requires fontforge >= 20071110)
+    - More spline refinement and glyph height consistency cleanup
+    - Synthetic Browallia font using Garuda via fontconfig
+  * Add Vcs-Cvs, Vcs-Browser, and Homepage info.
+  * Do not ignore 'make clean' error.
+  * Set versioned Build-Dep on fontforge >= 0.0.20071110, as required by new
+    upstream version.
+  * Add new fonts
+    + debian/{ttf,otf,t1}-thai-tlwg.defoma-hints:
+      - Add defoma hints for new fonts (Sawasdee, Waree)
+    + debian/t1-thai-tlwg.scale:
+      - Add fonts.scale entries for new fonts (Sawasdee, Waree)
+    + debian/copyright:
+      - Rearrange in machine-interpretable format
+      - Add copyright info for new fonts (Sawasdee, Waree)
+  * Add new fontconfig
+    + debian/rules, debian/otf-thai-tlwg.links:
+      - Install and create link for 95-otf-thai-tlwg-synthetic.conf
+    + debian/ttf-thai-tlwg.{install,links}:
+      - Install and create link for 95-ttf-thai-tlwg-synthetic.conf
+  * Bump standard version to 3.7.3.0, no change needed.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Mon, 10 Dec 2007 16:49:08 +0700
+
+thaifonts-scalable (1:0.4.7-1) unstable; urgency=low
+
+  * New upstream release
+    - Fix an error in GSUB rules found in 0.4.6.
+    - Thoroughly refine splines for Garuda, Loma and TlwgTypist, for better
+      (Postscript) hinting.
+    - Add fontconfig spec, taken from Debian package.
+  * debian/fontconfig/*: Drop, integrated upstream.
+  * New package: otf-thai-tlwg
+    + debian/control: package metadata
+    + debian/rules:
+      - add --enable-otf and --with-otfdir configure options
+      - borrow fontconfig spec from ttf-thai-tlwg
+    + debian/otf-thai-tlwg.{docs,install,links}:
+      - add installation lists
+    + debian/otf-thai-tlwg.defoma-hints:
+      - copy defoma hints from ttf-thai-tlwg
+      - use fake "opentype" category, until it's officially supported
+        (see #422763)
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sun, 20 May 2007 16:30:51 +0700
+
+thaifonts-scalable (1:0.4.6-1) unstable; urgency=low
+
+  * Bump debhelper compat version to 5 again.
+  * Remove lintian-override for xfonts-utils dependency, as the lintian bug is
+    now fixed.
+  * Remove mentioning on outdated pfaedit and ttmkfdir dependencies.
+  * debian/rules: make distclean instead of just clean in clean target.
+  * New upstream release
+    - Update glyphs for Loma bold from the original author to match non-rounded
+      shapes in their normal-weight counterparts.
+    - Clear subscript, superscript, strike controls in fonts, to fix weird
+      rendering with Gecko.
+    - Add exception clause to font license, so that documents that embed the
+      fonts are not enforced by GPL.
+    - Improved GSUB tables in fonts, to ensure they work properly with OO.o.
+  * debian/copyright: Update info as per upstream.
+  * debian/control: Remove xfonts-thai-ttf transitional package, and let
+    ttf-thai-tlwg replaces and conflicts it.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sun, 15 Apr 2007 22:15:20 +0700
+
+thaifonts-scalable (1:0.4.5-3) unstable; urgency=medium
+
+  * Urgency medium for getting it into etch, as the involved change is minor.
+  * Revert debhelper version bump, as required by the freeze.
+  * Rename debian/lintian-overrides/ to debian/lintian_overrides/ to resolve
+    conflict in CVS commit.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sun, 14 Jan 2007 10:13:17 +0700
+
+thaifonts-scalable (1:0.4.5-2) unstable; urgency=low
+
+  * Add fontconfig file to register fonts with generic families
+    - debian/fontconfig/65-ttf-thai-tlwg.conf: the config file
+    - debian/ttf-thai-tlwg.install: install the config file to
+      /etc/fonts/conf.avail/
+    - debian/ttf-thai-tlwg.links: create link from /etc/fonts/conf.d/
+    - debian/rules: call dh_link
+  * Install lintian-overrides file with dh_install.
+  * Bump debhelper compat to level 5.
+  * Remove unneeded debian/*.dirs.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sat, 23 Dec 2006 21:39:51 +0700
+
+thaifonts-scalable (1:0.4.5-1) unstable; urgency=low
+
+  * debian/control: Edit description so it is in-paragraph continuous text.
+  * debian/watch: Added.
+  * New upstream release
+    - New font: TlwgTypist.
+    - Clean up XUID for fonts that cause problems with dvips.
+    - Add Foundry info and Thai sample text to all fonts.
+  * debian/copyright: Updated for the new TlwgTypist font.
+  * debian/{t1,ttf}-thai-tlwg.defoma-hints: Add hints for the new TlwgTypist.
+  * debian/t1-thai-tlwg.scale: Add entries for the new TlwgTypist.
+  * debian/ttf-thai-tlwg.docs, -debian/README.Debian: Do not install the
+    outdated info.
+  * -debian/ttf-thai-tlwg.{postinst,scale}: Remove unused files.
+  * debian/t1-thai-tlwg.dirs: Fix wrong etc/X11/fonts/X11R7/Type1 dir.
+  * debian/rules:
+    - Remove now-unused dh_installdebconf.
+    - Move build rules from binary-arch to binary-indep.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Mon, 23 Oct 2006 15:53:03 +0700
+
+thaifonts-scalable (1:0.4.4-5) unstable; urgency=low
+
+  * Updated defoma hints.
+  * debian/control, +debian/ttf-thai-tlwg-udeb.install: Build a udeb package
+    for debian-installer. Closes: #372799.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Mon, 12 Jun 2006 16:40:22 +0700
+
+thaifonts-scalable (1:0.4.4-4) unstable; urgency=low
+
+  * debian/control:
+    - added xfonts-thai-ttf as a dummy package for smooth transition
+      (epoch introduced, to override the old xfonts-thai-ttf cvs versioning)
+      Closes: #357869.
+    - removed conflict with xfonts-thai-ttf from ttf-thai-tlwg, to let the
+      transitional package install
+    - build-depends, rather than build-depends-indep, on debhelper
+    - removed dependency on debconf and po-debconf, as its use here just to
+      show some note was apparently an abuse. Besides, the message is
+      considered outdated with the new Xorg.
+  * debian/ttf-thai-tlwg.{config,templates}, debian/po/*:
+    - removed, according to debconf abuse removal
+    - closed bugs that propose debconf template translation. Thanks to
+      translators, and sorry for dropping your works.
+      Closes: #259797, #294781, #324241, 330650.
+  * debian/rules:
+    - added back upstream changelog
+  * debian/t1-thai-tlwg.install:
+    - moved fonts.scale back from /etc/X11/fonts/X11R7 to /etc/X11/fonts,
+      according to recent changes in dh_installxfonts and update-fonts-scale.
+      See #363482, #364530, #366234.
+  * debian/control:
+    - Build-dep on debhelper >= 5.0.35 and Dep on xfonts-utils >= 1:1.0.0-4.
+    - bumped standard version to 3.7.2. No changes needed.
+  * closed an old bug proposing defoma usage, as it has been used for several 
+    releases. Closes: #141075.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Thu,  8 Jun 2006 17:37:19 +0700
+
+thaifonts-scalable (0.4.4-3) unstable; urgency=low
+
+  * transition to X11R7
+    + debian/control:
+      - removed build-dep on xutils
+      - made t1-thai-tlwg depend on xfonts-utils >> 1:1.0.0
+      - build-dep on debhelper >= 5.0.31 for dh_installxfonts that supports
+        Xorg 7 directories
+    + debian/rules, debian/t1-thai-tlwg.dirs,
+      debian/{t1,ttf}-thai-tlwg.install:
+      - used dh_install instead of manully installing files
+      - removed Type1 fonts installation in /usr/share/fonts/type1, 
+        as well as symlinks from /usr/X11R6/lib/X11/fonts/Type1
+      - installed X11 Type1 fonts in /usr/share/fonts/X11
+      - moved X11 Type1 fonts.scale to /etc/X11/fonts/X11R7/Type1
+      - used dh_installxfonts for t1-thai-tlwg package
+    + debian/t1-thai-tlwg.scale, debian/ttf-thai-tlwg.scale:
+      - created predefined fonts.scale files for both packages
+    + debian/t1-thai-tlwg.post{inst,rm}:
+      - removed, as the update-fonts* scripts are now automatically done with
+        dh_installxfonts
+  * debian/rules:
+    - removed unneeded dh_strip, dh_shlibdeps, dh_link
+  * debian/control:
+    - conflicted with xfonts-thai-ttf, for package renaming
+  * debian/ttf-thai-tlwg.config:
+    - added
+  * debian/lintian-overrides:
+    - added lintian override for package-depends-on-an-x-font-package,
+      as xfonts-utils is not a font package at all
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Wed, 19 Apr 2006 15:06:55 +0700
+
+thaifonts-scalable (0.4.4-2) unstable; urgency=low
+
+  * New maintainer (Closes: #357869)
+  * debian/control:
+    - put myself as the maintainer
+    - added back debconf dependency, and optionally debconf-2.0 
+      (Closes: #332156)
+    - updated description
+  * debian/ttf-thai-tlwg.docs, debian/t1-thai-tlwg.docs:
+    - added NEWS and README
+    - removed upstream ChangeLog
+  * debian/rules:
+    - removed upstream ChangeLog gzip
+  * debian/copyright:
+    - clarified font licenses (Closes: #321688)
+  * debian/ttf-thai-tlwg.templates:
+    - updated package name and config files in description
+    - rewrote the description (Closes: #324240)
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Wed, 22 Mar 2006 16:16:15 +0700
+
+thaifonts-scalable (0.4.4-1) unstable; urgency=low
+
+  * New upstream release
+    - Fix Loma's line gap problem with OpenOffice.org.
+    - Clean up TTF fields for consistency.
+    - Add enspace and emspace glyphs in fonts.
+  * debian/control:
+    - Optionally build-depend on xutils|ttmkfdir, for debian builds.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Fri, 17 Mar 2006 02:41:39 +0700
+
+thaifonts-scalable (0.4.3.1-1ubuntu1) dapper; urgency=low
+
+  * initial ubuntu upload
+  * removed CVS directories from the source (repacked)
+  * changed standards version to 3.6.2.2
+  * switched to po-debconf
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 14 Mar 2006 14:33:31 +0000
+
+thaifonts-scalable (0.4.3.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pattara Kiatisevi <ott@linux.thai.net>  Tue, 23 August 2005 19:38:00 +0900
+
+thaifonts-scalable (0.4.3-1) unstable; urgency=low
+
+  * New upstream release
+  * rules: remove db/* installation, the dir is dropped upstream.
+  * t1-thai-tlwg.defoma-hints, ttf-thai-tlwg.defoma-hints: remove hints for
+    fonts dropped upstream.
+  * control: update font list in description
+  * rules, -fonts.alias, fonts.scale: drop fonts.alias, update fonts.scale
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Thu,  9 Jun 2005 15:25:22 +0700
+
+thaifonts-scalable (0.4.2-1.1) unstable; urgency=low
+
+  * NMU
+  * Remove conflict with xfonts-thai-ttf, for smooth upgrade with empty
+    xfonts-thai-ttf.
+  * Reorganize source using .orig.tar.gz and .diff.gz.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sun, 17 Apr 2005 09:58:36 +0700
+
+thaifonts-scalable (0.4.2) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pattara Kiatisevi <ott@linux.thai.net>  Tue, 21 September 2004 21:33:00 +0900
+
+thaifonts-scalable (0.4.1-1) unstable; urgency=low
+
+  * New upstream update till today
+  * use new Fontforge to build (last package was somehow outdate)
+
+ -- Pattara Kiatisevi <ott@linux.thai.net>  Fri, 4 June 2004 12:08:00 +0900
+
+thaifonts-scalable (0.4.1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Pattara Kiatisevi <ott@linux.thai.net>  Mon, 23 Feb 2004 13:32:00 +0900
+
+thaifonts-scalable (0.4.0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Chanop Silpa-Anan <chanop@debian.org>  Thu,  3 Jul 2003 00:43:37 +1000
+
+thaifonts-scalable (0.3.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Chanop Silpa-Anan <chanop@debian.org>  Mon,  2 Jun 2003 04:54:48 +1000
+
