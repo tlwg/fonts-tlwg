@@ -1,3 +1,14 @@
+thaifonts-scalable (1:0.4.14-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+    - Fix Tahoma/MS Sans Serif fallback rules to not affect non-Thai
+      environments. (LP: #539008, re-addresses LP #434054)
+    - debian/patches/01_remove_tahoma_fallback.diff: Removed, addressed
+      differently upstream.
+  * Bump Standards-Version to 3.9.1 (no changes needed)
+
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Fri, 30 Jul 2010 13:25:15 +0700
+
 thaifonts-scalable (1:0.4.13-4) unstable; urgency=low
 
   * debian/{t1,ttf,otf}-thai-tlwg.preinst:
