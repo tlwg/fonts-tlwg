@@ -1,3 +1,20 @@
+thaifonts-scalable (1:0.4.15-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+    - Get rid of improper "TM" ligature which was replaced with a girl face
+      in Purisa (LP: #680464).
+    - Corrected glyph name for uacute in Purisa (Closes: #608134).
+  * debian/copyright:
+    - Updated to DEP-5 rev 173.
+    - Update copyright years.
+  * Replace fontforge B-Dep with fontforge-nox to reduce load on buildd.
+  * Remove versioned B-Dep on ancient fontforge and dpkg-dev.
+  * Remove versioned Dep on ancient xfonts-utils.
+  * debian/rules: Switch to dh 7 rules.
+  * B-Dep on debhelper (>= 7.0.50~) for override_dh_ targets support.
+
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Wed, 16 Mar 2011 15:57:21 +0700
+
 thaifonts-scalable (1:0.4.14-1) unstable; urgency=low
 
   * New upstream bugfix release.

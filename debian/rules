@@ -1,45 +1,21 @@
 #!/usr/bin/make -f
-# Sample debian/rules that uses debhelper.
-# GNU copyright 1997 to 1999 by Joey Hess.
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-configure: configure-stamp
-configure-stamp:
-	dh_testdir
+%:
+	dh $@
 
+override_dh_auto_configure:
 	./configure --enable-pfb --with-type1dir=/usr/share/fonts/X11/Type1 \
 	  --enable-ttf --with-ttfdir=/usr/share/fonts/truetype/thai \
 	  --enable-otf --with-otfdir=/usr/share/fonts/opentype/otf-thai-tlwg
 
-	touch configure-stamp
+# Skip dh_auto_install and let dh_install do the job
+override_dh_auto_install:
 
-
-build: build-stamp
-
-build-stamp: configure-stamp 
-	dh_testdir
-
-	$(MAKE)
-
-	touch build-stamp
-
-clean:
-	dh_testdir
-	dh_testroot
-
-	[ ! -f Makefile ] || $(MAKE) distclean
-
-	dh_clean
-
-install: build
-	dh_testdir
-	dh_testroot
-	dh_prep
-	dh_installdirs
+override_dh_install:
 	dh_install
-
 	# borrow fontconfig spec from ttf-thai-tlwg for otf-thai-tlwg
 	mkdir -p debian/otf-thai-tlwg/etc/fonts/conf.avail
 	cp fontconfig/64-ttf-thai-tlwg.conf \
@@ -47,24 +23,9 @@ install: build
 	cp fontconfig/89-ttf-thai-tlwg-synthetic.conf \
 	  debian/otf-thai-tlwg/etc/fonts/conf.avail/89-otf-thai-tlwg-synthetic.conf
 
-# Build architecture-independent files here.
-binary-indep: build install
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs ChangeLog
-	dh_installdocs
+override_dh_installxfonts:
 	dh_installxfonts -pt1-thai-tlwg
-	dh_link
-	dh_compress
-	dh_fixperms
-	dh_installdeb
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
 
-# Build architecture-dependent files here.
-binary-arch: build install
+binary-arch:
 # We have nothing to do.
 
-binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install configure

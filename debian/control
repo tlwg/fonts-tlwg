@@ -2,9 +2,8 @@ Source: thaifonts-scalable
 Section: fonts
 Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
-Build-Depends: debhelper (>= 7)
-Build-Depends-Indep: fontforge (>= 0.0.20080110), xfonts-utils,
- dpkg-dev (>= 1.14.13)
+Build-Depends: debhelper (>= 7.0.50~)
+Build-Depends-Indep: fontforge-nox, xfonts-utils
 Vcs-Svn: http://linux.thai.net/svn/software/thaifonts-scalable
 Vcs-Browser: http://linux.thai.net/websvn/wsvn/software.thaifonts-scalable/?sc=0
 Homepage: http://linux.thai.net/projects/thaifonts-scalable
@@ -12,7 +11,7 @@ Standards-Version: 3.9.1
 
 Package: t1-thai-tlwg
 Architecture: all
-Depends: xfonts-utils (>= 1:1.0.0-4), ${misc:Depends}
+Depends: xfonts-utils, ${misc:Depends}
 Description: Thai fonts in Type1 format
  This package provides some free-licensed fonts that are enhanced
  by developpers from Thai Linux Working Group in Type1 format.
