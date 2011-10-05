@@ -26,26 +26,6 @@ if INCLUDE_TYPE1
 	  $(MKFONTDIR)
 	$(FCCACHE) -f $(DESTDIR)$(type1dir)
 endif
-#	@if test -z "$(DESTDIR)" ; then                                       \
-#if INCLUDE_TTF
-#	  mkdir -p $(DESTDIR)$(ttfdir);                                       \
-#	  cd $(DESTDIR)$(ttfdir);                                             \
-#	  $(ttmkfdir);                                                        \
-#	  $(MKFONTDIR)                                                        \
-#endif
-#if INCLUDE_TYPE1
-#	  mkdir -p $(DESTDIR)$(type1dir);                                     \
-#	  cd $(DESTDIR)$(type1dir);                                           \
-#	  $(type1inst);                                                       \
-#	  $(MKFONTDIR)                                                        \
-#endif
-#	  $(fccache);                                                         \
-#	@else                                                                 \
-#	  echo "***" ;                                                        \
-#	  echo "*** Warning: Seems to be binary package building." ;          \
-#	  echo "***          So, font list/cache is not generated" ;          \
-#	  echo "***" ;                                                        \
-#	@fi
 
 uninstall-hook:
 if INCLUDE_TTF
