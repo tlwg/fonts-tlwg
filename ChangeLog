@@ -1,3 +1,13 @@
+2011-10-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	Make legacy fonts dir/cache optional and disabled by default.
+
+	* configure.in:
+	  - Add --enable-xfontsdir option and only check for X/fontconfig
+	    utils when enabled.
+	* Makefile.am:
+	  - Wrap install/uninstall hooks with xfontsdir condition.
+
 2011-10-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* Makefile.am:
