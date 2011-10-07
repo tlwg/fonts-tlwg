@@ -4,6 +4,7 @@ EXTRA_DIST = ChangeLog.thai-ttf GPL
 
 SUBDIRS = scripts nf nectec tlwg fontconfig tests
 
+if INCLUDE_XFONTSDIR
 install-data-hook:
 	@if test -n "$(DESTDIR)" ; then                                \
 	  echo "***" ;                                                 \
@@ -58,4 +59,5 @@ if INCLUDE_TYPE1
 		$(RMDIR) $(DESTDIR)$(type1dir); \
 	fi
 endif
+endif # INCLUDE_XFONTSDIR
 
