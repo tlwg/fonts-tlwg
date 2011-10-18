@@ -9,8 +9,9 @@ EXTRA_DIST = \
 	texfont.mk.am \
 	lthuni.enc \
 	thailigs.vpl \
+	fonts-tlwg.sty \
 	$(FD_FILES)
 
-babeldir = $(texmfdir)/tex/generic/babel
-babel_DATA = $(FD_FILES)
+latexdir = $(texmfdir)/tex/latex/fonts-tlwg
+latex_DATA = fonts-tlwg.sty $(FD_FILES)
 
