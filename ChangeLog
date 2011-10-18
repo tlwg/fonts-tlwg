@@ -1,3 +1,24 @@
+2011-10-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	Add temporary solution for LaTeX fonts build by copying stuffs from
+	thailatex package.
+
+	* configure.in:
+	  - Add --enable-latex configure option and checks for tex utilities.
+	* Makefile.am, +latex/*:
+	  - Add latex/ subdir for LaTeX resources:
+	    + latex/lthuni.enc: LTH charset encoding definition.
+	    + latex/thailigs.vpl: dummy virtual font with LIGKERN rules,
+	      taken from intermediate product in thailatex build process.
+	    + latex/texfont.mk.am: Makefile.am snippet for building LaTeX fonts.
+	    + latex/*.fd: font descriptions for LaTeX
+	* nectec/Makefile.am:
+	* nf/Makefile.am:
+	* tlwg/Makefile.am:
+	  - Add rules under LaTeX-enabled condition to rename the generated
+	    Postscript fonts to what used in LaTeX and then build the
+	    LaTeX fonts using the common rule snippet.
+
 2011-10-06  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	Make legacy fonts dir/cache optional and disabled by default.
