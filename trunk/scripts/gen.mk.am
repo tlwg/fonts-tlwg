@@ -3,9 +3,8 @@
 # Required variables from configure script:
 # - FONTFORGE
 #     The path of fontforge command line
-# - INCLUDE_TYPE1, INCLUDE_PFA, INCLUDE_PFB
-#     Condition whether to generate Type 1 fonts, and if INCLUDE_TYPE1 is true,
-#     whether to INCLUDE_PFA and INCLUDE_PFB, respectively
+# - INCLUDE_PFB
+#     Condition whether to generate Type 1 fonts
 # - INCLUDE_TTF
 #     Condition whether to generate TrueType fonts
 # - INCLUDE_OTF
@@ -20,7 +19,6 @@
 TTFFILES = $(FONTSOURCES:.sfd=.ttf)
 OTFFILES = $(FONTSOURCES:.sfd=.otf)
 AFMFILES = $(FONTSOURCES:.sfd=.afm)
-PFAFILES = $(FONTSOURCES:.sfd=.pfa)
 PFBFILES = $(FONTSOURCES:.sfd=.pfb)
 
 TESTTTFFILES = $(TTFFILES:%.ttf=TTF%.ttf)
@@ -30,19 +28,15 @@ TESTAFMFILES = $(AFMFILES:%.afm=PS%.afm)
 TESTPFBFLES  = $(PFBFILES:%.pfb=PS%.pfb)
 TESTTYPE1FILES = $(TESTPFBFILES) $(TESTAFMFILES)
 
-TYPE1FILES =
-if INCLUDE_PFA
-TYPE1FILES += $(PFAFILES) $(AFMFILES)
-endif
 if INCLUDE_PFB
-TYPE1FILES += $(PFBFILES) $(AFMFILES)
+TYPE1FILES = $(PFBFILES) $(AFMFILES)
 endif
 
 if INCLUDE_TTF
 ttf_DATA = $(TTFFILES)
 endif
 
-if INCLUDE_TYPE1
+if INCLUDE_PFB
 type1_DATA = $(TYPE1FILES)
 endif
 
@@ -54,18 +48,15 @@ if INCLUDE_TESTFONT
 testfont_DATA = $(TESTTTFFILES)  $(TESTTYPE1FILES) $(TESTOTFFILES)
 endif
 
-CLEANFILES = *.ttf *.g2n *.pfb *.pfa *.afm *.pfm *.otf *.enc *.tfm
+CLEANFILES = *.ttf *.g2n *.pfb *.afm *.pfm *.otf *.enc *.tfm
 
-SUFFIXES: .sfd .ttf .otf .pfa .pfb
+SUFFIXES: .sfd .ttf .otf .pfb
 
 TTF%.ttf: %.sfd
 	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-test-ttf.pe $<
 
 OTF%.otf: %.sfd
 	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-test-otf.pe $<
-
-PS%.afm PS%.pfa: %.sfd
-	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-test-pfa.pe $<
 
 PS%.afm PS%.pfb: %.sfd
 	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-test-pfb.pe $<
@@ -75,9 +66,6 @@ PS%.afm PS%.pfb: %.sfd
 
 %.otf: %.sfd
 	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-otf.pe $<
-
-%.afm %.pfa: %.sfd
-	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-pfa.pe $<
 
 %.afm %.pfb: %.sfd
 	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-pfb.pe $<
