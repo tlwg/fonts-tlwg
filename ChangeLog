@@ -1,5 +1,17 @@
 2011-10-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
+	Drop the hardly-used *.pfa generation, which can cause repeated
+	generations of *.afm or *.pfb because of make rule match.
+
+	* configure.in:
+	  - Remove --enable-pfa configure option
+	  - Remove INCLUDE_PFA and INCLUDE_TYPE1 make conditions,
+	    only INCLUDE_PFB left now.
+	* Makefile.am, scripts/gen.mk.am:
+	  - Remove PFA rules, and INCLUDE_PFA, INCLUDE_TYPE1 conditions.
+
+2011-10-18  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
 	Add temporary solution for LaTeX fonts build by copying stuffs from
 	thailatex package.
 

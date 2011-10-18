@@ -20,7 +20,7 @@ if INCLUDE_TTF
 	  $(MKFONTDIR)
 	$(FCCACHE) -f $(DESTDIR)$(ttfdir)
 endif
-if INCLUDE_TYPE1
+if INCLUDE_PFB
 	mkdir -p $(DESTDIR)$(type1dir)
 	cd $(DESTDIR)$(type1dir);                                      \
 	  $(TYPE1INST);                                                \
@@ -44,7 +44,7 @@ if INCLUDE_TTF
 		$(RMDIR) $(DESTDIR)$(ttfdir); \
 	fi
 endif
-if INCLUDE_TYPE1
+if INCLUDE_PFB
 	$(RM) $(DESTDIR)$(type1dir)/fonts.cache-1
 	$(RM) $(DESTDIR)$(type1dir)/fonts.dir
 	$(RM) $(DESTDIR)$(type1dir)/fonts.scale
