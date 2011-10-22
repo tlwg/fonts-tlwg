@@ -12,6 +12,10 @@ EXTRA_DIST = \
 	fonts-tlwg.sty \
 	$(FD_FILES)
 
+if INCLUDE_LATEX
+
 latexdir = $(texmfdir)/tex/latex/fonts-tlwg
 latex_DATA = fonts-tlwg.sty $(FD_FILES)
+
+endif
 
