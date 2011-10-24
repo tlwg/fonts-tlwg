@@ -44,6 +44,10 @@ case "$1" in
             fi
 	    rm_conffile ttf-thai-tlwg $HINTS_FILE
 	fi
+        if dpkg --compare-versions "$2" lt-nl "1:0.4.16-0"; then
+	    rm_conffile ttf-thai-tlwg "/etc/fonts/conf.avail/64-ttf-thai-tlwg.conf"
+	    rm_conffile ttf-thai-tlwg "/etc/fonts/conf.avail/89-ttf-thai-tlwg-synthetic.conf"
+	fi
     ;;
 
     abort-upgrade)

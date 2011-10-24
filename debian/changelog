@@ -1,3 +1,29 @@
+fonts-tlwg (1:0.4.16-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+    - with LaTeX fonts generation.
+  * Rename source package, according to the Debian Fonts Task Force Packaging
+    Policy.
+  * Rename and split binary packages by family, according to the Debian Fonts
+    Task Force Packaging Policy.
+    - Prepare fontconfig files for each sub-package by extracting only relevant
+      rules from upstream global file and order it by running number.
+    - Rename ttf-thai-tlwg to fonts-thai-tlwg and make it a meta-package that
+      depends on all families.
+    - Make ttf-thai-tlwg a dummy transitional package depending on
+      fonts-thai-tlwg and conflicted and replaced by it.
+    - Only install upstream docs in fonts-thai-tlwg meta-package, to save some
+      space.
+    - Clean old global fontconfig files on fonts-thai-tlwg preinst.
+    - Also rename ttf-thai-tlwg-udeb to fonts-thai-tlwg-udeb.
+  * Drop rarely-used otf-thai-tlwg and t1-thai-tlwg sub-packages.
+  * Add latex-fonts-thai-tlwg sub-package, as now supported by new upstream.
+    - Use --enable-latex configure option.
+    - Install font map via 'dh --with tex'.
+    - B-Dep-Indep on texlive-binaries and tex-common.
+
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Sun, 23 Oct 2011 00:42:33 +0700
+
 thaifonts-scalable (1:0.4.15-2) UNRELEASED; urgency=low
 
   * debian/copyright: Use only one Copyright field per paragraph.
