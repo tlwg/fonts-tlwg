@@ -1,0 +1,28 @@
+% fonts-tlwg.sty
+%
+% This file is part of the thaifonts-scalable package
+
+\ProvidesPackage{fonts-tlwg}[2011/10/18 v1.0 Thai TLWG Fonts]
+
+\def\thairmdefault{norasi}
+\def\thaisfdefault{garuda}
+\def\thaittdefault{ttypist}
+\def\englishrmdefault{cmr}
+\def\englishsfdefault{cmss}
+\def\englishttdefault{cmtt}
+
+\DeclareRobustCommand{\thaitext}{%
+  \fontencoding{LTH}\fontfamily{\thairmdefault}\selectfont
+  \def\rmdefault{\thairmdefault}%
+  \def\sfdefault{\thaisfdefault}%
+  \def\ttdefault{\thaittdefault}%
+  \def\encodingdefault{LTH}}
+
+\DeclareRobustCommand{\latintext}{%
+  \fontencoding{\latinencoding}\fontfamily{\englishrmdefault}\selectfont
+  \def\rmdefault{\englishrmdefault}%
+  \def\sfdefault{\englishsfdefault}%
+  \def\ttdefault{\englishttdefault}%
+  \def\encodingdefault{\latinencoding}}
+
+\endinput

@@ -1,0 +1,31 @@
+% lthnorasi.fd
+%
+% This file is part of the thailatex package
+% Created by Surapant Meknavin: surapan@nectec.or.th
+% 2003/06/02 Chanop Silpa-Anan <chanop@debian.org>
+%            - update using basic slant font
+% 2000/05/09 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+%            - font name changed from "nf3x" to "norasi", with bold series added
+%            - encoding changed from TIS to LTH, according TeX convention
+
+\ProvidesFile{lthnorasi.fd}[2000/05/09 v1.0 Thai font definitions]
+
+% Primary declarations
+\DeclareFontFamily{LTH}{norasi}{}
+\DeclareFontShape{LTH}{norasi}{m}{n}{<->s * norasi}{}
+\DeclareFontShape{LTH}{norasi}{m}{it}{<->s * norasi_i}{}
+\DeclareFontShape{LTH}{norasi}{m}{sl}{<->s * norasi_o}{}
+%%%%%%% bold series
+\DeclareFontShape{LTH}{norasi}{b}{n}{<->s * norasi_b}{}
+\DeclareFontShape{LTH}{norasi}{b}{it}{<->s * norasi_bi}{}
+\DeclareFontShape{LTH}{norasi}{b}{sl}{<->s * norasi_bo}{}
+
+% Substitutions
+\DeclareFontShape{LTH}{norasi}{bx}{n}{<->ssub * norasi/b/n}{}
+\DeclareFontShape{LTH}{norasi}{bx}{sl}{<->ssub * norasi/b/sl}{}
+\DeclareFontShape{LTH}{norasi}{bx}{it}{<->ssub * norasi/b/it}{}
+\endinput
+
+% 
+% EOF
+%

@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	./configure --enable-pfb --with-type1dir=/usr/share/fonts/X11/Type1 \
+	  --enable-ttf --with-ttfdir=/usr/share/fonts/truetype/thai \
+	  --enable-otf --with-otfdir=/usr/share/fonts/opentype/otf-thai-tlwg
+
+# Skip dh_auto_install and let dh_install do the job
+override_dh_auto_install:
+
+override_dh_install:
+	dh_install
+	# borrow fontconfig spec from ttf-thai-tlwg for otf-thai-tlwg
+	mkdir -p debian/otf-thai-tlwg/etc/fonts/conf.avail
+	cp fontconfig/64-ttf-thai-tlwg.conf \
+	  debian/otf-thai-tlwg/etc/fonts/conf.avail/64-otf-thai-tlwg.conf
+	cp fontconfig/89-ttf-thai-tlwg-synthetic.conf \
+	  debian/otf-thai-tlwg/etc/fonts/conf.avail/89-otf-thai-tlwg-synthetic.conf
+
+override_dh_installxfonts:
+	dh_installxfonts -pt1-thai-tlwg
+
+binary-arch:
+# We have nothing to do.
+

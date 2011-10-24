@@ -1,0 +1,28 @@
+% lthwaree.fd
+%
+% This file is part of the thailatex package
+% 2008/01/21 Theppitak Karoonboonyanan <thep@linux.thai.net>
+%            - first version
+
+\ProvidesFile{lthwaree.fd}[2008/01/21 v1.0 Thai font definitions]
+
+% Primary declarations
+\DeclareFontFamily{LTH}{waree}{}
+\DeclareFontShape{LTH}{waree}{m}{n}{<->s * waree}{}
+\DeclareFontShape{LTH}{waree}{m}{sl}{<->s * waree_o}{}
+%%%%%%% bold series
+\DeclareFontShape{LTH}{waree}{b}{n}{<->s * waree_b}{}
+\DeclareFontShape{LTH}{waree}{b}{sl}{<->s * waree_bo}{}
+
+% Substitutions
+\DeclareFontShape{LTH}{waree}{m}{it}{<->ssub * waree/m/sl}{}
+\DeclareFontShape{LTH}{waree}{b}{it}{<->ssub * waree/b/sl}{}
+
+\DeclareFontShape{LTH}{waree}{bx}{n}{<->ssub * waree/b/n}{}
+\DeclareFontShape{LTH}{waree}{bx}{sl}{<->ssub * waree/b/sl}{}
+\DeclareFontShape{LTH}{waree}{bx}{it}{<->ssub * waree/b/sl}{}
+\endinput
+
+% 
+% EOF
+%
