@@ -6,6 +6,7 @@ fonts-tlwg (1:0.4.16-1) UNRELEASED; urgency=low
     Policy.
   * Rename and split binary packages by family, according to the Debian Fonts
     Task Force Packaging Policy.
+    - Make sub-packages Breaks and Replaces ttf-thai-tlwg (<< 1:0.4.16).
     - Prepare fontconfig files for each sub-package by extracting only relevant
       rules from upstream global file and order it by running number.
     - Rename ttf-thai-tlwg to fonts-thai-tlwg and make it a meta-package that
@@ -23,13 +24,13 @@ fonts-tlwg (1:0.4.16-1) UNRELEASED; urgency=low
     - Install font map via 'dh --with tex'.
     - Override dh_installtex to add -p option so that only latex package is
       applied (no tex-common postinst & deps for others).
-    - Conflicts and Replaces thailatex (<< 0.4.6).
+    - Breaks and Replaces thailatex (<< 0.4.6).
   * Add 'fontforge' as an alternative B-Dep, in addition to 'fontforge-nox'.
   * debian/copyright: Use non-forwarding format URL. Bump to revision 202.
   * Bump Standards-Version to 3.9.2 (no changes needed)
   * Bump debhelper compatibility to 8.
 
- -- Theppitak Karoonboonyanan <thep@debian.org>  Mon, 24 Oct 2011 19:49:06 +0700
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Mon, 24 Oct 2011 20:20:55 +0700
 
 thaifonts-scalable (1:0.4.15-2) UNRELEASED; urgency=low
 
