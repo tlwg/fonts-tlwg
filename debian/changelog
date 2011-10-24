@@ -23,11 +23,12 @@ fonts-tlwg (1:0.4.16-1) UNRELEASED; urgency=low
     - Install font map via 'dh --with tex'.
     - Override dh_installtex to add -p option so that only latex package is
       applied (no tex-common postinst & deps for others).
+    - Conflicts and Replaces thailatex (<< 0.4.6).
   * Add 'fontforge' as an alternative B-Dep, in addition to 'fontforge-nox'.
   * debian/copyright: Use non-forwarding format URL. Bump to revision 202.
   * Bump Standards-Version to 3.9.2 (no changes needed)
 
- -- Theppitak Karoonboonyanan <thep@debian.org>  Mon, 24 Oct 2011 18:02:28 +0700
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Mon, 24 Oct 2011 18:44:28 +0700
 
 thaifonts-scalable (1:0.4.15-2) UNRELEASED; urgency=low
 
