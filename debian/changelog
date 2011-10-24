@@ -19,13 +19,15 @@ fonts-tlwg (1:0.4.16-1) UNRELEASED; urgency=low
   * Drop rarely-used otf-thai-tlwg and t1-thai-tlwg sub-packages.
   * Add latex-fonts-thai-tlwg sub-package, as now supported by new upstream.
     - Use --enable-latex configure option.
-    - Install font map via 'dh --with tex'.
     - B-Dep-Indep on texlive-binaries and tex-common.
+    - Install font map via 'dh --with tex'.
+    - Override dh_installtex to add -p option so that only latex package is
+      applied (no tex-common postinst & deps for others).
   * Add 'fontforge' as an alternative B-Dep, in addition to 'fontforge-nox'.
   * debian/copyright: Use non-forwarding format URL. Bump to revision 202.
   * Bump Standards-Version to 3.9.2 (no changes needed)
 
- -- Theppitak Karoonboonyanan <thep@debian.org>  Mon, 24 Oct 2011 16:39:40 +0700
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Mon, 24 Oct 2011 17:37:38 +0700
 
 thaifonts-scalable (1:0.4.15-2) UNRELEASED; urgency=low
 
