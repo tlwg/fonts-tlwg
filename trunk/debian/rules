@@ -11,6 +11,9 @@ override_dh_auto_configure:
 	  --enable-latex --with-texmfdir=/usr/share/texmf \
 	  --enable-ttf --with-ttfdir=/usr/share/fonts/truetype/tlwg
 
+override_dh_installtex:
+	dh_installtex -platex-fonts-thai-tlwg
+
 binary-arch:
 # We have nothing to do.
 
