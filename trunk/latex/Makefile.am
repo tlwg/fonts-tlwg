@@ -8,7 +8,6 @@ FD_FILES = \
 EXTRA_DIST = \
 	texfont.mk.am \
 	lthuni.enc \
-	thailigs.vpl \
 	fonts-tlwg.sty \
 	$(FD_FILES)
 

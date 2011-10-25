@@ -21,21 +21,18 @@ ltxtfm_DATA = $(LTX_TFMFILES) $(LTX_RTFMFILES)
 
 ltxvf_DATA = $(LTX_VFFILES)
 
-LTH_ENC = $(top_srcdir)/latex/lthuni.enc
-LIG_VPL = $(top_srcdir)/latex/thailigs.vpl
-
 # Local Rules
 
-r%.tfm: %.afm $(LTH_ENC)
-%.vpl: %.afm $(LTH_ENC) $(LIG_VPL)
-	if [ ! -f lthuni.enc ]; then \
-	  $(LN_S) $(LTH_ENC) lthuni.enc; \
-	fi
+thailigs.vpl:
+	$(AFM2TFM) thai-dummy.afm -v $@ -T thailigs.enc thailigs.tfm
+
+r%.tfm: %.afm
+%.vpl: %.afm thailigs.vpl
 	$(AFM2TFM) $*.afm -v $*.vpl -T lthuni.enc r$*.tfm \
 	| $(SED) "s/$$/ <$*.pfb/" >> $(MAP)
 	TMPFILE=`mktemp /tmp/tltx.XXXXXXXXX` && \
 	$(AWK) "BEGIN {show=1} /LIGTABLE/ {show=0} {if(show) print}" $*.vpl > $$TMPFILE && \
-	$(AWK) "BEGIN {show=0} /LIGTABLE/ {show=1} /CHARACTER/ {show=0} {if(show) print}" $(LIG_VPL) >> $$TMPFILE && \
+	$(AWK) "BEGIN {show=0} /LIGTABLE/ {show=1} /CHARACTER/ {show=0} {if(show) print}" thailigs.vpl >> $$TMPFILE && \
 	$(AWK) "BEGIN {show=0} /CHARACTER/ {show=1} {if(show) print}" $*.vpl >> $$TMPFILE && \
 	mv $$TMPFILE $*.vpl
 
