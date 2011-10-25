@@ -1,0 +1,28 @@
+% lthloma.fd
+%
+% This file is part of the thailatex package
+% 2006/03/26 Theppitak Karoonboonyanan <thep@linux.thai.net>
+%            - first version based on lthloma.fd
+
+\ProvidesFile{lthloma.fd}[2006/03/26 v1.0 Thai font definitions]
+
+% Primary declarations
+\DeclareFontFamily{LTH}{loma}{}
+\DeclareFontShape{LTH}{loma}{m}{n}{<->s * loma}{}
+\DeclareFontShape{LTH}{loma}{m}{sl}{<->s * loma_o}{}
+%%%%%%% bold series
+\DeclareFontShape{LTH}{loma}{b}{n}{<->s * loma_b}{}
+\DeclareFontShape{LTH}{loma}{b}{sl}{<->s * loma_bo}{}
+
+% Substitutions
+\DeclareFontShape{LTH}{loma}{m}{it}{<->ssub * loma/m/sl}{}
+\DeclareFontShape{LTH}{loma}{b}{it}{<->ssub * loma/b/sl}{}
+
+\DeclareFontShape{LTH}{loma}{bx}{n}{<->ssub * loma/b/n}{}
+\DeclareFontShape{LTH}{loma}{bx}{sl}{<->ssub * loma/b/sl}{}
+\DeclareFontShape{LTH}{loma}{bx}{it}{<->ssub * loma/b/sl}{}
+\endinput
+
+% 
+% EOF
+%

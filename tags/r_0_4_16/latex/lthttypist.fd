@@ -1,0 +1,28 @@
+% lthttypist.fd
+%
+% This file is part of the thailatex package
+% 2006/10/23 Theppitak Karoonboonyanan <thep@linux.thai.net>
+%            - first release (based on lthttypist.fd)
+
+\ProvidesFile{lthttypist.fd}[2004/02/05 v1.0 Thai font definitions]
+
+% Primary declarations
+\DeclareFontFamily{LTH}{ttypist}{}
+\DeclareFontShape{LTH}{ttypist}{m}{n}{<->s * ttypist}{}
+\DeclareFontShape{LTH}{ttypist}{m}{sl}{<->s * ttypist_o}{}
+%%%%%%% bold series
+\DeclareFontShape{LTH}{ttypist}{b}{n}{<->s * ttypist_b}{}
+\DeclareFontShape{LTH}{ttypist}{b}{sl}{<->s * ttypist_bo}{}
+
+% Substitutions
+\DeclareFontShape{LTH}{ttypist}{m}{it}{<->ssub * ttypist/m/sl}{}
+\DeclareFontShape{LTH}{ttypist}{b}{it}{<->ssub * ttypist/b/sl}{}
+
+\DeclareFontShape{LTH}{ttypist}{bx}{n}{<->ssub * ttypist/b/n}{}
+\DeclareFontShape{LTH}{ttypist}{bx}{sl}{<->ssub * ttypist/b/sl}{}
+\DeclareFontShape{LTH}{ttypist}{bx}{it}{<->ssub * ttypist/b/sl}{}
+\endinput
+
+% 
+% EOF
+%
