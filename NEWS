@@ -1,3 +1,14 @@
+0.4.16 (2011-10-24)
+======
+- Fix GSUB rules to correctly remove YO YING descender when combined with
+  both lower and upper characters, e.g. ญุ่นปี่, ขฺญุํ.
+- Clear improper fraction rules in monospace fonts.
+- Legacy X font dir creation, and thus build-dependency on xfonts-utils is
+  now optional. To enable it, use --enable-xfontsdir configure option.
+- Add LaTeX fonts generation, based on ThaiLaTeX implementation.
+  To enable it, use --enable-latex configure option.
+  Fonts will be removed from ThaiLaTeX soon.
+
 0.4.15 (2011-03-16)
 ======
 - Corrected widths of Latin accented characters for Garuda.
