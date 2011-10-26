@@ -1,3 +1,5 @@
+SUBDIRS = examples
+
 FD_FILES = \
 	lthkinnari.fd lthgaruda.fd lthnorasi.fd \
 	lthttype.fd lthttypist.fd \
