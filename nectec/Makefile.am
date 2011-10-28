@@ -11,21 +11,21 @@ include $(top_srcdir)/scripts/gen.mk.am
 if INCLUDE_LATEX
 
 loma.afm:    Loma.afm
-	$(LN_S) $< $@
+	[ -f $@ ] || $(LN_S) $< $@
 loma_b.afm:  Loma-Bold.afm
-	$(LN_S) $< $@
+	[ -f $@ ] || $(LN_S) $< $@
 loma_o.afm:  Loma-Oblique.afm
-	$(LN_S) $< $@
+	[ -f $@ ] || $(LN_S) $< $@
 loma_bo.afm: Loma-BoldOblique.afm
-	$(LN_S) $< $@
+	[ -f $@ ] || $(LN_S) $< $@
 loma.pfb:    Loma.pfb
-	$(LN_S) $< $@
+	[ -f $@ ] || $(LN_S) $< $@
 loma_b.pfb:  Loma-Bold.pfb
-	$(LN_S) $< $@
+	[ -f $@ ] || $(LN_S) $< $@
 loma_o.pfb:  Loma-Oblique.pfb
-	$(LN_S) $< $@
+	[ -f $@ ] || $(LN_S) $< $@
 loma_bo.pfb: Loma-BoldOblique.pfb
-	$(LN_S) $< $@
+	[ -f $@ ] || $(LN_S) $< $@
 
 FONTS = \
 	loma \
