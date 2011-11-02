@@ -3,8 +3,8 @@ Section: fonts
 Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
 Build-Depends: debhelper (>= 8)
-Build-Depends-Indep: fontforge-nox | fontforge, texlive-binaries,
- tex-common (>= 0.19)
+Build-Depends-Indep: fontforge-nox | fontforge, thailatex (>= 0.4.6),
+ texlive-binaries, tex-common (>= 0.19)
 Vcs-Svn: http://linux.thai.net/svn/software/thaifonts-scalable
 Vcs-Browser: http://linux.thai.net/websvn/wsvn/software.thaifonts-scalable/?sc=0
 Homepage: http://linux.thai.net/projects/thaifonts-scalable
@@ -184,7 +184,7 @@ Package: latex-fonts-thai-tlwg
 Architecture: all
 Breaks: thailatex (<< 0.4.6)
 Replaces: thailatex (<< 0.4.6)
-Depends: ${misc:Depends}
+Depends: thailatex (>= 0.4.6), ${misc:Depends}
 Description: Thai fonts for LaTeX from TLWG
  Thai fonts for TeX/LaTeX that are collected, enhanced and maintained by
  Thai Linux Working Group (TLWG).
