@@ -62,13 +62,13 @@ endif
 endif # INCLUDE_XFONTSDIR
 
 if INCLUDE_LATEX
-tdsdist_tgz = $(PACKAGE)-$(VERSION).tds.tar.gz
-ctandist_tgz = $(PACKAGE)-$(VERSION).ctan.tar.gz
+tdsdist_tgz = $(LATEX_PACKAGE)-$(VERSION).tds.tar.gz
+ctandist_tgz = $(LATEX_PACKAGE)-$(VERSION).ctan.tar.gz
 
-tdsdist_zip = $(PACKAGE)-$(VERSION).tds.zip
-ctandist_zip = $(PACKAGE)-$(VERSION).ctan.zip
+tdsdist_zip = $(LATEX_PACKAGE)-$(VERSION).tds.zip
+ctandist_zip = $(LATEX_PACKAGE)-$(VERSION).ctan.zip
 
-tdsdistdir = $(PACKAGE)-$(VERSION)-tds
+tdsdistdir = $(LATEX_PACKAGE)-$(VERSION)-tds
 
 inst-tds:
 	rm -rf $(tdsdistdir)
