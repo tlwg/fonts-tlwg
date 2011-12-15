@@ -1,9 +1,9 @@
-ltxtype1dir = $(texmfdir)/fonts/type1/public/tlwg
-ltxafmdir = $(texmfdir)/fonts/afm/public/tlwg
-ltxtfmdir = $(texmfdir)/fonts/tfm/public/tlwg
-ltxvfdir  = $(texmfdir)/fonts/vf/public/tlwg
+ltxtype1dir = $(texmfdir)/fonts/type1/public/$(LATEX_PACKAGE)
+ltxafmdir = $(texmfdir)/fonts/afm/public/$(LATEX_PACKAGE)
+ltxtfmdir = $(texmfdir)/fonts/tfm/public/$(LATEX_PACKAGE)
+ltxvfdir  = $(texmfdir)/fonts/vf/public/$(LATEX_PACKAGE)
 
-ltxmapdir = $(texmfdir)/fonts/map/dvips/tlwg
+ltxmapdir = $(texmfdir)/fonts/map/dvips/$(LATEX_PACKAGE)
 
 ltxmap_DATA = $(MAP)
 

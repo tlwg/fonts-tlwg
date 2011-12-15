@@ -76,7 +76,7 @@ inst-tds:
 	confdir=`cd $(top_srcdir) && pwd` \
 	  && cd $(tdsdistdir) \
 	  && $$confdir/configure --disable-ttf --enable-latex --prefix=/usr \
-	       --with-texmfdir=/ --docdir=/doc/latex/$(PACKAGE) \
+	       --with-texmfdir=/ --docdir=/doc/latex/$(LATEX_PACKAGE) \
 	  && $(MAKE) $(AM_MAKEFLAGS) \
 	  && $(MAKE) $(AM_MAKEFLAGS) DESTDIR=`pwd`/inst install \
 	  && rm -rf inst/usr
