@@ -79,7 +79,9 @@ inst-tds:
 	       --with-texmfdir=/ --docdir=/doc/latex/$(LATEX_PACKAGE) \
 	  && $(MAKE) $(AM_MAKEFLAGS) \
 	  && $(MAKE) $(AM_MAKEFLAGS) DESTDIR=`pwd`/inst install \
-	  && rm -rf inst/usr
+	  && rm -rf inst/usr \
+	  && mkdir -p inst/fonts/source/public/$(LATEX_PACKAGE) \
+	  && make distdir distdir=inst/fonts/source/public/$(LATEX_PACKAGE)
 
 dist-tds-tgz: inst-tds
 	cd $(tdsdistdir)/inst \
