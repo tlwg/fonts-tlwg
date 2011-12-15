@@ -1,4 +1,13 @@
-2011-11-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
+2011-12-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	Install LaTeX files under consistent subdir name.
+
+	* configure.in: Define LATEX_PACKAGE macro.
+	* Makefile.am: Set doc subdir to $(LATEX_PACKAGE).
+	* latex/texfont.mk.am: Install LaTeX font files under $(LATEX_PACKAGE).
+	* latex/Makefile.am: Install LaTeX stuff under $(LATEX_PACKAGE).
+
+2011-12-15  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* configure.in: Post-release version suffix added.
 

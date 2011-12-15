@@ -14,7 +14,7 @@ EXTRA_DIST = \
 
 if INCLUDE_LATEX
 
-latexdir = $(texmfdir)/tex/latex/fonts-tlwg
+latexdir = $(texmfdir)/tex/latex/$(LATEX_PACKAGE)
 latex_DATA = fonts-tlwg.sty $(FD_FILES)
 
 endif
