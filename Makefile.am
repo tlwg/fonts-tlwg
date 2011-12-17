@@ -80,8 +80,8 @@ inst-tds:
 	  && $(MAKE) $(AM_MAKEFLAGS) \
 	  && $(MAKE) $(AM_MAKEFLAGS) DESTDIR=`pwd`/inst install \
 	  && rm -rf inst/usr \
-	  && mkdir -p inst/fonts/source/public/$(LATEX_PACKAGE) \
-	  && make distdir distdir=inst/fonts/source/public/$(LATEX_PACKAGE)
+	  && mkdir -p inst/source/fonts/$(LATEX_PACKAGE) \
+	  && make distdir distdir=inst/source/fonts/$(LATEX_PACKAGE)
 
 dist-tds-tgz: inst-tds
 	cd $(tdsdistdir)/inst \
