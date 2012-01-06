@@ -4,7 +4,7 @@ FullName: Umpush
 FamilyName: Umpush
 Weight: Book
 Copyright: Copyright (c) 2003 NECTEC. All rights reserved.\nCopyright (c) 2007 Widhaya Trisarnwadhana. All rights reserved.\nModified under GNU General Public License by TLWG.
-Version: 0.9.12: 2011-04-23
+Version: 0.9.13: 2012-01-06
 ItalicAngle: 0
 UnderlinePosition: -170
 UnderlineWidth: 20
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662374
-ModificationTime: 1303571577
+ModificationTime: 1325862876
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -251,7 +251,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 24 12 10
+WinInfo: 132 12 10
 BeginPrivate: 6
 BlueValues 37 [-11 0 1062 1086 1254 1279 1450 1482]
 OtherBlues 11 [-428 -422]
@@ -262,7 +262,7 @@ StemSnapV 9 [136 180]
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 543744 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
-BeginChars: 65537 281
+BeginChars: 65537 283
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -8640,6 +8640,44 @@ EndSplineSet
 LCarets2: 2 0 0 
 Ligature2: "'liga' Standard Ligatures lookup 0" ff l
 Ligature2: "'liga' Standard Ligatures lookup 0" f f l
+EndChar
+
+StartChar: dotlessi
+Encoding: 305 305 281
+Width: 455
+Flags: W
+HStem: 0 21G<136 316> 1042 20G<136 316>
+VStem: 136 180<0 1062>
+LayerCount: 2
+Fore
+SplineSet
+136 0 m 1
+ 136 1062 l 1
+ 316 1062 l 1
+ 316 0 l 1
+ 136 0 l 1
+EndSplineSet
+EndChar
+
+StartChar: dotlessj
+Encoding: 567 567 282
+Width: 455
+Flags: W
+HStem: -428 161<-92.0353 99.0322> 1042 20G<134 314>
+VStem: 134 180<-233.094 1062>
+LayerCount: 2
+Fore
+SplineSet
+314 -58 m 2
+ 314 -336 204 -428 39 -428 c 0
+ -1 -428 -45 -423 -94 -412 c 1
+ -94 -259 l 1
+ -59 -264 -30 -267 -7 -267 c 0
+ 90 -267 134 -223 134 -54 c 2
+ 134 1062 l 1
+ 314 1062 l 1
+ 314 -58 l 2
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
