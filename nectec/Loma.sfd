@@ -4,7 +4,7 @@ FullName: Loma
 FamilyName: Loma
 Weight: Book
 Copyright: Copyright (c) NECTEC, 2003. All rights reserved.\nModified under GNU General Public License by TLWG.
-Version: 0.9.16: 2011-04-23
+Version: 0.9.17: 2012-01-06
 ItalicAngle: 0
 UnderlinePosition: -170
 UnderlineWidth: 20
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662374
-ModificationTime: 1303568572
+ModificationTime: 1325851398
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -262,7 +262,7 @@ StemSnapV 13 [160 180 185]
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 543744 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
-BeginChars: 65537 279
+BeginChars: 65537 281
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -8017,6 +8017,44 @@ EndSplineSet
 LCarets2: 2 0 0 
 Ligature2: "'liga' Standard Ligatures lookup 0" ff l
 Ligature2: "'liga' Standard Ligatures lookup 0" f f l
+EndChar
+
+StartChar: dotlessi
+Encoding: 305 305 279
+Width: 455
+Flags: W
+HStem: 0 21G<136 316> 1042 20G<136 316>
+VStem: 136 180<0 1062>
+LayerCount: 2
+Fore
+SplineSet
+136 0 m 1
+ 136 1062 l 1
+ 316 1062 l 1
+ 316 0 l 1
+ 136 0 l 1
+EndSplineSet
+EndChar
+
+StartChar: dotlessj
+Encoding: 567 567 280
+Width: 455
+Flags: W
+HStem: -428 161<-92.0353 99.0322> 1042 20G<134 314>
+VStem: 134 180<-233.094 1062>
+LayerCount: 2
+Fore
+SplineSet
+314 -58 m 2
+ 314 -336 204 -428 39 -428 c 0
+ -1 -428 -45 -423 -94 -412 c 1
+ -94 -259 l 1
+ -59 -264 -30 -267 -7 -267 c 0
+ 90 -267 134 -223 134 -54 c 2
+ 134 1062 l 1
+ 314 1062 l 1
+ 314 -58 l 2
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
