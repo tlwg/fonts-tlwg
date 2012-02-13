@@ -1,3 +1,21 @@
+2012-02-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	Move font encodings & ligkern stuffs back to font package,
+	to allow font-specific ligkern rules.
+
+	* +latex/lthtlwg.enc +latex/thailigs.enc +latex/thai-dummy.afm:
+	  - Add enc & ligkern stuff from thailatex project.
+	* latex/Makefile.am:
+	  - Add new files to EXTRA_DIST.
+	  - Install the enc file.
+	* latex/texfont.mk.am:
+	  - Add rules for creating symlinks to source files in builddir.
+	  - Adjust rules to use the local source files.
+	* configure.in:
+	  - Drop all checks for files in TEXMF, freeing it from thailatex
+	    build-dep.
+	  - Drop now-unneeded check for kpsewhich utility.
+
 2012-02-11  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* configure.in:
