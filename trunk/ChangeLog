@@ -1,5 +1,15 @@
 2012-02-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
+	* nf/Garuda*.sfd:
+	  - Replace the 'RQD' contextual subs Pali-Sanskrit descender
+	    removal GSUB with 'ccmp' single subs.
+	  - Drop 'PAL' from conditional descender removal GSUB.
+	  - Reorder GSUBs for Pali so descender is removed first.
+	  - Add 'SAN' (Sanskrit) tag to GPOS/GSUB where 'PAL' applies.
+	  - Bump font version to "2.66: 2012-02-13".
+
+2012-02-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
 	Move font encodings & ligkern stuffs back to font package,
 	to allow font-specific ligkern rules.
 
