@@ -23,12 +23,21 @@ ltxvf_DATA = $(LTX_VFFILES)
 
 # Local Rules
 
-thailigs.vpl:
+thai-dummy.afm:
+	[ -e thai-dummy.afm ] || $(LN_S) $(top_srcdir)/latex/thai-dummy.afm .
+
+thailigs.enc:
+	[ -e thailigs.enc ] || $(LN_S) $(top_srcdir)/latex/thailigs.enc .
+
+lthtlwg.enc:
+	[ -e lthtlwg.enc ] || $(LN_S) $(top_srcdir)/latex/lthtlwg.enc .
+
+thailigs.vpl: thai-dummy.afm thailigs.enc
 	$(AFM2TFM) thai-dummy.afm -v $@ -T thailigs.enc thailigs.tfm
 
 r%.tfm: %.afm
-%.vpl: %.afm thailigs.vpl
-	$(AFM2TFM) $*.afm -v $*.vpl -T lthuni.enc r$*.tfm \
+%.vpl: %.afm thailigs.vpl lthtlwg.enc
+	$(AFM2TFM) $*.afm -v $*.vpl -T lthtlwg.enc r$*.tfm \
 	| $(SED) "s/$$/ <$*.pfb/" >> $(MAP)
 	TMPFILE=`mktemp /tmp/tltx.XXXXXXXXX` && \
 	$(AWK) "BEGIN {show=1} /LIGTABLE/ {show=0} {if(show) print}" $*.vpl > $$TMPFILE && \
