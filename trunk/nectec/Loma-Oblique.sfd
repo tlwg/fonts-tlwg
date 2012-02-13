@@ -4,7 +4,7 @@ FullName: Loma Oblique
 FamilyName: Loma
 Weight: Book
 Copyright: Copyright (c) NECTEC, 2003. All rights reserved.\nModified under GNU General Public License by TLWG.
-Version: 0.9.17: 2012-01-06
+Version: 0.9.18: 2012-02-13
 ItalicAngle: -12
 UnderlinePosition: -170
 UnderlineWidth: 20
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662347
-ModificationTime: 1328504530
+ModificationTime: 1329132740
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -41,9 +41,9 @@ HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
 Lookup: 4 0 1 "'liga' Standard Ligatures lookup 0"  {"'liga' Standard Ligatures lookup 0"  } ['liga' ('latn' <'dflt' > ) ]
-Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
-Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
-Lookup: 5 0 0 "Loma-Required Thai Descender Removal"  {"Loma-Required Thai Descender Removal"  } [' RQD' ('thai' <'PAL ' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'THA ' 'dflt' > ) ]
+Lookup: 1 0 0 "'ccmp' Pali-Sanskrit Descender Removal"  {"'ccmp' Pali-Sanskrit Descender Removal" ("descless" ) } ['ccmp' ('thai' <'PAL ' 'SAN ' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution"  {"Thai Descender Removal Single Substitution" ("descless" ) } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition"  {"Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment"  {"Thai Tone Nikhahit Attachment"  } []
@@ -69,19 +69,12 @@ Lookup: 1 0 0 "Thai Phinthu Mai Tri Reordering"  {"Thai Phinthu Mai Tri Reorderi
 Lookup: 1 0 0 "Thai Phinthu Mai Chattawa Reordering"  {"Thai Phinthu Mai Chattawa Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Thanthakhat Reordering"  {"Thai Phinthu Thanthakhat Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reordering"  } []
-Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
-Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 3"  {"'kern' Horizontal Kerning in Latin lookup 3"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-ContextSub2: glyph "Loma-Required Thai Descender Removal"  0 0 0 1
- String: 15 uni0E0D uni0E10
- BString: 0 
- FString: 0 
- 1
-  SeqLookup: 0 "Thai Descender Removal Single Substitution" 
-EndFPST
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
  1 0 1
   Coverage: 15 uni0E0D uni0E10
@@ -4013,6 +4006,7 @@ SplineSet
  1082 -287 1100 -226 1100 -197 c 0
  1100 -163 1075 -143 1043 -143 c 0
 EndSplineSet
+Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E0D.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E0D.descless
 EndChar
 
@@ -4201,6 +4195,7 @@ SplineSet
  196 -461 282 -418 309 -362 c 1
  270 -352 235 -347 204 -347 c 0xaf30
 EndSplineSet
+Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E10.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E10.descless
 EndChar
 
