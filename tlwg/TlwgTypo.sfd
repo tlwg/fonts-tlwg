@@ -5,7 +5,7 @@ FamilyName: Tlwg Typo
 Weight: Medium
 Copyright: Tlwg Typist, based on Poonlap Veerathanabutr's Tlwg Typewriter.\n\nCopyright (C) 2005-2011 Theppitak Karoonboonyanan.\n\nTlwg Typewriter, Free Thai Pseudo Monospace outline font.\n\nCopyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-20: Created. +AAoA-PfaEdit 1.0 (http://pfaedit.sf.net).+AAoACgAA-TLWG is Thai Linux Working Group http://linux.thai.net+AAoACgAA-This font was derived from TlwgMono.Most characters have fixed width except some vowels and tone marks.+AAoACgAA-2003-11-25: Fixed above vowel and tone mark level.+AAoA" 
-Version: 002.011: 2012-01-07
+Version: 002.012: 2012-02-14
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153663876
-ModificationTime: 1326030569
+ModificationTime: 1329193058
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -41,9 +41,9 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
-Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
-Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
-Lookup: 5 0 0 "Required Thai Descender Removal"  {"Required Thai Descender Removal"  } [' RQD' ('thai' <'PAL ' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'THA ' 'dflt' > ) ]
+Lookup: 1 0 0 "'ccmp' Pali-Sanskrit Descender Removal"  {"'ccmp' Pali-Sanskrit Descender Removal" ("descless" ) } ['ccmp' ('thai' <'PAL ' 'SAN ' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution"  {"Thai Descender Removal Single Substitution" ("descless" ) } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition"  {"Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment"  {"Thai Tone Nikhahit Attachment"  } []
@@ -69,21 +69,14 @@ Lookup: 1 0 0 "Thai Phinthu Mai Tri Reordering"  {"Thai Phinthu Mai Tri Reorderi
 Lookup: 1 0 0 "Thai Phinthu Mai Chattawa Reordering"  {"Thai Phinthu Mai Chattawa Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Thanthakhat Reordering"  {"Thai Phinthu Thanthakhat Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reordering"  } []
-Lookup: 257 0 0 "Required Feature lookup 0"  {"Non-spacing marks"  } [' RQD' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
-Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
-Lookup: 257 0 0 "'mark' Thai Mark Positioning"  {"'mark' Thai Mark Positioning"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
-Lookup: 257 0 0 "'mkmk' Thai Above Mark Positioning"  {"'mkmk' Thai Above Mark Positioning"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'THA ' 'dflt' > ) ]
+Lookup: 257 0 0 "Required Feature lookup 0"  {"Non-spacing marks"  } [' RQD' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 257 0 0 "'mark' Thai Mark Positioning"  {"'mark' Thai Mark Positioning"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 257 0 0 "'mkmk' Thai Above Mark Positioning"  {"'mkmk' Thai Above Mark Positioning"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-ContextSub2: glyph "Required Thai Descender Removal"  0 0 0 1
- String: 15 uni0E0D uni0E10
- BString: 0 
- FString: 0 
- 1
-  SeqLookup: 0 "Thai Descender Removal Single Substitution" 
-EndFPST
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
  1 0 1
   Coverage: 15 uni0E0D uni0E10
@@ -244,7 +237,7 @@ NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 270 9 4
+WinInfo: 240 12 8
 BeginPrivate: 6
 BlueValues 39 [-16 0 417 431 445 455 563 576 604 618]
 OtherBlues 11 [-186 -186]
@@ -8729,6 +8722,7 @@ SplineSet
  361 -167 307 -148 307 -104 c 0
  307 -71 342 -50 366 -50 c 0
 EndSplineSet
+Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E0D.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E0D.descless
 EndChar
 
@@ -8979,6 +8973,7 @@ SplineSet
  380 -41 407 -14 440 -14 c 0xd31e
  473 -14 500 -41 500 -74 c 2
 EndSplineSet
+Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E10.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E10.descless
 EndChar
 
