@@ -5,7 +5,7 @@ FamilyName: TlwgMono
 Weight: Bold
 Copyright: TlwgMono-Bold, Free Thai Monospace outline font.\n\nCopyright (C) 2003 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-26: Created. +AAoA-PfaEdit 1.0 (http://pfaedit.sf.net).+AAoACgAA-TLWG is Thai Linux Working Group http://linux.thai.net+AAoACgAA-Imported ISO-8859-1 from FreeMono.sfd.+AAoA-http://www.nongnu.org/freefont/+AAoACgAA-Created from PseudoMono-Bold" 
-Version: 001.017: 2012-01-07
+Version: 001.018: 2012-02-14
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153666223
-ModificationTime: 1326029603
+ModificationTime: 1329195233
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -41,8 +41,7 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
-Lookup: 4 8 1 "'liga' Standard Ligatures lookup 0"  {"'liga' Standard Ligatures lookup 0 subtable"  } ['liga' ('DFLT' <'dflt' > ) ]
-Lookup: 4 8 0 "'frac' Diagonal Fractions lookup 1"  {"'frac' Diagonal Fractions lookup 1 subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'ccmp' Pali-Sanskrit Descender Removal"  {"'ccmp' Pali-Sanskrit Descender Removal" ("descless" ) } ['ccmp' ('thai' <'PAL ' 'SAN ' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ShortTable: cvt  4
@@ -4726,8 +4725,6 @@ SplineSet
  446 150 l 1
  525 150 l 1
 EndSplineSet
-Ligature2: "'frac' Diagonal Fractions lookup 1 subtable" one slash four
-Ligature2: "'frac' Diagonal Fractions lookup 1 subtable" one fraction four
 EndChar
 
 StartChar: onehalf
@@ -4782,8 +4779,6 @@ SplineSet
  569 390 625 339 625 270 c 0
  625 219 602 192 453 67 c 1x7f80
 EndSplineSet
-Ligature2: "'frac' Diagonal Fractions lookup 1 subtable" one slash two
-Ligature2: "'frac' Diagonal Fractions lookup 1 subtable" one fraction two
 EndChar
 
 StartChar: threequarters
@@ -4849,8 +4844,6 @@ SplineSet
  446 150 l 1
  526 150 l 1
 EndSplineSet
-Ligature2: "'frac' Diagonal Fractions lookup 1 subtable" three slash four
-Ligature2: "'frac' Diagonal Fractions lookup 1 subtable" three fraction four
 EndChar
 
 StartChar: questiondown
@@ -8436,6 +8429,7 @@ SplineSet
  43 317 l 1
  83 421 121 445 200 445 c 24
 EndSplineSet
+Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E0D.descless
 EndChar
 
 StartChar: uni0E0E
@@ -8614,6 +8608,7 @@ SplineSet
  217 -106 183 -71 155 -71 c 24
  135 -71 121 -96 121 -107 c 0
 EndSplineSet
+Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E10.descless
 EndChar
 
 StartChar: uni0E11
