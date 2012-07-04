@@ -1,3 +1,15 @@
+2012-07-04  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	Fix malformed fontconfig config.
+
+	* fontconfig/89-ttf-thai-tlwg-synthetic.conf:
+	  - Replace multiple strings in tests with single substring to be
+	    matched with "contains".
+	  - Split rule for "MS/Microsoft Sans Serif" to get the OR result.
+
+	Thanks Daiki Ueno for the suggestion, and Akira Tagoh for the report.
+	https://bugzilla.redhat.com/show_bug.cgi?id=837538
+
 2012-02-20  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* tlwg/TlwgTypist*.sfd, tlwg/TlwgTypo*.sfd, tlwg/TlwgTypewriter*.sfd,
