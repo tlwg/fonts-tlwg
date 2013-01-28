@@ -2,7 +2,7 @@ AC_PREREQ(2.59)
 AC_INIT(fonts-tlwg, 0.5.0svn, thep@linux.thai.net)
 AC_CONFIG_SRCDIR([nf/Garuda.sfd])
 
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE(dist-xz no-dist-gzip -Wno-portability)
 
 FONTFORGE_MIN_VER=20080110
 
