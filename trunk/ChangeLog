@@ -1,3 +1,13 @@
+2013-01-28  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	Switch to XZ tarball compression.
+
+	* configure.in -> configure.ac:
+	  - Rename file for modern autoconf.
+	  - Specify "dist-xz no-dist-gzip" options to AM_INIT_AUTOMAKE.
+	  - Also add "-Wno-portability" to skip warnings on GNU make specific
+	    features.
+
 2012-11-29  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	Add glyphs for Esperanto to Purisa.
