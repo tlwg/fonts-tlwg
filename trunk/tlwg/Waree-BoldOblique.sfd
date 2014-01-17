@@ -3,8 +3,8 @@ FontName: Waree-BoldOblique
 FullName: Waree Bold Oblique
 FamilyName: Waree
 Weight: Bold
-Copyright: Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.\n\nModified under GNU General Public License by TLWG.
-Version: 0.11.8: 2012-02-14
+Copyright: Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.\n\nTLWG changes are in public domain.
+Version: 0.11.9: 2014-01-17
 ItalicAngle: -11
 UnderlinePosition: -170
 UnderlineWidth: 10
@@ -13,13 +13,12 @@ Descent: 410
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662462
-ModificationTime: 1329186453
+ModificationTime: 1389965754
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -129,6 +128,9 @@ ChainSub2: class "'ccmp' Thai General Composition"  6 6 1 4
   FClsList:
  1
   SeqLookup: 0 "Thai Mark High Variant" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'ccmp' Thai Below Vowel Tone Reordering"  0 0 0 19
  String: 15 uni0E38 uni0E48
@@ -255,7 +257,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 192 12 8
+WinInfo: 312 12 8
 BeginPrivate: 7
 BlueValues 47 [-29 0 1120 1147 1204 1234 1493 1520 1556 1556]
 OtherBlues 11 [-442 -426]
@@ -321,7 +323,8 @@ VWidth: 2348
 Flags: W
 HStem: 2036 114<97.0602 226.684> 2294 114<107.232 237.583>
 VStem: -22 116<2153.06 2281.75> 240 117<2162.91 2291.08>
-AnchorPoint: "AboveMark" 128 1999 mark 0
+AnchorPoint: "AboveMark" 129 1999 mark 0
+AnchorPoint: "AboveMark" 232 2529 basemark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6131,6 +6134,7 @@ Width: 0
 Flags: W
 HStem: 1304 124<-230.5 -35.8148> 1404 151<-420.629 -307.495> 1543 85<-139.523 -30.4585> 1654 135<-441.001 64.0315>
 VStem: -659 147<1453.81 1594.74> -29 91<1433.59 1542.76>
+AnchorPoint: "AboveMark" -202 2000 basemark 0
 AnchorPoint: "AboveMark" -313 1294 mark 0
 AnchorPoint: "AboveBase" 48 1284 mark 0
 LayerCount: 2
@@ -6174,6 +6178,7 @@ HStem: 2076 356<51 194>
 VStem: -18 281
 DStem2: -18 2076 194 2076 0.190809 0.981627<40.4515 362.625>
 AnchorPoint: "AboveMark" 73 2000 mark 0
+AnchorPoint: "AboveMark" 176 2529 basemark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6197,6 +6202,7 @@ VWidth: 2314
 Flags: W
 HStem: 2200 80<-69.1641 -45> 2394 88<-64.9075 52.7205>
 VStem: -153 82<2281.88 2386.05> 53 101<2287.79 2393.43>
+AnchorPoint: "AboveMark" 218 2529 basemark 0
 AnchorPoint: "AboveMark" 115 2000 mark 0
 LayerCount: 2
 Fore
@@ -6233,6 +6239,7 @@ VWidth: 2296
 Flags: W
 HStem: 2075 85<-227.992 -121.901> 2258 66<-201.542 -120.675>
 VStem: -351 122<2160.65 2252.62> -119 73<2166.51 2257.08> 98 137<2208.75 2365.34>
+AnchorPoint: "AboveMark" 34 2529 basemark 0
 AnchorPoint: "AboveMark" -69 2000 mark 0
 LayerCount: 2
 Fore
@@ -6277,7 +6284,8 @@ VWidth: 2297
 Flags: W
 HStem: 2212 179<-160 -58 165 267>
 VStem: -195 497
-AnchorPoint: "AboveMark" 12 2000 mark 0
+AnchorPoint: "AboveMark" -5 2000 mark 0
+AnchorPoint: "AboveMark" 116 2626 basemark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6309,6 +6317,7 @@ VWidth: 2306
 Flags: W
 HStem: 2076 110<-90.1774 35.7354>
 VStem: -222 130<2188.83 2310> 45 129<2196.41 2321.37>
+AnchorPoint: "AboveMark" 32 2529 basemark 0
 AnchorPoint: "AboveMark" -71 2000 mark 0
 LayerCount: 2
 Fore
@@ -6342,6 +6351,7 @@ Width: 0
 Flags: W
 HStem: 1336 180<-181.402 -22.5873> 1708 180<-160.132 -0.0233383>
 VStem: -372 183<1522.97 1680.53> 7 183<1542.68 1701.04>
+AnchorPoint: "AboveMark" -155 1280 mark 0
 AnchorPoint: "AboveMark" -3 2000 basemark 0
 AnchorPoint: "AboveBase" 45 1284 mark 0
 LayerCount: 2
@@ -6371,6 +6381,8 @@ VWidth: 2105
 Flags: W
 HStem: 1313 149<-113.609 123> 1595 132<-42.7031 146> 1854 144<-36.1344 261.088>
 VStem: -316 199<1415.5 1572.05> -228 183<1739.52 1840.39>
+AnchorPoint: "AboveMark" 112 2095 basemark 0
+AnchorPoint: "AboveMark" -45 1284 mark 0
 AnchorPoint: "AboveBase" 110 1284 mark 0
 LayerCount: 2
 Fore
@@ -7836,6 +7848,7 @@ Flags: W
 HStem: 1364 400<-99 61>
 VStem: -177 316
 DStem2: -177 1364 61 1364 0.190809 0.981627<45.4125 407.534>
+AnchorPoint: "AboveMark" 66 2000 basemark 0
 AnchorPoint: "AboveBase" 46 1284 mark 0
 LayerCount: 2
 Fore
@@ -7854,6 +7867,7 @@ Width: 0
 Flags: W
 HStem: 1520 90<-248.115 -221> 1738 100<-239.347 -112.849>
 VStem: -342 92<1612.02 1726.43> -111 115<1620.89 1736.01>
+AnchorPoint: "AboveMark" 14 2000 basemark 0
 AnchorPoint: "AboveBase" -40 1284 mark 0
 LayerCount: 2
 Fore
@@ -7884,6 +7898,7 @@ Width: 0
 Flags: W
 HStem: 1326 95<-393.574 -276.029> 1532 74<-363.916 -272.126>
 VStem: -533 139<1421.95 1525.14> -270 79<1431.83 1530.69> -27 154<1482.11 1652.59>
+AnchorPoint: "AboveMark" -112 2000 basemark 0
 AnchorPoint: "AboveBase" 92 1284 mark 0
 LayerCount: 2
 Fore
@@ -7921,6 +7936,7 @@ Width: 0
 Flags: W
 HStem: 1495 202<-355 -239 11 126>
 VStem: -394 559
+AnchorPoint: "AboveMark" -36 2000 basemark 0
 AnchorPoint: "AboveBase" 22 1284 mark 0
 LayerCount: 2
 Fore
@@ -7947,6 +7963,7 @@ Width: 0
 Flags: W
 HStem: 1316 122<-294.548 -160.865>
 VStem: -444 146<1442.27 1575.33> -145 146<1452 1589.4>
+AnchorPoint: "AboveMark" -124 2000 basemark 0
 AnchorPoint: "AboveBase" -48 1268 mark 0
 LayerCount: 2
 Fore
@@ -11077,6 +11094,7 @@ Flags: W
 HStem: 1965.3 110.05<-110.569 62.2144> 2054.05 134.012<-279.308 -178.902> 2177.41 75.4375<-29.8266 66.9681> 2275.92 119.812<-297.389 150.828>
 VStem: -490.862 130.462<2098.26 2223.33> 68.2625 80.7625<2080.31 2177.2>
 AnchorPoint: "AboveMark" -184 1958 mark 0
+AnchorPoint: "AboveMark" -73 2529 basemark 0
 LayerCount: 2
 Fore
 Refer: 190 3655 N 0.8875 0 0 0.8875 94 808 2
