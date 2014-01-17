@@ -1,5 +1,5 @@
 AC_PREREQ(2.59)
-AC_INIT(fonts-tlwg, 0.5.1, thep@linux.thai.net)
+AC_INIT(fonts-tlwg, 0.5.1svn, thep@linux.thai.net)
 AC_CONFIG_SRCDIR([nf/Garuda.sfd])
 
 AM_INIT_AUTOMAKE(dist-xz no-dist-gzip -Wno-portability)
