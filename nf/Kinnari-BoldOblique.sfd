@@ -4,7 +4,7 @@ FullName: Kinnari Bold Oblique
 FamilyName: Kinnari
 Weight: Bold
 Copyright: Copyright (C) 1999 Db Type. All Rights Reserved.\nCopyright (C) 2007 National Electronics and Computer Technology Center. All Rights Reserved.
-Version: 001.011: 2014-02-12
+Version: 001.012: 2014-02-13
 ItalicAngle: -12
 UnderlinePosition: -70
 UnderlineWidth: 25
@@ -18,7 +18,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1136287438
-ModificationTime: 1392203976
+ModificationTime: 1392279707
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Thai lookup 3"  {"'kern' Horizontal Kerning in Thai lookup 3 subtable"  } ['kern' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 4"  {"'kern' Horizontal Kerning lookup 4 subtable"  } ['kern' ('DFLT' <'dflt' > ) ]
 MarkAttachClasses: 1
@@ -266,7 +267,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 344 8 2
+WinInfo: 288 8 2
 BeginPrivate: 7
 BlueValues 39 [-14 0 472 482 596 600 690 703 711 713]
 BlueScale 9 0.0454545
@@ -277,7 +278,7 @@ StemSnapV 12 [48 120 297]
 ForceBold 4 true
 EndPrivate
 TeXData: 1 0 -562637 314572 157286 104857 330301 1048576 104857 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65536 354
 
 StartChar: .notdef
@@ -6529,6 +6530,8 @@ Width: 0
 Flags: W
 HStem: -227 41<-285.074 -240.389> -97 45<-278.161 -200.913>
 VStem: -336 47<-182.471 -107.638> -198 73<-174.05 -99.3387>
+AnchorPoint: "BelowMark" -105 -52 mark 0
+AnchorPoint: "BelowMark" -160 -312 basemark 0
 AnchorPoint: "BelowBase" -105 -52 mark 0
 LayerCount: 2
 Fore
@@ -6563,6 +6566,8 @@ Flags: W
 HStem: -319 39<-292.658 -249.153> -214 37<-403.167 -357.151> -88 37<-394.486 -321.38>
 VStem: -447 39<-172.905 -101.126> -362 69<-279.254 -226.083> -317 52<-164.552 -91.0643>
 DStem2: -259.69 -319 -161.69 -319 0.207912 0.978148<54.1635 267.853>
+AnchorPoint: "BelowMark" -105 -52 mark 0
+AnchorPoint: "BelowMark" -163 -324 basemark 0
 AnchorPoint: "BelowBase" -105 -52 mark 0
 LayerCount: 2
 Fore
@@ -6604,6 +6609,8 @@ Width: 0
 Flags: W
 HStem: -174 131<-207.26 -122.832>
 VStem: -235 140<-146.669 -70.5798>
+AnchorPoint: "BelowMark" -103 -43 mark 0
+AnchorPoint: "BelowMark" -132 -179 basemark 0
 AnchorPoint: "BelowBase" -103 -43 mark 0
 LayerCount: 2
 Fore
