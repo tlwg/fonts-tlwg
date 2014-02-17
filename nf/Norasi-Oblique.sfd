@@ -4,7 +4,7 @@ FullName: Norasi Oblique
 FamilyName: Norasi
 Weight: Book
 Copyright: Copyright (C) 1999, The National Font Project (v.beta). Yannis Haralambous, Virach Sornlertlamvanich and Anutara Tantraporn. All rights reserved.\n\nModified under GNU General Public License, with creators' permission, by Thai Linux Working Group (TLWG).
-Version: 004.014: 2014-02-17
+Version: 004.015: 2014-02-17
 ItalicAngle: -12
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -18,7 +18,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153665480
-ModificationTime: 1392627202
+ModificationTime: 1392642530
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -76,6 +76,7 @@ Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 5"  {"'kern' Horizontal Kernin
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
@@ -270,7 +271,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 344 8 2
+WinInfo: 264 8 2
 BeginPrivate: 8
 BlueValues 39 [-15 0 450 460 551 564 662 677 683 683]
 ForceBold 5 false
@@ -281,7 +282,7 @@ StemSnapV 37 [15 20 27 33 37 41 48 53 58 65 69 75]
 StdHW 4 [25]
 StemSnapH 22 [14 19 20 25 34 45 98]
 EndPrivate
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65538 399
 
 StartChar: .notdef
@@ -12408,6 +12409,8 @@ Width: 0
 Flags: W
 HStem: -224 34<-273.276 -221.499> -86 35<-256.183 -177.5>
 VStem: -305 30<-188.091 -109.978> -200 72<-198.112 -86.95>
+AnchorPoint: "BelowMark" -111 -51 mark 0
+AnchorPoint: "BelowMark" -165 -302 basemark 0
 AnchorPoint: "BelowBase" -111 -51 mark 0
 LayerCount: 2
 Back
@@ -12462,6 +12465,8 @@ Flags: W
 HStem: -293 37<-287.787 -228.477> -224 34<-412.968 -356.368> -86 35<-394.727 -316.5>
 VStem: -444 29<-187.433 -110.594> -360 72<-255.621 -163.213> -339 71<-206.356 -87.1021>
 DStem2: -237.879 -293 -163.067 -293 0.207912 0.978148<34.3226 239.049>
+AnchorPoint: "BelowMark" -111 -51 mark 0
+AnchorPoint: "BelowMark" -165 -302 basemark 0
 AnchorPoint: "BelowBase" -111 -51 mark 0
 LayerCount: 2
 Back
@@ -12531,6 +12536,8 @@ Width: 0
 Flags: W
 HStem: -170 117<-209.938 -135.455>
 VStem: -233 120<-147.664 -76.042>
+AnchorPoint: "BelowMark" -111 -51 mark 0
+AnchorPoint: "BelowMark" -139 -179 basemark 0
 AnchorPoint: "BelowBase" -111 -51 mark 0
 LayerCount: 2
 Back
