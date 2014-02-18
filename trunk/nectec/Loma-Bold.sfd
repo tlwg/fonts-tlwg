@@ -4,7 +4,7 @@ FullName: Loma Bold
 FamilyName: Loma
 Weight: Bold
 Copyright: Copyright (c) NECTEC, 2003. All rights reserved.\nModified under GNU General Public License by TLWG.
-Version: 0.9.18: 2012-02-13
+Version: 0.9.19: 2014-02-18
 ItalicAngle: 0
 UnderlinePosition: -170
 UnderlineWidth: 10
@@ -13,13 +13,12 @@ Descent: 410
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662462
-ModificationTime: 1329132986
+ModificationTime: 1392698859
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -82,17 +81,19 @@ ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
  1
   SeqLookup: 0 "Thai Descender Removal Single Substitution" 
 EndFPST
-ChainSub2: class "'ccmp' Thai General Composition"  6 6 1 4
+ChainSub2: class "'ccmp' Thai General Composition"  7 7 1 7
   Class: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   Class: 7 uni0E33
   Class: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
   Class: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
-  Class: 15 uni0E47 uni0E4D
+  Class: 23 uni0E47 uni0E4D uni0E4E
+  Class: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
   BClass: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   BClass: 7 uni0E33
   BClass: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
   BClass: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
-  BClass: 15 uni0E47 uni0E4D
+  BClass: 23 uni0E47 uni0E4D uni0E4E
+  BClass: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
  1 1 0
   ClsList: 2
   BClsList: 1
@@ -118,6 +119,27 @@ ChainSub2: class "'ccmp' Thai General Composition"  6 6 1 4
   FClsList:
  1
   SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 3
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 5
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 6
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+  ClassNames: "All_Others"  "1"  "2"  "3"  "4"  "5"  "6"  
+  BClassNames: "All_Others"  "1"  "2"  "3"  "4"  "5"  "6"  
+  FClassNames: "All_Others"  
 EndFPST
 ChainSub2: glyph "'ccmp' Thai Below Vowel Tone Reordering"  0 0 0 19
  String: 15 uni0E38 uni0E48
@@ -256,7 +278,7 @@ ForceBold 4 true
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 543744 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
-BeginChars: 65537 359
+BeginChars: 65537 360
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -284,12 +306,36 @@ StartChar: uni0E47.high
 Encoding: 63263 63263 1
 Width: 0
 Flags: W
-HStem: 1797.6 128.7<-638.877 -541.3> 1797.6 181.8<-508.806 -439.737> 1876.8 150.3<-775.423 -669.924> 2047.8 66.6<-509.071 -440.076>
-VStem: -999.4 157.5<1981.05 2075.54> -585.4 75.6<1979.77 2047.68> -437.8 107.1<1924.05 2046.79>
+HStem: 1792 193<-588.868 -446.05> 1792 140<-640.872 -553> 1871 162<-768.393 -660.441> 2042 78<-503.947 -445.396>
+VStem: -1005 169<1992.84 2076.78> -591 87<1985.32 2041.26> -444 119<1922.5 2041.88> -439 175<2292.51 2353>
+AnchorPoint: "AboveMark" -665 2300 basemark 0
 AnchorPoint: "AboveMark" -665 1740 mark 0
 LayerCount: 2
 Back
 SplineSet
+-437.8 2013.6 m 0x9e
+ -437.8 2030.7 -452.2 2047.8 -473.8 2047.8 c 0
+ -495.4 2047.8 -509.8 2030.7 -509.8 2013.6 c 0
+ -509.8 1996.5 -495.4 1979.4 -473.8 1979.4 c 0
+ -452.2 1979.4 -437.8 1996.5 -437.8 2013.6 c 0x9e
+-762.7 2027.1 m 0x3e
+ -688.9 2027.1 -615.1 1926.3 -562.9 1926.3 c 0x5e
+ -546.7 1926.3 -542.2 1932.6 -541.3 1932.6 c 1
+ -570.1 1950.6 -585.4 1976.7 -585.4 2011.8 c 0
+ -585.4 2058.6 -543.1 2114.4 -471.1 2114.4 c 0
+ -338.8 2114.4 -330.7 2010.9 -330.7 1970.4 c 0
+ -330.7 1877.7 -390.1 1797.6 -489.1 1797.6 c 0x9e
+ -556.6 1797.6 -614.2 1812 -661.9 1841.7 c 1
+ -687.1 1855.2 -709.6 1876.8 -746.5 1876.8 c 0x3e
+ -787 1876.8 -771.7 1801.2 -783.4 1797.6 c 1x5e
+ -956.2 1797.6 -999.4 1924.5 -999.4 2001 c 0
+ -999.4 2094.6 -935.5 2191.8 -832 2217.9 c 0
+ -670.9 2258.4 -479.2 2208.9 -434.2 2346.6 c 1
+ -270.4 2346.6 l 1
+ -280.3 2254.8 -385.6 2155.8 -466.6 2136 c 0
+ -619.6 2099.1 -841.9 2130.6 -841.9 2011.8 c 0
+ -841.9 1996.5 -837.4 1989.3 -832 1979.4 c 1x9e
+ -815.8 2010.9 -792.4 2027.1 -762.7 2027.1 c 0x3e
 -412 1524 m 0x3e
  -412 1543 -428 1562 -452 1562 c 0
  -476 1562 -492 1543 -492 1524 c 0
@@ -315,7 +361,30 @@ SplineSet
  -832 1521 -806 1539 -773 1539 c 0x7e
 EndSplineSet
 Fore
-Refer: 190 3655 N 0.9 0 0 0.9 -67 642 2
+SplineSet
+-444 2014 m 0x9e
+ -444 2028 -456 2042 -474 2042 c 0
+ -492 2042 -504 2028 -504 2014 c 0
+ -504 2000 -492 1985 -474 1985 c 0
+ -456 1985 -444 2000 -444 2014 c 0x9e
+-746 1871 m 0x3e
+ -784 1871 -755 1800 -782 1792 c 1x5e
+ -960 1792 -1005 1922 -1005 2001 c 0
+ -1005 2097 -939 2197 -833 2224 c 0
+ -663 2267 -484 2216 -439 2353 c 1
+ -264 2353 l 1
+ -275 2253 -377 2151 -465 2130 c 0
+ -624 2092 -836 2123 -836 2012 c 0
+ -836 2003 -834 1997 -832 1992 c 1
+ -815 2019 -792 2033 -763 2033 c 0x3d
+ -685 2033 -609 1932 -563 1932 c 0x5d
+ -559 1932 -555 1933 -553 1933 c 1
+ -578 1952 -591 1979 -591 2012 c 0
+ -591 2062 -546 2120 -471 2120 c 0
+ -334 2120 -325 2011 -325 1970 c 0
+ -325 1875 -386 1792 -489 1792 c 0x9e
+ -658 1792 -700 1871 -746 1871 c 0x3e
+EndSplineSet
 EndChar
 
 StartChar: uni0E4D.high
@@ -325,6 +394,7 @@ VWidth: 2561
 Flags: W
 HStem: 1719 104<-313.559 -208.548> 1928 107<-313.559 -208.441>
 VStem: -419 104<1825.48 1927.07> -207 102<1825.48 1927.18>
+AnchorPoint: "AboveMark" -261 2208 basemark 0
 AnchorPoint: "AboveMark" -261 1740 mark 0
 LayerCount: 2
 Fore
@@ -5954,6 +6024,7 @@ Width: 0
 Flags: W
 HStem: 1284 202<-490.896 -414.152> 1284 143<-635.419 -527> 1372 167<-787.137 -669.916> 1562 74<-491.19 -414.529>
 VStem: -1036 175<1487.83 1592.83> -576 84<1486.41 1561.87> -412 119<1424.5 1560.88>
+AnchorPoint: "AboveMark" -665 1830 basemark 0
 AnchorPoint: "AboveBase" -310 1227 mark 0
 LayerCount: 2
 Fore
@@ -5992,6 +6063,7 @@ Width: 0
 Flags: W
 HStem: 1826 280<-378 -147>
 VStem: -378 231<1826 2106>
+AnchorPoint: "AboveMark" -262 2208 basemark 0
 AnchorPoint: "AboveMark" -262 1740 mark 0
 LayerCount: 2
 Fore
@@ -6015,6 +6087,7 @@ Width: 0
 Flags: W
 HStem: 1878 89<-582.411 -500.322> 2073 97<-581.786 -476.723>
 VStem: -680 97<1969.28 2071.33> -475 125<1968.25 2072.06>
+AnchorPoint: "AboveMark" -286 2208 basemark 0
 AnchorPoint: "AboveMark" -286 1740 mark 0
 LayerCount: 2
 Fore
@@ -6051,6 +6124,7 @@ Flags: W
 HStem: 1668 89<-755.995 -599.995> 1837 77<-678.961 -599.506>
 VStem: -872 159<1886 1958.79> -599 74<1758.27 1835.91>
 DStem2: -153 1918 -4 1832 0.357493 0.933916<0 269.447>
+AnchorPoint: "AboveMark" -458 2208 basemark 0
 AnchorPoint: "AboveMark" -458 1740 mark 0
 LayerCount: 2
 Fore
@@ -6093,6 +6167,7 @@ Width: 0
 Flags: W
 HStem: 1793 174<-590 -459 -287 -164>
 VStem: -459 172<1670 1793 1967 2096>
+AnchorPoint: "AboveMark" -373 2208 basemark 0
 AnchorPoint: "AboveMark" -373 1640 mark 0
 LayerCount: 2
 Fore
@@ -6124,6 +6199,7 @@ Width: 0
 Flags: W
 HStem: 1621 112<-478.187 -346.759>
 VStem: -618 136<1738.39 1849.45> -342 132<1738.18 1852.07>
+AnchorPoint: "AboveMark" -415 2208 basemark 0
 AnchorPoint: "AboveMark" -415 1740 mark 0
 LayerCount: 2
 Fore
@@ -6182,6 +6258,7 @@ Width: 0
 Flags: W
 HStem: 1444 122<-357.722 -135> 1675 129<-343.674 -168> 1909 127<-346.024 -104.856>
 VStem: -543 182<1580.49 1664.92> -518 170<1813.84 1906.74>
+AnchorPoint: "AboveMark" -323 2088 basemark 0
 AnchorPoint: "AboveBase" -135 1227 mark 0
 LayerCount: 2
 Fore
@@ -6205,6 +6282,7 @@ SplineSet
  -543 1693 -472 1734 -450 1744 c 1
  -495 1776 -518 1816 -518 1884 c 0xe8
 EndSplineSet
+Substitution2: "Thai Mark High Variant" uni0E4E.high
 EndChar
 
 StartChar: uni0E4F
@@ -7673,8 +7751,9 @@ StartChar: uni0E4A.low_left
 Encoding: 63239 63239 248
 Width: 0
 Flags: W
-HStem: 1247 89<-1206.99 -1051> 1416 77<-1129.96 -1050.97>
-VStem: -1323 193<1337.96 1505.67> -1050 74<1337.27 1414.96>
+HStem: 1247 89<-1206.99 -1051> 1416 77<-1129.96 -1050.51>
+VStem: -1323 193<1337.96 1505.67> -1050 74<1337.27 1414.91>
+DStem2: -604 1497 -455 1411 0.357493 0.933916<0 269.447>
 LayerCount: 2
 Fore
 Refer: 253 63244 N 1 0 0 1 -505 0 2
@@ -7708,6 +7787,7 @@ Width: 0
 Flags: W
 HStem: 1309 280<-350 -119>
 VStem: -350 231<1309 1589>
+AnchorPoint: "AboveMark" -235 1740 basemark 0
 AnchorPoint: "AboveBase" -119 1227 mark 0
 LayerCount: 2
 Fore
@@ -7726,6 +7806,7 @@ Width: 0
 Flags: W
 HStem: 1420 88<-716.989 -636.461> 1615 97<-718.367 -613.457>
 VStem: -816 97<1508.97 1612.89> -611 125<1508.88 1612.89>
+AnchorPoint: "AboveMark" -443 1740 basemark 0
 AnchorPoint: "AboveBase" -240 1227 mark 0
 LayerCount: 2
 Fore
@@ -7754,8 +7835,10 @@ StartChar: uni0E4A.low
 Encoding: 63244 63244 253
 Width: 0
 Flags: W
-HStem: 1247 89<-701.995 -545.995> 1416 77<-624.956 -545.969>
-VStem: -818 193<1337.96 1505.67> -545 74<1337.27 1414.96>
+HStem: 1247 89<-701.995 -545.995> 1416 77<-624.961 -545.506>
+VStem: -818 193<1337.96 1505.67> -545 74<1337.27 1414.91>
+DStem2: -99 1497 50 1411 0.357493 0.933916<0 269.447>
+AnchorPoint: "AboveMark" -453 1740 basemark 0
 AnchorPoint: "AboveBase" 0 1227 mark 0
 LayerCount: 2
 Fore
@@ -7769,8 +7852,8 @@ SplineSet
  -199 1691 -98 1608 -98 1509 c 0
  -98 1505 -99 1501 -99 1497 c 1
  -1 1748 l 1
- 179 1748 l 2
- 178 1748 135 1636 50 1411 c 1
+ 179 1748 l 1
+ 50 1411 l 2
  -8 1262 -212 1251 -271 1251 c 1
  -246 1290 -233 1334 -233 1381 c 0
  -233 1480 -284 1538 -311 1555 c 1
@@ -7778,7 +7861,7 @@ SplineSet
  -593 1555 l 1
  -622 1544 -656 1511 -659 1465 c 1
  -638 1484 -612 1493 -581 1493 c 0
- -514 1494 -471 1447 -471 1372 c 0
+ -514 1493 -471 1447 -471 1372 c 0
  -471 1296 -531 1247 -623 1247 c 0
  -779 1247 -818 1379 -818 1461 c 0
  -818 1623 -663 1708 -593 1733 c 1
@@ -7793,6 +7876,7 @@ Width: 0
 Flags: W
 HStem: 1348 174<-470 -339 -167 -44>
 VStem: -339 172<1225 1348 1522 1651>
+AnchorPoint: "AboveMark" -253 1740 basemark 0
 AnchorPoint: "AboveBase" -60 1227 mark 0
 LayerCount: 2
 Fore
@@ -7819,6 +7903,7 @@ Width: 0
 Flags: W
 HStem: 1250 112<-568.187 -436.759>
 VStem: -708 136<1367.39 1477.52> -432 132<1367.18 1481.07>
+AnchorPoint: "AboveMark" -502 1740 basemark 0
 AnchorPoint: "AboveBase" -300 1227 mark 0
 LayerCount: 2
 Fore
@@ -10162,6 +10247,59 @@ SplineSet
  1361 520 l 1
  1240 330 l 1
  1361 330 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni0E4E.high
+Encoding: 63264 63264 359
+Width: 0
+Flags: W
+HStem: 1801 121<-383.789 -182> 2009 128<-373.61 -212> 2219 126<-372.929 -155.578>
+VStem: -562 176<1932.54 2002.43> -539 165<2143.12 2217.22>
+AnchorPoint: "AboveMark" -372 1749 mark 0
+AnchorPoint: "AboveMark" -372 2397 basemark 0
+LayerCount: 2
+Back
+SplineSet
+-533.2 2202.6 m 0xe8
+ -533.2 2290.8 -436 2339.4 -318.1 2339.4 c 0
+ -268.6 2339.4 -215.5 2332.2 -158.8 2318.7 c 1
+ -158.8 2203.5 l 1
+ -211.9 2217 -261.4 2225.1 -310 2225.1 c 0
+ -345.1 2225.1 -380.2 2222.4 -380.2 2186.4 c 0xe8
+ -380.2 2148.6 -337.9 2130.6 -281.2 2130.6 c 2
+ -218.2 2130.6 l 1
+ -218.2 2014.5 l 1
+ -276.7 2014.5 l 2
+ -338.8 2014.5 -391.9 2003.7 -391.9 1962.3 c 0
+ -391.9 1918.2 -265 1916.4 -258.7 1916.4 c 2
+ -188.5 1916.4 l 1
+ -188.5 1806.6 l 1
+ -264.1 1806.6 l 2
+ -407.2 1806.6 -555.7 1862.4 -555.7 1961.4 c 0xf0
+ -555.7 2030.7 -491.8 2067.6 -472 2076.6 c 1
+ -512.5 2105.4 -533.2 2141.4 -533.2 2202.6 c 0xe8
+EndSplineSet
+Fore
+SplineSet
+-153 2196 m 1xe8
+ -207 2210 -260 2219 -310 2219 c 0
+ -346 2219 -374 2216 -374 2186 c 0xe8
+ -374 2154 -338 2137 -281 2137 c 2
+ -212 2137 l 1
+ -212 2009 l 1
+ -277 2009 l 2
+ -341 2009 -386 1996 -386 1962 c 0
+ -386 1927 -269 1922 -259 1922 c 2
+ -182 1922 l 1
+ -182 1801 l 1
+ -264 1801 l 2
+ -407 1801 -562 1855 -562 1961 c 0xf0
+ -562 2026 -508 2064 -483 2078 c 1
+ -521 2108 -539 2145 -539 2203 c 0
+ -539 2297 -436 2345 -318 2345 c 0
+ -267 2345 -209 2336 -153 2323 c 1
+ -153 2196 l 1xe8
 EndSplineSet
 EndChar
 EndChars
