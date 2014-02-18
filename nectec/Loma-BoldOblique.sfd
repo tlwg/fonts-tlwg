@@ -4,7 +4,7 @@ FullName: Loma Bold Oblique
 FamilyName: Loma
 Weight: Bold
 Copyright: Copyright (c) NECTEC, 2003. All rights reserved.\nModified under GNU General Public License by TLWG.
-Version: 0.9.19: 2014-02-18
+Version: 0.9.20: 2014-02-18
 ItalicAngle: -12
 UnderlinePosition: -170
 UnderlineWidth: 10
@@ -18,7 +18,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662534
-ModificationTime: 1392699736
+ModificationTime: 1392704522
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 3"  {"'kern' Horizontal Kerning in Latin lookup 3"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -266,7 +267,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 264 12 8
+WinInfo: 252 12 8
 BeginPrivate: 7
 BlueValues 37 [-13 0 1062 1095 1139 1150 1450 1482]
 OtherBlues 11 [-428 -422]
@@ -276,7 +277,7 @@ StemSnapH 12 [20 200 220]
 StemSnapV 25 [130 223 227 233 244 249]
 ForceBold 4 true
 EndPrivate
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65537 360
 
 StartChar: .notdef
@@ -5689,6 +5690,8 @@ Width: 0
 Flags: W
 HStem: -378 82<-487.05 -440.431> -176 91<-481.421 -310.5>
 VStem: -580 92<-294.456 -180.224> -388 171<-291.825 -176.3>
+AnchorPoint: "BelowMark" -179 -85 mark 0
+AnchorPoint: "BelowMark" -284 -577 basemark 0
 AnchorPoint: "BelowBase" -179 -85 mark 0
 LayerCount: 2
 Fore
@@ -5723,6 +5726,8 @@ Flags: W
 HStem: -504 129<-556 -440> -351 73<-810.669 -747.775> -158 83<-803.305 -712.895>
 VStem: -900 88<-277.315 -162.699> -712 185<-273.276 -158.49>
 DStem2: -467.42 -504 -267 -504 0.207912 0.978148<131.882 415.096>
+AnchorPoint: "BelowMark" -179 -85 mark 0
+AnchorPoint: "BelowMark" -284 -577 basemark 0
 AnchorPoint: "BelowBase" -179 -85 mark 0
 LayerCount: 2
 Fore
@@ -5760,12 +5765,14 @@ Width: 0
 Flags: W
 HStem: -330 270<-365.763 -209.651>
 VStem: -424 275<-270.494 -118.247>
+AnchorPoint: "BelowMark" -172 -65 mark 0
+AnchorPoint: "BelowMark" -237 -373 basemark 0
 AnchorPoint: "BelowBase" -172 -65 mark 0
 LayerCount: 2
 Fore
 SplineSet
 -424 -222 m 0
- -424 -149 -352 -60 -259 -60 c 4
+ -424 -149 -352 -60 -259 -60 c 0
  -185 -60 -149 -116 -149 -170 c 0
  -149 -248 -231 -330 -316 -330 c 0
  -377 -330 -424 -284 -424 -222 c 0

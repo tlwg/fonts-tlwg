@@ -4,7 +4,7 @@ FullName: Loma Bold
 FamilyName: Loma
 Weight: Bold
 Copyright: Copyright (c) NECTEC, 2003. All rights reserved.\nModified under GNU General Public License by TLWG.
-Version: 0.9.19: 2014-02-18
+Version: 0.9.20: 2014-02-18
 ItalicAngle: 0
 UnderlinePosition: -170
 UnderlineWidth: 10
@@ -18,7 +18,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662462
-ModificationTime: 1392698859
+ModificationTime: 1392704292
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 3"  {"'kern' Horizontal Kerning in Latin lookup 3"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -266,7 +267,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 264 12 8
+WinInfo: 252 12 8
 BeginPrivate: 7
 BlueValues 37 [-13 0 1062 1095 1139 1150 1450 1482]
 OtherBlues 11 [-428 -422]
@@ -277,7 +278,7 @@ StemSnapV 9 [220 240]
 ForceBold 4 true
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 543744 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65537 360
 
 StartChar: .notdef
@@ -5663,6 +5664,8 @@ Width: 0
 Flags: W
 HStem: -378 82<-432.905 -361.341> -176 91<-432.862 -343.055>
 VStem: -525 89<-294.149 -177.536> -361 200<-534 -370> -340 179<-295.788 -177.278>
+AnchorPoint: "BelowMark" -161 -85 mark 0
+AnchorPoint: "BelowMark" -161 -577 basemark 0
 AnchorPoint: "BelowBase" -161 -85 mark 0
 LayerCount: 2
 Fore
@@ -5695,6 +5698,8 @@ Width: 0
 Flags: W
 HStem: -504 129<-476 -360> -351 73<-759.355 -676.469> -158 83<-761.085 -673.249>
 VStem: -849 85<-276.955 -158.718> -676 200<-375 -335 -277.987 -159.362> -360 200<-375 -98>
+AnchorPoint: "BelowMark" -161 -85 mark 0
+AnchorPoint: "BelowMark" -161 -577 basemark 0
 AnchorPoint: "BelowBase" -161 -85 mark 0
 LayerCount: 2
 Fore
@@ -5731,6 +5736,8 @@ Width: 0
 Flags: W
 HStem: -330 270<-343.436 -148.824>
 VStem: -380 269<-292.157 -96.4768>
+AnchorPoint: "BelowMark" -158 -65 mark 0
+AnchorPoint: "BelowMark" -158 -373 basemark 0
 AnchorPoint: "BelowBase" -158 -65 mark 0
 LayerCount: 2
 Fore
