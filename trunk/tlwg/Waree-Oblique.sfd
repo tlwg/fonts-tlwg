@@ -4,7 +4,7 @@ FullName: Waree Oblique
 FamilyName: Waree
 Weight: Book
 Copyright: Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.\n\nTLWG changes are in public domain.
-Version: 0.11.10: 2014-02-18
+Version: 0.11.11: 2014-02-19
 ItalicAngle: -11
 UnderlinePosition: -170
 UnderlineWidth: 20
@@ -18,7 +18,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662374
-ModificationTime: 1392710949
+ModificationTime: 1392786101
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -82,6 +82,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai  Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
@@ -276,7 +277,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 252 12 8
+WinInfo: 276 12 8
 BeginPrivate: 6
 BlueValues 47 [-29 0 1120 1147 1202 1232 1493 1520 1556 1556]
 OtherBlues 11 [-426 -426]
@@ -382,7 +383,7 @@ Grid
  -472 1378 -432 1250.67 -432 1080 c 0
 EndSplineSet
 TeXData: 1 0 0 524288 262144 174762 543744 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65537 411
 
 StartChar: .notdef
@@ -6309,6 +6310,8 @@ Width: 0
 Flags: W
 HStem: -424 92<-503.974 -427.374> -226 106<-501.115 -391.23>
 VStem: -595 90<-330.565 -231.407> -391 144<-393.586 -227.776>
+AnchorPoint: "BelowMark" -214 -120 mark 0
+AnchorPoint: "BelowMark" -306 -591 basemark 0
 AnchorPoint: "BelowBase" -214 -120 mark 0
 LayerCount: 2
 Fore
@@ -6343,6 +6346,8 @@ Flags: W
 HStem: -524 102<-598 -457> -424 92<-828.474 -751.487> -226 106<-825.47 -715.731>
 VStem: -920 91<-330.599 -231.671> -715 143<-327.343 -227.776>
 DStem2: -476.827 -524 -322 -524 0.190809 0.981627<103.909 405.538>
+AnchorPoint: "BelowMark" -214 -120 mark 0
+AnchorPoint: "BelowMark" -306 -591 basemark 0
 AnchorPoint: "BelowBase" -214 -120 mark 0
 LayerCount: 2
 Fore
@@ -6380,6 +6385,8 @@ Width: 0
 Flags: W
 HStem: -382 270<-431.753 -269.927>
 VStem: -486 274<-325.097 -168.234>
+AnchorPoint: "BelowMark" -214 -120 mark 0
+AnchorPoint: "BelowMark" -278 -450 basemark 0
 AnchorPoint: "BelowBase" -214 -120 mark 0
 LayerCount: 2
 Fore
