@@ -4,7 +4,7 @@ FullName: Waree Bold
 FamilyName: Waree
 Weight: Bold
 Copyright: Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.\n\nTLWG changes are in public domain.
-Version: 0.11.10: 2014-02-18
+Version: 0.11.11: 2014-02-19
 ItalicAngle: 0
 UnderlinePosition: -170
 UnderlineWidth: 10
@@ -18,7 +18,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662462
-ModificationTime: 1392711890
+ModificationTime: 1392789053
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -82,6 +82,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 3"  {"'kern' Horizontal Kerning in Latin lookup 3"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -277,7 +278,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 324 12 8
+WinInfo: 264 12 8
 BeginPrivate: 7
 BlueValues 47 [-29 0 1120 1147 1204 1234 1493 1520 1556 1556]
 OtherBlues 11 [-442 -426]
@@ -304,7 +305,7 @@ Grid
 860 0 m 1
 EndSplineSet
 TeXData: 1 0 0 524288 262144 174762 543744 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65537 411
 
 StartChar: .notdef
@@ -5571,7 +5572,9 @@ Encoding: 3640 3640 179
 Width: 0
 Flags: W
 HStem: -412 102<-488.02 -386.491> -204 126<-487.603 -381.573>
-VStem: -589 99<-308.023 -207.055> -386 258<-512 -405 -309.93 -216.164>
+VStem: -589 99<-308.023 -207.055> -386 258<-560 -405 -309.93 -216.164>
+AnchorPoint: "BelowMark" -133 -85 mark 0
+AnchorPoint: "BelowMark" -133 -620 basemark 0
 AnchorPoint: "BelowBase" -133 -85 mark 0
 LayerCount: 2
 Fore
@@ -5579,8 +5582,8 @@ SplineSet
 -589 -254 m 0
  -589 -176 -538 -78 -406 -78 c 0
  -252 -78 -128 -212 -128 -378 c 2
- -128 -512 l 1
- -386 -512 l 1
+ -128 -560 l 1
+ -386 -560 l 1
  -386 -405 l 1
  -396 -410 -412 -412 -435 -412 c 0
  -509 -412 -589 -339 -589 -254 c 0
@@ -5604,6 +5607,8 @@ Width: 0
 Flags: W
 HStem: -560 151<-524 -442> -404 102<-882.367 -780.491> -196 126<-881.951 -775.579>
 VStem: -988 104<-300.223 -198.87> -442 262<-409 -76>
+AnchorPoint: "BelowMark" -133 -85 mark 0
+AnchorPoint: "BelowMark" -133 -620 basemark 0
 AnchorPoint: "BelowBase" -133 -85 mark 0
 LayerCount: 2
 Fore
@@ -5640,6 +5645,8 @@ Width: 0
 Flags: W
 HStem: -433 330<-385.986 -165.108>
 VStem: -439 328<-379.289 -157.108>
+AnchorPoint: "BelowMark" -158 -85 mark 0
+AnchorPoint: "BelowMark" -158 -493 basemark 0
 AnchorPoint: "BelowBase" -158 -85 mark 0
 LayerCount: 2
 Fore
@@ -7947,7 +7954,7 @@ Encoding: 63256 63256 265
 Width: 0
 Flags: W
 HStem: -907 102<-555.02 -453.491> -699 126<-554.603 -448.573>
-VStem: -656 99<-803.023 -702.055> -453 258<-1007 -900 -804.93 -711.164>
+VStem: -656 99<-803.023 -702.055> -453 258<-1055 -900 -804.93 -711.164>
 LayerCount: 2
 Fore
 Refer: 179 3640 N 1 0 0 1 -67 -495 2
