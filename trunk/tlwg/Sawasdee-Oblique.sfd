@@ -4,7 +4,7 @@ FullName: Sawasdee Oblique
 FamilyName: Sawasdee
 Weight: Regular
 Copyright: Copyright (c) 2007 Pol Udomwittayanukul. All rights reserved.
-Version: 001.007: 2012-02-13
+Version: 001.008: 2014-02-20
 ItalicAngle: -12
 UnderlinePosition: -153
 UnderlineWidth: 102
@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1178430034
-ModificationTime: 1329145088
+ModificationTime: 1392906122
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -94,17 +94,19 @@ ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
  1
   SeqLookup: 0 "Thai Descender Removal Single Substitution" 
 EndFPST
-ChainSub2: class "'ccmp' Thai General Composition"  6 6 1 4
+ChainSub2: class "'ccmp' Thai General Composition"  7 7 1 7
   Class: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   Class: 7 uni0E33
   Class: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
   Class: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
-  Class: 15 uni0E47 uni0E4D
+  Class: 23 uni0E47 uni0E4D uni0E4E
+  Class: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
   BClass: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   BClass: 7 uni0E33
   BClass: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
   BClass: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
-  BClass: 15 uni0E47 uni0E4D
+  BClass: 23 uni0E47 uni0E4D uni0E4E
+  BClass: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
  1 1 0
   ClsList: 2
   BClsList: 1
@@ -130,6 +132,27 @@ ChainSub2: class "'ccmp' Thai General Composition"  6 6 1 4
   FClsList:
  1
   SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 3
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 5
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 6
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+  ClassNames: "All_Others"  "1"  "2"  "3"  "4"  "5"  "6"  
+  BClassNames: "All_Others"  "1"  "2"  "3"  "4"  "5"  "6"  
+  FClassNames: "All_Others"  
 EndFPST
 ChainSub2: glyph "'ccmp' Thai Below Vowel Tone Reordering"  0 0 0 19
  String: 15 uni0E38 uni0E48
@@ -255,7 +278,7 @@ NameList: Adobe Glyph List
 DisplaySize: -24
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 32 16 7
+WinInfo: 256 16 7
 BeginPrivate: 6
 BlueValues 37 [-17 0 1014 1032 1194 1209 1493 1511]
 OtherBlues 11 [-521 -448]
@@ -272,7 +295,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 0 252706 126353 84235 356096 1048576 84235 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" "AboveBase"  "'mark' Thai Above Base" 
-BeginChars: 65536 361
+BeginChars: 65536 362
 
 StartChar: space
 Encoding: 32 32 0
@@ -9002,10 +9025,10 @@ Encoding: 3655 3655 291
 Width: 0
 VWidth: 2982
 Flags: W
-HStem: 1327 92<-116.098 108.452> 1350 89<-526.988 -430 16.4055 107.255> 1623 90<-500.936 231>
-VStem: -624 86<1456.07 1582.7>
-DStem2: -430 1439 -423 1350 0.872587 0.488459<-37.3647 149.805> -246 1542 -260 1442 0.855782 -0.517337<39.7528 285.865>
-AnchorPoint: "AboveMark" -296 1271 mark 0
+HStem: 1327 92<-116.225 108.452> 1350 89<-524.557 -430 16.4055 107.255> 1623 90<-500.936 231>
+VStem: -624 86<1456.79 1582.7>
+DStem2: -430 1439 -423 1350 0.872587 0.488459<-41.6352 149.805> -246 1542 -260 1442 0.855782 -0.517337<39.7528 285.865>
+AnchorPoint: "AboveMark" -188 1779 basemark 0
 AnchorPoint: "AboveBase" 103 1271 mark 0
 LayerCount: 2
 Fore
@@ -9018,16 +9041,15 @@ SplineSet
  -474 1623 -538 1560 -538 1518 c 0
  -538 1480 -500 1442 -430 1439 c 1x70
  -246 1542 l 1
- -69 1435 l 1
- -43 1424 -13 1419 15 1419 c 0xb0
+ -69 1435 l 2
+ -45 1420 -13 1419 15 1419 c 0xb0
  45 1419 74 1424 105 1433 c 1
  119 1350 l 1x70
  79 1337 36 1327 -4 1327 c 0xb0
- -47 1327 -87 1337 -121 1354 c 1
+ -47 1327 -89 1334 -121 1354 c 2
  -260 1442 l 1
  -423 1350 l 1
- -436 1350 l 2
- -534 1350 -624 1408 -624 1500 c 0x70
+ -528 1350 -624 1401 -624 1500 c 0x70
 EndSplineSet
 Substitution2: "Thai Mark High Variant" uni0E47.high
 Substitution2: "Thai Phinthu Maitaikhu Reordering" uni0E3A
@@ -9041,6 +9063,7 @@ Flags: W
 HStem: 1683 244<152 190>
 VStem: 101 141
 DStem2: 101 1683 190 1683 0.207912 0.978148<18.5041 249.272>
+AnchorPoint: "AboveMark" 219 2033 basemark 0
 AnchorPoint: "AboveMark" 140 1657 mark 0
 LayerCount: 2
 Fore
@@ -9064,8 +9087,9 @@ Encoding: 3657 3657 293
 Width: 0
 VWidth: 2982
 Flags: W
-HStem: 1683 90<30 361> 1835 90<-119 -55.9985>
-VStem: -56 92<1773 1834.48>
+HStem: 1683 90<30 361> 1835 90<-119 -55.626>
+VStem: -54 90<1773 1834.48>
+AnchorPoint: "AboveMark" 210 1991 basemark 0
 AnchorPoint: "AboveMark" 140 1657 mark 0
 LayerCount: 2
 Fore
@@ -9075,8 +9099,9 @@ SplineSet
  410 1773 l 1
  361 1683 l 1
  -79 1683 l 1
- -56 1790 l 1
- -51 1807 -51 1833 -92 1835 c 1
+ -56 1790 l 2
+ -55 1794 -54 1800 -54 1805 c 0
+ -54 1820 -62 1835 -92 1835 c 2
  -168 1835 l 1
  -119 1925 l 1
  -72 1925 l 2
@@ -9097,6 +9122,7 @@ Flags: W
 HStem: 1683 90<-100.254 -51 457 701> 1905 90<-87.4496 111.205>
 VStem: -195 94<1776.46 1886.55>
 DStem2: 208 1854 143 1717 0.844509 0.535542<0 163.031>
+AnchorPoint: "AboveMark" 219 2033 basemark 0
 AnchorPoint: "AboveMark" 140 1657 mark 0
 LayerCount: 2
 Fore
@@ -9135,6 +9161,7 @@ Flags: W
 HStem: 1773 89<54 121 228 295>
 VStem: 36 280
 DStem2: 101 1683 190 1683 0.207912 0.978148<18.5041 94.1478 201.493 274.557>
+AnchorPoint: "AboveMark" 216 2018 basemark 0
 AnchorPoint: "AboveMark" 140 1657 mark 0
 LayerCount: 2
 Fore
@@ -9167,6 +9194,7 @@ VWidth: 2982
 Flags: W
 HStem: 1793 89<204 410>
 VStem: 101 89<1683 1786.81>
+AnchorPoint: "AboveMark" 201 1948 basemark 0
 AnchorPoint: "AboveMark" 140 1657 mark 0
 LayerCount: 2
 Fore
@@ -9225,6 +9253,7 @@ VWidth: 2982
 Flags: W
 HStem: 1459 72<-326.782 -114.404> 1790 75<-46.3095 32> 2140 73<87.7676 389.216>
 VStem: -419 75<1551.17 1683.74> -150 76<1895.09 2032.21>
+AnchorPoint: "AboveMark" 76 2279 basemark 0
 AnchorPoint: "AboveBase" 103 1271 mark 0
 LayerCount: 2
 Fore
@@ -9248,6 +9277,7 @@ SplineSet
  387 2131 l 1
  349 2138 314 2140 282 2140 c 0
 EndSplineSet
+Substitution2: "Thai Mark High Variant" uni0E4E.high
 EndChar
 
 StartChar: uni0E4F
@@ -10083,6 +10113,7 @@ Flags: W
 HStem: 1350 244<81 119>
 VStem: 30 141
 DStem2: 30 1350 119 1350 0.207912 0.978148<18.5041 249.272>
+AnchorPoint: "AboveMark" 139 1657 basemark 0
 AnchorPoint: "AboveBase" 103 1271 mark 0
 LayerCount: 2
 Fore
@@ -10100,8 +10131,9 @@ Encoding: 63243 63243 326
 Width: 0
 VWidth: 2982
 Flags: W
-HStem: 1350 89<-77 314> 1502 89<-226 -163.998>
-VStem: -273 636
+HStem: 1350 89<-77 314> 1502 89<-226 -163.098>
+VStem: -160 91<1439 1501.36>
+AnchorPoint: "AboveMark" 129 1657 basemark 0
 AnchorPoint: "AboveBase" 248 1271 mark 0
 LayerCount: 2
 Fore
@@ -10111,8 +10143,9 @@ SplineSet
  363 1439 l 1
  314 1350 l 1
  -186 1350 l 1
- -164 1457 l 1
- -158 1471 -154 1502 -197 1502 c 2
+ -164 1457 l 2
+ -162 1462 -160 1468 -160 1474 c 0
+ -160 1488 -168 1502 -197 1502 c 2
  -273 1502 l 1
  -226 1591 l 1
  -179 1591 l 2
@@ -10128,6 +10161,7 @@ Flags: W
 HStem: 1350 89<-242.68 -195 316 557> 1570 89<-232.342 -36.4291>
 VStem: -338 94<1442.29 1552.67>
 DStem2: 64 1520 -20 1367 0.840158 0.542341<0 165.436>
+AnchorPoint: "AboveMark" 49 1657 basemark 0
 AnchorPoint: "AboveBase" 472 1271 mark 0
 LayerCount: 2
 Fore
@@ -10162,6 +10196,7 @@ Flags: W
 HStem: 1439 90<-17 49 156 226>
 VStem: -36 280
 DStem2: 30 1350 119 1350 0.207912 0.978148<18.5041 93.9399 201.285 274.973>
+AnchorPoint: "AboveMark" 139 1657 basemark 0
 AnchorPoint: "AboveBase" 148 1271 mark 0
 LayerCount: 2
 Fore
@@ -10189,6 +10224,7 @@ VWidth: 2982
 Flags: W
 HStem: 1459 90<-46.4375 161>
 VStem: -150 90<1350 1454.08>
+AnchorPoint: "AboveMark" -39 1657 basemark 0
 AnchorPoint: "AboveBase" 103 1271 mark 0
 LayerCount: 2
 Fore
@@ -10211,9 +10247,9 @@ Encoding: 63247 63247 330
 Width: 1893
 VWidth: 2982
 Flags: W
-HStem: -15 89<1199.31 1498.35> 0 90<275 346> 1119 90<628.406 970.694> 1174 20G<1887.78 1981>
+HStem: -15 89<1199.31 1498.43> 0 90<275 346> 1119 90<628.406 970.694> 1174 20G<1887.78 1981>
 VStem: 1006 91<182.243 586.641> 1097 89<702.789 994.969>
-DStem2: 164.812 -15 252.682 -15 0.207912 0.978148<125.615 726.469> 401 859 307 842 0.838961 -0.544191<-2.06067 87.1386> 922.05 -15 1012.05 -15 0.207912 0.978148<386.813 873.543> 1636.05 -15 1726.05 -15 0.207912 0.978148<260.76 1235.8>
+DStem2: 164.812 -15 252.682 -15 0.207912 0.978148<125.615 726.294> 401 859 307 842 0.838961 -0.544191<-2.06067 87.1386> 922.05 -15 1012.05 -15 0.207912 0.978148<386.813 873.543> 1636.05 -15 1726.05 -15 0.207912 0.978148<260.76 1235.8>
 LayerCount: 2
 Fore
 SplineSet
@@ -10230,16 +10266,16 @@ SplineSet
  1511 74 1688 226 1730 427 c 2
  1892 1194 l 1
  1981 1194 l 1
- 1820 427 l 1
- 1768 186 1549 -15 1323 -15 c 0
+ 1820 427 l 2
+ 1769 186 1549 -15 1323 -15 c 0
  1128 -15 1006 130 1006 325 c 0x98
- 1006 359 1010 391 1016 427 c 1
+ 1006 359 1008 391 1016 427 c 2
  1088 761 l 2
  1094 790 1097 818 1097 842 c 0
  1097 1016 965 1119 808 1119 c 0
  665 1119 493 1038 401 859 c 1
  549 763 l 1
- 455 724 401 673 374 555 c 1
+ 455 724 399 673 374 555 c 2
  275 90 l 1
  393 90 l 1
  346 0 l 1
@@ -10294,9 +10330,9 @@ Encoding: 63250 63250 333
 Width: 0
 VWidth: 2982
 Flags: W
-HStem: 1327 92<-331.098 -106.548> 1350 89<-741.988 -645 -198.594 -107.745> 1623 90<-715.936 16>
-VStem: -839 86<1456.07 1582.7>
-DStem2: -645 1439 -638 1350 0.872587 0.488459<-37.3647 149.805> -461 1542 -475 1442 0.855782 -0.517337<39.7528 285.865>
+HStem: 1327 92<-331.225 -106.548> 1350 89<-739.557 -645 -198.594 -107.745> 1623 90<-715.936 16>
+VStem: -839 86<1456.79 1582.7>
+DStem2: -645 1439 -638 1350 0.872587 0.488459<-41.6352 149.805> -461 1542 -475 1442 0.855782 -0.517337<39.7528 285.865>
 LayerCount: 2
 Fore
 Refer: 291 3655 N 1 0 0 1 -215 0 2
@@ -10922,8 +10958,9 @@ Encoding: 63262 63262 353
 Width: 0
 VWidth: 2982
 Flags: W
-HStem: 1649 70<101.858 222.609> 1856 68<119.378 236.121>
+HStem: 1649 70<101.857 222.609> 1856 68<119.378 236.121>
 VStem: 29 70<1722.64 1837.27> 240 69<1737.09 1852.24>
+AnchorPoint: "AboveMark" 210 1990 basemark 0
 AnchorPoint: "AboveMark" 140 1657 mark 0
 LayerCount: 2
 Fore
@@ -10935,13 +10972,32 @@ Encoding: 63263 63263 354
 Width: 0
 VWidth: 2982
 Flags: W
-HStem: 1706.3 82.8<-53.4878 148.607> 1727 80.1<-423.289 -336 65.765 147.53> 1972.7 81<-399.843 258.9>
-VStem: -510.6 77.4<1822.47 1936.43>
-DStem2: -336 1807.1 -329.7 1727 0.872587 0.488459<-33.6283 134.825> -170.4 1899.8 -183 1809.8 0.855782 -0.517337<35.7775 257.279>
+HStem: 1702 92<-58.4722 154.229> 1968 90<-405.204 262>
+VStem: -516 90<1822.43 1942.78>
+DStem2: -337 1812 -328 1722 0.876106 0.482118<-39.4688 132.422> -168 1905 -182 1805 0.854199 -0.519947<40.0359 257.37>
+AnchorPoint: "AboveMark" -115 2124 basemark 0
 AnchorPoint: "AboveMark" -214 1657 mark 0
 LayerCount: 2
 Fore
-Refer: 291 3655 S 0.9 0 0 0.9 51 512 2
+SplineSet
+-292 1968 m 2
+ -369 1968 -426 1922 -426 1879 c 0
+ -426 1848 -395 1816 -337 1812 c 1
+ -168 1905 l 1
+ -7 1807 l 2
+ 14 1794 40 1794 67 1794 c 0
+ 93 1794 123 1799 151 1807 c 1
+ 164 1724 l 1
+ 127 1712 86 1702 48 1702 c 0
+ 9 1702 -32 1708 -61 1727 c 2
+ -182 1805 l 1
+ -328 1722 l 1
+ -425 1722 -516 1768 -516 1858 c 0
+ -516 1985 -377 2058 -272 2058 c 2
+ 312 2058 l 1
+ 262 1968 l 1
+ -292 1968 l 2
+EndSplineSet
 EndChar
 
 StartChar: zerowidthnonjoiner
@@ -11013,6 +11069,39 @@ SplineSet
  -81 -235 l 1
  27 -235 141 -126 168 2 c 2
  383 1014 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni0E4E.high
+Encoding: 63264 63264 361
+Width: 0
+VWidth: 2982
+Flags: W
+HStem: 1683 71<-62.6226 133.123> 1981 74<194.433 262> 2295 73<297.949 587.534>
+VStem: -148 74<1770.48 1896.59> 95 75<2078.39 2204.47>
+AnchorPoint: "AboveMark" 304 2434 basemark 0
+AnchorPoint: "AboveMark" 139 1657 mark 0
+LayerCount: 2
+Fore
+SplineSet
+585 2287 m 1
+ 549 2293 515 2295 486 2295 c 0
+ 344 2295 170 2231 170 2132 c 0
+ 170 2086 235 2055 294 2055 c 2
+ 349 2055 l 1
+ 262 1981 l 1
+ 237 1981 l 2
+ 86 1981 -74 1926 -74 1817 c 0
+ -74 1780 -24 1754 33 1754 c 0
+ 94 1754 125 1779 138 1794 c 1
+ 193 1758 l 1
+ 150 1707 83 1683 18 1683 c 0
+ -76 1683 -148 1730 -148 1804 c 0
+ -148 1944 -8 2019 119 2044 c 1
+ 104 2062 95 2083 95 2111 c 0
+ 95 2276 310 2368 503 2368 c 0
+ 537 2368 574 2365 611 2360 c 1
+ 585 2287 l 1
 EndSplineSet
 EndChar
 EndChars
