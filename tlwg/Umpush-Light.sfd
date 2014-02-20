@@ -4,7 +4,7 @@ FullName: Umpush Light
 FamilyName: Umpush
 Weight: Light
 Copyright: Copyright (c) 2003 NECTEC. All rights reserved.\nCopyright (c) 2007 Widhaya Trisarnwadhana. All rights reserved.\nModified under GNU General Public License by TLWG.
-Version: 0.9.15: 2014-02-20
+Version: 0.9.16: 2014-02-20
 ItalicAngle: 0
 UnderlinePosition: -85
 UnderlineWidth: 10
@@ -18,7 +18,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1176605901
-ModificationTime: 1392815860
+ModificationTime: 1392884050
 PfmFamily: 33
 TTFWeight: 300
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 3"  {"'kern' Horizontal Kerning in Latin lookup 3"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -266,7 +267,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 240 12 10
+WinInfo: 252 12 10
 BeginPrivate: 6
 BlueValues 37 [-12 0 1060 1085 1254 1254 1450 1480]
 OtherBlues 11 [-435 -423]
@@ -296,7 +297,7 @@ Grid
  2354 1659 l 25
 EndSplineSet
 TeXData: 1 0 0 524288 262144 174762 543744 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65537 362
 
 StartChar: .notdef
@@ -5794,24 +5795,26 @@ Width: 0
 VWidth: 2045
 Flags: W
 HStem: -474 112<-434.695 -285.2> -196 112<-435.148 -287.176>
-VStem: -558 113<-351.595 -207.116> -276 113<-351.942 -206.961>
+VStem: -558 113<-351.595 -207.116> -276 113<-671 -456 -351.942 -206.961>
+AnchorPoint: "BelowMark" -159 -88 mark 0
+AnchorPoint: "BelowMark" -159 -723 basemark 0
 AnchorPoint: "BelowBase" -159 -88 mark 0
 LayerCount: 2
 Fore
 SplineSet
 -558 -279 m 0
- -558 -386 -471 -474 -360 -474 c 0
- -329 -474 -301 -468 -276 -456 c 1
- -276 -671 l 1
+ -558 -175 -475 -84 -360 -84 c 0
+ -253 -84 -163 -170 -163 -279 c 2
  -163 -671 l 1
- -163 -279 l 2
- -163 -170 -253 -84 -360 -84 c 0
- -475 -84 -558 -175 -558 -279 c 0
+ -276 -671 l 1
+ -276 -456 l 1
+ -301 -468 -329 -474 -360 -474 c 0
+ -471 -474 -558 -386 -558 -279 c 0
 -361 -362 m 0
- -409 -362 -445 -325 -445 -280 c 0
- -445 -229 -405 -196 -361 -196 c 0
- -312 -196 -276 -235 -276 -280 c 0
- -276 -329 -317 -362 -361 -362 c 0
+ -317 -362 -276 -329 -276 -280 c 0
+ -276 -235 -312 -196 -361 -196 c 0
+ -405 -196 -445 -229 -445 -280 c 0
+ -445 -325 -409 -362 -361 -362 c 0
 EndSplineSet
 Substitution2: "Thai Sara U Mai Ek Reordering" uni0E48.low
 Substitution2: "Thai Sara U Mai Tho Reordering" uni0E49.low
@@ -5826,29 +5829,31 @@ Encoding: 3641 3641 180
 Width: 0
 VWidth: 2045
 Flags: W
-HStem: -474 112<-716.089 -565.486> -196 112<-716.372 -567.947>
-VStem: -839 113<-351.183 -207.116> -556 113<-352.045 -206.961>
+HStem: -669 112<-443 -274> -474 112<-716.089 -565.486> -196 112<-716.372 -567.947>
+VStem: -839 113<-351.183 -207.116> -556 113<-557 -456 -352.045 -206.961> -274 113<-557 -84>
+AnchorPoint: "BelowMark" -112 -85 mark 0
+AnchorPoint: "BelowMark" -112 -723 basemark 0
 AnchorPoint: "BelowBase" -112 -85 mark 0
 LayerCount: 2
 Fore
 SplineSet
 -839 -279 m 0
- -839 -384 -755 -474 -640 -474 c 0
- -610 -474 -582 -468 -556 -456 c 1
- -556 -669 l 1
- -161 -669 l 17
- -161 -84 l 1
- -274 -84 l 1
- -274 -557 l 25
+ -839 -175 -756 -84 -642 -84 c 0
+ -534 -84 -443 -170 -443 -279 c 2
  -443 -557 l 1
- -443 -279 l 2
- -443 -170 -534 -84 -642 -84 c 0
- -756 -84 -839 -175 -839 -279 c 0
+ -274 -557 l 25
+ -274 -84 l 1
+ -161 -84 l 1
+ -161 -669 l 9
+ -556 -669 l 1
+ -556 -456 l 1
+ -582 -468 -610 -474 -640 -474 c 0
+ -755 -474 -839 -384 -839 -279 c 0
 -642 -362 m 0
- -690 -362 -726 -325 -726 -280 c 0
- -726 -229 -686 -196 -642 -196 c 0
- -593 -196 -556 -235 -556 -280 c 0
- -556 -325 -593 -362 -642 -362 c 0
+ -593 -362 -556 -325 -556 -280 c 0
+ -556 -235 -593 -196 -642 -196 c 0
+ -686 -196 -726 -229 -726 -280 c 0
+ -726 -325 -690 -362 -642 -362 c 0
 EndSplineSet
 Substitution2: "Thai Sara UU Mai Ek Reordering" uni0E48.low
 Substitution2: "Thai Sara UU Mai Tho Reordering" uni0E49.low
@@ -5865,6 +5870,8 @@ VWidth: 2045
 Flags: W
 HStem: -359 277<-422.314 -217.182>
 VStem: -460 280<-322.517 -118.976>
+AnchorPoint: "BelowMark" -186 -86 mark 0
+AnchorPoint: "BelowMark" -185 -413 basemark 0
 AnchorPoint: "BelowBase" -185 -86 mark 0
 LayerCount: 2
 Fore
@@ -8487,7 +8494,7 @@ Width: 0
 VWidth: 2045
 Flags: W
 HStem: -1011 112<-504.695 -355.2> -733 112<-505.148 -357.176>
-VStem: -628 113<-888.595 -744.116> -346 113<-888.942 -743.961>
+VStem: -628 113<-888.595 -744.116> -346 113<-1208 -993 -888.942 -743.961>
 LayerCount: 2
 Back
 SplineSet
@@ -8514,8 +8521,8 @@ Encoding: 63257 63257 265
 Width: 0
 VWidth: 2045
 Flags: W
-HStem: -1014 112<-833.089 -682.486> -736 112<-833.372 -684.947>
-VStem: -956 113<-891.183 -747.116> -673 113<-892.045 -746.961>
+HStem: -1209 112<-560 -391> -1014 112<-833.089 -682.486> -736 112<-833.372 -684.947>
+VStem: -956 113<-891.183 -747.116> -673 113<-1097 -996 -892.045 -746.961> -391 113<-1097 -624>
 LayerCount: 2
 Back
 SplineSet

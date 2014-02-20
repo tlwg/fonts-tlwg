@@ -4,7 +4,7 @@ FullName: Umpush Bold Oblique
 FamilyName: Umpush
 Weight: Bold
 Copyright: Copyright (c) 2003 NECTEC. All rights reserved.\nCopyright (c) 2007 Widhaya Trisarnwadhana. All rights reserved.\nModified under GNU General Public License by TLWG.
-Version: 0.9.15: 2014-02-20
+Version: 0.9.16: 2014-02-20
 ItalicAngle: -10
 UnderlinePosition: -170
 UnderlineWidth: 10
@@ -18,7 +18,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662462
-ModificationTime: 1392825553
+ModificationTime: 1392884858
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 3"  {"'kern' Horizontal Kerning in Latin lookup 3"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -309,7 +310,7 @@ Grid
  1582 1254 l 1
 EndSplineSet
 TeXData: 1 0 0 524288 262144 174762 543744 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65537 365
 
 StartChar: .notdef
@@ -5724,6 +5725,8 @@ VWidth: 2045
 Flags: W
 HStem: -532 133<-523.461 -432.357> -221 134<-506.381 -352.143>
 VStem: -669 139<-391.941 -244.947> -347 138<-373.579 -226.566>
+AnchorPoint: "BelowMark" -175 -88 mark 0
+AnchorPoint: "BelowMark" -302 -810 basemark 0
 AnchorPoint: "BelowBase" -175 -88 mark 0
 LayerCount: 2
 Fore
@@ -5759,6 +5762,8 @@ Flags: W
 HStem: -775 156<-603 -440> -532 133<-859.43 -768.046> -221 134<-844.871 -687.917>
 VStem: -1003 138<-391.448 -243.901> -683 138<-376.282 -228.132>
 DStem2: -467.507 -775 -288 -775 0.173648 0.984808<158.407 700.617>
+AnchorPoint: "BelowMark" -127 -85 mark 0
+AnchorPoint: "BelowMark" -255 -810 basemark 0
 AnchorPoint: "BelowBase" -127 -85 mark 0
 LayerCount: 2
 Fore
@@ -5797,6 +5802,8 @@ VWidth: 2045
 Flags: W
 HStem: -438 356<-514.693 -321.328>
 VStem: -600 366<-348.719 -166.932>
+AnchorPoint: "BelowMark" -200 -86 mark 0
+AnchorPoint: "BelowMark" -268 -473 basemark 0
 AnchorPoint: "BelowBase" -200 -86 mark 0
 LayerCount: 2
 Fore
