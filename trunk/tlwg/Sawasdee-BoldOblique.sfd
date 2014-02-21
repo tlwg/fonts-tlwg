@@ -4,7 +4,7 @@ FullName: Sawasdee Bold Oblique
 FamilyName: Sawasdee
 Weight: Bold
 Copyright: Copyright (c) 2007 Pol Udomwittayanukul. All rights reserved.
-Version: 001.008: 2014-02-20
+Version: 001.009: 2014-02-21
 ItalicAngle: -12
 UnderlinePosition: -153
 UnderlineWidth: 102
@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1178430034
-ModificationTime: 1392910539
+ModificationTime: 1392959428
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -73,6 +73,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 0"  {"'kern' Horizontal Kerning in Latin lookup 0"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 1"  {"'kern' Horizontal Kerning lookup 1"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 MarkAttachClasses: 5
@@ -299,7 +300,7 @@ Grid
  -125.997 57.999 l 25
 EndSplineSet
 TeXData: 1 0 0 252706 126353 84235 356096 1048576 84235 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "BelowBase"  "'mark' Thai Below Base" "AboveBase"  "'mark' Thai Above Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "BelowBase"  "'mark' Thai Below Base" "AboveBase"  "'mark' Thai Above Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65536 362
 
 StartChar: space
@@ -8754,6 +8755,8 @@ Flags: W
 HStem: -510 420<-586 -477>
 VStem: -479 315
 DStem2: -412 -510 -250 -510 0.207912 0.978148<33.6817 265.338>
+AnchorPoint: "BelowMark" -157 -67 mark 0
+AnchorPoint: "BelowMark" -257 -536 basemark 0
 AnchorPoint: "BelowBase" -157 -67 mark 0
 LayerCount: 2
 Fore
@@ -8782,6 +8785,8 @@ Flags: W
 HStem: -526 161<-568.802 -396.519>
 VStem: -741 160<-350.873 -252.003>
 DStem2: -417.24 -526 -255.24 -526 0.207912 0.978148<179.092 445.65>
+AnchorPoint: "BelowMark" -157 -67 mark 0
+AnchorPoint: "BelowMark" -257 -536 basemark 0
 AnchorPoint: "BelowBase" -157 -67 mark 0
 LayerCount: 2
 Fore
@@ -8817,6 +8822,8 @@ VWidth: 2982
 Flags: W
 HStem: -293 221<-336.125 -190.625>
 VStem: -374 224<-252.616 -109.256>
+AnchorPoint: "BelowMark" -157 -67 mark 0
+AnchorPoint: "BelowMark" -211 -319 basemark 0
 AnchorPoint: "BelowBase" -157 -67 mark 0
 LayerCount: 2
 Fore
