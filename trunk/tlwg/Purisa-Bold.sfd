@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153666222
-ModificationTime: 1393234656
+ModificationTime: 1393249184
 PfmFamily: 65
 TTFWeight: 700
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
@@ -854,7 +855,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 320 8 2
+WinInfo: 312 8 2
 BeginPrivate: 5
 ForceBold 4 true
 StdVW 4 [94]
@@ -862,7 +863,7 @@ StemSnapV 10 [77 87 94]
 StdHW 4 [73]
 StemSnapH 10 [73 81 94]
 EndPrivate
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65536 421
 
 StartChar: uni0E34
@@ -1111,6 +1112,8 @@ Width: 0
 Flags: W
 HStem: -146 52<-273 -241.004> -81 56<-271.913 -241.114>
 VStem: -233 64<-293.626 -145.63>
+AnchorPoint: "BelowMark" -182 -38 mark 0
+AnchorPoint: "BelowMark" -182 -327 basemark 0
 AnchorPoint: "BelowBase" -182 -38 mark 0
 LayerCount: 2
 Back
@@ -1164,6 +1167,8 @@ Width: 0
 Flags: W
 HStem: -137 43<-339 -293.099> -82 44<-319.905 -293.101>
 VStem: -220 68<-126.792 -46.5183>
+AnchorPoint: "BelowMark" -182 -38 mark 0
+AnchorPoint: "BelowMark" -182 -280 basemark 0
 AnchorPoint: "BelowBase" -182 -38 mark 0
 LayerCount: 2
 Back
@@ -1223,6 +1228,8 @@ Width: 0
 Flags: W
 HStem: -212 171<-306.515 -225.139>
 VStem: -354 171<-169.226 -89.375>
+AnchorPoint: "BelowMark" -182 -38 mark 0
+AnchorPoint: "BelowMark" -182 -237 basemark 0
 AnchorPoint: "BelowBase" -182 -38 mark 0
 LayerCount: 2
 Back

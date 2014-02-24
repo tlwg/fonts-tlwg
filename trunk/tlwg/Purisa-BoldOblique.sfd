@@ -5,7 +5,7 @@ FamilyName: Purisa
 Weight: Bold
 Copyright: Purisa, Thai handwriting outline font.\n\nCopyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-27: Created.+AAoACgAA-Acknowlegement:+AAoA-Hanwriting by Ms.Purisa Cholasueksa. +AAoA-Co-operated by Mr.Teeratep Sosakul.+AAoACgAA-2004-02-14:+AAoA-Modified most characters. Make numbers bigger." 
-Version: 002.016: 2014-02-24
+Version: 002.017: 2014-02-24
 ItalicAngle: -12
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153666222
-ModificationTime: 1393236903
+ModificationTime: 1393250237
 PfmFamily: 65
 TTFWeight: 700
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
@@ -854,7 +855,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 320 8 2
+WinInfo: 312 8 2
 BeginPrivate: 5
 ForceBold 4 true
 StdVW 4 [94]
@@ -862,7 +863,7 @@ StemSnapV 10 [77 87 94]
 StdHW 4 [73]
 StemSnapH 10 [73 81 94]
 EndPrivate
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65536 421
 
 StartChar: uni0E34
@@ -1000,30 +1001,32 @@ StartChar: uni0E38
 Encoding: 3640 3640 4
 Width: 0
 Flags: W
-HStem: -146 52<-293 -264.176> -81 56<-292.396 -238>
-VStem: -259 60<-159.57 -81.4773>
-DStem2: -276 -200 -234 -306 0.171341 0.985212<-70.2422 55.8974>
+HStem: -146 52<-293 -264.125> -81 56<-292.396 -238>
+VStem: -259 60<-158.672 -81.9797>
+DStem2: -298.531 -306 -234 -306 0.207912 0.978148<37.2356 164.545>
+AnchorPoint: "BelowMark" -190 -38 mark 0
+AnchorPoint: "BelowMark" -252 -327 basemark 0
 AnchorPoint: "BelowBase" -190 -38 mark 0
 LayerCount: 2
 Fore
 SplineSet
 -360 -117 m 0
- -360 -80 -292 -25 -251 -25 c 0
- -225 -25 -199 -42 -199 -86 c 0
- -199 -107 -204 -138 -214 -191 c 2
+ -360 -78 -292 -25 -251 -25 c 0
+ -225 -25 -199 -41 -199 -85 c 0
+ -199 -106 -204 -138 -214 -191 c 2
  -234 -306 l 1
  -264 -297 l 2
- -280 -292 -287 -289 -287 -270 c 0
- -287 -257 -283 -235 -276 -200 c 2
+ -280 -292 -287 -289 -287 -271 c 0
+ -287 -258 -284 -236 -276 -200 c 2
  -264 -145 l 1
  -298 -146 l 2
  -305 -146 -312 -146 -319 -146 c 0
  -353 -146 -360 -130 -360 -117 c 0
--259 -84 m 0
- -259 -82 -261 -81 -268 -81 c 0
+-259 -85 m 0
+ -259 -83 -261 -81 -268 -81 c 0
  -275 -81 -285 -83 -293 -94 c 1
  -279 -94 l 2
- -267 -94 -259 -93 -259 -84 c 0
+ -266 -94 -259 -93 -259 -85 c 0
 EndSplineSet
 Substitution2: "Thai Sara U Mai Ek Reordering" uni0E48.low
 Substitution2: "Thai Sara U Mai Tho Reordering" uni0E49.low
@@ -1037,24 +1040,28 @@ StartChar: uni0E39
 Encoding: 3641 3641 5
 Width: 0
 Flags: W
-HStem: -137 43<-376.558 -312.362> -82 44<-338.325 -288.5>
-VStem: -247 79<-123.661 -71.2438>
+HStem: -137 43<-376.719 -312.362> -82 44<-338.11 -288.5>
+VStem: -304 4<-224.5 -159.5> -247 79<-126.792 -71.2438>
+AnchorPoint: "BelowMark" -190 -38 mark 0
+AnchorPoint: "BelowMark" -242 -280 basemark 0
 AnchorPoint: "BelowBase" -190 -38 mark 0
 LayerCount: 2
 Fore
 SplineSet
--275 -255 m 0
- -291 -255 -304 -238 -304 -216 c 0
+-404 -108 m 0
+ -404 -78 -341 -38 -304 -38 c 0
+ -273 -38 -251 -60 -251 -81 c 1
+ -246 -83 -244 -89 -244 -97 c 0
+ -244 -107 -246 -114 -247 -127 c 1
+ -233 -90 -220 -40 -193 -40 c 0
+ -173 -40 -168 -55 -168 -68 c 0
+ -168 -72 -168 -77 -169 -80 c 0
+ -172 -94 -228 -255 -275 -255 c 0
+ -293 -255 -304 -233 -304 -216 c 0
  -304 -202 -300 -186 -300 -165 c 0
  -300 -154 -301 -142 -304 -129 c 1
  -321 -134 -337 -137 -351 -137 c 0
- -382 -137 -404 -125 -404 -107 c 0
- -404 -79 -342 -38 -304 -38 c 0
- -273 -38 -251 -60 -251 -81 c 1
- -243 -84 -243 -94 -247 -127 c 1
- -233 -90 -220 -40 -193 -40 c 0
- -173 -40 -168 -56 -168 -69 c 0
- -168 -95 -231 -255 -275 -255 c 0
+ -382 -137 -404 -125 -404 -108 c 0
 -339 -91 m 1
  -336 -93 -334 -94 -330 -94 c 0
  -322 -94 -313 -90 -312 -88 c 1
@@ -1073,17 +1080,19 @@ StartChar: uni0E3A
 Encoding: 3642 3642 6
 Width: 0
 Flags: W
-HStem: -212 171<-318.919 -266.535>
-VStem: -388 184<-149.451 -109.193>
+HStem: -212 171<-319.04 -266.5>
+VStem: -388 184<-149.574 -106.528>
+AnchorPoint: "BelowMark" -190 -38 mark 0
+AnchorPoint: "BelowMark" -232 -237 basemark 0
 AnchorPoint: "BelowBase" -190 -38 mark 0
 LayerCount: 2
 Fore
 SplineSet
--388 -166 m 0
- -388 -115 -324 -41 -254 -41 c 0
+-254 -41 m 0
  -223 -41 -204 -59 -204 -89 c 0
- -204 -138 -256 -212 -334 -212 c 0
- -372 -212 -388 -191 -388 -166 c 0
+ -204 -144 -262 -212 -334 -212 c 0
+ -372 -212 -388 -192 -388 -166 c 0
+ -388 -109 -318 -41 -254 -41 c 0
 EndSplineSet
 Substitution2: "Thai Phinthu Maitaikhu Reordering" uni0E47
 Substitution2: "Thai Phinthu Mai Ek Reordering" uni0E48.low
@@ -4927,21 +4936,21 @@ StartChar: uni0E0E
 Encoding: 3598 3598 120
 Width: 598
 Flags: W
-HStem: -222 81<180.807 287.339> -84 76<198.895 305.536> -28 64<137.002 193.251> 125 63<157.17 219.402> 531 20G<508.5 563>
-VStem: 62 75<38.3972 96.4508> 315 79<233.567 295.301> 512 90<236.733 466.507>
+HStem: -222 81<180.807 287.339> -84 76<198.895 305.536> 125 63<157.17 219.402> 531 20G<508.5 563>
+VStem: 62 75<37.8771 96.4508> 315 79<233.567 295.301> 512 90<236.733 466.507>
 AnchorPoint: "BelowBase" 363 -251 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-143 36 m 1xbf
+143 36 m 1
  143 36 220 47 220 93 c 0
  220 105 217 122 213 125 c 1
  206 125 184 115 176 112 c 0
  151 102 147 101 140 68 c 0
  138 57 137 50 137 45 c 0
- 137 36 140 36 143 36 c 1xbf
+ 137 36 140 36 143 36 c 1
 88 -7 m 1
- 85 -6 62 -11 62 40 c 0
+ 73.5 -7 62 3 62 40 c 0
  62 102 87 83 93 115 c 0
  102 157 131 156 189 182 c 0
  200 187 217 188 229 188 c 0
@@ -4961,7 +4970,7 @@ SplineSet
  361 -150 297 -222 207 -222 c 0
  173 -222 93 -208 93 -151 c 0
  93 -110 135 -70 161 -47 c 0
- 195 -17 209 -8 236 -8 c 0xdf
+ 195 -17 209 -8 236 -8 c 0
  343 -8 349 -54 368 -58 c 1
  369 -55 373 -37 421 -6 c 2
  458 18 l 1
@@ -4973,7 +4982,7 @@ SplineSet
  361 366 394 356 394 307 c 0
  394 224 326 138 309 98 c 1
  280 22 163 -28 114 -28 c 0
- 87 -28 88 -12 88 -7 c 1
+ 93.5 -28 88 -19 88 -7 c 1
 180 -135 m 1
  179 -140 203 -141 218 -141 c 0
  261 -141 259 -137 308 -107 c 1
@@ -8939,9 +8948,9 @@ StartChar: uni0E38.low
 Encoding: 63256 63256 224
 Width: 0
 Flags: W
-HStem: -360 52<-338 -309.176> -295 56<-337.396 -283>
-VStem: -304 60<-373.57 -295.477>
-DStem2: -321 -414 -279 -520 0.171341 0.985212<-70.2422 55.8974>
+HStem: -360 52<-338 -309.125> -295 56<-337.396 -283>
+VStem: -304 60<-372.672 -295.98>
+DStem2: -343.531 -520 -279 -520 0.207912 0.978148<37.2356 164.545>
 LayerCount: 2
 Fore
 Refer: 4 3640 N 1 0 0 1 -45 -214 0
@@ -8951,8 +8960,8 @@ StartChar: uni0E39.low
 Encoding: 63257 63257 225
 Width: 0
 Flags: W
-HStem: -373 43<-426.558 -362.362> -318 44<-388.325 -338.5>
-VStem: -297 79<-359.661 -307.244>
+HStem: -373 43<-426.719 -362.362> -318 44<-388.11 -338.5>
+VStem: -354 4<-460.5 -395.5> -297 79<-362.792 -307.244>
 LayerCount: 2
 Fore
 Refer: 5 3641 S 1 0 0 1 -50 -236 0
@@ -8962,8 +8971,8 @@ StartChar: uni0E3A.low
 Encoding: 63258 63258 226
 Width: 0
 Flags: W
-HStem: -414 171<-361.919 -309.535>
-VStem: -431 184<-351.451 -311.193>
+HStem: -414 171<-362.04 -309.5>
+VStem: -431 184<-351.574 -308.528>
 LayerCount: 2
 Fore
 Refer: 6 3642 S 1 0 0 1 -43 -202 0
