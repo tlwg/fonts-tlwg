@@ -5,7 +5,7 @@ FamilyName: Tlwg Typo
 Weight: Bold
 Copyright: Tlwg Typist, based on Poonlap Veerathanabutr's Tlwg Typewriter.\n\nCopyright (C) 2005-2012 Theppitak Karoonboonyanan.\n\nTlwg Typewriter, Free Thai Pseudo Monospace outline font.\n\nCopyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-20: Created. +AAoA-PfaEdit 1.0 (http://pfaedit.sf.net).+AAoACgAA-TLWG is Thai Linux Working Group http://linux.thai.net+AAoACgAA-Imported ISO-8859-1 from FreeMono.sfd.+AAoA-http://www.nongnu.org/freefont/+AAoACgAA-2003-11-22: first release+AAoACgAA-2003-11-25: Fixed vowel and tone marks' level." 
-Version: 002.014: 2014-02-26
+Version: 002.015: 2014-02-26
 ItalicAngle: -12
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153664121
-ModificationTime: 1393403937
+ModificationTime: 1393406637
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 257 0 0 "Required Feature lookup 0"  {"Non-spacing Marks"  } [' RQD' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above and Below Base"  {"'mark' Thai Above and Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 257 0 0 "'mark' Thai Mark Positioning"  {"'mark' Thai Mark Positioning"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 257 0 0 "'mkmk' Thai Above Mark Positioning"  {"'mkmk' Thai Above Mark Positioning"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 MarkAttachClasses: 1
@@ -260,7 +261,7 @@ NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 252 12 8
+WinInfo: 240 12 8
 BeginPrivate: 7
 BlueValues 39 [-16 0 437 451 470 482 583 597 622 638]
 OtherBlues 11 [-205 -205]
@@ -270,7 +271,7 @@ StdVW 5 [100]
 StemSnapH 8 [88 100]
 StemSnapV 11 [76 88 100]
 EndPrivate
-AnchorClass2: "AboveBase"  "'mark' Thai Above and Below Base" "BelowBase"  "'mark' Thai Above and Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above and Below Base" "BelowBase"  "'mark' Thai Above and Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65536 339
 
 StartChar: mu
@@ -11965,6 +11966,8 @@ Width: 600
 Flags: W
 HStem: -92 52<380.18 446.5>
 VStem: 325 55<-138.5 -92.8675> 412 81<-121.559 -73.5>
+AnchorPoint: "BelowMark" 491 -40 mark 0
+AnchorPoint: "BelowMark" 449 -239 basemark 0
 AnchorPoint: "BelowBase" 491 -40 mark 0
 LayerCount: 2
 Back
@@ -12014,6 +12017,8 @@ Width: 600
 Flags: W
 HStem: -92 53<259.458 337>
 VStem: 205 54<-139 -92.814> 292 97<-121.669 -75>
+AnchorPoint: "BelowMark" 491 -40 mark 0
+AnchorPoint: "BelowMark" 449 -239 basemark 0
 AnchorPoint: "BelowBase" 491 -40 mark 0
 LayerCount: 2
 Back
@@ -12072,6 +12077,8 @@ Width: 600
 Flags: W
 HStem: -154 124<412.237 488.377>
 VStem: 387 127<-128.508 -54.8889>
+AnchorPoint: "BelowMark" 491 -40 mark 0
+AnchorPoint: "BelowMark" 465 -165 basemark 0
 AnchorPoint: "BelowBase" 491 -40 mark 0
 LayerCount: 2
 Back
@@ -12787,7 +12794,7 @@ SplineSet
  479 488 l 2
  427 488 382 513 382 564 c 0
 EndSplineSet
-Position2: "'mark' Thai Mark Positioning" dx=0 dy=0 dh=-600 dv=-128 [ddx={} ddy={} ddh={} ddv={}]
+Position2: "'mark' Thai Mark Positioning" dx=0 dy=0 dh=-600 dv=-128
 Substitution2: "Thai Mark High Variant" uni0E4E.high
 EndChar
 
@@ -15102,7 +15109,7 @@ AnchorPoint: "AboveMark" 650 907 basemark 0
 LayerCount: 2
 Fore
 Refer: 268 3662 N 0.85 0 0 0.85 164 275 2
-Position2: "'mkmk' Thai Above Mark Positioning" dx=0 dy=0 dh=-600 dv=0 [ddx={} ddy={} ddh={} ddv={}]
+Position2: "'mkmk' Thai Above Mark Positioning" dx=0 dy=0 dh=-600 dv=0
 EndChar
 EndChars
 EndSplineFont
