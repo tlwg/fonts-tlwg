@@ -5,7 +5,7 @@ FamilyName: Tlwg Typo
 Weight: Medium
 Copyright: Tlwg Typist, based on Poonlap Veerathanabutr's Tlwg Typewriter.\n\nCopyright (C) 2005-2012 Theppitak Karoonboonyanan.\n\nTlwg Typewriter, Free Thai Pseudo Monospace outline font.\n\nCopyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-20: Created. +AAoA-PfaEdit 1.0 (http://pfaedit.sf.net).+AAoACgAA-TLWG is Thai Linux Working Group http://linux.thai.net+AAoACgAA-This font was derived from TlwgMono.Most characters have fixed width except some vowels and tone marks.+AAoACgAA-2003-11-25: Fixed above vowel and tone mark level.+AAoA" 
-Version: 002.013: 2012-02-20
+Version: 002.014: 2014-02-26
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -14,13 +14,12 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153663876
-ModificationTime: 1329700199
+ModificationTime: 1393399089
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -84,17 +83,19 @@ ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
  1
   SeqLookup: 0 "Thai Descender Removal Single Substitution" 
 EndFPST
-ChainSub2: class "'ccmp' Thai General Composition"  6 6 1 2
+ChainSub2: class "'ccmp' Thai General Composition"  7 7 1 5
   Class: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   Class: 7 uni0E33
   Class: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
   Class: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
-  Class: 15 uni0E47 uni0E4D
+  Class: 23 uni0E47 uni0E4D uni0E4E
+  Class: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
   BClass: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   BClass: 7 uni0E33
   BClass: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
   BClass: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
-  BClass: 15 uni0E47 uni0E4D
+  BClass: 23 uni0E47 uni0E4D uni0E4E
+  BClass: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
  1 1 0
   ClsList: 3
   BClsList: 1
@@ -107,6 +108,27 @@ ChainSub2: class "'ccmp' Thai General Composition"  6 6 1 2
   FClsList:
  1
   SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 3
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 5
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 6
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+  ClassNames: "All_Others"  "1"  "2"  "3"  "4"  "5"  "6"  
+  BClassNames: "All_Others"  "1"  "2"  "3"  "4"  "5"  "6"  
+  FClassNames: "All_Others"  
 EndFPST
 ChainSub2: glyph "'ccmp' Thai Below Vowel Tone Reordering"  0 0 0 19
  String: 15 uni0E38 uni0E48
@@ -237,7 +259,7 @@ NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 252 12 8
+WinInfo: 240 12 8
 BeginPrivate: 6
 BlueValues 39 [-16 0 417 431 445 455 563 576 604 618]
 OtherBlues 11 [-186 -186]
@@ -461,6 +483,7 @@ Width: 600
 Flags: W
 HStem: 700 170<431 488>
 VStem: 431 57<700 870>
+AnchorPoint: "AboveMark" 460 895 basemark 0
 AnchorPoint: "AboveMark" 460 700 mark 0
 LayerCount: 2
 Fore
@@ -485,6 +508,7 @@ Width: 600
 Flags: W
 HStem: 847 28<334.542 381.458>
 VStem: 302 28<795.102 842.458> 386 28<795.417 842.458> 530 70<820.01 867>
+AnchorPoint: "AboveMark" 460 895 basemark 0
 AnchorPoint: "AboveMark" 460 700 mark 0
 LayerCount: 2
 Back
@@ -541,7 +565,8 @@ Width: 600
 Flags: W
 HStem: 690 28<228.267 275.458> 695 35<417 440.817> 774 28<228.128 275.458> 827 40<225.295 292.78 335.759 389.134>
 VStem: 165 59<726.643 801.832> 280 28<722.542 769.458> 395 50<719.968 825.379> 469 50<764.382 867>
-AnchorPoint: "AboveMark" 400 700 mark 0
+AnchorPoint: "AboveMark" 315 700 mark 0
+AnchorPoint: "AboveMark" 315 895 basemark 0
 LayerCount: 2
 Back
 SplineSet
@@ -612,6 +637,7 @@ Width: 600
 Flags: W
 HStem: 755 53<381 431 488 538>
 VStem: 431 57<700 755 808 866>
+AnchorPoint: "AboveMark" 460 895 basemark 0
 AnchorPoint: "AboveMark" 460 700 mark 0
 LayerCount: 2
 Fore
@@ -644,6 +670,7 @@ Width: 600
 Flags: W
 HStem: 690 28<420.542 467.458>
 VStem: 388 28<722.542 768.831> 472 28<722.542 769.673> 521 50<837.125 870>
+AnchorPoint: "AboveMark" 446 895 basemark 0
 AnchorPoint: "AboveMark" 446 700 mark 0
 LayerCount: 2
 Back
@@ -709,11 +736,11 @@ SplineSet
  357 500 318 536 318 582 c 0
  318 628 357 668 403 668 c 0
 EndSplineSet
-Position2: "'mark' Thai Mark Positioning" dx=0 dy=0 dh=-600 dv=0
-Substitution2: "Thai Mark High Variant" uni0E4D.high
-Substitution2: "Thai Sara U Nikhahit Reordering" uni0E38
-Substitution2: "Thai Sara UU Nikhahit Reordering" uni0E39
+Position2: "'mark' Thai Mark Positioning" dx=0 dy=0 dh=-600 dv=0 [ddx={} ddy={} ddh={} ddv={}]
 Substitution2: "Thai Phinthu Nikhahit Reordering" uni0E3A
+Substitution2: "Thai Sara UU Nikhahit Reordering" uni0E39
+Substitution2: "Thai Sara U Nikhahit Reordering" uni0E38
+Substitution2: "Thai Mark High Variant" uni0E4D.high
 EndChar
 
 StartChar: space
@@ -11402,11 +11429,36 @@ Substitution2: "Thai Phinthu Thanthakhat Reordering" uni0E4C.low
 Substitution2: "Thai Phinthu Nikhahit Reordering" uni0E4D
 EndChar
 
-StartChar: .notdef
-Encoding: 65536 -1 255
+StartChar: uni0E4E.high
+Encoding: 63264 63264 255
 Width: 600
 Flags: W
+HStem: 693 34<391.208 437> 771 42<386.096 422.47> 842 40<465.418 531.658>
+VStem: 337 49<731.438 770.642> 419 46<809.371 841.157>
+AnchorPoint: "AboveMark" 457 907 basemark 0
+AnchorPoint: "AboveMark" 457 700 mark 0
 LayerCount: 2
+Fore
+SplineSet
+467 752 m 1
+ 445 765 416 771 404 771 c 0
+ 388 771 386 765 386 760 c 0
+ 386 729 422 727 439 727 c 2
+ 449 727 l 1
+ 437 693 l 1
+ 386 693 337 716 337 765 c 0
+ 337 804 373 813 395 813 c 0
+ 401 813 413 812 423 809 c 1
+ 421 815 419 821 419 828 c 0
+ 419 865 460 882 489 882 c 0
+ 528 882 556 858 577 824 c 1
+ 551 800 l 1
+ 536 820 515 842 495 842 c 0
+ 475 842 465 833 465 823 c 0
+ 465 815 473 802 493 782 c 1
+ 467 752 l 1
+EndSplineSet
+Position2: "'mkmk' Thai Above Mark Positioning" dx=0 dy=0 dh=-600 dv=0 [ddx={} ddy={} ddh={} ddv={}]
 EndChar
 
 StartChar: .notdef
@@ -11873,8 +11925,8 @@ Width: 600
 Flags: W
 HStem: 490 30<415.648 466.282> 552 40<310.443 361.442> 577 29<415.508 465.328> 629 36<322.587 458.095> 643 40<274.849 420.498>
 VStem: 200 60<549.48 630.702> 459 60<666.635 700> 470 28<525.382 572.164>
+AnchorPoint: "AboveMark" 347 700 basemark 0
 AnchorPoint: "AboveBase" 500 500 mark 0
-AnchorPoint: "AboveMark" 347 500 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -11965,7 +12017,8 @@ SplineSet
  325 495 272 522 272 576 c 0
  272 619 310 629 336 629 c 0xbc
 EndSplineSet
-Position2: "'mark' Thai Mark Positioning" dx=0 dy=0 dh=-600 dv=0
+Position2: "'mark' Thai Mark Positioning" dx=0 dy=0 dh=-600 dv=0 [ddx={} ddy={} ddh={} ddv={}]
+Substitution2: "Thai Mark High Variant" uni0E4E.high
 EndChar
 
 StartChar: uni0E4F
@@ -13324,6 +13377,7 @@ Width: 600
 Flags: W
 HStem: 500 200<440 500>
 VStem: 440 60<500 700>
+AnchorPoint: "AboveMark" 470 700 basemark 0
 AnchorPoint: "AboveBase" 500 500 mark 0
 LayerCount: 2
 Fore
@@ -13343,6 +13397,7 @@ Width: 600
 Flags: W
 HStem: 669 32<270.3 325.197>
 VStem: 233 32<609.997 663.915> 330 32<610.452 663.915> 495 81<643.555 692>
+AnchorPoint: "AboveMark" 415 700 basemark 0
 AnchorPoint: "AboveBase" 525 503 mark 0
 LayerCount: 2
 Back
@@ -13394,6 +13449,7 @@ Width: 600
 Flags: W
 HStem: 493 32<241.309 294.7> 499 40<457 485.13> 590 32<240.871 294.7> 651 46<237.43 312.959 364.934 424.949>
 VStem: 168 68<539.605 620.139> 300 32<530.3 585.197> 432 58<549.584 646.758> 517 58<583.086 697>
+AnchorPoint: "AboveMark" 340 700 basemark 0
 AnchorPoint: "AboveBase" 555 500 mark 0
 LayerCount: 2
 Back
@@ -13460,6 +13516,7 @@ Width: 600
 Flags: W
 HStem: 575 50<380 440 500 560>
 VStem: 440 60<500 575 625 700>
+AnchorPoint: "AboveMark" 470 700 basemark 0
 AnchorPoint: "AboveBase" 560 500 mark 0
 LayerCount: 2
 Fore
@@ -13487,6 +13544,7 @@ Width: 600
 Flags: W
 HStem: 490 33<402.688 457.605>
 VStem: 365 33<527.796 581.453> 462 32<527.998 582.151> 518 58<663.358 698>
+AnchorPoint: "AboveMark" 430 700 basemark 0
 AnchorPoint: "AboveBase" 540 502 mark 0
 LayerCount: 2
 Back
@@ -13784,6 +13842,7 @@ Width: 600
 Flags: W
 HStem: 700 41<368.372 437.454> 821 47<367.909 437.917>
 VStem: 318 45<745.766 815.725> 443 43<745.993 815.499>
+AnchorPoint: "AboveMark" 403 895 basemark 0
 AnchorPoint: "AboveMark" 403 700 mark 0
 LayerCount: 2
 Fore
@@ -13795,13 +13854,39 @@ StartChar: uni0E47.high
 Encoding: 63263 63263 326
 Width: 600
 Flags: W
-HStem: 691.5 25.5<315.301 358.34> 744.2 34<225.876 269.225> 765.45 24.65<315.182 357.529> 809.65 30.6<236.199 351.381> 821.55 34<195.621 319.423>
-VStem: 132 51<742.058 811.097> 352.15 51<841.64 870> 361.5 23.8<721.575 761.339>
+HStem: 688 30<404.355 448.175> 741 40<318.233 359.801> 764 29<403.903 447.912> 807 36<326.354 438.066> 819 40<283.99 409.323>
+VStem: 219 57<746.97 811.193> 439 57<844.079 873> 450 28<720.647 761.782>
+AnchorPoint: "AboveMark" 347 895 basemark 0
 AnchorPoint: "AboveMark" 347 700 mark 0
 LayerCount: 2
 Fore
-Refer: 267 3655 N 0.85 0 0 0.85 -38 275 2
-Position2: "'mkmk' Thai Above Mark Positioning" dx=0 dy=0 dh=-600 dv=0
+SplineSet
+402 741 m 0xc5
+ 402 729 414 718 426 718 c 0
+ 439 718 450 729 450 741 c 0xc5
+ 450 754 439 764 426 764 c 0xa5
+ 414 764 402 754 402 741 c 0xc5
+318 717 m 0
+ 318 709 321 697 324 688 c 1
+ 266 688 219 726 219 773 c 0
+ 219 830 272 859 325 859 c 0xcd
+ 358 859 377 843 407 843 c 0
+ 438 843 439 847 439 863 c 2
+ 439 873 l 1
+ 496 873 l 1
+ 496 821 480 807 415 807 c 0x96
+ 373 807 350 819 325 819 c 0
+ 295 819 276 799 276 773 c 0
+ 276 760 280 751 290 746 c 1
+ 290 768 304 781 333 781 c 0xce
+ 348 781 362 770 376 757 c 1
+ 384 779 403 793 426 793 c 0xa6
+ 455 793 478 771 478 741 c 0
+ 478 713 456 688 429 688 c 0
+ 379 688 348 741 333 741 c 0
+ 326 741 318 733 318 717 c 0
+EndSplineSet
+Position2: "'mkmk' Thai Above Mark Positioning" dx=0 dy=0 dh=-600 dv=0 [ddx={} ddy={} ddh={} ddv={}]
 EndChar
 
 StartChar: zerowidthnonjoiner
