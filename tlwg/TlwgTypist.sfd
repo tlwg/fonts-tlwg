@@ -5,7 +5,7 @@ FamilyName: Tlwg Typist
 Weight: Medium
 Copyright: Tlwg Typist, based on Poonlap Veerathanabutr's Tlwg Typewriter.\n\nCopyright (C) 2005-2012 Theppitak Karoonboonyanan.\n\nTlwg Typewriter, Free Thai Pseudo Monospace outline font.\n\nCopyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-20: Created. +AAoA-PfaEdit 1.0 (http://pfaedit.sf.net).+AAoACgAA-TLWG is Thai Linux Working Group http://linux.thai.net+AAoACgAA-This font was derived from TlwgMono.Most characters have fixed width except some vowels and tone marks.+AAoACgAA-2003-11-25: Fixed above vowel and tone mark level.+AAoA" 
-Version: 001.023: 2014-02-25
+Version: 001.024: 2014-02-26
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153663876
-ModificationTime: 1393309647
+ModificationTime: 1393388567
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
@@ -269,7 +270,7 @@ NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 240 12 8
+WinInfo: 228 12 8
 BeginPrivate: 6
 BlueValues 39 [-16 0 417 431 445 455 563 576 604 618]
 OtherBlues 11 [-186 -186]
@@ -278,7 +279,7 @@ StdVW 4 [41]
 StemSnapH 7 [41 50]
 StemSnapV 7 [41 60]
 EndPrivate
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65540 344
 
 StartChar: mu
@@ -11255,6 +11256,8 @@ Width: 0
 Flags: W
 HStem: -153 30<-211.437 -162.316> -67 27<-210.388 -163.896>
 VStem: -237 22<-116.591 -72.8564> -160 60<-194 -146 -122.548 -67.8438>
+AnchorPoint: "BelowMark" -100 -40 mark 0
+AnchorPoint: "BelowMark" -100 -239 basemark 0
 AnchorPoint: "BelowBase" -100 -40 mark 0
 LayerCount: 2
 Fore
@@ -11287,6 +11290,8 @@ Width: 0
 Flags: W
 HStem: -194 50<-210 -160> -153 30<-321.437 -272.316> -67 27<-320.388 -273.896>
 VStem: -347 22<-116.591 -72.8564> -269 59<-122.259 -67.8438> -160 60<-144 -50>
+AnchorPoint: "BelowMark" -100 -40 mark 0
+AnchorPoint: "BelowMark" -100 -239 basemark 0
 AnchorPoint: "BelowBase" -100 -40 mark 0
 LayerCount: 2
 Fore
@@ -11323,6 +11328,8 @@ Width: 0
 Flags: W
 HStem: -120 80<-175.607 -104.393>
 VStem: -180 80<-115.607 -44.393>
+AnchorPoint: "BelowMark" -100 -40 mark 0
+AnchorPoint: "BelowMark" -100 -165 basemark 0
 AnchorPoint: "BelowBase" -100 -40 mark 0
 LayerCount: 2
 Fore
