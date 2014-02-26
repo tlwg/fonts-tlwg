@@ -5,7 +5,7 @@ FamilyName: TlwgTypewriter
 Weight: Medium
 Copyright: Tlwg Typewriter, Free Thai Pseudo Monospace outline font. Copyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-20: Created. +AAoA-PfaEdit 1.0 (http://pfaedit.sf.net).+AAoACgAA-TLWG is Thai Linux Working Group http://linux.thai.net+AAoACgAA-This font was derived from TlwgMono.Most characters have fixed width except some vowels and tone marks.+AAoACgAA-2003-11-25: Fixed above vowel and tone mark level.+AAoA" 
-Version: 001.019: 2012-02-20
+Version: 001.020: 2014-02-26
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -14,13 +14,12 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153666223
-ModificationTime: 1329700265
+ModificationTime: 1393409314
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -81,17 +80,19 @@ ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
  1
   SeqLookup: 0 "Thai Descender Removal Single Substitution" 
 EndFPST
-ChainSub2: class "'ccmp' Thai General Composition"  6 6 1 4
+ChainSub2: class "'ccmp' Thai General Composition"  7 7 1 7
   Class: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   Class: 7 uni0E33
   Class: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
   Class: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
-  Class: 15 uni0E47 uni0E4D
+  Class: 23 uni0E47 uni0E4D uni0E4E
+  Class: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
   BClass: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   BClass: 7 uni0E33
   BClass: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
   BClass: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
-  BClass: 15 uni0E47 uni0E4D
+  BClass: 23 uni0E47 uni0E4D uni0E4E
+  BClass: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
  1 1 0
   ClsList: 2
   BClsList: 1
@@ -117,6 +118,27 @@ ChainSub2: class "'ccmp' Thai General Composition"  6 6 1 4
   FClsList:
  1
   SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 3
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 5
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 6
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Mark High Variant" 
+  ClassNames: "All_Others"  "1"  "2"  "3"  "4"  "5"  "6"  
+  BClassNames: "All_Others"  "1"  "2"  "3"  "4"  "5"  "6"  
+  FClassNames: "All_Others"  
 EndFPST
 ChainSub2: glyph "'ccmp' Thai Below Vowel Tone Reordering"  0 0 0 19
  String: 15 uni0E38 uni0E48
@@ -258,7 +280,7 @@ StemSnapV 7 [41 60]
 EndPrivate
 TeXData: 1 0 0 629145 314572 209715 437256 1048576 209715 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
-BeginChars: 65540 343
+BeginChars: 65540 344
 
 StartChar: mu
 Encoding: 181 181 0
@@ -406,6 +428,7 @@ Width: 0
 Flags: W
 HStem: 701 164<-169 -112>
 VStem: -169 57<701 865>
+AnchorPoint: "AboveMark" -140 895 basemark 0
 AnchorPoint: "AboveMark" -140 700 mark 0
 LayerCount: 2
 Fore
@@ -427,8 +450,9 @@ StartChar: uni0E49
 Encoding: 3657 3657 6
 Width: 0
 Flags: W
-HStem: 700 54<-279 -223> 855 32<-259.059 -203.198>
-VStem: -286 22<798.11 846.13> -198 30<794.695 848.981>
+HStem: 700 54<-279 -223 -168 -90.3257> 855 32<-259.059 -203.374>
+VStem: -286 22<798.11 846.13> -198 39<792.366 851.699>
+AnchorPoint: "AboveMark" -140 895 basemark 0
 AnchorPoint: "AboveMark" -140 700 mark 0
 LayerCount: 2
 Fore
@@ -438,17 +462,18 @@ SplineSet
  -264 804 -249 789 -231 789 c 0
  -213 789 -198 804 -198 822 c 0
  -198 840 -213 855 -231 855 c 0
--228 887 m 24
- -195 887 -170 863 -162 835 c 8
- -153 805 -168 786 -168 755 c 17
- -131 749 -91 759 -60 813 c 9
- 0 813 l 21
- -21 761 -29 755 -60 728 c 0
- -105 689 -198 700 -279 700 c 9
+-228 887 m 8
+ -189 887 -159 856 -159 816 c 0
+ -159 796 -168 779 -168 755 c 1
+ -162 754 -156 753 -150 753 c 0
+ -119 753 -86 768 -60 813 c 9
+ 0 813 l 17
+ -39 723 -76 700 -189 700 c 2
+ -279 700 l 9
  -279 754 l 17
  -223 754 l 1
  -223 754 -286 787 -286 823 c 8
- -286 857 -262 887 -228 887 c 24
+ -286 857 -262 887 -228 887 c 8
 EndSplineSet
 MultipleSubs2: "Thai Tone Nikhahit Attachment" uni0E4D uni0E49
 Substitution2: "Thai Tone Low Variant" uni0E49.low
@@ -463,7 +488,8 @@ Width: 0
 Flags: W
 HStem: 699 18<-337.621 -298.382> 771 22<-338.863 -296.625>
 VStem: -398 53<721.995 792.039> -291 15<725.616 762.429>
-AnchorPoint: "AboveMark" -200 700 mark 0
+AnchorPoint: "AboveMark" -237 895 basemark 0
+AnchorPoint: "AboveMark" -237 700 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -503,6 +529,7 @@ Width: 0
 Flags: W
 HStem: 755 53<-220 -170 -110 -60>
 VStem: -170 60<700 755 808 866>
+AnchorPoint: "AboveMark" -140 895 basemark 0
 AnchorPoint: "AboveMark" -140 700 mark 0
 LayerCount: 2
 Fore
@@ -535,6 +562,7 @@ Flags: W
 HStem: 696 21<-178.969 -128.5>
 VStem: -224 34<722.961 783.249> -118 30<724.076 775.904>
 DStem2: -154 820 -92 771 0.899069 0.437807<28.0527 127.91>
+AnchorPoint: "AboveMark" -154 895 basemark 0
 AnchorPoint: "AboveMark" -154 700 mark 0
 LayerCount: 2
 Fore
@@ -10126,6 +10154,7 @@ Width: 0
 Flags: W
 HStem: 500 54<-251 -227> 500 22<-211.314 -174.326> 563 19<-210.66 -174.285> 640 41<-374.048 -215.731>
 VStem: -452 58<555.894 621.109> -227 13<554 557.116> -171 18<526.333 559.298>
+AnchorPoint: "AboveMark" -308 700 basemark 0
 AnchorPoint: "AboveBase" -150 500 mark 0
 LayerCount: 2
 Fore
@@ -10161,9 +10190,10 @@ StartChar: uni0E4E
 Encoding: 3662 3662 268
 Width: 0
 Flags: W
-HStem: 563 21G<-167.71 -121.222> 648 64<-240.031 -186.488> 736 49<-83.186 -56.8571>
-VStem: -299 273
-DStem2: -241 609 -297 604 0.447214 -0.894427<0 77.8152>
+HStem: 563 21G<-167.71 -121.222> 648 64<-240.015 -186.488> 736 49<-83.186 -56.8571>
+VStem: -299 58<609 647.45>
+DStem2: -241 609 -297 604 0.447214 -0.894427<-26.9651 77.8152>
+AnchorPoint: "AboveMark" -224 737 basemark 0
 AnchorPoint: "AboveBase" -100 500 mark 0
 LayerCount: 2
 Fore
@@ -10180,12 +10210,13 @@ SplineSet
  -159 563 l 9
  -186 625 l 17
  -188 634 -205 648 -220 648 c 0
- -246 648 -240 609 -241 609 c 2
+ -240 648 -241 628 -241 609 c 1
  -204 538 l 9
  -253 516 l 25
  -297 604 l 17
  -298 609 -299 615 -299 622 c 0
 EndSplineSet
+Substitution2: "Thai Mark High Variant" uni0E4E.high
 EndChar
 
 StartChar: uni0E4F
@@ -11098,8 +11129,8 @@ StartChar: uni0E49.low_left
 Encoding: 63238 63238 301
 Width: 0
 Flags: W
-HStem: 505 54<-339 -283> 660 32<-319.059 -263.198>
-VStem: -346 22<603.11 651.13> -258 30<599.695 653.981>
+HStem: 505 54<-339 -283 -228 -150.326> 660 32<-319.059 -263.374>
+VStem: -346 22<603.11 651.13> -258 39<597.366 656.699>
 LayerCount: 2
 Fore
 Refer: 6 3657 N 1 0 0 1 -60 -195 0
@@ -11145,6 +11176,7 @@ Width: 0
 Flags: W
 HStem: 500 164<-169 -112>
 VStem: -169 57<500 664>
+AnchorPoint: "AboveMark" -141 700 basemark 0
 AnchorPoint: "AboveBase" -100 500 mark 0
 LayerCount: 2
 Fore
@@ -11161,8 +11193,9 @@ StartChar: uni0E49.low
 Encoding: 63243 63243 306
 Width: 0
 Flags: W
-HStem: 500 54<-279 -223> 593 20G<-74.5 -4> 655 32<-259.059 -203.198>
-VStem: -286 22<598.11 646.13> -198 30<594.695 648.981>
+HStem: 500 54<-279 -223 -168 -90.038> 593 20G<-72 -4> 655 32<-259.059 -203.574>
+VStem: -286 22<598.11 646.13> -198 39<592.366 651.699> -59 55<584.641 613>
+AnchorPoint: "AboveMark" -140 700 basemark 0
 AnchorPoint: "AboveBase" -100 500 mark 0
 LayerCount: 2
 Fore
@@ -11173,12 +11206,14 @@ SplineSet
  -213 589 -198 604 -198 622 c 0
  -198 640 -213 655 -231 655 c 0
 -228 687 m 24
- -195 687 -170 663 -162 635 c 8
- -153 605 -168 586 -168 555 c 17
- -131 549 -90 559 -59 613 c 9
+ -190 687 -159 656 -159 616 c 0
+ -159 596 -168 579 -168 555 c 1
+ -162 554 -156 553 -150 553 c 0
+ -118 553 -85 568 -59 613 c 9
  -4 613 l 17
  -15 533 -17 545 -50 525 c 16
- -101 495 -198 500 -279 500 c 9
+ -88 503 -152 500 -216 500 c 2
+ -279 500 l 9
  -279 554 l 17
  -223 554 l 1
  -223 554 -286 587 -286 623 c 8
@@ -11192,6 +11227,7 @@ Width: 0
 Flags: W
 HStem: 498 18<-337.621 -298.382> 570 22<-338.863 -296.625>
 VStem: -398 53<520.995 591.039> -291 15<524.616 561.429>
+AnchorPoint: "AboveMark" -237 700 basemark 0
 AnchorPoint: "AboveBase" -100 500 mark 0
 LayerCount: 2
 Fore
@@ -11227,6 +11263,7 @@ Width: 0
 Flags: W
 HStem: 555 53<-220 -170 -110 -60>
 VStem: -170 60<500 555 608 666>
+AnchorPoint: "AboveMark" -140 700 basemark 0
 AnchorPoint: "AboveBase" -100 500 mark 0
 LayerCount: 2
 Fore
@@ -11254,6 +11291,7 @@ Flags: W
 HStem: 496 21<-178.969 -128.5>
 VStem: -224 34<522.961 583.249> -118 30<524.076 575.904>
 DStem2: -154 620 -92 571 0.899069 0.437807<28.0527 127.91>
+AnchorPoint: "AboveMark" -154 700 basemark 0
 AnchorPoint: "AboveBase" -100 500 mark 0
 LayerCount: 2
 Fore
@@ -11363,8 +11401,8 @@ StartChar: uni0E49.left
 Encoding: 63252 63252 315
 Width: 0
 Flags: W
-HStem: 700 54<-339 -283> 855 32<-319.059 -263.198>
-VStem: -346 22<798.11 846.13> -258 30<794.695 848.981>
+HStem: 700 54<-339 -283 -228 -150.326> 855 32<-319.059 -263.374>
+VStem: -346 22<798.11 846.13> -258 39<792.366 851.699>
 LayerCount: 2
 Fore
 Refer: 6 3657 N 1 0 0 1 -60 0 0
@@ -11529,6 +11567,7 @@ Width: 0
 Flags: W
 HStem: 700 41<-231.628 -162.546> 821 47<-232.091 -162.083>
 VStem: -282 45<745.766 815.725> -157 43<745.993 815.499>
+AnchorPoint: "AboveMark" -197 895 basemark 0
 AnchorPoint: "AboveMark" -197 700 mark 0
 LayerCount: 2
 Fore
@@ -11552,6 +11591,7 @@ Width: 0
 Flags: W
 HStem: 700 18.7<-224.617 -193.177> 700 45.9<-258.35 -237.95> 753.55 16.15<-224.061 -193.142> 819 34.85<-362.941 -228.371>
 VStem: -429.2 49.3<747.51 802.942> -237.95 11.05<745.9 748.549> -190.35 15.3<722.383 750.404>
+AnchorPoint: "AboveMark" -303 895 basemark 0
 AnchorPoint: "AboveMark" -303 700 mark 0
 LayerCount: 2
 Fore
@@ -11891,6 +11931,20 @@ SplineSet
  310 -116 311 -112 312 -109 c 2
  382 116 l 1
 EndSplineSet
+EndChar
+
+StartChar: uni0E4E.high
+Encoding: 63264 63264 343
+Width: 0
+Flags: W
+HStem: 753.55 17.85<-95.5532 -56.0389> 825.8 54.4<-157.013 -111.515> 900.6 41.65<-23.7081 -1.32858>
+VStem: -207.15 49.3<792.65 825.332>
+DStem2: -157.85 792.65 -205.45 788.4 0.447214 -0.894427<-22.9204 66.1429>
+AnchorPoint: "AboveMark" -143 905 basemark 0
+AnchorPoint: "AboveMark" -143 700 mark 0
+LayerCount: 2
+Fore
+Refer: 268 3662 N 0.85 0 0 0.85 47 275 2
 EndChar
 EndChars
 EndSplineFont
