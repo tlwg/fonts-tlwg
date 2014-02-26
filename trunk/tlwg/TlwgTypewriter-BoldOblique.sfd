@@ -5,7 +5,7 @@ FamilyName: TlwgTypewriter
 Weight: Bold
 Copyright: Tlwg Typewriter-Bold, Free Thai Pseudo Monospace outline font. Copyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-25: Created. +AAoA-PfaEdit 1.0 (http://pfaedit.sf.net).+AAoACgAA-TLWG is Thai Linux Working Group http://linux.thai.net+AAoACgAA-Imported ISO-8859-1 from FreeMono.sfd.+AAoA-http://www.nongnu.org/freefont/+AAoACgAA" 
-Version: 001.020: 2014-02-26
+Version: 001.021: 2014-02-26
 ItalicAngle: -12
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153666223
-ModificationTime: 1393414904
+ModificationTime: 1393417418
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
@@ -281,7 +282,7 @@ StdVW 5 [103]
 StemSnapH 5 [100]
 StemSnapV 11 [44 55 103]
 EndPrivate
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65540 344
 
 StartChar: mu
@@ -10087,6 +10088,8 @@ Width: 0
 Flags: W
 HStem: -81 31<-221.054 -171.277>
 VStem: -266 39<-135.722 -85.1587>
+AnchorPoint: "BelowMark" -100 -50 mark 0
+AnchorPoint: "BelowMark" -140 -237 basemark 0
 AnchorPoint: "BelowBase" -100 -50 mark 0
 LayerCount: 2
 Fore
@@ -10116,28 +10119,31 @@ StartChar: uni0E39
 Encoding: 3641 3641 253
 Width: 0
 Flags: W
-HStem: -216 66<-251 -207> -151 26<-328.264 -302> -73 25<-322.741 -277.938>
-VStem: -366 36<-124.523 -76.8455>
+HStem: -216 66<-251 -207> -151 26<-328.264 -302> -73 25<-322.741 -278.43>
+VStem: -366 36<-124.523 -76.8455> -276 39<-117.5 -73.3309>
 DStem2: -221.029 -216 -160 -216 0.207912 0.978148<67.4745 171.82>
+AnchorPoint: "BelowMark" -124 -50 mark 0
+AnchorPoint: "BelowMark" -164 -237 basemark 0
 AnchorPoint: "BelowBase" -124 -50 mark 0
 LayerCount: 2
 Fore
 SplineSet
--309 -125 m 0x70
+-309 -125 m 0x78
  -295 -125 -276 -111 -276 -93 c 0
  -276 -82 -286 -73 -298 -73 c 0
  -313 -73 -330 -85 -330 -104 c 0
- -330 -115 -322 -125 -309 -125 c 0x70
+ -330 -115 -322 -125 -309 -125 c 0x78
 -366 -111 m 0
  -366 -71 -324 -48 -293 -48 c 16
- -250 -48 -234 -72 -237 -85 c 10
+ -253 -48 -237 -69 -237 -82 c 0
+ -237 -83 -237 -84 -237 -85 c 10
  -251 -150 l 25
  -207 -150 l 25
  -185 -48 l 25
  -124 -48 l 25
  -160 -216 l 25
  -326 -216 l 25
- -312 -150 l 17xb0
+ -312 -150 l 17xb8
  -312 -150 -315 -151 -319 -151 c 0
  -332 -151 -366 -143 -366 -111 c 0
 EndSplineSet
@@ -10153,17 +10159,19 @@ StartChar: uni0E3A
 Encoding: 3642 3642 254
 Width: 0
 Flags: W
-HStem: -214 142<-294.715 -215.462>
-VStem: -328 145<-181.507 -105.163>
-AnchorPoint: "BelowBase" -110 -50 mark 0
+HStem: -192 142<-290.476 -211.285>
+VStem: -323 145<-158.885 -82.4932>
+AnchorPoint: "BelowMark" -111 -50 mark 0
+AnchorPoint: "BelowMark" -150 -235 basemark 0
+AnchorPoint: "BelowBase" -111 -50 mark 0
 LayerCount: 2
 Fore
 SplineSet
--328 -158 m 0
- -328 -115 -286 -72 -240 -72 c 0
- -206 -72 -183 -96 -183 -129 c 0
- -183 -167 -220 -214 -270 -214 c 0
- -304 -214 -328 -190 -328 -158 c 0
+-323 -136 m 0
+ -323 -89 -278 -50 -236 -50 c 0
+ -202 -50 -178 -74 -178 -106 c 0
+ -178 -153 -224 -192 -266 -192 c 0
+ -300 -192 -323 -168 -323 -136 c 0
 EndSplineSet
 Substitution2: "Thai Phinthu Maitaikhu Reordering" uni0E47
 Substitution2: "Thai Phinthu Mai Ek Reordering" uni0E48.low

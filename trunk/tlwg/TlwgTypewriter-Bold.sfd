@@ -5,7 +5,7 @@ FamilyName: TlwgTypewriter
 Weight: Bold
 Copyright: Tlwg Typewriter-Bold, Free Thai Pseudo Monospace outline font. Copyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-20: Created. +AAoA-PfaEdit 1.0 (http://pfaedit.sf.net).+AAoACgAA-TLWG is Thai Linux Working Group http://linux.thai.net+AAoACgAA-Imported ISO-8859-1 from FreeMono.sfd.+AAoA-http://www.nongnu.org/freefont/+AAoACgAA-2003-11-22: first release+AAoACgAA-2003-11-25: Fixed vowel and tone marks' level." 
-Version: 001.020: 2014-02-26
+Version: 001.021: 2014-02-26
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153666223
-ModificationTime: 1393411712
+ModificationTime: 1393417423
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reorde
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
@@ -271,7 +272,7 @@ NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 240 12 9
+WinInfo: 228 12 9
 BeginPrivate: 7
 BlueValues 31 [-16 0 437 452 583 597 623 638]
 OtherBlues 11 [-205 -205]
@@ -281,7 +282,7 @@ StdVW 5 [100]
 StemSnapH 5 [100]
 StemSnapV 5 [100]
 EndPrivate
-AnchorClass2: "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
 BeginChars: 65540 344
 
 StartChar: mu
@@ -10159,6 +10160,8 @@ Width: 0
 Flags: W
 HStem: -205 69<-188.584 -148.687> -81 31<-200.133 -151.08>
 VStem: -241 38<-134.298 -82.7983> -189 99<-205 -155.399> -148 58<-135.412 -82.252>
+AnchorPoint: "BelowMark" -90 -50 mark 0
+AnchorPoint: "BelowMark" -90 -237 basemark 0
 AnchorPoint: "BelowBase" -90 -50 mark 0
 LayerCount: 2
 Fore
@@ -10191,6 +10194,8 @@ Width: 0
 Flags: W
 HStem: -216 66<-219 -175> -151 26<-303.671 -280.023> -73 25<-304.201 -259.517>
 VStem: -343 35<-123.408 -74.7888> -256 37<-123.708 -74.4972> -175 61<-150 -48>
+AnchorPoint: "BelowMark" -114 -50 mark 0
+AnchorPoint: "BelowMark" -114 -237 basemark 0
 AnchorPoint: "BelowBase" -114 -50 mark 0
 LayerCount: 2
 Fore
@@ -10225,17 +10230,19 @@ StartChar: uni0E3A
 Encoding: 3642 3642 253
 Width: 0
 Flags: W
-HStem: -214 142<-275.125 -174.875>
-VStem: -296 142<-193.125 -92.875>
+HStem: -192 142<-275.125 -174.875>
+VStem: -296 142<-171.125 -70.875>
+AnchorPoint: "BelowMark" -100 -50 mark 0
+AnchorPoint: "BelowMark" -100 -235 basemark 0
 AnchorPoint: "BelowBase" -100 -50 mark 0
 LayerCount: 2
 Fore
 SplineSet
--225 -72 m 0
- -186 -72 -154 -104 -154 -143 c 0
- -154 -182 -186 -214 -225 -214 c 0
- -264 -214 -296 -182 -296 -143 c 0
- -296 -104 -264 -72 -225 -72 c 0
+-225 -50 m 0
+ -186 -50 -154 -82 -154 -121 c 0
+ -154 -160 -186 -192 -225 -192 c 0
+ -264 -192 -296 -160 -296 -121 c 0
+ -296 -82 -264 -50 -225 -50 c 0
 EndSplineSet
 Substitution2: "Thai Phinthu Maitaikhu Reordering" uni0E47
 Substitution2: "Thai Phinthu Mai Ek Reordering" uni0E48.low
