@@ -1,5 +1,24 @@
 2014-02-26  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
+	TlwgTypo: Improve above-base stacking for ethnic languages.
+
+	* tlwg/TlwgTypo*.sfd:
+	  - Add high Yamakkan (uni0E4E.high) glyph, with dx_adv 'mkmk'
+	    positioning, and conversion from uni0E4E in 'Thai Mark High
+	    Variant' table.
+	  - 'ccmp' Thai General Composition:
+	    - Add uni0E4E to class 5 so it gets converted to high variant.
+	    - Add lookups to convert marks to high variant when it comes
+	      after all above-base characters and their converted variants.
+	  - Add AboveMark base anchor for normal & low tone marks,
+	    normal & high Maitaikhu, high Nikhahit, normal & high Yamakkan.
+	  - [Normal & Oblique] Unref high Maitaikhu (uni0E47.high),
+	    high Yamakkan (uni0E4E.high); and expand stroke by 6 (copied from
+	    TlwgTypist).
+	  - Bump font version to 002.014: 2014-02-26.
+
+2014-02-26  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
 	TlwgTypist: Add support for below-base stacking.
 
 	* tlwg/TlwgTypist*.sfd:
