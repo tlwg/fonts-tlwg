@@ -1,3 +1,21 @@
+2014-02-28  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	TlwgTypist: Add supports for stacking over/under base-line vowels.
+
+	* tlwg/TlwgTypist*.sfd:
+	  - Add "'mark' Thai Below Base Centered" GPOS table,
+	    with "BelowBaseCenter" anchor class, for aligning below marks
+	    under some vowels properly.
+	  - Add BelowBaseCenter base anchors to leading vowels.
+	  - Add BelowBase base anchors to Ru, Lu, Lakkhangyao, Maiyamok
+	  - Add BelowBaseCenter mark anchor to below marks.
+	  - Add AboveBase base anchors to Sara O, Maimuan, Maimalai.
+	  - [Bold & BoldOblique] Copy polished glyphs for leading vowels
+	    and below marks from TlwgTypo.
+	  - [Bold & BoldOblique] Copy BelowBase base anchor for Ro Rua
+	    from TlwgTypo.
+	  - Bump font version to 001.025: 2014-02-28.
+
 2014-02-27  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	TlwgTypo: Add supports for stacking over/under base-line vowels.
