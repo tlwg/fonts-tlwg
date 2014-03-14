@@ -76,9 +76,13 @@ umpush.afm:      Umpush.afm
 	[ -f $@ ] || $(LN_S) $< $@
 umpush_b.afm:    Umpush-Bold.afm
 	[ -f $@ ] || $(LN_S) $< $@
+umpush_l.afm:    Umpush-Light.afm
+	[ -f $@ ] || $(LN_S) $< $@
 umpush_o.afm:    Umpush-Oblique.afm
 	[ -f $@ ] || $(LN_S) $< $@
 umpush_bo.afm:   Umpush-BoldOblique.afm
+	[ -f $@ ] || $(LN_S) $< $@
+umpush_lo.afm:   Umpush-LightOblique.afm
 	[ -f $@ ] || $(LN_S) $< $@
 sawasdee.afm:    Sawasdee.afm
 	[ -f $@ ] || $(LN_S) $< $@
@@ -124,9 +128,13 @@ umpush.pfb:      Umpush.pfb
 	[ -f $@ ] || $(LN_S) $< $@
 umpush_b.pfb:    Umpush-Bold.pfb
 	[ -f $@ ] || $(LN_S) $< $@
+umpush_l.pfb:    Umpush-Light.pfb
+	[ -f $@ ] || $(LN_S) $< $@
 umpush_o.pfb:    Umpush-Oblique.pfb
 	[ -f $@ ] || $(LN_S) $< $@
 umpush_bo.pfb:   Umpush-BoldOblique.pfb
+	[ -f $@ ] || $(LN_S) $< $@
+umpush_lo.pfb:   Umpush-LightOblique.pfb
 	[ -f $@ ] || $(LN_S) $< $@
 sawasdee.pfb:    Sawasdee.pfb
 	[ -f $@ ] || $(LN_S) $< $@
@@ -156,8 +164,10 @@ FONTS = \
 	waree_bo \
 	umpush \
 	umpush_b \
+	umpush_l \
 	umpush_o \
 	umpush_bo \
+	umpush_lo \
 	sawasdee \
 	sawasdee_b \
 	sawasdee_o \
