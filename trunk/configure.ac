@@ -224,6 +224,7 @@ AC_OUTPUT(
   Makefile
   nf/Makefile
   nectec/Makefile
+  sipa/Makefile
   tlwg/Makefile
   scripts/Makefile
   fontconfig/Makefile
