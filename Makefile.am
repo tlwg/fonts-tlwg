@@ -2,7 +2,7 @@ MAINTAINERCLEANFILES = Makefile.in configure aclocal.m4
 
 EXTRA_DIST = ChangeLog.thai-ttf GPL
 
-SUBDIRS = scripts latex nf nectec tlwg fontconfig tests
+SUBDIRS = scripts latex nf nectec sipa tlwg fontconfig tests
 
 if INCLUDE_XFONTSDIR
 install-data-hook:
