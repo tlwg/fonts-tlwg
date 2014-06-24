@@ -4,7 +4,7 @@ FullName: Laksaman Bold
 FamilyName: Laksaman
 Weight: Bold
 Copyright: Laksaman, based on TH Sarabun New.\n\nCopyright (c) 2014 Theppitak Karoonboonyanan.\n\nTH Sarabun New:\n\nCopyright (c) 2010-2011 by Software Industry Promotion Agency (Public Organization) (SIPA). All rights reserved.\nCreated by : Suppakit CHALERMLARP.
-Version: 3.01: 2014-06-10
+Version: 3.02: 2014-06-24
 ItalicAngle: 0
 UnderlinePosition: -20
 UnderlineWidth: 30
@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1308745583
-ModificationTime: 1402376671
+ModificationTime: 1403588260
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -130,6 +130,10 @@ Lookup: 254 0 0 "<23,16000>  in Thai lookup 73"  {"<23,16000>  in Thai lookup 73
 Lookup: 1 0 0 "<23,16000>  in Thai lookup 73 nested-substitutions 0"  {"<23,16000>  in Thai lookup 73 nested-substitutions 0 subtable"  } []
 Lookup: 254 0 0 "<23,16000>  in Thai lookup 75"  {"<23,16000>  in Thai lookup 75 subtable"  } [<23,16000> ('thai' <'dflt' > ) ]
 Lookup: 1 0 0 "<23,16000>  in Thai lookup 75 nested-substitutions 0"  {"<23,16000>  in Thai lookup 75 nested-substitutions 0 subtable"  } []
+Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 0"  {"'kern' Horizontal Kerning in Latin lookup 0 subtable"  } ['kern' ('latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -1195,7 +1199,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 432 12 7
+WinInfo: 228 12 7
 BeginPrivate: 5
 BlueValues 31 [-14 0 511 526 600 612 716 730]
 StdHW 4 [80]
@@ -1203,6 +1207,7 @@ StemSnapH 7 [63 80]
 StdVW 4 [93]
 StemSnapV 4 [93]
 EndPrivate
+AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveMark"  "'mkmk' Thai Above Mark" "BelowBase"  "'mark' Thai Below Base" "AboveBase"  "'mark' Thai Above Base" 
 BeginChars: 65543 510
 
 StartChar: .notdef
@@ -9795,6 +9800,7 @@ VWidth: 1504
 Flags: W
 HStem: -352 69<165.758 249.24> -199 65<164.889 259.646> -12 63<85.4211 167.542> 153 62<84.7059 145.818> 532 80<246.467 407.114>
 VStem: 12 63<61.4211 143.199> 92 69<-278.093 -206.565> 137 86<211.185 352.913> 177 61<60.3192 143.109> 469 94<-346 -301.705 -226 471.861>
+AnchorPoint: "BelowBase" 563 -375 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -9903,6 +9909,7 @@ VWidth: 1504
 Flags: W
 HStem: -353 76<102.259 179.147> -199 70<103.778 189.651> -12 63<85.4211 167.542> 153 62<84.7059 145.818> 532 80<246.467 407.114>
 VStem: 12 63<61.4211 143.199> 30 69<-273.676 -203.21> 137 86<231.667 352.771> 177 61<60.3192 143.109> 469 94<-233 471.861>
+AnchorPoint: "BelowBase" 563 -375 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -11029,6 +11036,7 @@ VWidth: 1504
 Flags: W
 HStem: -12 80<282.718 465.652> 384 63<88.4211 154.548> 549 63<87.3192 171.217>
 VStem: 15 63<456.544 538.817> 155 93<96.9047 387> 181 67<457.181 538.172> 499 94<97.3491 841>
+AnchorPoint: "AboveBase" 452 637 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -11161,6 +11169,7 @@ Flags: W
 HStem: 0 21G<60 164.448 440.469 546> 384 63<153.574 221.579> 549 63<138.86 222.681>
 VStem: 60 93<128 385> 60 69<456.456 538.172> 232 63<457.421 539.681> 453 93<126 841>
 DStem2: 153 128 152 0 0.528415 0.848986<0 174.669> 332 313 302 241 0.530947 -0.847405<45.0848 222.709>
+AnchorPoint: "AboveBase" 405 637 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -11305,6 +11314,7 @@ Flags: W
 HStem: 0 21G<155 262.266 536.948 648> 384 63<88.4211 154.548> 549 63<87.3192 171.217>
 VStem: 15 63<456.544 538.817> 155 93<110.73 387> 181 67<457.181 538.172> 555 93<110.73 841>
 DStem2: 268 254 402 466 0.298975 0.954261<-147.29 242.366> 430 575 402 466 0.289608 -0.957145<96.2198 489.358>
+AnchorPoint: "AboveBase" 508 637 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -11617,6 +11627,7 @@ VWidth: 1504
 Flags: W
 HStem: -12 63<251.499 332.501> 153 64<251.499 313.387> 505 79<246.834 386.461> 532 80<147.45 314.371>
 VStem: 176 65<61.4211 142.64> 314 94<215 365.795> 343 65<61.5092 143.544>
+AnchorPoint: "BelowBase" 408 -59 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -11689,6 +11700,7 @@ VWidth: 1504
 Flags: W
 HStem: -12 62<156.611 238.678> 152 63<168.444 238.472> 532 80<197.393 361.314>
 VStem: 75 93<209 340.697> 75 71<61.8281 142.544> 248 60<59.6131 141.817> 418 93<-211 472.635>
+AnchorPoint: "BelowBase" 334 -59 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -11842,6 +11854,7 @@ VWidth: 1504
 Flags: W
 HStem: -12 63<85.4211 167.542> 153 62<84.7059 145.818> 532 80<246.467 407.114>
 VStem: 12 63<61.4211 143.199> 137 86<211.186 352.889> 177 61<60.3192 143.109> 469 94<-211 471.861>
+AnchorPoint: "BelowBase" 385 -59 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -12756,6 +12769,8 @@ VWidth: 1504
 Flags: W
 HStem: 718 70<-196 -109.584> 895 57<-317.405 -240.743>
 VStem: -382 57<809.342 888.75> -233 60<809.77 886.986> -14 89<894.933 967>
+AnchorPoint: "AboveBase" -74 637 mark 0
+AnchorPoint: "AboveMark" -122 1004 basemark 0
 LayerCount: 2
 Back
 SplineSet
@@ -12894,6 +12909,8 @@ Width: 0
 VWidth: 1504
 Flags: W
 HStem: 728 21G<-552 -534> 737 59<-468.22 -218.97> 869 61<-418.731 -243.708>
+AnchorPoint: "AboveMark" -122 1004 basemark 0
+AnchorPoint: "AboveBase" -74 637 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -12935,6 +12952,8 @@ VWidth: 1504
 Flags: W
 HStem: 728 21G<-552 -534> 737 59<-468.22 -218.97> 869 61<-418.731 -244.269>
 VStem: -167 90<871 975>
+AnchorPoint: "AboveBase" -74 637 mark 0
+AnchorPoint: "AboveMark" -122 1004 basemark 0
 LayerCount: 2
 Back
 SplineSet
@@ -12983,6 +13002,8 @@ VWidth: 1504
 Flags: W
 HStem: 728 21G<-552 -534> 737 59<-468.22 -218.97> 869 61<-418.731 -243.586> 943 47<-183.281 -110.304>
 VStem: -104 47<863.057 937.153>
+AnchorPoint: "AboveBase" -74 637 mark 0
+AnchorPoint: "AboveMark" -146 1004 basemark 0
 LayerCount: 2
 Back
 SplineSet
@@ -13048,6 +13069,8 @@ VWidth: 1504
 Flags: W
 HStem: 728 21G<-552 -534> 737 59<-468.22 -218.97> 869 61<-418.731 -296.694>
 VStem: -296 67<927 975> -167 90<871 975>
+AnchorPoint: "AboveMark" -198 1004 basemark 0
+AnchorPoint: "AboveBase" -74 637 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -13104,6 +13127,9 @@ VWidth: 1504
 Flags: W
 HStem: -239 51<-206.122 -167.947> -105 46<-205.957 -134.227>
 VStem: -263 51<-181.358 -111.401> -167 90<-353 -239> -129 52<-182.69 -110.116>
+AnchorPoint: "BelowMark" -77 -59 mark 0
+AnchorPoint: "BelowMark" -77 -392 basemark 0
+AnchorPoint: "BelowBase" -77 -59 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -13133,7 +13159,7 @@ SplineSet
 -171 -59 m 3xf0
  -119 -59 -77 -95 -77 -149 c 2xe8
  -77 -353 l 1
- -167 -353 l 1
+ -167 -353 l 5
  -167 -239 l 1
  -173 -239 l 2
  -223 -239 -263 -199 -263 -150 c 3
@@ -13156,6 +13182,9 @@ VWidth: 1504
 Flags: W
 HStem: -372 65<-256.065 -164.249> -239 51<-386.261 -344.724> -105 46<-386.635 -315.032>
 VStem: -444 51<-181.091 -111.658> -344 87<-304.434 -239> -310 53<-183.183 -110.116> -164 87<-303.122 -72>
+AnchorPoint: "BelowMark" -77 -392 basemark 0
+AnchorPoint: "BelowBase" -77 -59 mark 0
+AnchorPoint: "BelowMark" -77 -59 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -13222,6 +13251,9 @@ VWidth: 1504
 Flags: W
 HStem: -167 105<-150.097 -66.5419>
 VStem: -161 105<-156.097 -72.5419>
+AnchorPoint: "BelowMark" -56 -206 basemark 0
+AnchorPoint: "BelowMark" -56 -62 mark 0
+AnchorPoint: "BelowBase" -56 -62 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -13787,6 +13819,9 @@ VWidth: 1504
 Flags: W
 HStem: 705 46<-203.905 -142.294> 817 45<-203.398 -142.294> 887 61<-393.756 -176.906>
 VStem: -490 82<787.408 873.039> -248 42<790 814.45> -162 72<962.581 1048> -140 45<753.216 814.706>
+AnchorPoint: "AboveMark" -331 691 mark 0
+AnchorPoint: "AboveBase" -95 637 mark 0
+AnchorPoint: "AboveMark" -331 1004 basemark 0
 LayerCount: 2
 Back
 SplineSet
@@ -13864,6 +13899,8 @@ VWidth: 1504
 Flags: W
 HStem: 1018 172<-167 -77>
 VStem: -167 90<1018 1190>
+AnchorPoint: "AboveMark" -122 1204 basemark 0
+AnchorPoint: "AboveMark" -122 1004 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13887,6 +13924,8 @@ VWidth: 1504
 Flags: W
 HStem: 1003 50<-322 -261.992> 1221 49<-274.093 -203.843>
 VStem: -325 47<1146.93 1217> -200 50<1147 1217.25> -45 78<1175.35 1256>
+AnchorPoint: "AboveMark" -175 1284 basemark 0
+AnchorPoint: "AboveMark" -175 1004 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -13948,6 +13987,8 @@ VWidth: 1504
 Flags: W
 HStem: 1005 43<-332.763 -263.834 -174 -153.662> 1125 45<-299 -263.566>
 VStem: -381 44<1052.07 1119.71> -260 46<1051.12 1121.52> -116 54<1081.48 1190.19> -9 63<1133.06 1247>
+AnchorPoint: "AboveMark" -89 1272 basemark 0
+AnchorPoint: "AboveMark" -89 1004 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -14026,6 +14067,8 @@ VWidth: 1504
 Flags: W
 HStem: 1085 61<-235 -162 -80 -2>
 VStem: -162 82<1018 1085 1146 1209>
+AnchorPoint: "AboveMark" -123 1223 basemark 0
+AnchorPoint: "AboveMark" -122 1004 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14057,6 +14100,8 @@ VWidth: 1504
 Flags: W
 HStem: 961 53<-214.07 -143.195>
 VStem: -269 52<1017.55 1086.56> -140 51<1017.21 1087.41> -77 62<1211.25 1256>
+AnchorPoint: "AboveMark" -179 1190 basemark 0
+AnchorPoint: "AboveMark" -179 961 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -14114,6 +14159,9 @@ VWidth: 1504
 Flags: W
 HStem: 699 67<-190.413 -96.5257> 887 67<-189.724 -98.2259>
 VStem: -271 66<781.165 870.981> -83 66<779.456 873.116>
+AnchorPoint: "AboveMark" -143 685 mark 0
+AnchorPoint: "AboveBase" -17 637 mark 0
+AnchorPoint: "AboveMark" -143 1004 basemark 0
 LayerCount: 2
 Back
 SplineSet
@@ -14160,6 +14208,9 @@ VWidth: 1504
 Flags: W
 HStem: 684 58<-264.679 -153.985> 809 57<-184.127 -140.053> 951 60<-193.601 -75.3672>
 VStem: -329 63<746.926 809.623> -263 66<881.178 945.512>
+AnchorPoint: "AboveMark" -209 670 mark 0
+AnchorPoint: "AboveBase" -74 637 mark 0
+AnchorPoint: "AboveMark" -209 1025 basemark 0
 LayerCount: 2
 Back
 SplineSet
@@ -17318,7 +17369,7 @@ SplineSet
  -257 698 l 5
 EndSplineSet
 Fore
-Refer: 352 63242 N 1 0 0 1 -180 0 2
+Refer: 352 63242 S 1 0 0 1 -180 0 2
 Substitution2: "<23,16000>  in Thai lookup 63 nested-substitutions 4 subtable" uni0E48.alt3
 Substitution2: "Single Substitution lookup 56 subtable" uni0E48.alt3
 EndChar
@@ -17374,8 +17425,8 @@ Encoding: 63239 63239 349
 Width: 0
 VWidth: 1504
 Flags: W
-HStem: 683 48<-539.923 -468.684 -370 -348.008> 814 49<-505 -468.572>
-VStem: -594 48<736.979 807.436> -463 51<736.75 808.423> -307 59<769.492 884.002> -191 69<827.745 946>
+HStem: 683 48<-539.923 -468.684 -539.923 -468.684 -370 -348.008 -370 -348.008> 814 49<-505 -468.572 -505 -468.572>
+VStem: -594 48<736.979 807.436 736.979 807.436> -463 51<736.75 808.423 736.75 808.423> -307 59<769.492 884.002 769.492 884.002> -191 69<827.745 946 827.745 946>
 LayerCount: 2
 Back
 SplineSet
@@ -17498,6 +17549,8 @@ VWidth: 1504
 Flags: W
 HStem: 698 212<-170 -77>
 VStem: -170 93<698 910>
+AnchorPoint: "AboveMark" -124 1004 basemark 0
+AnchorPoint: "AboveBase" -37 637 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17520,6 +17573,8 @@ VWidth: 1504
 Flags: W
 HStem: 678 61<-375 -324.108> 934 59<-315.534 -246.331>
 VStem: -378 59<860.047 930.83> -242 58<860.804 929.125> -75 90<877.225 958>
+AnchorPoint: "AboveMark" -213 1004 basemark 0
+AnchorPoint: "AboveBase" -80 637 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -17585,6 +17640,8 @@ VWidth: 1504
 Flags: W
 HStem: 683 48<-449.923 -378.684 -280 -258.008> 814 49<-415 -378.572>
 VStem: -504 48<736.979 807.436> -373 51<736.75 808.423> -217 59<769.492 884.002> -101 69<827.745 946>
+AnchorPoint: "AboveMark" -188 1004 basemark 0
+AnchorPoint: "AboveBase" -127 637 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -17664,6 +17721,8 @@ VWidth: 1504
 Flags: W
 HStem: 773 62<-251 -165 -81 5>
 VStem: -165 84<698 773 835 907>
+AnchorPoint: "AboveMark" -123 1004 basemark 0
+AnchorPoint: "AboveBase" 8 637 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17694,6 +17753,8 @@ VWidth: 1504
 Flags: W
 HStem: 683 56<-228.611 -155.991>
 VStem: -292 57<745.195 817.04> -150 54<745.238 816.584> -83 68<960.735 1003>
+AnchorPoint: "AboveMark" -194 928 basemark 0
+AnchorPoint: "AboveBase" -70 637 mark 0
 LayerCount: 2
 Back
 SplineSet
