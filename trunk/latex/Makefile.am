@@ -5,7 +5,8 @@ FD_FILES = \
 	lthttype.fd lthttypist.fd \
 	lthpurisa.fd lthloma.fd \
 	lthwaree.fd lthumpush.fd \
-	lthsawasdee.fd
+	lthsawasdee.fd \
+	lthlaksaman.fd
 
 EXTRA_DIST = \
 	texfont.mk.am \
