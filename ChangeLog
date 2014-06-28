@@ -1,3 +1,27 @@
+2014-06-28  Theppitak Karoonboonyanan <theppitak@gmail.com>
+
+	Replace monolithic fontconfig files with ones for individual fonts.
+
+	* fontconfig/Makefile.am,
+	  -fontconfig/64-ttf-thai-tlwg.conf,
+	  -fontconfig/89-ttf-thai-tlwg-synthetic.conf,
+	  +fontconfig/64-01-tlwg-kinnari.conf,
+	  +fontconfig/64-02-tlwg-norasi.conf,
+	  +fontconfig/64-11-tlwg-waree.conf,
+	  +fontconfig/64-12-tlwg-loma.conf,
+	  +fontconfig/64-13-tlwg-garuda.conf,
+	  +fontconfig/64-14-tlwg-umpush.conf,
+	  +fontconfig/64-21-tlwg-typo.conf,
+	  +fontconfig/64-22-tlwg-typist.conf,
+	  +fontconfig/64-23-tlwg-mono.conf,
+	  +fontconfig/89-tlwg-garuda-synthetic.conf,
+	  +fontconfig/89-tlwg-kinnari-synthetic.conf,
+	  +fontconfig/89-tlwg-loma-synthetic.conf,
+	  +fontconfig/89-tlwg-umpush-synthetic.conf,
+	  +fontconfig/89-tlwg-waree-synthetic.conf:
+	  - Remove monolithic fontconfig files.
+	  - Take split fontconfig files for individual fonts from Debian.
+
 2014-06-27  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
 	Update copyright info for Tlwg Typist, Tlwg Typo.
