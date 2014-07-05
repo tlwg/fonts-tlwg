@@ -1,3 +1,13 @@
+2014-07-05  Theppitak Karoonboonyanan <theppitak@gmail.com>
+
+	LaTeX: Add options for setting default fonts.
+
+	* latex/fonts-tlwg.sty:
+	  - Use \newcommand instead of \def, to be consistent with following
+	    \renewcommand's.
+	  - Add \DeclareOption's for end-user options to set default fonts.
+	  - Add \ProcessOptions to process the options.
+
 2014-06-30  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
 	Add fontconfig files for Laksaman.
