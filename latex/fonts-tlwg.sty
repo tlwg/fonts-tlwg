@@ -18,24 +18,57 @@
 % The Current Maintainer of this work is Theppitak Karoonboonyanan.
 % 
 
-\ProvidesPackage{fonts-tlwg}[2011/10/18 v1.0 Thai TLWG Fonts]
+\ProvidesPackage{fonts-tlwg}[2014/07/05 v1.1 Thai TLWG Fonts]
 
-\def\thairmdefault{norasi}
-\def\thaisfdefault{garuda}
-\def\thaittdefault{ttypist}
-\def\englishrmdefault{cmr}
-\def\englishsfdefault{cmss}
-\def\englishttdefault{cmtt}
+\newcommand\thairmdefault{norasi}
+\newcommand\thaisfdefault{garuda}
+\newcommand\thaittdefault{ttypist}
+\newcommand\englishrmdefault{cmr}
+\newcommand\englishsfdefault{cmss}
+\newcommand\englishttdefault{cmtt}
+
+\newcommand{\thaifamilydefault}{\thairmdefault}
+\newcommand{\englishfamilydefault}{\englishrmdefault}
+
+% Use sans-serif font by default
+\DeclareOption{sans}{
+  \renewcommand{\thaifamilydefault}{\thaisfdefault}
+  \renewcommand{\englishfamilydefault}{\englishsfdefault}
+}
+
+% Set default roman and sans-serif fonts
+\DeclareOption{rmkinnari}{\renewcommand{\thairmdefault}{kinnari}}
+\DeclareOption{rmnorasi}{\renewcommand{\thairmdefault}{norasi}}
+\DeclareOption{sfgaruda}{\renewcommand{\thaisfdefault}{garuda}}
+\DeclareOption{sflaksaman}{\renewcommand{\thaisfdefault}{laksaman}}
+\DeclareOption{sfumpush}{\renewcommand{\thaisfdefault}{umpush}}
+\DeclareOption{sfloma}{\renewcommand{\thaisfdefault}{loma}}
+\DeclareOption{sfwaree}{\renewcommand{\thaisfdefault}{waree}}
+
+% Set default font
+\DeclareOption{kinnari}{\renewcommand{\thaifamilydefault}{kinnari}}
+\DeclareOption{garuda}{\renewcommand{\thaifamilydefault}{garuda}}
+\DeclareOption{norasi}{\renewcommand{\thaifamilydefault}{norasi}}
+\DeclareOption{laksaman}{\renewcommand{\thaifamilydefault}{laksaman}}
+\DeclareOption{loma}{\renewcommand{\thaifamilydefault}{loma}}
+\DeclareOption{purisa}{\renewcommand{\thaifamilydefault}{purisa}}
+\DeclareOption{sawasdee}{\renewcommand{\thaifamilydefault}{sawasdee}}
+\DeclareOption{ttype}{\renewcommand{\thaifamilydefault}{ttype}}
+\DeclareOption{ttypist}{\renewcommand{\thaifamilydefault}{ttypist}}
+\DeclareOption{umpush}{\renewcommand{\thaifamilydefault}{umpush}}
+\DeclareOption{waree}{\renewcommand{\thaifamilydefault}{waree}}
+
+\ProcessOptions\relax
 
 \DeclareRobustCommand{\thaitext}{%
-  \fontencoding{LTH}\fontfamily{\thairmdefault}\selectfont
+  \fontencoding{LTH}\fontfamily{\thaifamilydefault}\selectfont
   \def\rmdefault{\thairmdefault}%
   \def\sfdefault{\thaisfdefault}%
   \def\ttdefault{\thaittdefault}%
   \def\encodingdefault{LTH}}
 
 \DeclareRobustCommand{\latintext}{%
-  \fontencoding{\latinencoding}\fontfamily{\englishrmdefault}\selectfont
+  \fontencoding{\latinencoding}\fontfamily{\englishfamilydefault}\selectfont
   \def\rmdefault{\englishrmdefault}%
   \def\sfdefault{\englishsfdefault}%
   \def\ttdefault{\englishttdefault}%
