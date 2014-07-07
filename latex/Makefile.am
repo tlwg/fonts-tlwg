@@ -9,6 +9,7 @@ FD_FILES = \
 	lthlaksaman.fd
 
 EXTRA_DIST = \
+	README.latex \
 	texfont.mk.am \
 	fonts-tlwg.sty \
 	lthtlwg.enc \
@@ -23,6 +24,8 @@ enc_DATA = lthtlwg.enc
 
 latexdir = $(texmfdir)/tex/latex/$(LATEX_PACKAGE)
 latex_DATA = fonts-tlwg.sty $(FD_FILES)
+
+doc_DATA = README.latex
 
 endif
 

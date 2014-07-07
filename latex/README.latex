@@ -1,0 +1,96 @@
+%% This file is a part of fonts-tlwg package.
+
+Fonts-TLWG is a collection of Thai scalable fonts available under free
+licenses.  Its goal is to provide fonts that conform to existing standards
+and recommendations, so that it can be a reference implementation.
+
+It has been made available for use with pdfLaTeX.  To use it, you can use
+the fonts-tlwg package by declaring like this in document preamble:
+
+  \usepackage{fonts-tlwg}
+
+OPTIONS
+-------
+
+Options are also available so that you can choose default fonts for use
+in the document when switching to Thai in Babel:
+
+* Using sans-serif font instead of roman:
+
+  - sans       : Use sans-serif font by default when switching to Thai.
+
+* Defining default roman, sans-serif, and teletype fonts:
+
+  - rmkinnari  : Use "kinnari" as the default roman family.
+  - rmnorasi   : Use "norasi" as the default roman family.
+  - sfgaruda   : Use "garuda" as the default sans-serif family.
+  - sflaksaman : Use "laksaman" as the default sans-serif family.
+  - sfumpush   : Use "umpush" as the default sans-serif family.
+  - sfloma     : Use "loma" as the default sans-serif family.
+  - sfwaree    : Use "waree" as the default sans-serif family.
+  - ttttype    : Use "ttype" as the default teletype family.
+  - ttttypist  : Use "ttypist" as the default teletype family.
+
+  These options do not change the default Thai font for the document.
+  They only define the default Thai fonts of the three families for use
+  in the document.
+
+* Definging the default font for the document:
+
+  - kinnari    : Use "kinnari" as the default font of the document.
+  - garuda     : Use "garuda" as the default font of the document.
+  - norasi     : Use "norasi" as the default font of the document.
+  - laksaman   : Use "laksaman" as the default font of the document.
+  - loma       : Use "loma" as the default font of the document.
+  - purisa     : Use "purisa" as the default font of the document.
+  - sawasdee   : Use "sawasdee" as the default font of the document.
+  - ttype      : Use "ttype" as the default font of the document.
+  - ttypist    : Use "ttypist" as the default font of the document.
+  - umpush     : Use "umpush" as the default font of the document.
+  - waree      : Use "waree" as the default font of the document.
+
+  These options define the default Thai font when switching to Thai language
+  in Babel.  They do not define fonts for the three families.
+
+Example:
+
+* To use "laksaman" font all over the document (e.g. in Thai official letters):
+
+    \usepackage[laksaman]{fonts-tlwg}
+
+* To use "kinnari" as roman font instead of the default "norasi":
+
+    \usepackage[rmkinnari]{fonts-tlwg}
+
+* To typeset document with sans-serif font instead of roman:
+
+    \usepackage[sans]{fonts-tlwg}
+
+* To use "laksaman" as default font, allowing "kinnari" in roman text:
+
+    \usepackage[sans,sflaksaman,rmkinnari]{fonts-tlwg}
+
+  or:
+
+    \usepackage[laksaman,rmkinnari]{fonts-tlwg}
+
+
+\USEFONT COMMAND
+----------------
+
+You can still use the \usefont command where you want specific fonts in your
+text portions, for example:
+
+* To use "garuda" font with medium weight and normal shape:
+
+    \usefont{LTH}{garuda}{m}{n}
+
+* To use "kinnari" font with bold weight and italic shape:
+
+    \usefont{LTH}{kinnari}{b}{it}
+
+* To use "umpush" font with light weight (available for "umpush" only) and
+  slant shape:
+
+    \usefont{LTH}{umpush}{l}{sl}
+
