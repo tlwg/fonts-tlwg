@@ -1,0 +1,73 @@
+ltxtype1dir = $(texmfdir)/fonts/type1/public/$(LATEX_PACKAGE)
+ltxafmdir = $(texmfdir)/fonts/afm/public/$(LATEX_PACKAGE)
+ltxtfmdir = $(texmfdir)/fonts/tfm/public/$(LATEX_PACKAGE)
+ltxvfdir  = $(texmfdir)/fonts/vf/public/$(LATEX_PACKAGE)
+
+ltxmapdir = $(texmfdir)/fonts/map/dvips/$(LATEX_PACKAGE)
+
+ltxmap_DATA = $(MAP)
+
+LTX_PFBFILES = $(FONTS:%=%.pfb)
+LTX_AFMFILES = $(FONTS:%=%.afm)
+LTX_TFMFILES = $(FONTS:%=%.tfm)
+LTX_RTFMFILES = $(FONTS:%=r%.tfm)
+LTX_VFFILES = $(FONTS:%=%.vf)
+
+ltxtype1_DATA = $(LTX_PFBFILES)
+
+ltxafm_DATA = $(LTX_AFMFILES)
+
+ltxtfm_DATA = $(LTX_TFMFILES) $(LTX_RTFMFILES)
+
+ltxvf_DATA = $(LTX_VFFILES)
+
+# Local Rules
+
+thai-dummy.afm:
+	[ -e thai-dummy.afm ] || $(LN_S) $(top_srcdir)/latex/thai-dummy.afm .
+
+thailigs.enc:
+	[ -e thailigs.enc ] || $(LN_S) $(top_srcdir)/latex/thailigs.enc .
+
+lthtlwg.enc:
+	[ -e lthtlwg.enc ] || $(LN_S) $(top_srcdir)/latex/lthtlwg.enc .
+
+thailigs.vpl: thai-dummy.afm thailigs.enc
+	$(AFM2TFM) thai-dummy.afm -v $@ -T thailigs.enc thailigs.tfm
+
+r%.tfm: %.afm
+%.vpl: %.afm thailigs.vpl lthtlwg.enc
+	$(AFM2TFM) $*.afm -v $*.vpl -T lthtlwg.enc r$*.tfm \
+	| $(SED) "s/$$/ <$*.pfb/" >> $(MAP)
+	TMPFILE=`mktemp /tmp/tltx.XXXXXXXXX` && \
+	$(AWK) "BEGIN {show=1} /LIGTABLE/ {show=0} {if(show) print}" $*.vpl > $$TMPFILE && \
+	$(AWK) "BEGIN {show=0} /LIGTABLE/ {show=1} /CHARACTER/ {show=0} {if(show) print}" thailigs.vpl >> $$TMPFILE && \
+	$(AWK) "BEGIN {show=0} /CHARACTER/ {show=1} {if(show) print}" $*.vpl >> $$TMPFILE && \
+	mv $$TMPFILE $*.vpl
+
+%.tfm: %.vpl
+	$(VPTOVF) $*
+
+$(MAP): $(ltxtfm_DATA)
+	LC_COLLATE=C sort $@ | uniq > /tmp/tmp.$$$$; mv /tmp/tmp.$$$$ $@
+
+install-data-hook:
+	@if test -z "$(DESTDIR)" ; then                                       \
+	  $(TEXHASH) || true ;                                                \
+	  $(UPDMAP) --disable $(MAP) --nohash --nomkmap || true ;             \
+	  $(UPDMAP) --enable Map $(MAP) || true ;                             \
+	else                                                                  \
+	  echo "***" ;                                                        \
+	  echo "*** Warning: TeX font map was not updated" ;                  \
+	  echo "***" ;                                                        \
+	  echo "*** update these files on the target system" ;                \
+	  echo "*** using updmap command" ;                                   \
+	  echo "***" ;                                                        \
+	fi
+ 
+uninstall-hook:
+	$(TEXHASH)
+	$(UPDMAP) --disable $(MAP)
+
+CLEANFILES += *.vpl *.vf *.tfm $(MAP)
+

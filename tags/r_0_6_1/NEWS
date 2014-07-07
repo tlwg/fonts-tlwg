@@ -1,0 +1,198 @@
+0.6.1 (2014-07-07)
+=====
+- New font: Laksaman (Sarabun derivative).
+- Split fontconfig files to allow individual fonts installation.
+- LaTeX options for setting default fonts.
+
+0.6.0 (2014-03-17)
+=====
+- Supports more combinations of vertical mark stacking, for ethnic languages.
+- Umpush Light can now be used with LaTeX.
+- Spline clean-ups in several fonts.
+
+0.5.1 (2013-02-15)
+=====
+- Add missing glyphs for LaTeX in monospace fonts.
+- Fix malformed fontconfig config.
+  [Thanks Akira Tagoh for the report, Daiki Ueno for the notification.]
+- Add glyphs for Esperanto to Purisa.
+  [Thanks Pablo Busto for the patch.]
+- Switch to XZ tarball compression.
+
+0.5.0 (2012-02-15)
+=====
+- Project is renamed to "fonts-tlwg".
+- More consistent directory names for LaTeX installation.
+- CTAN TDS zip is now complete in a single file, with source.
+- LaTeX fonts building is now self-contained, no more build-dependency on
+  thailatex.
+- Supports more LaTeX escape sequences.
+- More Latin glyphs in all fonts.
+- Fine-tuned Latin glyphs for Loma and Umpush.
+- Corrected GSUB rules for Pali-Sanskrit descender removal in all fonts.
+- Miscellaneous bug fixes in fonts.
+
+0.4.17 (2011-11-02)
+======
+- Build-depends on ThaiLaTeX and uses the shared resource from there.
+- Supports automated distributed ZIP preparation for CTAN upload.
+- Other cleanups.
+
+0.4.16 (2011-10-24)
+======
+- Fix GSUB rules to correctly remove YO YING descender when combined with
+  both lower and upper characters, e.g. ญุ่นปี่, ขฺญุํ.
+- Clear improper fraction rules in monospace fonts.
+- Legacy X font dir creation, and thus build-dependency on xfonts-utils is
+  now optional. To enable it, use --enable-xfontsdir configure option.
+- Add LaTeX fonts generation, based on ThaiLaTeX implementation.
+  To enable it, use --enable-latex configure option.
+  Fonts will be removed from ThaiLaTeX soon.
+
+0.4.15 (2011-03-16)
+======
+- Corrected widths of Latin accented characters for Garuda.
+- Get rid of improper "TM" ligature which was replaced with a girl face
+  in Purisa (LP #680464).
+- Corected glyph name for uacute in Purisa (Debian #608134).
+- Long-outdated and unmaintained RPM spec is now removed.
+
+0.4.14 (2010-07-30)
+======
+- TlwgTypist bold faces are now overlap-free just like TlwgTypo.
+- Fix Tahoma/MS Sans Serif fallback rules to not affect non-Thai environments.
+  (LP #434054, #539008)
+- Improved Garuda glyphs, now with regular stem width.
+
+0.4.13 (2009-07-25)
+======
+- Fix DTD conformance in fontconfig file.
+- More thinkness for bold faces of TlwgTypo and TlwgTypist families.
+- Fix spline direction in several fonts.
+- Add variation faces to Purisa.
+- Improve hints for diagonal stems.
+- Improve building system.
+
+0.4.12 (2009-06-19)
+======
+- Fix fontconfig bug for synthetic fonts which caused too small font in
+  family-mixed CSS.
+- Remove ellipsis substitutions in monospace fonts.
+
+0.4.11 (2008-11-21)
+======
+- Increased fontconfig priority, to override upstream fontconfig's defaults
+  for Thai.
+- Fixed thick strikeout bug for Waree.
+- Improved hinting for TlwgTypo, TlwgTypist, TlwgTypewriter and TlwgMono.
+
+0.4.10 (2008-05-23)
+======
+- New fontforge file format (requires fontforge >= 20080110).
+- Latin ligatures in all fonts, by the needs triggered in LaTeX.
+- Cleared shapes for ZWJ, ZWNJ, LRM, RLM in all fonts.
+- Latin accents in Purisa font [Pietro Battiston].
+- Experimental pure monospace font, "TlwgTypo", with OpenType-based combining
+  marks handling.
+- Various bug fixes and minor adjustments.
+
+0.4.9 (2008-01-19)
+=====
+- Reintroduced font: Kinnari (plus Angsana synthesizing).
+- New font: Umpush (plus Cordia synthesizing).
+- Improved OpenType tables for broader range of applications.
+- Mark repositioning for certain Thai consonants with deep right stems
+  like CHO CHING, NO NEN, NO NU, SO RUSI.
+- Scaled-down high variant of MAITAIKHU.
+- More consistent line spacing for Garuda, Norasi.
+- More uses of references, for compact generated files and maintainability.
+- Various manual hint adjustments.
+- Smoother stem hints.
+
+0.4.8 (2007-12-10)
+=====
+- New fonts: Sawasdee, Waree.
+- TrueType instructions (hints) (requires fontforge >= 20071110)
+- More spline refinement and glyph height consistency cleanup
+- Synthetic Browallia font using Garuda via fontconfig
+
+0.4.7 (2007-05-20)
+=====
+- Fix an error in GSUB rules found in 0.4.6.
+- Thoroughly refine splines for Garuda, Loma and TlwgTypist, for better
+  (Postscript) hinting.
+- Add fontconfig spec, taken from Debian package.
+
+0.4.6 (2007-04-13)
+=====
+- Update glyphs for Loma bold from the original author to match non-rounded
+  shapes in their normal-weight counterparts.
+- Clear subscript, superscript, strike controls in fonts, to fix weird
+  rendering with Gecko.
+- Add exception clause to font license, so that documents that embed the fonts
+  are not enforced by GPL.
+- Improved GSUB tables in fonts, to ensure they work properly with OO.o.
+
+0.4.5 (2006-10-23)
+=====
+- New font: TlwgTypist.
+- Clean up XUID for fonts that cause problems with dvips.
+- Add Foundry info and Thai sample text to all fonts.
+
+0.4.4 (2006-03-17)
+=====
+- Fix Loma's line gap problem with OpenOffice.org.
+- Clean up TTF fields for consistency.
+- Add enspace and emspace glyphs in fonts.
+
+0.4.3.1 (2005-07-03)
+=======
+- A brown paper bag release. Thep wishes he has more time to examine things
+  in next releases.
+- Actually change the Version field globally, so Type 1 version is also
+  affected. [Thep, bug reported by Werner Lemberg.]
+- Distinguish Xorg's and XFree86's mkfontscale, so fonts.scale is correctly
+  generated in Xorg. [Thep, bug reported by Konnux in LTN forum.]
+
+0.4.3
+=====
+- Dropped fonts: DBThaiText, Kinnari [Thep: Unclear licenses. This includes
+  the dropping of the newly created Kinnari Italic shape.]
+- Renamed fonts: Pseudo Mono -> Tlwg Typewriter [Poonlap]
+- Improved fonts: Loma [Thep, in sync with Sirichai the original author,
+  plus some more fine tunes]
+- Improved OpenType tables: Nikahit is now rendered correctly in all cases.
+  [Thep]
+- Font cleanups:
+  * Clean up some unused glyphs [Thep]
+  * Ensure ZWSP glyph in all appropriate fonts [Thep]
+  * Clearer copyright/license info [Thep]
+- Bug fixes
+  * Include glyph variants back in Type1 fonts [Thep]
+  * Configure script now correctly checks for ttmkfdir needed in
+    old XFree86 [Thep, bug reported by K. seal]
+
+0.4.2
+=====
+
+- New imported font: Loma [Thep; original author: Sirichai Lerdvorawut]
+- Thai OpenType tables [Thep]
+- Glyphs scaled up to match Latin fonts [Thep]
+- Various changes in Norasi [Chanop]
+  * Glyph refinements
+  * Latin kerning
+  * SmallCaps
+  * Replacement with GPL glyphs
+
+0.4.1
+=====
+
+- Replace glyphs with original cubic splines [Chanop, Thep]
+- New original fonts: TlwgMono, PseudoMono, Purisa [Poonlap]
+- New imported font: Kinnari [Chanop]
+- Sample text test suite (make check) [Poonlap]
+- DBThaiText: less inclined oblique glyphs [Thep]
+- nf/ and db/ fonts: adjusted dottedcircle [Thep]
+
+*** Please see ChangeLog for versions before 0.4.1 ***
+
