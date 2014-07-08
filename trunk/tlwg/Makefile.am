@@ -34,7 +34,7 @@ FONTSOURCES = \
 	Umpush-Oblique.sfd \
 	Umpush.sfd
 
-EXTRA_DIST = $(FONTSOURCES) CREDITS
+EXTRA_DIST = $(FONTSOURCES) CREDITS README.tlwgmono
 
 include $(top_srcdir)/scripts/gen.mk.am
 
