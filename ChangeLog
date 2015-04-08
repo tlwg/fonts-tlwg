@@ -1,3 +1,18 @@
+2015-04-08  Theppitak Karoonboonyanan <theppitak@gmail.com>
+
+	Add Preferred Family/Subfamily names to Kinnari.
+
+	* nf/Kinnari*.sfd:
+	  - Add Preferred (Typographic) Family/Subfamily names to make it
+	    possible to ship more than four subfamilies, thus making some
+	    OS like Windows distinguish between Oblique and Italic.
+	  - Use 'Regular' weight instead of 'Medium' in non-bold fonts.
+	  - Bump font version to 002.001 (date part dropped).
+	* scripts/gen-test-otf.pe, scripts/gen-test-ttf.pe:
+	  - Also add TTF/OTF prefix to Preferred Family Name if exists.
+
+	Thanks Martin Hosken for the suggestion in a private chat.
+
 2014-07-08  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
 	Rename README for TlwgMono.
