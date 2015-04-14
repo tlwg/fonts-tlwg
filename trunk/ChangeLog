@@ -1,3 +1,17 @@
+2015-04-14  Theppitak Karoonboonyanan <theppitak@gmail.com>
+
+	Validate Garuda.
+
+	* nf/Garuda*.sfd:
+	  - Validate all glyphs and fix problems, except uni0E34 (SARA I)
+	    for non-oblique shapes, which appears to be free of self
+	    intersection, despite the problem reported.
+	  - Bump font version to 003.002.
+
+	* nf/Garuda-Bold[Oblique].sfd:
+	  - Narrow down OtherBlues and adjust g, j, y, dotlessj glyphs,
+	    as reported by the validator.
+
 2015-04-10  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
 	Add Preferred Family/Subfamily names to Garuda.
