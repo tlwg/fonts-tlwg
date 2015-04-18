@@ -1,3 +1,16 @@
+2015-04-18  Theppitak Karoonboonyanan <theppitak@gmail.com>
+
+	Validate Kinnari.
+
+	* nf/Kinnari*.sfd:
+	  - Validate all glyphs and fix problems, except uni0E34 (SARA I)
+	    for Bold, which appears to be free of self intersection,
+	    despite the problem reported.
+	  - Remove 'maxp' TrueType instructions, which causes conflicts of
+	    glyph/path/reference counts reported by fontlint.
+	  - Rename glyph from 'zerowidthjoiner' to 'zerojoin' [fontlint].
+	  - Bump font version to 002.002.
+
 2015-04-15  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
 	Add Preferred Family/Subfamily names to Laksaman.
