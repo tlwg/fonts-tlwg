@@ -1,3 +1,19 @@
+2015-04-21  Theppitak Karoonboonyanan <theppitak@gmail.com>
+
+	Validate Norasi.
+
+	* nf/Norasi*.sfd:
+	  - Validate all glyphs and fix problems, except uni0E34 (SARA I)
+	    for Regular, which appears to be free of self intersection,
+	    despite the problem reported.
+	  - Rename small caps glyphs from uniXXXX to Xsmall for fonts
+	    with former format.
+	  - Rename glyphs [fontlint]:
+	      zerowidthjoiner -> zerojoin
+	      mu -> micro
+	      visiblespace/uni2423 -> spaceopenbox
+	  - Bump font version to 005.002.
+
 2015-04-18  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
 	Validate Kinnari.
