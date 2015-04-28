@@ -1,3 +1,20 @@
+2015-04-28  Theppitak Karoonboonyanan <theppitak@gmail.com>
+
+	Validate TlwgTypist.
+
+	* tlwg/TlwgTypist*.sfd:
+	  - Validate all glyphs and fix problems.
+	  - (Bold, BoldOblique): Split "Thai Above and Below Base/Mark"
+	    GSUB rules into Above and Below counterparts, to avoid errors
+	    reported by fontlint.
+	  - (Bold): Remove 'maxp' TrueType instructions, which causes
+	    conflicts of glyph/path/reference counts reported by fontlint.
+	  - Rename glyphs [fontlint]:
+	      zerowidthjoiner -> zerojoin
+	      mu -> micro
+	  - Clean up splines for Latin glyphs.
+	  - Bump font version to 002.003.
+
 2015-04-23  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
 	Validate Umpush.
