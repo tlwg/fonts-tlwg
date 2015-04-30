@@ -1,3 +1,27 @@
+2015-04-30  Theppitak Karoonboonyanan <theppitak@gmail.com>
+
+	Adjust TlwgTypist more; Validate TlwgTypo.
+
+	* tlwg/TlwgTypist*.sfd:
+	  - Clean up more splines.
+	  - (BoldOblique): Copy overlap-free glyphs for Thai digits from
+	    TlwgTypo. The changes were missing in the past.
+	  - (Bold, BoldOblique): Remove overlap for Thai digit three glyph.
+	  - Bump font version to 002.004.
+
+	* tlwg/TlwgTypo*.sfd:
+	  - Validate all glyphs and fix problems (in sync with TlwgTypist).
+	  - (Bold, BoldOblique): Split "Thai Above and Below Base" GSUB rule
+	    into Above and Below counterparts, to avoid errors reported by
+	    fontlint.
+	  - (Bold): Remove 'maxp' TrueType instructions, which causes
+	    conflicts of glyph/path/reference counts reported by fontlint.
+	  - Rename glyphs [fontlint]:
+	      zerowidthjoiner -> zerojoin
+	      mu -> micro
+	  - Clean up splines for Latin glyphs.
+	  - Bump font version to 003.003.
+
 2015-04-28  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
 	Validate TlwgTypist.
