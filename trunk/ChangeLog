@@ -1,3 +1,18 @@
+2015-05-19  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Validate Purisa.
+
+	* tlwg/Purisa*.sfd:
+	  - Validate all glyphs and fix problems.
+	  - (Bold, BoldOblique): Remove 'maxp' TrueType instructions, which
+	    causes conflicts of glyph/path/reference counts reported by
+	    fontlint.
+	  - Rename glyphs [fontlint]:
+	      zerowidthjoiner -> zerojoin
+	  - Unlink references for uni0E47.high, uni0E4E.high which were
+	    scaled down and caused non-integral coordinates.
+	  - Bump font version to 003.002.
+
 2015-05-01  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
 	Validate Sawasdee.
