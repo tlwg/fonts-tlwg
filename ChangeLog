@@ -1,3 +1,21 @@
+2015-06-04  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Validate Laksaman.
+
+	* sipa/Laksaman*.sfd:
+	  - Validate all glyphs and fix problems.
+	  - Remove duplicated glyph for nonmarkingreturn.
+	  - Rename glyphs [fontlint]:
+	      zerowidthjoiner -> zerojoin
+	      mu -> micro
+	      Delta -> Delta.math
+	  - Remove contours for:
+	      zerowidthnonjoiner
+	      zerojoin
+	      lefttorightmark
+	      righttoleftmark
+	  - Bump font version to 003.006.
+
 2015-06-03  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Validate Loma.
