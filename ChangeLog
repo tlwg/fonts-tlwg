@@ -1,3 +1,18 @@
+2015-06-05  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Validate TlwgTypewriter.
+
+	* tlwg/TlwgTypewriter*.sfd:
+	  - Copy Latin glyphs back from TlwgTypist.
+	  - Validate all other glyphs and fix problems.
+	  - Remove duplicated .notdef glyphs.
+	  - (Oblique): Remove 'maxp' TrueType instructions, which causes
+	    conflicts of glyph/path/reference counts reported by fontlint.
+	  - Rename glyphs [fontlint]:
+	      zerowidthjoiner -> zerojoin
+	      mu -> micro
+	  - Bump font version to 002.002.
+
 2015-06-04  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Validate Laksaman.
