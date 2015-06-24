@@ -1,3 +1,27 @@
+2015-06-24  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Garuda: Add Nasal, Macron, Apostophe mod, Minus mod for Patani Malay.
+
+	* nf/Garuda*.sfd:
+	  - Add "MLY " (Malay) language tag to all GSUB/GPOS lookups.
+	  - Add Nasal sign support:
+	    ~ Add U+0303 tilecomb glyph, with anchors.
+	    ~ Add tilecomb to 'ccmp' for high mark variant,
+	      in the same class as upper vowels.
+	    ~ Add tilecomb to lookahead exception in 'ccmp', to prevent
+	      conversion of tone marks to lower form caused by HarfBuzz
+	      reordering as part of Unicode normalization.
+	  - Add Macron Below support:
+	    ~ Add U+0331 macronbelowcmb glyph, with anchors.
+	    ~ Add macronbelowcmb to 'ccmp' descender removal,
+	      in the same class as below vowels.
+	    ~ Add ligatures for underlined versions of Ngo Ngu, Yo Ying,
+	      No Nu, Mo Ma when followed by macronbelowcmb,
+	      using 'ccmp' table.
+	  - Add U+02BC apostophemod glyph.
+	  - Add U+02D7 minusmod glyph.
+	  - Bump font version to 003.004.
+
 2015-06-22  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Set OS/2 Version for Laksaman. (Thanks Martin Hosken)
