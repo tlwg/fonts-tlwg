@@ -1,3 +1,18 @@
+2015-06-27  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Garuda: Undo tildecomb exception for tone mark lower form conversion.
+
+	The rule appears to require one character after the tone mark
+	to be lowered down, thus the tone mark at the end doesn't get
+	converted.
+
+	* nf/Garuda*.sfd:
+	  - Remove tildecomb lookahead class for 'ccmp' Thai General
+	    Composition.
+	  - Remove lookahead part from the rule that converts tone mark
+	    to lower form.
+	  - Bump font version to 003.005.
+
 2015-06-24  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Garuda: Add Nasal, Macron, Apostophe mod, Minus mod for Patani Malay.
