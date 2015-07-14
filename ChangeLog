@@ -1,3 +1,28 @@
+2015-07-14  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Garuda: Fix Phinthu and Below Vowel order
+
+	Uniscribe and Harfbuzz appear to redefine combining class for
+	Sara U, UU from 103 to 3 so it's placed before Phinthu (ccc=9).
+	But this is undesirable for Patani Malay. So, add GSUB to revert
+	it, and also handle tone mark order:
+
+	Original:	C + Ph + BV + T
+	Harfbuzz:	C + BV + Ph + T
+	1st rule*:	C + Ph + BV + T
+	2nd rule:	C + Ph + T.low + BV
+	3rd rule*:	C + T.low + Ph + BV
+
+	*added rules.
+
+	* nf/Garuda*.sfd:
+	  - Add "'ccmp' Thai Below Vowel Phinthu Reordering" to swap
+	    Sara U/UU and Phinthu before doing general compositions.
+	  - Add "'ccmp' Thai Phinthu Lower Tone Reordering" after
+	    general compositions to move lowered tone marks closer to
+	    the base consonant if a Phinthu appears before it.
+	  - Bump font version to 003.006.
+
 2015-06-27  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Garuda: Undo tildecomb exception for tone mark lower form conversion.
