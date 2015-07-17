@@ -1,3 +1,44 @@
+2015-07-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Garuda: Fix macronbelowcmb order with below vowels.
+
+	macronbelowcmb (U+0331) has ccc=220. So it's always placed after
+	below vowels (ccc=103, 3 in Uniscribe/Harfbuzz), Phinthu (ccc=9),
+	and tone marks (ccc=107). We need to reorder it to get close to
+	base consonants, to get ligature matched and to place it before
+	below vowel, but after tone marks.
+
+	Original:	C + Macron + BV + T
+	Harfbuzz:	C + BV + T + Macron
+	1st rule*:	C + BV + Macron + T
+	2nd rule*:	C + Macron + BV + T
+	ligature:	C-Macron-lig + BV + T  ||  C + Macron + BV + T
+	3rd rule*:	C + BV + Macron + T
+	4th rule*:	C + BV + T + Macron
+	gen. comp.:	C + T.low + BV + Macron
+	5th rule*:	C + T.low + Macron + BV
+
+	*added rules.
+
+	* nf/Garuda*.sfd:
+	  - Add "'ccmp' Thai Tone Macron Reordering"
+	    and "'ccmp' Thai Below Vowel Macron Reordering"
+	    before Patani Malay Ligatures GSUB, to move Macron backward through
+	    T & BV to C, so any ligature can be matched.
+	  - Add "'ccmp' Thai Macron Below Vowel Reordering"
+	    and "'ccmp' Thai Macron Tone Reordering"
+	    after the ligatures & descender removal GSUBs, to move unmatched
+	    Macron forward back to its original position, to give way to T & BV
+	    to be applied to general compositions.
+	  - Add "'ccmp'Thai Below Vowel Macron Reordering Round 2"
+	    after general compositions to move Macron before BV.
+
+	  General adjustments:
+	  - Move BelowMark anchor for macronbelowcmb up to narrow down the gap
+	    with BV.
+	  - Add BelowBase anchor to *.uline glyphs, to make space with BV.
+	  - Bump font version to 003.008.
+
 2015-07-14  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Garuda: Allow upper vowel over tildecomb.
