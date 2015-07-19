@@ -4,7 +4,7 @@ FullName: Kinnari Italic
 FamilyName: Kinnari
 Weight: Regular
 Copyright: Kinnari Italic by TLWG, based on Kinnari Normal and Norasi Italic.\nCopyright (C) 1999 Db Type. All Rights Reserved.\nCopyright (C) 2007 National Electronics and Computer Technology Center. All Rights Reserved.
-Version: 002.003
+Version: 002.004
 ItalicAngle: -15.5
 UnderlinePosition: -70
 UnderlineWidth: 25
@@ -18,7 +18,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1136287438
-ModificationTime: 1434942783
+ModificationTime: 1437209601
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -40,9 +40,10 @@ HheadDescent: -496
 HheadDOffset: 0
 OS2Vendor: 'PfEd'
 Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 2"  {"'liga' Standard Ligatures in Latin lookup 2 subtable"  } ['liga' ('latn' <'dflt' > ) ]
-Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Tone Tilde Reordering"  {"'ccmp' Thai Tone Tilde Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ccmp' Pali-Sanskrit Descender Removal"  {"'ccmp' Pali-Sanskrit Descender Removal" ("descless" ) } ['ccmp' ('thai' <'PAL ' 'SAN ' > ) ]
-Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution"  {"Thai Descender Removal Single Substitution" ("descless" ) } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition"  {"Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment"  {"Thai Tone Nikhahit Attachment"  } []
@@ -68,14 +69,44 @@ Lookup: 1 0 0 "Thai Phinthu Mai Tri Reordering"  {"Thai Phinthu Mai Tri Reorderi
 Lookup: 1 0 0 "Thai Phinthu Mai Chattawa Reordering"  {"Thai Phinthu Mai Chattawa Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Thanthakhat Reordering"  {"Thai Phinthu Thanthakhat Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reordering"  } []
-Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
-Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
-Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Thai lookup 3"  {"'kern' Horizontal Kerning in Thai lookup 3 subtable"  } ['kern' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 1 0 0 "Thai Mai Ek Tilde Reordering"  {"Thai Mai Ek Tilde Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Tho Tilde Reordering"  {"Thai Mai Tho Tilde Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Tri Tilde Reordering"  {"Thai Mai Tri Tilde Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Chattawa Tilde Reordering"  {"Thai Mai Chattawa Tilde Reordering"  } []
+Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Thai lookup 3"  {"'kern' Horizontal Kerning in Thai lookup 3 subtable"  } ['kern' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 4"  {"'kern' Horizontal Kerning lookup 4 subtable"  } ['kern' ('DFLT' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+ChainSub2: glyph "'ccmp' Thai Tone Tilde Reordering"  0 0 0 4
+ String: 17 uni0E48 tildecomb
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Mai Ek Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Ek Tilde Reordering" 
+ String: 17 uni0E49 tildecomb
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Mai Tho Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Tho Tilde Reordering" 
+ String: 17 uni0E4A tildecomb
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Mai Tri Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Tri Tilde Reordering" 
+ String: 17 uni0E4B tildecomb
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Mai Chattawa Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Chattawa Tilde Reordering" 
+EndFPST
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
  1 0 1
   Coverage: 15 uni0E0D uni0E10
@@ -87,13 +118,13 @@ ChainSub2: class "'ccmp' Thai General Composition"  7 7 1 7
   Class: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   Class: 7 uni0E33
   Class: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
-  Class: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
+  Class: 49 tildecomb uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
   Class: 23 uni0E47 uni0E4D uni0E4E
   Class: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
   BClass: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   BClass: 7 uni0E33
   BClass: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
-  BClass: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
+  BClass: 49 tildecomb uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
   BClass: 23 uni0E47 uni0E4D uni0E4E
   BClass: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
  1 1 0
@@ -267,7 +298,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 296 8 2
+WinInfo: 320 8 2
 BeginPrivate: 7
 BlueValues 47 [-18 0 432 442 594 600 653 666 677 677 683 683]
 OtherBlues 11 [-207 -207]
@@ -279,7 +310,7 @@ StemSnapV 7 [38 41]
 EndPrivate
 TeXData: 1 0 -562637 314572 157286 104857 321913 1048576 104857 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
-BeginChars: 65536 354
+BeginChars: 65536 355
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -1343,6 +1374,7 @@ SplineSet
  174 -18 66 89 66 243 c 0
  66 464 259 666 472 666 c 0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: D
@@ -3907,6 +3939,7 @@ SplineSet
  197 121 181 99 181 78 c 0
  181 50 198 32 223 32 c 0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: quoteleft
@@ -4308,6 +4341,7 @@ SplineSet
  596 445 595 429 591 413 c 2
  476 0 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni0E02
@@ -4812,6 +4846,7 @@ SplineSet
  182 121 167 98 167 75 c 0
  167 53 181 31 209 31 c 0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni0E0D
@@ -4878,6 +4913,7 @@ SplineSet
  447 -141 465 -129 465 -105 c 0
  465 -74 443 -66 429 -66 c 0
 EndSplineSet
+Validated: 1
 Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E0D.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E0D.descless
 EndChar
@@ -4935,6 +4971,7 @@ SplineSet
  174 -169 209 -121 225 -95 c 1
  202 -86 177 -83 157 -83 c 0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni0E0F
@@ -4996,6 +5033,7 @@ SplineSet
  99 -185 60 -241 -4 -241 c 0
  -53 -241 -67 -207 -67 -178 c 0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni0E10
@@ -5300,6 +5338,7 @@ SplineSet
  182 121 167 98 167 75 c 0
  167 53 181 31 209 31 c 0xbe40
 EndSplineSet
+Validated: 1
 Kerns2: 180 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  183 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  182 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable"  181 -46 "'kern' Horizontal Kerning in Thai lookup 3 subtable" 
 EndChar
 
@@ -5489,6 +5528,7 @@ SplineSet
  180 119 165 96 165 73 c 0
  165 51 180 29 208 29 c 0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni0E17
@@ -5529,6 +5569,7 @@ SplineSet
  225 560 209 535 209 510 c 0
  209 484 225 459 258 459 c 0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni0E18
@@ -5882,6 +5923,7 @@ SplineSet
  109 124 94 102 94 80 c 0
  94 57 109 35 139 35 c 0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni0E21
@@ -6047,6 +6089,7 @@ SplineSet
  178 119 163 96 163 73 c 0
  163 51 178 29 206 29 c 0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni0E25
@@ -6128,6 +6171,7 @@ SplineSet
  87 124 72 102 72 80 c 0
  72 57 87 35 117 35 c 0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni0E27
@@ -6572,6 +6616,7 @@ Width: 0
 Flags: W
 HStem: 676 52<-1.46448 157.534> 874 40<-64.9528 6.97959>
 VStem: -126 53<789.089 868.03> 15 43<788.349 867.711>
+AnchorPoint: "AboveMark" 78 645 mark 0
 AnchorPoint: "AboveMark" 167 968 basemark 0
 AnchorPoint: "AboveBase" 78 645 mark 0
 LayerCount: 2
@@ -6641,6 +6686,7 @@ Encoding: 3636 3636 180
 Width: 0
 Flags: W
 HStem: 740 40<-253.811 -55.7388> 844 49<-152.732 7.16613>
+AnchorPoint: "AboveMark" 35 645 mark 0
 AnchorPoint: "AboveMark" 131 968 basemark 0
 AnchorPoint: "AboveBase" 78 645 mark 0
 LayerCount: 2
@@ -6667,6 +6713,7 @@ Width: 0
 Flags: W
 HStem: 740 40<-253.811 -55.7388> 844 49<-152.732 7.20517>
 DStem2: 7.08974 651 79.2675 651 0.267238 0.96363<205.473 311.513>
+AnchorPoint: "AboveMark" 35 645 mark 0
 AnchorPoint: "AboveMark" 131 968 basemark 0
 AnchorPoint: "AboveBase" 78 645 mark 0
 LayerCount: 2
@@ -6697,6 +6744,7 @@ Width: 0
 Flags: W
 HStem: 740 40<-254.075 -55.7491> 844 50<-152.193 7.70915> 906 48<65.326 138.951>
 VStem: 145 44<824.804 900.395>
+AnchorPoint: "AboveMark" 35 645 mark 0
 AnchorPoint: "AboveMark" 132 968 basemark 0
 AnchorPoint: "AboveBase" 78 645 mark 0
 LayerCount: 2
@@ -6732,6 +6780,7 @@ Width: 0
 Flags: W
 HStem: 736 40<-255.572 -53.2592> 830 46<-164.112 -53>
 DStem2: 12.2496 648 80.6542 648 0.267238 0.96363<189.907 314.896>
+AnchorPoint: "AboveMark" 35 645 mark 0
 AnchorPoint: "AboveMark" 71 968 basemark 0
 AnchorPoint: "AboveBase" 78 645 mark 0
 LayerCount: 2
@@ -7319,6 +7368,7 @@ SplineSet
  239 1210 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Ek Tilde Reordering" tildecomb
 MultipleSubs2: "Thai Tone Nikhahit Attachment" uni0E4D uni0E48
 Substitution2: "Thai Tone Low Variant" uni0E48.low
 Substitution2: "Thai Sara U Mai Ek Reordering" uni0E38
@@ -7355,6 +7405,7 @@ SplineSet
  86 1121 100 1100 129 1100 c 0
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Tho Tilde Reordering" tildecomb
 MultipleSubs2: "Thai Tone Nikhahit Attachment" uni0E4D uni0E49
 Substitution2: "Thai Tone Low Variant" uni0E49.low
 Substitution2: "Thai Sara U Mai Tho Reordering" uni0E38
@@ -7399,6 +7450,7 @@ SplineSet
  136 1018 154 1030 154 1055 c 0
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Tri Tilde Reordering" tildecomb
 MultipleSubs2: "Thai Tone Nikhahit Attachment" uni0E4D uni0E4A
 Substitution2: "Thai Tone Low Variant" uni0E4A.low
 Substitution2: "Thai Sara U Mai Tri Reordering" uni0E38
@@ -7433,6 +7485,7 @@ SplineSet
  291 1081 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Chattawa Tilde Reordering" tildecomb
 MultipleSubs2: "Thai Tone Nikhahit Attachment" uni0E4D uni0E4B
 Substitution2: "Thai Tone Low Variant" uni0E4B.low
 Substitution2: "Thai Sara U Mai Chattawa Reordering" uni0E38
@@ -11629,6 +11682,34 @@ SplineSet
  81 1010 87 1006 87 1000 c 0
 EndSplineSet
 Validated: 1
+EndChar
+
+StartChar: tildecomb
+Encoding: 771 771 354
+Width: 0
+Flags: W
+HStem: 651 55<-82.8419 43.8449> 698 54<-275.275 -155.131>
+AnchorPoint: "AboveMark" 35 645 mark 0
+AnchorPoint: "AboveBase" 73 645 mark 0
+AnchorPoint: "AboveMark" 71 775 basemark 0
+LayerCount: 2
+Fore
+SplineSet
+85 758 m 1x80
+ 125 758 l 1
+ 77 681 28 651 -47 651 c 0x80
+ -126 651 -178 698 -233 698 c 0x40
+ -263 698 -293 681 -317 651 c 1
+ -355 651 l 1x80
+ -317 717 -256 752 -188 752 c 0x40
+ -107 752 -60 706 -1 706 c 0
+ 30 706 52 720 85 758 c 1x80
+EndSplineSet
+Validated: 1
+Substitution2: "Thai Mai Chattawa Tilde Reordering" uni0E4B
+Substitution2: "Thai Mai Tri Tilde Reordering" uni0E4A
+Substitution2: "Thai Mai Tho Tilde Reordering" uni0E49
+Substitution2: "Thai Mai Ek Tilde Reordering" uni0E48
 EndChar
 EndChars
 EndSplineFont
