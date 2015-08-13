@@ -57,6 +57,21 @@ if test "x$enable_otf" = "xyes"; then
   AC_SUBST(otfdir)
 fi
 
+AC_ARG_ENABLE(woff,
+              [AC_HELP_STRING([--enable-woff],
+                              [enable Web Open Font Format generation])],
+              , enable_woff="no")
+if test "x$enable_woff" = "xyes"; then
+  AC_ARG_WITH(woffdir,
+    [AC_HELP_STRING([--with-woffdir=DIR],
+                    [font directory in DIR [PREFIX/share/fonts/woff/thai]])],
+    [woffdir="$withval"], [woffdir=\$\{prefix\}/share/fonts/woff/thai])
+  AC_MSG_CHECKING(--with-woffdir)
+  AC_MSG_RESULT("$woffdir")
+
+  AC_SUBST(woffdir)
+fi
+
 AC_ARG_ENABLE(testfont,
               [AC_HELP_STRING([--enable-testfont],
                               [enable font generation with prefix {TTF,OTF,PS}])],
@@ -86,6 +101,7 @@ AC_ARG_ENABLE(latex,
 AM_CONDITIONAL(INCLUDE_TTF,test $enable_ttf = "yes")
 AM_CONDITIONAL(INCLUDE_PFB,test $enable_pfb = "yes")
 AM_CONDITIONAL(INCLUDE_OTF,test $enable_otf = "yes")
+AM_CONDITIONAL(INCLUDE_WOFF,test $enable_woff = "yes")
 AM_CONDITIONAL(INCLUDE_TESTFONT,test $enable_testfont = "yes")
 
 AM_CONDITIONAL(INCLUDE_XFONTSDIR,test $enable_xfontsdir = "yes")
