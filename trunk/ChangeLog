@@ -1,5 +1,17 @@
 2015-08-13  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
+	Add WOFF generation support.
+
+	* configure.ac:
+	  - Add --enable-woff and --with-woffdir configure options.
+	  - Add corresponding INCLUDE_WOFF condition for automake.
+	* scripts/Makefile.am, +scripts/gen-woff.pe:
+	  - Add fontforge script for generating WOFF.
+	* scripts/gen.mk.am:
+	  - Add make rules for generating and installing WOFF files.
+
+2015-08-13  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
 	Norasi: Add Apostrophe mod & Minus mod for Patani Malay.
 
 	* nf/Norasi*.sfd:
