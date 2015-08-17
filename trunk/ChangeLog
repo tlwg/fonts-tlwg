@@ -1,3 +1,19 @@
+2015-08-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Loma: Add Nasal mark for Patani Malay.
+
+	See similar log for Kinnari for details.
+
+	* nectec/Loma*.sfd:
+	  - Add "MLY " (Malay) language tag to all GSUB/GPOS lookups.
+	  - Add U+0303 tildecomb glyph, with anchors.
+	  - Add AboveMark mark anchor to upper vowels and tildecomb to
+	    allow vertical stacking of multiple marks.
+	  - Import "'ccmp' Thai Tone Tilde Reordering" from Kinnari.
+	  - Add tildecomb to 'ccmp' for high mark variant,
+	    in the same class as upper vowels.
+	  - Bump font version to 0.10.4.
+
 2015-08-13  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Add WOFF generation support.
