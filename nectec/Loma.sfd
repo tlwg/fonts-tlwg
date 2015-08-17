@@ -4,7 +4,7 @@ FullName: Loma
 FamilyName: Loma
 Weight: Regular
 Copyright: Copyright (c) NECTEC, 2003. All rights reserved.\nModified under GNU General Public License by TLWG.
-Version: 0.10.3
+Version: 0.10.4
 ItalicAngle: 0
 UnderlinePosition: -170
 UnderlineWidth: 20
@@ -18,7 +18,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662374
-ModificationTime: 1434944028
+ModificationTime: 1439719864
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -40,9 +40,10 @@ HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
 Lookup: 4 0 1 "'liga' Standard Ligatures lookup 0"  {"'liga' Standard Ligatures lookup 0"  } ['liga' ('latn' <'dflt' > ) ]
-Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Tone Tilde Reordering"  {"'ccmp' Thai Tone Tilde Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ccmp' Pali-Sanskrit Descender Removal"  {"'ccmp' Pali-Sanskrit Descender Removal" ("descless" ) } ['ccmp' ('thai' <'PAL ' 'SAN ' > ) ]
-Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution"  {"Thai Descender Removal Single Substitution" ("descless" ) } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition"  {"Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment"  {"Thai Tone Nikhahit Attachment"  } []
@@ -68,13 +69,43 @@ Lookup: 1 0 0 "Thai Phinthu Mai Tri Reordering"  {"Thai Phinthu Mai Tri Reorderi
 Lookup: 1 0 0 "Thai Phinthu Mai Chattawa Reordering"  {"Thai Phinthu Mai Chattawa Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Thanthakhat Reordering"  {"Thai Phinthu Thanthakhat Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reordering"  } []
-Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
-Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
-Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 1 0 0 "Thai Mai Ek Tilde Reordering"  {"Thai Mai Ek Tilde Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Tho Tilde Reordering"  {"Thai Mai Tho Tilde Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Tri Tilde Reordering"  {"Thai Mai Tri Tilde Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Chattawa Tilde Reordering"  {"Thai Mai Chattawa Tilde Reordering"  } []
+Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 3"  {"'kern' Horizontal Kerning in Latin lookup 3"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+ChainSub2: glyph "'ccmp' Thai Tone Tilde Reordering"  0 0 0 4
+ String: 17 uni0E48 tildecomb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Ek Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Ek Tilde Reordering" 
+ String: 17 uni0E49 tildecomb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Tho Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Tho Tilde Reordering" 
+ String: 17 uni0E4A tildecomb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Tri Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Tri Tilde Reordering" 
+ String: 17 uni0E4B tildecomb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Chattawa Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Chattawa Tilde Reordering" 
+EndFPST
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
  1 0 1
   Coverage: 15 uni0E0D uni0E10
@@ -86,13 +117,13 @@ ChainSub2: class "'ccmp' Thai General Composition"  7 7 1 7
   Class: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   Class: 7 uni0E33
   Class: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
-  Class: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
+  Class: 49 tildecomb uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
   Class: 23 uni0E47 uni0E4D uni0E4E
   Class: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
   BClass: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   BClass: 7 uni0E33
   BClass: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
-  BClass: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
+  BClass: 49 tildecomb uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
   BClass: 23 uni0E47 uni0E4D uni0E4E
   BClass: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
  1 1 0
@@ -267,7 +298,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 264 12 8
+WinInfo: 180 12 8
 BeginPrivate: 6
 BlueValues 37 [-11 0 1062 1082 1139 1150 1450 1470]
 OtherBlues 11 [-428 -422]
@@ -278,7 +309,7 @@ StemSnapV 9 [160 180]
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 543744 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
-BeginChars: 65537 360
+BeginChars: 65537 361
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -718,6 +749,7 @@ SplineSet
  688 159 797 246 860 322 c 1
  530 725 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: quotesingle
@@ -941,6 +973,7 @@ SplineSet
  860 1102 758 1300 561 1300 c 3
  364 1300 266 1102 266 728 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: one
@@ -961,6 +994,7 @@ SplineSet
  763 1470 l 1
  763 0 l 1
 EndSplineSet
+Validated: 1
 Kerns2: 21 -152 "'kern' Horizontal Kerning in Latin lookup 3" 
 EndChar
 
@@ -1003,6 +1037,7 @@ SplineSet
  493 366 381 295 309 170 c 1
  1031 170 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: three
@@ -1054,6 +1089,7 @@ SplineSet
  1046 181 832 -11 552 -11 c 3
  292 -11 89 170 86 424 c 1xf9
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: four
@@ -1083,6 +1119,7 @@ SplineSet
  251 522 l 1
  662 522 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: five
@@ -1158,6 +1195,7 @@ SplineSet
  865 661 762 801 578 801 c 3
  406 801 306 664 306 487 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: seven
@@ -1232,6 +1270,7 @@ SplineSet
  869 606 740 693 562 693 c 3
  389 693 263 603 263 435 c 3xf2
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: nine
@@ -1277,6 +1316,7 @@ SplineSet
  293 798 399 659 582 659 c 3
  760 659 852 796 852 973 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: colon
@@ -1553,6 +1593,7 @@ SplineSet
  472 1300 282 1055 282 742 c 3
  282 524 397 159 788 159 c 3xf0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: D
@@ -1670,6 +1711,7 @@ SplineSet
  1145 1177 1031 1300 790 1300 c 3
  472 1300 282 1064 282 742 c 3xf8
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: H
@@ -1882,6 +1924,7 @@ SplineSet
  1123 159 1316 385 1316 727 c 3
  1316 1061 1125 1300 800 1300 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: P
@@ -1971,6 +2014,7 @@ SplineSet
  755 161 776 159 803 159 c 3
  923 159 1015 189 1050 218 c 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: R
@@ -2047,6 +2091,7 @@ SplineSet
  328 903 560 871 692 840 c 0
  884 796 1259 774 1259 426 c 3xd4
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: T
@@ -2388,6 +2433,7 @@ SplineSet
  815 533 l 1
  584 437 254 491 254 293 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: b
@@ -2433,6 +2479,7 @@ SplineSet
  777 137 875 313 875 533 c 3
  875 846 707 934 589 934 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: c
@@ -2470,6 +2517,7 @@ SplineSet
  366 934 260 784 260 530 c 3
  260 223 442 137 561 137 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: d
@@ -2515,6 +2563,7 @@ SplineSet
  653 137 811 285 811 521 c 3
  811 775 691 934 539 934 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: e
@@ -2556,6 +2605,7 @@ SplineSet
  403 934 281 793 271 632 c 1
  862 632 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: f
@@ -2638,6 +2688,7 @@ SplineSet
  726 137 822 294 822 534 c 3
  822 846 649 934 536 934 c 3xea
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: h
@@ -2679,6 +2730,7 @@ SplineSet
  820 676 l 2
  820 848 745 934 596 934 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: i
@@ -2830,6 +2882,7 @@ SplineSet
  764 0 l 1
  764 694 l 2xdc
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: n
@@ -2871,6 +2924,7 @@ SplineSet
  820 676 l 2
  820 848 745 934 596 934 c 3xd8
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: o
@@ -2906,6 +2960,7 @@ SplineSet
  775 137 883 298 883 536 c 3
  883 771 774 934 566 934 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: p
@@ -2951,6 +3006,7 @@ SplineSet
  692 137 863 225 863 539 c 3
  863 728 781 934 566 934 c 3xec
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: q
@@ -2996,6 +3052,7 @@ SplineSet
  351 934 267 732 267 539 c 3
  267 225 438 137 556 137 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: r
@@ -3033,6 +3090,7 @@ SplineSet
  648 895 l 1
  604 921 561 934 518 934 c 3xd0
 EndSplineSet
+Validated: 1
 Kerns2: 18 -113 "'kern' Horizontal Kerning in Latin lookup 3"  16 -113 "'kern' Horizontal Kerning in Latin lookup 3" 
 EndChar
 
@@ -3079,6 +3137,7 @@ SplineSet
  273 686 365 662 517 633 c 0
  728 593 945 565 945 325 c 3xd4
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: t
@@ -6019,25 +6078,26 @@ Width: 0
 Flags: W
 HStem: 1214 123<-489.412 -244.482> 1545 92<-654.843 -519.777>
 VStem: -756 97<1405.78 1540.09> -517 93<1405.64 1541.16> -131 116<1456.33 1631>
+AnchorPoint: "AboveMark" -262 1227 mark 0
 AnchorPoint: "AboveMark" -262 1740 basemark 0
 AnchorPoint: "AboveBase" -180 1227 mark 0
 LayerCount: 2
 Fore
 SplineSet
--445 1214 m 0
- -575 1214 -756 1268 -756 1482 c 0
- -756 1576 -693 1637 -586 1637 c 0
- -480 1637 -424 1576 -424 1470 c 0
+-445 1214 m 3
+ -575 1214 -756 1268 -756 1482 c 3
+ -756 1576 -693 1637 -586 1637 c 3
+ -480 1637 -424 1576 -424 1470 c 3
  -424 1421 -450 1382 -491 1351 c 1
- -462 1342 -433 1337 -404 1337 c 0
+ -462 1342 -433 1337 -404 1337 c 3
  -250 1337 -131 1432 -131 1631 c 1
  -15 1631 l 1
- -15 1363 -175 1214 -445 1214 c 0
--597 1400 m 0
- -544 1400 -517 1427 -517 1479 c 0
- -517 1520 -544 1545 -586 1545 c 0
- -629 1545 -659 1528 -659 1475 c 0
- -659 1436 -640 1400 -597 1400 c 0
+ -15 1363 -175 1214 -445 1214 c 3
+-597 1400 m 3
+ -544 1400 -517 1427 -517 1479 c 3
+ -517 1520 -544 1545 -586 1545 c 3
+ -629 1545 -659 1528 -659 1475 c 3
+ -659 1436 -640 1400 -597 1400 c 3
 EndSplineSet
 Validated: 1
 EndChar
@@ -6083,19 +6143,19 @@ StartChar: uni0E34
 Encoding: 3636 3636 175
 Width: 0
 Flags: W
-HStem: 1322 91<-898 -706.771> 1528 116<-821.068 -475.617>
+HStem: 1322 91<-898 -706.771> 1528 116<-821.068 -479.583>
+AnchorPoint: "AboveMark" -272 1227 mark 0
 AnchorPoint: "AboveMark" -272 1740 basemark 0
 AnchorPoint: "AboveBase" -180 1227 mark 0
 LayerCount: 2
 Fore
 SplineSet
 -1124 1322 m 1
- -1059 1490 -892 1644 -658 1644 c 0
- -500 1644 -412 1595 -327 1515 c 0
- -248 1441 -199 1345 -180 1227 c 1
+ -1059 1490 -892 1644 -658 1644 c 3
+ -383 1644 -218 1461 -180 1227 c 1
  -507 1298 -1036 1322 -1124 1322 c 1
 -365 1359 m 1
- -423 1462 -500 1528 -642 1528 c 0
+ -423 1462 -500 1528 -642 1528 c 3
  -755 1528 -841 1490 -898 1413 c 1
  -763 1413 -408 1370 -365 1359 c 1
 EndSplineSet
@@ -6108,6 +6168,7 @@ Width: 0
 Flags: W
 HStem: 1511 131<-819.48 -461.98>
 VStem: -337 150<1525 1735>
+AnchorPoint: "AboveMark" -262 1227 mark 0
 AnchorPoint: "AboveMark" -262 1740 basemark 0
 AnchorPoint: "AboveBase" -180 1227 mark 0
 LayerCount: 2
@@ -6115,14 +6176,14 @@ Fore
 SplineSet
 -180 1228 m 1
  -398 1275 -882 1323 -1124 1323 c 1
- -1081 1465 -874 1642 -658 1642 c 0
+ -1081 1465 -874 1642 -658 1642 c 3
  -524 1642 -421 1603 -337 1525 c 1
  -337 1735 l 1
  -187 1735 l 1
  -187 1260 l 1
  -184 1249 -182 1238 -180 1228 c 1
 -379 1370 m 1
- -417 1457 -508 1511 -616 1511 c 0
+ -417 1457 -508 1511 -616 1511 c 3
  -739 1511 -824 1483 -873 1424 c 1
  -725 1424 -475 1393 -379 1370 c 1
 EndSplineSet
@@ -6135,6 +6196,7 @@ Width: 0
 Flags: W
 HStem: 1321 108<-200.187 -129.681> 1514 128<-821.881 -463.982> 1568 113<-264.929 -130.218>
 VStem: -124 110<1435.86 1561.49>
+AnchorPoint: "AboveMark" -198 1227 mark 0
 AnchorPoint: "AboveMark" -198 1740 basemark 0
 AnchorPoint: "AboveBase" -180 1227 mark 0
 LayerCount: 2
@@ -6142,19 +6204,19 @@ Fore
 SplineSet
 -180 1228 m 1xb0
  -398 1275 -882 1323 -1124 1323 c 1
- -1085 1492 -930 1642 -658 1642 c 0xd0
+ -1085 1492 -930 1642 -658 1642 c 3xd0
  -564 1642 -439 1611 -367 1548 c 1
- -352 1633 -296 1681 -198 1681 c 0
- -88 1681 -14 1604 -14 1502 c 0
+ -352 1633 -296 1681 -198 1681 c 7
+ -88 1681 -14 1604 -14 1502 c 3
  -14 1396 -79 1321 -202 1321 c 1
  -196 1304 -189 1273 -180 1228 c 1xb0
--198 1568 m 0xb0
- -243 1568 -270 1540 -270 1500 c 0
- -270 1455 -245 1429 -198 1429 c 0
- -160 1429 -124 1455 -124 1500 c 0
- -124 1524 -144 1568 -198 1568 c 0xb0
+-198 1568 m 3xb0
+ -243 1568 -270 1540 -270 1500 c 3
+ -270 1455 -245 1429 -198 1429 c 3
+ -160 1429 -124 1455 -124 1500 c 3
+ -124 1524 -144 1568 -198 1568 c 3xb0
 -374 1358 m 1
- -410 1460 -504 1514 -648 1514 c 0xd0
+ -410 1460 -504 1514 -648 1514 c 3xd0
  -760 1514 -840 1480 -877 1412 c 1
  -720 1412 -459 1379 -374 1358 c 1
 EndSplineSet
@@ -6167,13 +6229,14 @@ Width: 0
 Flags: W
 HStem: 1322 91<-860 -686.625> 1505 128<-807.811 -567.071>
 VStem: -566 150<1624 1722> -337 150<1519 1721>
+AnchorPoint: "AboveMark" -376 1227 mark 0
 AnchorPoint: "AboveMark" -376 1740 basemark 0
 AnchorPoint: "AboveBase" -180 1227 mark 0
 LayerCount: 2
 Fore
 SplineSet
 -1105 1322 m 1
- -1065 1443 -919 1633 -641 1633 c 0
+ -1065 1443 -919 1633 -641 1633 c 3
  -614 1633 -589 1629 -566 1624 c 1
  -566 1722 l 1
  -416 1722 l 1
@@ -6185,7 +6248,7 @@ SplineSet
  -185 1227 l 1
  -436 1282 -965 1322 -1105 1322 c 1
 -399 1369 m 1
- -428 1429 -499 1505 -649 1505 c 0
+ -428 1429 -499 1505 -649 1505 c 3
  -747 1505 -815 1472 -860 1413 c 1
  -751 1413 -479 1390 -399 1369 c 1
 EndSplineSet
@@ -6624,6 +6687,7 @@ SplineSet
  -333 2106 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Ek Tilde Reordering" tildecomb
 Substitution2: "Thai Phinthu Mai Ek Reordering" uni0E3A
 Substitution2: "Thai Sara UU Mai Ek Reordering" uni0E39
 Substitution2: "Thai Sara U Mai Ek Reordering" uni0E38
@@ -6660,6 +6724,7 @@ SplineSet
  -606 1982 -570 1945 -525 1945 c 0
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Tho Tilde Reordering" tildecomb
 Substitution2: "Thai Phinthu Mai Tho Reordering" uni0E3A
 Substitution2: "Thai Sara UU Mai Tho Reordering" uni0E39
 Substitution2: "Thai Sara U Mai Tho Reordering" uni0E38
@@ -6706,6 +6771,7 @@ SplineSet
  -365 2154 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Tri Tilde Reordering" tildecomb
 Substitution2: "Thai Phinthu Mai Tri Reordering" uni0E3A
 Substitution2: "Thai Sara UU Mai Tri Reordering" uni0E39
 Substitution2: "Thai Sara U Mai Tri Reordering" uni0E38
@@ -6739,6 +6805,7 @@ SplineSet
  -164 1812 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Chattawa Tilde Reordering" tildecomb
 Substitution2: "Thai Phinthu Mai Chattawa Reordering" uni0E3A
 Substitution2: "Thai Sara UU Mai Chattawa Reordering" uni0E39
 Substitution2: "Thai Sara U Mai Chattawa Reordering" uni0E38
@@ -8126,7 +8193,7 @@ StartChar: uni0E34.left
 Encoding: 63233 63233 242
 Width: 0
 Flags: W
-HStem: 1322 91<-1176 -984.771> 1528 116<-1099.07 -753.617>
+HStem: 1322 91<-1176 -984.771> 1528 116<-1099.07 -757.583>
 LayerCount: 2
 Fore
 Refer: 175 3636 S 1 0 0 1 -278 0 2
@@ -9131,6 +9198,7 @@ SplineSet
  1620 1082 1793 874 1793 484 c 1
  1007 484 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: AE
@@ -9284,6 +9352,7 @@ SplineSet
  1206 934 1084 793 1074 632 c 1
  1665 632 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: OE
@@ -9345,6 +9414,7 @@ SplineSet
  1134 192 l 1
  1023 62 871 -10 709 -10 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: trademark
@@ -9460,6 +9530,7 @@ SplineSet
  610 879 766 1049 766 1167 c 3
  766 1248 683 1300 573 1300 c 3xec
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: circumflex
@@ -9686,6 +9757,7 @@ SplineSet
  472 1300 282 1055 282 742 c 3
  282 524 397 159 788 159 c 3xbe
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: Egrave
@@ -9817,6 +9889,7 @@ LayerCount: 2
 Fore
 Refer: 68 96 N 1 0 0 1 406 414 0
 Refer: 51 79 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: Oacute
@@ -9829,6 +9902,7 @@ LayerCount: 2
 Fore
 Refer: 119 180 N 1 0 0 1 274 414 0
 Refer: 51 79 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: Ocircumflex
@@ -9841,6 +9915,7 @@ LayerCount: 2
 Fore
 Refer: 289 710 N 1 0 0 1 449.344 413.696 0
 Refer: 51 79 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: Otilde
@@ -9853,6 +9928,7 @@ LayerCount: 2
 Fore
 Refer: 292 732 N 1 0 0 1 443.2 382.976 0
 Refer: 51 79 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: Odieresis
@@ -9865,6 +9941,7 @@ LayerCount: 2
 Fore
 Refer: 107 168 N 1 0 0 1 242 383 0
 Refer: 51 79 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: Ugrave
@@ -9943,6 +10020,7 @@ LayerCount: 2
 Fore
 Refer: 68 96 N 1 0 0 1 165 0 0
 Refer: 69 97 N 1 0 0 1 0 0 0
+Validated: 1
 EndChar
 
 StartChar: aacute
@@ -9955,6 +10033,7 @@ LayerCount: 2
 Fore
 Refer: 119 180 N 1 0 0 1 24 0 0
 Refer: 69 97 N 1 0 0 1 0 0 0
+Validated: 1
 EndChar
 
 StartChar: acircumflex
@@ -9967,6 +10046,7 @@ LayerCount: 2
 Fore
 Refer: 289 710 N 1 0 0 1 205 0 0
 Refer: 69 97 N 1 0 0 1 0 0 0
+Validated: 1
 EndChar
 
 StartChar: atilde
@@ -9979,6 +10059,7 @@ LayerCount: 2
 Fore
 Refer: 292 732 N 1 0 0 1 209 0 0
 Refer: 69 97 N 1 0 0 1 0 0 0
+Validated: 1
 EndChar
 
 StartChar: adieresis
@@ -9991,6 +10072,7 @@ LayerCount: 2
 Fore
 Refer: 107 168 N 1 0 0 1 -13 -63 0
 Refer: 69 97 N 1 0 0 1 0 0 0
+Validated: 1
 EndChar
 
 StartChar: aring
@@ -10003,6 +10085,7 @@ LayerCount: 2
 Fore
 Refer: 291 730 N 1 0 0 1 217 0 0
 Refer: 69 97 N 1 0 0 1 0 0 0
+Validated: 1
 EndChar
 
 StartChar: ccedilla
@@ -10058,6 +10141,7 @@ SplineSet
  366 934 260 784 260 530 c 3
  260 223 442 137 561 137 c 3xbe
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: egrave
@@ -10070,6 +10154,7 @@ LayerCount: 2
 Fore
 Refer: 68 96 N 1 0 0 1 164.704 0 0
 Refer: 73 101 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: eacute
@@ -10082,6 +10167,7 @@ LayerCount: 2
 Fore
 Refer: 119 180 N 1 0 0 1 23.808 0 0
 Refer: 73 101 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: ecircumflex
@@ -10094,6 +10180,7 @@ LayerCount: 2
 Fore
 Refer: 289 710 N 1 0 0 1 205.232 0 0
 Refer: 73 101 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: edieresis
@@ -10106,6 +10193,7 @@ LayerCount: 2
 Fore
 Refer: 107 168 N 1 0 0 1 -12.768 -63.488 0
 Refer: 73 101 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: igrave
@@ -10170,6 +10258,7 @@ LayerCount: 2
 Fore
 Refer: 292 732 N 1 0 0 1 209 0 0
 Refer: 82 110 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: ograve
@@ -10182,6 +10271,7 @@ LayerCount: 2
 Fore
 Refer: 68 96 N 1 0 0 1 165 0 0
 Refer: 83 111 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: oacute
@@ -10194,6 +10284,7 @@ LayerCount: 2
 Fore
 Refer: 119 180 N 1 0 0 1 24 0 0
 Refer: 83 111 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: ocircumflex
@@ -10206,6 +10297,7 @@ LayerCount: 2
 Fore
 Refer: 289 710 N 1 0 0 1 205 0 0
 Refer: 83 111 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: otilde
@@ -10218,6 +10310,7 @@ LayerCount: 2
 Fore
 Refer: 292 732 N 1 0 0 1 209 0 0
 Refer: 83 111 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: odieresis
@@ -10230,6 +10323,7 @@ LayerCount: 2
 Fore
 Refer: 107 168 N 1 0 0 1 -13 -63 0
 Refer: 83 111 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: ugrave
@@ -10355,6 +10449,7 @@ SplineSet
  692 137 863 225 863 539 c 3
  863 728 781 934 566 934 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: oslash
@@ -10409,6 +10504,7 @@ SplineSet
  68 859 244 1082 566 1082 c 3
  686 1082 785 1053 863 1000 c 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: Oslash
@@ -10463,6 +10559,7 @@ SplineSet
  104 1177 364 1470 801 1470 c 3
  981 1470 1133 1416 1248 1321 c 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: Eth
@@ -10515,6 +10612,7 @@ SplineSet
  675 170 l 2
  980 170 1200 325 1200 736 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: Thorn
@@ -10656,6 +10754,7 @@ SplineSet
  347 934 251 747 251 524 c 3
  251 210 436 137 556 137 c 3
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni00B9
@@ -10794,6 +10893,7 @@ SplineSet
  1154 327 l 1
  1361 327 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: onehalf
@@ -10833,6 +10933,7 @@ SplineSet
  404 -57 l 1
  250 -57 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni0E4E.high
@@ -10888,6 +10989,35 @@ SplineSet
  -153 2210 l 1xe8
 EndSplineSet
 Validated: 1
+EndChar
+
+StartChar: tildecomb
+Encoding: 771 771 360
+Width: 0
+Flags: W
+HStem: 1233 136<-644.437 -376.185> 1318 136<-927.018 -662.808>
+VStem: -1124 185<1227 1303.65> -362 182<1384.32 1454>
+AnchorPoint: "AboveMark" -272 1227 mark 0
+AnchorPoint: "AboveBase" -180 1227 mark 0
+AnchorPoint: "AboveMark" -272 1472 basemark 0
+LayerCount: 2
+Fore
+SplineSet
+-454 1233 m 3xb0
+ -605 1233 -749 1318 -827 1318 c 3
+ -900 1318 -939 1290 -939 1227 c 1
+ -1124 1227 l 1
+ -1124 1377 -1026 1454 -835 1454 c 3x70
+ -708 1454 -564 1369 -466 1369 c 3xb0
+ -408 1369 -371 1399 -362 1454 c 1
+ -180 1454 l 1x70
+ -180 1306 -275 1233 -454 1233 c 3xb0
+EndSplineSet
+Validated: 1
+Substitution2: "Thai Mai Chattawa Tilde Reordering" uni0E4B
+Substitution2: "Thai Mai Tri Tilde Reordering" uni0E4A
+Substitution2: "Thai Mai Tho Tilde Reordering" uni0E49
+Substitution2: "Thai Mai Ek Tilde Reordering" uni0E48
 EndChar
 EndChars
 EndSplineFont
