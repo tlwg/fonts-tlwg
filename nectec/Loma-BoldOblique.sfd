@@ -4,7 +4,7 @@ FullName: Loma Bold Oblique
 FamilyName: Loma
 Weight: Bold
 Copyright: Copyright (c) NECTEC, 2003. All rights reserved.\nModified under GNU General Public License by TLWG.
-Version: 0.10.6
+Version: 0.10.7
 ItalicAngle: -12
 UnderlinePosition: -170
 UnderlineWidth: 10
@@ -18,7 +18,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662534
-ModificationTime: 1439882424
+ModificationTime: 1439883178
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -101,78 +101,78 @@ MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: glyph "'ccmp' Thai Below Vowel Macron Reordering Round 2"  0 0 0 3
  String: 22 uni0E38 macronbelowcmb
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Sara U Macron Reordering" 
   SeqLookup: 1 "Thai Sara U Macron Reordering" 
  String: 22 uni0E39 macronbelowcmb
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Sara UU Macron Reordering" 
   SeqLookup: 1 "Thai Sara UU Macron Reordering" 
  String: 22 uni0E3A macronbelowcmb
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Phinthu Macron Reordering" 
   SeqLookup: 1 "Thai Phinthu Macron Reordering" 
 EndFPST
 ChainSub2: glyph "'ccmp' Thai Macron Tone Reordering"  0 0 0 6
  String: 22 macronbelowcmb uni0E47
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Maitaikhu Macron Reordering" 
   SeqLookup: 1 "Thai Maitaikhu Macron Reordering" 
  String: 22 macronbelowcmb uni0E48
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Mai Ek Macron Reordering" 
   SeqLookup: 1 "Thai Mai Ek Macron Reordering" 
  String: 22 macronbelowcmb uni0E49
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Mai Tho Macron Reordering" 
   SeqLookup: 1 "Thai Mai Tho Macron Reordering" 
  String: 22 macronbelowcmb uni0E4A
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Mai Tri Macron Reordering" 
   SeqLookup: 1 "Thai Mai Tri Macron Reordering" 
  String: 22 macronbelowcmb uni0E4B
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Mai Chattawa Macron Reordering" 
   SeqLookup: 1 "Thai Mai Chattawa Macron Reordering" 
  String: 22 macronbelowcmb uni0E4C
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Thanthakhat Macron Reordering" 
   SeqLookup: 1 "Thai Thanthakhat Macron Reordering" 
 EndFPST
 ChainSub2: glyph "'ccmp' Thai Macron Below Vowel Reordering"  0 0 0 3
  String: 22 macronbelowcmb uni0E38
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Sara U Macron Reordering" 
   SeqLookup: 1 "Thai Sara U Macron Reordering" 
  String: 22 macronbelowcmb uni0E39
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Sara UU Macron Reordering" 
   SeqLookup: 1 "Thai Sara UU Macron Reordering" 
  String: 22 macronbelowcmb uni0E3A
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Phinthu Macron Reordering" 
   SeqLookup: 1 "Thai Maitaikhu Macron Reordering" 
@@ -511,7 +511,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 276 12 8
+WinInfo: 192 12 8
 BeginPrivate: 7
 BlueValues 37 [-13 0 1062 1082 1139 1150 1450 1470]
 OtherBlues 11 [-428 -422]
@@ -522,7 +522,7 @@ StemSnapV 25 [130 223 227 233 244 249]
 ForceBold 4 true
 EndPrivate
 AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
-BeginChars: 65541 366
+BeginChars: 65541 368
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -10711,6 +10711,30 @@ SplineSet
 EndSplineSet
 Validated: 1
 Ligature2: "'ccmp' Patani Malay Ligatures" uni0E21 macronbelowcmb
+EndChar
+
+StartChar: apostrophemod
+Encoding: 700 700 366
+Width: 580
+Flags: W
+HStem: 997 559
+VStem: 264 563
+LayerCount: 2
+Fore
+Refer: 221 8217 N 1 0 0 1 0 0 2
+Validated: 1
+EndChar
+
+StartChar: minusmod
+Encoding: 727 727 367
+Width: 682
+Flags: W
+HStem: 411 220<199 705>
+VStem: 152 600
+LayerCount: 2
+Fore
+Refer: 17 45 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 EndChars
 EndSplineFont

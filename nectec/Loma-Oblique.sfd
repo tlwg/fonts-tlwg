@@ -4,7 +4,7 @@ FullName: Loma Oblique
 FamilyName: Loma
 Weight: Regular
 Copyright: Copyright (c) NECTEC, 2003. All rights reserved.\nModified under GNU General Public License by TLWG.
-Version: 0.10.6
+Version: 0.10.7
 ItalicAngle: -12
 UnderlinePosition: -170
 UnderlineWidth: 20
@@ -18,7 +18,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153662347
-ModificationTime: 1439880981
+ModificationTime: 1439882970
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -101,78 +101,78 @@ MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: glyph "'ccmp' Thai Below Vowel Macron Reordering Round 2"  0 0 0 3
  String: 22 uni0E38 macronbelowcmb
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Sara U Macron Reordering" 
   SeqLookup: 1 "Thai Sara U Macron Reordering" 
  String: 22 uni0E39 macronbelowcmb
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Sara UU Macron Reordering" 
   SeqLookup: 1 "Thai Sara UU Macron Reordering" 
  String: 22 uni0E3A macronbelowcmb
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Phinthu Macron Reordering" 
   SeqLookup: 1 "Thai Phinthu Macron Reordering" 
 EndFPST
 ChainSub2: glyph "'ccmp' Thai Macron Tone Reordering"  0 0 0 6
  String: 22 macronbelowcmb uni0E47
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Maitaikhu Macron Reordering" 
   SeqLookup: 1 "Thai Maitaikhu Macron Reordering" 
  String: 22 macronbelowcmb uni0E48
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Mai Ek Macron Reordering" 
   SeqLookup: 1 "Thai Mai Ek Macron Reordering" 
  String: 22 macronbelowcmb uni0E49
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Mai Tho Macron Reordering" 
   SeqLookup: 1 "Thai Mai Tho Macron Reordering" 
  String: 22 macronbelowcmb uni0E4A
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Mai Tri Macron Reordering" 
   SeqLookup: 1 "Thai Mai Tri Macron Reordering" 
  String: 22 macronbelowcmb uni0E4B
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Mai Chattawa Macron Reordering" 
   SeqLookup: 1 "Thai Mai Chattawa Macron Reordering" 
  String: 22 macronbelowcmb uni0E4C
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Thanthakhat Macron Reordering" 
   SeqLookup: 1 "Thai Thanthakhat Macron Reordering" 
 EndFPST
 ChainSub2: glyph "'ccmp' Thai Macron Below Vowel Reordering"  0 0 0 3
  String: 22 macronbelowcmb uni0E38
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Sara U Macron Reordering" 
   SeqLookup: 1 "Thai Sara U Macron Reordering" 
  String: 22 macronbelowcmb uni0E39
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Sara UU Macron Reordering" 
   SeqLookup: 1 "Thai Sara UU Macron Reordering" 
  String: 22 macronbelowcmb uni0E3A
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Phinthu Macron Reordering" 
   SeqLookup: 1 "Thai Maitaikhu Macron Reordering" 
@@ -522,7 +522,7 @@ StemSnapV 21 [113 168 179 184 188]
 EndPrivate
 TeXData: 1 0 -562637 524288 262144 174762 543744 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
-BeginChars: 65541 366
+BeginChars: 65541 368
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -10814,6 +10814,30 @@ SplineSet
 EndSplineSet
 Validated: 1
 Ligature2: "'ccmp' Patani Malay Ligatures" uni0E21 macronbelowcmb
+EndChar
+
+StartChar: apostrophemod
+Encoding: 700 700 366
+Width: 580
+Flags: W
+HStem: 997 559
+VStem: 309 518
+LayerCount: 2
+Fore
+Refer: 221 8217 N 1 0 0 1 0 0 2
+Validated: 1
+EndChar
+
+StartChar: minusmod
+Encoding: 727 727 367
+Width: 682
+Flags: W
+HStem: 446 170<196 713>
+VStem: 160 589
+LayerCount: 2
+Fore
+Refer: 17 45 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 EndChars
 EndSplineFont
