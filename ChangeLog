@@ -1,3 +1,20 @@
+2015-11-13  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Purisa: Add Nasal mark for Patani Malay.
+
+	See similar log for Kinnari for details.
+
+	* tlwg/Purisa*.sfd:
+	  - Add "MLY " (Malay) language tag to all GSUB/GPOS lookups.
+	  - Add U+0303 tildecomb glyph, with anchors.
+	  - Add AboveMark mark anchor to upper vowels and tildecomb to
+	    allow vertical stacking of multiple marks.
+	  - Also add missing AboveMark base anchor to MAI HAN-AKAT.
+	  - Import "'ccmp' Thai Tone Tilde Reordering" from Kinnari.
+	  - Add tildecomb to 'ccmp' for high mark variant,
+	    in the same class as upper vowels.
+	  - Bump font version to 003.004.
+
 2015-10-25  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Sawasdee: Add Apostrophe mod & Minus mod for Patani Malay.
