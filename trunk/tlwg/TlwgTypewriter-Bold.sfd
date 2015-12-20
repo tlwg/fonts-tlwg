@@ -5,7 +5,7 @@ FamilyName: TlwgTypewriter
 Weight: Bold
 Copyright: Tlwg Typewriter-Bold, Free Thai Pseudo Monospace outline font. Copyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-20: Created. +AAoA-PfaEdit 1.0 (http://pfaedit.sf.net).+AAoACgAA-TLWG is Thai Linux Working Group http://linux.thai.net+AAoACgAA-Imported ISO-8859-1 from FreeMono.sfd.+AAoA-http://www.nongnu.org/freefont/+AAoACgAA-2003-11-22: first release+AAoACgAA-2003-11-25: Fixed vowel and tone marks' level." 
-Version: 002.005
+Version: 002.006
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153666223
-ModificationTime: 1449481281
+ModificationTime: 1450605629
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -41,11 +41,17 @@ HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
 Lookup: 6 0 0 "'ccmp' Thai Tone Tilde Reordering"  {"'ccmp' Thai Tone Tilde Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Tone Macron Reordering"  {"'ccmp' Thai Tone Macron Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Below Vowel Macron Reordering"  {"'ccmp' Thai Below Vowel Macron Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 4 0 0 "'ccmp' Patani Malay Ligatures"  {"'ccmp' Patani Malay Ligatures"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ccmp' Pali-Sanskrit Descender Removal"  {"'ccmp' Pali-Sanskrit Descender Removal" ("descless" ) } ['ccmp' ('thai' <'PAL ' 'SAN ' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Macron Below Vowel Reordering"  {"'ccmp' Thai Macron Below Vowel Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Macron Tone Reordering"  {"'ccmp' Thai Macron Tone Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Below Vowel Phinthu Reordering"  {"'ccmp' Thai Below Vowel Phinthu Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Phinthu Lower Tone Reordering"  {"'ccmp' Thai Phinthu Lower Tone Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Below Vowel Macron Reordering Round 2"  {"'ccmp' Thai Below Vowel Macron Reordering Round 2"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution"  {"Thai Descender Removal Single Substitution" ("descless" ) } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition"  {"Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment"  {"Thai Tone Nikhahit Attachment"  } []
@@ -77,52 +83,197 @@ Lookup: 1 0 0 "Thai Mai Tri Tilde Reordering"  {"Thai Mai Tri Tilde Reordering" 
 Lookup: 1 0 0 "Thai Mai Chattawa Tilde Reordering"  {"Thai Mai Chattawa Tilde Reordering"  } []
 Lookup: 1 0 0 "Thai Sara U Phinthu Reordering"  {"Thai Sara U Phinthu Reordering"  } []
 Lookup: 1 0 0 "Thai Sara UU Phinthu Reordering"  {"Thai Sara UU Phinthu Reordering"  } []
+Lookup: 1 0 0 "Thai Maitaikhu Macron Reordering"  {"Thai Maitaikhu Macron Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Ek Macron Reordering"  {"Thai Mai Ek Macron Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Tho Macron Reordering"  {"Thai Mai Tho Macron Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Tri Macron Reordering"  {"Thai Mai Tri Macron Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Chattawa Macron Reordering"  {"Thai Mai Chattawa Macron Reordering"  } []
+Lookup: 1 0 0 "Thai Thanthakhat Macron Reordering"  {"Thai Thanthakhat Macron Reordering"  } []
+Lookup: 1 0 0 "Thai Sara U Macron Reordering"  {"Thai Sara U Macron Reordering"  } []
+Lookup: 1 0 0 "Thai Sara UU Macron Reordering"  {"Thai Sara UU Macron Reordering"  } []
+Lookup: 1 0 0 "Thai Phinthu Macron Reordering"  {"Thai Phinthu Macron Reordering"  } []
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-ChainSub2: glyph "'ccmp' Thai Phinthu Lower Tone Reordering"  0 0 0 7
- String: 15 uni0E3A uni0E47
+ChainSub2: glyph "'ccmp' Thai Below Vowel Macron Reordering Round 2"  0 0 0 3
+ String: 22 uni0E38 macronbelowcmb
  BString: 0
  FString: 0
+ 2
+  SeqLookup: 0 "Thai Sara U Macron Reordering" 
+  SeqLookup: 1 "Thai Sara U Macron Reordering" 
+ String: 22 uni0E39 macronbelowcmb
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Sara UU Macron Reordering" 
+  SeqLookup: 1 "Thai Sara UU Macron Reordering" 
+ String: 22 uni0E3A macronbelowcmb
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Phinthu Macron Reordering" 
+  SeqLookup: 1 "Thai Phinthu Macron Reordering" 
+EndFPST
+ChainSub2: glyph "'ccmp' Thai Macron Tone Reordering"  0 0 0 6
+ String: 22 macronbelowcmb uni0E47
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Maitaikhu Macron Reordering" 
+  SeqLookup: 1 "Thai Maitaikhu Macron Reordering" 
+ String: 22 macronbelowcmb uni0E48
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Mai Ek Macron Reordering" 
+  SeqLookup: 1 "Thai Mai Ek Macron Reordering" 
+ String: 22 macronbelowcmb uni0E49
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Mai Tho Macron Reordering" 
+  SeqLookup: 1 "Thai Mai Tho Macron Reordering" 
+ String: 22 macronbelowcmb uni0E4A
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Mai Tri Macron Reordering" 
+  SeqLookup: 1 "Thai Mai Tri Macron Reordering" 
+ String: 22 macronbelowcmb uni0E4B
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Mai Chattawa Macron Reordering" 
+  SeqLookup: 1 "Thai Mai Chattawa Macron Reordering" 
+ String: 22 macronbelowcmb uni0E4C
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Thanthakhat Macron Reordering" 
+  SeqLookup: 1 "Thai Thanthakhat Macron Reordering" 
+EndFPST
+ChainSub2: glyph "'ccmp' Thai Macron Below Vowel Reordering"  0 0 0 3
+ String: 22 macronbelowcmb uni0E38
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Sara U Macron Reordering" 
+  SeqLookup: 1 "Thai Sara U Macron Reordering" 
+ String: 22 macronbelowcmb uni0E39
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Sara UU Macron Reordering" 
+  SeqLookup: 1 "Thai Sara UU Macron Reordering" 
+ String: 22 macronbelowcmb uni0E3A
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Phinthu Macron Reordering" 
+  SeqLookup: 1 "Thai Maitaikhu Macron Reordering" 
+EndFPST
+ChainSub2: glyph "'ccmp' Thai Below Vowel Macron Reordering"  0 0 0 3
+ String: 22 uni0E38 macronbelowcmb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Sara U Macron Reordering" 
+  SeqLookup: 1 "Thai Sara U Macron Reordering" 
+ String: 22 uni0E39 macronbelowcmb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Sara UU Macron Reordering" 
+  SeqLookup: 1 "Thai Sara UU Macron Reordering" 
+ String: 22 uni0E3A macronbelowcmb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Phinthu Macron Reordering" 
+  SeqLookup: 1 "Thai Phinthu Macron Reordering" 
+EndFPST
+ChainSub2: glyph "'ccmp' Thai Tone Macron Reordering"  0 0 0 6
+ String: 22 uni0E47 macronbelowcmb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Maitaikhu Macron Reordering" 
+  SeqLookup: 1 "Thai Maitaikhu Macron Reordering" 
+ String: 22 uni0E48 macronbelowcmb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Ek Macron Reordering" 
+  SeqLookup: 1 "Thai Mai Ek Macron Reordering" 
+ String: 22 uni0E49 macronbelowcmb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Tho Macron Reordering" 
+  SeqLookup: 1 "Thai Mai Tho Macron Reordering" 
+ String: 22 uni0E4A macronbelowcmb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Tri Macron Reordering" 
+  SeqLookup: 1 "Thai Mai Tri Macron Reordering" 
+ String: 22 uni0E4B macronbelowcmb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Chattawa Macron Reordering" 
+  SeqLookup: 1 "Thai Mai Chattawa Macron Reordering" 
+ String: 22 uni0E4C macronbelowcmb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Thanthakhat Macron Reordering" 
+  SeqLookup: 1 "Thai Thanthakhat Macron Reordering" 
+EndFPST
+ChainSub2: glyph "'ccmp' Thai Phinthu Lower Tone Reordering"  0 0 0 7
+ String: 15 uni0E3A uni0E47
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Phinthu Maitaikhu Reordering" 
   SeqLookup: 1 "Thai Phinthu Maitaikhu Reordering" 
  String: 19 uni0E3A uni0E48.low
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Phinthu Mai Ek Reordering" 
   SeqLookup: 1 "Thai Phinthu Mai Ek Reordering" 
  String: 19 uni0E3A uni0E49.low
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Phinthu Mai Tho Reordering" 
   SeqLookup: 1 "Thai Phinthu Mai Tho Reordering" 
  String: 19 uni0E3A uni0E4A.low
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Phinthu Mai Tri Reordering" 
   SeqLookup: 1 "Thai Phinthu Mai Tri Reordering" 
  String: 19 uni0E3A uni0E4B.low
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Phinthu Mai Chattawa Reordering" 
   SeqLookup: 1 "Thai Phinthu Mai Chattawa Reordering" 
  String: 19 uni0E3A uni0E4C.low
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Phinthu Thanthakhat Reordering" 
   SeqLookup: 1 "Thai Phinthu Thanthakhat Reordering" 
  String: 15 uni0E3A uni0E4D
- BString: 0
- FString: 0
+ BString: 0 
+ FString: 0 
  2
   SeqLookup: 0 "Thai Phinthu Nikhahit Reordering" 
   SeqLookup: 1 "Thai Phinthu Nikhahit Reordering" 
@@ -170,7 +321,7 @@ EndFPST
 ChainSub2: coverage "'ccmp' Thai Conditional Descender Removal"  0 0 0 1
  1 0 1
   Coverage: 15 uni0E0D uni0E10
-  FCoverage: 23 uni0E38 uni0E39 uni0E3A
+  FCoverage: 38 macronbelowcmb uni0E38 uni0E39 uni0E3A
  1
   SeqLookup: 0 "Thai Descender Removal Single Substitution" 
 EndFPST
@@ -365,7 +516,7 @@ NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 192 12 9
+WinInfo: 240 12 9
 BeginPrivate: 7
 BlueValues 31 [-16 0 437 452 583 597 623 638]
 OtherBlues 11 [-205 -205]
@@ -376,7 +527,7 @@ StemSnapH 5 [100]
 StemSnapV 5 [100]
 EndPrivate
 AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveBase"  "'mark' Thai Above Base" "BelowBase"  "'mark' Thai Below Base" "AboveMark"  "'mkmk' Thai Above Mark" 
-BeginChars: 65536 341
+BeginChars: 65540 346
 
 StartChar: micro
 Encoding: 181 181 0
@@ -599,6 +750,7 @@ SplineSet
  -315 500 l 17
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Maitaikhu Macron Reordering" macronbelowcmb
 Substitution2: "Thai Mark High Variant" uni0E47.high
 Substitution2: "Thai Phinthu Maitaikhu Reordering" uni0E3A
 EndChar
@@ -621,6 +773,7 @@ SplineSet
  -169 855 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Ek Macron Reordering" macronbelowcmb
 Substitution2: "Thai Mai Ek Tilde Reordering" tildecomb
 MultipleSubs2: "Thai Tone Nikhahit Attachment" uni0E4D uni0E48
 Substitution2: "Thai Tone Low Variant" uni0E48.low
@@ -659,6 +812,7 @@ SplineSet
  -283 878 -248 904 -210 904 c 16
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Tho Macron Reordering" macronbelowcmb
 Substitution2: "Thai Mai Tho Tilde Reordering" tildecomb
 MultipleSubs2: "Thai Tone Nikhahit Attachment" uni0E4D uni0E49
 Substitution2: "Thai Tone Low Variant" uni0E49.low
@@ -693,6 +847,7 @@ SplineSet
  -142 773 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Chattawa Macron Reordering" macronbelowcmb
 Substitution2: "Thai Mai Chattawa Tilde Reordering" tildecomb
 MultipleSubs2: "Thai Tone Nikhahit Attachment" uni0E4D uni0E4B
 Substitution2: "Thai Tone Low Variant" uni0E4B.low
@@ -728,6 +883,7 @@ SplineSet
  -75 715 -114 695 -146 695 c 0
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Thanthakhat Macron Reordering" macronbelowcmb
 MultipleSubs2: "Thai Tone Nikhahit Attachment" uni0E4D uni0E4C
 Substitution2: "Thai Tone Low Variant" uni0E4C.low
 Substitution2: "Thai Sara U Thanthakhat Reordering" uni0E38
@@ -9613,6 +9769,7 @@ SplineSet
  -241 -74 -209 -50 -175 -50 c 16
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Sara U Macron Reordering" macronbelowcmb
 Substitution2: "Thai Sara U Phinthu Reordering" uni0E3A
 Substitution2: "Thai Sara U Mai Ek Reordering" uni0E48.low
 Substitution2: "Thai Sara U Mai Tho Reordering" uni0E49.low
@@ -9653,6 +9810,7 @@ SplineSet
  -280 -150 -282 -151 -287 -151 c 0
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Sara UU Macron Reordering" macronbelowcmb
 Substitution2: "Thai Sara UU Phinthu Reordering" uni0E3A
 Substitution2: "Thai Sara UU Mai Ek Reordering" uni0E48.low
 Substitution2: "Thai Sara UU Mai Tho Reordering" uni0E49.low
@@ -9681,6 +9839,7 @@ SplineSet
  -296 -82 -264 -50 -225 -50 c 0
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Phinthu Macron Reordering" macronbelowcmb
 Substitution2: "Thai Sara UU Phinthu Reordering" uni0E39
 Substitution2: "Thai Sara U Phinthu Reordering" uni0E38
 Substitution2: "Thai Phinthu Maitaikhu Reordering" uni0E47
@@ -10022,6 +10181,7 @@ SplineSet
  -371 697 -398 737 -398 770 c 0
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Tri Macron Reordering" macronbelowcmb
 Substitution2: "Thai Mai Tri Tilde Reordering" tildecomb
 MultipleSubs2: "Thai Tone Nikhahit Attachment" uni0E4D uni0E4A
 Substitution2: "Thai Tone Low Variant" uni0E4A.low
@@ -11946,6 +12106,98 @@ Substitution2: "Thai Mai Chattawa Tilde Reordering" uni0E4B
 Substitution2: "Thai Mai Tri Tilde Reordering" uni0E4A
 Substitution2: "Thai Mai Tho Tilde Reordering" uni0E49
 Substitution2: "Thai Mai Ek Tilde Reordering" uni0E48
+EndChar
+
+StartChar: macronbelowcmb
+Encoding: 817 817 341
+Width: 0
+Flags: W
+HStem: -150 100<-548 -64>
+AnchorPoint: "BelowBase" -100 -50 mark 0
+AnchorPoint: "BelowMark" -100 -171 basemark 0
+AnchorPoint: "BelowMark" -100 -50 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-64 -50 m 1
+ -64 -150 l 1
+ -548 -150 l 1
+ -548 -50 l 1
+ -64 -50 l 1
+EndSplineSet
+Validated: 1
+Substitution2: "Thai Phinthu Macron Reordering" uni0E3A
+Substitution2: "Thai Sara UU Macron Reordering" uni0E39
+Substitution2: "Thai Sara U Macron Reordering" uni0E38
+Substitution2: "Thai Thanthakhat Macron Reordering" uni0E4C
+Substitution2: "Thai Mai Chattawa Macron Reordering" uni0E4B
+Substitution2: "Thai Mai Tri Macron Reordering" uni0E4A
+Substitution2: "Thai Mai Tho Macron Reordering" uni0E49
+Substitution2: "Thai Mai Ek Macron Reordering" uni0E48
+Substitution2: "Thai Maitaikhu Macron Reordering" uni0E47
+EndChar
+
+StartChar: uni0E07.uline
+Encoding: 65536 -1 342
+Width: 615
+Flags: W
+HStem: -150 100<52 536> 0 21<336.926 515> 252 50<376.153 413> 382 63<377.754 446.46>
+VStem: 314 58<307.151 376.552> 413 102<104 256> 452 63<305.767 376.583>
+DStem2: 191 347 111 270 0.670482 -0.741926<3.4898 329.135>
+AnchorPoint: "BelowBase" 515 -171 basechar 0
+LayerCount: 2
+Fore
+Refer: 207 3591 N 1 0 0 1 0 0 2
+Refer: 341 817 N 1 0 0 1 600 0 2
+Validated: 1
+LCarets2: 1 0 
+Ligature2: "'ccmp' Patani Malay Ligatures" uni0E07 macronbelowcmb
+EndChar
+
+StartChar: uni0E0D.uline
+Encoding: 65537 -1 343
+Width: 600
+Flags: W
+HStem: -150 100<52 536> 0 43<137.853 207.986> 0 102<385 436> 123 30<173.005 203.148> 276 41<181.589 247> 363 82<141.899 266.736>
+VStem: 73 60<49.2393 118.607> 73 100<147 263.331> 213 43<48.4652 117.539> 284 101<102 344.722> 436 100<102 445>
+AnchorPoint: "BelowBase" 536 -171 basechar 0
+LayerCount: 2
+Fore
+Refer: 306 63247 N 1 0 0 1 0 0 2
+Refer: 341 817 N 1 0 0 1 600 0 2
+Validated: 1
+LCarets2: 1 0 
+Ligature2: "'ccmp' Patani Malay Ligatures" uni0E0D macronbelowcmb
+EndChar
+
+StartChar: uni0E17.uline
+Encoding: 65538 -1 344
+Width: 614
+Flags: W
+HStem: -150 100<52 536> 0 70<422.901 493.057> 150 73<455.479 493.599> 280 42<117.792 142.861> 402 38<118.469 185.075>
+VStem: 54 58<326.611 397.542> 143 100<105 280> 192 51<326.393 396.813> 355 100<220 445> 498 48<75.6026 144.525>
+AnchorPoint: "BelowBase" 500 -171 basechar 0
+LayerCount: 2
+Fore
+Refer: 225 3609 N 1 0 0 1 0 0 2
+Refer: 341 817 N 1 0 0 1 600 0 2
+Validated: 1
+EndChar
+
+StartChar: uni0E21.uline
+Encoding: 65539 -1 345
+Width: 600
+Flags: W
+HStem: -150 100<52 536> -8 62<168.582 239.402> 0 21<352.119 521> 134 61<169.31 207.066> 266 56<164.93 207.035> 402 44<164.111 233.819>
+VStem: 116 48<58.3786 128.96 324.961 399.156> 208 94<195 266> 239 63<326.393 397.328> 421 100<98 445>
+AnchorPoint: "BelowBase" 521 -171 basechar 0
+LayerCount: 2
+Fore
+Refer: 233 3617 N 1 0 0 1 0 0 2
+Refer: 341 817 N 1 0 0 1 600 0 2
+Validated: 1
+LCarets2: 1 0 
+Ligature2: "'ccmp' Patani Malay Ligatures" uni0E21 macronbelowcmb
 EndChar
 EndChars
 EndSplineFont
