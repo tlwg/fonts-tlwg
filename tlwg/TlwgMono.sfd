@@ -5,7 +5,7 @@ FamilyName: TlwgMono
 Weight: Regular
 Copyright: TlwgMono, Free Thai monospace outline font.\n\nCopyright (C) 2003 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-8: Created. +AAoA-PfaEdit 1.0 (http://pfaedit.sf.net).+AAoACgAA-TLWG is Thai Linux Working Group http://linux.thai.net+AAoACgAA-Imported ISO-8859-1 from FreeMono.sfd.+AAoA-http://www.nongnu.org/freefont/+AAoACgAA-Imported thai18.bdf as background for reference.+AAoACgAA-2003-11-15: Used +ACIA-Copy reference+ACIA to variants. But some cannot. I don't know why.+AAoACgAA-2003-11-17: First release+AAoA-See sample of this font in PDF from http://linux/thai.net/Members/poonlap/font/TlwgMono.pdf+AAoACgAA-2003-11-18: fixed some characters and make every character monospace.+AAoACgAA-2003-11-18: fixed font width and name (dottedcircke, uni0E10descless)" 
-Version: 001.022
+Version: 001.023
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1153666223
-ModificationTime: 1434947829
+ModificationTime: 1450607368
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -56,7 +56,7 @@ NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 96 12 9
+WinInfo: 192 12 9
 BeginPrivate: 6
 BlueValues 47 [-16 0 417 431 444 454 563 576 604 604 612 618]
 OtherBlues 11 [-186 -186]
@@ -65,7 +65,7 @@ StdVW 4 [41]
 StemSnapH 4 [41]
 StemSnapV 7 [41 60]
 EndPrivate
-BeginChars: 65541 327
+BeginChars: 65536 331
 
 StartChar: micro
 Encoding: 181 181 0
@@ -11741,6 +11741,68 @@ SplineSet
  148 -174 135 -161 135 -145 c 0
  135 -141 136 -138 137 -134 c 2
  207 116 l 1
+EndSplineSet
+Validated: 1
+EndChar
+
+StartChar: apostrophemod
+Encoding: 700 700 327
+Width: 600
+Flags: W
+HStem: 314 290
+VStem: 135 205
+LayerCount: 2
+Fore
+Refer: 282 8217 N 1 0 0 1 0 0 2
+Validated: 1
+EndChar
+
+StartChar: minusmod
+Encoding: 727 727 328
+Width: 600
+Flags: W
+HStem: 258 41<72.0066 527.993>
+LayerCount: 2
+Fore
+Refer: 24 45 N 1 0 0 1 0 0 2
+Validated: 1
+EndChar
+
+StartChar: tildecomb
+Encoding: 771 771 329
+Width: 600
+Flags: W
+HStem: 516 41<311.127 399.052> 564 41<196.807 285.899>
+VStem: 143 310<538 583>
+LayerCount: 2
+Fore
+SplineSet
+360 557 m 3
+ 396 557 412 603 433 603 c 3
+ 443 603 453 594 453 583 c 3
+ 453 570 407 516 362 516 c 3
+ 310 516 272 564 238 564 c 3
+ 196 564 188 519 163 519 c 3
+ 152 519 143 527 143 538 c 3
+ 143 553 188 605 237 605 c 3
+ 285 605 326 557 360 557 c 3
+EndSplineSet
+Validated: 1
+EndChar
+
+StartChar: macronbelowcmb
+Encoding: 817 817 330
+Width: 600
+Flags: W
+HStem: -124 60<54 530>
+LayerCount: 2
+Fore
+SplineSet
+530 -64 m 1
+ 530 -124 l 1
+ 54 -124 l 1
+ 54 -64 l 1
+ 530 -64 l 1
 EndSplineSet
 Validated: 1
 EndChar
