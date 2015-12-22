@@ -4,7 +4,7 @@ FullName: Laksaman Bold Italic
 FamilyName: Laksaman
 Weight: Bold
 Copyright: Laksaman, based on TH Sarabun New.\n\nCopyright (c) 2014 Theppitak Karoonboonyanan.\n\nTH Sarabun New:\n\nCopyright (c) 2010-2011 by Software Industry Promotion Agency (Public Organization) (SIPA). All rights reserved.\nCreated by : Suppakit CHALERMLARP.
-Version: 003.008
+Version: 003.009
 ItalicAngle: -12
 UnderlinePosition: -20
 UnderlineWidth: 30
@@ -19,7 +19,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1308745585
-ModificationTime: 1450770898
+ModificationTime: 1450773299
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -83,7 +83,9 @@ Lookup: 4 0 0 "<27,2>  lookup 63"  {"<27,2>  lookup 63 subtable"  } [<27,2> ('la
 Lookup: 6 0 0 "'ccmp' Thai Tone Tilde Reordering"  {"'ccmp' Thai Tone Tilde Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ccmp' Pali-Sanskrit Descender Removal"  {"'ccmp' Pali-Sanskrit Descender Removal"  } ['ccmp' ('thai' <'PAL ' 'SAN ' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Below Vowel Phinthu Reordering"  {"'ccmp' Thai Below Vowel Phinthu Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Phinthu Lower Tone Reordering"  {"'ccmp' Thai Phinthu Lower Tone Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution"  {"Thai Descender Removal Single Substitution" ("descless" ) } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition"  {"Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment"  {"Thai Tone Nikhahit Attachment"  } []
@@ -113,6 +115,8 @@ Lookup: 1 0 0 "Thai Mai Ek Tilde Reordering"  {"Thai Mai Ek Tilde Reordering"  }
 Lookup: 1 0 0 "Thai Mai Tho Tilde Reordering"  {"Thai Mai Tho Tilde Reordering"  } []
 Lookup: 1 0 0 "Thai Mai Tri Tilde Reordering"  {"Thai Mai Tri Tilde Reordering"  } []
 Lookup: 1 0 0 "Thai Mai Chattawa Tilde Reordering"  {"Thai Mai Chattawa Tilde Reordering"  } []
+Lookup: 1 0 0 "Thai Sara U Phinthu Reordering"  {"Thai Sara U Phinthu Reordering"  } []
+Lookup: 1 0 0 "Thai Sara UU Phinthu Reordering"  {"Thai Sara UU Phinthu Reordering"  } []
 Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
@@ -120,6 +124,64 @@ Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' (
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 0"  {"'kern' Horizontal Kerning in Latin lookup 0 subtable"  } ['kern' ('latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+ChainSub2: glyph "'ccmp' Thai Phinthu Lower Tone Reordering"  0 0 0 7
+ String: 15 uni0E3A uni0E47
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Phinthu Maitaikhu Reordering" 
+  SeqLookup: 1 "Thai Phinthu Maitaikhu Reordering" 
+ String: 19 uni0E3A uni0E48.low
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Phinthu Mai Ek Reordering" 
+  SeqLookup: 1 "Thai Phinthu Mai Ek Reordering" 
+ String: 19 uni0E3A uni0E49.low
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Phinthu Mai Tho Reordering" 
+  SeqLookup: 1 "Thai Phinthu Mai Tho Reordering" 
+ String: 19 uni0E3A uni0E4A.low
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Phinthu Mai Tri Reordering" 
+  SeqLookup: 1 "Thai Phinthu Mai Tri Reordering" 
+ String: 19 uni0E3A uni0E4B.low
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Phinthu Mai Chattawa Reordering" 
+  SeqLookup: 1 "Thai Phinthu Mai Chattawa Reordering" 
+ String: 19 uni0E3A uni0E4C.low
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Phinthu Thanthakhat Reordering" 
+  SeqLookup: 1 "Thai Phinthu Thanthakhat Reordering" 
+ String: 15 uni0E3A uni0E4D
+ BString: 0
+ FString: 0
+ 2
+  SeqLookup: 0 "Thai Phinthu Nikhahit Reordering" 
+  SeqLookup: 1 "Thai Phinthu Nikhahit Reordering" 
+EndFPST
+ChainSub2: glyph "'ccmp' Thai Below Vowel Phinthu Reordering"  0 0 0 2
+ String: 15 uni0E38 uni0E3A
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Sara U Phinthu Reordering" 
+  SeqLookup: 1 "Thai Sara U Phinthu Reordering" 
+ String: 15 uni0E39 uni0E3A
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Sara UU Phinthu Reordering" 
+  SeqLookup: 1 "Thai Sara UU Phinthu Reordering" 
+EndFPST
 ChainSub2: glyph "'ccmp' Thai Tone Tilde Reordering"  0 0 0 4
  String: 17 uni0E48 tildecomb
  BString: 0 
@@ -13705,6 +13767,7 @@ SplineSet
  -363 -110 -309 -59 -250 -59 c 3
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Sara U Phinthu Reordering" uni0E3A
 Substitution2: "Thai Sara U Nikhahit Reordering" uni0E4D
 Substitution2: "Thai Sara U Thanthakhat Reordering" uni0E4C.low
 Substitution2: "Thai Sara U Mai Chattawa Reordering" uni0E4B.low
@@ -13786,6 +13849,7 @@ SplineSet
  -490 -173 -474 -188 -456 -188 c 259
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Sara UU Phinthu Reordering" uni0E3A
 Substitution2: "Thai Sara UU Nikhahit Reordering" uni0E4D
 Substitution2: "Thai Sara UU Thanthakhat Reordering" uni0E4C.low
 Substitution2: "Thai Sara UU Mai Chattawa Reordering" uni0E4B.low
@@ -13826,6 +13890,8 @@ SplineSet
  -164 -62 -145 -78 -145 -102 c 3
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Sara UU Phinthu Reordering" uni0E39
+Substitution2: "Thai Sara U Phinthu Reordering" uni0E38
 Substitution2: "Thai Phinthu Nikhahit Reordering" uni0E4D
 Substitution2: "Thai Phinthu Thanthakhat Reordering" uni0E4C.low
 Substitution2: "Thai Phinthu Mai Chattawa Reordering" uni0E4B.low
@@ -18341,6 +18407,7 @@ SplineSet
  5 698 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Phinthu Mai Ek Reordering" uni0E3A
 EndChar
 
 StartChar: uni0E49.low
@@ -18405,6 +18472,7 @@ SplineSet
  -195 867 -184 856 -165 856 c 259
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Phinthu Mai Tho Reordering" uni0E3A
 EndChar
 
 StartChar: uni0E4A.low
@@ -18483,6 +18551,7 @@ SplineSet
  -358 744 -340 731 -323 731 c 259
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Phinthu Mai Tri Reordering" uni0E3A
 EndChar
 
 StartChar: uni0E4B.low
@@ -18513,6 +18582,7 @@ SplineSet
  102 773 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Phinthu Mai Chattawa Reordering" uni0E3A
 EndChar
 
 StartChar: uni0E4C.low
@@ -18567,6 +18637,7 @@ SplineSet
  -136 753 -118 739 -101 739 c 259
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Phinthu Thanthakhat Reordering" uni0E3A
 EndChar
 
 StartChar: uni0E0D.descless
