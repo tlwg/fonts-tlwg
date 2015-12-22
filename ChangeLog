@@ -1,3 +1,23 @@
+2015-12-22  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Laksaman: Add Nasal mark for Patani Malay.
+
+	See similar log for Kinnari for details.
+
+	* sipa/Laksaman*.sfd:
+	  - Add "MLY " (Malay) language tag to all GSUB/GPOS lookups.
+	  - Copy U+0303 tildecomb to tildecomb.latin glyph and replace all
+	    references to it in precomposed Latin glyphs with the .latin
+	    variant.
+	  - Adjust U+0303 tildecomb glyph to fit Thai consonants,
+	    with anchors added.
+	  - Add AboveMark mark anchor to upper vowels and tildecomb to
+	    allow vertical stacking of multiple marks.
+	  - Import "'ccmp' Thai Tone Tilde Reordering" from Kinnari.
+	  - Add tildecomb to 'ccmp' for high mark variant,
+	    in the same class as upper vowels.
+	  - Bump font version to 003.008.
+
 2015-12-20  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	TlwgMono: Add plain glyphs for Patani Malay support.

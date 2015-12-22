@@ -4,7 +4,7 @@ FullName: Laksaman Italic
 FamilyName: Laksaman
 Weight: Regular
 Copyright: Laksaman, based on TH Sarabun New.\n\nCopyright (c) 2014 Theppitak Karoonboonyanan.\n\nTH Sarabun New:\n\nCopyright (c) 2010-2011 by Software Industry Promotion Agency (Public Organization) (SIPA). All rights reserved.\nCreated by : Suppakit CHALERMLARP.
-Version: 003.007
+Version: 003.008
 ItalicAngle: -12
 UnderlinePosition: -20
 UnderlineWidth: 30
@@ -19,7 +19,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1308745587
-ModificationTime: 1434948630
+ModificationTime: 1450761547
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -80,9 +80,10 @@ Lookup: 4 0 0 "'ccmp' Glyph Composition/Decomposition in Latin lookup 57"  {"'cc
 Lookup: 4 0 0 "<27,0> Canonical Decomposition in Latin lookup 61"  {"<27,0> Canonical Decomposition in Latin lookup 61 subtable"  } [<27,0> ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "<27,0> Canonical Decomposition in Latin lookup 62"  {"<27,0> Canonical Decomposition in Latin lookup 62 subtable"  } [<27,0> ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "<27,2>  lookup 63"  {"<27,2>  lookup 63 subtable"  } [<27,2> ('latn' <'dflt' > 'thai' <'dflt' > ) ]
-Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Tone Tilde Reordering"  {"'ccmp' Thai Tone Tilde Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Conditional Descender Removal"  {"'ccmp' Thai Conditional Descender Removal"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ccmp' Pali-Sanskrit Descender Removal"  {"'ccmp' Pali-Sanskrit Descender Removal"  } ['ccmp' ('thai' <'PAL ' 'SAN ' > ) ]
-Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai General Composition"  {"'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution"  {"Thai Descender Removal Single Substitution" ("descless" ) } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition"  {"Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment"  {"Thai Tone Nikhahit Attachment"  } []
@@ -108,24 +109,54 @@ Lookup: 1 0 0 "Thai Phinthu Mai Tri Reordering"  {"Thai Phinthu Mai Tri Reorderi
 Lookup: 1 0 0 "Thai Phinthu Mai Chattawa Reordering"  {"Thai Phinthu Mai Chattawa Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Thanthakhat Reordering"  {"Thai Phinthu Thanthakhat Reordering"  } []
 Lookup: 1 0 0 "Thai Phinthu Nikhahit Reordering"  {"Thai Phinthu Nikhahit Reordering"  } []
-Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
-Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
-Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 1 0 0 "Thai Mai Ek Tilde Reordering"  {"Thai Mai Ek Tilde Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Tho Tilde Reordering"  {"Thai Mai Tho Tilde Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Tri Tilde Reordering"  {"Thai Mai Tri Tilde Reordering"  } []
+Lookup: 1 0 0 "Thai Mai Chattawa Tilde Reordering"  {"Thai Mai Chattawa Tilde Reordering"  } []
+Lookup: 260 0 0 "'mark' Thai Above Base"  {"'mark' Thai Above Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Thai Below Base"  {"'mark' Thai Below Base"  } ['mark' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Above Mark"  {"'mkmk' Thai Above Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Thai Below Mark"  {"'mkmk' Thai Below Mark"  } ['mkmk' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 0"  {"'kern' Horizontal Kerning in Latin lookup 0 subtable"  } ['kern' ('latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+ChainSub2: glyph "'ccmp' Thai Tone Tilde Reordering"  0 0 0 4
+ String: 17 uni0E48 tildecomb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Ek Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Ek Tilde Reordering" 
+ String: 17 uni0E49 tildecomb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Tho Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Tho Tilde Reordering" 
+ String: 17 uni0E4A tildecomb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Tri Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Tri Tilde Reordering" 
+ String: 17 uni0E4B tildecomb
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "Thai Mai Chattawa Tilde Reordering" 
+  SeqLookup: 1 "Thai Mai Chattawa Tilde Reordering" 
+EndFPST
 ChainSub2: class "'ccmp' Thai General Composition"  7 7 1 7
   Class: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   Class: 7 uni0E33
   Class: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
-  Class: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
+  Class: 49 tildecomb uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
   Class: 23 uni0E47 uni0E4D uni0E4E
   Class: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
   BClass: 414 uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E0D uni0E0E uni0E0F uni0E10 uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1B uni0E1C uni0E1D uni0E1E uni0E1F uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E10.descless uni0E0D.descless dottedcircle
   BClass: 7 uni0E33
   BClass: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
-  BClass: 39 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
+  BClass: 49 tildecomb uni0E31 uni0E34 uni0E35 uni0E36 uni0E37
   BClass: 23 uni0E47 uni0E4D uni0E4E
   BClass: 98 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low uni0E4D.high uni0E47.high uni0E4E.high
  1 1 0
@@ -683,7 +714,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 396 12 7
+WinInfo: 228 12 7
 BeginPrivate: 5
 BlueValues 31 [-14 0 511 522 590 602 716 728]
 StdHW 4 [48]
@@ -692,7 +723,7 @@ StdVW 4 [54]
 StemSnapV 4 [54]
 EndPrivate
 AnchorClass2: "BelowMark"  "'mkmk' Thai Below Mark" "AboveMark"  "'mkmk' Thai Above Mark" "BelowBase"  "'mark' Thai Below Base" "AboveBase"  "'mark' Thai Above Base" 
-BeginChars: 65543 512
+BeginChars: 65543 513
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -6291,7 +6322,7 @@ DStem2: -65 0 0 0 0.504683 0.863305<32.8044 296.469 354.27 354.27>
 LayerCount: 2
 Fore
 Refer: 34 65 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 457 205 2
+Refer: 512 -1 N 1 0 0 1 457 205 2
 Validated: 1
 Kerns2: 463 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  462 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  461 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  460 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  459 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  458 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  457 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  456 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  201 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  193 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  191 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  159 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  90 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  58 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  56 -68 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -75 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  53 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 LCarets2: 1 0 
@@ -6676,7 +6707,7 @@ DStem2: 17 0 77 0 0.207912 0.978148<12.4747 659.502> 236 716 211 633 0.360953 -0
 LayerCount: 2
 Fore
 Refer: 47 78 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 489 205 2
+Refer: 512 -1 N 1 0 0 1 489 205 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" N tildecomb
@@ -6752,7 +6783,7 @@ VStem: 32 60<162.136 391.932> 338 40<789 828.457> 573 42<845.168 888> 660 60<319
 LayerCount: 2
 Fore
 Refer: 48 79 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 522 205 2
+Refer: 512 -1 N 1 0 0 1 522 205 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" O tildecomb
@@ -7166,7 +7197,7 @@ DStem2: 396.112 -15 455.706 -15 0.207912 0.978148<146.255 454.346>
 LayerCount: 2
 Fore
 Refer: 66 97 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 451 0 2
+Refer: 512 -1 N 1 0 0 1 451 0 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" a tildecomb
@@ -7551,7 +7582,7 @@ DStem2: 11.6619 -11 69.6619 -11 0.207912 0.978148<23.3046 423.404 452.215 475.30
 LayerCount: 2
 Fore
 Refer: 79 110 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 406 0 2
+Refer: 512 -1 N 1 0 0 1 406 0 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" n tildecomb
@@ -7627,7 +7658,7 @@ VStem: 23 58<111.488 301.097> 228 40<584 623.457> 463 42<640.168 683> 494 58<208
 LayerCount: 2
 Fore
 Refer: 80 111 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 412 0 2
+Refer: 512 -1 N 1 0 0 1 412 0 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" o tildecomb
@@ -9277,6 +9308,7 @@ SplineSet
  170 361 144 334 144 302 c 3
  144 281 161 269 182 269 c 259
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: uni0E09
@@ -13065,6 +13097,7 @@ VWidth: 1504
 Flags: W
 HStem: 698 47<-109.508 23.8328> 881 44<-180.521 -97.493>
 VStem: -244 49<789.135 865.905> -94 48<798.82 876.158> 149 57<874.666 931>
+AnchorPoint: "AboveMark" -38 637 mark 0
 AnchorPoint: "AboveMark" 37 990 basemark 0
 AnchorPoint: "AboveBase" -5 637 mark 0
 LayerCount: 2
@@ -13242,6 +13275,7 @@ Width: 0
 VWidth: 1504
 Flags: W
 HStem: 746 42<-354.299 -127.64> 863 44<-290.225 -112.317>
+AnchorPoint: "AboveMark" -38 637 mark 0
 AnchorPoint: "AboveMark" 37 990 basemark 0
 AnchorPoint: "AboveBase" -5 637 mark 0
 LayerCount: 2
@@ -13261,18 +13295,17 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-57 973 m 1,0,-1
-5 684 m 1,1,-1
- -100 725 -204 746 -305 746 c 3,4,-1
- -341 746 -381 743 -426 737 c 1,7,-1
- -404 831 -303 907 -188 907 c 3,10,-1
- -59 907 5 839 5 703 c 2,13,-1
- 5 684 l 1,1,-1
--41 742 m 1,14,-1
- -67 823 -119 863 -196 863 c 3,17,-1
- -266 863 -319 837 -355 784 c 1,20,-1
- -333 787 -309 788 -283 788 c 3,23,-1
- -187 788 -106 773 -41 742 c 1,14,-1
+5 684 m 1
+ -100 725 -204 746 -305 746 c 3
+ -341 746 -381 743 -426 737 c 1
+ -404 831 -303 907 -188 907 c 3
+ -59 907 5 839 5 703 c 2
+ 5 684 l 1
+-41 742 m 1
+ -67 823 -119 863 -196 863 c 3
+ -266 863 -319 837 -355 784 c 1
+ -333 787 -309 788 -283 788 c 3
+ -187 788 -106 773 -41 742 c 1
 EndSplineSet
 Validated: 1
 EndChar
@@ -13284,6 +13317,7 @@ VWidth: 1504
 Flags: W
 HStem: 746 42<-354.299 -127.64> 863 44<-290.225 -111.703>
 VStem: 8 49<940.032 973>
+AnchorPoint: "AboveMark" -38 637 mark 0
 AnchorPoint: "AboveMark" 37 990 basemark 0
 AnchorPoint: "AboveBase" -5 637 mark 0
 LayerCount: 2
@@ -13333,6 +13367,7 @@ VWidth: 1504
 Flags: W
 HStem: 746 42<-354.299 -127.64> 818 35<-16.8203 45.1348> 863 44<-290.446 -112.276> 931 35<-10.9312 54.0746>
 VStem: -58 35<868.191 918.793> 57 35<865.585 927.745>
+AnchorPoint: "AboveMark" -38 637 mark 0
 AnchorPoint: "AboveBase" -5 637 mark 0
 AnchorPoint: "AboveMark" 37 990 basemark 0
 LayerCount: 2
@@ -13403,6 +13438,7 @@ VWidth: 1504
 Flags: W
 HStem: 746 42<-354.299 -127.64> 863 44<-290.17 -126>
 DStem2: -172.125 684 -123.299 684 0.207912 0.978148<219.242 295.393> -53.3956 684 -3.71482 684 0.207912 0.978148<146.195 295.45>
+AnchorPoint: "AboveMark" -102 637 mark 0
 AnchorPoint: "AboveMark" -27 990 basemark 0
 AnchorPoint: "AboveBase" -5 637 mark 0
 LayerCount: 2
@@ -13447,7 +13483,7 @@ SplineSet
  8 973 l 1
  57 973 l 1
  5 725 l 1
- 6 718 6 712 6 705 c 3
+ 6 718 6 712 6 705 c 0
  6 698 6 691 5 684 c 1
 EndSplineSet
 Validated: 1
@@ -14323,6 +14359,7 @@ SplineSet
  68 1023 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Ek Tilde Reordering" tildecomb
 Substitution2: "Thai Phinthu Mai Ek Reordering" uni0E3A
 Substitution2: "Thai Sara UU Mai Ek Reordering" uni0E39
 Substitution2: "Thai Sara U Mai Ek Reordering" uni0E38
@@ -14388,6 +14425,7 @@ SplineSet
  -55 1156 -42 1146 -26 1146 c 259
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Tho Tilde Reordering" tildecomb
 Substitution2: "Thai Phinthu Mai Tho Reordering" uni0E3A
 Substitution2: "Thai Sara UU Mai Tho Reordering" uni0E39
 Substitution2: "Thai Sara U Mai Tho Reordering" uni0E38
@@ -14475,6 +14513,7 @@ SplineSet
  -60 1253 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Tri Tilde Reordering" tildecomb
 Substitution2: "Thai Phinthu Mai Tri Reordering" uni0E3A
 Substitution2: "Thai Sara UU Mai Tri Reordering" uni0E39
 Substitution2: "Thai Sara U Mai Tri Reordering" uni0E38
@@ -14510,6 +14549,7 @@ SplineSet
  158 1082 l 1
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Chattawa Tilde Reordering" tildecomb
 Substitution2: "Thai Phinthu Mai Chattawa Reordering" uni0E3A
 Substitution2: "Thai Sara UU Mai Chattawa Reordering" uni0E39
 Substitution2: "Thai Sara U Mai Chattawa Reordering" uni0E38
@@ -19680,7 +19720,7 @@ LayerCount: 2
 Fore
 Refer: 34 65 N 1 0 0 1 0 0 3
 Refer: 205 710 N 1 0 0 1 141 205 2
-Refer: 488 771 N 1 0 0 1 493 364 2
+Refer: 512 -1 N 1 0 0 1 493 364 2
 Validated: 1
 Kerns2: 463 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  462 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  461 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  460 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  459 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  458 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  457 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  456 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  201 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  193 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  191 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  159 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  90 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  58 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  56 -68 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -75 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  53 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 LCarets2: 1 0 
@@ -19704,7 +19744,7 @@ LayerCount: 2
 Fore
 Refer: 66 97 N 1 0 0 1 0 0 3
 Refer: 205 710 N 1 0 0 1 119 0 2
-Refer: 488 771 N 1 0 0 1 472 158 2
+Refer: 512 -1 N 1 0 0 1 472 158 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 62 subtable" acircumflex tildecomb
@@ -19907,7 +19947,7 @@ LayerCount: 2
 Fore
 Refer: 34 65 N 1 0 0 1 0 0 3
 Refer: 207 728 N 1 0 0 1 75 205 2
-Refer: 488 771 N 1 0 0 1 487 349 2
+Refer: 512 -1 N 1 0 0 1 487 349 2
 Validated: 1
 Kerns2: 463 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  462 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  461 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  460 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  459 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  458 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  457 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  456 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  201 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  193 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  191 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  159 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  90 -23 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  58 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  56 -68 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -75 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  53 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 LCarets2: 1 0 
@@ -19931,7 +19971,7 @@ LayerCount: 2
 Fore
 Refer: 66 97 N 1 0 0 1 0 0 3
 Refer: 207 728 N 1 0 0 1 71 0 2
-Refer: 488 771 N 1 0 0 1 484 141 2
+Refer: 512 -1 N 1 0 0 1 484 141 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 62 subtable" abreve tildecomb
@@ -20078,7 +20118,7 @@ DStem2: 17 0 75.3722 0 0.207912 0.978148<63.2533 372.73 423.717 693.029>
 LayerCount: 2
 Fore
 Refer: 38 69 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 421 205 2
+Refer: 512 -1 N 1 0 0 1 421 205 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" E tildecomb
@@ -20099,7 +20139,7 @@ VStem: 20 60<102.122 207.288> 212 40<584 623.457> 447 42<640.168 683> 465 52<319
 LayerCount: 2
 Fore
 Refer: 70 101 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 396 0 2
+Refer: 512 -1 N 1 0 0 1 396 0 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" e tildecomb
@@ -20260,7 +20300,7 @@ LayerCount: 2
 Fore
 Refer: 38 69 N 1 0 0 1 0 0 3
 Refer: 205 710 N 1 0 0 1 104 205 2
-Refer: 488 771 N 1 0 0 1 453 364 2
+Refer: 512 -1 N 1 0 0 1 453 364 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 62 subtable" Ecircumflex tildecomb
@@ -20283,7 +20323,7 @@ LayerCount: 2
 Fore
 Refer: 70 101 N 1 0 0 1 0 0 3
 Refer: 205 710 N 1 0 0 1 78 0 2
-Refer: 488 771 N 1 0 0 1 429 158 2
+Refer: 512 -1 N 1 0 0 1 429 158 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 62 subtable" ecircumflex tildecomb
@@ -20654,7 +20694,7 @@ LayerCount: 2
 Fore
 Refer: 48 79 N 1 0 0 1 0 0 3
 Refer: 205 710 N 1 0 0 1 206 205 2
-Refer: 488 771 N 1 0 0 1 554 364 2
+Refer: 512 -1 N 1 0 0 1 554 364 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 62 subtable" Ocircumflex tildecomb
@@ -20677,7 +20717,7 @@ LayerCount: 2
 Fore
 Refer: 80 111 N 1 0 0 1 0 0 3
 Refer: 205 710 N 1 0 0 1 96 0 2
-Refer: 488 771 N 1 0 0 1 447 158 2
+Refer: 512 -1 N 1 0 0 1 447 158 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 62 subtable" ocircumflex tildecomb
@@ -20862,7 +20902,7 @@ VStem: 32 60<162.136 391.603> 338 40<789 828.457> 573 42<845.168 888> 660 59<320
 LayerCount: 2
 Fore
 Refer: 483 416 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 522 205 2
+Refer: 512 -1 N 1 0 0 1 522 205 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 62 subtable" Ohorn tildecomb
@@ -20883,7 +20923,7 @@ VStem: 23 58<111.488 299.258> 230 40<584 623.457> 465 42<640.168 683> 494 59<208
 LayerCount: 2
 Fore
 Refer: 484 417 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 414 0 2
+Refer: 512 -1 N 1 0 0 1 414 0 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 62 subtable" ohorn tildecomb
@@ -21167,7 +21207,7 @@ DStem2: 12.8321 -14 70.407 -14 0.207912 0.978148<238.099 746.309> 492.407 -14 55
 LayerCount: 2
 Fore
 Refer: 485 431 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 514 205 2
+Refer: 512 -1 N 1 0 0 1 514 205 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 62 subtable" Uhorn tildecomb
@@ -21189,7 +21229,7 @@ DStem2: 9.41154 -14 69.0734 -14 0.207912 0.978148<186.716 478.706> 381.088 -14 4
 LayerCount: 2
 Fore
 Refer: 486 432 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 417 0 2
+Refer: 512 -1 N 1 0 0 1 417 0 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 62 subtable" uhorn tildecomb
@@ -21390,7 +21430,7 @@ DStem2: 155 716 87 716 0.371789 -0.928317<0 373.987> 182 0 239 0 0.207912 0.9781
 LayerCount: 2
 Fore
 Refer: 58 89 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 432 205 2
+Refer: 512 -1 N 1 0 0 1 432 205 2
 Validated: 1
 Kerns2: 486 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  484 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  482 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  480 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  475 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  471 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  469 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  467 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  466 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  455 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  453 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  451 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  449 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  447 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  445 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  443 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  441 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  439 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  437 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  435 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  433 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  431 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  429 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  427 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  425 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  423 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  421 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  419 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  413 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  411 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  409 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  407 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  405 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  403 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  401 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  399 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  397 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  396 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  395 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  394 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  393 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  392 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  391 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  390 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  389 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  388 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  387 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  386 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  385 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  384 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  383 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  382 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  381 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  380 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  379 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  378 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  377 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  376 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  375 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  374 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  200 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  198 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  190 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  189 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  188 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  187 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  186 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  184 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  183 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  182 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  181 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  180 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  179 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  178 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  173 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  172 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  171 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  170 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  169 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  168 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  167 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  166 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  165 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  164 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  163 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  162 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  135 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  134 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  133 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  132 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  131 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  130 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  86 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  84 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  83 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  82 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  81 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  80 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  79 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  78 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  72 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  70 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  68 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  66 -30 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  34 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 LCarets2: 1 0 
@@ -21413,7 +21453,7 @@ DStem2: 111 511 48 511 0.225158 -0.974322<0 444.397> 211 78 212 0 0.547117 0.837
 LayerCount: 2
 Fore
 Refer: 90 121 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 369 0 2
+Refer: 512 -1 N 1 0 0 1 369 0 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" y tildecomb
@@ -21825,7 +21865,7 @@ DStem2: 17 0 75 0 0.207912 0.978148<12.0589 731.748>
 LayerCount: 2
 Fore
 Refer: 42 73 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 268 205 2
+Refer: 512 -1 N 1 0 0 1 268 205 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" I tildecomb
@@ -21847,7 +21887,7 @@ DStem2: 14 0 71 0 0.207912 0.978148<11.851 522.288>
 LayerCount: 2
 Fore
 Refer: 194 305 N 1 0 0 1 0 0 3
-Refer: 488 771 N 1 0 0 1 221 0 2
+Refer: 512 -1 N 1 0 0 1 221 0 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" i tildecomb
@@ -21991,7 +22031,7 @@ DStem2: 20.8321 -14 78.407 -14 0.207912 0.978148<238.099 746.309> 500.407 -14 55
 LayerCount: 2
 Fore
 Refer: 54 85 N 1 0 0 1 8 0 2
-Refer: 488 771 N 1 0 0 1 514 205 2
+Refer: 512 -1 N 1 0 0 1 514 205 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" U tildecomb
@@ -22013,7 +22053,7 @@ DStem2: 9.41154 -14 69.0734 -14 0.207912 0.978148<186.716 478.706> 381.088 -14 4
 LayerCount: 2
 Fore
 Refer: 86 117 N 1 0 0 1 0 0 2
-Refer: 488 771 N 1 0 0 1 417 0 2
+Refer: 512 -1 N 1 0 0 1 417 0 2
 Validated: 1
 LCarets2: 1 0 
 Ligature2: "<27,0> Canonical Decomposition in Latin lookup 61 subtable" u tildecomb
@@ -22302,11 +22342,25 @@ Encoding: 771 771 488
 Width: 0
 VWidth: 1504
 Flags: W
-HStem: 590 45<-39.6553 42.0993> 632 48<-133.845 -53.6244>
-VStem: -184 40<584 623.457> 51 42<640.168 683>
+HStem: 695 38<-158.893 -48.8625> 744 38<-314.748 -208.609>
+VStem: -31 50<747.756 785>
+AnchorPoint: "AboveMark" -38 637 mark 0
+AnchorPoint: "AboveBase" -5 637 mark 0
+AnchorPoint: "AboveMark" 11 865 basemark 0
 LayerCount: 2
 Back
 SplineSet
+51 683 m 1xb0
+ 93 683 l 1
+ 78 621 47 590 2 590 c 3xb0
+ -11 590 -30 597 -55 611 c 0
+ -80 625 -96 632 -105 632 c 3
+ -122 632 -135 616 -144 584 c 1
+ -184 584 l 1
+ -168 648 -139 680 -96 680 c 3x70
+ -83 680 -65 673 -42 658 c 0
+ -19 643 0 635 15 635 c 3
+ 32 635 44 651 51 683 c 1xb0
 51 683 m 1
  93 683 l 1
  77.6667 621 47.3333 590 2 590 c 0
@@ -22321,19 +22375,21 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-51 683 m 1xb0
- 93 683 l 1
- 78 621 47 590 2 590 c 3xb0
- -11 590 -30 597 -55 611 c 0
- -80 625 -96 632 -105 632 c 3
- -122 632 -135 616 -144 584 c 1
- -184 584 l 1
- -168 648 -139 680 -96 680 c 3x70
- -83 680 -65 673 -42 658 c 0
- -19 643 0 635 15 635 c 3
- 32 635 44 651 51 683 c 1xb0
+-262 782 m 3
+ -184 782 -156 733 -88 733 c 3
+ -63 733 -42 750 -31 785 c 1
+ 19 785 l 1
+ 3 725 -35 695 -106 695 c 3
+ -171 695 -225 744 -272 744 c 3
+ -304 744 -328 716 -336 692 c 1
+ -386 692 l 1
+ -372 743 -333 782 -262 782 c 3
 EndSplineSet
 Validated: 1
+Substitution2: "Thai Mai Chattawa Tilde Reordering" uni0E4B
+Substitution2: "Thai Mai Tri Tilde Reordering" uni0E4A
+Substitution2: "Thai Mai Tho Tilde Reordering" uni0E49
+Substitution2: "Thai Mai Ek Tilde Reordering" uni0E48
 EndChar
 
 StartChar: acutecomb
@@ -23999,6 +24055,31 @@ SplineSet
  115 1029 l 1
  94 1021 70 1017 43 1017 c 3
  3 1017 -34 1039 -34 1079 c 3
+EndSplineSet
+Validated: 1
+EndChar
+
+StartChar: tildecomb.latin
+Encoding: 65542 -1 512
+Width: 0
+VWidth: 1504
+Flags: W
+HStem: 590 45<-39.6553 42.0993> 632 48<-133.845 -53.6244>
+VStem: -184 40<584 623.457> 51 42<640.168 683>
+LayerCount: 2
+Fore
+SplineSet
+51 683 m 1xb0
+ 93 683 l 1
+ 78 621 47 590 2 590 c 3xb0
+ -11 590 -30 597 -55 611 c 0
+ -80 625 -96 632 -105 632 c 3
+ -122 632 -135 616 -144 584 c 1
+ -184 584 l 1
+ -168 648 -139 680 -96 680 c 3x70
+ -83 680 -65 673 -42 658 c 0
+ -19 643 0 635 15 635 c 3
+ 32 635 44 651 51 683 c 1xb0
 EndSplineSet
 Validated: 1
 EndChar
