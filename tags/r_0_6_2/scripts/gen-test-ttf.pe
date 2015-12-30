@@ -1,0 +1,10 @@
+Open($1)
+SetFontNames("TTF"+$fontname, "TTF"+$familyname, "TTF"+$fullname)
+pref_fam=GetTTFName(0x409, 16)
+if (pref_fam != "")
+  SetTTFName(0x409, 16, "TTF"+pref_fam)
+endif
+SetFontOrder(2)
+SelectAll()
+AutoInstr()
+Generate($fontname + ".ttf")
