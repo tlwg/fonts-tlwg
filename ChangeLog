@@ -1,5 +1,24 @@
 2016-05-10  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
+	Drop synthesizations of Tahoma and MS Sans Serif
+
+	There are no actual close relations with the ones we provide.
+
+	Particularly for Tahoma, it caused Waree to get ahead of other
+	Thai fonts even though its <prefer> rule is removed,
+	as Tahoma gets prepended early in fontconfig's standard file
+	60-latin.conf, and Waree gets appended there.
+
+	Alternatively, having Waree appended at the last of the queue
+	would effectively render it unused. No point for doing that.
+
+	* fontconfig/Makefile.am,
+	  -fontconfig/89-tlwg-loma-synthetic.conf
+	  -fontconfig/89-tlwg-waree-synthetic.conf:
+	  - Remove synthesizing rules for Loma and Waree.
+
+2016-05-10  Theppitak Karoonboonyanan <theppitak@gmail.com>
+
 	* configure.ac: Post-release version suffix added.
 
 2015-12-30  Theppitak Karoonboonyanan <theppitak@gmail.com>

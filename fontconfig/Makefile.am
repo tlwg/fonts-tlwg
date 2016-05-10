@@ -12,9 +12,7 @@ CONFIG_FILES = \
 	89-tlwg-garuda-synthetic.conf \
 	89-tlwg-kinnari-synthetic.conf \
 	89-tlwg-laksaman-synthetic.conf \
-	89-tlwg-loma-synthetic.conf \
 	89-tlwg-umpush-synthetic.conf \
-	89-tlwg-waree-synthetic.conf \
 	$(NULL)
 
 EXTRA_DIST = $(CONFIG_FILES)
