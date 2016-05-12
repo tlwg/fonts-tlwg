@@ -1,3 +1,17 @@
+2016-05-12  Theppitak Karoonboonyanan <theppitak@gmail.com>
+
+	Promote Loma over Waree as sans-serif.
+
+	Loma's metrics is more optimized for strict point-size-based
+	line height so that top tone marks do not get clipped.
+
+	* fontconfig/Makefile.am,
+	  fontconfig/64-12-tlwg-loma.conf -> fontconfig/64-10-tlwg-loma.conf:
+	  - Rename Loma fontconfig to get higher precedence than Waree.
+
+	Thanks Samphan Raruenrom for the report on a Facebook post,
+	and other people for providing useful comments.
+
 2016-05-10  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
 	Drop synthesizations of Tahoma and MS Sans Serif

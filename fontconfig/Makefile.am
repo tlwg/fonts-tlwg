@@ -1,8 +1,8 @@
 CONFIG_FILES = \
 	64-01-tlwg-kinnari.conf \
 	64-02-tlwg-norasi.conf \
+	64-10-tlwg-loma.conf \
 	64-11-tlwg-waree.conf \
-	64-12-tlwg-loma.conf \
 	64-13-tlwg-garuda.conf \
 	64-14-tlwg-umpush.conf \
 	64-15-laksaman.conf \
