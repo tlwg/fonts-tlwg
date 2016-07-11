@@ -1,5 +1,7 @@
 AC_PREREQ(2.59)
-AC_INIT(fonts-tlwg, 0.6.3, thai-linux-foss-devel@googlegroups.com)
+AC_INIT(fonts-tlwg,
+        m4_esyscmd([build-aux/git-version-gen]),
+        thai-linux-foss-devel@googlegroups.com)
 AC_CONFIG_SRCDIR([nf/Garuda.sfd])
 
 AM_INIT_AUTOMAKE(dist-xz no-dist-gzip -Wno-portability)

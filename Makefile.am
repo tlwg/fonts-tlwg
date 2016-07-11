@@ -61,6 +61,9 @@ if INCLUDE_PFB
 endif
 endif # INCLUDE_XFONTSDIR
 
+dist-hook:
+	echo $(VERSION) > $(distdir)/VERSION
+
 if INCLUDE_LATEX
 tdsdist_tgz = $(LATEX_PACKAGE)-$(VERSION).tds.tar.gz
 ctandist_tgz = $(LATEX_PACKAGE)-$(VERSION).ctan.tar.gz
