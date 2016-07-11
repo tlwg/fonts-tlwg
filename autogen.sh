@@ -3,5 +3,6 @@
 set -x
 aclocal
 automake --add-missing
-autoconf
+# Use -f so git-version-gen does refresh
+autoconf -f
 
