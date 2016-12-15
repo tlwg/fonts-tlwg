@@ -1,6 +1,10 @@
 MAINTAINERCLEANFILES = Makefile.in configure aclocal.m4
 
-EXTRA_DIST = ChangeLog.thai-ttf GPL
+EXTRA_DIST =	\
+	ChangeLog.thai-ttf		\
+	GPL				\
+	build-aux/git-version-gen	\
+	$(NULL)
 
 SUBDIRS = scripts latex nf nectec sipa tlwg fontconfig tests
 
