@@ -4,7 +4,7 @@
 %
 % Copyright (C) 1999 National Electronics and Computer Technology Center
 % (NECTEC), Thailand.  All rights reserved.
-% 
+%
 % It may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
 % of this license or (at your option) any later version.
@@ -12,23 +12,32 @@
 %   http://www.latex-project.org/lppl.txt
 % and version 1.3 or later is part of all distributions of LaTeX
 % version 2005/12/01 or later.
-% 
+%
 % This work has the LPPL maintenance status "maintained".
-% 
+%
 % The Current Maintainer of this work is Theppitak Karoonboonyanan.
-% 
+%
+% 2017/05/11 Abhabongse Janthong <abhabongse@gmail.com>
+%            - add font scaling
 % 2004/02/05 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 %            - first release (based on lthgaruda.fd)
 
 \ProvidesFile{lthpurisa.fd}[2004/02/05 v1.0 Thai font definitions]
 
+% Check if the scale factor has been defined
+\ifcsname fontstlwg@scale\endcsname
+  \edef\fontstlwg@@scale{s * [\csname fontstlwg@scale\endcsname] }%
+\else
+  \def\fontstlwg@@scale{s * }%
+\fi
+
 % Primary declarations
 \DeclareFontFamily{LTH}{purisa}{}
-\DeclareFontShape{LTH}{purisa}{m}{n}{<->s * purisa}{}
-\DeclareFontShape{LTH}{purisa}{m}{sl}{<->s * purisa_o}{}
+\DeclareFontShape{LTH}{purisa}{m}{n}{<-> \fontstlwg@@scale purisa}{}
+\DeclareFontShape{LTH}{purisa}{m}{sl}{<-> \fontstlwg@@scale purisa_o}{}
 %%%%%%% bold series
-\DeclareFontShape{LTH}{purisa}{b}{n}{<->s * purisa_b}{}
-\DeclareFontShape{LTH}{purisa}{b}{sl}{<->s * purisa_bo}{}
+\DeclareFontShape{LTH}{purisa}{b}{n}{<-> \fontstlwg@@scale purisa_b}{}
+\DeclareFontShape{LTH}{purisa}{b}{sl}{<-> \fontstlwg@@scale purisa_bo}{}
 
 % Substitutions
 \DeclareFontShape{LTH}{purisa}{m}{it}{<->ssub * purisa/m/sl}{}
@@ -39,6 +48,6 @@
 \DeclareFontShape{LTH}{purisa}{bx}{it}{<->ssub * purisa/b/sl}{}
 \endinput
 
-% 
+%
 % EOF
 %
