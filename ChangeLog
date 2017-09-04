@@ -1,3 +1,14 @@
+2017-09-04  Abhabongse Janthong <abhabongse@gmail.com>
+
+	LaTeX: Fix familydefault upon switching between scripts
+
+	* latex/fonts-tlwg.sty:
+	  - Also redefine \familydefault in \thaitext and \latintext
+	* latex/examples/Makefile.am, +latex/examples/testsans.tex:
+	  - Add test doc with \normalfont macro
+
+	https://github.com/tlwg/fonts-tlwg/issues/1
+
 2016-12-15  Theppitak Karoonboonyanan <theppitak@gmail.com>
 
 	Include git-version-gen in tarball

@@ -1,0 +1,37 @@
+%%
+%% Test sans option with \normalfont
+%% 2017/05/10 Abhabongse Janthong <abhabongse@gmail.edu>
+%% 	        - write a new test reproducing errors
+%%
+\documentclass[a4paper]{article}
+\usepackage[thai]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[sans,sflaksaman,rmnorasi]{fonts-tlwg}
+
+\begin{document}
+
+    \begin{tabbing}
+        {\usefont{LTH}{norasi}{b}{n}XXXXXXXXXXXXXXXXXXXXXXXXX}\=
+        {\usefont{LTH}{norasi}{b}{n}XXXXXXXXXXXXXXXXXXXXXXXXX}\kill
+        \hspace{1em}
+        ๏ เป็นมนุษย์สุดประเสริฐเลิศคุณค่า \> กว่าบรรดาฝูงสัตว์เดรัจฉาน \\
+        จงฝ่าฟันพัฒนาวิชาการ          \> อย่าล้างผลาญฤๅเข่นฆ่าบีฑาใคร\\
+        ไม่ถือโทษโกรธแช่งซัดฮึดฮัดด่า    \> หัดอภัยเหมือนกีฬาอัชฌาสัย \\
+        ปฏิบัติประพฤติกฎกำหนดใจ       \> พูดจาให้จ๊ะๆ จ๋าๆ น่าฟังเอย ฯ\\
+    \end{tabbing}
+
+    % Should switch to defaultfont, which should have been \thaisffamily
+    ประโยคภาษาไทย \normalfont ประโยคภาษาไทย
+
+    \bigskip
+    \begin{tabbing}
+        {\usefont{LTH}{norasi}{b}{n}XXXXXXXXXXXXXXXXXXXXXXXXX}\=
+        {\usefont{LTH}{norasi}{b}{n}XXXXXXXXXXXXXXXXXXXXXXXXX}\kill
+        \hspace{1em}
+        ๏ เป็นมนุษย์สุดประเสริฐเลิศคุณค่า \> กว่าบรรดาฝูงสัตว์เดรัจฉาน \\
+        จงฝ่าฟันพัฒนาวิชาการ          \> อย่าล้างผลาญฤๅเข่นฆ่าบีฑาใคร\\
+        ไม่ถือโทษโกรธแช่งซัดฮึดฮัดด่า    \> หัดอภัยเหมือนกีฬาอัชฌาสัย \\
+        ปฏิบัติประพฤติกฎกำหนดใจ       \> พูดจาให้จ๊ะๆ จ๋าๆ น่าฟังเอย ฯ\\
+    \end{tabbing}
+
+\end{document}

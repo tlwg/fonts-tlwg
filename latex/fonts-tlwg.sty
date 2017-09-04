@@ -64,6 +64,7 @@
 
 \DeclareRobustCommand{\thaitext}{%
   \fontencoding{LTH}\fontfamily{\thaifamilydefault}\selectfont
+  \def\familydefault{\thaifamilydefault}%
   \def\rmdefault{\thairmdefault}%
   \def\sfdefault{\thaisfdefault}%
   \def\ttdefault{\thaittdefault}%
@@ -71,6 +72,7 @@
 
 \DeclareRobustCommand{\latintext}{%
   \fontencoding{\latinencoding}\fontfamily{\englishfamilydefault}\selectfont
+  \def\familydefault{\englishfamilydefault}%
   \def\rmdefault{\englishrmdefault}%
   \def\sfdefault{\englishsfdefault}%
   \def\ttdefault{\englishttdefault}%
