@@ -4,7 +4,7 @@
 %
 % Copyright (C) 1999 National Electronics and Computer Technology Center
 % (NECTEC), Thailand.  All rights reserved.
-% 
+%
 % It may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
 % of this license or (at your option) any later version.
@@ -12,13 +12,16 @@
 %   http://www.latex-project.org/lppl.txt
 % and version 1.3 or later is part of all distributions of LaTeX
 % version 2005/12/01 or later.
-% 
+%
 % This work has the LPPL maintenance status "maintained".
-% 
+%
 % The Current Maintainer of this work is Theppitak Karoonboonyanan.
-% 
-
+%
+\NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{fonts-tlwg}[2014/07/05 v1.1 Thai TLWG Fonts]
+
+\RequirePackage{xkeyval,etoolbox}
+
 
 \newcommand\thairmdefault{norasi}
 \newcommand\thaisfdefault{garuda}
@@ -30,37 +33,41 @@
 \newcommand{\thaifamilydefault}{\thairmdefault}
 \newcommand{\englishfamilydefault}{\englishrmdefault}
 
+% Introduce scaled option
+\newrobustcmd*{\fontstlwg@scale}{1}
+\DeclareOptionX{scaled}{\renewrobustcmd*{\fontstlwg@scale}{#1}}
+
 % Use sans-serif font by default
-\DeclareOption{sans}{
+\DeclareOptionX{sans}{
   \renewcommand{\thaifamilydefault}{\thaisfdefault}
   \renewcommand{\englishfamilydefault}{\englishsfdefault}
 }
 
 % Set default roman, sans-serif, and teletype fonts
-\DeclareOption{rmkinnari}{\renewcommand{\thairmdefault}{kinnari}}
-\DeclareOption{rmnorasi}{\renewcommand{\thairmdefault}{norasi}}
-\DeclareOption{sfgaruda}{\renewcommand{\thaisfdefault}{garuda}}
-\DeclareOption{sflaksaman}{\renewcommand{\thaisfdefault}{laksaman}}
-\DeclareOption{sfumpush}{\renewcommand{\thaisfdefault}{umpush}}
-\DeclareOption{sfloma}{\renewcommand{\thaisfdefault}{loma}}
-\DeclareOption{sfwaree}{\renewcommand{\thaisfdefault}{waree}}
-\DeclareOption{ttttype}{\renewcommand{\thaittdefault}{ttype}}
-\DeclareOption{ttttypist}{\renewcommand{\thaittdefault}{ttypist}}
+\DeclareOptionX{rmkinnari}{\renewcommand{\thairmdefault}{kinnari}}
+\DeclareOptionX{rmnorasi}{\renewcommand{\thairmdefault}{norasi}}
+\DeclareOptionX{sfgaruda}{\renewcommand{\thaisfdefault}{garuda}}
+\DeclareOptionX{sflaksaman}{\renewcommand{\thaisfdefault}{laksaman}}
+\DeclareOptionX{sfumpush}{\renewcommand{\thaisfdefault}{umpush}}
+\DeclareOptionX{sfloma}{\renewcommand{\thaisfdefault}{loma}}
+\DeclareOptionX{sfwaree}{\renewcommand{\thaisfdefault}{waree}}
+\DeclareOptionX{ttttype}{\renewcommand{\thaittdefault}{ttype}}
+\DeclareOptionX{ttttypist}{\renewcommand{\thaittdefault}{ttypist}}
 
 % Set default font
-\DeclareOption{kinnari}{\renewcommand{\thaifamilydefault}{kinnari}}
-\DeclareOption{garuda}{\renewcommand{\thaifamilydefault}{garuda}}
-\DeclareOption{norasi}{\renewcommand{\thaifamilydefault}{norasi}}
-\DeclareOption{laksaman}{\renewcommand{\thaifamilydefault}{laksaman}}
-\DeclareOption{loma}{\renewcommand{\thaifamilydefault}{loma}}
-\DeclareOption{purisa}{\renewcommand{\thaifamilydefault}{purisa}}
-\DeclareOption{sawasdee}{\renewcommand{\thaifamilydefault}{sawasdee}}
-\DeclareOption{ttype}{\renewcommand{\thaifamilydefault}{ttype}}
-\DeclareOption{ttypist}{\renewcommand{\thaifamilydefault}{ttypist}}
-\DeclareOption{umpush}{\renewcommand{\thaifamilydefault}{umpush}}
-\DeclareOption{waree}{\renewcommand{\thaifamilydefault}{waree}}
+\DeclareOptionX{kinnari}{\renewcommand{\thaifamilydefault}{kinnari}}
+\DeclareOptionX{garuda}{\renewcommand{\thaifamilydefault}{garuda}}
+\DeclareOptionX{norasi}{\renewcommand{\thaifamilydefault}{norasi}}
+\DeclareOptionX{laksaman}{\renewcommand{\thaifamilydefault}{laksaman}}
+\DeclareOptionX{loma}{\renewcommand{\thaifamilydefault}{loma}}
+\DeclareOptionX{purisa}{\renewcommand{\thaifamilydefault}{purisa}}
+\DeclareOptionX{sawasdee}{\renewcommand{\thaifamilydefault}{sawasdee}}
+\DeclareOptionX{ttype}{\renewcommand{\thaifamilydefault}{ttype}}
+\DeclareOptionX{ttypist}{\renewcommand{\thaifamilydefault}{ttypist}}
+\DeclareOptionX{umpush}{\renewcommand{\thaifamilydefault}{umpush}}
+\DeclareOptionX{waree}{\renewcommand{\thaifamilydefault}{waree}}
 
-\ProcessOptions\relax
+\ProcessOptionsX\relax
 
 \DeclareRobustCommand{\thaitext}{%
   \fontencoding{LTH}\fontfamily{\thaifamilydefault}\selectfont
