@@ -1,3 +1,32 @@
+2017-09-27  Abhabongse Janthong <abhabongse@gmail.com>
+
+	LaTeX: Add font scaling option
+
+	* latex/fonts-tlwg.sty:
+	  - Require package xkeyval and use \DeclareOptionX instead of
+	    \DeclareOption to allow options with value
+	  - Also use \ProcessOptionsX instead of \ProcessOptions
+	  - Add option 'scale' and define \fontstlwg@scale command from
+	    its value
+	* latex/lthgaruda.fd:
+	* latex/lthkinnari.fd:
+	* latex/lthlaksaman.fd:
+	* latex/lthloma.fd:
+	* latex/lthnorasi.fd:
+	* latex/lthpurisa.fd:
+	* latex/lthsawasdee.fd:
+	* latex/lthttype.fd:
+	* latex/lthttypist.fd:
+	* latex/lthumpush.fd:
+	* latex/lthwaree.fd:
+	  - Check if \fontstlwg@scale has been defined and use it
+	    as scaling factor in \DeclareFontShape
+	* latex/README.latex:
+	  - Document the new 'scale' option
+	* latex/examples/testscaled-120.tex:
+	* latex/examples/testscaled-65.tex:
+	  - Add test docs
+
 2017-09-04  Abhabongse Janthong <abhabongse@gmail.com>
 
 	LaTeX: Fix familydefault upon switching between scripts
