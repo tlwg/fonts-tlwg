@@ -4,7 +4,7 @@
 %
 % Copyright (C) 1999 National Electronics and Computer Technology Center
 % (NECTEC), Thailand.  All rights reserved.
-% 
+%
 % It may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
 % of this license or (at your option) any later version.
@@ -12,23 +12,32 @@
 %   http://www.latex-project.org/lppl.txt
 % and version 1.3 or later is part of all distributions of LaTeX
 % version 2005/12/01 or later.
-% 
+%
 % This work has the LPPL maintenance status "maintained".
-% 
+%
 % The Current Maintainer of this work is Theppitak Karoonboonyanan.
-% 
+%
+% 2017/09/11 Abhabongse Janthong <abhabongse@gmail.com>
+%            - add font scaling
 % 2008/01/21 Theppitak Karoonboonyanan <thep@linux.thai.net>
 %            - first version
 
 \ProvidesFile{lthwaree.fd}[2008/01/21 v1.0 Thai font definitions]
 
+% Check if the scale factor has been defined
+\ifcsname fontstlwg@scale\endcsname
+  \edef\fontstlwg@@scale{s * [\csname fontstlwg@scale\endcsname] }%
+\else
+  \def\fontstlwg@@scale{s * }%
+\fi
+
 % Primary declarations
 \DeclareFontFamily{LTH}{waree}{}
-\DeclareFontShape{LTH}{waree}{m}{n}{<->s * waree}{}
-\DeclareFontShape{LTH}{waree}{m}{sl}{<->s * waree_o}{}
+\DeclareFontShape{LTH}{waree}{m}{n}{<-> \fontstlwg@@scale waree}{}
+\DeclareFontShape{LTH}{waree}{m}{sl}{<-> \fontstlwg@@scale waree_o}{}
 %%%%%%% bold series
-\DeclareFontShape{LTH}{waree}{b}{n}{<->s * waree_b}{}
-\DeclareFontShape{LTH}{waree}{b}{sl}{<->s * waree_bo}{}
+\DeclareFontShape{LTH}{waree}{b}{n}{<-> \fontstlwg@@scale waree_b}{}
+\DeclareFontShape{LTH}{waree}{b}{sl}{<-> \fontstlwg@@scale waree_bo}{}
 
 % Substitutions
 \DeclareFontShape{LTH}{waree}{m}{it}{<->ssub * waree/m/sl}{}
@@ -39,6 +48,6 @@
 \DeclareFontShape{LTH}{waree}{bx}{it}{<->ssub * waree/b/sl}{}
 \endinput
 
-% 
+%
 % EOF
 %

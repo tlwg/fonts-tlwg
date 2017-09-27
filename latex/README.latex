@@ -52,6 +52,18 @@ in the document when switching to Thai in Babel:
   These options define the default Thai font when switching to Thai language
   in Babel.  They do not define fonts for the three families.
 
+
+There is also another option for this package which would scale all Thai fonts
+up or down by a given factor value. This is useful when there are discrepancies
+between the size of the font for Latin script and the size of Thai fonts in
+this package.
+
+* Specifying the font scaling factor for every font in this package:
+
+    - scale=<value>  : Set the scaling factor to the specified value.
+                       The default value is 1.
+
+
 Example:
 
 * To use "laksaman" font all over the document (e.g. in Thai official letters):
@@ -74,6 +86,10 @@ Example:
 
     \usepackage[laksaman,rmkinnari]{fonts-tlwg}
 
+* To use "laksaman" font with the size 20% larger than normal:
+
+    \usepackage[laksaman,scaled=1.2]{fonts-tlwg}
+
 
 \USEFONT COMMAND
 ----------------
@@ -93,4 +109,3 @@ text portions, for example:
   slant shape:
 
     \usefont{LTH}{umpush}{l}{sl}
-
