@@ -1,6 +1,8 @@
 EXAMPLES = \
 	teststd.tex	\
 	testsans.tex	\
+	testscaled-120.tex	\
+	testscaled-65.tex	\
 	$(NULL)
 
 EXTRA_DIST = $(EXAMPLES)
