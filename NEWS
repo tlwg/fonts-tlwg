@@ -1,3 +1,14 @@
+0.6.5 (2018-04-24)
+=====
+- Convert source files to recent Fontforge format.
+- Move fontconfig templates to /usr/share/fontconfig,
+  according to recent fontconfig change.
+- Normalize TTFWeight for non-bold, non-light fonts,
+  so some apps like EditPad can classify the weight correctly.
+  (Thanks @alysdexia for the report in Issue #5.)
+- Add missing Latin ligatures to Laksaman, to fullfill LaTeX typesetting.
+  (Thanks Kittipitch Meesawat for the report in a KKLUG meeting.)
+
 0.6.4 (2017-10-03) : The "TeXnical Boost" release
 =====
 - Use package versioning based on Git snapshot.
