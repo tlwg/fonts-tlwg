@@ -21,6 +21,14 @@ ltxtfm_DATA = $(LTX_TFMFILES) $(LTX_RTFMFILES)
 
 ltxvf_DATA = $(LTX_VFFILES)
 
+# OpenType fonts
+
+ltxotfdir = $(texmfdir)/fonts/opentype/public/$(LATEX_PACKAGE)
+
+LTX_OTFFILES = $(FONTSOURCES:.sfd=.otf)
+
+ltxotf_DATA = ${LTX_OTFFILES}
+
 # Local Rules
 
 thai-dummy.afm:
