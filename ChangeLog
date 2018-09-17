@@ -1,3 +1,21 @@
+2018-09-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	OTF, WOFF: Do not strip PUA glyphs
+
+	This is to improve binary reproducibility by avoiding
+	modification on the fly.
+
+	The PUA glyphs should not take too much space,
+	as they are all references.
+
+	They could not be removed from the font sources, BTW,
+	as LaTeX virtual fonts still rely on them.
+
+	* scripts/gen-otf.pe:
+	* scripts/gen-test-otf.pe:
+	* scripts/gen-woff.pe:
+	  - Remove rules for clearing PUA glyphs.
+
 2018-07-26  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	LaTeX: install OpenType fonts for XeTeX
