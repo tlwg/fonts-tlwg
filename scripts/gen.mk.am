@@ -67,7 +67,7 @@ PS%.afm PS%.pfb: %.sfd
 	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-test-pfb.pe $<
 
 %.ttf: %.sfd
-	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-ttf.pe $<
+	$(top_srcdir)/scripts/gen-ttf.py $<
 
 %.otf: %.sfd
 	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-otf.pe $<

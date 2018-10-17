@@ -19,6 +19,11 @@ AC_ARG_ENABLE(ttf,
                               [disable TTF generation])],
               , enable_ttf="yes")
 if test "x$enable_ttf" = "xyes"; then
+  dnl TTF generation requires "fontforge" python module
+  AM_PATH_PYTHON([2.7])
+  AX_PYTHON_MODULE([fontforge],[fatal],[python])
+
+  dnl Check TTF installation dir
   AC_ARG_WITH(ttfdir,
     [AC_HELP_STRING([--with-ttfdir=DIR],
                     [font directory in DIR [PREFIX/share/fonts/truetype/thai]])],

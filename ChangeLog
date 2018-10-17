@@ -1,5 +1,17 @@
 2018-10-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
+	TTF: Generate TTFs from 'Quad' layer
+
+	* scripts/gen-ttf.py:
+	  - Fix script to generate TTF in current dir,
+	    not in the same dir as SFD
+	* configure.ac:
+	  - Check for "fontforge" Python module
+	* scripts/gen.mk.am:
+	  - Replace TTF generation with Python script
+
+2018-10-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
 	Waree: Add Quad layer with quadratic splines
 
 	* tlwg/Waree*.sfd:
