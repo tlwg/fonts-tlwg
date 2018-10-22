@@ -1,3 +1,14 @@
+2018-10-22  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Test TTF: Generate test TTFs from 'Quad' layer
+
+	* scripts/Makefile.am, +scripts/gen-test-ttf.py:
+	  - Rewrite gen-test-ttf.pe in Python
+	* configure.ac:
+	  - Check for "fontforge" Python module on --enable-testfont option
+	* scripts/gen.mk.am:
+	  - Replace test TTF generation with Python script
+
 2018-10-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	TTF: Generate TTFs from 'Quad' layer

@@ -58,7 +58,7 @@ CLEANFILES = *.ttf *.g2n *.pfb *.afm *.pfm *.otf *.enc *.tfm
 SUFFIXES: .sfd .ttf .otf .woff .pfb
 
 TTF%.ttf: %.sfd
-	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-test-ttf.pe $<
+	$(top_srcdir)/scripts/gen-test-ttf.py $<
 
 OTF%.otf: %.sfd
 	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-test-otf.pe $<
