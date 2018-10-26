@@ -15,9 +15,9 @@ dnl
 dnl Check options
 dnl
 AC_ARG_ENABLE(ttf,
-              [AC_HELP_STRING([--disable-ttf],
-                              [disable TTF generation])],
-              , enable_ttf="yes")
+              [AC_HELP_STRING([--enable-ttf],
+                              [enable TTF generation])],
+              , enable_ttf="no")
 if test "x$enable_ttf" = "xyes"; then
   dnl TTF generation requires "fontforge" python module
   AM_PATH_PYTHON([2.7])
@@ -50,9 +50,9 @@ if test "x$enable_pfb" = "xyes"; then
 fi
 
 AC_ARG_ENABLE(otf,
-              [AC_HELP_STRING([--enable-otf],
-                              [enable OpenType generation])],
-              , enable_otf="no")
+              [AC_HELP_STRING([--disable-otf],
+                              [disable OTF generation])],
+              , enable_otf="yes")
 if test "x$enable_otf" = "xyes"; then
   AC_ARG_WITH(otfdir,
     [AC_HELP_STRING([--with-otfdir=DIR],
