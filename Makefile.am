@@ -70,9 +70,11 @@ dist-hook:
 
 if INCLUDE_LATEX
 tdsdist_tgz = $(LATEX_PACKAGE)-$(VERSION).tds.tar.gz
+tdsdist_nv_tgz = $(LATEX_PACKAGE).tds.tar.gz
 ctandist_tgz = $(LATEX_PACKAGE)-$(VERSION).ctan.tar.gz
 
 tdsdist_zip = $(LATEX_PACKAGE)-$(VERSION).tds.zip
+tdsdist_nv_zip = $(LATEX_PACKAGE).tds.zip
 ctandist_zip = $(LATEX_PACKAGE)-$(VERSION).ctan.zip
 
 tdsdistdir = $(LATEX_PACKAGE)-$(VERSION)-tds
@@ -105,13 +107,17 @@ dist-tds-zip: inst-tds
 dist-tds: dist-tds-zip
 
 dist-ctan-tgz: dist-tds-tgz distdir
-	rm -f $(ctandist_tgz)
-	tar cf - $(tdsdist_tgz) $(distdir) | gzip -9 -c > $(ctandist_tgz)
+	rm -f $(ctandist_tgz) $(tdsdist_nv_tgz)
+	cp $(tdsdist_tgz) $(tdsdist_nv_tgz)
+	tar cf - $(tdsdist_nv_tgz) $(distdir) | gzip -9 -c > $(ctandist_tgz)
+	rm $(tdsdist_nv_tgz)
 	$(am__remove_distdir)
 
 dist-ctan-zip: dist-tds-zip distdir
-	rm -f $(ctandist_zip)
-	zip -r $(ctandist_zip) $(tdsdist_zip) $(distdir)
+	rm -f $(ctandist_zip) $(tdsdist_nv_zip)
+	cp $(tdsdist_zip) $(tdsdist_nv_zip)
+	zip -r $(ctandist_zip) $(tdsdist_nv_zip) $(distdir)
+	rm $(tdsdist_nv_zip)
 	$(am__remove_distdir)
 
 dist-ctan: dist-ctan-zip
