@@ -19,68 +19,120 @@
 %
 
 \ProvidesPackage{fonts-tlwg}[2014/07/05 v1.1 Thai TLWG Fonts]
-\RequirePackage{xkeyval}
+\RequirePackage{ifxetex,ifluatex,xkeyval}
 
-\newcommand\thairmdefault{norasi}
-\newcommand\thaisfdefault{garuda}
-\newcommand\thaittdefault{ttypist}
-\newcommand\englishrmdefault{cmr}
-\newcommand\englishsfdefault{cmss}
-\newcommand\englishttdefault{cmtt}
+\newif\iffontstlwg@otf
+\ifxetex
+  \fontstlwg@otftrue
 
-\newcommand{\thaifamilydefault}{\thairmdefault}
-\newcommand{\englishfamilydefault}{\englishrmdefault}
+\else\ifluatex
+  \fontstlwg@otftrue
+\else  % [pdf]LaTeX
+  \fontstlwg@otffalse
+\fi\fi
+
+\iffontstlwg@otf
+  \RequirePackage{fontspec}
+\fi
 
 % Introduce scaled option
 \newcommand*{\fontstlwg@scale}{1}
 \DeclareOptionX{scale}{\renewcommand*{\fontstlwg@scale}{#1}}
 
-% Use sans-serif font by default
-\DeclareOptionX{sans}{
-  \renewcommand{\thaifamilydefault}{\thaisfdefault}
-  \renewcommand{\englishfamilydefault}{\englishsfdefault}
-}
+% Font options for XeTeX and LuaTeX mode
+\iffontstlwg@otf
 
-% Set default roman, sans-serif, and teletype fonts
-\DeclareOptionX{rmkinnari}{\renewcommand{\thairmdefault}{kinnari}}
-\DeclareOptionX{rmnorasi}{\renewcommand{\thairmdefault}{norasi}}
-\DeclareOptionX{sfgaruda}{\renewcommand{\thaisfdefault}{garuda}}
-\DeclareOptionX{sflaksaman}{\renewcommand{\thaisfdefault}{laksaman}}
-\DeclareOptionX{sfumpush}{\renewcommand{\thaisfdefault}{umpush}}
-\DeclareOptionX{sfloma}{\renewcommand{\thaisfdefault}{loma}}
-\DeclareOptionX{sfwaree}{\renewcommand{\thaisfdefault}{waree}}
-\DeclareOptionX{ttttype}{\renewcommand{\thaittdefault}{ttype}}
-\DeclareOptionX{ttttypist}{\renewcommand{\thaittdefault}{ttypist}}
+  % Font families with regular, oblique, bold, and bold-oblique.
+  \defaultfontfeatures[Garuda,Loma,Purisa,Sawasdee,TlwgMono,TlwgTypewriter,%
+                       TlwgTypist,TlwgTypo,Umpush,Waree]{
+      Scale           = \fontstlwg@scale ,
+      Extension       = .otf ,
+      ItalicFont      = *-Oblique ,
+      BoldFont        = *-Bold ,
+      BoldItalicFont  = *-BoldOblique ,
+      Script          = Thai
+  }
+  % Font families with regular, italic, bold, and bold-italic.
+  \defaultfontfeatures[Laksaman]{
+      Scale           = \fontstlwg@scale ,
+      Extension       = .otf ,
+      ItalicFont      = *-Italic ,
+      BoldFont        = *-Bold ,
+      BoldItalicFont  = *-BoldItalic ,
+      Script          = Thai
+  }
+  % Font families with regular, italic, oblique, bold, 
+  % bold-italic, and bold-oblique.
+  \defaultfontfeatures[Kinnari,Norasi]{
+      Scale           = \fontstlwg@scale ,
+      Extension       = .otf ,
+      ItalicFont      = *-Italic ,
+      SlantedFont     = *-Oblique ,
+      BoldFont        = *-Bold ,
+      BoldItalicFont  = *-BoldItalic ,
+      BoldSlantedFont = *-BoldOblique ,
+      Script          = Thai
+  }
 
-% Set default font
-\DeclareOptionX{kinnari}{\renewcommand{\thaifamilydefault}{kinnari}}
-\DeclareOptionX{garuda}{\renewcommand{\thaifamilydefault}{garuda}}
-\DeclareOptionX{norasi}{\renewcommand{\thaifamilydefault}{norasi}}
-\DeclareOptionX{laksaman}{\renewcommand{\thaifamilydefault}{laksaman}}
-\DeclareOptionX{loma}{\renewcommand{\thaifamilydefault}{loma}}
-\DeclareOptionX{purisa}{\renewcommand{\thaifamilydefault}{purisa}}
-\DeclareOptionX{sawasdee}{\renewcommand{\thaifamilydefault}{sawasdee}}
-\DeclareOptionX{ttype}{\renewcommand{\thaifamilydefault}{ttype}}
-\DeclareOptionX{ttypist}{\renewcommand{\thaifamilydefault}{ttypist}}
-\DeclareOptionX{umpush}{\renewcommand{\thaifamilydefault}{umpush}}
-\DeclareOptionX{waree}{\renewcommand{\thaifamilydefault}{waree}}
+% Font options for LaTeX mode
+\else
+  \newcommand\thairmdefault{norasi}
+  \newcommand\thaisfdefault{garuda}
+  \newcommand\thaittdefault{ttypist}
+  \newcommand\englishrmdefault{cmr}
+  \newcommand\englishsfdefault{cmss}
+  \newcommand\englishttdefault{cmtt}
 
-\ProcessOptionsX\relax
+  \newcommand{\thaifamilydefault}{\thairmdefault}
+  \newcommand{\englishfamilydefault}{\englishrmdefault}
 
-\DeclareRobustCommand{\thaitext}{%
-  \fontencoding{LTH}\fontfamily{\thaifamilydefault}\selectfont
-  \def\familydefault{\thaifamilydefault}%
-  \def\rmdefault{\thairmdefault}%
-  \def\sfdefault{\thaisfdefault}%
-  \def\ttdefault{\thaittdefault}%
-  \def\encodingdefault{LTH}}
+  % Use sans-serif font by default
+  \DeclareOptionX{sans}{
+    \renewcommand{\thaifamilydefault}{\thaisfdefault}
+    \renewcommand{\englishfamilydefault}{\englishsfdefault}
+  }
 
-\DeclareRobustCommand{\latintext}{%
-  \fontencoding{\latinencoding}\fontfamily{\englishfamilydefault}\selectfont
-  \def\familydefault{\englishfamilydefault}%
-  \def\rmdefault{\englishrmdefault}%
-  \def\sfdefault{\englishsfdefault}%
-  \def\ttdefault{\englishttdefault}%
-  \def\encodingdefault{\latinencoding}}
+  % Set default roman, sans-serif, and teletype fonts
+  \DeclareOptionX{rmkinnari}{\renewcommand{\thairmdefault}{kinnari}}
+  \DeclareOptionX{rmnorasi}{\renewcommand{\thairmdefault}{norasi}}
+  \DeclareOptionX{sfgaruda}{\renewcommand{\thaisfdefault}{garuda}}
+  \DeclareOptionX{sflaksaman}{\renewcommand{\thaisfdefault}{laksaman}}
+  \DeclareOptionX{sfumpush}{\renewcommand{\thaisfdefault}{umpush}}
+  \DeclareOptionX{sfloma}{\renewcommand{\thaisfdefault}{loma}}
+  \DeclareOptionX{sfwaree}{\renewcommand{\thaisfdefault}{waree}}
+  \DeclareOptionX{ttttype}{\renewcommand{\thaittdefault}{ttype}}
+  \DeclareOptionX{ttttypist}{\renewcommand{\thaittdefault}{ttypist}}
+
+  % Set default font
+  \DeclareOptionX{kinnari}{\renewcommand{\thaifamilydefault}{kinnari}}
+  \DeclareOptionX{garuda}{\renewcommand{\thaifamilydefault}{garuda}}
+  \DeclareOptionX{norasi}{\renewcommand{\thaifamilydefault}{norasi}}
+  \DeclareOptionX{laksaman}{\renewcommand{\thaifamilydefault}{laksaman}}
+  \DeclareOptionX{loma}{\renewcommand{\thaifamilydefault}{loma}}
+  \DeclareOptionX{purisa}{\renewcommand{\thaifamilydefault}{purisa}}
+  \DeclareOptionX{sawasdee}{\renewcommand{\thaifamilydefault}{sawasdee}}
+  \DeclareOptionX{ttype}{\renewcommand{\thaifamilydefault}{ttype}}
+  \DeclareOptionX{ttypist}{\renewcommand{\thaifamilydefault}{ttypist}}
+  \DeclareOptionX{umpush}{\renewcommand{\thaifamilydefault}{umpush}}
+  \DeclareOptionX{waree}{\renewcommand{\thaifamilydefault}{waree}}
+
+  \ProcessOptionsX\relax
+
+  \DeclareRobustCommand{\thaitext}{%
+    \fontencoding{LTH}\fontfamily{\thaifamilydefault}\selectfont
+    \def\familydefault{\thaifamilydefault}%
+    \def\rmdefault{\thairmdefault}%
+    \def\sfdefault{\thaisfdefault}%
+    \def\ttdefault{\thaittdefault}%
+    \def\encodingdefault{LTH}}
+
+  \DeclareRobustCommand{\latintext}{%
+    \fontencoding{\latinencoding}\fontfamily{\englishfamilydefault}\selectfont
+    \def\familydefault{\englishfamilydefault}%
+    \def\rmdefault{\englishrmdefault}%
+    \def\sfdefault{\englishsfdefault}%
+    \def\ttdefault{\englishttdefault}%
+    \def\encodingdefault{\latinencoding}}
+\fi
 
 \endinput

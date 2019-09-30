@@ -1,0 +1,21 @@
+% !TEX program = xelatex
+%%
+%% Test for XeLaTeX
+%% 2017/09/11 Abhabongse Janthong <abhabongse@gmail.edu>
+%%     - write a new test for compiling with XeLaTeX
+%%
+\documentclass[a4paper]{article}
+\usepackage[english,thai]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{fonts-tlwg}
+
+\setmainfont{Norasi}
+\setsansfont{Laksaman}
+
+\begin{document}
+
+Hello {\rmfamily สวัสดีครับ \textit{ทุกคน}}
+
+{\sffamily สวัสดีค่ะ \textit{ทุกท่าน}}
+
+\end{document}
