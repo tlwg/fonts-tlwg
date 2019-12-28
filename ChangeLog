@@ -1,3 +1,15 @@
+2020-04-21  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Garuda: Fine-tune splines in Fore/Quad layers
+
+	* nf/Garuda*.sfd:
+	  - Balance cubic splines for optimal converted quadratic.
+	  - Copy the balanced cubic splines over to quadratic layer.
+	    Add interpolated points as appropriate.
+	  - Re-apply AutoHint & AutoInstr.
+	  - Use more references (Thai Sara Ae, quotedbl[left,right,base])
+	  - Bump font version to 004.001.
+
 2020-01-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Use Python 3 for Python scripts.
