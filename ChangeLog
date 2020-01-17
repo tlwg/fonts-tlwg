@@ -1,3 +1,18 @@
+2020-01-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Use Python 3 for Python scripts.
+
+	* configure.ac:
+	  - Bump minimum Python version in AM_PYTHON_PATH from 2.7 to 3.7.
+	  - Drop third arg for AX_PYTHON_MODULE and use the default.
+	* scripts/gen.mk.am:
+	  - Call Python interpreter explicitly using the PYTHON variable
+	    as detected by configure instead of relying on the hard-coded
+	    shebang in Python scripts.
+	* scripts/gen-ttf.py, scripts/gen-test-ttf.py:
+	  - Remove shebang.
+	  - chmod -x
+
 2019-12-20  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Use GitHub issue tracker as bug report address.

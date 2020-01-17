@@ -20,8 +20,8 @@ AC_ARG_ENABLE(ttf,
               , enable_ttf="no")
 if test "x$enable_ttf" = "xyes"; then
   dnl TTF generation requires "fontforge" python module
-  AM_PATH_PYTHON([2.7])
-  AX_PYTHON_MODULE([fontforge],[fatal],[python])
+  AM_PATH_PYTHON([3.7])
+  AX_PYTHON_MODULE([fontforge],[fatal])
 
   dnl Check TTF installation dir
   AC_ARG_WITH(ttfdir,
@@ -85,8 +85,8 @@ AC_ARG_ENABLE(testfont,
               , enable_testfont="no")
 if test "x$enable_testfont" = "xyes"; then
   dnl Test TTF generation requires "fontforge" python module
-  AM_PATH_PYTHON([2.7])
-  AX_PYTHON_MODULE([fontforge],[fatal],[python])
+  AM_PATH_PYTHON([3.7])
+  AX_PYTHON_MODULE([fontforge],[fatal])
 
   AC_ARG_WITH(testfontdir,
     [AC_HELP_STRING([--with-testfontdir=DIR],
