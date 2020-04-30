@@ -6,7 +6,7 @@ AC_CONFIG_SRCDIR([nf/Garuda.sfd])
 
 AM_INIT_AUTOMAKE(dist-xz no-dist-gzip -Wno-portability)
 
-FONTFORGE_MIN_VER=20170731
+FONTFORGE_MIN_VER=20190801
 
 LATEX_PACKAGE="fonts-tlwg"
 AC_SUBST(LATEX_PACKAGE)
