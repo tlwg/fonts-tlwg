@@ -4,7 +4,7 @@ FullName: Norasi
 FamilyName: Norasi
 Weight: Regular
 Copyright: Copyright (C) 1999, The National Font Project (v.beta). Yannis Haralambous, Virach Sornlertlamvanich and Anutara Tantraporn. All rights reserved.\n\nModified under GNU General Public License, with creators' permission, by Thai Linux Working Group (TLWG).
-Version: 006.001
+Version: 006.002
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -20,7 +20,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1153665735
-ModificationTime: 1587806842
+ModificationTime: 1622769908
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -41,6 +41,8 @@ HheadAOffset: 0
 HheadDescent: -488
 HheadDOffset: 0
 OS2Vendor: 'PfEd'
+Lookup: 1 0 0 "'onum' Oldstyle Figures" { "'onum' Oldstyle Figures" ("oldstyle") } ['onum' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'smcp' Lowercase to Small Capitals in Latin" { "'smcp' Lowercase to Small Capitals in Latin"  } ['smcp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 1" { "'liga' Standard Ligatures in Latin lookup 1 subtable"  } ['liga' ('latn' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures lookup 0" { "'liga' Standard Ligatures lookup 0 subtable"  } ['liga' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions lookup 2" { "'frac' Diagonal Fractions lookup 2 subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
@@ -1338,7 +1340,7 @@ DisplaySize: -72
 DisplayLayer: 2
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 200 8 2
+WinInfo: 368 8 2
 BeginPrivate: 8
 BlueValues 39 [-15 0 450 460 551 564 662 677 683 683]
 ForceBold 5 false
@@ -4210,6 +4212,7 @@ SplineSet
  379 650 379 650 250 650 c 0,18,19
 EndSplineSet
 Kerns2: 20 18 "'kern' Horizontal Kerning lookup 4 subtable" 17 -79 "'kern' Horizontal Kerning lookup 4 subtable" 23 -6 "'kern' Horizontal Kerning lookup 4 subtable"
+Substitution2: "'onum' Oldstyle Figures" zerooldstyle
 EndChar
 
 StartChar: one
@@ -4326,6 +4329,7 @@ SplineSet
  212 593 212 593 183 593 c 0,0,1
 EndSplineSet
 Kerns2: 12 -69 "'kern' Horizontal Kerning lookup 4 subtable" 24 -98 "'kern' Horizontal Kerning lookup 4 subtable" 21 -54 "'kern' Horizontal Kerning lookup 4 subtable" 20 -105 "'kern' Horizontal Kerning lookup 4 subtable" 25 -88 "'kern' Horizontal Kerning lookup 4 subtable" 17 -114 "'kern' Horizontal Kerning lookup 4 subtable" 14 -79 "'kern' Horizontal Kerning lookup 4 subtable" 23 -114 "'kern' Horizontal Kerning lookup 4 subtable" 22 -97 "'kern' Horizontal Kerning lookup 4 subtable" 19 -60 "'kern' Horizontal Kerning lookup 4 subtable" 18 -50 "'kern' Horizontal Kerning lookup 4 subtable" 16 -78 "'kern' Horizontal Kerning lookup 4 subtable"
+Substitution2: "'onum' Oldstyle Figures" oneoldstyle
 EndChar
 
 StartChar: two
@@ -4533,6 +4537,7 @@ SplineSet
  475 138 l 1,0,-1
 EndSplineSet
 Kerns2: 17 -86 "'kern' Horizontal Kerning lookup 4 subtable" 23 -22 "'kern' Horizontal Kerning lookup 4 subtable"
+Substitution2: "'onum' Oldstyle Figures" twooldstyle
 EndChar
 
 StartChar: three
@@ -4724,6 +4729,7 @@ SplineSet
  228 330 228 330 152 330 c 1,0,-1
 EndSplineSet
 Kerns2: 20 -9 "'kern' Horizontal Kerning lookup 4 subtable" 17 -110 "'kern' Horizontal Kerning lookup 4 subtable" 23 -41 "'kern' Horizontal Kerning lookup 4 subtable"
+Substitution2: "'onum' Oldstyle Figures" threeoldstyle
 EndChar
 
 StartChar: four
@@ -4900,6 +4906,7 @@ SplineSet
  291 231 l 1,11,-1
 EndSplineSet
 Kerns2: 20 19 "'kern' Horizontal Kerning lookup 4 subtable" 17 -110 "'kern' Horizontal Kerning lookup 4 subtable" 23 -60 "'kern' Horizontal Kerning lookup 4 subtable"
+Substitution2: "'onum' Oldstyle Figures" fouroldstyle
 EndChar
 
 StartChar: five
@@ -5089,6 +5096,7 @@ SplineSet
  182 583 l 1,0,-1
 EndSplineSet
 Kerns2: 20 -10 "'kern' Horizontal Kerning lookup 4 subtable" 17 -101 "'kern' Horizontal Kerning lookup 4 subtable" 23 -51 "'kern' Horizontal Kerning lookup 4 subtable"
+Substitution2: "'onum' Oldstyle Figures" fiveoldstyle
 EndChar
 
 StartChar: six
@@ -5259,6 +5267,7 @@ SplineSet
  307 382 307 382 242 382 c 0,23,24
 EndSplineSet
 Kerns2: 20 18 "'kern' Horizontal Kerning lookup 4 subtable" 17 -107 "'kern' Horizontal Kerning lookup 4 subtable" 23 -41 "'kern' Horizontal Kerning lookup 4 subtable"
+Substitution2: "'onum' Oldstyle Figures" sixoldstyle
 EndChar
 
 StartChar: seven
@@ -5361,6 +5370,7 @@ SplineSet
  450 662 l 1,0,-1
 EndSplineSet
 Kerns2: 26 -98 "'kern' Horizontal Kerning lookup 4 subtable" 12 -105 "'kern' Horizontal Kerning lookup 4 subtable" 24 -59 "'kern' Horizontal Kerning lookup 4 subtable" 21 -86 "'kern' Horizontal Kerning lookup 4 subtable" 20 -92 "'kern' Horizontal Kerning lookup 4 subtable" 17 -82 "'kern' Horizontal Kerning lookup 4 subtable" 14 -114 "'kern' Horizontal Kerning lookup 4 subtable" 23 -28 "'kern' Horizontal Kerning lookup 4 subtable" 22 -66 "'kern' Horizontal Kerning lookup 4 subtable" 19 -50 "'kern' Horizontal Kerning lookup 4 subtable" 18 -45 "'kern' Horizontal Kerning lookup 4 subtable"
+Substitution2: "'onum' Oldstyle Figures" sevenoldstyle
 EndChar
 
 StartChar: eight
@@ -5536,6 +5546,7 @@ SplineSet
  194 432 194 432 261 390 c 1,37,38
 EndSplineSet
 Kerns2: 17 -92 "'kern' Horizontal Kerning lookup 4 subtable" 23 -22 "'kern' Horizontal Kerning lookup 4 subtable"
+Substitution2: "'onum' Oldstyle Figures" eightoldstyle
 EndChar
 
 StartChar: nine
@@ -5701,6 +5712,7 @@ SplineSet
  362 332 362 332 362 354 c 2,21,-1
 EndSplineSet
 Kerns2: 20 -9 "'kern' Horizontal Kerning lookup 4 subtable" 17 -92 "'kern' Horizontal Kerning lookup 4 subtable" 23 -9 "'kern' Horizontal Kerning lookup 4 subtable"
+Substitution2: "'onum' Oldstyle Figures" nineoldstyle
 EndChar
 
 StartChar: colon
@@ -14872,6 +14884,7 @@ SplineSet
  287 100 287 100 287 123 c 2,50,-1
 EndSplineSet
 Kerns2: 74 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 113 -59 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 86 -42 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 87 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Asmall
 EndChar
 
 StartChar: b
@@ -15064,6 +15077,7 @@ SplineSet
  152 351 152 351 152 322 c 2,24,-1
 EndSplineSet
 Kerns2: 87 -42 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 14 -59 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 85 -28 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 86 -41 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Bsmall
 EndChar
 
 StartChar: c
@@ -15224,6 +15238,7 @@ SplineSet
  25 115 25 115 25 212 c 0,0,1
 EndSplineSet
 Kerns2: 72 -22 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 75 -26 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 -22 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Csmall
 EndChar
 
 StartChar: d
@@ -15442,6 +15457,7 @@ SplineSet
  113 153 113 153 150.5 97.5 c 128,-1,42
  188 42 188 42 250 42 c 0,30,31
 EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Dsmall
 EndChar
 
 StartChar: e
@@ -15562,6 +15578,7 @@ SplineSet
  115 423 115 423 100 309 c 1,22,-1
 EndSplineSet
 Kerns2: 113 -42 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 84 -13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 71 -22 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 86 -38 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 87 -41 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 88 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 -42 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Esmall
 EndChar
 
 StartChar: f
@@ -15738,6 +15755,7 @@ SplineSet
  359 580 359 580 341 580 c 0,0,1
 EndSplineSet
 Kerns2: 295 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 298 18 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 231 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 299 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 69 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 302 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 74 10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 76 64 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 79 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 312 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 232 -51 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 254 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 83 -31 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 84 13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 65 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 226 -73 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 70 9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 73 22 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 113 23 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Fsmall
 EndChar
 
 StartChar: g
@@ -16077,6 +16095,7 @@ SplineSet
  152 390 152 390 152 335 c 0,62,63
 EndSplineSet
 Kerns2: 298 -23 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 231 -26 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 299 -23 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 69 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 302 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 76 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 312 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 315 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 82 15 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 65 -23 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Gsmall
 EndChar
 
 StartChar: h
@@ -16311,6 +16330,7 @@ SplineSet
  213 406 213 406 157 343 c 1,0,-1
 EndSplineSet
 Kerns2: 113 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 -42 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Hsmall
 EndChar
 
 StartChar: i
@@ -16474,6 +16494,7 @@ SplineSet
  107 683 107 683 127 683 c 0,19,20
 EndSplineSet
 Kerns2: 52 -41 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 74 -51 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 86 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Ismall
 EndChar
 
 StartChar: j
@@ -16652,6 +16673,7 @@ SplineSet
  92 654 92 654 107 668.5 c 128,-1,37
  122 683 122 683 142 683 c 0,26,27
 EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Jsmall
 EndChar
 
 StartChar: k
@@ -17013,6 +17035,7 @@ SplineSet
  35 625 35 625 7 623 c 1,0,-1
 EndSplineSet
 Kerns2: 12 4 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 302 -26 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 71 -18 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 13 -94 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 312 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 315 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 14 -1 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 83 6 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 85 19 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 319 19 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 69 -26 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 79 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 -22 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Ksmall
 EndChar
 
 StartChar: l
@@ -17146,6 +17169,7 @@ SplineSet
  19 623 l 1,0,-1
 EndSplineSet
 Kerns2: 86 -41 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 87 -13 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Lsmall
 EndChar
 
 StartChar: m
@@ -17469,6 +17493,7 @@ SplineSet
  32 401 32 401 19 398 c 1,0,-1
 EndSplineSet
 Kerns2: 80 -13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 86 -42 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 87 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Msmall
 EndChar
 
 StartChar: n
@@ -17704,6 +17729,7 @@ SplineSet
  22 401 22 401 16 398 c 1,0,-1
 EndSplineSet
 Kerns2: 52 -79 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 80 -18 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 113 -56 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 87 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 86 -42 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Nsmall
 EndChar
 
 StartChar: o
@@ -17829,6 +17855,7 @@ SplineSet
  119 347 119 347 119 275 c 0,11,12
 EndSplineSet
 Kerns2: 52 -133 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 113 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 84 -13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 88 -51 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 86 -51 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 87 -51 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 -60 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Osmall
 EndChar
 
 StartChar: p
@@ -18051,6 +18078,7 @@ SplineSet
  160 357 160 357 160 334 c 2,32,-1
 EndSplineSet
 Kerns2: 84 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 -41 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Psmall
 EndChar
 
 StartChar: q
@@ -18251,6 +18279,7 @@ SplineSet
  110 330 110 330 110 242 c 0,23,24
 EndSplineSet
 Kerns2: 67 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 85 -18 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Qsmall
 EndChar
 
 StartChar: r
@@ -18428,6 +18457,7 @@ SplineSet
  313 362 313 362 296 362 c 0,0,1
 EndSplineSet
 Kerns2: 231 -4 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 67 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 300 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 26 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 68 -13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 69 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 302 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 303 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 301 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 70 26 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 72 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 73 28 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 74 19 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 75 -13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 76 -26 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 77 28 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 78 32 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 79 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 312 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 313 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 315 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 232 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 311 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 254 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 80 37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 81 -13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 113 -26 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 82 37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 27 -9 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 84 32 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 85 26 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 86 28 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 87 26 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 88 23 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 89 32 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 90 1 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 12 -60 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 71 -22 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 13 -66 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 14 -69 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Rsmall
 EndChar
 
 StartChar: s
@@ -18694,6 +18724,7 @@ SplineSet
  278 439 278 439 284 439 c 0,0,1
 EndSplineSet
 Kerns2: 113 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 84 -22 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Ssmall
 EndChar
 
 StartChar: t
@@ -18858,6 +18889,7 @@ SplineSet
  255 450 l 1,0,-1
 EndSplineSet
 Kerns2: 51 1 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 65 13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 295 13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 298 13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 231 13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 299 13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 26 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 72 13 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 79 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 312 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 315 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 113 -41 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 27 -10 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Tsmall
 EndChar
 
 StartChar: u
@@ -19055,6 +19087,7 @@ SplineSet
  479 50 l 1,0,-1
 EndSplineSet
 Kerns2: 113 -51 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Usmall
 EndChar
 
 StartChar: v
@@ -19298,6 +19331,7 @@ SplineSet
  478 450 l 1,0,-1
 EndSplineSet
 Kerns2: 295 -34 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 296 -34 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 298 -34 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 231 -34 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 294 -34 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 299 -34 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 297 -34 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 67 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 26 -28 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 302 -51 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 303 -51 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 301 -51 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 71 -60 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 13 -41 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 76 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 312 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 315 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 311 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 254 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 83 -31 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 27 -28 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 65 -34 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 12 -101 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 69 -51 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 79 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 14 -110 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Vsmall
 EndChar
 
 StartChar: w
@@ -19599,6 +19633,7 @@ SplineSet
  352 311 l 1,0,1
 EndSplineSet
 Kerns2: 295 -38 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 296 -38 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 298 -38 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 231 -38 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 294 -38 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 299 -38 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 297 -38 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 67 -47 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 26 -32 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 69 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 302 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 303 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 301 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 71 -62 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 13 -34 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 76 -47 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 312 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 315 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 311 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 254 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 83 -32 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 27 -32 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 65 -38 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 12 -92 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 79 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 14 -103 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Wsmall
 EndChar
 
 StartChar: x
@@ -19976,6 +20011,7 @@ SplineSet
  278 0 l 1,0,-1
 EndSplineSet
 Kerns2: 65 -15 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 67 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 302 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 79 -64 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 81 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 69 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Xsmall
 EndChar
 
 StartChar: y
@@ -20200,6 +20236,7 @@ SplineSet
  475 450 l 1,0,-1
 EndSplineSet
 Kerns2: 65 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 295 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 296 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 298 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 231 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 294 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 299 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 297 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 67 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 26 -32 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 69 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 302 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 303 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 301 -50 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 71 -69 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 13 -38 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 76 -45 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 79 -56 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 312 -56 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 315 -56 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 311 -56 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 254 -54 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 83 -37 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 27 -32 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 12 -97 "'kern' Horizontal Kerning in Latin lookup 3 subtable" 14 -105 "'kern' Horizontal Kerning in Latin lookup 3 subtable"
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Ysmall
 EndChar
 
 StartChar: z
@@ -20387,6 +20424,7 @@ SplineSet
  388 78 388 78 400 139 c 1,18,-1
  417 135 l 1,0,-1
 EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin" Zsmall
 EndChar
 
 StartChar: braceleft
