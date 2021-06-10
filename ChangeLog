@@ -1,5 +1,18 @@
 2021-06-10  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
+	Revert wrong make rules.
+
+	* nectec/Makefile.am:
+	* nf/Makefile.am:
+	* sipa/Makefile.am:
+	* tlwg/Makefile.am:
+	  - Revert wrong "common generic rules". It's not shared by the
+	    targets. 'make all' happened to pass somehow when I tested it,
+	    probably by the help of kpathsea, but 'make install' fails
+	    due to the missing symlinks.
+
+2021-06-10  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
 	LaTeX: Add Norasi small caps test.
 
 	* latex/examples/teststd.tex:

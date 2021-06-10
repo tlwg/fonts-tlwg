@@ -11,12 +11,19 @@ include $(top_srcdir)/scripts/gen.mk.am
 if INCLUDE_LATEX
 
 loma.afm:    Loma.afm
+	[ -e $@ ] || $(LN_S) $< $@
 loma_b.afm:  Loma-Bold.afm
+	[ -e $@ ] || $(LN_S) $< $@
 loma_o.afm:  Loma-Oblique.afm
+	[ -e $@ ] || $(LN_S) $< $@
 loma_bo.afm: Loma-BoldOblique.afm
+	[ -e $@ ] || $(LN_S) $< $@
 loma.pfb:    Loma.pfb
+	[ -e $@ ] || $(LN_S) $< $@
 loma_b.pfb:  Loma-Bold.pfb
+	[ -e $@ ] || $(LN_S) $< $@
 loma_o.pfb:  Loma-Oblique.pfb
+	[ -e $@ ] || $(LN_S) $< $@
 loma_bo.pfb: Loma-BoldOblique.pfb
 	[ -e $@ ] || $(LN_S) $< $@
 

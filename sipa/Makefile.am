@@ -11,12 +11,19 @@ include $(top_srcdir)/scripts/gen.mk.am
 if INCLUDE_LATEX
 
 laksaman.afm:    Laksaman.afm
+	[ -e $@ ] || $(LN_S) $< $@
 laksaman_b.afm:  Laksaman-Bold.afm
+	[ -e $@ ] || $(LN_S) $< $@
 laksaman_i.afm:  Laksaman-Italic.afm
+	[ -e $@ ] || $(LN_S) $< $@
 laksaman_bi.afm: Laksaman-BoldItalic.afm
+	[ -e $@ ] || $(LN_S) $< $@
 laksaman.pfb:    Laksaman.pfb
+	[ -e $@ ] || $(LN_S) $< $@
 laksaman_b.pfb:  Laksaman-Bold.pfb
+	[ -e $@ ] || $(LN_S) $< $@
 laksaman_i.pfb:  Laksaman-Italic.pfb
+	[ -e $@ ] || $(LN_S) $< $@
 laksaman_bi.pfb: Laksaman-BoldItalic.pfb
 	[ -e $@ ] || $(LN_S) $< $@
 
