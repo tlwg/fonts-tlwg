@@ -13,14 +13,16 @@ EXTRA_DIST = \
 	texfont.mk.am \
 	fonts-tlwg.sty \
 	lthtlwg.enc \
+	lthtlwg-sc.enc \
 	thailigs.enc \
+	thailigs-sc.enc \
 	thai-dummy.afm \
 	$(FD_FILES)
 
 if INCLUDE_LATEX
 
 encdir = $(texmfdir)/fonts/enc/dvips/$(LATEX_PACKAGE)
-enc_DATA = lthtlwg.enc
+enc_DATA = lthtlwg.enc lthtlwg-sc.enc
 
 latexdir = $(texmfdir)/tex/latex/$(LATEX_PACKAGE)
 latex_DATA = fonts-tlwg.sty $(FD_FILES)

@@ -105,6 +105,15 @@ FONTS = \
 	norasi_bo \
 	norasi_bi
 
+SYNTH_FONTS = \
+	norasi-sc \
+	norasi_b-sc \
+	norasi_o-sc \
+	norasi_i-sc \
+	norasi_bo-sc \
+	norasi_bi-sc \
+	$(NULL)
+
 MAP = nf.map
 
 include $(top_srcdir)/latex/texfont.mk.am

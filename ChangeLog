@@ -1,3 +1,21 @@
+2021-06-10  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	LaTeX/Norasi: Add small caps support.
+
+	* latex/Makefile.am, +latex/lthtlwg-sc.enc, +latex/thailigs-sc.enc:
+	  - Add small caps re-encoding version:
+	    - Replace lower-case letters with small cap glyphs.
+	    - Remove ligatures for ff, fi, fl, ffi, ffl,
+	      which are specific to lower-case letters.
+	* latex/texfont.mk.am:
+	  - Add rules for creating TFMs and VFs for small caps re-encoded
+	    fonts, assuming fonts to be synthesized as such are listed
+	    in SYNTH_FONTS variable.
+	* nf/Makefile.am:
+	  - List 'norasi*-sc' in SYNTH_FONTS.
+	* latex/lthnorasi.fd:
+	  - Add 'sc' shape declarations.
+
 2021-06-06  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Norasi: Unify DOTTED CIRCLE glyph name
