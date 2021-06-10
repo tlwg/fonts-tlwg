@@ -40,20 +40,13 @@ ltxotf_DATA = ${LTX_OTFFILES}
 
 # Local Rules
 
-thai-dummy.afm:
-	[ -e thai-dummy.afm ] || $(LN_S) $(top_srcdir)/latex/thai-dummy.afm .
-
-thailigs.enc:
-	[ -e thailigs.enc ] || $(LN_S) $(top_srcdir)/latex/thailigs.enc .
-
-lthtlwg.enc:
-	[ -e lthtlwg.enc ] || $(LN_S) $(top_srcdir)/latex/lthtlwg.enc .
-
-thailigs-sc.enc:
-	[ -e thailigs-sc.enc ] || $(LN_S) $(top_srcdir)/latex/thailigs-sc.enc .
-
-lthtlwg-sc.enc:
-	[ -e lthtlwg-sc.enc ] || $(LN_S) $(top_srcdir)/latex/lthtlwg-sc.enc .
+thai-dummy.afm \
+thailigs.enc \
+lthtlwg.enc \
+thailigs-sc.enc \
+lthtlwg-sc.enc \
+:
+	[ -e $@ ] || $(LN_S) $(top_srcdir)/latex/$@ .
 
 thailigs.vpl: thai-dummy.afm thailigs.enc
 	$(AFM2TFM) thai-dummy.afm -v $@ -T thailigs.enc thailigs.tfm
