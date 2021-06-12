@@ -1,0 +1,69 @@
+% LTHnorasi-OsF.fd
+%
+% This file is part of the fonts-tlwg package
+%
+% Copyright (C) 1999 National Electronics and Computer Technology Center
+% (NECTEC), Thailand.  All rights reserved.
+%
+% It may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status "maintained".
+%
+% The Current Maintainer of this work is Theppitak Karoonboonyanan.
+%
+% Created by Surapant Meknavin: surapan@nectec.or.th
+% 2021/06/12 Theppitak Karoonboonyanan <theppitak@gmail.com>
+%            - add old style figure version
+% 2021/06/08 Theppitak Karoonboonyanan <theppitak@gmail.com>
+%            - add small cap shapes
+% 2017/09/11 Abhabongse Janthong <abhabongse@gmail.com>
+%            - add font scaling
+% 2003/06/02 Chanop Silpa-Anan <chanop@debian.org>
+%            - update using basic slant font
+% 2000/05/09 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+%            - font name changed from "nf3x" to "norasi", with bold series added
+%            - encoding changed from TIS to LTH, according TeX convention
+
+\ProvidesFile{lthnorasi-osf.fd}[2021/06/12 v2.0 Norasi-OsF font definition]
+
+% Check if the scale factor has been defined
+\ifcsname fontstlwg@scale\endcsname
+  \edef\fontstlwg@@scale{s * [\csname fontstlwg@scale\endcsname] }%
+\else
+  \def\fontstlwg@@scale{s * }%
+\fi
+
+% Primary declarations
+\DeclareFontFamily{LTH}{norasi-OsF}{}
+\DeclareFontShape{LTH}{norasi-OsF}{m}{n}{<-> \fontstlwg@@scale norasi-osf}{}
+\DeclareFontShape{LTH}{norasi-OsF}{m}{it}{<-> \fontstlwg@@scale norasi_i-osf}{}
+\DeclareFontShape{LTH}{norasi-OsF}{m}{sl}{<-> \fontstlwg@@scale norasi_o-osf}{}
+\DeclareFontShape{LTH}{norasi-OsF}{m}{sc}{<-> \fontstlwg@@scale norasi-osf-sc}{}
+\DeclareFontShape{LTH}{norasi-OsF}{m}{scit}{<-> \fontstlwg@@scale norasi_i-osf-sc}{}
+\DeclareFontShape{LTH}{norasi-OsF}{m}{scsl}{<-> \fontstlwg@@scale norasi_o-osf-sc}{}
+%%%%%%% bold series
+\DeclareFontShape{LTH}{norasi-OsF}{b}{n}{<-> \fontstlwg@@scale norasi_b-osf}{}
+\DeclareFontShape{LTH}{norasi-OsF}{b}{it}{<-> \fontstlwg@@scale norasi_bi-osf}{}
+\DeclareFontShape{LTH}{norasi-OsF}{b}{sl}{<-> \fontstlwg@@scale norasi_bo-osf}{}
+\DeclareFontShape{LTH}{norasi-OsF}{b}{sc}{<-> \fontstlwg@@scale norasi_b-osf-sc}{}
+\DeclareFontShape{LTH}{norasi-OsF}{b}{scit}{<-> \fontstlwg@@scale norasi_bi-osf-sc}{}
+\DeclareFontShape{LTH}{norasi-OsF}{b}{scsl}{<-> \fontstlwg@@scale norasi_bo-osf-sc}{}
+
+% Substitutions
+\DeclareFontShape{LTH}{norasi-OsF}{bx}{n}{<->ssub * norasi-OsF/b/n}{}
+\DeclareFontShape{LTH}{norasi-OsF}{bx}{sl}{<->ssub * norasi-OsF/b/sl}{}
+\DeclareFontShape{LTH}{norasi-OsF}{bx}{it}{<->ssub * norasi-OsF/b/it}{}
+\DeclareFontShape{LTH}{norasi-OsF}{bx}{sc}{<->ssub * norasi-OsF/b/sc}{}
+\DeclareFontShape{LTH}{norasi-OsF}{bx}{scsl}{<->ssub * norasi-OsF/b/scsl}{}
+\DeclareFontShape{LTH}{norasi-OsF}{bx}{scit}{<->ssub * norasi-OsF/b/scit}{}
+\endinput
+
+%
+% EOF
+%

@@ -45,6 +45,10 @@ thailigs.enc \
 lthtlwg.enc \
 thailigs-sc.enc \
 lthtlwg-sc.enc \
+thailigs-osf.enc \
+lthtlwg-osf.enc \
+thailigs-osf-sc.enc \
+lthtlwg-osf-sc.enc \
 :
 	[ -e $@ ] || $(LN_S) $(top_srcdir)/latex/$@ .
 
@@ -53,6 +57,12 @@ thailigs.vpl: thai-dummy.afm thailigs.enc
 
 thailigs-sc.vpl: thai-dummy.afm thailigs-sc.enc
 	$(AFM2TFM) thai-dummy.afm -v $@ -T thailigs-sc.enc thailigs-sc.tfm
+
+thailigs-osf.vpl: thai-dummy.afm thailigs-osf.enc
+	$(AFM2TFM) thai-dummy.afm -v $@ -T thailigs-osf.enc thailigs-osf.tfm
+
+thailigs-osf-sc.vpl: thai-dummy.afm thailigs-osf-sc.enc
+	$(AFM2TFM) thai-dummy.afm -v $@ -T thailigs-osf-sc.enc thailigs-osf-sc.tfm
 
 #
 # merge_ligs(font-vpl-file,ligs-vpl-file)
@@ -66,6 +76,18 @@ define merge_ligs
 	$(AWK) "BEGIN {show=0} /CHARACTER/ {show=1} {if(show) print}" $(1) >> $$TMPFILE && \
 	mv $$TMPFILE $(1)
 endef
+
+r%-osf-sc.tfm: %.afm
+%-osf-sc.vpl: %.afm thailigs-osf-sc.vpl lthtlwg-osf-sc.enc
+	$(AFM2TFM) $*.afm -v $*-osf-sc.vpl -T lthtlwg-osf-sc.enc r$*-osf-sc.tfm \
+	| $(SED) "s/$$/ <$*.pfb/" >> $(MAP)
+	$(call merge_ligs,$*-osf-sc.vpl,thailigs-osf-sc.vpl)
+
+r%-osf.tfm: %.afm
+%-osf.vpl: %.afm thailigs-osf.vpl lthtlwg-osf.enc
+	$(AFM2TFM) $*.afm -v $*-osf.vpl -T lthtlwg-osf.enc r$*-osf.tfm \
+	| $(SED) "s/$$/ <$*.pfb/" >> $(MAP)
+	$(call merge_ligs,$*-osf.vpl,thailigs-osf.vpl)
 
 r%-sc.tfm: %.afm
 %-sc.vpl: %.afm thailigs-sc.vpl lthtlwg-sc.enc

@@ -1,3 +1,30 @@
+2021-06-12  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	LaTeX/Norasi: Add old style figures support.
+
+	* latex/Makefile.am,
+	  +latex/lthtlwg-osf.enc, +latex/lthtlwg-osf-sc.enc,
+	  +latex/thailigs-osf.enc, +latex/thailigs-osf-sc.enc:
+	  - Add OsF font variant re-encoding, along with small caps versions.
+	* latex/texfont.mk.am:
+	  - Add rules for creating TFMs and VFs for OsF font variants.
+	* latex/Makefile.am, +latex/lthnorasi-osf.fd:
+	  - Add "norasi-OsF" font definition, using fontaxes naming convention.
+	* latex/lthnorasi.fd:
+	  - Update file version to be the same as that of norasi-OsF (v2.0).
+	* latex/Makefile.am, +latex/lthnorj.fd, +latex/lthnorx.fd:
+	  - Add "norj" and "norx" font definitions, according to Karl Berry's
+	    font naming, to support nfssext-cfr.
+	  - "norj" is essentially the same as "norasi-OsF" and share TFM
+	    and VF files with it. And "norx" is the same as "norasi"
+	    in the same manner.
+	* nf/Makefile.am:
+	  - Add OsF synthetic fonts for Norasi.
+	* latex/fonts-tlwg.sty:
+	  - Add 'norasi-osf' and 'rmnorasi-osf' options for using
+	    old style figures by default.
+	  - Update the file version to v2.0.
+
 2021-06-10  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Revert wrong make rules.

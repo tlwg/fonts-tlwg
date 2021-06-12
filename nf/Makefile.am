@@ -112,6 +112,18 @@ SYNTH_FONTS = \
 	norasi_i-sc \
 	norasi_bo-sc \
 	norasi_bi-sc \
+	norasi-osf \
+	norasi_b-osf \
+	norasi_o-osf \
+	norasi_i-osf \
+	norasi_bo-osf \
+	norasi_bi-osf \
+	norasi-osf-sc \
+	norasi_b-osf-sc \
+	norasi_o-osf-sc \
+	norasi_i-osf-sc \
+	norasi_bo-osf-sc \
+	norasi_bi-osf-sc \
 	$(NULL)
 
 MAP = nf.map
