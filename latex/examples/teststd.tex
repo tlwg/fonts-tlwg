@@ -34,6 +34,20 @@
   \noindent
   \MakeUppercase{A quick brown fox jumps over the lazy dog.}}
 
+\newcommand{\testlnfigures}[3]{%
+  \usefont{LTH}{#1}{#2}{#3}
+  \noindent
+  Lining figures: 0123456789}
+
+\newcommand{\testoldfigures}[3]{%
+  \usefont{LTH}{#1-OsF}{#2}{#3}
+  \noindent
+  Old style figures: 0123456789}
+
+\newcommand{\testfigures}[3]{%
+  \testlnfigures{#1}{#2}{#3} \\
+  \testoldfigures{#1}{#2}{#3}}
+
 \newcommand{\testligkern}[3]{%
   \usefont{LTH}{#1}{#2}{#3}
   \noindent
@@ -258,6 +272,19 @@
 
 \testEnglish{norasi}{b}{sl}
 
+\subsection{ตัวเลข}
+
+\testfigures{norasi}{m}{n}
+
+\testfigures{norasi}{b}{n}
+
+\testfigures{norasi}{m}{it}
+
+\testfigures{norasi}{b}{it}
+
+\testfigures{norasi}{m}{sl}
+
+\testfigures{norasi}{b}{sl}
 
 \subsection{การจัดระดับตัวอักษรและตัวอักษรพิเศษ}
 
