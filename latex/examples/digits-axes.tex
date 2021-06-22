@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage[thai]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[norasi]{fonts-tlwg}
+
+\usepackage{fontaxes}
+
+\begin{document}
+
+ระยะห่างของดวงจันทร์จากโลก
+\begin{itemize}
+  \item Perigee \liningfigures{362,600 km} \textfigures{(356,400--370,400 km)}
+  \item Apogee \liningfigures{405,400 km} \textfigures{(404,000--406,700 km)}
+\end{itemize}
+
+ทดสอบ tabular/proportional figures (\emph{ผ่าน!})
+
+\begin{tabular}{lrr}
+\hline
+  & Lining figures & Old style figures \\
+\hline
+Tabular figures &
+  \figureversion{lf,tab}{197,453,631.11} &
+  \figureversion{osf,tab}{197,453,631.11} \\
+                &
+  \figureversion{lf,tab}{81,142.21} &
+  \figureversion{osf,tab}{81,142.21} \\
+\hline
+Proportional figures &
+  \figureversion{lf,prop}{197,453,631.11} &
+  \figureversion{osf,prop}{197,453,631.11} \\
+                     &
+  \figureversion{lf,prop}{81,142.21} &
+  \figureversion{osf,prop}{81,142.21} \\
+\hline
+\end{tabular}
+
+\end{document}

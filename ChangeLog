@@ -1,3 +1,24 @@
+2021-06-22  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	LaTeX: Use 'norasij' family instead of 'norasi-OsF'.
+
+	'norasij' is tried for all of plain, tabular, and proportional
+	old style figures when used via fontaxes.sty.
+	nfssext-cfr is more complicated. Only plain old style figures
+	are supported for now.
+
+	* latex/Makefile.am,
+	  latex/lthnorasi-osf.fd -> latex/lthnorasij.fd:
+	  - Rename font description file.
+	* latex/lthnorasij.fd:
+	  - Replace 'norasi-OsF' family declarations with 'norasij'.
+	* latex/fonts-tlwg.sty:
+	  - Replace 'norasi-OsF' referrals with 'norasij'.
+	* latex/examples/Makefile.am,
+	  +latex/examples/digits-axes.tex,
+	  +latex/examples/digits-cfr.tex:
+	  - Add examples for fontaxes & nfssext-cfr usage.
+
 2021-06-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	LaTeX: Add old style figures demonstration doc.

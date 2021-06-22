@@ -2,7 +2,7 @@ SUBDIRS = examples
 
 FD_FILES = \
 	lthkinnari.fd lthgaruda.fd \
-	lthnorasi.fd lthnorasi-osf.fd \
+	lthnorasi.fd lthnorasij.fd \
 	lthnorx.fd lthnorj.fd \
 	lthttype.fd lthttypist.fd \
 	lthpurisa.fd lthloma.fd \
