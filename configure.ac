@@ -1,6 +1,6 @@
-AC_PREREQ(2.59)
-AC_INIT(fonts-tlwg,
-        m4_esyscmd([build-aux/git-version-gen]),
+AC_PREREQ([2.71])
+AC_INIT([fonts-tlwg],
+        [m4_esyscmd(build-aux/git-version-gen)],
         [https://github.com/tlwg/fonts-tlwg/issues])
 AC_CONFIG_SRCDIR([nf/Garuda.sfd])
 
@@ -15,7 +15,7 @@ dnl
 dnl Check options
 dnl
 AC_ARG_ENABLE(ttf,
-              [AC_HELP_STRING([--enable-ttf],
+              [AS_HELP_STRING([--enable-ttf],
                               [enable TTF generation])],
               , enable_ttf="no")
 if test "x$enable_ttf" = "xyes"; then
@@ -25,7 +25,7 @@ if test "x$enable_ttf" = "xyes"; then
 
   dnl Check TTF installation dir
   AC_ARG_WITH(ttfdir,
-    [AC_HELP_STRING([--with-ttfdir=DIR],
+    [AS_HELP_STRING([--with-ttfdir=DIR],
                     [font directory in DIR [PREFIX/share/fonts/truetype/thai]])],
     [ttfdir="$withval"], [ttfdir=\$\{prefix\}/share/fonts/truetype/thai])
   AC_MSG_CHECKING(--with-ttfdir)
@@ -35,12 +35,12 @@ if test "x$enable_ttf" = "xyes"; then
 fi
 
 AC_ARG_ENABLE(pfb,
-              [AC_HELP_STRING([--enable-pfb],
+              [AS_HELP_STRING([--enable-pfb],
                               [enable Type1 PFB generation])],
               , enable_pfb="no")
 if test "x$enable_pfb" = "xyes"; then
   AC_ARG_WITH(type1dir,
-    [AC_HELP_STRING([--with-type1dir=DIR],
+    [AS_HELP_STRING([--with-type1dir=DIR],
                     [font directory in DIR [PREFIX/share/fonts/type1/thai]])],
     [type1dir="$withval"], [type1dir=\$\{prefix\}/share/fonts/type1/thai])
   AC_MSG_CHECKING(--with-type1dir)
@@ -50,12 +50,12 @@ if test "x$enable_pfb" = "xyes"; then
 fi
 
 AC_ARG_ENABLE(otf,
-              [AC_HELP_STRING([--disable-otf],
+              [AS_HELP_STRING([--disable-otf],
                               [disable OTF generation])],
               , enable_otf="yes")
 if test "x$enable_otf" = "xyes"; then
   AC_ARG_WITH(otfdir,
-    [AC_HELP_STRING([--with-otfdir=DIR],
+    [AS_HELP_STRING([--with-otfdir=DIR],
                     [font directory in DIR [PREFIX/share/fonts/opentype/thai]])],
     [otfdir="$withval"], [otfdir=\$\{prefix\}/share/fonts/opentype/thai])
   AC_MSG_CHECKING(--with-otfdir)
@@ -65,12 +65,12 @@ if test "x$enable_otf" = "xyes"; then
 fi
 
 AC_ARG_ENABLE(woff,
-              [AC_HELP_STRING([--enable-woff],
+              [AS_HELP_STRING([--enable-woff],
                               [enable Web Open Font Format generation])],
               , enable_woff="no")
 if test "x$enable_woff" = "xyes"; then
   AC_ARG_WITH(woffdir,
-    [AC_HELP_STRING([--with-woffdir=DIR],
+    [AS_HELP_STRING([--with-woffdir=DIR],
                     [font directory in DIR [PREFIX/share/fonts/woff/thai]])],
     [woffdir="$withval"], [woffdir=\$\{prefix\}/share/fonts/woff/thai])
   AC_MSG_CHECKING(--with-woffdir)
@@ -80,7 +80,7 @@ if test "x$enable_woff" = "xyes"; then
 fi
 
 AC_ARG_ENABLE(testfont,
-              [AC_HELP_STRING([--enable-testfont],
+              [AS_HELP_STRING([--enable-testfont],
                               [enable font generation with prefix {TTF,OTF,PS}])],
               , enable_testfont="no")
 if test "x$enable_testfont" = "xyes"; then
@@ -89,7 +89,7 @@ if test "x$enable_testfont" = "xyes"; then
   AX_PYTHON_MODULE([fontforge],[fatal])
 
   AC_ARG_WITH(testfontdir,
-    [AC_HELP_STRING([--with-testfontdir=DIR],
+    [AS_HELP_STRING([--with-testfontdir=DIR],
                     [font directory in DIR [$HOME/.fonts/testfont]])],
     [testfontdir="$withval"], [testfontdir=\$\{HOME\}/.fonts/testfont])
   AC_MSG_CHECKING(--with-testfontdir)
@@ -100,12 +100,12 @@ fi
 
 
 AC_ARG_ENABLE(xfontsdir,
-              [AC_HELP_STRING([--enable-xfontsdir],
+              [AS_HELP_STRING([--enable-xfontsdir],
                               [enable X font index generation])],
               , enable_xfontsdir="no")
 
 AC_ARG_ENABLE(latex,
-              [AC_HELP_STRING([--enable-latex],
+              [AS_HELP_STRING([--enable-latex],
                               [enable LaTeX fonts generation])],
               , enable_latex="no")
 
@@ -229,7 +229,7 @@ if test "x$enable_latex" = "xyes"; then
   fi
 
   AC_ARG_WITH(texmfdir,
-    [AC_HELP_STRING([--with-texmfdir=DIR],
+    [AS_HELP_STRING([--with-texmfdir=DIR],
                     [texmf directory in DIR [PREFIX/share/texmf]])],
     [texmfdir="$withval"], [texmfdir=${datarootdir}/texmf])
   AC_MSG_CHECKING(--with-texmfdir)
@@ -248,8 +248,7 @@ if test "x$enable_latex" = "xyes"; then
 fi
 
 
-AC_OUTPUT(
-  Makefile
+AC_CONFIG_FILES([Makefile
   nf/Makefile
   nectec/Makefile
   sipa/Makefile
@@ -259,5 +258,6 @@ AC_OUTPUT(
   latex/Makefile
   latex/examples/Makefile
   tests/Makefile
-)
+])
+AC_OUTPUT
 
