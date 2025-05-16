@@ -101,7 +101,7 @@ r%.tfm: %.afm
 	| $(SED) "s/$$/ <$*.pfb/" >> $(MAP)
 	$(call merge_ligs,$*.vpl,thailigs.vpl)
 
-%.tfm: %.vpl
+%.vf %.tfm: %.vpl
 	$(VPTOVF) $*
 
 $(MAP): $(ltxtfm_DATA)
