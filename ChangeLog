@@ -1,3 +1,15 @@
+2026-03-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Fix reproducibility issues in Type1 fonts.
+
+	* scripts/gen.mk.am:
+	  - When generating AFM and PFB:
+	    - Set LC_ALL="C" to ensure decimal point format
+	      of ItalicAngle in AFM.
+	    - Set USER="Thai Linux Working Group" to ensure Creator in PFB.
+	    - Set TZ="GMT" to ensure GMT timestamp in Creation Date
+	      in AFM and PFB.
+
 2025-05-16  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Fix "make --shuffle=reverse" failure.

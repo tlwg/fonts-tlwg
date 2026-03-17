@@ -76,4 +76,5 @@ PS%.afm PS%.pfb: %.sfd
 	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-woff.pe $<
 
 %.afm %.pfb: %.sfd
-	$(FONTFORGE) -script $(top_srcdir)/scripts/gen-pfb.pe $<
+	LC_ALL="C" USER="Thai Linux Working Group" TZ="GMT" \
+	  $(FONTFORGE) -script $(top_srcdir)/scripts/gen-pfb.pe $<
