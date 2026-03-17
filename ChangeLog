@@ -1,5 +1,19 @@
 2026-03-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
+	Update example LaTeX documents for ucs 2.3+.
+
+	* latex/examples/digits-axes.tex:
+	* latex/examples/digits-cfr.tex:
+	* latex/examples/oldnum.tex:
+	* latex/examples/testsans.tex:
+	* latex/examples/testscaled-120.tex:
+	* latex/examples/testscaled-65.tex:
+	* latex/examples/teststd.tex:
+	  - Load "ucs" package explicitly to make "utf8x" effective,
+	    according to the change introduced in ucs 2.3.
+
+2026-03-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
 	Strengthen sorting locale in LaTeX font map.
 
 	* latex/texfont.mk.am:
