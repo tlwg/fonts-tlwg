@@ -1,5 +1,14 @@
 2026-03-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
+	LaTeX: Unversion top level directory of CTAN tarball.
+
+	* Makefile.am:
+	  - Make unversioned distdir as a symlink and make tarball/zip
+	    from the symlink. (Note the -h option for tar to dereference
+	    symlinks. For zip, it's always dereferenced.)
+
+2026-03-17  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
 	LaTeX: Sync thai-dummy.afm with ENC files.
 
 	* latex/thai-dummy.afm:
