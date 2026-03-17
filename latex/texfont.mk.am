@@ -105,7 +105,7 @@ r%.tfm: %.afm
 	$(VPTOVF) $*
 
 $(MAP): $(ltxtfm_DATA)
-	LC_COLLATE=C sort $@ | uniq > /tmp/tmp.$$$$; mv /tmp/tmp.$$$$ $@
+	LC_ALL=C sort $@ | uniq > /tmp/tmp.$$$$; mv /tmp/tmp.$$$$ $@
 
 install-data-hook:
 	@if test -z "$(DESTDIR)" ; then                                       \
