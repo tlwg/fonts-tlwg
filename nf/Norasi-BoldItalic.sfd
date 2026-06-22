@@ -4,7 +4,7 @@ FullName: Norasi Bold Italic
 FamilyName: Norasi
 Weight: Bold
 Copyright: Copyright (C) 1999, The National Font Project (v.beta). Yannis Haralambous, Virach Sornlertlamvanich and Anutara Tantraporn. All rights reserved.\n\nModified under GNU General Public License, with creators' permission, by Thai Linux Working Group (TLWG).
-Version: 006.004
+Version: 006.005
 ItalicAngle: -15.5
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -20,7 +20,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1153665670
-ModificationTime: 1780479563
+ModificationTime: 1782141992
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -58,6 +58,7 @@ Lookup: 6 0 0 "'ccmp' Thai Below Vowel Phinthu Reordering" { "'ccmp' Thai Below 
 Lookup: 6 0 0 "'ccmp' Thai General Composition" { "'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Phinthu Lower Tone Reordering" { "'ccmp' Thai Phinthu Lower Tone Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Below Vowel Macron Reordering Round 2" { "'ccmp' Thai Below Vowel Macron Reordering Round 2"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 1 0 0 "'ss01' Thai Style Set 1 Descenderless" { "'ss01' Thai Style Set 1 Descenderless-1"  } ['ss01' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution" { "Thai Descender Removal Single Substitution" ("descless") } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition" { "Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment" { "Thai Tone Nikhahit Attachment"  } []
@@ -1567,6 +1568,7 @@ ShortTable: cvt  60
 EndShort
 LangName: 1033 "" "" "" "TLWG: Norasi Bold Italic: 1999" "" "" "" "Norasi Bold Italic is a trademark of the The National Font Project (v.beta). Yannis Haralambous, Virach Sornlertlamvanich and Anutara Tantraporn." "TLWG" "Yannis Haralambous, Virach Sornlertlamvanich and Anutara Tantraporn" "This font was developed under the National Font Project at NECTEC as to be a free licensed font for Thai users and developers." "http://linux.thai.net/plone/TLWG/thaifonts_scalable/" "" "This font is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/licenses/gpl.html" "" "Norasi" "Bold Italic"
 LangName: 1054 "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "+DicONA4NDg0OOQ4hDjgOSA4HDiMOOQ5JDh4ONA4GDjIOFQ4bDjcOSQ4ZDgIONQ5JDh0OOA5IDhkOQA4lDikODw44"
+OtfFeatName: 'ss01' 1033 "Descenderless" 1054 "+DhUOMQ4UDkAOCg40DgcA"
 Encoding: UnicodeBmp
 Compacted: 1
 UnicodeInterp: none
@@ -32682,6 +32684,7 @@ SplineSet
  507 -131 507 -131 507 -106 c 0,87,88
  507 -76 507 -76 483 -76 c 0,79,80
 EndSplineSet
+Substitution2: "'ss01' Thai Style Set 1 Descenderless-1" uni0E0D.descless
 Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E0D.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E0D.descless
 EndChar
@@ -34217,6 +34220,7 @@ SplineSet
  240 -174 l 1,112,113
 EndSplineSet
 Kerns2: 180 29 "'kern' Horizontal Kerning in Thai lookup 3 subtable" 183 29 "'kern' Horizontal Kerning in Thai lookup 3 subtable" 182 29 "'kern' Horizontal Kerning in Thai lookup 3 subtable" 181 29 "'kern' Horizontal Kerning in Thai lookup 3 subtable"
+Substitution2: "'ss01' Thai Style Set 1 Descenderless-1" uni0E10.descless
 Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E10.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E10.descless
 EndChar
