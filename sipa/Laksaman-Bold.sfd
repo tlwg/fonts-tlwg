@@ -1,10 +1,10 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: Laksaman-Bold
 FullName: Laksaman Bold
 FamilyName: Laksaman
 Weight: Bold
 Copyright: Laksaman, based on TH Sarabun New.\n\nCopyright (c) 2014 Theppitak Karoonboonyanan.\n\nTH Sarabun New:\n\nCopyright (c) 2010-2011 by Software Industry Promotion Agency (Public Organization) (SIPA). All rights reserved.\nCreated by : Suppakit CHALERMLARP.
-Version: 004.001
+Version: 004.002
 ItalicAngle: 0
 UnderlinePosition: -20
 UnderlineWidth: 30
@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1308745583
-ModificationTime: 1540799706
+ModificationTime: 1782191903
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -92,6 +92,7 @@ Lookup: 6 0 0 "'ccmp' Thai Below Vowel Phinthu Reordering" { "'ccmp' Thai Below 
 Lookup: 6 0 0 "'ccmp' Thai General Composition" { "'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Phinthu Lower Tone Reordering" { "'ccmp' Thai Phinthu Lower Tone Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Below Vowel Macron Reordering Round 2" { "'ccmp' Thai Below Vowel Macron Reordering Round 2"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 1 0 0 "'ss01' Thai Style Set 1 Descenderless" { "'ss01' Thai Style Set 1 Descenderless-1"  } ['ss01' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution" { "Thai Descender Removal Single Substitution" ("descless") } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition" { "Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment" { "Thai Tone Nikhahit Attachment"  } []
@@ -1297,6 +1298,7 @@ ShortTable: maxp 16
 EndShort
 LangName: 1033 "" "" "" "Laksaman Bold" "" "" "" "TH Sarabun New Bold is a trademark of Mr.Suppakit Chalermlarp, PSK. Design LTD.." "TLWG" "Mr.Suppakit CHALERMLARP" "" "http://linux.thai.net/projects/fonts-tlwg" "mailto:typethai@gmail.com" "This font is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.+AA0ACgANAAoA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AA0ACgANAAoA-You should have received a copy of the GNU General Public License along with this font; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA+AA0ACgANAAoA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" "" "Laksaman" "Bold"
 GaspTable: 3 8 2 18 1 65535 3 0
+OtfFeatName: 'ss01' 1033 "Descenderless" 1054 "+DhUOMQ4UDkAOCg40DgcA"
 Encoding: UnicodeBmp
 Compacted: 1
 UnicodeInterp: none
@@ -33036,6 +33038,7 @@ SplineSet
  146 80 146 80 161 65 c 128,-1,86
  176 50 176 50 197 50 c 259,78,79
 EndSplineSet
+Substitution2: "'ss01' Thai Style Set 1 Descenderless-1" uni0E0D.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E0D.descless
 Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E0D.descless
 EndChar
@@ -34529,6 +34532,7 @@ SplineSet
  338 -156 338 -156 347.5 -165 c 128,-1,113
  357 -174 357 -174 372 -174 c 259,103,104
 EndSplineSet
+Substitution2: "'ss01' Thai Style Set 1 Descenderless-1" uni0E10.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E10.descless
 Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E10.descless
 EndChar
@@ -45029,7 +45033,7 @@ SplineSet
  -167 975 l 1,9,-1
  -77 975 l 1,10,-1
  -77 698 l 1,11,12
- -74 677 l 1,0,1
+ -77 698 -77 698 -74 677 c 1,0,1
 -170 766 m 1,13,14
  -180 806 -180 806 -227.5 837.5 c 128,-1,15
  -275 869 -275 869 -326 869 c 0,16,17
