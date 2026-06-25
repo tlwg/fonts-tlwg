@@ -4,7 +4,7 @@ FullName: Sawasdee Bold Oblique
 FamilyName: Sawasdee
 Weight: Bold
 Copyright: Copyright (c) 2007 Pol Udomwittayanukul. All rights reserved.
-Version: 003.005
+Version: 003.006
 ItalicAngle: -12
 UnderlinePosition: -153
 UnderlineWidth: 102
@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1178430034
-ModificationTime: 1588320784
+ModificationTime: 1782400609
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -56,6 +56,7 @@ Lookup: 6 0 0 "'ccmp' Thai Below Vowel Phinthu Reordering" { "'ccmp' Thai Below 
 Lookup: 6 0 0 "'ccmp' Thai General Composition" { "'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Phinthu Lower Tone Reordering" { "'ccmp' Thai Phinthu Lower Tone Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Below Vowel Macron Reordering Round 2" { "'ccmp' Thai Below Vowel Macron Reordering Round 2"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 1 0 0 "'ss01' Thai Style Set 1 Descenderless" { "'ss01' Thai Style Set 1 Descenderless-1"  } ['ss01' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution" { "Thai Descender Removal Single Substitution" ("descless") } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition" { "Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment" { "Thai Tone Nikhahit Attachment"  } []
@@ -1292,6 +1293,7 @@ ShortTable: cvt  33
   88
 EndShort
 LangName: 1033 "" "" "" "Sawasdee Bold Oblique" "" "" "" "" "" "Pol Udomwittayanukul" "" "" "pol.udomwittayanukul@gmail.com" "This font is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/licenses/gpl.html" "" "Sawasdee" "Bold Oblique"
+OtfFeatName: 'ss01' 1033 "Descenderless" 1054 "+DhUOMQ4UDkAOCg40DgcA"
 Encoding: UnicodeBmp
 Compacted: 1
 UnicodeInterp: none
@@ -50448,6 +50450,7 @@ SplineSet
  967 376 967 376 978 436 c 2,71,-1
  1047 754 l 2,0,1
 EndSplineSet
+Substitution2: "'ss01' Thai Style Set 1 Descenderless-1" uni0E0D.descless
 Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E0D.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E0D.descless
 EndChar
@@ -51347,6 +51350,7 @@ SplineSet
  1008 521 l 1,46,-1
  647 521 l 1,16,-1
 EndSplineSet
+Substitution2: "'ss01' Thai Style Set 1 Descenderless-1" uni0E10.descless
 Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E10.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E10.descless
 EndChar
@@ -67587,7 +67591,7 @@ Validated: 1
 Layer: 2
 SplineSet
 -651 1457 m 1,0,1
- -649 1461 l 2,2,3
+ -651 1457 -651 1457 -649 1461 c 2,2,3
  -649 1466 -649 1466 -658 1466 c 2,4,-1
  -786 1466 l 1,5,-1
  -698 1627 l 1,6,-1
