@@ -5,7 +5,7 @@ FamilyName: Purisa
 Weight: Bold
 Copyright: Purisa, Thai handwriting outline font.\n\nCopyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-27: Created.+AAoACgAA-Acknowlegement:+AAoA-Hanwriting by Ms.Purisa Cholasueksa. +AAoA-Co-operated by Mr.Teeratep Sosakul.+AAoACgAA-2004-02-14:+AAoA-Modified most characters. Make numbers bigger."
-Version: 004.004
+Version: 004.005
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1153666222
-ModificationTime: 1588320510
+ModificationTime: 1782401064
 PfmFamily: 65
 TTFWeight: 700
 TTFWidth: 5
@@ -54,6 +54,7 @@ Lookup: 6 0 0 "'ccmp' Thai Below Vowel Phinthu Reordering" { "'ccmp' Thai Below 
 Lookup: 6 0 0 "'ccmp' Thai General Composition" { "'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Phinthu Lower Tone Reordering" { "'ccmp' Thai Phinthu Lower Tone Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Below Vowel Macron Reordering Round 2" { "'ccmp' Thai Below Vowel Macron Reordering Round 2"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 1 0 0 "'ss01' Thai Style Set 1 Descenderless" { "'ss01' Thai Style Set 1 Descenderless-1"  } ['ss01' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution" { "Thai Descender Removal Single Substitution" ("descless") } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition" { "Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment" { "Thai Tone Nikhahit Attachment"  } []
@@ -1303,6 +1304,7 @@ ShortTable: cvt  29
 EndShort
 LangName: 1033 "" "" "" "Purisa Bold" "" "" "" "" "TLWG" "" "" "" "" "This font is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/licenses/gpl.html" "" "Purisa" "Bold" "" "A quick brown fox jumps over the lazy dog."
 LangName: 1054 "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "+DiAOOQ4jDjQOKQ4y +DhgONQ4jDkAOFw4e"
+OtfFeatName: 'ss01' 1033 "Descenderless" 1054 "+DhUOMQ4UDkAOCg40DgcA"
 Encoding: UnicodeBmp
 Compacted: 1
 UnicodeInterp: none
@@ -1376,7 +1378,7 @@ Validated: 1
 Layer: 2
 SplineSet
 -52 572 m 1,0,1
- -52.5 570 l 2,2,3
+ -52 572 -52 572 -52.5 570 c 2,2,3
  -53 568 -53 568 -54 566 c 128,-1,4
  -55 564 -55 564 -57 561.5 c 128,-1,5
  -59 559 -59 559 -62 557.5 c 128,-1,6
@@ -22096,7 +22098,7 @@ Validated: 1
 Layer: 2
 SplineSet
 538 -77 m 1,0,1
- 531 34 l 2,2,3
+ 538 -77 538 -77 531 34 c 2,2,3
  530 43 530 43 509.5 62 c 128,-1,4
  489 81 489 81 473 81 c 0,5,6
  456 81 456 81 456 55 c 0,7,8
@@ -27072,7 +27074,7 @@ SplineSet
  160 485 160 485 160 436 c 0,2,3
  160 409 160 409 166 409 c 0,4,5
  186 413 186 413 188 432 c 2,6,7
- 188 433.5 l 2,8,9
+ 188 432 188 432 188 433.5 c 2,8,9
  188 435 188 435 187.5 437.5 c 128,-1,10
  187 440 187 440 187 443 c 0,11,12
  187 454 187 454 196 472 c 1,13,14
@@ -27969,7 +27971,7 @@ SplineSet
  505 178 505 178 505 157 c 2,4,-1
  505 149 l 1,0,1
 260 417 m 1,5,6
- 252 407 l 2,7,8
+ 260 417 260 417 252 407 c 2,7,8
  244 397 244 397 230 397 c 0,9,10
  214 397 214 397 201 407 c 128,-1,11
  188 417 188 417 188 432 c 0,12,13
@@ -29668,6 +29670,7 @@ SplineSet
  646 -159 646 -159 690 -115.5 c 128,-1,110
  734 -72 734 -72 753 -72 c 0,84,85
 EndSplineSet
+Substitution2: "'ss01' Thai Style Set 1 Descenderless-1" uni0E0D.descless
 Substitution2: "'ccmp' Pali-Sanskrit Descender removal" uni0E0D.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E0D.descless
 EndChar
@@ -30959,6 +30962,7 @@ SplineSet
  102 -152 102 -152 107 -147 c 1,124,125
  100 -147 100 -147 98 -154 c 1,122,123
 EndSplineSet
+Substitution2: "'ss01' Thai Style Set 1 Descenderless-1" uni0E10.descless
 Substitution2: "'ccmp' Pali-Sanskrit Descender removal" uni0E10.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E10.descless
 EndChar
@@ -33475,7 +33479,7 @@ Layer: 2
 SplineSet
 176 131 m 0,0,1
  176 75 176 75 189 71 c 2,2,3
- 190.5 70.5 l 2,4,5
+ 189 71 189 71 190.5 70.5 c 2,4,5
  192 70 192 70 195.5 69.5 c 128,-1,6
  199 69 199 69 204 69 c 0,7,8
  239 69 239 69 239 121 c 0,9,10
@@ -36670,7 +36674,7 @@ Validated: 1
 Layer: 2
 SplineSet
 -198 846 m 1,0,1
- -195 841 l 2,2,3
+ -198 846 -198 846 -195 841 c 2,2,3
  -192 836 -192 836 -189.5 827 c 128,-1,4
  -187 818 -187 818 -187 808 c 0,5,6
  -187 771 -187 771 -234 771 c 0,7,8
@@ -36766,7 +36770,7 @@ Layer: 2
 SplineSet
 -114 692 m 0,0,1
  -114 671 -114 671 -102 671 c 1,2,3
- -85 678 l 2,4,5
+ -102 671 -102 671 -85 678 c 2,4,5
  -85 682 -85 682 -94 690.5 c 128,-1,6
  -103 699 -103 699 -113 702 c 1,7,8
  -114 698 -114 698 -114 692 c 0,0,1
@@ -40309,7 +40313,7 @@ Validated: 1
 Layer: 2
 SplineSet
 351 516 m 1,0,1
- 347 502.5 l 2,2,3
+ 351 516 351 516 347 502.5 c 2,2,3
  343 489 343 489 338 474.5 c 128,-1,4
  333 460 333 460 323 447 c 128,-1,5
  313 434 313 434 301 432 c 0,6,7
@@ -75348,7 +75352,7 @@ Layer: 2
 SplineSet
 388 641 m 1,0,1
  377 650 377 650 351 650 c 2,2,3
- 337 649 l 2,4,5
+ 351 650 351 650 337 649 c 2,4,5
  325 649 325 649 318 660 c 1,6,7
  306 657 306 657 293.5 651 c 128,-1,8
  281 645 281 645 263.5 631.5 c 128,-1,9
@@ -95944,7 +95948,7 @@ Validated: 1
 Layer: 2
 SplineSet
 306 -109 m 2,0,1
- 291 -110 l 2,2,3
+ 306 -109 306 -109 291 -110 c 2,2,3
  276 -111 276 -111 267 -111 c 0,4,5
  251 -111 251 -111 215.5 -110 c 128,-1,6
  180 -109 180 -109 163 -109 c 0,7,8
