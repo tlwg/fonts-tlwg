@@ -5,7 +5,7 @@ FamilyName: Tlwg Typo
 Weight: Bold
 Copyright: Tlwg Typo, based on Poonlap Veerathanabutr's Tlwg Typewriter.\n\nCopyright (C) 2005-2014 Theppitak Karoonboonyanan.\n\nTlwg Typewriter, Free Thai Pseudo Monospace outline font.\n\nCopyright (C) 2003, 2004 Poonlap Veerathanabutr <poonlap@linux.thai.net>
 UComments: "2003-11-20: Created. +AAoA-PfaEdit 1.0 (http://pfaedit.sf.net).+AAoACgAA-TLWG is Thai Linux Working Group http://linux.thai.net+AAoACgAA-Imported ISO-8859-1 from FreeMono.sfd.+AAoA-http://www.nongnu.org/freefont/+AAoACgAA-2003-11-22: first release+AAoACgAA-2003-11-25: Fixed vowel and tone marks' level."
-Version: 004.004
+Version: 004.005
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1153664010
-ModificationTime: 1620796529
+ModificationTime: 1782352135
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -53,6 +53,7 @@ Lookup: 6 0 0 "'ccmp' Thai Below Vowel Phinthu Reordering" { "'ccmp' Thai Below 
 Lookup: 6 0 0 "'ccmp' Thai General Composition" { "'ccmp' Thai Below Vowel Tone Reordering"  "'ccmp' Thai General Composition"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Phinthu Lower Tone Reordering" { "'ccmp' Thai Phinthu Lower Tone Reordering"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Below Vowel Macron Reordering Round 2" { "'ccmp' Thai Below Vowel Macron Reordering Round 2"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
+Lookup: 1 0 0 "'ss01' Thai Style Set 1 Descenderless" { "'ss01' Thai Style Set 1 Descenderless-1"  } ['ss01' ('DFLT' <'dflt' > 'thai' <'KUY ' 'MLY ' 'PAL ' 'SAN ' 'THA ' 'dflt' > ) ]
 Lookup: 1 0 0 "Thai Descender Removal Single Substitution" { "Thai Descender Removal Single Substitution" ("descless") } []
 Lookup: 2 0 0 "Thai Sara Am Decomposition" { "Thai Sara Am Decomposition"  } []
 Lookup: 2 0 0 "Thai Tone Nikhahit Attachment" { "Thai Tone Nikhahit Attachment"  } []
@@ -1242,6 +1243,7 @@ ShortTable: cvt  22
 EndShort
 LangName: 1033 "" "" "" "Tlwg Typo Bold" "" "" "" "" "TLWG" "Theppitak Karoonboonyanan <theppitak@gmail.com>" "" "" "" "This font is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/licenses/gpl.html" "" "Tlwg Typo" "Bold" "" "A quick brown fox jumps over the lazy dog."
 LangName: 1054 "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "+DkAOFA5HDgEOAQ4VDjEODQ4NDjkOQA4dDkkOMg5EDgIOSQ4EDjgOEw4bDjkOSA4tDiIOOQ5IDhcONQ5IDhoOSQ4yDhkOIw40DiEOGQ5JDjMA"
+OtfFeatName: 'ss01' 1033 "Descenderless" 1054 "+DhUOMQ4UDkAOCg40DgcA"
 Encoding: UnicodeBmp
 Compacted: 1
 UnicodeInterp: none
@@ -47993,6 +47995,7 @@ SplineSet
  166 104 166 104 158 104 c 0,70,71
  138 104 138 104 138 83 c 0,62,63
 EndSplineSet
+Substitution2: "'ss01' Thai Style Set 1 Descenderless-1" uni0E0D.descless
 Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E0D.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E0D.descless
 EndChar
@@ -49392,6 +49395,7 @@ SplineSet
  148 326 148 326 124 330 c 1,100,-1
  124 364 l 1,60,61
 EndSplineSet
+Substitution2: "'ss01' Thai Style Set 1 Descenderless-1" uni0E10.descless
 Substitution2: "'ccmp' Pali-Sanskrit Descender Removal" uni0E10.descless
 Substitution2: "Thai Descender Removal Single Substitution" uni0E10.descless
 EndChar
@@ -53213,7 +53217,7 @@ Validated: 1
 Layer: 2
 SplineSet
 138 269 m 1,0,1
- 136 268.5 l 2,2,3
+ 138 269 138 269 136 268.5 c 2,2,3
  134 268 134 268 133 268 c 0,4,5
  89 268 89 268 58.5 299.5 c 128,-1,6
  28 331 28 331 28 375 c 0,7,8
@@ -53430,7 +53434,7 @@ Validated: 1
 Layer: 2
 SplineSet
 138 269 m 1,0,1
- 136 268.5 l 2,2,3
+ 138 269 138 269 136 268.5 c 2,2,3
  134 268 134 268 133 268 c 0,4,5
  89 268 89 268 58.5 299.5 c 128,-1,6
  28 331 28 331 28 375 c 0,7,8
@@ -56882,7 +56886,7 @@ SplineSet
 233 0 m 1,0,-1
  138 0 l 1,1,-1
  138 269 l 1,2,3
- 136 268.5 l 2,4,5
+ 138 269 138 269 136 268.5 c 2,4,5
  134 268 134 268 133 268 c 0,6,7
  89 268 89 268 58.5 299.5 c 128,-1,8
  28 331 28 331 28 375 c 0,9,10
