@@ -1,3 +1,21 @@
+0.7.4 (2026-07-01)
+=====
+* Build system:
+  - Fix make rules to prevent parallel build failure, following the fix
+    for fonts-arundina in Debian #1105308.
+  - Fix reproducibility issues in Type1 fonts (with different approach
+    from the fix of the same problem in fonts-arundina).
+  - Fix reproducibility issue caused by collation in TeX font map generation.
+* LaTeX:
+  - Update example LaTeX documents for ucs 2.3+.
+  - Sync dummy AFM with ENC files for more correct Latin part in TFM
+    generation.
+  - Make top-level directory of the generated CTAN tarball unversioned.
+* Fonts:
+  - Kinnari, Norasi: Balance cubic splines for optimal quadratic splines.
+  - Add Stylistic Set 1 (ss01) lookup to all fonts for descenderless
+    YO YING and THO THAN.
+
 0.7.3 (2021-10-18)
 =====
 - Purisa, Sawasdee: now can be embeded as installable in PDF.
