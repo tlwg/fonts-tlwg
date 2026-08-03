@@ -77,26 +77,22 @@ define merge_ligs
 	mv $$TMPFILE $(1)
 endef
 
-r%-osf-sc.tfm: %.afm
-%-osf-sc.vpl: %.afm thailigs-osf-sc.vpl lthtlwg-osf-sc.enc
+r%-osf-sc.tfm %-osf-sc.vpl: %.afm thailigs-osf-sc.vpl lthtlwg-osf-sc.enc
 	$(AFM2TFM) $*.afm -v $*-osf-sc.vpl -T lthtlwg-osf-sc.enc r$*-osf-sc.tfm \
 	| $(SED) "s/$$/ <$*.pfb/" >> $(MAP)
 	$(call merge_ligs,$*-osf-sc.vpl,thailigs-osf-sc.vpl)
 
-r%-osf.tfm: %.afm
-%-osf.vpl: %.afm thailigs-osf.vpl lthtlwg-osf.enc
+r%-osf.tfm %-osf.vpl: %.afm thailigs-osf.vpl lthtlwg-osf.enc
 	$(AFM2TFM) $*.afm -v $*-osf.vpl -T lthtlwg-osf.enc r$*-osf.tfm \
 	| $(SED) "s/$$/ <$*.pfb/" >> $(MAP)
 	$(call merge_ligs,$*-osf.vpl,thailigs-osf.vpl)
 
-r%-sc.tfm: %.afm
-%-sc.vpl: %.afm thailigs-sc.vpl lthtlwg-sc.enc
+r%-sc.tfm %-sc.vpl: %.afm thailigs-sc.vpl lthtlwg-sc.enc
 	$(AFM2TFM) $*.afm -v $*-sc.vpl -T lthtlwg-sc.enc r$*-sc.tfm \
 	| $(SED) "s/$$/ <$*.pfb/" >> $(MAP)
 	$(call merge_ligs,$*-sc.vpl,thailigs-sc.vpl)
 
-r%.tfm: %.afm
-%.vpl: %.afm thailigs.vpl lthtlwg.enc
+r%.tfm %.vpl: %.afm thailigs.vpl lthtlwg.enc
 	$(AFM2TFM) $*.afm -v $*.vpl -T lthtlwg.enc r$*.tfm \
 	| $(SED) "s/$$/ <$*.pfb/" >> $(MAP)
 	$(call merge_ligs,$*.vpl,thailigs.vpl)

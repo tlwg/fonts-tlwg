@@ -1,3 +1,13 @@
+2026-08-03  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Fix parallel build failure.
+
+	* latex/texfont.mk.am:
+	  - Merge the multiple make targets 'r%.tfm' and '%.vpl'
+	    and all '-osf', '-osf-sc' and '-sc' counterparts,
+	    so that 'make' takes the recipe as building all the targets
+	    at once.
+
 2026-07-01  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	* NEWS:
